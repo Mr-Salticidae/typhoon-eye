@@ -260,7 +260,9 @@
     return "blue";
   }
 
-  function init(data, isLive) {
+  function init(data, mode) {
+    var isLive = mode === "live";
+    var isSnapshot = mode === "snapshot";
     DATA = data; IS_LIVE = isLive;
     var badge = $("dataBadge");
     var notice = $("noticeBar");
@@ -272,8 +274,19 @@
       notice.appendChild(document.createTextNode("数据来自" + data.source + "，更新于 " + data.updatedAt + "；防灾决策请以"));
       notice.appendChild(el("b", null, "当地政府与气象部门"));
       notice.appendChild(document.createTextNode("发布的官方预警为准。"));
+    } else if (isSnapshot) {
+      badge.textContent = "缓存数据";
+      badge.classList.remove("live");
+      badge.title = "在线数据暂不可用，当前为包内缓存数据";
+      notice.innerHTML = "";
+      notice.appendChild(document.createTextNode("在线数据暂不可用，当前展示"));
+      notice.appendChild(el("b", null, "包内缓存数据"));
+      notice.appendChild(document.createTextNode("；防灾决策请以"));
+      notice.appendChild(el("b", null, "当地政府与气象部门"));
+      notice.appendChild(document.createTextNode("发布的官方预警为准。"));
     } else {
       badge.textContent = "演示数据";
+      badge.classList.remove("live");
       badge.title = "实时数据加载失败，当前为内置演示数据";
       notice.innerHTML = "";
       notice.appendChild(document.createTextNode("实时数据加载失败，当前展示"));
@@ -282,7 +295,7 @@
       notice.appendChild(el("b", null, "当地政府与气象部门"));
       notice.appendChild(document.createTextNode("发布的官方预警为准。"));
     }
-    $("tyUpdated").textContent = data.updatedAt + (isLive ? "" : "（演示）");
+    $("tyUpdated").textContent = data.updatedAt + (isLive ? "" : isSnapshot ? "（缓存）" : "（演示）");
     $("tySource").textContent = data.source;
 
     var list = data.typhoons || [];
@@ -318,11 +331,36 @@
     renderPlan();
   }
 
-  function boot() {
-    fetch("data/typhoon.json", { cache: "no-store" })
+  var LIVE_DATA_URL = "https://mr-salticidae.github.io/typhoon-eye/data/typhoon.json";
+
+  function validData(d) {
+    return !!d && typeof d.updatedAt === "string" && Array.isArray(d.typhoons) &&
+      d.typhoons.every(function (t) { return !!t && !!t.now && Array.isArray(t.track); });
+  }
+
+  function fetchJSON(url, bustCache) {
+    var controller = new AbortController();
+    var timer = setTimeout(function () { controller.abort(); }, 8000);
+    var finalUrl = bustCache
+      ? url + (url.indexOf("?") >= 0 ? "&" : "?") + "v=" + Math.floor(Date.now() / 300000)
+      : url;
+    return fetch(finalUrl, { cache: "no-store", signal: controller.signal })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (d) { init(d, true); })
-      .catch(function () { init(DEMO_DATA, false); });
+      .then(function (d) {
+        if (!validData(d)) throw new Error("invalid data");
+        return d;
+      })
+      .finally(function () { clearTimeout(timer); });
+  }
+
+  function boot() {
+    fetchJSON(LIVE_DATA_URL, true)
+      .then(function (d) { init(d, "live"); })
+      .catch(function () {
+        return fetchJSON("data/typhoon.json", false)
+          .then(function (d) { init(d, "snapshot"); })
+          .catch(function () { init(DEMO_DATA, "demo"); });
+      });
   }
 
   /* ---------- 分级预案 ---------- */

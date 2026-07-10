@@ -17,7 +17,7 @@
 
 ## 数据
 
-GitHub Actions 每 3 小时运行 [`scripts/fetch-typhoon.mjs`](scripts/fetch-typhoon.mjs)，从[浙江省台风路径实时发布系统](https://typhoon.slt.zj.gov.cn/)抓取活跃台风，生成静态 [`data/typhoon.json`](data/typhoon.json) 由 Pages 分发——前端零跨域、对源站零压力。加载失败时自动降级为内置演示数据并显著标注。
+GitHub Actions 每 30 分钟运行 [`scripts/fetch-typhoon.mjs`](scripts/fetch-typhoon.mjs)，从[浙江省台风路径实时发布系统](https://typhoon.slt.zj.gov.cn/)抓取活跃台风，生成静态 [`data/typhoon.json`](data/typhoon.json) 由 Pages 分发。B 站 Toy 与网页端优先读取 Pages 在线数据，失败时依次降级为包内缓存和内置演示数据，并显著标注当前数据状态。
 
 ## 使用
 
