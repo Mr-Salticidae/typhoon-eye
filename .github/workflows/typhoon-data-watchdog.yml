@@ -1,0 +1,96 @@
+name: update-typhoon-data-watchdog
+
+on:
+  schedule:
+    - cron: "26,56 * * * *"   # 主任务后 15 分钟补查；仅数据过期时抓取
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: typhoon-data-write
+  cancel-in-progress: false
+
+jobs:
+  recover-if-stale:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check data freshness
+        id: freshness
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = 'data/typhoon.json';
+          let stale = true;
+          try {
+            const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+            const text = String(data.updatedAt || '').trim();
+            const match = /^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})$/.exec(text);
+            if (match) {
+              const utc = Date.UTC(+match[1], +match[2] - 1, +match[3], +match[4] - 8, +match[5]);
+              const ageMinutes = (Date.now() - utc) / 60000;
+              console.log(`current snapshot age: ${ageMinutes.toFixed(1)} minutes`);
+              stale = ageMinutes >= 40 || ageMinutes < -5;
+            }
+          } catch (error) {
+            console.warn(`freshness check failed: ${error.message}`);
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `stale=${stale}\n`);
+          NODE
+
+      - name: Recover stale data with retries
+        if: steps.freshness.outputs.stale == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            if node scripts/fetch-typhoon.mjs; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Watchdog fetch failed after 3 attempts" >&2
+              exit 1
+            fi
+            sleep $((attempt * 10))
+          done
+
+      - name: Validate recovered data
+        if: steps.freshness.outputs.stale == 'true'
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const data = JSON.parse(fs.readFileSync('data/typhoon.json', 'utf8'));
+          if (!data || typeof data.updatedAt !== 'string' || !Array.isArray(data.typhoons)) {
+            throw new Error('Invalid data/typhoon.json structure');
+          }
+          for (const item of data.typhoons) {
+            if (!item || !item.now || !Array.isArray(item.track)) throw new Error('Invalid typhoon item');
+          }
+          NODE
+
+      - name: Commit recovered data
+        if: steps.freshness.outputs.stale == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/typhoon.json
+          if git diff --cached --quiet; then
+            echo "no change"
+            exit 0
+          fi
+          git commit -m "data: 30分钟守护任务补偿更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
