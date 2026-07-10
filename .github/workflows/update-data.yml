@@ -2,7 +2,7 @@ name: update-typhoon-data
 
 on:
   schedule:
-    - cron: "17,47 * * * *"   # 每 30 分钟抓取一次（UTC，错开整点高峰）
+    - cron: "23,53 * * * *"   # 每 30 分钟抓取一次（UTC，错开整点高峰；改分钟数以重新注册装死的 schedule）
   workflow_dispatch: {}
 
 permissions:
