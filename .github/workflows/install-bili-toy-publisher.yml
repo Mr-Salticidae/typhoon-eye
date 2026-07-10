@@ -1,5 +1,6 @@
 name: install-bili-toy-publisher
 
+# Downloads the official installer page and falls back to decoding #skillZipBase64.
 on:
   workflow_dispatch: {}
   push:
