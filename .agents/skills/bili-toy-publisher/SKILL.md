@@ -79,7 +79,7 @@ SKILL_DIR="$(pwd)/.agents/skills/bili-toy-publisher"
 Preview:
 
 ```bash
-"$SKILL_DIR/scripts/publish.sh" preview \
+bash "$SKILL_DIR/scripts/publish.sh" preview \
   --dir "$STATIC_DIR" \
   --uid auto
 ```
@@ -87,7 +87,7 @@ Preview:
 Create, only after preview approval:
 
 ```bash
-"$SKILL_DIR/scripts/publish.sh" create \
+bash "$SKILL_DIR/scripts/publish.sh" create \
   --dir "$STATIC_DIR" \
   --title "$TITLE" \
   --slug "$SLUG" \
@@ -99,7 +99,7 @@ Create, only after preview approval:
 Update, only after preview approval:
 
 ```bash
-"$SKILL_DIR/scripts/publish.sh" update \
+bash "$SKILL_DIR/scripts/publish.sh" update \
   --id "$ID" \
   --dir "$STATIC_DIR" \
   --title "$TITLE" \
