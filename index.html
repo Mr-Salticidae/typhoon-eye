@@ -24,7 +24,7 @@
   <div class="bar">
     <a class="brand" href="./">风眼<small>TYPHOON EYE</small></a>
     <div class="header-actions">
-      <span class="demo-badge" title="当前为内置演示数据">演示数据</span>
+      <span class="demo-badge" id="dataBadge" title="数据来源">加载中…</span>
       <a class="gh-link" href="https://github.com/Mr-Salticidae/typhoon-eye" target="_blank" rel="noopener">GitHub</a>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换昼夜主题">
         <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -34,8 +34,8 @@
   </div>
 </header>
 
-<div class="notice-bar" role="note">
-  本页当前为 <b>v0.1 演示</b>，数据为示例；防灾决策请以<b>当地政府与气象部门</b>发布的官方预警为准。
+<div class="notice-bar" role="note" id="noticeBar">
+  数据加载中……防灾决策请以<b>当地政府与气象部门</b>发布的官方预警为准。
 </div>
 
 <main>
@@ -43,11 +43,12 @@
   <!-- 台风一句话实况 -->
   <section class="hero">
     <div class="hero-inner">
-      <p class="hero-kicker">第 <span id="tyCode">--</span> 号台风 · <span id="tyEnName">--</span></p>
+      <p class="hero-kicker" id="tyKicker">第 <span id="tyCode">--</span> 号台风 · <span id="tyEnName">--</span></p>
       <h1 id="tyName">--</h1>
       <p class="hero-level"><span class="eye-dot" aria-hidden="true"></span><span id="tyLevel">--</span></p>
       <p class="hero-sub" id="tySummary">--</p>
-      <p class="meta">数据时间 <span id="tyUpdated">--</span></p>
+      <div class="ty-switch" id="tySwitch" hidden></div>
+      <p class="meta">数据时间 <span id="tyUpdated">--</span> · 来源 <span id="tySource">--</span></p>
     </div>
   </section>
 
@@ -70,10 +71,7 @@
     </div>
     <div class="map-wrap" id="mapWrap">
       <svg id="trackMap" viewBox="0 0 800 560" role="img" aria-label="台风路径示意图：历史路径为实线，预报路径为虚线">
-        <!-- 简化海岸线（示意） -->
-        <path class="land" d="M 120 300 L 180 304 L 216 312 L 272 296 L 328 272 L 372 256 L 420 248 L 460 228 L 500 212 L 524 184 L 560 152 L 584 124 L 608 88 L 628 44 L 648 8 L 648 0 L 0 0 L 0 296 Z"/>
-        <ellipse class="land" cx="204" cy="396" rx="36" ry="30"/><!-- 海南（示意） -->
-        <path class="land" d="M 638 150 Q 680 170 650 260 Q 638 288 624 262 Q 604 210 614 172 Q 622 152 638 150 Z"/><!-- 台湾（示意） -->
+        <g id="baseLayer" aria-hidden="true"></g><!-- 简化海岸线（示意），由 app.js 按经纬度绘制 -->
         <g class="cities" id="cityLayer" aria-hidden="true"></g>
         <g id="trackLayer"></g>
       </svg>
@@ -98,6 +96,7 @@
     <p class="plan-first">第一原则：<b>服从当地政府与社区的统一安排</b>，收到转移指令立即执行。</p>
 
     <div class="level-tabs" role="tablist" aria-label="预警等级" id="levelTabs"></div>
+    <p class="level-hint meta" id="levelHint" hidden>已按台风当前强度预选<b>参考</b>等级，实际预警级别请以当地气象部门发布为准。</p>
 
     <div class="plan-panel" id="planPanel">
       <div class="plan-head">
@@ -129,8 +128,8 @@
 <footer class="site-footer">
   <p class="footer-brand">风眼<span>TYPHOON EYE</span></p>
   <p class="footer-line">信息看得懂，准备做得到。愿每一场风，都只是路过。</p>
-  <p class="footer-meta">
-    v0.1 demo · 演示数据，非实时实况 · <a href="https://github.com/Mr-Salticidae/typhoon-eye" target="_blank" rel="noopener">开源于 GitHub</a> · MIT License
+  <p class="footer-meta" id="footerMeta">
+    v0.2 · 数据每 3 小时自动更新，异常时降级为演示数据 · <a href="https://github.com/Mr-Salticidae/typhoon-eye" target="_blank" rel="noopener">开源于 GitHub</a> · MIT License
   </p>
 </footer>
 

@@ -1,0 +1,38 @@
+name: update-typhoon-data
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # 每 3 小时抓取一次（UTC）
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch typhoon data
+        run: node scripts/fetch-typhoon.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/typhoon.json
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "data: 更新台风实况 $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

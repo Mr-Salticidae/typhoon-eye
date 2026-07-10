@@ -72,8 +72,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .demo-badge {
   font-size: .72rem; letter-spacing: .12em; color: var(--w-orange);
   border: 1px solid color-mix(in srgb, var(--w-orange) 45%, transparent);
-  border-radius: 999px; padding: .18em .7em;
+  border-radius: 999px; padding: .18em .7em; white-space: nowrap;
 }
+.demo-badge.live { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
 .gh-link { font-size: .85rem; color: var(--ink-soft); }
 .theme-toggle {
   display: inline-grid; place-items: center; width: 2.1rem; height: 2.1rem;
@@ -115,6 +116,15 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { .eye-dot, .tp-now-halo { animation: none !important; } }
 .hero-sub { max-width: 34rem; margin: 1rem auto 0; font-size: 1.02rem; line-height: 2; color: var(--ink); }
 .hero .meta { margin-top: 1rem; }
+.ty-switch { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem; margin-top: 1.1rem; }
+.ty-chip {
+  font-family: var(--sans); font-size: .85rem; color: var(--ink-soft);
+  background: none; border: 1px solid var(--line); border-radius: 999px; padding: .32rem .95rem; cursor: pointer;
+  transition: background .15s ease, border-color .15s ease, color .15s ease;
+}
+.ty-chip:hover { border-color: var(--accent); color: var(--ink); }
+.ty-chip.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+:root[data-theme="dark"] .ty-chip.is-active { color: #10151c; }
 .meta { color: var(--ink-soft); font-size: .85rem; letter-spacing: .02em; }
 
 /* 板块栏头 */
@@ -146,9 +156,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   background: var(--sea);
 }
 #trackMap { display: block; width: 100%; height: auto; }
+/* 视窗随路径动态扩展，线宽用 non-scaling-stroke 保持屏幕恒定 */
+.land, .cities circle, .track-line, .tp circle { vector-effect: non-scaling-stroke; }
 .land { fill: var(--land); stroke: var(--line); stroke-width: 1.5; }
 .cities circle { fill: var(--ink-soft); opacity: .75; }
-.cities text { font-family: var(--sans); font-size: 13px; fill: var(--ink-soft); }
+.cities text { font-family: var(--sans); fill: var(--ink-soft); }
 .track-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 .track-line.forecast { stroke-dasharray: 3 7; opacity: .85; }
 .tp { cursor: pointer; }
@@ -185,7 +197,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   margin: 0 0 1.2rem; padding: .7rem 1rem; border-left: 3px solid var(--accent);
   background: var(--accent-soft); border-radius: 0 10px 10px 0; font-size: .95rem;
 }
-.level-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin: 0 0 1.2rem; }
+.level-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin: 0 0 .6rem; }
+.level-hint { margin: 0 0 1.2rem; font-size: .78rem; }
+.level-hint b { color: var(--accent); }
 .level-tab {
   --lv: var(--accent);
   font-family: var(--sans); font-size: .9rem; color: var(--ink-soft);

@@ -1,37 +1,44 @@
-/* 风眼 · 演示数据
-   字段结构对齐真实台风 API 常见字段（中央气象台 / 浙江台风路径系统），
-   v0.2 接入真实数据源时仅需替换本文件（或改为定时生成的静态 JSON）。 */
+/* 风眼 · 内置降级数据
+   与 data/typhoon.json（由 scripts/fetch-typhoon.mjs 生成）完全同构。
+   仅在实时数据加载失败（如 file:// 直接打开、断网）时作为演示兜底。 */
 
-const TYPHOON_DATA = {
+const DEMO_DATA = {
   demo: true,
   updatedAt: "2026-07-10 14:00",
-  name: "木兰",
-  enName: "MULAN",
-  code: "2607",
-  level: "台风（13级）",
-  warning: "orange", // 演示默认预警等级：blue / yellow / orange / red
-  summary: "预计 7 月 11 日傍晚前后在广东深圳到汕尾一带沿海登陆，登陆时强度为台风级。",
-  now: {
-    windLevel: 13,
-    windSpeed: 40,      // m/s
-    pressure: 955,      // hPa
-    moveDir: "西北",
-    moveSpeed: 18,      // km/h
-    r7: 260,            // 七级风圈半径 km
-    r10: 100,           // 十级风圈半径 km
-    position: "南海东北部海面，距广东省深圳市东南方向约 320 公里",
-  },
-  /* 路径点：phase = past（已过）/ now（当前）/ forecast（预报） */
-  track: [
-    { t: "07-08 08时", lat: 17.8, lng: 124.5, wind: 9,  phase: "past" },
-    { t: "07-08 20时", lat: 18.6, lng: 122.8, wind: 10, phase: "past" },
-    { t: "07-09 08时", lat: 19.6, lng: 120.8, wind: 11, phase: "past" },
-    { t: "07-09 20时", lat: 20.7, lng: 118.4, wind: 12, phase: "past" },
-    { t: "07-10 08时", lat: 21.4, lng: 116.3, wind: 13, phase: "past" },
-    { t: "07-10 14时", lat: 21.8, lng: 114.9, wind: 13, phase: "now" },
-    { t: "07-11 08时", lat: 22.2, lng: 114.3, wind: 12, phase: "forecast" },
-    { t: "07-11 20时", lat: 22.9, lng: 113.5, wind: 10, phase: "forecast" },
-    { t: "07-12 08时", lat: 23.8, lng: 112.4, wind: 8,  phase: "forecast" },
+  source: "内置演示数据",
+  sourceUrl: null,
+  typhoons: [
+    {
+      name: "木兰",
+      enName: "MULAN",
+      code: "2607",
+      level: "台风（13级）",
+      summary: "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      nearCoast: true,
+      now: {
+        windLevel: 13,
+        windSpeed: 40,      // m/s
+        pressure: 955,      // hPa
+        moveDir: "西北",
+        moveSpeed: 18,      // km/h
+        r7: 260,            // 七级风圈半径 km
+        r10: 100,           // 十级风圈半径 km
+        position: "中心位于南海东北部海面，距广东省深圳市东南方向约 320 公里",
+        time: "07-10 14时",
+      },
+      /* phase = past（已过）/ now（当前）/ forecast（预报） */
+      track: [
+        { t: "07-08 08时", lat: 17.8, lng: 124.5, wind: 9,  strong: "热带风暴",   phase: "past" },
+        { t: "07-08 20时", lat: 18.6, lng: 122.8, wind: 10, strong: "强热带风暴", phase: "past" },
+        { t: "07-09 08时", lat: 19.6, lng: 120.8, wind: 11, strong: "强热带风暴", phase: "past" },
+        { t: "07-09 20时", lat: 20.7, lng: 118.4, wind: 12, strong: "台风",       phase: "past" },
+        { t: "07-10 08时", lat: 21.4, lng: 116.3, wind: 13, strong: "台风",       phase: "past" },
+        { t: "07-10 14时", lat: 21.8, lng: 114.9, wind: 13, strong: "台风",       phase: "now" },
+        { t: "07-11 08时", lat: 22.2, lng: 114.3, wind: 12, strong: "台风",       phase: "forecast" },
+        { t: "07-11 20时", lat: 22.9, lng: 113.5, wind: 10, strong: "强热带风暴", phase: "forecast" },
+        { t: "07-12 08时", lat: 23.8, lng: 112.4, wind: 8,  strong: "热带风暴",   phase: "forecast" },
+      ],
+    },
   ],
 };
 
