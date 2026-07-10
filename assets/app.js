@@ -117,11 +117,20 @@
     var ph = el("span", "ph", PHASE_TEXT[p.data.phase] || "");
     tooltip.appendChild(ph);
     tooltip.hidden = false;
-    var dot = g.querySelector("circle");
+    /* 锚定实心点而非动画光晕，光晕在缩放中会导致定位漂移 */
+    var dot = g.querySelector("circle.dot") || g.querySelector("circle");
     var r = dot.getBoundingClientRect();
     var wr = mapWrap.getBoundingClientRect();
-    tooltip.style.left = (r.left - wr.left + r.width / 2) + "px";
-    tooltip.style.top = (r.top - wr.top) + "px";
+    var cx = r.left - wr.left + r.width / 2;
+    var cy = r.top - wr.top;
+    /* map-wrap 为 overflow:hidden，需水平钳位、上缘翻转，避免边缘点的提示被裁切 */
+    var half = tooltip.offsetWidth / 2;
+    cx = Math.max(half + 6, Math.min(cx, wr.width - half - 6));
+    var flipBelow = cy < tooltip.offsetHeight + 18;
+    tooltip.classList.toggle("below", flipBelow);
+    if (flipBelow) cy = r.top - wr.top + r.height;
+    tooltip.style.left = cx + "px";
+    tooltip.style.top = cy + "px";
   }
   function hideTip() {
     tooltip.hidden = true;
@@ -208,7 +217,9 @@
       });
       var span = el("span", null, it.text);
       if (it.from !== currentLevel) {
-        span.appendChild(el("i", "from-lower", PLANS[it.from].short + "级已列"));
+        var badge = el("i", "from-lower", PLANS[it.from].short + "级");
+        badge.title = "来自" + PLANS[it.from].name + "的事项";
+        span.appendChild(badge);
       }
       label.appendChild(input);
       label.appendChild(span);

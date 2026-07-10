@@ -157,7 +157,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .tp:hover circle.dot, .tp.is-active circle.dot { fill: var(--accent-soft); }
 .tp-now-halo { fill: none; stroke: var(--accent); stroke-width: 2; opacity: .6; animation: halo 2.2s ease-out infinite; transform-origin: center; transform-box: fill-box; }
 @keyframes halo { 0% { transform: scale(.5); opacity: .7; } 100% { transform: scale(2.1); opacity: 0; } }
-.tp-now-core { fill: var(--accent); }
+/* 当前点核心：写在 .tp circle.dot 与 hover 规则之后并抬高优先级，避免被白底填充覆盖 */
+.tp circle.dot.tp-now-core, .tp:hover circle.dot.tp-now-core { fill: var(--accent); }
 .map-tooltip {
   position: absolute; z-index: 5; pointer-events: none;
   background: var(--paper-2); border: 1px solid var(--line); border-radius: 10px;
@@ -165,6 +166,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   padding: .5rem .8rem; font-size: .8rem; line-height: 1.55; white-space: nowrap;
   transform: translate(-50%, calc(-100% - 12px));
 }
+.map-tooltip.below { transform: translate(-50%, 14px); }
 .map-tooltip b { font-family: var(--serif); font-size: .92rem; }
 .map-tooltip .ph { color: var(--ink-soft); }
 .map-legend {
@@ -222,7 +224,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   accent-color: var(--lv); cursor: pointer;
 }
 .checklist input:checked + span { color: var(--ink-soft); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--lv) 55%, transparent); }
-.checklist .from-lower { font-size: .72rem; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 999px; padding: 0 .5em; margin-left: .4em; white-space: nowrap; }
+.checklist .from-lower { font-size: .72rem; font-style: normal; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 999px; padding: 0 .5em; margin-left: .4em; white-space: nowrap; }
 .plan-tone { margin: 1.1rem 0 0; font-size: .9rem; color: var(--ink-soft); font-style: italic; text-align: right; }
 .plan-tone.done { color: var(--lv); font-weight: 600; font-style: normal; }
 
