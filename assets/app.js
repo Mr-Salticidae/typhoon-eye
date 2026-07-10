@@ -211,7 +211,7 @@
       var card = el("div", "stat");
       card.appendChild(el("p", "k", d.k));
       var v = el("p", "v", String(d.v));
-      if (d.unit) v.appendChild(el("small", null, d.unit));
+      if (d.unit && d.v !== "—") v.appendChild(el("small", null, d.unit));
       card.appendChild(v);
       card.appendChild(el("p", "sub", d.sub));
       statsGrid.appendChild(card);
