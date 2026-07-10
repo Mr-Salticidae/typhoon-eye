@@ -1,0 +1,53 @@
+name: build-bilibili-toy-package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "assets/**"
+      - "data/**"
+      - ".github/workflows/build-toy-package.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-toy-package
+  cancel-in-progress: true
+
+jobs:
+  package:
+    if: github.actor != 'github-actions[bot]' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Build standard Toy ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f typhoon-eye-bilibili-toy.zip
+          zip -r -9 typhoon-eye-bilibili-toy.zip index.html assets data \
+            -x "*.DS_Store" "*/Thumbs.db"
+          unzip -t typhoon-eye-bilibili-toy.zip
+          unzip -l typhoon-eye-bilibili-toy.zip | grep -F "assets/toy-runtime.js"
+
+      - name: Commit refreshed package
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add typhoon-eye-bilibili-toy.zip
+          if git diff --cached --quiet; then
+            echo "package unchanged"
+            exit 0
+          fi
+          git commit -m "toy: rebuild package with 30-minute refresh and nine-dash overlay [skip ci]"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
