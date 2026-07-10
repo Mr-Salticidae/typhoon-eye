@@ -1,0 +1,3 @@
+name: Bilibili Toy Publisher
+description: Validate static assets, generate a Toy preview, and create or update only after explicit preview approval.
+default_prompt: Use the bundled Toy CLI with --uid auto. Check assets first, preserve toy.yaml identity during updates, and never submit create/update before the user approves the preview.
