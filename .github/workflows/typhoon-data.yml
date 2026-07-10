@@ -1,38 +1,72 @@
-name: update-typhoon-data
+name: update-typhoon-data-primary
 
 on:
   schedule:
-    - cron: "23,53 * * * *"   # 每 30 分钟抓取一次（UTC，错开整点高峰；改分钟数以重新注册装死的 schedule）
+    - cron: "11,41 * * * *"   # 主任务：UTC 每小时 11/41 分，严格 30 分钟间隔并避开整点高峰
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
-  group: update-data
+  group: typhoon-data-write
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Fetch typhoon data
-        run: node scripts/fetch-typhoon.mjs
-
-      - name: Commit if changed
+      - name: Fetch typhoon data with retries
+        shell: bash
         run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            if node scripts/fetch-typhoon.mjs; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Data fetch failed after 3 attempts" >&2
+              exit 1
+            fi
+            sleep $((attempt * 10))
+          done
+
+      - name: Validate generated data
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const data = JSON.parse(fs.readFileSync('data/typhoon.json', 'utf8'));
+          if (!data || typeof data.updatedAt !== 'string' || !Array.isArray(data.typhoons)) {
+            throw new Error('Invalid data/typhoon.json structure');
+          }
+          for (const item of data.typhoons) {
+            if (!item || !item.now || !Array.isArray(item.track)) {
+              throw new Error('Invalid typhoon item');
+            }
+          }
+          console.log(`validated ${data.typhoons.length} active typhoon(s) @ ${data.updatedAt}`);
+          NODE
+
+      - name: Commit refreshed data
+        shell: bash
+        run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/typhoon.json
           if git diff --cached --quiet; then
             echo "no change"
-          else
-            git commit -m "data: 更新台风实况 $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            exit 0
           fi
+          git commit -m "data: 30分钟主任务更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
