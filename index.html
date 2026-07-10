@@ -67,10 +67,10 @@
     <div class="sec-head">
       <p class="sec-kicker"><i>02</i>路径</p>
       <h2>它从哪来、往哪去</h2>
-      <p class="sec-desc">示意图仅表达空间趋势，不用于导航或撤离路线判断。悬停或点按路径点可查看逐时强度。</p>
+      <p class="sec-desc">示意图仅表达空间趋势，不用于导航或撤离路线判断。悬停或点按路径点可查看逐时强度；南海诸岛与九段线在图内插图中显示。</p>
     </div>
     <div class="map-wrap" id="mapWrap">
-      <svg id="trackMap" viewBox="0 0 800 560" role="img" aria-label="台风路径示意图：历史路径为实线，预报路径为虚线">
+      <svg id="trackMap" viewBox="0 0 800 560" role="img" aria-label="台风路径示意图：历史路径为实线，预报路径为虚线，并含南海诸岛九段线示意插图">
         <g id="baseLayer" aria-hidden="true"></g><!-- 简化海岸线（示意），由 app.js 按经纬度绘制 -->
         <g class="cities" id="cityLayer" aria-hidden="true"></g>
         <g id="trackLayer"></g>
@@ -81,7 +81,7 @@
         <span><i class="lg-dash"></i>预报路径</span>
         <span><i class="lg-now"></i>当前位置</span>
       </div>
-      <span class="map-note" aria-hidden="true">海岸线为示意</span>
+      <span class="map-note" aria-hidden="true">海岸线及九段线为示意</span>
     </div>
   </section>
 
@@ -129,11 +129,12 @@
   <p class="footer-brand">风眼<span>TYPHOON EYE</span></p>
   <p class="footer-line">信息看得懂，准备做得到。愿每一场风，都只是路过。</p>
   <p class="footer-meta" id="footerMeta">
-    v0.2 · 数据每 30 分钟自动更新，异常时降级为缓存或演示数据 · <a href="https://github.com/Mr-Salticidae/typhoon-eye" target="_blank" rel="noopener">开源于 GitHub</a> · MIT License
+    v0.3 · 在线数据每 30 分钟自动检查，异常时保留缓存或演示数据 · <a href="https://github.com/Mr-Salticidae/typhoon-eye" target="_blank" rel="noopener">开源于 GitHub</a> · MIT License
   </p>
 </footer>
 
 <script src="assets/data.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/toy-runtime.js"></script>
 </body>
 </html>
