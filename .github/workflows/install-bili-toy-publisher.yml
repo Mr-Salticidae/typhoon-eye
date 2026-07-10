@@ -1,0 +1,144 @@
+name: install-bili-toy-publisher
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/install-bili-toy-publisher.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: install-bili-toy-publisher
+  cancel-in-progress: false
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download and install official skill
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          import base64
+          import html as html_lib
+          import io
+          import re
+          import shutil
+          import urllib.parse
+          import urllib.request
+          import zipfile
+          from pathlib import Path
+
+          PAGE_URL = "https://www.bilibili.com/toy/toy-upload-update-playbook/assets/install-bili-toy-publisher.html"
+          TARGET = Path(".agents/skills/bili-toy-publisher")
+          UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+
+          def get(url: str) -> bytes:
+              req = urllib.request.Request(url, headers={"User-Agent": UA, "Referer": PAGE_URL})
+              with urllib.request.urlopen(req, timeout=45) as response:
+                  return response.read()
+
+          page_bytes = get(PAGE_URL)
+          page = page_bytes.decode("utf-8", errors="replace")
+          zip_bytes = None
+          source = None
+
+          href_match = re.search(
+              r'''href\s*=\s*["']([^"']*bili-toy-publisher-skill\.zip(?:\?[^"']*)?)["']''',
+              page,
+              flags=re.IGNORECASE,
+          )
+          if href_match:
+              zip_url = urllib.parse.urljoin(PAGE_URL, html_lib.unescape(href_match.group(1)))
+              try:
+                  candidate = get(zip_url)
+                  if candidate.startswith(b"PK"):
+                      zip_bytes = candidate
+                      source = zip_url
+              except Exception as exc:
+                  print(f"Direct ZIP download failed, using embedded base64 fallback: {exc}")
+
+          if zip_bytes is None:
+              patterns = [
+                  r'''<[^>]*\bid=["']skillZipBase64["'][^>]*>(.*?)</[^>]+>''',
+                  r'''<[^>]*\bid=["']skillZipBase64["'][^>]*\bvalue=["']([^"']+)["'][^>]*>''',
+                  r'''<[^>]*\bvalue=["']([^"']+)["'][^>]*\bid=["']skillZipBase64["'][^>]*>''',
+              ]
+              encoded = None
+              for pattern in patterns:
+                  match = re.search(pattern, page, flags=re.IGNORECASE | re.DOTALL)
+                  if match:
+                      encoded = html_lib.unescape(match.group(1))
+                      break
+              if not encoded:
+                  raise RuntimeError("Could not find ZIP link or #skillZipBase64 in official installer page")
+              encoded = re.sub(r"^data:[^,]+,", "", encoded.strip())
+              encoded = re.sub(r"\s+", "", encoded)
+              zip_bytes = base64.b64decode(encoded, validate=True)
+              source = PAGE_URL + "#skillZipBase64"
+
+          if not zip_bytes.startswith(b"PK"):
+              raise RuntimeError("Downloaded payload is not a ZIP archive")
+
+          work = Path(".tmp-bili-toy-publisher")
+          if work.exists():
+              shutil.rmtree(work)
+          work.mkdir(parents=True)
+
+          with zipfile.ZipFile(io.BytesIO(zip_bytes)) as archive:
+              bad = archive.testzip()
+              if bad:
+                  raise RuntimeError(f"Corrupt ZIP entry: {bad}")
+              for info in archive.infolist():
+                  resolved = (work / info.filename).resolve()
+                  if work.resolve() not in resolved.parents and resolved != work.resolve():
+                      raise RuntimeError(f"Unsafe ZIP path: {info.filename}")
+              archive.extractall(work)
+
+          candidates = [p.parent for p in work.rglob("SKILL.md") if p.parent.name == "bili-toy-publisher"]
+          if not candidates:
+              candidates = [p.parent for p in work.rglob("SKILL.md")]
+          if len(candidates) != 1:
+              raise RuntimeError(f"Expected one skill root, found: {candidates}")
+          skill_root = candidates[0]
+
+          if TARGET.exists():
+              shutil.rmtree(TARGET)
+          TARGET.parent.mkdir(parents=True, exist_ok=True)
+          shutil.copytree(skill_root, TARGET)
+
+          skill_md = TARGET / "SKILL.md"
+          publish_sh = TARGET / "scripts/publish.sh"
+          if not skill_md.is_file() or not publish_sh.is_file():
+              raise RuntimeError("Official package is missing SKILL.md or scripts/publish.sh")
+          publish_sh.chmod(publish_sh.stat().st_mode | 0o111)
+
+          print(f"Installed official skill from {source}")
+          print(f"SKILL.md bytes: {skill_md.stat().st_size}")
+          print(f"publish.sh bytes: {publish_sh.stat().st_size}")
+          shutil.rmtree(work)
+          PY
+
+      - name: Commit installed skill
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .agents/skills/bili-toy-publisher
+          if git diff --cached --quiet; then
+            echo "Official skill is already current"
+            exit 0
+          fi
+          git commit -m "chore: install/update official bili-toy-publisher skill"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
