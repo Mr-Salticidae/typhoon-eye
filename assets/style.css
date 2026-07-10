@@ -149,6 +149,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .stat .v { font-family: var(--serif); font-size: 1.7rem; font-weight: 700; margin: 0; line-height: 1.2; font-variant-numeric: tabular-nums; }
 .stat .v small { font-family: var(--sans); font-size: .72rem; font-weight: 400; color: var(--ink-soft); margin-left: .25em; letter-spacing: .04em; }
 .stat .sub { margin: .2rem 0 0; font-size: .78rem; color: var(--ink-soft); }
+/* 移动方向卡片里的小罗盘 */
+.stat .compass { width: 1.5rem; height: 1.5rem; vertical-align: -0.22em; margin-left: .5rem; }
+.compass-ring { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.compass-north { stroke: var(--ink-soft); stroke-width: 1.5; stroke-linecap: round; }
+.compass-needle { fill: var(--accent); }
 
 /* 路径图 */
 .map-wrap {

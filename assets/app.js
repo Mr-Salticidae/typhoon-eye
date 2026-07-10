@@ -189,6 +189,34 @@
   /* ---------- 实况面板 ---------- */
   function fmt(v, dash) { return (v === null || v === undefined || v === "") ? (dash || "—") : v; }
 
+  /* 16 方位 → 方位角（自正北顺时针） */
+  var DIR_DEG = {
+    "北": 0, "北北东": 22.5, "东北": 45, "东北东": 67.5,
+    "东": 90, "东南东": 112.5, "东南": 135, "南南东": 157.5,
+    "南": 180, "南南西": 202.5, "西南": 225, "西南西": 247.5,
+    "西": 270, "西北西": 292.5, "西北": 315, "北北西": 337.5,
+  };
+  /* 罗盘术语 → 白话："北北西" → "接近正北、略偏西" */
+  function dirPlain(d) {
+    if (typeof d !== "string" || DIR_DEG[d] === undefined) return null;
+    if (d.length === 1) return "朝正" + d + "方向移动";
+    if (d.length === 2) return "朝" + d + "方向移动";
+    return "接近正" + d[0] + "、略偏" + (d[0] === d[1] ? d[2] : d[1]);
+  }
+  /* 小罗盘：外圈 + 指北刻度 + 按方位角旋转的指针 */
+  function compassEl(deg) {
+    var svg = svgEl("svg", { class: "compass", viewBox: "0 0 24 24", "aria-label": "方位角约 " + deg + " 度" });
+    svg.setAttribute("role", "img");
+    svg.appendChild(svgEl("circle", { cx: 12, cy: 12, r: 10.5, class: "compass-ring" }));
+    svg.appendChild(svgEl("line", { x1: 12, y1: 1.5, x2: 12, y2: 4, class: "compass-north" }));
+    svg.appendChild(svgEl("path", {
+      d: "M12 4.5 L15.2 15.5 L12 13.4 L8.8 15.5 Z",
+      class: "compass-needle",
+      transform: "rotate(" + deg + " 12 12)",
+    }));
+    return svg;
+  }
+
   function renderTyphoon(t) {
     $("tyCode").textContent = t.code;
     $("tyEnName").textContent = t.enName;
@@ -200,7 +228,7 @@
     var statDefs = [
       { k: "最大风力", v: fmt(t.now.windLevel), unit: "级", sub: "风速约 " + fmt(t.now.windSpeed) + " 米/秒" },
       { k: "中心气压", v: fmt(t.now.pressure), unit: "hPa", sub: "数值越低，台风越强" },
-      { k: "移动方向", v: fmt(t.now.moveDir), unit: "", sub: "以中心移动趋势为准" },
+      { k: "移动方向", v: fmt(t.now.moveDir), unit: "", sub: dirPlain(t.now.moveDir) || "以中心移动趋势为准", compass: DIR_DEG[t.now.moveDir] },
       { k: "移动速度", v: fmt(t.now.moveSpeed), unit: "km/h", sub: "约为骑行速度" },
       { k: "七级风圈", v: fmt(t.now.r7), unit: "km", sub: "圈内阵风明显" },
       { k: "十级风圈", v: fmt(t.now.r10), unit: "km", sub: "圈内破坏力强" },
@@ -212,6 +240,7 @@
       card.appendChild(el("p", "k", d.k));
       var v = el("p", "v", String(d.v));
       if (d.unit && d.v !== "—") v.appendChild(el("small", null, d.unit));
+      if (d.compass !== undefined) v.appendChild(compassEl(d.compass));
       card.appendChild(v);
       card.appendChild(el("p", "sub", d.sub));
       statsGrid.appendChild(card);
