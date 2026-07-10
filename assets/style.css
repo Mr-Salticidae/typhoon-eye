@@ -238,7 +238,15 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   accent-color: var(--lv); cursor: pointer;
 }
 .checklist input:checked + span { color: var(--ink-soft); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--lv) 55%, transparent); }
-.checklist .from-lower { font-size: .72rem; font-style: normal; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 999px; padding: 0 .5em; margin-left: .4em; white-space: nowrap; }
+/* 低级事项徽标：直接着对应预警色，等级一眼可辨 */
+.checklist .from-lower {
+  --flv: var(--ink-soft);
+  font-size: .72rem; font-style: normal; color: var(--flv);
+  border: 1px solid color-mix(in srgb, var(--flv) 50%, transparent);
+  background: color-mix(in srgb, var(--flv) 9%, transparent);
+  border-radius: 999px; padding: 0 .5em; margin-left: .4em; white-space: nowrap;
+}
+.checklist input:checked + span .from-lower { opacity: .45; }
 .plan-tone { margin: 1.1rem 0 0; font-size: .9rem; color: var(--ink-soft); font-style: italic; text-align: right; }
 .plan-tone.done { color: var(--lv); font-weight: 600; font-style: normal; }
 

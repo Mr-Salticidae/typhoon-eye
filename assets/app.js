@@ -356,6 +356,7 @@
       if (it.from !== currentLevel) {
         var badge = el("i", "from-lower", PLANS[it.from].short + "级");
         badge.title = "来自" + PLANS[it.from].name + "的事项";
+        badge.style.setProperty("--flv", "var(--w-" + it.from + ")");
         span.appendChild(badge);
       }
       label.appendChild(input);
