@@ -1,0 +1,87 @@
+name: toy-preview-only
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/toy-preview.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: toy-preview-only
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      COOKIE_VALUE: ${{ secrets.BILIBILI_COOKIE || secrets.TOY_COOKIE }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate static resources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 .agents/skills/bili-toy-publisher/scripts/toy_doctor.py . --require-root-index | tee /tmp/toy-doctor.log
+
+      - name: Generate Toy preview only
+        id: preview
+        shell: bash
+        run: |
+          set +e
+          mkdir -p .toy
+          if [ -z "${COOKIE_VALUE:-}" ]; then
+            cat > .toy/preview-result.json <<'JSON'
+          {
+            "status": "cookie_missing",
+            "message": "GitHub secret BILIBILI_COOKIE or TOY_COOKIE is not configured. No Toy API call was made."
+          }
+          JSON
+            exit 0
+          fi
+
+          printf '%s' "$COOKIE_VALUE" > "$HOME/.bilibili_cookie"
+          chmod 600 "$HOME/.bilibili_cookie"
+          output="$(bash .agents/skills/bili-toy-publisher/scripts/publish.sh preview --dir . --uid auto 2>&1)"
+          code=$?
+          rm -f "$HOME/.bilibili_cookie"
+          printf '%s\n' "$output" | sed -E 's/(SESSDATA|bili_jct|DedeUserID__ckMd5)=[^;[:space:]]+/\1=[REDACTED]/g'
+
+          OUTPUT="$output" EXIT_CODE="$code" python3 <<'PY'
+          import json, os, re
+          output = os.environ.get('OUTPUT', '')
+          code = int(os.environ.get('EXIT_CODE', '1'))
+          match = re.search(r'Preview URL:\s*(\S+)', output)
+          result = {
+              'status': 'preview_ready' if code == 0 and match else 'preview_failed',
+              'preview_url': match.group(1) if match else None,
+              'exit_code': code,
+              'message': 'Preview generated; create/update was not called.' if code == 0 and match else 'Preview command failed; create/update was not called.',
+          }
+          with open('.toy/preview-result.json', 'w', encoding='utf-8') as f:
+              json.dump(result, f, ensure_ascii=False, indent=2)
+              f.write('\n')
+          PY
+          exit 0
+
+      - name: Commit safe preview result
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .toy/preview-result.json
+          if git diff --cached --quiet; then
+            echo "Preview result unchanged"
+            exit 0
+          fi
+          git commit -m "toy: record preview-only result [skip ci]"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
