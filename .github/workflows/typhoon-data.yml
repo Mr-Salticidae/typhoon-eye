@@ -2,7 +2,7 @@ name: update-typhoon-data-primary
 
 on:
   schedule:
-    - cron: "11,41 * * * *"   # 主任务：UTC 每小时 11/41 分，严格 30 分钟间隔并避开整点高峰
+    - cron: "7,22,37,52 * * * *"   # 主任务：每 15 分钟一班并避开整点高峰；GitHub 偶发丢班时由守护任务补偿
   workflow_dispatch: {}
 
 permissions:
@@ -67,6 +67,12 @@ jobs:
             echo "no change"
             exit 0
           fi
-          git commit -m "data: 30分钟主任务更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "data: 15分钟主任务更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Purge jsDelivr mirror cache
+        shell: bash
+        run: |
+          curl -fsS --max-time 20 "https://purge.jsdelivr.net/gh/Mr-Salticidae/typhoon-eye@main/data/typhoon.json" \
+            || echo "jsDelivr purge failed (non-fatal)"

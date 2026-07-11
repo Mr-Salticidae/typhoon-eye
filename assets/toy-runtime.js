@@ -1,11 +1,11 @@
 /* 风眼 · Toy 运行时增强
-   1) 长时间停留时每 30 分钟检查一次在线数据，有新数据则刷新页面并恢复滚动位置；
+   1) 长时间停留时每 15 分钟检查一次在线数据，有新数据则刷新页面并恢复滚动位置；
    2) 在路径图中加入可随 SVG 缩放的南海诸岛九段线示意插图。 */
 (function () {
   "use strict";
 
   var LIVE_DATA_URL = "https://mr-salticidae.github.io/typhoon-eye/data/typhoon.json";
-  var REFRESH_INTERVAL = 30 * 60 * 1000;
+  var REFRESH_INTERVAL = 15 * 60 * 1000;
   var LAST_CHECK_KEY = "typhoon-eye:last-online-check";
   var SCROLL_KEY = "typhoon-eye:restore-scroll";
   var refreshTimer = null;
@@ -34,6 +34,10 @@
   }
 
   function fetchLatest() {
+    /* app.js 暴露的多镜像取数逻辑优先；不可用时回退单源请求 */
+    if (typeof window.__typhoonEyeFetchLatest === "function") {
+      return window.__typhoonEyeFetchLatest();
+    }
     var controller = typeof AbortController === "function" ? new AbortController() : null;
     var timeout = setTimeout(function () {
       if (controller) controller.abort();

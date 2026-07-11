@@ -335,7 +335,15 @@
     renderPlan();
   }
 
-  var LIVE_DATA_URL = "https://mr-salticidae.github.io/typhoon-eye/data/typhoon.json";
+  /* 在线数据源：多镜像并行请求，取 updatedAt 最新者。
+     Pages 为主源；jsDelivr 镜像应对部分网络无法访问 github.io 的情况，
+     Actions 在每次数据更新后会主动清理 jsDelivr 缓存；raw 为最后兜底。 */
+  var DATA_SOURCES = [
+    "https://mr-salticidae.github.io/typhoon-eye/data/typhoon.json",
+    "https://cdn.jsdelivr.net/gh/Mr-Salticidae/typhoon-eye@main/data/typhoon.json",
+    "https://fastly.jsdelivr.net/gh/Mr-Salticidae/typhoon-eye@main/data/typhoon.json",
+    "https://raw.githubusercontent.com/Mr-Salticidae/typhoon-eye/main/data/typhoon.json"
+  ];
 
   function validData(d) {
     return !!d && typeof d.updatedAt === "string" && Array.isArray(d.typhoons) &&
@@ -357,8 +365,38 @@
       .finally(function () { clearTimeout(timer); });
   }
 
+  /* 并行请求全部镜像；首个成功后再留 800ms 收集更快镜像里可能更新的数据，
+     然后取 updatedAt 最新者返回。updatedAt 为"YYYY-MM-DD HH:mm"，字典序即时序。 */
+  function fetchLatestOnline() {
+    return new Promise(function (resolve, reject) {
+      var results = [];
+      var pending = DATA_SOURCES.length;
+      var graceTimer = null;
+      var done = false;
+      function settle() {
+        if (done) return;
+        var best = null;
+        results.forEach(function (d) { if (!best || d.updatedAt > best.updatedAt) best = d; });
+        if (best) { done = true; resolve(best); }
+        else if (pending === 0) { done = true; reject(new Error("all data sources failed")); }
+      }
+      DATA_SOURCES.forEach(function (url) {
+        fetchJSON(url, true)
+          .then(function (d) { results.push(d); }, function () { /* 单源失败忽略 */ })
+          .then(function () {
+            pending--;
+            if (pending === 0) { clearTimeout(graceTimer); settle(); return; }
+            if (results.length === 1 && !graceTimer) graceTimer = setTimeout(settle, 800);
+          });
+      });
+    });
+  }
+
+  /* 供 toy-runtime.js 的定时刷新复用同一套多镜像逻辑 */
+  window.__typhoonEyeFetchLatest = fetchLatestOnline;
+
   function boot() {
-    fetchJSON(LIVE_DATA_URL, true)
+    fetchLatestOnline()
       .then(function (d) { init(d, "live"); })
       .catch(function () {
         return fetchJSON("data/typhoon.json", false)
@@ -454,12 +492,76 @@
   }
 
   /* ---------- 应急信息 ---------- */
+  /* B 站 Toy 环境中页面运行在沙箱 iframe 内，tel: 的本框架导航会被静默拦截。
+     检测到 iframe 时依次尝试：顶层导航（沙箱授予用户手势顶层导航权）→
+     弹窗唤起 → 本框架导航；同时始终复制号码并提示，保证拨号可达。 */
+  var IN_FRAME = (function () {
+    try { return window.self !== window.top; } catch (e) { return true; }
+  })();
+
+  function legacyCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.cssText = "position:fixed;left:-9999px;top:0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { /* ignore */ }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text).then(function () { return true; }, function () { return legacyCopy(text); });
+    }
+    return Promise.resolve(legacyCopy(text));
+  }
+
+  var toastTimer = null;
+  function showToast(msg) {
+    var t = $("tyToast");
+    if (!t) {
+      t = el("div", "ty-toast");
+      t.id = "tyToast";
+      t.setAttribute("role", "status");
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.classList.add("show");
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.classList.remove("show"); }, 3200);
+  }
+
+  function dialNumber(num) {
+    var telUrl = "tel:" + num;
+    var jumped = false;
+    try { window.top.location.href = telUrl; jumped = true; } catch (e) { /* 沙箱拒绝则继续 */ }
+    if (!jumped) {
+      try { jumped = !!window.open(telUrl, "_blank"); } catch (e2) { /* ignore */ }
+    }
+    if (!jumped) {
+      try { window.location.href = telUrl; } catch (e3) { /* ignore */ }
+    }
+    copyText(num).then(function (copied) {
+      showToast(copied
+        ? "正在为你唤起拨号；号码 " + num + " 已复制，未弹出时可粘贴拨打"
+        : "如未唤起拨号，请手动拨打 " + num);
+    });
+  }
+
   var contactGrid = $("contactGrid");
   CONTACTS.forEach(function (c) {
     var a = el("a", "contact");
     a.href = "tel:" + c.num;
     a.appendChild(el("span", "num", c.num));
     a.appendChild(el("span", "lb", c.label));
+    a.addEventListener("click", function (ev) {
+      if (!IN_FRAME) return; /* 顶层环境交给浏览器原生 tel: 处理 */
+      ev.preventDefault();
+      dialNumber(c.num);
+    });
     contactGrid.appendChild(a);
   });
   var sourceList = $("sourceList");

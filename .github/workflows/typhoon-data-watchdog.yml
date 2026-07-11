@@ -2,7 +2,7 @@ name: update-typhoon-data-watchdog
 
 on:
   schedule:
-    - cron: "26,56 * * * *"   # 主任务后 15 分钟补查；仅数据过期时抓取
+    - cron: "14,29,44,59 * * * *"   # 每班主任务后 7 分钟补查；仅数据过期时抓取
   workflow_dispatch: {}
 
 permissions:
@@ -41,7 +41,7 @@ jobs:
               const utc = Date.UTC(+match[1], +match[2] - 1, +match[3], +match[4] - 8, +match[5]);
               const ageMinutes = (Date.now() - utc) / 60000;
               console.log(`current snapshot age: ${ageMinutes.toFixed(1)} minutes`);
-              stale = ageMinutes >= 40 || ageMinutes < -5;
+              stale = ageMinutes >= 20 || ageMinutes < -5;
             }
           } catch (error) {
             console.warn(`freshness check failed: ${error.message}`);
@@ -91,6 +91,13 @@ jobs:
             echo "no change"
             exit 0
           fi
-          git commit -m "data: 30分钟守护任务补偿更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "data: 守护任务补偿更新 $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Purge jsDelivr mirror cache
+        if: steps.freshness.outputs.stale == 'true'
+        shell: bash
+        run: |
+          curl -fsS --max-time 20 "https://purge.jsdelivr.net/gh/Mr-Salticidae/typhoon-eye@main/data/typhoon.json" \
+            || echo "jsDelivr purge failed (non-fatal)"

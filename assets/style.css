@@ -265,6 +265,16 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .contact:hover { transform: translateY(-3px); border-color: var(--accent); text-decoration: none; box-shadow: 0 12px 28px -14px rgba(var(--shadow), .4); }
 .contact .num { display: block; font-family: var(--serif); font-size: 1.6rem; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
 .contact .lb { display: block; font-size: .8rem; color: var(--ink-soft); margin-top: .15rem; }
+.ty-toast {
+  position: fixed; left: 50%; bottom: 9%; z-index: 99;
+  transform: translateX(-50%) translateY(8px);
+  max-width: 86vw; padding: .6rem 1rem; border-radius: 10px;
+  background: var(--ink); color: var(--paper);
+  font-family: var(--sans); font-size: .82rem; line-height: 1.5; text-align: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.ty-toast.show { opacity: .96; transform: translateX(-50%) translateY(0); }
 .sources { display: flex; flex-wrap: wrap; gap: .6rem; }
 .source-link {
   font-size: .88rem; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 999px;
