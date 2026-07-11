@@ -85,3 +85,5 @@ jobs:
           git commit -m "toy: record preview-only result [skip ci]"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
+
+# Trigger marker: 2026-07-11
