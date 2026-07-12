@@ -182,8 +182,46 @@
     var width = Math.min(vb.width * 0.25, 168 * scale);
     var height = width * 1.03;
     var pad = Math.max(10, 16 * scale);
-    var x = vb.x + vb.width - width - pad;
-    var y = vb.y + pad;
+
+    /* 收集路径层坐标(轨迹点 + 折线顶点),在四角中挑与路径重叠最少的角放插图,
+       避免盖住台风路径。底部两角叠着 HTML 图例/角注,给固定罚分,仅在顶部两角
+       都被路径占据时才退去底部。 */
+    var trackPts = [];
+    var track = document.getElementById("trackLayer");
+    if (track) {
+      var circles = track.querySelectorAll("circle");
+      for (var ci = 0; ci < circles.length; ci++) {
+        trackPts.push([+circles[ci].getAttribute("cx"), +circles[ci].getAttribute("cy")]);
+      }
+      var lines = track.querySelectorAll("polyline");
+      for (var li = 0; li < lines.length; li++) {
+        var raw = (lines[li].getAttribute("points") || "").replace(/,/g, " ").split(/\s+/);
+        for (var pi = 0; pi + 1 < raw.length; pi += 2) {
+          var px = +raw[pi], py = +raw[pi + 1];
+          if (isFinite(px) && isFinite(py)) trackPts.push([px, py]);
+        }
+      }
+    }
+    var margin = pad * 0.75;
+    var candidates = [
+      { x: vb.x + vb.width - width - pad, y: vb.y + pad, penalty: 0 },                       /* 右上(默认) */
+      { x: vb.x + pad, y: vb.y + pad, penalty: 1 },                                          /* 左上 */
+      { x: vb.x + vb.width - width - pad, y: vb.y + vb.height - height - pad, penalty: 3 },  /* 右下(角注) */
+      { x: vb.x + pad, y: vb.y + vb.height - height - pad, penalty: 3 }                      /* 左下(图例) */
+    ];
+    var best = candidates[0], bestScore = Infinity;
+    for (var ki = 0; ki < candidates.length; ki++) {
+      var c = candidates[ki], hits = 0;
+      for (var ti = 0; ti < trackPts.length; ti++) {
+        var tp = trackPts[ti];
+        if (tp[0] >= c.x - margin && tp[0] <= c.x + width + margin &&
+            tp[1] >= c.y - margin && tp[1] <= c.y + height + margin) hits++;
+      }
+      var score = hits * 10 + c.penalty;
+      if (score < bestScore) { bestScore = score; best = c; }
+    }
+    var x = best.x;
+    var y = best.y;
     var innerX = x + width * 0.10;
     var innerY = y + height * 0.19;
     var innerW = width * 0.80;
