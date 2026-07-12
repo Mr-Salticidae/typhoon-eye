@@ -234,8 +234,10 @@
       { k: "中心气压", v: fmt(t.now.pressure), unit: "hPa", sub: "数值越低，台风越强" },
       { k: "移动方向", v: fmt(t.now.moveDir), unit: "", sub: dirPlain(t.now.moveDir) || "以中心移动趋势为准", compass: DIR_DEG[t.now.moveDir] },
       { k: "移动速度", v: fmt(t.now.moveSpeed), unit: "km/h", sub: "约为骑行速度" },
-      { k: "七级风圈", v: fmt(t.now.r7), unit: "km", sub: "圈内阵风明显" },
-      { k: "十级风圈", v: fmt(t.now.r10), unit: "km", sub: "圈内破坏力强" },
+      /* 风圈半径并非每个时次都有:台风登陆减弱后官方停发,新生/远海台风也可能暂缺。
+         空值时说明缘由,避免被误读为数据故障 */
+      { k: "七级风圈", v: fmt(t.now.r7), unit: "km", sub: t.now.r7 === null ? "官方本时次未发布，登陆减弱后常见" : "圈内阵风明显" },
+      { k: "十级风圈", v: fmt(t.now.r10), unit: "km", sub: t.now.r10 === null ? "官方本时次未发布，登陆减弱后常见" : "圈内破坏力强" },
     ];
     var statsGrid = $("statsGrid");
     statsGrid.innerHTML = "";
