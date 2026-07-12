@@ -538,18 +538,24 @@
 
   function dialNumber(num) {
     var telUrl = "tel:" + num;
-    var jumped = false;
-    try { window.top.location.href = telUrl; jumped = true; } catch (e) { /* 沙箱拒绝则继续 */ }
-    if (!jumped) {
-      try { jumped = !!window.open(telUrl, "_blank"); } catch (e2) { /* ignore */ }
-    }
-    if (!jumped) {
-      try { window.location.href = telUrl; } catch (e3) { /* ignore */ }
-    }
+    /* 沙箱内禁止任何页面级导航:B站 App 的 webview 未注册 tel: 处理器,
+       顶层/本页导航会整页跳到 ERR_UNKNOWN_URL_SCHEME 错误页(2026-07-12 真机实测)。
+       隐藏 iframe 触发:支持 tel: 的浏览器静默唤起拨号,不支持的静默失败、页面不动。 */
+    try {
+      var jumper = document.getElementById("tyTelJumper");
+      if (!jumper) {
+        jumper = document.createElement("iframe");
+        jumper.id = "tyTelJumper";
+        jumper.setAttribute("aria-hidden", "true");
+        jumper.style.cssText = "display:none;width:0;height:0;border:0";
+        document.body.appendChild(jumper);
+      }
+      jumper.src = telUrl;
+    } catch (e) { /* ignore */ }
     copyText(num).then(function (copied) {
       showToast(copied
-        ? "正在为你唤起拨号；号码 " + num + " 已复制，未弹出时可粘贴拨打"
-        : "如未唤起拨号，请手动拨打 " + num);
+        ? "号码 " + num + " 已复制；如未唤起拨号，请到拨号盘粘贴"
+        : "请手动拨打 " + num);
     });
   }
 
