@@ -301,9 +301,6 @@
       notice.appendChild(el("b", null, "当地政府与气象部门"));
       notice.appendChild(document.createTextNode("发布的官方预警为准。"));
     }
-    $("tyUpdated").textContent = data.updatedAt + (isLive ? "" : isSnapshot ? "（缓存）" : "（演示）");
-    $("tySource").textContent = data.source;
-
     var list = data.typhoons || [];
     var switcher = $("tySwitch");
     switcher.hidden = list.length < 2;
@@ -320,19 +317,29 @@
       switcher.appendChild(b);
     });
 
+    var planHeadTitle = $("planHeadTitle");
+    var planFirst = $("planFirst");
     if (list.length) {
+      $("tySummary").classList.remove("is-calm");
       renderTyphoon(list[0]);
       currentLevel = suggestLevel(list[0]);
       $("levelHint").hidden = false;
+      planHeadTitle.textContent = "现在，该做什么";
+      planFirst.innerHTML = "第一原则：<b>服从当地政府与社区的统一安排</b>，收到转移指令立即执行。";
+      planFirst.classList.remove("is-calm");
     } else {
       /* 无活跃台风：收起实况与路径板块，预案常备 */
       $("tyKicker").textContent = "西北太平洋";
       $("tyName").textContent = "风平浪静";
-      $("tyLevel").textContent = "当前无编号活跃台风";
-      $("tySummary").textContent = "此刻没有活跃的编号台风。预案清单常备常新，风来之前，都是准备的好时候。";
+      $("tyLevel").textContent = "西北太平洋暂无编号台风";
+      $("tySummary").textContent = "风来之前，都是准备的好时候。";
+      $("tySummary").classList.add("is-calm");
       $("live").hidden = true;
       $("track").hidden = true;
       currentLevel = "blue";
+      planHeadTitle.textContent = "风来之前，备好清单";
+      planFirst.textContent = "清单供平时备查，收到官方预警时启用。";
+      planFirst.classList.add("is-calm");
     }
     renderPlan();
   }
