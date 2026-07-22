@@ -1,6 +1,100 @@
 {
-  "updatedAt": "2026-07-23 05:45",
+  "updatedAt": "2026-07-23 06:15",
   "source": "浙江省台风路径实时发布系统",
   "sourceUrl": "https://typhoon.slt.zj.gov.cn/",
-  "typhoons": []
+  "typhoons": [
+    {
+      "name": "热带低压",
+      "enName": "NAMELESS",
+      "code": "0013",
+      "level": "热带低压（7级）",
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
+      "now": {
+        "windLevel": 7,
+        "windSpeed": 15,
+        "pressure": 1000,
+        "moveDir": "西北西",
+        "moveSpeed": 30,
+        "r7": null,
+        "r10": null,
+        "position": "中心位于北纬 15.8 度、东经 130.4 度",
+        "time": "07-23 05时"
+      },
+      "track": [
+        {
+          "t": "07-23 05时",
+          "lat": 15.8,
+          "lng": 130.4,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "now"
+        },
+        {
+          "t": "07-23 17时",
+          "lat": 17.3,
+          "lng": 127.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-24 05时",
+          "lat": 18.4,
+          "lng": 124.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-24 17时",
+          "lat": 19.5,
+          "lng": 121.8,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-25 05时",
+          "lat": 20.6,
+          "lng": 119.5,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-25 17时",
+          "lat": 22.2,
+          "lng": 117.5,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-26 05时",
+          "lat": 23.5,
+          "lng": 116.2,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-27 05时",
+          "lat": 26.4,
+          "lng": 114.6,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-28 05时",
+          "lat": 30,
+          "lng": 113.7,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        }
+      ]
+    }
+  ]
 }
