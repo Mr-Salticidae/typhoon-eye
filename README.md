@@ -9,6 +9,7 @@
 ## 功能
 
 - 🌀 **实况面板** — 台风位置、风力、气压、移向移速、风圈半径（实时数据）
+- 🔍 **多源交叉校验** — 中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）三源比对，页面明示一致性与各源时次
 - 🗺️ **路径示意图** — SVG 历史/预报路径，视窗随路径动态扩展，逐点悬停查看强度
 - 🚦 **四级预警** — 蓝/黄/橙/红切换，按台风强度预选参考档位，颜色对齐官方预警信号
 - ✅ **分级预案** — 递进式可勾选行动清单，进度自动保存
@@ -17,7 +18,15 @@
 
 ## 数据
 
-GitHub Actions 每 15 分钟运行 [`scripts/fetch-typhoon.mjs`](scripts/fetch-typhoon.mjs)（主任务 + 守护任务共 8 个触发点/小时，抵御 GitHub 调度偶发丢班），从[浙江省台风路径实时发布系统](https://typhoon.slt.zj.gov.cn/)抓取活跃台风，生成静态 [`data/typhoon.json`](data/typhoon.json)。客户端并行请求 Pages 与 jsDelivr 多镜像（Actions 更新后主动清理 jsDelivr 缓存），取最新数据；全部失败时依次降级为包内缓存和内置演示数据，并显著标注当前数据状态。
+GitHub Actions 每 15 分钟运行 [`scripts/fetch-typhoon.mjs`](scripts/fetch-typhoon.mjs)（主任务 + 守护任务共 8 个触发点/小时，抵御 GitHub 调度偶发丢班），并行抓取三个官方源生成静态 [`data/typhoon.json`](data/typhoon.json)：
+
+| 源 | 角色 |
+| --- | --- |
+| [中央气象台](http://typhoon.nmc.cn/web.html) | 主源：轨迹与实况优先采用 |
+| [浙江省台风路径实时发布系统](https://typhoon.slt.zj.gov.cn/) | 备源：主源缺失时出轨迹 + 交叉校验 + 风圈补全 |
+| [日本气象厅 JMA](https://www.jma.go.jp/bosai/map.html#contents=typhoon) | 交叉校验 + 国际命名权威（任一源率先命名即采用，JMA 英文名经命名表对照中文名） |
+
+跨源按国际编号（未命名系统按中心距离）匹配同一台风，比对定位与强度并按各机构时次差放宽容差；结果连同各源状态写入 JSON，页面明示"多源校验一致 / 存在分歧 / 单源跟踪"。客户端并行请求 Pages 与 jsDelivr 多镜像（Actions 更新后主动清理 jsDelivr 缓存），取最新数据；全部失败时依次降级为包内缓存和内置演示数据，并显著标注当前数据状态。
 
 ## 使用
 

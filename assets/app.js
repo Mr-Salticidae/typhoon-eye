@@ -221,12 +221,34 @@
     return svg;
   }
 
+  /* 多源交叉校验说明行：一致/分歧/单源 三态；命名依据另起一行 */
+  var VERIFY_LABEL = { consistent: "多源校验一致", divergent: "多源存在分歧", single: "单源跟踪" };
+  function renderVerify(t) {
+    var box = $("tyVerify");
+    if (!box) return;
+    var v = t && t.verification;
+    if (!v && !(t && t.nameNote)) { box.hidden = true; return; }
+    box.innerHTML = "";
+    box.className = "hero-verify" + (v && v.status ? " " + v.status : "");
+    if (v) {
+      box.appendChild(el("i", "vf-dot"));
+      box.appendChild(el("b", null, VERIFY_LABEL[v.status] || "多源校验"));
+      if (v.detail) box.appendChild(document.createTextNode(" · " + v.detail));
+    }
+    if (t.nameNote) {
+      if (v) box.appendChild(document.createElement("br"));
+      box.appendChild(el("span", "vf-note", t.nameNote));
+    }
+    box.hidden = false;
+  }
+
   function renderTyphoon(t) {
     $("tyCode").textContent = t.code;
     $("tyEnName").textContent = t.enName;
     $("tyName").textContent = t.name;
     $("tyLevel").textContent = t.level;
     $("tySummary").textContent = t.summary;
+    renderVerify(t);
     $("tyPosition").textContent = t.now.position + "（" + t.now.time + "）。";
 
     var statDefs = [
@@ -273,9 +295,14 @@
     var badge = $("dataBadge");
     var notice = $("noticeBar");
     if (isLive) {
-      badge.textContent = "实时数据";
+      badge.textContent = data.sources ? "实时 · 多源校验" : "实时数据";
       badge.classList.add("live");
       badge.title = "来源：" + data.source + "，更新于 " + data.updatedAt;
+      if (data.sources && data.sources.map) {
+        badge.title += "。源状态：" + data.sources.map(function (s) {
+          return s.name + (s.ok ? " ✓" : " ×");
+        }).join(" · ");
+      }
       notice.innerHTML = "";
       notice.appendChild(document.createTextNode("数据来自" + data.source + "，更新于 " + data.updatedAt + "；防灾决策请以"));
       notice.appendChild(el("b", null, "当地政府与气象部门"));
@@ -334,6 +361,8 @@
       $("tyLevel").textContent = "西北太平洋暂无编号台风";
       $("tySummary").textContent = "风来之前，都是准备的好时候。";
       $("tySummary").classList.add("is-calm");
+      var calmVerify = $("tyVerify");
+      if (calmVerify) calmVerify.hidden = true;
       $("live").hidden = true;
       $("track").hidden = true;
       currentLevel = "blue";

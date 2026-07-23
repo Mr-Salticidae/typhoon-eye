@@ -15,6 +15,17 @@ const DEMO_DATA = {
       level: "台风（13级）",
       summary: "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
       nearCoast: true,
+      nameNote: null,
+      trackSource: "中央气象台",
+      verification: {
+        status: "consistent",
+        detail: "以中央气象台为准：浙江台风路径系统定位相差 12 公里、强度一致；日本气象厅定位相差 18 公里、强度一致（3 源交叉校验一致）",
+        sources: [
+          { id: "cma", name: "中央气象台", time: "07-10 14时", windLevel: 13, role: "primary" },
+          { id: "zj", name: "浙江台风路径系统", time: "07-10 14时", windLevel: 13, role: "verify" },
+          { id: "jma", name: "日本气象厅", time: "07-10 14时", windLevel: 13, role: "verify" },
+        ],
+      },
       now: {
         windLevel: 13,
         windSpeed: 40,      // m/s
@@ -114,6 +125,7 @@ const CONTACTS = [
 const SOURCES = [
   { name: "中央气象台 · 台风网", url: "http://typhoon.nmc.cn/web.html" },
   { name: "浙江省台风路径实时发布系统", url: "https://typhoon.slt.zj.gov.cn/" },
+  { name: "日本气象厅 · 台风情报（JMA）", url: "https://www.jma.go.jp/bosai/map.html#contents=typhoon" },
   { name: "国家应急广播", url: "https://www.cneb.gov.cn/" },
   { name: "中国天气 · 台风专题", url: "http://typhoon.weather.com.cn/" },
 ];

@@ -1,7 +1,30 @@
 {
-  "updatedAt": "2026-07-23 15:24",
-  "source": "浙江省台风路径实时发布系统",
-  "sourceUrl": "https://typhoon.slt.zj.gov.cn/",
+  "updatedAt": "2026-07-23 15:43",
+  "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
+  "sourceUrl": "http://typhoon.nmc.cn/web.html",
+  "sources": [
+    {
+      "id": "cma",
+      "name": "中央气象台",
+      "url": "http://typhoon.nmc.cn/web.html",
+      "ok": true,
+      "count": 1
+    },
+    {
+      "id": "zj",
+      "name": "浙江台风路径系统",
+      "url": "https://typhoon.slt.zj.gov.cn/",
+      "ok": true,
+      "count": 1
+    },
+    {
+      "id": "jma",
+      "name": "日本气象厅",
+      "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
+      "ok": true,
+      "count": 1
+    }
+  ],
   "typhoons": [
     {
       "name": "热带低压",
@@ -10,6 +33,35 @@
       "level": "热带低压（7级）",
       "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
       "nearCoast": true,
+      "nameNote": null,
+      "trackSource": "中央气象台",
+      "verification": {
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
+        "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "07-23 14时",
+            "windLevel": 7,
+            "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "07-23 14时",
+            "windLevel": 7,
+            "role": "verify"
+          },
+          {
+            "id": "jma",
+            "name": "日本气象厅",
+            "time": "07-23 14时",
+            "windLevel": 7,
+            "role": "verify"
+          }
+        ]
+      },
       "now": {
         "windLevel": 7,
         "windSpeed": 15,
@@ -18,8 +70,8 @@
         "moveSpeed": 32,
         "r7": null,
         "r10": null,
-        "position": "中心位于北纬 17.1 度、东经 128.3 度",
-        "time": "07-23 14时"
+        "time": "07-23 14时",
+        "position": "中心位于北纬 17.1 度、东经 128.3 度"
       },
       "track": [
         {

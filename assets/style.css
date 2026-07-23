@@ -116,6 +116,20 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { .eye-dot, .tp-now-halo { animation: none !important; } }
 .hero-sub { max-width: 34rem; margin: 1rem auto 0; font-size: 1.02rem; line-height: 2; color: var(--ink); }
 .hero-sub.is-calm { color: var(--ink-soft); font-size: .88rem; }
+
+/* 多源交叉校验说明行：绿点=一致 / 橙点=分歧 / 灰点=单源 */
+.hero-verify {
+  max-width: 38rem; margin: .8rem auto 0;
+  font-size: .78rem; line-height: 1.8; color: var(--ink-soft);
+}
+.hero-verify b { color: var(--ink); font-weight: 600; }
+.hero-verify .vf-dot {
+  display: inline-block; width: .5em; height: .5em; border-radius: 50%;
+  margin-right: .45em; vertical-align: .1em; background: var(--accent);
+}
+.hero-verify.divergent .vf-dot { background: var(--w-orange); }
+.hero-verify.single .vf-dot { background: var(--ink-soft); }
+.hero-verify .vf-note { color: var(--accent); }
 .hero .meta { margin-top: 1rem; }
 .ty-switch { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem; margin-top: 1.1rem; }
 .ty-chip {
