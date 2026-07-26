@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26 14:15",
+  "updatedAt": "2026-07-26 14:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,8 +31,8 @@
       "enName": "NOUL",
       "code": "2612",
       "level": "热带风暴（9级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
@@ -67,7 +67,7 @@
         "windSpeed": 23,
         "pressure": 990,
         "moveDir": "北北西",
-        "moveSpeed": 10,
+        "moveSpeed": 19,
         "r7": null,
         "r10": null,
         "time": "07-26 14时",
@@ -193,6 +193,54 @@
           "wind": 9,
           "strong": "热带风暴",
           "phase": "now"
+        },
+        {
+          "t": "07-26 20时",
+          "lat": 24.5,
+          "lng": 113.7,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-27 02时",
+          "lat": 25.5,
+          "lng": 113.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-27 08时",
+          "lat": 26.6,
+          "lng": 113.2,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-27 14时",
+          "lat": 27.5,
+          "lng": 113,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-28 02时",
+          "lat": 28.8,
+          "lng": 112.8,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "07-28 14时",
+          "lat": 30.6,
+          "lng": 112.9,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ]
     }
