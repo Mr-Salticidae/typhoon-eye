@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27 20:00",
+  "updatedAt": "2026-07-27 20:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -22,7 +22,7 @@
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
       "ok": true,
-      "count": 2
+      "count": 1
     }
   ],
   "typhoons": [
@@ -166,8 +166,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 205 公里（时次相差 15 小时）、强度暂缺（2 源交叉校验一致）",
+        "status": "single",
+        "detail": "目前仅中央气象台发布该系统，其余源暂未跟踪",
         "sources": [
           {
             "id": "cma",
@@ -175,13 +175,6 @@
             "time": "07-27 11时",
             "windLevel": 6,
             "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "07-26 20时",
-            "windLevel": null,
-            "role": "verify"
           }
         ]
       },
