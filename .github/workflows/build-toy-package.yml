@@ -48,6 +48,7 @@ jobs:
             echo "package unchanged"
             exit 0
           fi
-          git commit -m "toy: rebuild package with 30-minute refresh and nine-dash overlay [skip ci]"
+          # 提交信息带上源 commit：写死的功能描述会随迭代过期，说不清包是从哪版打的
+          git commit -m "toy: rebuild package from ${GITHUB_SHA:0:7} [skip ci]"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
