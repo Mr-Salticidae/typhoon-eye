@@ -202,6 +202,22 @@
         }
       }
     }
+    /* 远洋视图的小地图先于本插图画好，作为硬障碍避让，两块面板不能叠在一起 */
+    var miniRect = null;
+    var miniNode = document.getElementById("farMiniMap");
+    if (miniNode) {
+      var raw = (miniNode.getAttribute("data-rect") || "").split(/\s+/).map(Number);
+      if (raw.length === 4 && raw.every(isFinite)) {
+        miniRect = { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
+      }
+    }
+    function overlapsMini(cx, cy) {
+      if (!miniRect) return 0;
+      var ox = Math.min(cx + width, miniRect.x + miniRect.w) - Math.max(cx, miniRect.x);
+      var oy = Math.min(cy + height, miniRect.y + miniRect.h) - Math.max(cy, miniRect.y);
+      return ox > 0 && oy > 0 ? 1 : 0;
+    }
+
     var margin = pad * 0.75;
     var candidates = [
       { x: vb.x + vb.width - width - pad, y: vb.y + pad, penalty: 0 },                       /* 右上(默认) */
@@ -217,7 +233,7 @@
         if (tp[0] >= c.x - margin && tp[0] <= c.x + width + margin &&
             tp[1] >= c.y - margin && tp[1] <= c.y + height + margin) hits++;
       }
-      var score = hits * 10 + c.penalty;
+      var score = hits * 10 + c.penalty + overlapsMini(c.x, c.y) * 100;
       if (score < bestScore) { bestScore = score; best = c; }
     }
     var x = best.x;
@@ -275,6 +291,21 @@
     group.appendChild(note);
 
     base.appendChild(group);
+
+    /* 插图是不透明面板：盖住的经纬网标注（远洋视图才有）整条隐藏，
+       避免在插图边缘露出半截度数，如"175°E"被切成"175°F" */
+    var labels = base.querySelectorAll(".grat-label");
+    for (var gl = 0; gl < labels.length; gl++) {
+      var lb = labels[gl];
+      var lx = +lb.getAttribute("x"), ly = +lb.getAttribute("y");
+      var lfs = +lb.getAttribute("font-size") || 12;
+      var lw = 0;
+      try { lw = lb.getComputedTextLength(); } catch (e) { /* 非渲染态回退估算 */ }
+      if (!lw) lw = lfs * 0.6 * (lb.textContent || "").length;
+      var hit = lx <= x + width && lx + lw >= x && ly >= y && ly - lfs <= y + height;
+      lb.style.display = hit ? "none" : "";
+    }
+
     var mapNote = document.querySelector("#mapWrap .map-note");
     if (mapNote && mapNote.textContent.indexOf("九段线") < 0) {
       mapNote.textContent = mapNote.textContent.replace(/海岸线为示意/, "海岸线及九段线为示意");

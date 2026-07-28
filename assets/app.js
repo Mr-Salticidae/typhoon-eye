@@ -65,9 +65,204 @@
   ];
   /* 远海路径不参与显示范围（避免底图缩得太小） */
   var DISPLAY_MAX_LNG = 140, DISPLAY_MIN_LAT = 10;
+  /* 默认底图范围与宽高比：远洋视图按同一比例出图，保证图幅观感一致 */
+  var BASE_W = 800, BASE_H = 560, BASE_RATIO = BASE_W / BASE_H;
+  /* 远洋视图最小跨度 12 经度：新生台风只有两三个点时，避免把图放大到失真 */
+  var MIN_FAR_SPAN = 480;
 
   function polyPoints(lls) {
     return lls.map(function (ll) { var p = proj(ll[0], ll[1]); return p[0] + "," + p[1]; }).join(" ");
+  }
+
+  /* 球面距离（公里）：远洋视图用它标注台风离中国大陆还有多远 */
+  function greatCircle(lat1, lng1, lat2, lng2) {
+    var R = 6371, rad = Math.PI / 180;
+    var dLat = (lat2 - lat1) * rad, dLng = (lng2 - lng1) * rad;
+    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+    return 2 * R * Math.asin(Math.min(1, Math.sqrt(a)));
+  }
+  /* 到海岸线折线顶点的最近距离，取整到百公里（底图为示意精度，不做更细的表述） */
+  function mainlandKm(lat, lng) {
+    var min = Infinity;
+    COAST.forEach(function (ll) {
+      var d = greatCircle(lat, lng, ll[0], ll[1]);
+      if (d < min) min = d;
+    });
+    return Math.max(100, Math.round(min / 100) * 100);
+  }
+
+  /* 经纬网间隔：跨度越大间隔越粗，始终保持 4–8 条网格线 */
+  function gridStep(span) {
+    if (span <= 8) return 1;
+    if (span <= 18) return 2;
+    if (span <= 45) return 5;
+    if (span <= 90) return 10;
+    return 20;
+  }
+  function lngLabel(lng) {
+    var v = ((lng + 180) % 360 + 360) % 360 - 180;
+    if (v === 0 || v === -180) return Math.abs(v) + "°";
+    return (v > 0 ? v : -v) + (v > 0 ? "°E" : "°W");
+  }
+  function latLabel(lat) { return (lat >= 0 ? lat + "°N" : -lat + "°S"); }
+
+  /* 远洋视图没有海岸线可参照，用经纬网给出绝对位置读数 */
+  function drawGraticule(layer, box, f) {
+    var g = svgEl("g", { class: "graticule", "aria-hidden": "true" });
+    var lngA = box.minX / 40 + 105, lngB = box.maxX / 40 + 105;
+    var latA = 29 - box.maxY / 40, latB = 29 - box.minY / 40;
+    var fs = Math.round(12 * f);
+    var stepX = gridStep(lngB - lngA), stepY = gridStep(latB - latA);
+    var lng, lat, t;
+    for (lng = Math.ceil(lngA / stepX) * stepX; lng <= lngB; lng += stepX) {
+      var x = proj(0, lng)[0];
+      g.appendChild(svgEl("line", { class: "grat-line", x1: x, y1: box.minY, x2: x, y2: box.maxY }));
+      if (x > box.maxX - 46 * f) continue; /* 贴右边框的度数会被裁掉，只留网格线 */
+      t = svgEl("text", { class: "grat-label", x: x + 5 * f, y: box.minY + 17 * f, "font-size": fs });
+      t.textContent = lngLabel(lng);
+      g.appendChild(t);
+    }
+    for (lat = Math.ceil(latA / stepY) * stepY; lat <= latB; lat += stepY) {
+      var y = proj(lat, 105)[1];
+      g.appendChild(svgEl("line", { class: "grat-line", x1: box.minX, y1: y, x2: box.maxX, y2: y }));
+      /* 图幅下缘压着 HTML 图例、上缘会裁字，这两处只留网格线不标度数 */
+      if (y < box.minY + 22 * f || y > box.maxY - 34 * f) continue;
+      t = svgEl("text", { class: "grat-label", x: box.minX + 8 * f, y: y - 6 * f, "font-size": fs });
+      t.textContent = latLabel(lat);
+      g.appendChild(t);
+    }
+    layer.appendChild(g);
+  }
+
+  /* 远洋视图的小地图：把中国大陆、整条路径与"当前图幅"一并缩进一块面板，
+     回答"台风在整个西北太平洋的哪个位置"——单靠方位箭头不够直观。
+     槽位按路径空白处自动选择，避免压住路径本身。 */
+  function drawMiniMap(layer, box, f, pts, nowIdx, km) {
+    var W = Math.min((box.maxX - box.minX) * 0.28, 190 * f), H = W * 0.8;
+    var gap = 16 * f;
+
+    /* 折线中点一并参与碰撞检测：只看顶点会漏掉横穿槽位的长直线段 */
+    var samples = pts.slice();
+    for (var i = 1; i < pts.length; i++) {
+      samples.push({ x: (pts[i - 1].x + pts[i].x) / 2, y: (pts[i - 1].y + pts[i].y) / 2 });
+    }
+
+    /* 可放置区域先让开三类既有信息：顶部经度标注行、左侧纬度标注列、
+       底部 HTML 图例与角注。九段线插图（默认右上）作为软障碍计罚分。 */
+    var x0 = box.minX + gap + 40 * f, x1 = box.maxX - W - gap;
+    var y0 = box.minY + gap + 24 * f, y1 = box.maxY - H - gap - 26 * f;
+    if (x1 < x0) { x0 = x1 = box.maxX - W - gap; }
+    if (y1 < y0) { y0 = y1 = Math.max(box.minY + gap, box.maxY - H - gap); }
+
+    var sc = Math.max(1, (box.maxX - box.minX) / BASE_W);
+    var scsW = Math.min((box.maxX - box.minX) * 0.25, 168 * sc);
+    var scsPad = Math.max(10, 16 * sc);
+    var scs = { x: box.maxX - scsW - scsPad, y: box.minY + scsPad, w: scsW, h: scsW * 1.03 };
+
+    function overlap(ax, ay, aw, ah, b) {
+      var ox = Math.max(0, Math.min(ax + aw, b.x + b.w) - Math.max(ax, b.x));
+      var oy = Math.max(0, Math.min(ay + ah, b.y + b.h) - Math.max(ay, b.y));
+      return ox * oy;
+    }
+    function clearOf(rx, ry, px, py) {
+      var dx = Math.max(rx - px, 0, px - (rx + W));
+      var dy = Math.max(ry - py, 0, py - (ry + H));
+      return Math.sqrt(dx * dx + dy * dy);
+    }
+    /* 两块面板之间的净空：只判重叠会让小地图紧贴插图，观感局促 */
+    function gapTo(rx, ry, b) {
+      var dx = Math.max(b.x - (rx + W), rx - (b.x + b.w), 0);
+      var dy = Math.max(b.y - (ry + H), ry - (b.y + b.h), 0);
+      return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    /* 候选网格：先按压住的路径点数排序，同分再挑离路径最远的那格 */
+    var now = pts[nowIdx] || null;
+    var best = { x: x1, y: y0 }, bestScore = Infinity;
+    for (var gx = 0; gx <= 5; gx++) {
+      for (var gy = 0; gy <= 3; gy++) {
+        var cx2 = x0 + (x1 - x0) * gx / 5, cy2 = y0 + (y1 - y0) * gy / 3;
+        var hits = 0, clear = Infinity;
+        for (var si = 0; si < samples.length; si++) {
+          var s = samples[si];
+          if (s.x >= cx2 - gap && s.x <= cx2 + W + gap && s.y >= cy2 - gap && s.y <= cy2 + H + gap) hits++;
+          clear = Math.min(clear, clearOf(cx2, cy2, s.x, s.y));
+        }
+        clear = Math.min(clear, gapTo(cx2, cy2, scs));
+        /* 当前位置是全图最该保住的元素，压中它单独重罚 */
+        var onNow = now && clearOf(cx2, cy2, now.x, now.y) < 22 * f ? 1 : 0;
+        var score = hits * 12 + onNow * 60
+          + overlap(cx2, cy2, W, H, scs) / (W * H) * 22
+          - Math.min(clear / f, 150) * 0.06;
+        if (score < bestScore) { bestScore = score; best = { x: cx2, y: cy2 }; }
+      }
+    }
+    var x = best.x, y = best.y;
+    var ix = x + W * 0.05, iy = y + W * 0.185, iw = W * 0.9, ih = iw / 1.6;
+
+    /* 内容范围 = 中国大陆 ∪ 整条路径 ∪ 当前图幅，再补齐到内框比例 */
+    var ex = { minX: Infinity, minY: Infinity, maxX: -Infinity, maxY: -Infinity };
+    function grow(px, py) {
+      ex.minX = Math.min(ex.minX, px); ex.maxX = Math.max(ex.maxX, px);
+      ex.minY = Math.min(ex.minY, py); ex.maxY = Math.max(ex.maxY, py);
+    }
+    COAST.concat(HAINAN, TAIWAN).forEach(function (ll) { var p = proj(ll[0], ll[1]); grow(p[0], p[1]); });
+    pts.forEach(function (p) { grow(p.x, p.y); });
+    grow(box.minX, box.minY); grow(box.maxX, box.maxY);
+    var m = 40;
+    ex.minX -= m; ex.minY -= m; ex.maxX += m; ex.maxY += m;
+    var ew = ex.maxX - ex.minX, eh = ex.maxY - ex.minY, ratio = iw / ih;
+    if (ew / eh > ratio) { var dh = (ew / ratio - eh) / 2; ex.minY -= dh; ex.maxY += dh; }
+    else { var dw = (eh * ratio - ew) / 2; ex.minX -= dw; ex.maxX += dw; }
+    var k = iw / (ex.maxX - ex.minX);
+    function mp(px, py) { return [ix + (px - ex.minX) * k, iy + (py - ex.minY) * k]; }
+    function mpts(lls) {
+      return lls.map(function (ll) { var p = proj(ll[0], ll[1]); p = mp(p[0], p[1]); return p[0] + "," + p[1]; }).join(" ");
+    }
+
+    var g = svgEl("g", { id: "farMiniMap", class: "mini-map", "aria-hidden": "true" });
+    g.setAttribute("data-rect", [x, y, W, H].join(" ")); /* 供九段线插图避让 */
+    g.appendChild(svgEl("rect", { class: "mm-frame", x: x, y: y, width: W, height: H, rx: W * 0.05 }));
+
+    var t = svgEl("text", { class: "mm-title", x: ix, y: y + W * 0.115, "font-size": W * 0.072 });
+    t.textContent = "位置总览";
+    g.appendChild(t);
+    var sub = svgEl("text", { class: "mm-note", x: ix, y: y + W * 0.168, "font-size": W * 0.05 });
+    sub.textContent = "距中国大陆约 " + km + " 公里";
+    g.appendChild(sub);
+
+    /* 内框裁切：陆地要闭合到框外，靠 clip 修边 */
+    var clip = svgEl("clipPath", { id: "mmClip" });
+    clip.appendChild(svgEl("rect", { x: ix, y: iy, width: iw, height: ih, rx: W * 0.02 }));
+    g.appendChild(clip);
+    var inner = svgEl("g", { "clip-path": "url(#mmClip)" });
+    inner.appendChild(svgEl("rect", { class: "mm-sea", x: ix, y: iy, width: iw, height: ih, rx: W * 0.02 }));
+
+    var c0 = proj(COAST[0][0], COAST[0][1]), c1 = proj(COAST[COAST.length - 1][0], COAST[COAST.length - 1][1]);
+    c0 = mp(c0[0], c0[1]); c1 = mp(c1[0], c1[1]);
+    var d = "M " + (ix - 6) + " " + c0[1] +
+      " L " + COAST.map(function (ll) { var p = proj(ll[0], ll[1]); p = mp(p[0], p[1]); return p[0] + " " + p[1]; }).join(" L ") +
+      " L " + c1[0] + " " + (iy - 6) + " L " + (ix - 6) + " " + (iy - 6) + " Z";
+    inner.appendChild(svgEl("path", { class: "mm-land", d: d }));
+    inner.appendChild(svgEl("polygon", { class: "mm-land", points: mpts(HAINAN) }));
+    inner.appendChild(svgEl("polygon", { class: "mm-land", points: mpts(TAIWAN) }));
+
+    /* 当前图幅框：小地图里这一小块，就是上面整幅大图 */
+    var v0 = mp(box.minX, box.minY), v1 = mp(box.maxX, box.maxY);
+    inner.appendChild(svgEl("rect", {
+      class: "mm-view", x: v0[0], y: v0[1], width: v1[0] - v0[0], height: v1[1] - v0[1], rx: W * 0.012,
+    }));
+    inner.appendChild(svgEl("polyline", {
+      class: "mm-track",
+      points: pts.map(function (p) { var q = mp(p.x, p.y); return q[0] + "," + q[1]; }).join(" "),
+    }));
+    if (nowIdx >= 0) {
+      var np = mp(pts[nowIdx].x, pts[nowIdx].y);
+      inner.appendChild(svgEl("circle", { class: "mm-now", cx: np[0], cy: np[1], r: Math.max(2, W * 0.022) }));
+    }
+    g.appendChild(inner);
+    layer.appendChild(g);
   }
 
   function renderMap(track) {
@@ -78,47 +273,79 @@
     baseLayer.innerHTML = ""; cityLayer.innerHTML = ""; trackLayer.innerHTML = "";
     hideTip();
 
-    var shown = track.filter(function (p) { return p.lng <= DISPLAY_MAX_LNG && p.lat >= DISPLAY_MIN_LAT; });
+    /* 截断远海段是为了不把底图缩得太小，代价是当前位置也可能被截掉：整条路径都在
+       西北太平洋远洋时图上会空无一物。因此以"当前位置在不在近海窗口内"决定视图——
+       在窗内走近海视图（远海历史照旧截断），在窗外整条路径改走远洋视图 */
+    function inNearWindow(p) { return p.lng <= DISPLAY_MAX_LNG && p.lat >= DISPLAY_MIN_LAT; }
+    var anchor = null;
+    track.forEach(function (p) { if (p.phase === "now") anchor = p; });
+    if (!anchor && track.length) anchor = track[track.length - 1];
+    var farOcean = !!anchor && !inNearWindow(anchor);
+    var shown = farOcean ? track : track.filter(inNearWindow);
     var omitted = track.length - shown.length;
     var pts = shown.map(function (p) {
       var xy = proj(p.lat, p.lng);
       return { x: xy[0], y: xy[1], data: p };
     });
 
-    /* 视窗 = 默认底图范围 ∪ 路径范围 + 留白 */
-    var minX = 0, minY = 0, maxX = 800, maxY = 560;
+    /* 视窗：近海视图 = 默认底图范围 ∪ 路径范围；远洋视图 = 路径范围。均加留白 */
+    var minX = 0, minY = 0, maxX = BASE_W, maxY = BASE_H;
+    if (farOcean) { minX = minY = Infinity; maxX = maxY = -Infinity; }
     pts.forEach(function (p) {
       minX = Math.min(minX, p.x); maxX = Math.max(maxX, p.x);
       minY = Math.min(minY, p.y); maxY = Math.max(maxY, p.y);
     });
     var pad = 44;
     minX -= pad; minY -= pad; maxX += pad; maxY += pad;
+    if (farOcean) {
+      /* 先兜住最小跨度，再补齐到底图宽高比，避免图幅细成一条或放大到失真 */
+      var cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+      if (maxX - minX < MIN_FAR_SPAN) { minX = cx - MIN_FAR_SPAN / 2; maxX = cx + MIN_FAR_SPAN / 2; }
+      if (maxY - minY < MIN_FAR_SPAN / BASE_RATIO) {
+        minY = cy - MIN_FAR_SPAN / BASE_RATIO / 2; maxY = cy + MIN_FAR_SPAN / BASE_RATIO / 2;
+      }
+      var w = maxX - minX, h = maxY - minY;
+      if (w / h > BASE_RATIO) { var gh = (w / BASE_RATIO - h) / 2; minY -= gh; maxY += gh; }
+      else { var gw = (h * BASE_RATIO - w) / 2; minX -= gw; maxX += gw; }
+    }
+    var box = { minX: minX, minY: minY, maxX: maxX, maxY: maxY };
     svg.setAttribute("viewBox", minX + " " + minY + " " + (maxX - minX) + " " + (maxY - minY));
-    /* 视窗越大，标注与半径按比例放大（线宽由 non-scaling-stroke 保持恒定） */
-    var f = Math.min(1.9, Math.max(1, (maxX - minX) / 800));
+    /* 视窗越大，标注与半径按比例放大（线宽由 non-scaling-stroke 保持恒定）；
+       远洋视图可能比底图更窄，f 需要能小于 1，否则点会被放大到糊成一团 */
+    var f = Math.min(1.9, (maxX - minX) / BASE_W);
 
-    /* 大陆：海岸线 + 闭合出西北侧陆地 */
-    var first = proj(COAST[0][0], COAST[0][1]);
-    var last = proj(COAST[COAST.length - 1][0], COAST[COAST.length - 1][1]);
-    var d = "M " + (minX - 20) + " " + first[1] +
-      " L " + COAST.map(function (ll) { var p = proj(ll[0], ll[1]); return p[0] + " " + p[1]; }).join(" L ") +
-      " L " + last[0] + " " + (minY - 20) +
-      " L " + (minX - 20) + " " + (minY - 20) + " Z";
-    baseLayer.appendChild(svgEl("path", { class: "land", d: d }));
-    baseLayer.appendChild(svgEl("polygon", { class: "land", points: polyPoints(HAINAN) }));
-    baseLayer.appendChild(svgEl("polygon", { class: "land", points: polyPoints(TAIWAN) }));
+    if (farOcean) {
+      /* 远洋视图内没有海岸线可参照，用经纬网代替底图给出位置读数 */
+      drawGraticule(baseLayer, box, f);
+    } else {
+      /* 大陆：海岸线 + 闭合出西北侧陆地 */
+      var first = proj(COAST[0][0], COAST[0][1]);
+      var last = proj(COAST[COAST.length - 1][0], COAST[COAST.length - 1][1]);
+      var d = "M " + (minX - 20) + " " + first[1] +
+        " L " + COAST.map(function (ll) { var p = proj(ll[0], ll[1]); return p[0] + " " + p[1]; }).join(" L ") +
+        " L " + last[0] + " " + (minY - 20) +
+        " L " + (minX - 20) + " " + (minY - 20) + " Z";
+      baseLayer.appendChild(svgEl("path", { class: "land", d: d }));
+      baseLayer.appendChild(svgEl("polygon", { class: "land", points: polyPoints(HAINAN) }));
+      baseLayer.appendChild(svgEl("polygon", { class: "land", points: polyPoints(TAIWAN) }));
 
-    CITIES.forEach(function (c) {
-      var p = proj(c.lat, c.lng);
-      cityLayer.appendChild(svgEl("circle", { cx: p[0], cy: p[1], r: 3 * f }));
-      var t = svgEl("text", { x: p[0] - 8 * f, y: p[1] - 8 * f, "text-anchor": "end", "font-size": Math.round(13 * f) });
-      t.textContent = c.name;
-      cityLayer.appendChild(t);
-    });
+      CITIES.forEach(function (c) {
+        var p = proj(c.lat, c.lng);
+        cityLayer.appendChild(svgEl("circle", { cx: p[0], cy: p[1], r: 3 * f }));
+        var t = svgEl("text", { x: p[0] - 8 * f, y: p[1] - 8 * f, "text-anchor": "end", "font-size": Math.round(13 * f) });
+        t.textContent = c.name;
+        cityLayer.appendChild(t);
+      });
+    }
 
     var nowIdx = -1;
     pts.forEach(function (p, i) { if (p.data.phase === "now") nowIdx = i; });
     if (nowIdx < 0) nowIdx = pts.length - 1;
+
+    /* 远洋视图补一块小地图，给出全域位置参照 */
+    if (farOcean && nowIdx >= 0) {
+      drawMiniMap(baseLayer, box, f, pts, nowIdx, mainlandKm(pts[nowIdx].data.lat, pts[nowIdx].data.lng));
+    }
 
     function lineOf(list) { return list.map(function (p) { return p.x + "," + p.y; }).join(" "); }
     trackLayer.appendChild(svgEl("polyline", { points: lineOf(pts.slice(0, nowIdx + 1)), class: "track-line" }));
@@ -142,8 +369,10 @@
       trackLayer.appendChild(g);
     });
 
-    $("mapWrap").querySelector(".map-note").textContent =
-      omitted > 0 ? "海岸线为示意 · 更早的远海路径未显示" : "海岸线为示意";
+    /* 远洋视图的角注自带"九段线"字样，toy-runtime 的插图角注改写会自动跳过 */
+    $("mapWrap").querySelector(".map-note").textContent = farOcean
+      ? "远洋视图 · 小地图框出当前图幅 · 经纬网与九段线为示意"
+      : (omitted > 0 ? "海岸线为示意 · 部分远海路径未显示" : "海岸线为示意");
   }
 
   /* ---------- 路径点提示 ---------- */
