@@ -135,11 +135,128 @@
     layer.appendChild(g);
   }
 
-  /* 远洋视图的小地图：把中国大陆、整条路径与"当前图幅"一并缩进一块面板，
-     回答"台风在整个西北太平洋的哪个位置"——单靠方位箭头不够直观。
+  /* ---------- 小地图 ---------- */
+  /* 经度取值窗口的切点，须与 assets/basemap.js 的产物一致（太平洋居中不被劈开） */
+  var MINI_CUT = -30;
+  var MINI_KEY = "typhoon-eye:mini-zoom";
+  /* 三档尺度：默认"亚太"——既能靠日本/菲律宾/澳大利亚认出这块陆地是哪儿，
+     台风点与图幅框又不至于小到看不见；两端留给"全球"和"西北太平洋" */
+  var MINI_LEVELS = [
+    { name: "全球", lng: [-30, 330], lat: [-58, 82] },
+    { name: "亚太", lng: [70, 205], lat: [-46, 56] },
+    { name: "西北太平洋", lng: [100, 190], lat: [-2, 52] },
+  ];
+  /* 地名锚点：from = 从哪一档开始显示（全球档只留"中国"，避免糊成一片） */
+  var MINI_MARKS = [
+    { name: "中国", lat: 34, lng: 103, from: 0 },
+    { name: "日本", lat: 37.5, lng: 139.5, from: 1 },
+    { name: "菲律宾", lat: 12.5, lng: 122.5, from: 1 },
+    { name: "澳大利亚", lat: -25, lng: 134, from: 1 },
+    { name: "夏威夷", lat: 20.5, lng: 204, from: 1 },
+  ];
+  var miniZoom = (function () {
+    var z = Number(store.get(MINI_KEY, 1));
+    return isFinite(z) ? Math.min(MINI_LEVELS.length - 1, Math.max(0, Math.round(z))) : 1;
+  })();
+  var lastTrack = null, zoomFocus = 0;
+
+  /* 文字放不下就按比例缩字号（须在入 DOM 后调用才量得到）。
+     档位名和距离位数都会变，写死字号迟早会压到按钮上 */
+  function fitText(node, maxW) {
+    var len = 0;
+    try { len = node.getComputedTextLength(); } catch (e) { /* 非渲染态跳过 */ }
+    if (!len || len <= maxW) return;
+    var fs = parseFloat(node.getAttribute("font-size"));
+    node.setAttribute("font-size", Math.max(fs * 0.6, fs * maxW / len));
+  }
+
+  /* 底图各环的经纬包围盒，用来跳过窗口外的环（只算一次） */
+  var LAND_BOXES = null;
+  function landBoxes() {
+    if (LAND_BOXES) return LAND_BOXES;
+    LAND_BOXES = WORLD_LAND.map(function (flat) {
+      var b = [Infinity, Infinity, -Infinity, -Infinity];
+      for (var i = 0; i < flat.length; i += 2) {
+        b[0] = Math.min(b[0], flat[i]); b[2] = Math.max(b[2], flat[i]);
+        b[1] = Math.min(b[1], flat[i + 1]); b[3] = Math.max(b[3], flat[i + 1]);
+      }
+      return b;
+    });
+    return LAND_BOXES;
+  }
+
+  /* 面板右上角的 －／＋：到头的一侧置灰。SVG 里没有原生按钮，
+     补上 role/tabindex 与回车空格，键盘也能用 */
+  function zoomButtons(x, y, W) {
+    var g = svgEl("g", { class: "mm-zoom" });
+    var focusTarget = null;
+    var size = W * 0.115, pad = W * 0.05, gap2 = W * 0.028;
+    [-1, 1].forEach(function (dir, i) {
+      var bx = x + W - pad - size * (2 - i) - gap2 * (1 - i);
+      var by = y + pad * 0.85;
+      var next = miniZoom + dir;
+      var off = next < 0 || next >= MINI_LEVELS.length;
+      var b = svgEl("g", { class: "mm-btn" + (off ? " is-off" : "") });
+      if (!off) {
+        b.setAttribute("role", "button");
+        b.setAttribute("tabindex", "0");
+        b.setAttribute("aria-label", (dir < 0 ? "缩小到" : "放大到") + MINI_LEVELS[next].name);
+      } else {
+        b.setAttribute("aria-hidden", "true");
+      }
+      /* 视觉按钮只有十几像素，窄屏上点不准：外面套一圈透明热区，
+         各自吃掉朝外的留白与两钮之间一半的缝，热区互不重叠 */
+      if (!off) {
+        var hp = size * 0.55;
+        b.appendChild(svgEl("rect", {
+          class: "mm-hit",
+          x: bx - (dir < 0 ? hp : gap2 / 2), y: by - hp,
+          width: size + hp + gap2 / 2, height: size + hp * 2,
+        }));
+      }
+      b.appendChild(svgEl("rect", { class: "mm-btn-bg", x: bx, y: by, width: size, height: size, rx: size * 0.28 }));
+      b.appendChild(svgEl("line", {
+        class: "mm-btn-ink", x1: bx + size * 0.26, y1: by + size / 2, x2: bx + size * 0.74, y2: by + size / 2,
+      }));
+      if (dir > 0) {
+        b.appendChild(svgEl("line", {
+          class: "mm-btn-ink", x1: bx + size / 2, y1: by + size * 0.26, x2: bx + size / 2, y2: by + size * 0.74,
+        }));
+      }
+      if (!off) {
+        var go = function (e, viaKey) {
+          e.preventDefault(); e.stopPropagation();
+          miniZoom = next;
+          store.set(MINI_KEY, miniZoom);
+          /* 重画会丢焦点，键盘用户要能连按；鼠标点击不还焦点，免得留下焦点框 */
+          zoomFocus = viaKey ? dir : 0;
+          if (lastTrack) renderMap(lastTrack);
+        };
+        b.addEventListener("click", function (e) { go(e, false); });
+        b.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") go(e, true);
+        });
+        /* 换档后把焦点还回同一个按钮；若它这档已置灰，退给另一个 */
+        if (zoomFocus === dir || (zoomFocus === -dir && miniZoom + zoomFocus < 0) ||
+            (zoomFocus === -dir && miniZoom + zoomFocus >= MINI_LEVELS.length)) {
+          focusTarget = b;
+        }
+      }
+      g.appendChild(b);
+    });
+    if (focusTarget && focusTarget.focus) {
+      /* 等本轮 DOM 装配完再聚焦；:focus-visible 保证鼠标点击不会留下焦点框 */
+      setTimeout(function () { try { focusTarget.focus(); } catch (e) { /* 忽略 */ } }, 0);
+    }
+    zoomFocus = 0;
+    return g;
+  }
+
+  /* 远洋视图的小地图：把世界底图、整条路径与"当前图幅"框缩进一块面板，
+     回答"台风在地球的哪个位置"——单靠方位箭头或只画中国海岸线都不够直观。
      槽位按路径空白处自动选择，避免压住路径本身。 */
   function drawMiniMap(layer, box, f, pts, nowIdx, km) {
-    var W = Math.min((box.maxX - box.minX) * 0.28, 190 * f), H = W * 0.8;
+    var W = Math.min((box.maxX - box.minX) * 0.3, 215 * f), H = W * 0.8;
     var gap = 16 * f;
 
     /* 折线中点一并参与碰撞检测：只看顶点会漏掉横穿槽位的长直线段 */
@@ -201,57 +318,80 @@
     var x = best.x, y = best.y;
     var ix = x + W * 0.05, iy = y + W * 0.185, iw = W * 0.9, ih = iw / 1.6;
 
-    /* 内容范围 = 中国大陆 ∪ 整条路径 ∪ 当前图幅，再补齐到内框比例 */
-    var ex = { minX: Infinity, minY: Infinity, maxX: -Infinity, maxY: -Infinity };
-    function grow(px, py) {
-      ex.minX = Math.min(ex.minX, px); ex.maxX = Math.max(ex.maxX, px);
-      ex.minY = Math.min(ex.minY, py); ex.maxY = Math.max(ex.maxY, py);
-    }
-    COAST.concat(HAINAN, TAIWAN).forEach(function (ll) { var p = proj(ll[0], ll[1]); grow(p[0], p[1]); });
-    pts.forEach(function (p) { grow(p.x, p.y); });
-    grow(box.minX, box.minY); grow(box.maxX, box.maxY);
-    var m = 40;
-    ex.minX -= m; ex.minY -= m; ex.maxX += m; ex.maxY += m;
-    var ew = ex.maxX - ex.minX, eh = ex.maxY - ex.minY, ratio = iw / ih;
-    if (ew / eh > ratio) { var dh = (ew / ratio - eh) / 2; ex.minY -= dh; ex.maxY += dh; }
-    else { var dw = (eh * ratio - ew) / 2; ex.minX -= dw; ex.maxX += dw; }
-    var k = iw / (ex.maxX - ex.minX);
-    function mp(px, py) { return [ix + (px - ex.minX) * k, iy + (py - ex.minY) * k]; }
-    function mpts(lls) {
-      return lls.map(function (ll) { var p = proj(ll[0], ll[1]); p = mp(p[0], p[1]); return p[0] + "," + p[1]; }).join(" ");
-    }
+    /* 取景窗口 = 当前档位的固定经纬范围 ∪ 当前图幅，保证"你在这里"框永远在图内 */
+    var lv = MINI_LEVELS[miniZoom];
+    var win = { lng: lv.lng.slice(), lat: lv.lat.slice() };
+    var fl0 = box.minX / 40 + 105, fl1 = box.maxX / 40 + 105;
+    var fa0 = 29 - box.maxY / 40, fa1 = 29 - box.minY / 40;
+    win.lng[0] = Math.min(win.lng[0], fl0); win.lng[1] = Math.max(win.lng[1], fl1);
+    win.lat[0] = Math.min(win.lat[0], fa0); win.lat[1] = Math.max(win.lat[1], fa1);
 
-    var g = svgEl("g", { id: "farMiniMap", class: "mini-map", "aria-hidden": "true" });
+    /* contain 式适配：窗口整体缩放居中，空出来的边缘就是海面，不裁掉任何陆地 */
+    var k = Math.min(iw / (win.lng[1] - win.lng[0]), ih / (win.lat[1] - win.lat[0]));
+    var ox = ix + (iw - (win.lng[1] - win.lng[0]) * k) / 2;
+    var oy = iy + (ih - (win.lat[1] - win.lat[0]) * k) / 2;
+    function mll(lng, lat) {
+      var l = lng < MINI_CUT ? lng + 360 : lng;
+      return [ox + (l - win.lng[0]) * k, oy + (win.lat[1] - lat) * k];
+    }
+    function mp(px, py) { return mll(px / 40 + 105, 29 - py / 40); }
+
+    var g = svgEl("g", { id: "farMiniMap", class: "mini-map" });
     g.setAttribute("data-rect", [x, y, W, H].join(" ")); /* 供九段线插图避让 */
     g.appendChild(svgEl("rect", { class: "mm-frame", x: x, y: y, width: W, height: H, rx: W * 0.05 }));
 
+    var head = svgEl("g", { "aria-hidden": "true" });
+    /* 档位名放标题行、距离放副标题：两行都要让开右上角的按钮，别被压住 */
     var t = svgEl("text", { class: "mm-title", x: ix, y: y + W * 0.115, "font-size": W * 0.072 });
-    t.textContent = "位置总览";
-    g.appendChild(t);
+    t.textContent = "位置总览 · " + lv.name;
+    head.appendChild(t);
     var sub = svgEl("text", { class: "mm-note", x: ix, y: y + W * 0.168, "font-size": W * 0.05 });
     sub.textContent = "距中国大陆约 " + km + " 公里";
-    g.appendChild(sub);
+    head.appendChild(sub);
+    g.appendChild(head);
+    g.appendChild(zoomButtons(x, y, W));
 
-    /* 内框裁切：陆地要闭合到框外，靠 clip 修边 */
+    /* 内框裁切：窗口外的陆地一律修掉，不糊出面板 */
     var clip = svgEl("clipPath", { id: "mmClip" });
     clip.appendChild(svgEl("rect", { x: ix, y: iy, width: iw, height: ih, rx: W * 0.02 }));
     g.appendChild(clip);
-    var inner = svgEl("g", { "clip-path": "url(#mmClip)" });
+    var inner = svgEl("g", { "clip-path": "url(#mmClip)", "aria-hidden": "true" });
     inner.appendChild(svgEl("rect", { class: "mm-sea", x: ix, y: iy, width: iw, height: ih, rx: W * 0.02 }));
 
-    var c0 = proj(COAST[0][0], COAST[0][1]), c1 = proj(COAST[COAST.length - 1][0], COAST[COAST.length - 1][1]);
-    c0 = mp(c0[0], c0[1]); c1 = mp(c1[0], c1[1]);
-    var d = "M " + (ix - 6) + " " + c0[1] +
-      " L " + COAST.map(function (ll) { var p = proj(ll[0], ll[1]); p = mp(p[0], p[1]); return p[0] + " " + p[1]; }).join(" L ") +
-      " L " + c1[0] + " " + (iy - 6) + " L " + (ix - 6) + " " + (iy - 6) + " Z";
-    inner.appendChild(svgEl("path", { class: "mm-land", d: d }));
-    inner.appendChild(svgEl("polygon", { class: "mm-land", points: mpts(HAINAN) }));
-    inner.appendChild(svgEl("polygon", { class: "mm-land", points: mpts(TAIWAN) }));
+    /* 陆地：只画与窗口相交的环 */
+    if (typeof WORLD_LAND !== "undefined") {
+      landBoxes().forEach(function (b, i) {
+        if (b[2] < win.lng[0] || b[0] > win.lng[1] || b[3] < win.lat[0] || b[1] > win.lat[1]) return;
+        var flat = WORLD_LAND[i], out = [];
+        for (var j = 0; j < flat.length; j += 2) {
+          var p = mll(flat[j], flat[j + 1]);
+          out.push(p[0].toFixed(1) + "," + p[1].toFixed(1));
+        }
+        inner.appendChild(svgEl("polygon", { class: "mm-land", points: out.join(" ") }));
+      });
+    }
 
-    /* 当前图幅框：小地图里这一小块，就是上面整幅大图 */
+    /* 当前图幅框：小地图里这一小块，就是上面的整幅大图 */
     var v0 = mp(box.minX, box.minY), v1 = mp(box.maxX, box.maxY);
+    var vw = Math.max(v1[0] - v0[0], 3), vh = Math.max(v1[1] - v0[1], 3);
+
+    /* 地名：帮"这块陆地是哪儿"落地；落进图幅框的略去，免得压住台风 */
+    MINI_MARKS.forEach(function (mk) {
+      if (miniZoom < mk.from) return;
+      if (mk.lng < win.lng[0] || mk.lng > win.lng[1] || mk.lat < win.lat[0] || mk.lat > win.lat[1]) return;
+      var p = mll(mk.lng, mk.lat);
+      if (p[0] > v0[0] - 4 && p[0] < v0[0] + vw + 4 && p[1] > v0[1] - 4 && p[1] < v0[1] + vh + 4) return;
+      /* 贴边的地名会被内框裁掉半个字，往里收一收 */
+      var half = mk.name.length * W * 0.05 * 0.55, fs2 = W * 0.05;
+      p[0] = Math.min(Math.max(p[0], ix + half + 2), ix + iw - half - 2);
+      p[1] = Math.min(Math.max(p[1], iy + fs2), iy + ih - fs2 * 0.4);
+      var lb = svgEl("text", { class: "mm-mark", x: p[0], y: p[1], "text-anchor": "middle", "font-size": fs2 });
+      lb.textContent = mk.name;
+      inner.appendChild(lb);
+    });
+
     inner.appendChild(svgEl("rect", {
-      class: "mm-view", x: v0[0], y: v0[1], width: v1[0] - v0[0], height: v1[1] - v0[1], rx: W * 0.012,
+      class: "mm-view", x: v0[0], y: v0[1], width: vw, height: vh, rx: W * 0.012,
     }));
     inner.appendChild(svgEl("polyline", {
       class: "mm-track",
@@ -263,6 +403,10 @@
     }
     g.appendChild(inner);
     layer.appendChild(g);
+    /* 入 DOM 后再量：标题两行都不能伸进右上角按钮区 */
+    var headMax = W - W * 0.05 * 2 - (W * 0.115 * 2 + W * 0.028) - W * 0.03;
+    fitText(t, headMax);
+    fitText(sub, headMax);
   }
 
   function renderMap(track) {
@@ -272,6 +416,7 @@
     var trackLayer = $("trackLayer");
     baseLayer.innerHTML = ""; cityLayer.innerHTML = ""; trackLayer.innerHTML = "";
     hideTip();
+    lastTrack = track; /* 小地图缩放要按同一条路径重画 */
 
     /* 截断远海段是为了不把底图缩得太小，代价是当前位置也可能被截掉：整条路径都在
        西北太平洋远洋时图上会空无一物。因此以"当前位置在不在近海窗口内"决定视图——
