@@ -1,6 +1,17 @@
 /* 风眼 · Toy 运行时增强
-   1) 长时间停留时每 15 分钟检查一次在线数据，有新数据则刷新页面并恢复滚动位置；
-   2) 在路径图中加入可随 SVG 缩放的南海诸岛九段线示意插图。 */
+   长时间停留时每 15 分钟检查一次在线数据，有新数据则刷新页面并恢复滚动位置。
+
+   注意：这里曾经有一段「南海诸岛九段线示意插图」，用手写经纬度在路径图角上画断续线。
+   已于 2026-07-30 整体移除，请不要再加回来。原因：
+   1) 走向本身是错的——原第 8、9 段把断续线北端封口从越南中部横拉到海南岛东南、
+      珠江口以南，等于把海南岛、整个北部湾、西沙全划到线的外侧；标题写「南海诸岛」
+      却未画任何岛礁；段数按 9 段绘制，而现行标准地图为十段线（台湾岛东侧另有一段）。
+   2) 更根本的是：涉及国界线与南海断续线的地图，须依自然资源部标准画法，公开发布
+      通常还需送审取得审图号。标注「示意」不免责，自绘断续线无论怎么调坐标都仍属
+      问题地图。若日后确需展示，唯一合规做法是引用自然资源部标准地图服务
+      （bzdt.ch.mnr.gov.cn）提供的官方南海诸岛插图，并按其要求标注审图号。
+
+   小地图底图（basemap.js / Natural Earth）只含陆地轮廓、不含任何国界线，可以继续用。 */
 (function () {
   "use strict";
 
@@ -121,227 +132,19 @@
     });
   }
 
-  var SVG_NS = "http://www.w3.org/2000/svg";
-  var NINE_DASH_SEGMENTS = [
-    [[121.4, 21.7], [120.9, 20.3]],
-    [[120.0, 18.7], [119.5, 17.2]],
-    [[118.2, 15.0], [117.6, 13.3]],
-    [[116.0, 11.0], [114.8, 9.4]],
-    [[112.8, 7.7], [111.2, 6.5]],
-    [[109.6, 8.9], [108.6, 10.3]],
-    [[109.3, 12.8], [109.2, 14.3]],
-    [[110.2, 16.4], [110.7, 17.9]],
-    [[111.9, 19.3], [113.1, 20.5]]
-  ];
-  var HAINAN_INSET = [[110.6, 20.0], [111.0, 19.6], [110.5, 18.8], [109.7, 18.2], [108.9, 18.4], [108.7, 19.2], [109.3, 19.9]];
-  var TAIWAN_INSET = [[121.6, 25.3], [122.0, 25.0], [121.3, 22.9], [120.75, 21.9], [120.1, 23.1], [120.7, 24.6]];
-
-  function svgElement(tag, attrs) {
-    var node = document.createElementNS(SVG_NS, tag);
-    for (var key in attrs) {
-      if (Object.prototype.hasOwnProperty.call(attrs, key)) node.setAttribute(key, attrs[key]);
-    }
-    return node;
-  }
-
-  function addOverlayStyle() {
-    if (document.getElementById("toy-runtime-style")) return;
-    var style = document.createElement("style");
-    style.id = "toy-runtime-style";
-    style.textContent =
-      ".scs-inset .scs-frame{fill:var(--paper-2);fill-opacity:.94;stroke:var(--line);stroke-width:1.2;vector-effect:non-scaling-stroke}" +
-      ".scs-inset .scs-grid{fill:none;stroke:var(--line);stroke-width:.7;stroke-dasharray:2 3;opacity:.55;vector-effect:non-scaling-stroke}" +
-      ".scs-inset .scs-land{fill:var(--land);stroke:var(--ink-soft);stroke-width:.75;opacity:.95;vector-effect:non-scaling-stroke}" +
-      ".scs-inset .scs-dash{fill:none;stroke:var(--w-red);stroke-width:2.1;stroke-linecap:round;vector-effect:non-scaling-stroke}" +
-      ".scs-inset .scs-title{fill:var(--ink);font-family:var(--sans);font-weight:700;letter-spacing:.08em}" +
-      ".scs-inset .scs-note{fill:var(--ink-soft);font-family:var(--sans)}" +
-      "@media(max-width:600px){.scs-inset .scs-title{font-weight:600}}";
-    document.head.appendChild(style);
-  }
-
-  function pointsString(points, project) {
-    var out = [];
-    for (var i = 0; i < points.length; i++) {
-      var p = project(points[i][0], points[i][1]);
-      out.push(p[0] + "," + p[1]);
-    }
-    return out.join(" ");
-  }
-
-  function drawNineDashInset() {
-    var svg = document.getElementById("trackMap");
-    var base = document.getElementById("baseLayer");
-    if (!svg || !base || !base.childNodes.length) return;
-
-    var old = document.getElementById("southChinaSeaInset");
-    if (old && old.parentNode) old.parentNode.removeChild(old);
-
-    var vb = svg.viewBox && svg.viewBox.baseVal;
-    if (!vb || !vb.width || !vb.height) return;
-    var scale = Math.max(1, vb.width / 800);
-    var width = Math.min(vb.width * 0.25, 168 * scale);
-    var height = width * 1.03;
-    var pad = Math.max(10, 16 * scale);
-
-    /* 收集路径层坐标(轨迹点 + 折线顶点),在四角中挑与路径重叠最少的角放插图,
-       避免盖住台风路径。底部两角叠着 HTML 图例/角注,给固定罚分,仅在顶部两角
-       都被路径占据时才退去底部。 */
-    var trackPts = [];
-    var track = document.getElementById("trackLayer");
-    if (track) {
-      var circles = track.querySelectorAll("circle");
-      for (var ci = 0; ci < circles.length; ci++) {
-        trackPts.push([+circles[ci].getAttribute("cx"), +circles[ci].getAttribute("cy")]);
-      }
-      var lines = track.querySelectorAll("polyline");
-      for (var li = 0; li < lines.length; li++) {
-        var raw = (lines[li].getAttribute("points") || "").replace(/,/g, " ").split(/\s+/);
-        for (var pi = 0; pi + 1 < raw.length; pi += 2) {
-          var px = +raw[pi], py = +raw[pi + 1];
-          if (isFinite(px) && isFinite(py)) trackPts.push([px, py]);
-        }
-      }
-    }
-    /* 远洋视图的小地图先于本插图画好，作为硬障碍避让，两块面板不能叠在一起 */
-    var miniRect = null;
-    var miniNode = document.getElementById("farMiniMap");
-    if (miniNode) {
-      var raw = (miniNode.getAttribute("data-rect") || "").split(/\s+/).map(Number);
-      if (raw.length === 4 && raw.every(isFinite)) {
-        miniRect = { x: raw[0], y: raw[1], w: raw[2], h: raw[3] };
-      }
-    }
-    function overlapsMini(cx, cy) {
-      if (!miniRect) return 0;
-      var ox = Math.min(cx + width, miniRect.x + miniRect.w) - Math.max(cx, miniRect.x);
-      var oy = Math.min(cy + height, miniRect.y + miniRect.h) - Math.max(cy, miniRect.y);
-      return ox > 0 && oy > 0 ? 1 : 0;
-    }
-
-    var margin = pad * 0.75;
-    var candidates = [
-      { x: vb.x + vb.width - width - pad, y: vb.y + pad, penalty: 0 },                       /* 右上(默认) */
-      { x: vb.x + pad, y: vb.y + pad, penalty: 1 },                                          /* 左上 */
-      { x: vb.x + vb.width - width - pad, y: vb.y + vb.height - height - pad, penalty: 3 },  /* 右下(角注) */
-      { x: vb.x + pad, y: vb.y + vb.height - height - pad, penalty: 3 }                      /* 左下(图例) */
-    ];
-    var best = candidates[0], bestScore = Infinity;
-    for (var ki = 0; ki < candidates.length; ki++) {
-      var c = candidates[ki], hits = 0;
-      for (var ti = 0; ti < trackPts.length; ti++) {
-        var tp = trackPts[ti];
-        if (tp[0] >= c.x - margin && tp[0] <= c.x + width + margin &&
-            tp[1] >= c.y - margin && tp[1] <= c.y + height + margin) hits++;
-      }
-      var score = hits * 10 + c.penalty + overlapsMini(c.x, c.y) * 100;
-      if (score < bestScore) { bestScore = score; best = c; }
-    }
-    var x = best.x;
-    var y = best.y;
-    var innerX = x + width * 0.10;
-    var innerY = y + height * 0.19;
-    var innerW = width * 0.80;
-    var innerH = height * 0.70;
-
-    function project(lon, lat) {
-      return [
-        innerX + (lon - 105) / 18 * innerW,
-        innerY + (25.5 - lat) / 20.5 * innerH
-      ];
-    }
-
-    var group = svgElement("g", { id: "southChinaSeaInset", "class": "scs-inset", "aria-hidden": "true" });
-    group.appendChild(svgElement("rect", {
-      x: x, y: y, width: width, height: height, rx: width * 0.055, "class": "scs-frame"
-    }));
-
-    for (var lon = 110; lon <= 120; lon += 5) {
-      var a = project(lon, 25.5), b = project(lon, 5);
-      group.appendChild(svgElement("line", { x1: a[0], y1: a[1], x2: b[0], y2: b[1], "class": "scs-grid" }));
-    }
-    for (var lat = 10; lat <= 20; lat += 5) {
-      var c = project(105, lat), d = project(123, lat);
-      group.appendChild(svgElement("line", { x1: c[0], y1: c[1], x2: d[0], y2: d[1], "class": "scs-grid" }));
-    }
-
-    group.appendChild(svgElement("polygon", { points: pointsString(HAINAN_INSET, project), "class": "scs-land" }));
-    group.appendChild(svgElement("polygon", { points: pointsString(TAIWAN_INSET, project), "class": "scs-land" }));
-
-    for (var i = 0; i < NINE_DASH_SEGMENTS.length; i++) {
-      var seg = NINE_DASH_SEGMENTS[i];
-      var p1 = project(seg[0][0], seg[0][1]);
-      var p2 = project(seg[1][0], seg[1][1]);
-      group.appendChild(svgElement("line", {
-        x1: p1[0], y1: p1[1], x2: p2[0], y2: p2[1], "class": "scs-dash"
-      }));
-    }
-
-    var title = svgElement("text", {
-      x: x + width * 0.10, y: y + height * 0.105,
-      "font-size": Math.max(10, width * 0.075), "class": "scs-title"
-    });
-    title.textContent = "南海诸岛";
-    group.appendChild(title);
-
-    var note = svgElement("text", {
-      x: x + width * 0.10, y: y + height * 0.164,
-      "font-size": Math.max(8, width * 0.052), "class": "scs-note"
-    });
-    note.textContent = "九段线示意";
-    group.appendChild(note);
-
-    base.appendChild(group);
-
-    /* 插图是不透明面板：盖住的经纬网标注（远洋视图才有）整条隐藏，
-       避免在插图边缘露出半截度数，如"175°E"被切成"175°F" */
-    var labels = base.querySelectorAll(".grat-label");
-    for (var gl = 0; gl < labels.length; gl++) {
-      var lb = labels[gl];
-      var lx = +lb.getAttribute("x"), ly = +lb.getAttribute("y");
-      var lfs = +lb.getAttribute("font-size") || 12;
-      var lw = 0;
-      try { lw = lb.getComputedTextLength(); } catch (e) { /* 非渲染态回退估算 */ }
-      if (!lw) lw = lfs * 0.6 * (lb.textContent || "").length;
-      var hit = lx <= x + width && lx + lw >= x && ly >= y && ly - lfs <= y + height;
-      lb.style.display = hit ? "none" : "";
-    }
-
-    var mapNote = document.querySelector("#mapWrap .map-note");
-    if (mapNote && mapNote.textContent.indexOf("九段线") < 0) {
-      mapNote.textContent = mapNote.textContent.replace(/海岸线为示意/, "海岸线及九段线为示意");
-    }
-  }
-
-  function startMapOverlay() {
-    addOverlayStyle();
-    var svg = document.getElementById("trackMap");
-    var track = document.getElementById("trackLayer");
-    if (!svg || !track || typeof MutationObserver !== "function") {
-      setTimeout(drawNineDashInset, 1200);
-      return;
-    }
-    var queued = false;
-    function queueDraw() {
-      if (queued) return;
-      queued = true;
-      var raf = window.requestAnimationFrame || function (fn) { return setTimeout(fn, 16); };
-      raf(function () {
-        queued = false;
-        drawNineDashInset();
-      });
-    }
-    new MutationObserver(queueDraw).observe(track, { childList: true });
-    new MutationObserver(queueDraw).observe(svg, { attributes: true, attributeFilter: ["viewBox"] });
-    queueDraw();
+  /* 兜底：历史版本可能把插图留在缓存的 DOM 里，命中就清掉。 */
+  function removeLegacyInset() {
+    var stale = document.getElementById("southChinaSeaInset");
+    if (stale && stale.parentNode) stale.parentNode.removeChild(stale);
   }
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", function () {
       startRefreshLoop();
-      startMapOverlay();
+      removeLegacyInset();
     });
   } else {
     startRefreshLoop();
-    startMapOverlay();
+    removeLegacyInset();
   }
 })();

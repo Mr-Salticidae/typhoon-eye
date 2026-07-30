@@ -266,31 +266,15 @@
     }
 
     /* 可放置区域先让开三类既有信息：顶部经度标注行、左侧纬度标注列、
-       底部 HTML 图例与角注。九段线插图（默认右上）作为软障碍计罚分。 */
+       底部 HTML 图例与角注。 */
     var x0 = box.minX + gap + 40 * f, x1 = box.maxX - W - gap;
     var y0 = box.minY + gap + 24 * f, y1 = box.maxY - H - gap - 26 * f;
     if (x1 < x0) { x0 = x1 = box.maxX - W - gap; }
     if (y1 < y0) { y0 = y1 = Math.max(box.minY + gap, box.maxY - H - gap); }
 
-    var sc = Math.max(1, (box.maxX - box.minX) / BASE_W);
-    var scsW = Math.min((box.maxX - box.minX) * 0.25, 168 * sc);
-    var scsPad = Math.max(10, 16 * sc);
-    var scs = { x: box.maxX - scsW - scsPad, y: box.minY + scsPad, w: scsW, h: scsW * 1.03 };
-
-    function overlap(ax, ay, aw, ah, b) {
-      var ox = Math.max(0, Math.min(ax + aw, b.x + b.w) - Math.max(ax, b.x));
-      var oy = Math.max(0, Math.min(ay + ah, b.y + b.h) - Math.max(ay, b.y));
-      return ox * oy;
-    }
     function clearOf(rx, ry, px, py) {
       var dx = Math.max(rx - px, 0, px - (rx + W));
       var dy = Math.max(ry - py, 0, py - (ry + H));
-      return Math.sqrt(dx * dx + dy * dy);
-    }
-    /* 两块面板之间的净空：只判重叠会让小地图紧贴插图，观感局促 */
-    function gapTo(rx, ry, b) {
-      var dx = Math.max(b.x - (rx + W), rx - (b.x + b.w), 0);
-      var dy = Math.max(b.y - (ry + H), ry - (b.y + b.h), 0);
       return Math.sqrt(dx * dx + dy * dy);
     }
 
@@ -306,11 +290,9 @@
           if (s.x >= cx2 - gap && s.x <= cx2 + W + gap && s.y >= cy2 - gap && s.y <= cy2 + H + gap) hits++;
           clear = Math.min(clear, clearOf(cx2, cy2, s.x, s.y));
         }
-        clear = Math.min(clear, gapTo(cx2, cy2, scs));
         /* 当前位置是全图最该保住的元素，压中它单独重罚 */
         var onNow = now && clearOf(cx2, cy2, now.x, now.y) < 22 * f ? 1 : 0;
         var score = hits * 12 + onNow * 60
-          + overlap(cx2, cy2, W, H, scs) / (W * H) * 22
           - Math.min(clear / f, 150) * 0.06;
         if (score < bestScore) { bestScore = score; best = { x: cx2, y: cy2 }; }
       }
@@ -337,7 +319,6 @@
     function mp(px, py) { return mll(px / 40 + 105, 29 - py / 40); }
 
     var g = svgEl("g", { id: "farMiniMap", class: "mini-map" });
-    g.setAttribute("data-rect", [x, y, W, H].join(" ")); /* 供九段线插图避让 */
     g.appendChild(svgEl("rect", { class: "mm-frame", x: x, y: y, width: W, height: H, rx: W * 0.05 }));
 
     var head = svgEl("g", { "aria-hidden": "true" });
@@ -514,9 +495,8 @@
       trackLayer.appendChild(g);
     });
 
-    /* 远洋视图的角注自带"九段线"字样，toy-runtime 的插图角注改写会自动跳过 */
     $("mapWrap").querySelector(".map-note").textContent = farOcean
-      ? "远洋视图 · 小地图框出当前图幅 · 经纬网与九段线为示意"
+      ? "远洋视图 · 小地图框出当前图幅 · 经纬网为示意"
       : (omitted > 0 ? "海岸线为示意 · 部分远海路径未显示" : "海岸线为示意");
   }
 
