@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02 06:33",
+  "updatedAt": "2026-08-02 07:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 2
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 39 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 39 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-02 05时",
             "windLevel": 7,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-02 05时",
+            "windLevel": 7,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -144,7 +151,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 11 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -152,6 +159,13 @@
             "time": "08-02 05时",
             "windLevel": 16,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-02 05时",
+            "windLevel": 16,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -168,8 +182,8 @@
         "pressure": 930,
         "moveDir": "西北西",
         "moveSpeed": 24,
-        "r7": null,
-        "r10": null,
+        "r7": 400,
+        "r10": 160,
         "time": "08-02 05时",
         "position": "中心位于北纬 22.5 度、东经 154.3 度"
       },
