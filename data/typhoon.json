@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03 07:44",
+  "updatedAt": "2026-08-03 08:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "热带低压",
       "enName": "NAMELESS",
       "code": "0015",
-      "level": "热带低压（7级）",
+      "level": "热带低压（6级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 31 公里（时次相差 3 小时）、强度暂缺（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 85 公里（时次相差 6 小时）、强度暂缺（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-03 05时",
-            "windLevel": 7,
+            "time": "08-03 08时",
+            "windLevel": 6,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-03 05时",
-            "windLevel": 7,
+            "time": "08-03 08时",
+            "windLevel": 6,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 7,
-        "windSpeed": 15,
-        "pressure": 1002,
+        "windLevel": 6,
+        "windSpeed": 12,
+        "pressure": 1005,
         "moveDir": "北北西",
-        "moveSpeed": 6,
+        "moveSpeed": 13,
         "r7": null,
         "r10": null,
-        "time": "08-03 05时",
-        "position": "中心位于北纬 16.2 度、东经 123.8 度"
+        "time": "08-03 08时",
+        "position": "中心位于北纬 16.5 度、东经 123.4 度"
       },
       "track": [
         {
@@ -168,15 +168,15 @@
           "lng": 123.8,
           "wind": 7,
           "strong": "热带低压",
-          "phase": "now"
+          "phase": "past"
         },
         {
-          "t": "08-03 17时",
-          "lat": 16.8,
-          "lng": 123.6,
-          "wind": 7,
+          "t": "08-03 08时",
+          "lat": 16.5,
+          "lng": 123.4,
+          "wind": 6,
           "strong": "热带低压",
-          "phase": "forecast"
+          "phase": "now"
         }
       ]
     },
