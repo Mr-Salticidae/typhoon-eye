@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04 05:30",
+  "updatedAt": "2026-08-04 05:46",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,48 +30,48 @@
       "name": "白海豚",
       "enName": "DOLPHIN",
       "code": "2613",
-      "level": "强台风（14级）",
+      "level": "强台风（15级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-04 02时",
-            "windLevel": 14,
+            "time": "08-04 05时",
+            "windLevel": 15,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-04 02时",
-            "windLevel": 14,
+            "time": "08-04 05时",
+            "windLevel": 15,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-04 02时",
+            "time": "08-04 05时",
             "windLevel": 14,
             "role": "verify"
           }
         ]
       },
       "now": {
-        "windLevel": 14,
-        "windSpeed": 45,
-        "pressure": 950,
+        "windLevel": 15,
+        "windSpeed": 48,
+        "pressure": 945,
         "moveDir": "西",
-        "moveSpeed": 20,
+        "moveSpeed": 22,
         "r7": 360,
         "r10": 160,
-        "time": "08-04 02时",
-        "position": "中心位于北纬 25.2 度、东经 144.2 度"
+        "time": "08-04 05时",
+        "position": "中心位于北纬 25.2 度、东经 143.7 度"
       },
       "track": [
         {
@@ -123,9 +123,9 @@
           "phase": "past"
         },
         {
-          "t": "07-30 23时",
-          "lat": 17.7,
-          "lng": 163.4,
+          "t": "07-31 02时",
+          "lat": 17.8,
+          "lng": 163.1,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
@@ -139,50 +139,42 @@
           "phase": "past"
         },
         {
-          "t": "08-01 02时",
-          "lat": 19.8,
-          "lng": 159.2,
+          "t": "08-01 05时",
+          "lat": 20,
+          "lng": 158.8,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-01 17时",
-          "lat": 21.3,
-          "lng": 156.9,
+          "t": "08-01 20时",
+          "lat": 21.6,
+          "lng": 156.2,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-02 05时",
-          "lat": 22.5,
-          "lng": 154.3,
+          "t": "08-02 08时",
+          "lat": 22.7,
+          "lng": 153.6,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-02 20时",
-          "lat": 23.6,
-          "lng": 151.1,
+          "t": "08-02 23时",
+          "lat": 23.8,
+          "lng": 150.4,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-03 08时",
-          "lat": 24.4,
-          "lng": 148.4,
+          "t": "08-03 11时",
+          "lat": 24.6,
+          "lng": 147.9,
           "wind": 15,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-03 23时",
-          "lat": 25.1,
-          "lng": 145.2,
-          "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
@@ -192,68 +184,76 @@
           "lng": 144.2,
           "wind": 14,
           "strong": "强台风",
+          "phase": "past"
+        },
+        {
+          "t": "08-04 05时",
+          "lat": 25.2,
+          "lng": 143.7,
+          "wind": 15,
+          "strong": "强台风",
           "phase": "now"
         },
         {
-          "t": "08-04 14时",
+          "t": "08-04 17时",
           "lat": 25.3,
-          "lng": 141.9,
-          "wind": 14,
+          "lng": 141.1,
+          "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-05 02时",
-          "lat": 25.4,
-          "lng": 139.3,
-          "wind": 14,
+          "t": "08-05 05时",
+          "lat": 25.5,
+          "lng": 138.6,
+          "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-05 14时",
-          "lat": 25.7,
-          "lng": 137.1,
-          "wind": 14,
+          "t": "08-05 17时",
+          "lat": 25.8,
+          "lng": 136.1,
+          "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-06 02时",
+          "t": "08-06 05时",
           "lat": 26,
-          "lng": 134.7,
-          "wind": 14,
+          "lng": 133.8,
+          "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-06 14时",
+          "t": "08-06 17时",
+          "lat": 26,
+          "lng": 131.6,
+          "wind": 15,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-07 05时",
           "lat": 26.2,
-          "lng": 132.7,
+          "lng": 129.7,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-07 02时",
+          "t": "08-08 05时",
           "lat": 26.5,
-          "lng": 130.5,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-08 02时",
-          "lat": 26.6,
           "lng": 127.8,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-09 02时",
-          "lat": 27.5,
-          "lng": 125.4,
+          "t": "08-09 05时",
+          "lat": 27.4,
+          "lng": 126.6,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
