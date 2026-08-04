@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05 02:14",
+  "updatedAt": "2026-08-05 02:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -27,30 +27,30 @@
   ],
   "typhoons": [
     {
-      "name": "热带低压",
-      "enName": "NAMELESS",
-      "code": "0016",
-      "level": "热带低压（7级）",
+      "name": "鲸鱼",
+      "enName": "KUJIRA",
+      "code": "2614",
+      "level": "热带风暴（8级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 131 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 139 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-04 23时",
-            "windLevel": 7,
+            "time": "08-05 02时",
+            "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-04 23时",
-            "windLevel": 7,
+            "time": "08-05 02时",
+            "windLevel": 8,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 7,
-        "windSpeed": 15,
-        "pressure": 1002,
+        "windLevel": 8,
+        "windSpeed": 18,
+        "pressure": 998,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 120,
         "r10": null,
-        "time": "08-04 23时",
-        "position": "中心位于北纬 17.4 度、东经 119.5 度"
+        "time": "08-05 02时",
+        "position": "中心位于北纬 17.1 度、东经 119.8 度"
       },
       "track": [
         {
@@ -96,28 +96,36 @@
           "lng": 119.5,
           "wind": 7,
           "strong": "热带低压",
+          "phase": "past"
+        },
+        {
+          "t": "08-05 02时",
+          "lat": 17.1,
+          "lng": 119.8,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-05 11时",
-          "lat": 17.3,
-          "lng": 119.9,
+          "t": "08-05 14时",
+          "lat": 17.1,
+          "lng": 120.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-05 23时",
+          "t": "08-06 02时",
           "lat": 17.1,
-          "lng": 120.5,
-          "wind": 7,
-          "strong": "热带低压",
+          "lng": 120.4,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-06 11时",
-          "lat": 17,
-          "lng": 121,
+          "t": "08-06 14时",
+          "lat": 17.2,
+          "lng": 120.9,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -135,7 +143,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 81 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -154,7 +162,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-04 23时",
+            "time": "08-05 02时",
             "windLevel": 14,
             "role": "verify"
           }
