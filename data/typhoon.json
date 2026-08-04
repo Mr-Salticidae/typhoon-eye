@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04 17:45",
+  "updatedAt": "2026-08-04 18:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 2
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
@@ -34,29 +34,22 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 46 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 164 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "08-04 17时",
-            "windLevel": 7,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "08-04 17时",
             "windLevel": 7,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-04 14时",
+            "time": "08-04 17时",
             "windLevel": 7,
             "role": "verify"
           }
@@ -116,24 +109,17 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 15 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "08-04 17时",
-            "windLevel": 16,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "08-04 17时",
             "windLevel": 16,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -192,7 +178,7 @@
           "t": "07-30 02时",
           "lat": 15.8,
           "lng": 166.8,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "past"
         },
