@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06 15:21",
+  "updatedAt": "2026-08-06 15:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 2
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 100 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 100 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-06 14时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-06 14时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 998,
         "moveDir": "西北",
         "moveSpeed": 25,
-        "r7": null,
+        "r7": 450,
         "r10": null,
         "time": "08-06 14时",
         "position": "中心位于北纬 26.2 度、东经 163.6 度"
@@ -371,7 +378,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 10 公里、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -381,9 +388,16 @@
             "role": "primary"
           },
           {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-06 14时",
+            "windLevel": 14,
+            "role": "verify"
+          },
+          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-06 14时",
+            "time": "08-06 15时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -395,8 +409,8 @@
         "pressure": 955,
         "moveDir": "西",
         "moveSpeed": 20,
-        "r7": null,
-        "r10": null,
+        "r7": 360,
+        "r10": 160,
         "time": "08-06 14时",
         "position": "中心位于北纬 26.6 度、东经 132.7 度"
       },
