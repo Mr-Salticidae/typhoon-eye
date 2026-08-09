@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09 22:56",
+  "updatedAt": "2026-08-09 23:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -151,19 +151,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 48 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-09 20时",
+            "time": "08-09 23时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-09 20时",
+            "time": "08-09 23时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -181,11 +181,11 @@
         "windSpeed": 18,
         "pressure": 998,
         "moveDir": "北北西",
-        "moveSpeed": 19,
+        "moveSpeed": 18,
         "r7": 400,
         "r10": null,
-        "time": "08-09 20时",
-        "position": "中心位于北纬 32.3 度、东经 150.8 度"
+        "time": "08-09 23时",
+        "position": "中心位于北纬 32.7 度、东经 150.6 度"
       },
       "track": [
         {
@@ -237,8 +237,8 @@
           "phase": "past"
         },
         {
-          "t": "08-07 11时",
-          "lat": 29.5,
+          "t": "08-07 14时",
+          "lat": 29.6,
           "lng": 160.3,
           "wind": 8,
           "strong": "热带风暴",
@@ -253,49 +253,41 @@
           "phase": "past"
         },
         {
-          "t": "08-08 02时",
-          "lat": 32,
-          "lng": 158,
+          "t": "08-08 05时",
+          "lat": 32.1,
+          "lng": 157.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-08 11时",
-          "lat": 32.8,
-          "lng": 155.8,
+          "t": "08-08 14时",
+          "lat": 33.1,
+          "lng": 155,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-08 17时",
-          "lat": 33.2,
-          "lng": 154,
+          "t": "08-08 20时",
+          "lat": 33.1,
+          "lng": 153.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-09 02时",
-          "lat": 32.7,
-          "lng": 151.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-09 08时",
+          "t": "08-09 05时",
           "lat": 32.5,
-          "lng": 151.1,
+          "lng": 151.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-09 17时",
-          "lat": 32.2,
-          "lng": 150.8,
+          "t": "08-09 11时",
+          "lat": 32.3,
+          "lng": 150.9,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -306,52 +298,52 @@
           "lng": 150.8,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-09 23时",
+          "lat": 32.7,
+          "lng": 150.6,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-10 08时",
-          "lat": 34,
-          "lng": 149.6,
+          "t": "08-10 11时",
+          "lat": 34.3,
+          "lng": 149.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-10 20时",
-          "lat": 35.6,
-          "lng": 147.9,
+          "t": "08-10 23时",
+          "lat": 36.1,
+          "lng": 146.7,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-11 08时",
-          "lat": 37.3,
-          "lng": 144.4,
+          "t": "08-11 11时",
+          "lat": 36.7,
+          "lng": 142.9,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-11 20时",
-          "lat": 37.7,
-          "lng": 140.1,
+          "t": "08-11 23时",
+          "lat": 36.8,
+          "lng": 138.7,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-12 08时",
-          "lat": 37.8,
-          "lng": 136.2,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-12 20时",
-          "lat": 37.2,
-          "lng": 132.4,
+          "t": "08-12 11时",
+          "lat": 36.7,
+          "lng": 135,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -362,27 +354,27 @@
       "name": "白海豚",
       "enName": "DOLPHIN",
       "code": "2613",
-      "level": "强热带风暴（11级）",
+      "level": "强热带风暴（10级）",
       "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
       "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 96 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 104 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-09 22时",
-            "windLevel": 11,
+            "time": "08-09 23时",
+            "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-09 22时",
-            "windLevel": 11,
+            "time": "08-09 23时",
+            "windLevel": 10,
             "role": "verify"
           },
           {
@@ -395,15 +387,15 @@
         ]
       },
       "now": {
-        "windLevel": 11,
-        "windSpeed": 30,
-        "pressure": 975,
-        "moveDir": "西北西",
-        "moveSpeed": 17,
+        "windLevel": 10,
+        "windSpeed": 28,
+        "pressure": 978,
+        "moveDir": "西北",
+        "moveSpeed": 15,
         "r7": null,
         "r10": null,
-        "time": "08-09 22时",
-        "position": "中心位于北纬 27.6 度、东经 120.1 度"
+        "time": "08-09 23时",
+        "position": "中心位于北纬 27.5 度、东经 120.1 度"
       },
       "track": [
         {
@@ -439,9 +431,9 @@
           "phase": "past"
         },
         {
-          "t": "08-01 20时",
-          "lat": 21.6,
-          "lng": 156.2,
+          "t": "08-01 23时",
+          "lat": 21.8,
+          "lng": 155.6,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
@@ -463,17 +455,17 @@
           "phase": "past"
         },
         {
-          "t": "08-05 20时",
+          "t": "08-05 23时",
           "lat": 26,
-          "lng": 136.1,
+          "lng": 135.7,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "08-07 05时",
+          "t": "08-07 08时",
           "lat": 27.2,
-          "lng": 129.8,
+          "lng": 129,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -487,15 +479,15 @@
           "phase": "past"
         },
         {
-          "t": "08-08 13时",
-          "lat": 27,
-          "lng": 125.3,
+          "t": "08-08 14时",
+          "lat": 26.9,
+          "lng": 125.2,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "08-09 00时",
+          "t": "08-09 01时",
           "lat": 27.1,
           "lng": 124,
           "wind": 15,
@@ -503,19 +495,11 @@
           "phase": "past"
         },
         {
-          "t": "08-09 10时",
-          "lat": 27.9,
-          "lng": 122.9,
+          "t": "08-09 11时",
+          "lat": 28,
+          "lng": 122.7,
           "wind": 14,
           "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-09 21时",
-          "lat": 27.7,
-          "lng": 120.4,
-          "wind": 12,
-          "strong": "台风",
           "phase": "past"
         },
         {
@@ -524,60 +508,68 @@
           "lng": 120.1,
           "wind": 11,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-09 23时",
+          "lat": 27.5,
+          "lng": 120.1,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-10 04时",
+          "t": "08-10 05时",
           "lat": 27.9,
-          "lng": 119.4333,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-10 10时",
-          "lat": 28.2667,
-          "lng": 118.6333,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-10 16时",
-          "lat": 28.7667,
-          "lng": 117.7667,
+          "lng": 119.4,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-10 22时",
-          "lat": 29.2833,
-          "lng": 116.7667,
+          "t": "08-10 11时",
+          "lat": 28.4,
+          "lng": 118.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-11 10时",
-          "lat": 30.2833,
-          "lng": 114.9167,
+          "t": "08-10 17时",
+          "lat": 29,
+          "lng": 117.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-11 22时",
-          "lat": 30.8,
-          "lng": 113.8,
+          "t": "08-10 23时",
+          "lat": 29.7,
+          "lng": 116.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-11 11时",
+          "lat": 30.5,
+          "lng": 114.2,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-11 23时",
+          "lat": 31,
+          "lng": 113.3,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-12 10时",
-          "lat": 31.4,
-          "lng": 112.6,
+          "t": "08-12 11时",
+          "lat": 31.6,
+          "lng": 112.8,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
