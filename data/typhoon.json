@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10 15:30",
+  "updatedAt": "2026-08-10 15:59",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -21,8 +21,8 @@
       "id": "jma",
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
-      "ok": true,
-      "count": 3
+      "ok": false,
+      "error": "404 https://www.jma.go.jp/bosai/typhoon/data/targetTc.json"
     }
   ],
   "typhoons": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,13 +49,6 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-10 14时",
-            "windLevel": 8,
-            "role": "verify"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
             "time": "08-10 14时",
             "windLevel": 8,
             "role": "verify"
@@ -183,7 +176,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 27 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -195,13 +188,6 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-10 14时",
-            "windLevel": 8,
-            "role": "verify"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
             "time": "08-10 14时",
             "windLevel": 8,
             "role": "verify"
@@ -385,7 +371,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 44 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -398,13 +384,6 @@
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "08-10 15时",
-            "windLevel": 8,
-            "role": "verify"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "08-10 14时",
             "windLevel": 8,
             "role": "verify"
           }
