@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12 10:00",
+  "updatedAt": "2026-08-12 10:20",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "id": "jma",
@@ -371,6 +371,129 @@
           "lng": 134.3,
           "wind": 6,
           "strong": "热带低压",
+          "phase": "forecast"
+        }
+      ]
+    },
+    {
+      "name": "浪卡",
+      "enName": "NANGKA",
+      "code": "2617",
+      "level": "热带风暴（8级）",
+      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
+      "nearCoast": false,
+      "nameNote": null,
+      "trackSource": "浙江台风路径系统",
+      "verification": {
+        "status": "consistent",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 39 公里、强度一致（2 源交叉校验一致）",
+        "sources": [
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-12 08时",
+            "windLevel": 8,
+            "role": "primary"
+          },
+          {
+            "id": "jma",
+            "name": "日本气象厅",
+            "time": "08-12 08时",
+            "windLevel": 8,
+            "role": "verify"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 8,
+        "windSpeed": 18,
+        "pressure": 998,
+        "moveDir": "—",
+        "moveSpeed": 38,
+        "r7": 600,
+        "r10": null,
+        "time": "08-12 08时",
+        "position": "中心位于北纬 21.8 度、东经 141.7 度"
+      },
+      "track": [
+        {
+          "t": "08-12 08时",
+          "lat": 21.8,
+          "lng": 141.7,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "now"
+        },
+        {
+          "t": "08-12 14时",
+          "lat": 23,
+          "lng": 143.7,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-12 20时",
+          "lat": 24.4,
+          "lng": 145,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-13 02时",
+          "lat": 25.8,
+          "lng": 146.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-13 08时",
+          "lat": 26.9,
+          "lng": 147.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-13 20时",
+          "lat": 28.4,
+          "lng": 149.8,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-14 08时",
+          "lat": 29.1,
+          "lng": 150.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-15 08时",
+          "lat": 30.4,
+          "lng": 150.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-16 08时",
+          "lat": 32,
+          "lng": 149.2,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-17 08时",
+          "lat": 34.3,
+          "lng": 148.4,
+          "wind": 5,
+          "strong": " ",
           "phase": "forecast"
         }
       ]
