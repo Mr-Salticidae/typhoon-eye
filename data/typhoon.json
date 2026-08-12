@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12 11:00",
+  "updatedAt": "2026-08-12 11:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "jma",
@@ -152,28 +152,21 @@
       "name": "琵鹭",
       "enName": "PEILOU",
       "code": "2616",
-      "level": "热带风暴（8级）",
+      "level": "热带低压（7级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 142 公里（时次相差 3 小时）、强度差 1 级；日本气象厅定位相差 184 公里（时次相差 3 小时）、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：日本气象厅定位相差 56 公里、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-12 05时",
-            "windLevel": 8,
-            "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
             "time": "08-12 08时",
             "windLevel": 7,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -185,15 +178,15 @@
         ]
       },
       "now": {
-        "windLevel": 8,
-        "windSpeed": 18,
-        "pressure": 998,
-        "moveDir": "北北东",
-        "moveSpeed": 25,
+        "windLevel": 7,
+        "windSpeed": 15,
+        "pressure": 1002,
+        "moveDir": "东北东",
+        "moveSpeed": 29,
         "r7": null,
         "r10": null,
-        "time": "08-12 05时",
-        "position": "中心位于北纬 28.0 度、东经 161.3 度"
+        "time": "08-12 08时",
+        "position": "中心位于北纬 29.0 度、东经 162.2 度"
       },
       "track": [
         {
@@ -245,9 +238,9 @@
           "phase": "past"
         },
         {
-          "t": "08-10 17时",
-          "lat": 21.4,
-          "lng": 151.6,
+          "t": "08-10 20时",
+          "lat": 22.2,
+          "lng": 152.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -261,17 +254,9 @@
           "phase": "past"
         },
         {
-          "t": "08-11 02时",
-          "lat": 23.3,
-          "lng": 154,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-11 08时",
-          "lat": 24.6,
-          "lng": 156,
+          "t": "08-11 05时",
+          "lat": 23.8,
+          "lng": 154.9,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -285,9 +270,9 @@
           "phase": "past"
         },
         {
-          "t": "08-11 17时",
-          "lat": 26.1,
-          "lng": 158.2,
+          "t": "08-11 14时",
+          "lat": 25.5,
+          "lng": 157.4,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -301,9 +286,9 @@
           "phase": "past"
         },
         {
-          "t": "08-12 02时",
-          "lat": 27.7,
-          "lng": 160.8,
+          "t": "08-11 23时",
+          "lat": 26.8,
+          "lng": 159.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -314,12 +299,20 @@
           "lng": 161.3,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-12 08时",
+          "lat": 29,
+          "lng": 162.2,
+          "wind": 7,
+          "strong": "热带低压",
           "phase": "now"
         },
         {
-          "t": "08-12 17时",
-          "lat": 30.2,
-          "lng": 163,
+          "t": "08-12 20时",
+          "lat": 30.7,
+          "lng": 165.2,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
