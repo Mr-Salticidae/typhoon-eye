@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14 14:30",
+  "updatedAt": "2026-08-14 15:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,48 +30,48 @@
       "name": "浪卡",
       "enName": "NANGKA",
       "code": "2617",
-      "level": "热带风暴（8级）",
+      "level": "热带低压（7级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-14 11时",
-            "windLevel": 8,
+            "time": "08-14 14时",
+            "windLevel": 7,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-14 11时",
-            "windLevel": 8,
+            "time": "08-14 14时",
+            "windLevel": 7,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-14 11时",
+            "time": "08-14 14时",
             "windLevel": 8,
             "role": "verify"
           }
         ]
       },
       "now": {
-        "windLevel": 8,
-        "windSpeed": 18,
-        "pressure": 998,
+        "windLevel": 7,
+        "windSpeed": 15,
+        "pressure": 1000,
         "moveDir": "东",
         "moveSpeed": 5,
         "r7": 480,
         "r10": null,
-        "time": "08-14 11时",
-        "position": "中心位于北纬 29.0 度、东经 154.2 度"
+        "time": "08-14 14时",
+        "position": "中心位于北纬 29.0 度、东经 154.3 度"
       },
       "track": [
         {
@@ -91,9 +91,9 @@
           "phase": "past"
         },
         {
-          "t": "08-12 14时",
-          "lat": 22.3,
-          "lng": 143.5,
+          "t": "08-12 17时",
+          "lat": 22.8,
+          "lng": 144.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -115,17 +115,17 @@
           "phase": "past"
         },
         {
-          "t": "08-13 02时",
-          "lat": 24.8,
-          "lng": 147,
+          "t": "08-13 05时",
+          "lat": 25.8,
+          "lng": 148,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-13 05时",
-          "lat": 25.8,
-          "lng": 148,
+          "t": "08-13 08时",
+          "lat": 26.5,
+          "lng": 148.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -147,14 +147,6 @@
           "phase": "past"
         },
         {
-          "t": "08-13 17时",
-          "lat": 27.9,
-          "lng": 150.1,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
           "t": "08-13 20时",
           "lat": 28.3,
           "lng": 150.7,
@@ -163,17 +155,17 @@
           "phase": "past"
         },
         {
-          "t": "08-14 02时",
-          "lat": 28.6,
-          "lng": 152.5,
+          "t": "08-13 23时",
+          "lat": 28.4,
+          "lng": 151.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-14 05时",
-          "lat": 28.8,
-          "lng": 153.5,
+          "t": "08-14 02时",
+          "lat": 28.6,
+          "lng": 152.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -192,20 +184,20 @@
           "lng": 154.2,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-14 14时",
+          "lat": 29,
+          "lng": 154.3,
+          "wind": 7,
+          "strong": "热带低压",
           "phase": "now"
         },
         {
-          "t": "08-14 23时",
-          "lat": 29.1,
-          "lng": 154.7,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-15 11时",
-          "lat": 29.3,
-          "lng": 155.2,
+          "t": "08-15 02时",
+          "lat": 29.2,
+          "lng": 154.9,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
