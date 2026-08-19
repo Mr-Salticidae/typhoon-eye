@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 23:15",
+  "updatedAt": "2026-08-19 23:36",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 2
+      "count": 3
     },
     {
       "id": "jma",
@@ -27,8 +27,8 @@
   ],
   "typhoons": [
     {
-      "name": "热带低压",
-      "enName": "NAMELESS",
+      "name": null,
+      "enName": "TD07",
       "code": "0021",
       "level": "热带低压（7级）",
       "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
@@ -37,19 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；浙江台风路径系统定位相差 0 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-19 20时",
+            "time": "08-19 23时",
             "windLevel": 7,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-19 20时",
+            "time": "08-19 23时",
+            "windLevel": 7,
+            "role": "verify"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-19 23时",
             "windLevel": 7,
             "role": "verify"
           }
@@ -60,11 +67,11 @@
         "windSpeed": 15,
         "pressure": 998,
         "moveDir": "西",
-        "moveSpeed": 6,
+        "moveSpeed": 52,
         "r7": null,
         "r10": null,
-        "time": "08-19 20时",
-        "position": "中心位于北纬 19.6 度、东经 113.4 度"
+        "time": "08-19 23时",
+        "position": "中心位于北纬 19.6 度、东经 111.9 度"
       },
       "track": [
         {
@@ -81,36 +88,44 @@
           "lng": 113.4,
           "wind": 7,
           "strong": "热带低压",
+          "phase": "past"
+        },
+        {
+          "t": "08-19 23时",
+          "lat": 19.6,
+          "lng": 111.9,
+          "wind": 7,
+          "strong": "热带低压",
           "phase": "now"
         },
         {
-          "t": "08-20 08时",
+          "t": "08-20 05时",
           "lat": 19.6,
-          "lng": 112.8,
+          "lng": 111.1,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-20 20时",
+          "t": "08-20 11时",
+          "lat": 19.6,
+          "lng": 110.1,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-20 17时",
           "lat": 19.7,
-          "lng": 111.4,
+          "lng": 109.3,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-21 08时",
-          "lat": 20,
-          "lng": 109.1,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-21 20时",
-          "lat": 19.9,
-          "lng": 107.6,
+          "t": "08-20 23时",
+          "lat": 20.3,
+          "lng": 107.7,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
