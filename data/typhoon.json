@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 12:18",
+  "updatedAt": "2026-08-19 12:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,14 +8,14 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "jma",
@@ -25,5 +25,128 @@
       "count": 1
     }
   ],
-  "typhoons": []
+  "typhoons": [
+    {
+      "name": "沙德尔",
+      "enName": "SAUDEL",
+      "code": "2618",
+      "level": "热带风暴（8级）",
+      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
+      "nearCoast": false,
+      "nameNote": null,
+      "trackSource": "中央气象台",
+      "verification": {
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度一致（3 源交叉校验一致）",
+        "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "08-19 11时",
+            "windLevel": 8,
+            "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-19 11时",
+            "windLevel": 8,
+            "role": "verify"
+          },
+          {
+            "id": "jma",
+            "name": "日本气象厅",
+            "time": "08-19 11时",
+            "windLevel": 8,
+            "role": "verify"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 8,
+        "windSpeed": 18,
+        "pressure": 998,
+        "moveDir": "北北西",
+        "moveSpeed": 16,
+        "r7": 200,
+        "r10": null,
+        "time": "08-19 11时",
+        "position": "中心位于北纬 8.2 度、东经 153.9 度"
+      },
+      "track": [
+        {
+          "t": "08-19 11时",
+          "lat": 8.2,
+          "lng": 153.9,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "now"
+        },
+        {
+          "t": "08-19 23时",
+          "lat": 9.7,
+          "lng": 153.3,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-20 11时",
+          "lat": 11.2,
+          "lng": 152.6,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-20 23时",
+          "lat": 12.5,
+          "lng": 151.9,
+          "wind": 11,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-21 11时",
+          "lat": 13.9,
+          "lng": 150.3,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-21 23时",
+          "lat": 15.6,
+          "lng": 148.8,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-22 11时",
+          "lat": 17.3,
+          "lng": 147,
+          "wind": 16,
+          "strong": "超强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-23 11时",
+          "lat": 20.1,
+          "lng": 143.2,
+          "wind": 17,
+          "strong": "超强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-24 11时",
+          "lat": 22.5,
+          "lng": 138.4,
+          "wind": 17,
+          "strong": "超强台风",
+          "phase": "forecast"
+        }
+      ]
+    }
+  ]
 }
