@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19 17:18",
+  "updatedAt": "2026-08-19 17:38",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "id": "zj",
@@ -26,6 +26,82 @@
     }
   ],
   "typhoons": [
+    {
+      "name": "热带低压",
+      "enName": "NAMELESS",
+      "code": "0021",
+      "level": "热带低压（7级）",
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
+      "nameNote": null,
+      "trackSource": "中央气象台",
+      "verification": {
+        "status": "single",
+        "detail": "目前仅中央气象台发布该系统，其余源暂未跟踪",
+        "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "08-19 17时",
+            "windLevel": 7,
+            "role": "primary"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 7,
+        "windSpeed": 15,
+        "pressure": 998,
+        "moveDir": "西",
+        "moveSpeed": 6,
+        "r7": null,
+        "r10": null,
+        "time": "08-19 17时",
+        "position": "中心位于北纬 19.6 度、东经 113.4 度"
+      },
+      "track": [
+        {
+          "t": "08-19 17时",
+          "lat": 19.6,
+          "lng": 113.4,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "now"
+        },
+        {
+          "t": "08-20 05时",
+          "lat": 19.6,
+          "lng": 112.8,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-20 17时",
+          "lat": 19.7,
+          "lng": 111.4,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-21 05时",
+          "lat": 20,
+          "lng": 109.1,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-21 17时",
+          "lat": 19.9,
+          "lng": 107.6,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        }
+      ]
+    },
     {
       "name": "沙德尔",
       "enName": "SAUDEL",
