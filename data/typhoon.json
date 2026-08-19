@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20 06:09",
+  "updatedAt": "2026-08-20 06:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 3
+      "count": 2
     },
     {
       "id": "jma",
@@ -27,8 +27,8 @@
   ],
   "typhoons": [
     {
-      "name": null,
-      "enName": "TD07",
+      "name": "热带低压",
+      "enName": "NAMELESS",
       "code": "0021",
       "level": "热带低压（7级）",
       "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；浙江台风路径系统定位相差 52 公里（时次相差 6 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -50,13 +50,6 @@
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "08-20 05时",
-            "windLevel": 7,
-            "role": "verify"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-19 23时",
             "windLevel": 7,
             "role": "verify"
           }
