@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20 17:30",
+  "updatedAt": "2026-08-20 17:46",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -223,8 +223,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 116 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 129 公里、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -243,7 +243,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-20 14时",
+            "time": "08-20 17时",
             "windLevel": 9,
             "role": "verify"
           }
