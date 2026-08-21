@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21 19:44",
+  "updatedAt": "2026-08-21 19:46",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 2
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 24 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-21 19时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-21 19时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-21 19时",
         "position": "中心位于北纬 20.7 度、东经 108.4 度"
@@ -344,7 +351,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 22 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -352,6 +359,13 @@
             "time": "08-21 17时",
             "windLevel": 11,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-21 17时",
+            "windLevel": 11,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -368,7 +382,7 @@
         "pressure": 980,
         "moveDir": "西北",
         "moveSpeed": 15,
-        "r7": null,
+        "r7": 280,
         "r10": null,
         "time": "08-21 17时",
         "position": "中心位于北纬 15.4 度、东经 148.5 度"
@@ -567,23 +581,42 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 240,
+    "total": 242,
     "counts": {
-      "暴雨": 178,
+      "暴雨": 180,
       "台风": 15,
       "山洪灾害": 10,
       "山洪风险": 4,
       "地质灾害": 33
     },
     "peak": {
-      "province": "山东",
+      "province": "黑龙江",
       "kind": "暴雨",
       "level": "red",
-      "title": "山东省威海市乳山市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/37108341600000_20260821171055.html",
-      "issuedAt": "2026/08/21 17:10"
+      "title": "黑龙江省哈尔滨市木兰县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/23012741600000_20260821185544.html",
+      "issuedAt": "2026/08/21 18:55"
     },
     "provinces": [
+      {
+        "province": "黑龙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪灾害": "yellow"
+        },
+        "count": 21,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "黑龙江省哈尔滨市木兰县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23012741600000_20260821185544.html",
+          "issuedAt": "2026/08/21 18:55"
+        },
+        "lat": 47.4,
+        "lng": 128.1
+      },
       {
         "province": "山东",
         "maxLevel": "red",
@@ -601,25 +634,6 @@
         },
         "lat": 36.4,
         "lng": 118.2
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪灾害": "yellow"
-        },
-        "count": 19,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "黑龙江省哈尔滨市木兰县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23012741600000_20260821185544.html",
-          "issuedAt": "2026/08/21 18:55"
-        },
-        "lat": 47.4,
-        "lng": 128.1
       },
       {
         "province": "福建",
