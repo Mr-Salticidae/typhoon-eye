@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21 23:53",
+  "updatedAt": "2026-08-22 00:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 62 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 42 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-21 20时",
+            "time": "08-21 23时",
             "windLevel": 7,
             "role": "verify"
           }
@@ -304,7 +304,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 10,
+            "count": 9,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -581,13 +581,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 192,
+    "total": 174,
     "counts": {
-      "暴雨": 130,
+      "暴雨": 111,
       "台风": 15,
       "山洪灾害": 9,
       "山洪风险": 7,
-      "地质灾害": 31
+      "地质灾害": 32
     },
     "peak": {
       "province": "山东",
@@ -605,7 +605,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 15,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -615,24 +615,6 @@
         },
         "lat": 36.4,
         "lng": 118.2
-      },
-      {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省甘孜州气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51330041600000_20260821211841.html",
-          "issuedAt": "2026/08/21 21:18"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "云南",
@@ -647,9 +629,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省曲靖市会泽县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53032641600000_20260821231911.html",
-          "issuedAt": "2026/08/21 23:19"
+          "title": "云南省楚雄彝族自治州禄丰市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53230241600000_20260821235035.html",
+          "issuedAt": "2026/08/21 23:50"
         },
         "lat": 25,
         "lng": 101.5
@@ -720,7 +702,7 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 10,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -730,24 +712,6 @@
         },
         "lat": 23.8,
         "lng": 108.8
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "黑龙江省哈尔滨市方正县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23012441600000_20260821195749.html",
-          "issuedAt": "2026/08/21 19:57"
-        },
-        "lat": 47.4,
-        "lng": 128.1
       },
       {
         "province": "海南",
@@ -769,7 +733,7 @@
         "lng": 109.7
       },
       {
-        "province": "内蒙古",
+        "province": "黑龙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
@@ -779,12 +743,12 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "内蒙古自治区通辽市内蒙古通辽市扎鲁特旗气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15052641600000_20260821194535.html",
-          "issuedAt": "2026/08/21 19:45"
+          "title": "黑龙江省哈尔滨市方正县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23012441600000_20260821195749.html",
+          "issuedAt": "2026/08/21 19:57"
         },
-        "lat": 44,
-        "lng": 113.9
+        "lat": 47.4,
+        "lng": 128.1
       },
       {
         "province": "江西",
@@ -842,22 +806,22 @@
         "lng": 122.6
       },
       {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "province": "四川",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "orange"
         },
-        "count": 15,
+        "count": 3,
         "top": {
           "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省南平市顺昌县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35072141600000_20260821224400.html",
-          "issuedAt": "2026/08/21 22:44"
+          "level": "orange",
+          "title": "四川省乐山市沐川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51112941600000_20260821235721.html",
+          "issuedAt": "2026/08/21 23:57"
         },
-        "lat": 26.1,
-        "lng": 118.3
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "河北",
@@ -866,7 +830,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 8,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -878,22 +842,40 @@
         "lng": 115.5
       },
       {
-        "province": "重庆",
+        "province": "内蒙古",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "重庆市县巫山县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023741600000_20260821174256.html",
-          "issuedAt": "2026/08/21 17:42"
+          "title": "内蒙古自治区兴安盟突泉县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15222441600000_20260821234534.html",
+          "issuedAt": "2026/08/21 23:45"
         },
-        "lat": 29.8,
-        "lng": 107.9
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省南平市顺昌县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35072141600000_20260821224400.html",
+          "issuedAt": "2026/08/21 22:44"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "宁夏",
@@ -934,22 +916,22 @@
         "lng": 126.2
       },
       {
-        "province": "安徽",
+        "province": "重庆",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省合肥市肥东县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34012241600000_20260821195914.html",
-          "issuedAt": "2026/08/21 19:59"
+          "title": "重庆市县奉节县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260821192310.html",
+          "issuedAt": "2026/08/21 19:23"
         },
-        "lat": 31.9,
-        "lng": 117.2
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "陕西",
