@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 02:46",
+  "updatedAt": "2026-08-22 03:02",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 2
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 53 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 53 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-22 01时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 01时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-22 01时",
         "position": "中心位于北纬 21.1 度、东经 108.7 度"
@@ -297,13 +304,13 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 16,
+            "count": 17,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广西壮族自治区钦州市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45070041600000_20260822023432.html",
-              "issuedAt": "2026/08/22 02:34"
+              "title": "广西壮族自治区百色市田东县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45102241600000_20260822025710.html",
+              "issuedAt": "2026/08/22 02:57"
             },
             "via": "路径邻近",
             "distKm": 217
@@ -344,7 +351,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 25 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -352,6 +359,13 @@
             "time": "08-22 02时",
             "windLevel": 12,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 02时",
+            "windLevel": 12,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -368,8 +382,8 @@
         "pressure": 970,
         "moveDir": "西北",
         "moveSpeed": 22,
-        "r7": null,
-        "r10": null,
+        "r7": 350,
+        "r10": 150,
         "time": "08-22 02时",
         "position": "中心位于北纬 16.9 度、东经 147.8 度"
       },
@@ -567,13 +581,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 188,
+    "total": 189,
     "counts": {
-      "暴雨": 131,
+      "暴雨": 132,
       "台风": 16,
       "山洪灾害": 3,
-      "山洪风险": 7,
-      "地质灾害": 31
+      "山洪风险": 8,
+      "地质灾害": 30
     },
     "peak": {
       "province": "云南",
@@ -629,13 +643,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 9,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "四川省凉山彝族自治州金阳县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51343041600000_20260822024037.html",
-          "issuedAt": "2026/08/22 02:40"
+          "title": "四川省乐山市马边彝族自治县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51113341600000_20260822024400.html",
+          "issuedAt": "2026/08/22 02:44"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -648,13 +662,13 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 16,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区钦州市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45070041600000_20260822023432.html",
-          "issuedAt": "2026/08/22 02:34"
+          "title": "广西壮族自治区百色市田东县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45102241600000_20260822025710.html",
+          "issuedAt": "2026/08/22 02:57"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -734,24 +748,6 @@
         "lng": 115.7
       },
       {
-        "province": "辽宁",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "辽宁省沈阳市法库县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21012441600000_20260822023300.html",
-          "issuedAt": "2026/08/22 02:33"
-        },
-        "lat": 41.8,
-        "lng": 122.6
-      },
-      {
         "province": "黑龙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -768,6 +764,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "辽宁省沈阳市法库县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21012441600000_20260822023300.html",
+          "issuedAt": "2026/08/22 02:33"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "吉林",
