@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 2
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 53 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 53 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-22 01时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 01时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-22 01时",
         "position": "中心位于北纬 21.1 度、东经 108.7 度"
@@ -344,7 +351,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 60 公里（时次相差 3 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 60 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -352,6 +359,13 @@
             "time": "08-22 02时",
             "windLevel": 12,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 02时",
+            "windLevel": 12,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -368,8 +382,8 @@
         "pressure": 970,
         "moveDir": "西北",
         "moveSpeed": 22,
-        "r7": null,
-        "r10": null,
+        "r7": 350,
+        "r10": 150,
         "time": "08-22 02时",
         "position": "中心位于北纬 16.9 度、东经 147.8 度"
       },
