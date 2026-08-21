@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21 16:53",
+  "updatedAt": "2026-08-21 17:16",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 2
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 30 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-21 14时",
             "windLevel": 7,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-21 14时",
-            "windLevel": 7,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -303,7 +296,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 9,
+            "count": 10,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -321,13 +314,13 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 13,
+            "count": 14,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广东省梅州市丰顺县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44142341600000_20260821163835.html",
-              "issuedAt": "2026/08/21 16:38"
+              "title": "广东省梅州市大埔县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44142241600000_20260821170011.html",
+              "issuedAt": "2026/08/21 17:00"
             },
             "via": "路径邻近",
             "distKm": 357
@@ -349,7 +342,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 31 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 31 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -357,13 +350,6 @@
             "time": "08-21 14时",
             "windLevel": 11,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-21 14时",
-            "windLevel": 11,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -380,7 +366,7 @@
         "pressure": 980,
         "moveDir": "西北",
         "moveSpeed": 16,
-        "r7": 280,
+        "r7": null,
         "r10": null,
         "time": "08-21 14时",
         "position": "中心位于北纬 14.9 度、东经 148.7 度"
@@ -579,21 +565,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 216,
+    "total": 224,
     "counts": {
-      "暴雨": 164,
-      "台风": 6,
+      "暴雨": 172,
+      "台风": 7,
       "山洪灾害": 9,
       "山洪风险": 4,
-      "地质灾害": 33
+      "地质灾害": 32
     },
     "peak": {
       "province": "山东",
       "kind": "暴雨",
       "level": "red",
-      "title": "山东省烟台市栖霞市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/37068641600000_20260821153708.html",
-      "issuedAt": "2026/08/21 15:37"
+      "title": "山东省烟台市海阳市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/37068741600000_20260821170238.html",
+      "issuedAt": "2026/08/21 17:02"
     },
     "provinces": [
       {
@@ -603,13 +589,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 21,
+        "count": 22,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "山东省烟台市栖霞市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37068641600000_20260821153708.html",
-          "issuedAt": "2026/08/21 15:37"
+          "title": "山东省烟台市海阳市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37068741600000_20260821170238.html",
+          "issuedAt": "2026/08/21 17:02"
         },
         "lat": 36.4,
         "lng": 118.2
@@ -640,7 +626,7 @@
           "暴雨": "red",
           "山洪灾害": "yellow"
         },
-        "count": 13,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -678,13 +664,13 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 33,
+        "count": 34,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省楚雄彝族自治州大姚县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53232641600000_20260821140550.html",
-          "issuedAt": "2026/08/21 14:05"
+          "title": "云南省普洱市孟连傣族拉祜族佤族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082741600000_20260821171247.html",
+          "issuedAt": "2026/08/21 17:12"
         },
         "lat": 25,
         "lng": 101.5
@@ -710,6 +696,24 @@
         "lng": 120.2
       },
       {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 14,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省梅州市大埔县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44142241600000_20260821170011.html",
+          "issuedAt": "2026/08/21 17:00"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "山西",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -718,7 +722,7 @@
           "山洪灾害": "orange",
           "地质灾害": "orange"
         },
-        "count": 14,
+        "count": 13,
         "top": {
           "kind": "山洪灾害",
           "level": "orange",
@@ -730,31 +734,13 @@
         "lng": 112.3
       },
       {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 13,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省梅州市丰顺县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142341600000_20260821163835.html",
-          "issuedAt": "2026/08/21 16:38"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "湖南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -764,6 +750,25 @@
         },
         "lat": 27.6,
         "lng": 111.7
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "blue"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区南宁市上林县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45012541600000_20260821151150.html",
+          "issuedAt": "2026/08/21 15:11"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "江苏",
@@ -784,38 +789,19 @@
         "lng": 119.5
       },
       {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区南宁市上林县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45012541600000_20260821151150.html",
-          "issuedAt": "2026/08/21 15:11"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省赣州市定南县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36072841600000_20260821163511.html",
-          "issuedAt": "2026/08/21 16:35"
+          "title": "江西省赣州市龙南市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36078341600000_20260821164928.html",
+          "issuedAt": "2026/08/21 16:49"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -839,6 +825,24 @@
         "lng": 113.6
       },
       {
+        "province": "内蒙古",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "内蒙古自治区鄂尔多斯市达拉特旗气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15062141600000_20260821171202.html",
+          "issuedAt": "2026/08/21 17:12"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
         "province": "辽宁",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -855,24 +859,6 @@
         },
         "lat": 41.8,
         "lng": 122.6
-      },
-      {
-        "province": "内蒙古",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "内蒙古自治区鄂尔多斯市达拉特旗气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15062141600000_20260821162231.html",
-          "issuedAt": "2026/08/21 16:22"
-        },
-        "lat": 44,
-        "lng": 113.9
       },
       {
         "province": "海南",
@@ -917,7 +903,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 14,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -939,12 +925,30 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "河北省石家庄市元氏县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13013241600000_20260821112103.html",
-          "issuedAt": "2026/08/21 11:21"
+          "title": "河北省承德市围场满族蒙古族自治县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13082841600000_20260821170134.html",
+          "issuedAt": "2026/08/21 17:01"
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "甘肃",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "甘肃省甘南藏族自治州合作市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/62300141600000_20260821170855.html",
+          "issuedAt": "2026/08/21 17:08"
+        },
+        "lat": 37.8,
+        "lng": 101.1
       },
       {
         "province": "吉林",
@@ -971,7 +975,7 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 3,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
