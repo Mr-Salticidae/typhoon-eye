@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 03:31",
+  "updatedAt": "2026-08-22 03:32",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 2
     },
     {
       "id": "jma",
@@ -31,13 +31,13 @@
       "enName": "NAMELESS",
       "code": "2619",
       "level": "热带风暴（8级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 62 公里、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 22 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 62 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-22 02时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 01时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-22 02时",
         "position": "中心位于北纬 21.3 度、东经 108.7 度"
@@ -186,6 +193,86 @@
           "wind": 8,
           "strong": "热带风暴",
           "phase": "now"
+        },
+        {
+          "t": "08-22 08时",
+          "lat": 21.4,
+          "lng": 108.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-22 14时",
+          "lat": 20.9,
+          "lng": 108.1,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-22 20时",
+          "lat": 20.7,
+          "lng": 108.1,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-23 02时",
+          "lat": 20.4,
+          "lng": 108.4,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-23 14时",
+          "lat": 20.4,
+          "lng": 108.8,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-24 02时",
+          "lat": 20.5,
+          "lng": 109.1,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-24 14时",
+          "lat": 20.6,
+          "lng": 109.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-25 02时",
+          "lat": 20.9,
+          "lng": 109.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-26 02时",
+          "lat": 21.4,
+          "lng": 109.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-27 02时",
+          "lat": 22.3,
+          "lng": 109.5,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
@@ -207,7 +294,7 @@
               "issuedAt": "2026/08/21 12:46"
             },
             "via": "路径邻近",
-            "distKm": 256
+            "distKm": 158
           },
           {
             "province": "广西",
@@ -226,7 +313,7 @@
               "issuedAt": "2026/08/22 03:04"
             },
             "via": "路径邻近",
-            "distKm": 278
+            "distKm": 182
           },
           {
             "province": "广东",
@@ -244,8 +331,8 @@
               "url": "http://www.nmc.cn/publish/alarm/44088241600000_20260822004219.html",
               "issuedAt": "2026/08/22 00:42"
             },
-            "via": "台风预警",
-            "distKm": 537
+            "via": "路径邻近",
+            "distKm": 418
           }
         ],
         "floodLevel": "orange",
@@ -264,7 +351,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 25 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -272,6 +359,13 @@
             "time": "08-22 02时",
             "windLevel": 12,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 02时",
+            "windLevel": 12,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -288,8 +382,8 @@
         "pressure": 970,
         "moveDir": "西北",
         "moveSpeed": 22,
-        "r7": null,
-        "r10": null,
+        "r7": 350,
+        "r10": 150,
         "time": "08-22 02时",
         "position": "中心位于北纬 16.9 度、东经 147.8 度"
       },
