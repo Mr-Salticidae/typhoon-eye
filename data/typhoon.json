@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 05:09",
+  "updatedAt": "2026-08-22 05:31",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 2
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -31,13 +31,13 @@
       "enName": "NAMELESS",
       "code": "2619",
       "level": "热带风暴（8级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 49 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 49 公里（时次相差 3 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-22 05时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-22 04时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": 150,
+        "r7": null,
         "r10": null,
         "time": "08-22 05时",
         "position": "中心位于北纬 21.4 度、东经 108.4 度"
@@ -193,29 +186,90 @@
           "wind": 8,
           "strong": "热带风暴",
           "phase": "now"
+        },
+        {
+          "t": "08-22 11时",
+          "lat": 21.2,
+          "lng": 108.1,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-22 17时",
+          "lat": 20.9,
+          "lng": 108,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-22 23时",
+          "lat": 20.6,
+          "lng": 108.1,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-23 05时",
+          "lat": 20.4,
+          "lng": 108.5,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-23 17时",
+          "lat": 20.5,
+          "lng": 108.8,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-24 05时",
+          "lat": 20.6,
+          "lng": 109.1,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-24 17时",
+          "lat": 20.8,
+          "lng": 109.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-25 05时",
+          "lat": 21.1,
+          "lng": 109.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-26 05时",
+          "lat": 21.5,
+          "lng": 109.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-27 05时",
+          "lat": 22.3,
+          "lng": 109.5,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
         "provinces": [
-          {
-            "province": "广西",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange",
-              "台风": "yellow"
-            },
-            "count": 20,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "广西壮族自治区北海市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45050041600000_20260822044824.html",
-              "issuedAt": "2026/08/22 04:48"
-            },
-            "via": "路径邻近",
-            "distKm": 270
-          },
           {
             "province": "海南",
             "maxLevel": "orange",
@@ -233,7 +287,26 @@
               "issuedAt": "2026/08/21 12:46"
             },
             "via": "路径邻近",
-            "distKm": 280
+            "distKm": 168
+          },
+          {
+            "province": "广西",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange",
+              "台风": "yellow"
+            },
+            "count": 20,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "广西壮族自治区北海市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45050041600000_20260822044824.html",
+              "issuedAt": "2026/08/22 04:48"
+            },
+            "via": "路径邻近",
+            "distKm": 182
           },
           {
             "province": "广东",
@@ -251,8 +324,8 @@
               "url": "http://www.nmc.cn/publish/alarm/44088241600000_20260822004219.html",
               "issuedAt": "2026/08/22 00:42"
             },
-            "via": "台风预警",
-            "distKm": 560
+            "via": "路径邻近",
+            "distKm": 418
           }
         ],
         "floodLevel": "orange",
@@ -271,7 +344,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 25 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -279,13 +352,6 @@
             "time": "08-22 02时",
             "windLevel": 12,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-22 02时",
-            "windLevel": 12,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -302,8 +368,8 @@
         "pressure": 970,
         "moveDir": "西北",
         "moveSpeed": 22,
-        "r7": 350,
-        "r10": 150,
+        "r7": null,
+        "r10": null,
         "time": "08-22 02时",
         "position": "中心位于北纬 16.9 度、东经 147.8 度"
       },
@@ -501,13 +567,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 200,
+    "total": 202,
     "counts": {
-      "暴雨": 143,
+      "暴雨": 145,
       "台风": 16,
       "山洪灾害": 3,
-      "山洪风险": 8,
-      "地质灾害": 30
+      "山洪风险": 7,
+      "地质灾害": 31
     },
     "peak": {
       "province": "云南",
@@ -527,7 +593,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 49,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -563,7 +629,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 9,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -614,13 +680,31 @@
         "lng": 120.2
       },
       {
+        "province": "内蒙古",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 12,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "内蒙古自治区赤峰市阿鲁科尔沁旗气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15042141600000_20260822051122.html",
+          "issuedAt": "2026/08/22 05:11"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
         "province": "湖南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -742,22 +826,22 @@
         "lng": 115.7
       },
       {
-        "province": "内蒙古",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "province": "安徽",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "orange"
         },
-        "count": 11,
+        "count": 1,
         "top": {
           "kind": "暴雨",
-          "level": "yellow",
-          "title": "内蒙古自治区巴彦淖尔市乌拉特前旗气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15082341600000_20260822043256.html",
-          "issuedAt": "2026/08/22 04:32"
+          "level": "orange",
+          "title": "安徽省宣城市广德市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34188241600000_20260822052548.html",
+          "issuedAt": "2026/08/22 05:25"
         },
-        "lat": 44,
-        "lng": 113.9
+        "lat": 31.9,
+        "lng": 117.2
       },
       {
         "province": "河北",
@@ -851,24 +935,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "安徽省宣城市广德市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34188241600000_20260822044308.html",
-          "issuedAt": "2026/08/22 04:43"
-        },
-        "lat": 31.9,
-        "lng": 117.2
       },
       {
         "province": "陕西",
