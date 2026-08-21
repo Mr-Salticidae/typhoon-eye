@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21 18:52",
+  "updatedAt": "2026-08-21 19:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-21 18时",
+            "time": "08-21 19时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-21 18时",
+            "time": "08-21 19时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -70,8 +70,8 @@
         "moveSpeed": 0,
         "r7": 150,
         "r10": null,
-        "time": "08-21 18时",
-        "position": "中心位于北纬 20.6 度、东经 108.3 度"
+        "time": "08-21 19时",
+        "position": "中心位于北纬 20.7 度、东经 108.4 度"
       },
       "track": [
         {
@@ -91,7 +91,7 @@
           "phase": "past"
         },
         {
-          "t": "08-19 23时",
+          "t": "08-20 02时",
           "lat": 19.6,
           "lng": 111.9,
           "wind": 7,
@@ -115,17 +115,17 @@
           "phase": "past"
         },
         {
-          "t": "08-20 11时",
+          "t": "08-20 14时",
           "lat": 19.5,
-          "lng": 109.9,
+          "lng": 109.7,
           "wind": 6,
           "strong": "热带低压",
           "phase": "past"
         },
         {
-          "t": "08-20 14时",
-          "lat": 19.5,
-          "lng": 109.7,
+          "t": "08-20 17时",
+          "lat": 19.7,
+          "lng": 109.5,
           "wind": 6,
           "strong": "热带低压",
           "phase": "past"
@@ -147,14 +147,6 @@
           "phase": "past"
         },
         {
-          "t": "08-21 02时",
-          "lat": 19.9,
-          "lng": 108.7,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
           "t": "08-21 05时",
           "lat": 20.3,
           "lng": 108.4,
@@ -163,16 +155,16 @@
           "phase": "past"
         },
         {
-          "t": "08-21 11时",
-          "lat": 20.5,
+          "t": "08-21 08时",
+          "lat": 20.4,
           "lng": 108.4,
           "wind": 7,
           "strong": "热带低压",
           "phase": "past"
         },
         {
-          "t": "08-21 14时",
-          "lat": 20.6,
+          "t": "08-21 11时",
+          "lat": 20.5,
           "lng": 108.4,
           "wind": 7,
           "strong": "热带低压",
@@ -192,84 +184,92 @@
           "lng": 108.3,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-21 19时",
+          "lat": 20.7,
+          "lng": 108.4,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-22 00时",
-          "lat": 20.8167,
-          "lng": 108.4667,
+          "t": "08-22 01时",
+          "lat": 20.8333,
+          "lng": 108.4333,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-22 06时",
-          "lat": 20.8833,
-          "lng": 108.2667,
+          "t": "08-22 07时",
+          "lat": 20.8667,
+          "lng": 108.2333,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-22 12时",
-          "lat": 20.7667,
+          "t": "08-22 13时",
+          "lat": 20.7333,
           "lng": 108.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-22 18时",
-          "lat": 20.5833,
-          "lng": 108.1167,
+          "t": "08-22 19时",
+          "lat": 20.5667,
+          "lng": 108.1333,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-23 06时",
-          "lat": 20.3917,
-          "lng": 108.3333,
+          "t": "08-23 07时",
+          "lat": 20.3833,
+          "lng": 108.3667,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-23 18时",
-          "lat": 20.3083,
-          "lng": 108.7333,
+          "t": "08-23 19时",
+          "lat": 20.3167,
+          "lng": 108.7667,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-24 06时",
-          "lat": 20.4167,
-          "lng": 109.125,
+          "t": "08-24 07时",
+          "lat": 20.4333,
+          "lng": 109.15,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-24 18时",
-          "lat": 20.6167,
-          "lng": 109.4042,
+          "t": "08-24 19时",
+          "lat": 20.6333,
+          "lng": 109.4083,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-25 18时",
-          "lat": 21.0333,
-          "lng": 109.4958,
+          "t": "08-25 19时",
+          "lat": 21.0667,
+          "lng": 109.4917,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-26 18时",
-          "lat": 21.8333,
-          "lng": 109.3958,
+          "t": "08-26 19时",
+          "lat": 21.8667,
+          "lng": 109.3917,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -294,7 +294,7 @@
               "issuedAt": "2026/08/21 12:46"
             },
             "via": "路径邻近",
-            "distKm": 148
+            "distKm": 149
           },
           {
             "province": "广西",
@@ -313,7 +313,7 @@
               "issuedAt": "2026/08/21 18:17"
             },
             "via": "路径邻近",
-            "distKm": 227
+            "distKm": 223
           },
           {
             "province": "广东",
@@ -332,7 +332,7 @@
               "issuedAt": "2026/08/21 18:17"
             },
             "via": "路径邻近",
-            "distKm": 446
+            "distKm": 445
           }
         ],
         "floodLevel": "orange",
@@ -581,9 +581,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 226,
+    "total": 230,
     "counts": {
-      "暴雨": 165,
+      "暴雨": 169,
       "台风": 15,
       "山洪灾害": 10,
       "山洪风险": 4,
@@ -628,9 +628,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "黑龙江省哈尔滨市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23010041600000_20260821184904.html",
-          "issuedAt": "2026/08/21 18:49"
+          "title": "黑龙江省哈尔滨市木兰县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23012741600000_20260821185544.html",
+          "issuedAt": "2026/08/21 18:55"
         },
         "lat": 47.4,
         "lng": 128.1
@@ -662,7 +662,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 15,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -682,7 +682,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 35,
+        "count": 36,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -733,6 +733,24 @@
         "lng": 112.3
       },
       {
+        "province": "内蒙古",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "内蒙古自治区通辽市内蒙古通辽市扎鲁特旗气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15052641600000_20260821185213.html",
+          "issuedAt": "2026/08/21 18:52"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
         "province": "湖南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -749,24 +767,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "内蒙古",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 10,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "内蒙古自治区鄂尔多斯市东胜区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15060241600000_20260821180639.html",
-          "issuedAt": "2026/08/21 18:06"
-        },
-        "lat": 44,
-        "lng": 113.9
       },
       {
         "province": "广西",
@@ -921,7 +921,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 15,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
