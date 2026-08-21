@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21 14:24",
+  "updatedAt": "2026-08-21 14:43",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -267,7 +267,69 @@
           "strong": "热带低压",
           "phase": "forecast"
         }
-      ]
+      ],
+      "rainRisk": {
+        "provinces": [
+          {
+            "province": "海南",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 3,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "海南省东方市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46900741600000_20260821124611.html",
+              "issuedAt": "2026/08/21 12:46"
+            },
+            "via": "路径邻近",
+            "distKm": 101
+          },
+          {
+            "province": "广西",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange",
+              "台风": "blue"
+            },
+            "count": 8,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "广西壮族自治区南宁市武鸣区气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45011041600000_20260821134714.html",
+              "issuedAt": "2026/08/21 13:47"
+            },
+            "via": "路径邻近",
+            "distKm": 301
+          },
+          {
+            "province": "广东",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 7,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "广东省河源市龙川县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44162241600000_20260820172250.html",
+              "issuedAt": "2026/08/20 17:22"
+            },
+            "via": "路径邻近",
+            "distKm": 365
+          }
+        ],
+        "floodLevel": "orange",
+        "maxLevel": "orange",
+        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高橙色。"
+      }
     },
     {
       "name": "沙德尔",
@@ -280,7 +342,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 70 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -299,7 +361,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-21 11时",
+            "time": "08-21 14时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -501,7 +563,401 @@
           "strong": "超强台风",
           "phase": "forecast"
         }
-      ]
+      ],
+      "rainRisk": null
     }
-  ]
+  ],
+  "alerts": {
+    "ok": true,
+    "label": "中央气象台预警发布平台",
+    "url": "http://www.nmc.cn/publish/alarm.html",
+    "partial": null,
+    "total": 164,
+    "counts": {
+      "暴雨": 107,
+      "台风": 7,
+      "山洪灾害": 11,
+      "山洪风险": 4,
+      "地质灾害": 35
+    },
+    "peak": {
+      "province": "云南",
+      "kind": "暴雨",
+      "level": "orange",
+      "title": "云南省楚雄彝族自治州大姚县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53232641600000_20260821140550.html",
+      "issuedAt": "2026/08/21 14:05"
+    },
+    "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 37,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省楚雄彝族自治州大姚县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53232641600000_20260821140550.html",
+          "issuedAt": "2026/08/21 14:05"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
+        "province": "山东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "山东省威海市乳山市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37108341600000_20260821130024.html",
+          "issuedAt": "2026/08/21 13:00"
+        },
+        "lat": 36.4,
+        "lng": 118.2
+      },
+      {
+        "province": "山西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "orange",
+          "地质灾害": "orange"
+        },
+        "count": 15,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "orange",
+          "title": "山西省晋中市榆社县气象台发布山洪灾害气象风险橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14072141600000_20260821013122.html",
+          "issuedAt": "2026/08/21 01:31"
+        },
+        "lat": 37.6,
+        "lng": 112.3
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "blue",
+          "地质灾害": "orange"
+        },
+        "count": 13,
+        "top": {
+          "kind": "地质灾害",
+          "level": "orange",
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害橙色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260820171912.html",
+          "issuedAt": "2026/08/20 17:19"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "yellow"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "黑龙江省绥化市绥棱县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23122641600000_20260821141629.html",
+          "issuedAt": "2026/08/21 14:16"
+        },
+        "lat": 47.4,
+        "lng": 128.1
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "blue"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区南宁市武鸣区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45011041600000_20260821134714.html",
+          "issuedAt": "2026/08/21 13:47"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省河源市龙川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44162241600000_20260820172250.html",
+          "issuedAt": "2026/08/20 17:22"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省莆田市荔城区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35030441600000_20260821113300.html",
+          "issuedAt": "2026/08/21 11:33"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
+        "province": "江苏",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江苏省盐城市滨海县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32092241600000_20260821141641.html",
+          "issuedAt": "2026/08/21 14:16"
+        },
+        "lat": 33,
+        "lng": 119.5
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省益阳市安化县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43092341600000_20260821071457.html",
+          "issuedAt": "2026/08/21 07:14"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
+        "province": "江西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江西省赣州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36070041600000_20260821040619.html",
+          "issuedAt": "2026/08/21 04:06"
+        },
+        "lat": 27.6,
+        "lng": 115.7
+      },
+      {
+        "province": "河南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "河南省周口市项城市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41168141600000_20260821141453.html",
+          "issuedAt": "2026/08/21 14:14"
+        },
+        "lat": 33.9,
+        "lng": 113.6
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "辽宁省丹东市东港市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260821045200.html",
+          "issuedAt": "2026/08/21 04:52"
+        },
+        "lat": 41.8,
+        "lng": 122.6
+      },
+      {
+        "province": "湖北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖北省恩施土家族苗族自治州利川市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42280241600000_20260821142714.html",
+          "issuedAt": "2026/08/21 14:27"
+        },
+        "lat": 31,
+        "lng": 112.3
+      },
+      {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省东方市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46900741600000_20260821124611.html",
+          "issuedAt": "2026/08/21 12:46"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
+      {
+        "province": "内蒙古",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "内蒙古自治区鄂尔多斯市达拉特旗气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15062141600000_20260821130842.html",
+          "issuedAt": "2026/08/21 13:08"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
+        "province": "河北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "河北省秦皇岛市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13030041600000_20260821133135.html",
+          "issuedAt": "2026/08/21 13:31"
+        },
+        "lat": 38.5,
+        "lng": 115.5
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "重庆市铜梁区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50015141600000_20260821141117.html",
+          "issuedAt": "2026/08/21 14:11"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
+        "province": "吉林",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "山洪灾害": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "吉林省延边朝鲜族自治州和龙市气象台发布山洪灾害气象风险黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22240641600000_20260820162520.html",
+          "issuedAt": "2026/08/20 16:25"
+        },
+        "lat": 43.7,
+        "lng": 126.2
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "新疆维吾尔自治区阿勒泰地区福海县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65432341600000_20260820173825.html",
+          "issuedAt": "2026/08/20 17:38"
+        },
+        "lat": 41.1,
+        "lng": 85.3
+      }
+    ]
+  },
+  "recentlyEnded": []
 }
