@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 04:35",
+  "updatedAt": "2026-08-22 04:44",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 2
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 49 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 49 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-22 04时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-22 04时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": 150,
+        "r7": null,
         "r10": null,
         "time": "08-22 04时",
         "position": "中心位于北纬 21.4 度、东经 108.4 度"
@@ -308,9 +301,9 @@
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广西壮族自治区桂林市平乐县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45033041600000_20260822043108.html",
-              "issuedAt": "2026/08/22 04:31"
+              "title": "广西壮族自治区防城港市防城区气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45060341600000_20260822043602.html",
+              "issuedAt": "2026/08/22 04:36"
             },
             "via": "路径邻近",
             "distKm": 174
@@ -351,7 +344,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 25 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -359,13 +352,6 @@
             "time": "08-22 02时",
             "windLevel": 12,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-22 02时",
-            "windLevel": 12,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -382,8 +368,8 @@
         "pressure": 970,
         "moveDir": "西北",
         "moveSpeed": 22,
-        "r7": 350,
-        "r10": 150,
+        "r7": null,
+        "r10": null,
         "time": "08-22 02时",
         "position": "中心位于北纬 16.9 度、东经 147.8 度"
       },
@@ -581,9 +567,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 196,
+    "total": 198,
     "counts": {
-      "暴雨": 139,
+      "暴雨": 141,
       "台风": 16,
       "山洪灾害": 3,
       "山洪风险": 8,
@@ -643,7 +629,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -666,9 +652,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区桂林市平乐县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45033041600000_20260822043108.html",
-          "issuedAt": "2026/08/22 04:31"
+          "title": "广西壮族自治区防城港市防城区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45060341600000_20260822043602.html",
+          "issuedAt": "2026/08/22 04:36"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -828,13 +814,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "内蒙古自治区巴彦淖尔市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15080041600000_20260822042208.html",
-          "issuedAt": "2026/08/22 04:22"
+          "title": "内蒙古自治区巴彦淖尔市乌拉特前旗气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15082341600000_20260822043256.html",
+          "issuedAt": "2026/08/22 04:32"
         },
         "lat": 44,
         "lng": 113.9
@@ -850,9 +836,9 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "河北省承德市宽城满族自治县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13082741600000_20260821173227.html",
-          "issuedAt": "2026/08/21 17:32"
+          "title": "河北省石家庄市平山县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13013141600000_20260822043343.html",
+          "issuedAt": "2026/08/22 04:33"
         },
         "lat": 38.5,
         "lng": 115.5
