@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21 22:30",
+  "updatedAt": "2026-08-21 22:48",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 2
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 62 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 62 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-21 22时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-21 22时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": 150,
+        "r7": null,
         "r10": null,
         "time": "08-21 22时",
         "position": "中心位于北纬 21.0 度、东经 108.6 度"
@@ -351,7 +344,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 24 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -359,13 +352,6 @@
             "time": "08-21 20时",
             "windLevel": 11,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-21 20时",
-            "windLevel": 11,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -382,7 +368,7 @@
         "pressure": 980,
         "moveDir": "西北",
         "moveSpeed": 15,
-        "r7": 280,
+        "r7": null,
         "r10": null,
         "time": "08-21 20时",
         "position": "中心位于北纬 15.9 度、东经 148.3 度"
@@ -581,9 +567,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 177,
+    "total": 179,
     "counts": {
-      "暴雨": 117,
+      "暴雨": 119,
       "台风": 15,
       "山洪灾害": 9,
       "山洪风险": 5,
@@ -860,6 +846,24 @@
         "lng": 118.3
       },
       {
+        "province": "河北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "河北省承德市宽城满族自治县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13082741600000_20260821173227.html",
+          "issuedAt": "2026/08/21 17:32"
+        },
+        "lat": 38.5,
+        "lng": 115.5
+      },
+      {
         "province": "重庆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -876,24 +880,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "河北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "河北省承德市宽城满族自治县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13082741600000_20260821173227.html",
-          "issuedAt": "2026/08/21 17:32"
-        },
-        "lat": 38.5,
-        "lng": 115.5
       },
       {
         "province": "宁夏",
@@ -922,13 +908,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "吉林省延边朝鲜族自治州延吉市气象台发布城市暴雨积涝黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22240141600000_20260821150511.html",
-          "issuedAt": "2026/08/21 15:05"
+          "title": "吉林省长春市九台区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22011341600000_20260821222403.html",
+          "issuedAt": "2026/08/21 22:24"
         },
         "lat": 43.7,
         "lng": 126.2
