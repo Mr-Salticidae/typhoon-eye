@@ -170,6 +170,46 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .compass-north { stroke: var(--ink-soft); stroke-width: 1.5; stroke-linecap: round; }
 .compass-needle { fill: var(--accent); }
 
+/* 雨情：洪涝类预警。台风等级只反映风速，致灾的常常是水，故与实况并列而非附属。 */
+.risk-callout {
+  margin: 0 0 1.15rem; padding: .85rem 1.1rem;
+  border-left: 3px solid var(--lv, var(--w-orange));
+  border-radius: 0 10px 10px 0;
+  background: var(--paper-3); color: var(--ink);
+  font-size: .92rem; line-height: 1.75;
+}
+.risk-callout.lv-blue { --lv: var(--w-blue); }
+.risk-callout.lv-yellow { --lv: var(--w-yellow); }
+.risk-callout.lv-orange { --lv: var(--w-orange); }
+.risk-callout.lv-red { --lv: var(--w-red); }
+
+.risk-provinces { display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: 1rem; }
+.risk-prov {
+  border: 1px solid var(--line); border-top: 3px solid var(--lv, var(--line));
+  border-radius: 14px; padding: .9rem 1.05rem; background: var(--paper-2);
+}
+.risk-prov.lv-blue { --lv: var(--w-blue); }
+.risk-prov.lv-yellow { --lv: var(--w-yellow); }
+.risk-prov.lv-orange { --lv: var(--w-orange); }
+.risk-prov.lv-red { --lv: var(--w-red); }
+
+.rp-name { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; margin: 0 0 .5rem; line-height: 1.2; }
+.rp-kinds { margin: 0 0 .55rem; display: flex; flex-wrap: wrap; gap: .35rem; }
+.rp-tag {
+  font-size: .72rem; line-height: 1.5; padding: .1rem .5rem; border-radius: 999px;
+  border: 1px solid var(--lv, var(--line)); color: var(--lv, var(--ink-soft));
+  white-space: nowrap;
+}
+.rp-tag.lv-blue { --lv: var(--w-blue); }
+.rp-tag.lv-yellow { --lv: var(--w-yellow); }
+.rp-tag.lv-orange { --lv: var(--w-orange); }
+.rp-tag.lv-red { --lv: var(--w-red); }
+
+.rp-sub { margin: 0 0 .45rem; font-size: .76rem; color: var(--ink-soft); }
+.rp-link { font-size: .76rem; line-height: 1.55; color: var(--accent); text-decoration: none; display: block; }
+.rp-link:hover, .rp-link:focus-visible { text-decoration: underline; }
+.risk-note { margin: 1.05rem 0 0; }
+
 /* 路径图 */
 .map-wrap {
   position: relative; border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
@@ -243,6 +283,33 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .plan-first.is-calm {
   border-left-color: var(--line); background: none; color: var(--ink-soft); font-size: .82rem;
 }
+.region-picker {
+  margin: 0 0 1.2rem; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 14px;
+  background: color-mix(in srgb, var(--paper-2) 86%, var(--accent-soft));
+}
+.region-picker-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.region-kicker { margin: 0 0 .15rem; color: var(--accent); font-size: .68rem; font-weight: 700; letter-spacing: .12em; }
+.region-picker h3 { margin: 0; font-family: var(--serif); font-size: 1.08rem; }
+.privacy-mark {
+  flex: none; padding: .2rem .55rem; border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line));
+  border-radius: 999px; color: var(--accent); font-size: .68rem; font-weight: 600; white-space: nowrap;
+}
+.region-help { margin: .5rem 0 .8rem; color: var(--ink-soft); font-size: .78rem; line-height: 1.65; }
+.region-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; }
+.region-option {
+  min-width: 0; padding: .55rem .65rem; border: 1px solid var(--line); border-radius: 9px;
+  background: var(--paper); color: var(--ink); font-family: var(--sans); text-align: left; cursor: pointer;
+  transition: border-color .15s ease, background .15s ease, box-shadow .15s ease;
+}
+.region-option:hover { border-color: var(--accent); }
+.region-option.is-active {
+  border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent);
+}
+.region-option-name { display: block; font-size: .82rem; font-weight: 650; }
+.region-option-risk { display: block; overflow: hidden; margin-top: .15rem; color: var(--ink-soft); font-size: .66rem; text-overflow: ellipsis; white-space: nowrap; }
+.region-option.is-active .region-option-name::after { content: " ✓"; color: var(--accent); }
+.region-status { margin: .65rem 0 0; color: var(--ink-soft); font-size: .72rem; }
+.region-status.has-selection { color: var(--accent); }
 .level-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin: 0 0 .6rem; }
 .level-hint { margin: 0 0 1.2rem; font-size: .78rem; }
 .level-hint b { color: var(--accent); }
@@ -274,6 +341,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .plan-progress span { font-size: .8rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .checklist { list-style: none; margin: 0; padding: 0; display: grid; gap: .35rem; }
 .checklist li { border-bottom: 1px dashed var(--line); }
+.checklist li.is-region-item { background: color-mix(in srgb, var(--accent-soft) 55%, transparent); }
 .checklist li:last-child { border-bottom: none; }
 .checklist label {
   display: flex; gap: .7rem; align-items: flex-start; padding: .55rem .2rem; cursor: pointer;
@@ -293,6 +361,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   border-radius: 999px; padding: 0 .5em; margin-left: .4em; white-space: nowrap;
 }
 .checklist input:checked + span .from-lower { opacity: .45; }
+.checklist .region-item-badge {
+  display: inline-block; margin-left: .45em; padding: 0 .5em; border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: .7rem; font-style: normal; white-space: nowrap;
+}
+.checklist input:checked + span .region-item-badge { opacity: .45; }
 .plan-tone { margin: 1.1rem 0 0; font-size: .9rem; color: var(--ink-soft); font-style: italic; text-align: right; }
 .plan-tone.done { color: var(--lv); font-weight: 600; font-style: normal; }
 
@@ -379,8 +452,19 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .map-tooltip { padding: .4rem .6rem; font-size: .7rem; }
 
   .plan-first { margin-bottom: .8rem; padding: .55rem .7rem; font-size: .8rem; }
+  .region-picker { margin-bottom: .8rem; padding: .75rem; border-radius: 11px; }
+  .region-picker-head { gap: .5rem; }
+  .region-kicker { font-size: .58rem; }
+  .region-picker h3 { font-size: .92rem; }
+  .privacy-mark { padding: .16rem .4rem; font-size: .58rem; }
+  .region-help { margin: .35rem 0 .6rem; font-size: .68rem; line-height: 1.5; }
+  .region-options { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .35rem; }
+  .region-option { padding: .42rem .48rem; }
+  .region-option-name { font-size: .72rem; }
+  .region-option-risk { font-size: .58rem; }
+  .region-status { margin-top: .5rem; font-size: .64rem; line-height: 1.45; }
   .level-tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .32rem; }
-  .level-tab { justify-content: center; gap: .3rem; padding: .38rem .2rem; font-size: .72rem; }
+  .level-tab { min-width: 0; justify-content: center; gap: .3rem; padding: .38rem .2rem; font-size: .72rem; white-space: nowrap; }
   .level-tab::before { width: .45rem; height: .45rem; }
   .level-hint { margin-bottom: .8rem; font-size: .68rem; }
   .plan-panel { border-radius: 11px; padding: .9rem .85rem .8rem; }
@@ -391,6 +475,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .checklist label { gap: .55rem; padding: .42rem .05rem; font-size: .82rem; line-height: 1.5; }
   .checklist input { width: 1rem; height: 1rem; margin-top: .18em; }
   .checklist .from-lower { font-size: .62rem; }
+  .checklist .region-item-badge { font-size: .6rem; }
   .plan-tone { margin-top: .7rem; font-size: .76rem; }
 
   .contacts { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; margin-bottom: 1rem; }

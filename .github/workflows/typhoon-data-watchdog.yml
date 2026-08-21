@@ -77,6 +77,9 @@ jobs:
           for (const item of data.typhoons) {
             if (!item || !item.now || !Array.isArray(item.track)) throw new Error('Invalid typhoon item');
           }
+          // 预警字段可降级（ok:false）但不可缺失：缺失说明脚本回退到了改版前的 schema
+          if (!data.alerts || typeof data.alerts.ok !== 'boolean') throw new Error('Missing alerts block');
+          if (!Array.isArray(data.recentlyEnded)) throw new Error('Missing recentlyEnded block');
           NODE
 
       - name: Commit recovered data

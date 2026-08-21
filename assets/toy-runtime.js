@@ -53,7 +53,7 @@
     var timeout = setTimeout(function () {
       if (controller) controller.abort();
     }, 10000);
-    var options = { cache: "no-store" };
+    var options = { cache: "no-store", referrerPolicy: "no-referrer" };
     if (controller) options.signal = controller.signal;
 
     return fetch(LIVE_DATA_URL + "?toy_check=" + now(), options)

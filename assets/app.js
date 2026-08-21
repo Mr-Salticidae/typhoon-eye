@@ -596,9 +596,24 @@
     box.hidden = false;
   }
 
+  /* #tyKicker 内含 #tyCode / #tyEnName 两个 span。设置 kicker 的 textContent 会连带
+     移除这两个子节点，因此凡是改写过 kicker 的状态（风平浪静 / 影响持续期），
+     再切回台风态时必须重建结构，否则 $("tyCode") 为 null 直接抛错。 */
+  function setKickerStorm(code, enName) {
+    var k = $("tyKicker");
+    k.textContent = "";
+    k.appendChild(document.createTextNode("第 "));
+    var c = el("span", null, String(code));
+    c.id = "tyCode";
+    k.appendChild(c);
+    k.appendChild(document.createTextNode(" 号台风 · "));
+    var e = el("span", null, String(enName));
+    e.id = "tyEnName";
+    k.appendChild(e);
+  }
+
   function renderTyphoon(t) {
-    $("tyCode").textContent = t.code;
-    $("tyEnName").textContent = t.enName;
+    setKickerStorm(t.code, t.enName);
     $("tyName").textContent = t.name;
     $("tyLevel").textContent = t.level;
     $("tySummary").textContent = t.summary;
@@ -629,17 +644,127 @@
     });
 
     renderMap(t.track);
+    renderRisk(t);
   }
 
   /* ---------- 数据装载 ---------- */
   var DATA = null, IS_LIVE = false, current = 0;
 
-  function suggestLevel(t) {
+  /* ---------- 预案档位建议 ---------- */
+  /* 历史教训（2026 年第 10 号台风美莎克）：
+     它以强热带风暴级（10 级）登陆，按风力推档只到黄色；但登陆后在陆上重建眼区、
+     于广西内陆滞留 26 小时，极端降雨引发六蓝、云表等水库溃坝，最终致 159 人遇难。
+     减弱为热带低压后风力档位甚至回落到蓝色——恰恰是伤亡最集中的时段。
+     因此档位取「风力档」与「洪涝预警档」的较高者，绝不由风力单独决定。 */
+  var LEVEL_ZH = { blue: "蓝", yellow: "黄", orange: "橙", red: "红" };
+
+  function tierRank(l) { return WARNING_LEVELS.indexOf(l) + 1; }
+
+  function windTier(t) {
     if (!t || !t.nearCoast) return "blue";
-    var w = t.now.windLevel || 0;
+    var w = (t.now && t.now.windLevel) || 0;
     if (w >= 14) return "orange";
     if (w >= 10) return "yellow";
     return "blue";
+  }
+
+  function rainTier(t) {
+    return (t && t.rainRisk && t.rainRisk.floodLevel) || null;
+  }
+
+  /* 洪涝档高于风力档 = 典型"弱级强灾"，需要显式点破 */
+  function riskMismatch(t) {
+    var w = windTier(t), r = rainTier(t);
+    return tierRank(r) > tierRank(w) ? { wind: w, rain: r } : null;
+  }
+
+  function suggestLevel(t) {
+    var w = windTier(t), r = rainTier(t);
+    return tierRank(r) > tierRank(w) ? r : w;
+  }
+
+  /* ---------- 雨情：洪涝类预警 ---------- */
+
+  function renderRisk(t) {
+    var sec = $("risk"), box = $("riskProvinces");
+    var callout = $("riskCallout"), note = $("riskNote");
+    var alerts = DATA && DATA.alerts;
+    box.innerHTML = "";
+    sec.hidden = false;
+    callout.hidden = true;
+
+    if (!alerts) {
+      /* 演示数据或改版前的旧缓存：没有 alerts 字段，不能报成"抓取失败" */
+      sec.hidden = true;
+      return;
+    }
+    if (!alerts.ok) {
+      note.textContent = "洪涝类预警本次抓取失败（" + (alerts.error || "原因未知") +
+        "），请直接查看中央气象台预警发布平台。";
+      return;
+    }
+    var risk = t && t.rainRisk;
+    if (!risk || !risk.provinces.length) {
+      note.textContent = "台风影响范围内暂无洪涝类预警在效（数据更新于 " + DATA.updatedAt + "）。";
+      return;
+    }
+
+    var mis = riskMismatch(t);
+    if (mis) {
+      callout.hidden = false;
+      callout.className = "risk-callout lv-" + mis.rain;
+      callout.textContent = "注意：本台风按风力只对应" + LEVEL_ZH[mis.wind] + "色档位，" +
+        "但其影响范围内已有" + LEVEL_ZH[mis.rain] + "色洪涝类预警在效。" +
+        "台风等级只反映风速，不代表致灾程度——下方预案已按较高者预选。";
+    }
+
+    risk.provinces.forEach(function (p) {
+      var card = el("div", "risk-prov lv-" + (p.floodLevel || p.maxLevel));
+      card.appendChild(el("p", "rp-name", p.province));
+      var kinds = el("p", "rp-kinds");
+      Object.keys(p.kinds).forEach(function (k) {
+        kinds.appendChild(el("span", "rp-tag lv-" + p.kinds[k], k + LEVEL_ZH[p.kinds[k]]));
+      });
+      card.appendChild(kinds);
+      card.appendChild(el("p", "rp-sub", p.count + " 条在效 · " + p.via));
+      if (p.top && p.top.title) {
+        var a = el("a", "rp-link", p.top.title);
+        a.href = p.top.url; a.target = "_blank"; a.rel = "noopener noreferrer";
+        card.appendChild(a);
+      }
+      box.appendChild(card);
+    });
+
+    note.textContent = "预警来自" + alerts.source + "，取台风影响范围内各省级行政区的最高档位" +
+      "（省内可能仅部分区县发布）。这是台风与省份的关联，页面不判断你所在位置。";
+  }
+
+  /* ---------- 影响持续期 ---------- */
+  /* 停编 ≠ 风险结束：美莎克 2026-07-07 停编，遇难数字此后六周从 39 升至 159。
+     只要停编台风的影响省份仍有洪涝类预警在效，页面就不回落到"风平浪静"。 */
+
+  /* 取最近一条"已停编但影响省份仍有洪涝预警在效"的台风；没有则返回 null */
+  function aftermath() {
+    var list = (DATA && DATA.recentlyEnded) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].ongoingFloodLevel) return list[i];
+    }
+    return null;
+  }
+
+  function renderAftermath(e) {
+    $("tyKicker").textContent = "第 " + e.code + " 号台风 · " + (e.enName || "—") + " · 影响持续期";
+    $("tyName").textContent = e.name;
+    $("tyLevel").textContent = (e.lastLevel || "已停编") + " · 停编" +
+      (e.daysSince != null ? " " + e.daysSince + " 天" : "");
+    $("tySummary").textContent = e.name + "已停止编号，但其影响省份（" +
+      (e.provinces || []).join("、") + "）仍有" + LEVEL_ZH[e.ongoingFloodLevel] +
+      "色洪涝类预警在效。台风停编不等于风险结束，降雨、山洪与水库险情可能持续更久。";
+    $("tySummary").classList.remove("is-calm");
+    var v = $("tyVerify");
+    if (v) v.hidden = true;
+    $("live").hidden = true;
+    $("track").hidden = true;
   }
 
   function init(data, mode) {
@@ -702,14 +827,27 @@
     var planFirst = $("planFirst");
     if (list.length) {
       $("tySummary").classList.remove("is-calm");
+      $("live").hidden = false;
+      $("track").hidden = false;
       renderTyphoon(list[0]);
       currentLevel = suggestLevel(list[0]);
       $("levelHint").hidden = false;
       planHeadTitle.textContent = "现在，该做什么";
       planFirst.innerHTML = "第一原则：<b>服从当地政府与社区的统一安排</b>，收到转移指令立即执行。";
       planFirst.classList.remove("is-calm");
+    } else if (aftermath()) {
+      /* 停编但影响未结束：保留风险姿态，档位跟随在效洪涝预警 */
+      var af = aftermath();
+      renderAftermath(af);
+      $("risk").hidden = true;
+      currentLevel = af.ongoingFloodLevel;
+      $("levelHint").hidden = false;
+      planHeadTitle.textContent = "风还没走完";
+      planFirst.innerHTML = "第一原则：<b>服从当地政府与社区的统一安排</b>；台风虽已停编，洪水与山洪风险仍在。";
+      planFirst.classList.remove("is-calm");
     } else {
       /* 无活跃台风：收起实况与路径板块，预案常备 */
+      $("risk").hidden = true;
       $("tyKicker").textContent = "西北太平洋";
       $("tyName").textContent = "风平浪静";
       $("tyLevel").textContent = "西北太平洋暂无编号台风";
@@ -748,7 +886,7 @@
     var finalUrl = bustCache
       ? url + (url.indexOf("?") >= 0 ? "&" : "?") + "v=" + Math.floor(Date.now() / 300000)
       : url;
-    return fetch(finalUrl, { cache: "no-store", signal: controller.signal })
+    return fetch(finalUrl, { cache: "no-store", referrerPolicy: "no-referrer", signal: controller.signal })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) {
         if (!validData(d)) throw new Error("invalid data");
@@ -800,7 +938,28 @@
   /* ---------- 分级预案 ---------- */
   var CHECK_KEY = "typhoon-eye:checks";
   var checks = store.get(CHECK_KEY, {});
+  /* 地区选择和地区清单进度只存在内存中，刷新即清空，不构成位置档案。 */
+  var selectedRegions = {};
+  var regionChecks = {};
   var currentLevel = "blue";
+
+  var regionBox = $("regionOptions");
+  REGION_PROFILES.forEach(function (profile) {
+    var b = el("button", "region-option");
+    b.type = "button";
+    b.dataset.region = profile.id;
+    b.setAttribute("aria-pressed", "false");
+    b.setAttribute("aria-label", profile.name + "：" + profile.risk);
+    b.appendChild(el("span", "region-option-name", profile.name));
+    b.appendChild(el("small", "region-option-risk", profile.risk));
+    b.addEventListener("click", function () {
+      selectedRegions[profile.id] = !selectedRegions[profile.id];
+      b.classList.toggle("is-active", selectedRegions[profile.id]);
+      b.setAttribute("aria-pressed", selectedRegions[profile.id] ? "true" : "false");
+      renderPlan();
+    });
+    regionBox.appendChild(b);
+  });
 
   var tabsBox = $("levelTabs");
   WARNING_LEVELS.forEach(function (key) {
@@ -831,30 +990,64 @@
     $("planTitle").textContent = "台风" + plan.name;
     $("planSignal").textContent = plan.signal;
 
-    /* 递进清单：包含当前级及以下所有事项；事项身份 = 来源级:序号，勾选跨级共享 */
+    /* 递进清单：包含当前级及以下所有通用事项；事项身份 = 来源级:序号，勾选跨级共享 */
     var items = [];
     for (var i = 0; i <= idx; i++) {
       var lv = WARNING_LEVELS[i];
       PLANS[lv].items.forEach(function (text, j) {
-        items.push({ id: lv + ":" + j, text: text, from: lv });
+        items.push({ id: lv + ":" + j, text: text, from: lv, kind: "common" });
       });
+    }
+
+    /* 地区事项同样随等级递进，但选择和勾选均不落盘。 */
+    var activeProfiles = REGION_PROFILES.filter(function (profile) { return !!selectedRegions[profile.id]; });
+    activeProfiles.forEach(function (profile) {
+      for (var n = 0; n <= idx; n++) {
+        var regionLevel = WARNING_LEVELS[n];
+        (profile.items[regionLevel] || []).forEach(function (text, j) {
+          items.push({
+            id: profile.id + ":" + regionLevel + ":" + j,
+            text: text,
+            from: regionLevel,
+            kind: "region",
+            region: profile,
+          });
+        });
+      }
+    });
+
+    var regionStatus = $("regionStatus");
+    if (activeProfiles.length) {
+      regionStatus.textContent = "已补充：" + activeProfiles.map(function (profile) { return profile.short; }).join("、") + "。地区选择与对应勾选不会保存，刷新后自动清空。";
+      regionStatus.classList.add("has-selection");
+    } else {
+      regionStatus.textContent = "当前仅显示全国通用清单。";
+      regionStatus.classList.remove("has-selection");
     }
 
     var list = $("checklist");
     list.innerHTML = "";
     items.forEach(function (it) {
-      var li = el("li");
+      var li = el("li", it.kind === "region" ? "is-region-item" : "");
       var label = el("label");
       var input = document.createElement("input");
       input.type = "checkbox";
-      input.checked = !!checks[it.id];
+      input.checked = it.kind === "region" ? !!regionChecks[it.id] : !!checks[it.id];
       input.addEventListener("change", function () {
-        checks[it.id] = input.checked;
-        store.set(CHECK_KEY, checks);
+        if (it.kind === "region") {
+          regionChecks[it.id] = input.checked;
+        } else {
+          checks[it.id] = input.checked;
+          store.set(CHECK_KEY, checks);
+        }
         updateProgress(items);
       });
       var span = el("span", null, it.text);
-      if (it.from !== currentLevel) {
+      if (it.kind === "region") {
+        var regionBadge = el("i", "region-item-badge", it.region.short);
+        regionBadge.title = "适用于" + it.region.name + "：" + it.region.risk;
+        span.appendChild(regionBadge);
+      } else if (it.from !== currentLevel) {
         var badge = el("i", "from-lower", PLANS[it.from].short + "级");
         badge.title = "来自" + PLANS[it.from].name + "的事项";
         badge.style.setProperty("--flv", "var(--w-" + it.from + ")");
@@ -869,7 +1062,9 @@
   }
 
   function updateProgress(items) {
-    var done = items.filter(function (it) { return checks[it.id]; }).length;
+    var done = items.filter(function (it) {
+      return it.kind === "region" ? regionChecks[it.id] : checks[it.id];
+    }).length;
     var total = items.length;
     $("progressBar").style.width = total ? (done / total * 100) + "%" : "0";
     $("progressText").textContent = done + " / " + total;
@@ -967,7 +1162,7 @@
     var a = el("a", "source-link", s.name);
     a.href = s.url;
     a.target = "_blank";
-    a.rel = "noopener";
+    a.rel = "noopener noreferrer";
     sourceList.appendChild(a);
   });
 
