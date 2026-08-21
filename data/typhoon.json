@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21 18:15",
+  "updatedAt": "2026-08-21 18:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 38 公里（时次相差 4 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-21 14时",
+            "time": "08-21 17时",
             "windLevel": 7,
             "role": "verify"
           }
@@ -304,13 +304,13 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 8,
+            "count": 9,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广西壮族自治区南宁市上林县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45012541600000_20260821151150.html",
-              "issuedAt": "2026/08/21 15:11"
+              "title": "广西壮族自治区玉林市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45090041600000_20260821181715.html",
+              "issuedAt": "2026/08/21 18:17"
             },
             "via": "路径邻近",
             "distKm": 227
@@ -320,15 +320,16 @@
             "maxLevel": "orange",
             "floodLevel": "orange",
             "kinds": {
-              "暴雨": "orange"
+              "暴雨": "orange",
+              "台风": "blue"
             },
-            "count": 13,
+            "count": 15,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广东省梅州市兴宁市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44148141600000_20260821180227.html",
-              "issuedAt": "2026/08/21 18:02"
+              "title": "广东省梅州市梅县区气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44140341600000_20260821181701.html",
+              "issuedAt": "2026/08/21 18:17"
             },
             "via": "路径邻近",
             "distKm": 446
@@ -580,13 +581,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 210,
+    "total": 224,
     "counts": {
-      "暴雨": 151,
-      "台风": 14,
+      "暴雨": 163,
+      "台风": 15,
       "山洪灾害": 10,
       "山洪风险": 4,
-      "地质灾害": 31
+      "地质灾害": 32
     },
     "peak": {
       "province": "山东",
@@ -623,13 +624,13 @@
           "暴雨": "red",
           "山洪灾害": "yellow"
         },
-        "count": 15,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "黑龙江省绥化市北林区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23120241600000_20260821161203.html",
-          "issuedAt": "2026/08/21 16:12"
+          "title": "黑龙江省气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23000041600000_20260821182935.html",
+          "issuedAt": "2026/08/21 18:29"
         },
         "lat": 47.4,
         "lng": 128.1
@@ -641,7 +642,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 13,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -661,7 +662,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 33,
+        "count": 34,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -697,15 +698,16 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "orange",
+          "台风": "blue"
         },
-        "count": 13,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省梅州市兴宁市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44148141600000_20260821180227.html",
-          "issuedAt": "2026/08/21 18:02"
+          "title": "广东省梅州市梅县区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44140341600000_20260821181701.html",
+          "issuedAt": "2026/08/21 18:17"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -749,6 +751,43 @@
         "lng": 111.7
       },
       {
+        "province": "内蒙古",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "内蒙古自治区鄂尔多斯市东胜区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15060241600000_20260821180639.html",
+          "issuedAt": "2026/08/21 18:06"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "blue"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区玉林市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45090041600000_20260821181715.html",
+          "issuedAt": "2026/08/21 18:17"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
         "province": "海南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -786,43 +825,6 @@
         "lng": 115.7
       },
       {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区南宁市上林县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45012541600000_20260821151150.html",
-          "issuedAt": "2026/08/21 15:11"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
-        "province": "内蒙古",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "内蒙古自治区鄂尔多斯市东胜区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15060241600000_20260821180639.html",
-          "issuedAt": "2026/08/21 18:06"
-        },
-        "lat": 44,
-        "lng": 113.9
-      },
-      {
         "province": "江苏",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -839,6 +841,24 @@
         },
         "lat": 33,
         "lng": 119.5
+      },
+      {
+        "province": "安徽",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "安徽省滁州市明光市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34118241600000_20260821174808.html",
+          "issuedAt": "2026/08/21 17:48"
+        },
+        "lat": 31.9,
+        "lng": 117.2
       },
       {
         "province": "辽宁",
@@ -865,34 +885,16 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "湖北省恩施土家族苗族自治州恩施市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42280141600000_20260821155320.html",
-          "issuedAt": "2026/08/21 15:53"
+          "title": "湖北省武汉市新洲区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42011741600000_20260821183415.html",
+          "issuedAt": "2026/08/21 18:34"
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "安徽省滁州市明光市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34118241600000_20260821174808.html",
-          "issuedAt": "2026/08/21 17:48"
-        },
-        "lat": 31.9,
-        "lng": 117.2
       },
       {
         "province": "四川",
