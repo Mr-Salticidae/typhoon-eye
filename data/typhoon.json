@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21 18:45",
+  "updatedAt": "2026-08-21 18:52",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -581,9 +581,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 224,
+    "total": 226,
     "counts": {
-      "暴雨": 163,
+      "暴雨": 165,
       "台风": 15,
       "山洪灾害": 10,
       "山洪风险": 4,
@@ -624,16 +624,36 @@
           "暴雨": "red",
           "山洪灾害": "yellow"
         },
-        "count": 16,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "黑龙江省气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23000041600000_20260821182935.html",
-          "issuedAt": "2026/08/21 18:29"
+          "title": "黑龙江省哈尔滨市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23010041600000_20260821184904.html",
+          "issuedAt": "2026/08/21 18:49"
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 17,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "浙江省温州市乐清市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33038241600000_20260821184421.html",
+          "issuedAt": "2026/08/21 18:44"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "福建",
@@ -662,7 +682,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 34,
+        "count": 35,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -672,26 +692,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 17,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "浙江省温州市乐清市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33038241600000_20260821174855.html",
-          "issuedAt": "2026/08/21 17:48"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "广东",
