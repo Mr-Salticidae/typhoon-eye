@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 01:14",
+  "updatedAt": "2026-08-22 01:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -304,13 +304,13 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 11,
+            "count": 13,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广西壮族自治区北海市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45050041600000_20260822005754.html",
-              "issuedAt": "2026/08/22 00:57"
+              "title": "广西壮族自治区来宾市金秀县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45132441600000_20260822012424.html",
+              "issuedAt": "2026/08/22 01:24"
             },
             "via": "路径邻近",
             "distKm": 217
@@ -323,7 +323,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 8,
+            "count": 9,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -581,23 +581,43 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 176,
+    "total": 180,
     "counts": {
-      "暴雨": 117,
+      "暴雨": 122,
       "台风": 16,
-      "山洪灾害": 4,
-      "山洪风险": 7,
-      "地质灾害": 32
+      "山洪灾害": 3,
+      "山洪风险": 8,
+      "地质灾害": 31
     },
     "peak": {
-      "province": "山东",
+      "province": "云南",
       "kind": "暴雨",
       "level": "red",
-      "title": "山东省威海市乳山市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/37108341600000_20260821171055.html",
-      "issuedAt": "2026/08/21 17:10"
+      "title": "云南省昭通市盐津县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53062341600000_20260822011918.html",
+      "issuedAt": "2026/08/22 01:19"
     },
     "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪风险": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 46,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "云南省昭通市盐津县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53062341600000_20260822011918.html",
+          "issuedAt": "2026/08/22 01:19"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
       {
         "province": "山东",
         "maxLevel": "red",
@@ -617,24 +637,23 @@
         "lng": 118.2
       },
       {
-        "province": "云南",
+        "province": "广西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange",
-          "山洪风险": "yellow",
-          "地质灾害": "orange"
+          "台风": "blue"
         },
-        "count": 43,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省玉溪市易门县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53042541600000_20260822005107.html",
-          "issuedAt": "2026/08/22 00:51"
+          "title": "广西壮族自治区来宾市金秀县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45132441600000_20260822012424.html",
+          "issuedAt": "2026/08/22 01:24"
         },
-        "lat": 25,
-        "lng": 101.5
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "湖南",
@@ -643,7 +662,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 13,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -655,23 +674,23 @@
         "lng": 111.7
       },
       {
-        "province": "广西",
+        "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 11,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区北海市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45050041600000_20260822005754.html",
-          "issuedAt": "2026/08/22 00:57"
+          "title": "广东省湛江市雷州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44088241600000_20260822004219.html",
+          "issuedAt": "2026/08/22 00:42"
         },
-        "lat": 23.8,
-        "lng": 108.8
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "海南",
@@ -691,45 +710,6 @@
         },
         "lat": 19.2,
         "lng": 109.7
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省湛江市雷州市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44088241600000_20260822004219.html",
-          "issuedAt": "2026/08/22 00:42"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "山西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "orange",
-          "地质灾害": "orange"
-        },
-        "count": 7,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "orange",
-          "title": "山西省晋中市榆社县气象台发布山洪灾害气象风险橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14072141600000_20260821013122.html",
-          "issuedAt": "2026/08/21 01:31"
-        },
-        "lat": 37.6,
-        "lng": 112.3
       },
       {
         "province": "黑龙江",
@@ -774,13 +754,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "四川省乐山市峨边县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51113241600000_20260822004618.html",
-          "issuedAt": "2026/08/22 00:46"
+          "title": "四川省乐山市马边彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51113341600000_20260822013321.html",
+          "issuedAt": "2026/08/22 01:33"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -894,6 +874,25 @@
         },
         "lat": 44,
         "lng": 113.9
+      },
+      {
+        "province": "山西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "山西省吕梁市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14110041600000_20260821171647.html",
+          "issuedAt": "2026/08/21 17:16"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       },
       {
         "province": "宁夏",
