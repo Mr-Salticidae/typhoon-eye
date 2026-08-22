@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 23:30",
+  "updatedAt": "2026-08-22 23:52",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -276,7 +276,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -295,7 +295,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-22 20时",
+            "time": "08-22 23时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -543,13 +543,13 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 15,
+            "count": 17,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广东省揭阳市揭西县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44522241600000_20260822232537.html",
-              "issuedAt": "2026/08/22 23:25"
+              "title": "广东省梅州市兴宁市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44148141600000_20260822234513.html",
+              "issuedAt": "2026/08/22 23:45"
             },
             "via": "台风预警",
             "distKm": 477
@@ -589,7 +589,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 71 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -608,7 +608,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-22 20时",
+            "time": "08-22 23时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -843,9 +843,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 221,
+    "total": 224,
     "counts": {
-      "暴雨": 150,
+      "暴雨": 153,
       "台风": 15,
       "山洪灾害": 12,
       "山洪风险": 4,
@@ -918,6 +918,25 @@
         "lng": 101.5
       },
       {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "blue"
+        },
+        "count": 17,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省梅州市兴宁市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44148141600000_20260822234513.html",
+          "issuedAt": "2026/08/22 23:45"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "四川",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -934,25 +953,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省揭阳市揭西县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44522241600000_20260822232537.html",
-          "issuedAt": "2026/08/22 23:25"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "黑龙江",
@@ -1084,6 +1084,24 @@
         "lng": 106.2
       },
       {
+        "province": "河北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "河北省承德市围场满族蒙古族自治县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13082841600000_20260822213151.html",
+          "issuedAt": "2026/08/22 21:31"
+        },
+        "lat": 38.5,
+        "lng": 115.5
+      },
+      {
         "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1160,24 +1178,6 @@
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "河北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "河北省承德市围场满族蒙古族自治县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13082841600000_20260822213151.html",
-          "issuedAt": "2026/08/22 21:31"
-        },
-        "lat": 38.5,
-        "lng": 115.5
       },
       {
         "province": "山东",
