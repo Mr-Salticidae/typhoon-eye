@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 13:15",
+  "updatedAt": "2026-08-22 13:37",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -117,7 +117,7 @@
               "暴雨": "blue",
               "地质灾害": "yellow"
             },
-            "count": 2,
+            "count": 3,
             "top": {
               "kind": "地质灾害",
               "level": "yellow",
@@ -135,13 +135,13 @@
             "kinds": {
               "暴雨": "yellow"
             },
-            "count": 1,
+            "count": 2,
             "top": {
               "kind": "暴雨",
               "level": "yellow",
-              "title": "福建省漳州市平和县气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260822115000.html",
-              "issuedAt": "2026/08/22 11:50"
+              "title": "福建省泉州市南安市气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260822131300.html",
+              "issuedAt": "2026/08/22 13:13"
             },
             "via": "路径邻近",
             "distKm": 443
@@ -163,11 +163,29 @@
             },
             "via": "路径邻近",
             "distKm": 210
+          },
+          {
+            "province": "江苏",
+            "maxLevel": "blue",
+            "floodLevel": "blue",
+            "kinds": {
+              "暴雨": "blue"
+            },
+            "count": 1,
+            "top": {
+              "kind": "暴雨",
+              "level": "blue",
+              "title": "江苏省盐城市盐都区气象台发布暴雨蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/32090341600000_20260822131326.html",
+              "issuedAt": "2026/08/22 13:13"
+            },
+            "via": "路径邻近",
+            "distKm": 262
           }
         ],
         "floodLevel": "yellow",
         "maxLevel": "yellow",
-        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高黄色。"
+        "note": "台风影响范围内有 4 个省级行政区发布洪涝类预警，最高黄色。"
       }
     },
     {
@@ -448,7 +466,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 10,
+            "count": 11,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -724,9 +742,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 164,
+    "total": 172,
     "counts": {
-      "暴雨": 100,
+      "暴雨": 108,
       "台风": 16,
       "山洪灾害": 4,
       "山洪风险": 6,
@@ -769,7 +787,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 45,
+        "count": 47,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -824,7 +842,7 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -842,7 +860,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -980,6 +998,25 @@
         "lng": 118.2
       },
       {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260821170658.html",
+          "issuedAt": "2026/08/21 17:06"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
         "province": "宁夏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -999,23 +1036,22 @@
         "lng": 106.2
       },
       {
-        "province": "浙江",
+        "province": "福建",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "blue",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
         "count": 2,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260821170658.html",
-          "issuedAt": "2026/08/21 17:06"
+          "title": "福建省泉州市南安市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260822131300.html",
+          "issuedAt": "2026/08/22 13:13"
         },
-        "lat": 29.2,
-        "lng": 120.2
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "黑龙江",
@@ -1034,24 +1070,6 @@
         },
         "lat": 47.4,
         "lng": 128.1
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省漳州市平和县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260822115000.html",
-          "issuedAt": "2026/08/22 11:50"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "海南",
@@ -1078,16 +1096,34 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省承德市围场满族蒙古族自治县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13082841600000_20260822105929.html",
-          "issuedAt": "2026/08/22 10:59"
+          "title": "河北省保定市徐水区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13060941600000_20260822132432.html",
+          "issuedAt": "2026/08/22 13:24"
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "江苏",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "江苏省盐城市盐都区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32090341600000_20260822131326.html",
+          "issuedAt": "2026/08/22 13:13"
+        },
+        "lat": 33,
+        "lng": 119.5
       },
       {
         "province": "安徽",
