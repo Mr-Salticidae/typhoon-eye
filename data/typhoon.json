@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 16:51",
+  "updatedAt": "2026-08-22 17:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 73 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 78 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -71,7 +71,7 @@
         "r7": 100,
         "r10": null,
         "time": "08-22 17时",
-        "position": "中心位于北纬 26.3 度、东经 124.4 度"
+        "position": "中心位于北纬 26.3 度、东经 124.3 度"
       },
       "track": [
         {
@@ -117,7 +117,7 @@
         {
           "t": "08-22 17时",
           "lat": 26.3,
-          "lng": 124.4,
+          "lng": 124.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "now"
@@ -384,7 +384,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 19,
+            "count": 20,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -403,7 +403,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 20,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -679,13 +679,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 220,
+    "total": 226,
     "counts": {
-      "暴雨": 152,
+      "暴雨": 161,
       "台风": 16,
       "山洪灾害": 6,
       "山洪风险": 5,
-      "地质灾害": 41
+      "地质灾害": 38
     },
     "peak": {
       "province": "广西",
@@ -704,7 +704,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 19,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -724,13 +724,13 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 48,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20260822162418.html",
-          "issuedAt": "2026/08/22 16:24"
+          "title": "云南省丽江市永胜县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53072241600000_20260822165512.html",
+          "issuedAt": "2026/08/22 16:55"
         },
         "lat": 25,
         "lng": 101.5
@@ -743,7 +743,7 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 20,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -761,7 +761,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 15,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -797,7 +797,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -807,6 +807,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省娄底市双峰县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43132141600000_20260822100104.html",
+          "issuedAt": "2026/08/22 10:01"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "四川",
@@ -827,24 +845,6 @@
         "lng": 102.9
       },
       {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省娄底市双峰县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43132141600000_20260822100104.html",
-          "issuedAt": "2026/08/22 10:01"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "吉林",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -861,6 +861,24 @@
         },
         "lat": 43.7,
         "lng": 126.2
+      },
+      {
+        "province": "河北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "河北省保定市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13060041600000_20260822170901.html",
+          "issuedAt": "2026/08/22 17:09"
+        },
+        "lat": 38.5,
+        "lng": 115.5
       },
       {
         "province": "辽宁",
@@ -921,10 +939,9 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 10,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -980,7 +997,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -1028,7 +1045,7 @@
         "lng": 109.7
       },
       {
-        "province": "河北",
+        "province": "安徽",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
@@ -1038,27 +1055,9 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省保定市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13060041600000_20260822164558.html",
-          "issuedAt": "2026/08/22 16:45"
-        },
-        "lat": 38.5,
-        "lng": 115.5
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "安徽省安庆市太湖县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34082541600000_20260822160244.html",
-          "issuedAt": "2026/08/22 16:02"
+          "title": "安徽省安庆市宿松县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34082641600000_20260822165323.html",
+          "issuedAt": "2026/08/22 16:53"
         },
         "lat": 31.9,
         "lng": 117.2
