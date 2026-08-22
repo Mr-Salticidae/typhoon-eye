@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 16:00",
+  "updatedAt": "2026-08-22 16:12",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -128,7 +128,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 47 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 47 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -140,7 +140,7 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-22 15时",
+            "time": "08-22 16时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -376,7 +376,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 20,
+            "count": 19,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -395,7 +395,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 23,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -671,12 +671,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 220,
+    "total": 210,
     "counts": {
-      "暴雨": 154,
+      "暴雨": 145,
       "台风": 16,
       "山洪灾害": 5,
-      "山洪风险": 6,
+      "山洪风险": 5,
       "地质灾害": 39
     },
     "peak": {
@@ -696,7 +696,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 20,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -713,16 +713,16 @@
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange",
-          "山洪风险": "orange",
+          "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 48,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省昆明市富民县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53012441600000_20260822155435.html",
-          "issuedAt": "2026/08/22 15:54"
+          "title": "云南省楚雄彝族自治州禄丰市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53230241600000_20260822160702.html",
+          "issuedAt": "2026/08/22 16:07"
         },
         "lat": 25,
         "lng": 101.5
@@ -735,7 +735,7 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 23,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -753,7 +753,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 16,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -771,7 +771,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 13,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -873,31 +873,13 @@
         "lng": 115.7
       },
       {
-        "province": "湖北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖北省黄冈市武穴市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42118241600000_20260822121408.html",
-          "issuedAt": "2026/08/22 12:14"
-        },
-        "lat": 31,
-        "lng": 112.3
-      },
-      {
         "province": "河南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -915,13 +897,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 13,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省厦门市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35020041600000_20260822155000.html",
-          "issuedAt": "2026/08/22 15:50"
+          "title": "福建省漳州市芗城区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35060241600000_20260822160400.html",
+          "issuedAt": "2026/08/22 16:04"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -946,24 +928,6 @@
         "lng": 120.2
       },
       {
-        "province": "北京",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "北京市朝阳区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/11010541600000_20260822124432.html",
-          "issuedAt": "2026/08/22 12:44"
-        },
-        "lat": 40.2,
-        "lng": 116.4
-      },
-      {
         "province": "宁夏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -984,6 +948,24 @@
         "lng": 106.2
       },
       {
+        "province": "山东",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "山东省烟台市莱州市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37068341600000_20260822155725.html",
+          "issuedAt": "2026/08/22 15:57"
+        },
+        "lat": 36.4,
+        "lng": 118.2
+      },
+      {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1002,22 +984,22 @@
         "lng": 112.3
       },
       {
-        "province": "山东",
+        "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "山东省威海市乳山市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37108341600000_20260822075600.html",
-          "issuedAt": "2026/08/22 07:56"
+          "title": "湖北省黄冈市蕲春县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42112641600000_20260822154940.html",
+          "issuedAt": "2026/08/22 15:49"
         },
-        "lat": 36.4,
-        "lng": 118.2
+        "lat": 31,
+        "lng": 112.3
       },
       {
         "province": "海南",
@@ -1044,13 +1026,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省铜陵市枞阳县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34072241600000_20260822151350.html",
-          "issuedAt": "2026/08/22 15:13"
+          "title": "安徽省安庆市太湖县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34082541600000_20260822160244.html",
+          "issuedAt": "2026/08/22 16:02"
         },
         "lat": 31.9,
         "lng": 117.2
@@ -1091,6 +1073,24 @@
         },
         "lat": 37.8,
         "lng": 101.1
+      },
+      {
+        "province": "北京",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "北京市海淀区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/11010841600000_20260822115946.html",
+          "issuedAt": "2026/08/22 11:59"
+        },
+        "lat": 40.2,
+        "lng": 116.4
       },
       {
         "province": "江苏",
