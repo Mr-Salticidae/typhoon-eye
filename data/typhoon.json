@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 21:39",
+  "updatedAt": "2026-08-22 21:59",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -827,12 +827,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 240,
+    "total": 249,
     "counts": {
-      "暴雨": 172,
+      "暴雨": 179,
       "台风": 15,
-      "山洪灾害": 11,
-      "山洪风险": 4,
+      "山洪灾害": 12,
+      "山洪风险": 5,
       "地质灾害": 38
     },
     "peak": {
@@ -853,7 +853,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 52,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -890,7 +890,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 15,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -908,7 +908,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 17,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -918,6 +918,24 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "黑龙江省牡丹江市海林市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23108341600000_20260822181956.html",
+          "issuedAt": "2026/08/22 18:19"
+        },
+        "lat": 47.4,
+        "lng": 128.1
       },
       {
         "province": "广东",
@@ -939,31 +957,13 @@
         "lng": 113.4
       },
       {
-        "province": "黑龙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 14,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "黑龙江省牡丹江市海林市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23108341600000_20260822181956.html",
-          "issuedAt": "2026/08/22 18:19"
-        },
-        "lat": 47.4,
-        "lng": 128.1
-      },
-      {
         "province": "内蒙古",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1150,7 +1150,7 @@
           "山洪灾害": "blue",
           "地质灾害": "blue"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -1272,6 +1272,24 @@
         "lng": 109.7
       },
       {
+        "province": "重庆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市綦江区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011041600000_20260822213632.html",
+          "issuedAt": "2026/08/22 21:36"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
         "province": "新疆",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -1288,24 +1306,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市开州区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015441600000_20260822174618.html",
-          "issuedAt": "2026/08/22 17:46"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       }
     ]
   },
