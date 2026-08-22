@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 18:31",
+  "updatedAt": "2026-08-22 18:36",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 3
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 49 公里（时次相差 1 小时）、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 49 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-22 18时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 18时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 998,
         "moveDir": "西",
         "moveSpeed": 7,
-        "r7": null,
+        "r7": 100,
         "r10": null,
         "time": "08-22 18时",
         "position": "中心位于北纬 26.3 度、东经 124.2 度"
@@ -200,13 +207,13 @@
               "暴雨": "yellow",
               "地质灾害": "yellow"
             },
-            "count": 7,
+            "count": 8,
             "top": {
               "kind": "暴雨",
               "level": "yellow",
-              "title": "浙江省杭州市余杭区气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/33011041600000_20260822181734.html",
-              "issuedAt": "2026/08/22 18:17"
+              "title": "浙江省湖州市安吉县气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33052341600000_20260822182924.html",
+              "issuedAt": "2026/08/22 18:29"
             },
             "via": "路径邻近",
             "distKm": 401
@@ -228,7 +235,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 21 公里（时次相差 1 小时）、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 21 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -236,6 +243,13 @@
             "time": "08-22 18时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 18时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -252,7 +266,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-22 18时",
         "position": "中心位于北纬 21.1 度、东经 108.4 度"
@@ -534,7 +548,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 0 公里、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -542,6 +556,13 @@
             "time": "08-22 17时",
             "windLevel": 14,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 17时",
+            "windLevel": 14,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -558,8 +579,8 @@
         "pressure": 955,
         "moveDir": "西北西",
         "moveSpeed": 27,
-        "r7": null,
-        "r10": null,
+        "r7": 420,
+        "r10": 150,
         "time": "08-22 17时",
         "position": "中心位于北纬 19.2 度、东经 145.7 度"
       },
@@ -759,11 +780,11 @@
     "partial": null,
     "total": 223,
     "counts": {
-      "暴雨": 160,
+      "暴雨": 161,
       "台风": 15,
       "山洪灾害": 6,
       "山洪风险": 5,
-      "地质灾害": 37
+      "地质灾害": 36
     },
     "peak": {
       "province": "广西",
@@ -802,7 +823,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 54,
+        "count": 53,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1013,6 +1034,25 @@
         "lng": 113.6
       },
       {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "浙江省湖州市安吉县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33052341600000_20260822182924.html",
+          "issuedAt": "2026/08/22 18:29"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
         "province": "宁夏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1031,25 +1071,6 @@
         },
         "lat": 37.3,
         "lng": 106.2
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省杭州市余杭区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33011041600000_20260822181734.html",
-          "issuedAt": "2026/08/22 18:17"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "山东",
