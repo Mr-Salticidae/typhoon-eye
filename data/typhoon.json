@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23 01:05",
+  "updatedAt": "2026-08-23 01:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -832,9 +832,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 221,
+    "total": 229,
     "counts": {
-      "暴雨": 149,
+      "暴雨": 157,
       "台风": 14,
       "山洪灾害": 12,
       "山洪风险": 5,
@@ -867,6 +867,24 @@
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 20,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省梅州市五华县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44142441600000_20260823010117.html",
+          "issuedAt": "2026/08/23 01:01"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "四川",
@@ -905,22 +923,23 @@
         "lng": 111.7
       },
       {
-        "province": "广东",
+        "province": "陕西",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red"
+          "暴雨": "red",
+          "山洪灾害": "yellow"
         },
-        "count": 16,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省梅州市五华县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142441600000_20260823002711.html",
-          "issuedAt": "2026/08/23 00:27"
+          "title": "陕西省汉中市南郑区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61070341600000_20260823012552.html",
+          "issuedAt": "2026/08/23 01:25"
         },
-        "lat": 23.4,
-        "lng": 113.4
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "云南",
@@ -979,19 +998,37 @@
         "lng": 128.1
       },
       {
+        "province": "内蒙古",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "内蒙古自治区锡林郭勒盟太仆寺旗气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15252741600000_20260823012427.html",
+          "issuedAt": "2026/08/23 01:24"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
         "province": "辽宁",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "辽宁省抚顺市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21040041600000_20260822174700.html",
-          "issuedAt": "2026/08/22 17:47"
+          "title": "辽宁省大连市长海县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21022441600000_20260823012300.html",
+          "issuedAt": "2026/08/23 01:23"
         },
         "lat": 41.8,
         "lng": 122.6
@@ -1092,24 +1129,6 @@
         "lng": 115.5
       },
       {
-        "province": "内蒙古",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "内蒙古自治区锡林郭勒盟多伦县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15253141600000_20260823004248.html",
-          "issuedAt": "2026/08/23 00:42"
-        },
-        "lat": 44,
-        "lng": 113.9
-      },
-      {
         "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1182,24 +1201,6 @@
         },
         "lat": 26.8,
         "lng": 106.9
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪灾害": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "陕西省气象台发布山洪灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260822174313.html",
-          "issuedAt": "2026/08/22 17:43"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "海南",
