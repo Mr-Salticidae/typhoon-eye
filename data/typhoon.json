@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 07:55",
+  "updatedAt": "2026-08-22 08:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -278,25 +278,6 @@
       "rainRisk": {
         "provinces": [
           {
-            "province": "海南",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange",
-              "台风": "blue"
-            },
-            "count": 9,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "海南省东方市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/46900741600000_20260821124611.html",
-              "issuedAt": "2026/08/21 12:46"
-            },
-            "via": "路径邻近",
-            "distKm": 170
-          },
-          {
             "province": "广西",
             "maxLevel": "orange",
             "floodLevel": "orange",
@@ -308,9 +289,9 @@
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广西壮族自治区百色市德保县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45102441600000_20260822074612.html",
-              "issuedAt": "2026/08/22 07:46"
+              "title": "广西壮族自治区百色市平果市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45108241600000_20260822081004.html",
+              "issuedAt": "2026/08/22 08:10"
             },
             "via": "路径邻近",
             "distKm": 175
@@ -323,7 +304,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 10,
+            "count": 8,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -333,6 +314,24 @@
             },
             "via": "路径邻近",
             "distKm": 416
+          },
+          {
+            "province": "海南",
+            "maxLevel": "blue",
+            "floodLevel": null,
+            "kinds": {
+              "台风": "blue"
+            },
+            "count": 7,
+            "top": {
+              "kind": "台风",
+              "level": "blue",
+              "title": "海南省乐东县气象台发布台风蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46902741600000_20260821180209.html",
+              "issuedAt": "2026/08/21 18:02"
+            },
+            "via": "路径邻近",
+            "distKm": 170
           }
         ],
         "floodLevel": "orange",
@@ -581,9 +580,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 202,
+    "total": 169,
     "counts": {
-      "暴雨": 146,
+      "暴雨": 113,
       "台风": 16,
       "山洪灾害": 2,
       "山洪风险": 7,
@@ -607,7 +606,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 54,
+        "count": 48,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -619,37 +618,19 @@
         "lng": 101.5
       },
       {
-        "province": "山东",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "山东省威海市乳山市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37108341600000_20260821171055.html",
-          "issuedAt": "2026/08/21 17:10"
-        },
-        "lat": 36.4,
-        "lng": 118.2
-      },
-      {
         "province": "四川",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 10,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "四川省乐山市峨眉山市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51118141600000_20260822054034.html",
-          "issuedAt": "2026/08/22 05:40"
+          "title": "四川省乐山市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51110041600000_20260822051817.html",
+          "issuedAt": "2026/08/22 05:18"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -666,12 +647,30 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区百色市德保县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45102441600000_20260822074612.html",
-          "issuedAt": "2026/08/22 07:46"
+          "title": "广西壮族自治区百色市平果市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45108241600000_20260822081004.html",
+          "issuedAt": "2026/08/22 08:10"
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "山东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 12,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "山东省威海市荣成市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37108241600000_20260822051517.html",
+          "issuedAt": "2026/08/22 05:15"
+        },
+        "lat": 36.4,
+        "lng": 118.2
       },
       {
         "province": "内蒙古",
@@ -680,7 +679,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -699,7 +698,7 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 10,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -709,25 +708,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "海南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "海南省东方市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46900741600000_20260821124611.html",
-          "issuedAt": "2026/08/21 12:46"
-        },
-        "lat": 19.2,
-        "lng": 109.7
       },
       {
         "province": "湖南",
@@ -808,7 +788,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -842,37 +822,19 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
+          "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 14,
+        "count": 10,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "浙江省温州市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260821225651.html",
-          "issuedAt": "2026/08/21 22:56"
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260821170658.html",
+          "issuedAt": "2026/08/21 17:06"
         },
         "lat": 29.2,
         "lng": 120.2
-      },
-      {
-        "province": "河北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "河北省石家庄市平山县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13013141600000_20260822043343.html",
-          "issuedAt": "2026/08/22 04:33"
-        },
-        "lat": 38.5,
-        "lng": 115.5
       },
       {
         "province": "山西",
@@ -898,11 +860,10 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "blue",
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -914,7 +875,25 @@
         "lng": 106.2
       },
       {
-        "province": "重庆",
+        "province": "海南",
+        "maxLevel": "blue",
+        "floodLevel": null,
+        "kinds": {
+          "台风": "blue"
+        },
+        "count": 7,
+        "top": {
+          "kind": "台风",
+          "level": "blue",
+          "title": "海南省乐东县气象台发布台风蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46902741600000_20260821180209.html",
+          "issuedAt": "2026/08/21 18:02"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
+      {
+        "province": "河北",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
@@ -924,30 +903,12 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "重庆市县奉节县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260821192310.html",
-          "issuedAt": "2026/08/21 19:23"
+          "title": "河北省石家庄市灵寿县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13012641600000_20260822033953.html",
+          "issuedAt": "2026/08/22 03:39"
         },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "福建",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "福建省莆田市秀屿区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35030541600000_20260822004900.html",
-          "issuedAt": "2026/08/22 00:49"
-        },
-        "lat": 26.1,
-        "lng": 118.3
+        "lat": 38.5,
+        "lng": 115.5
       },
       {
         "province": "北京",
@@ -966,6 +927,24 @@
         },
         "lat": 40.2,
         "lng": 116.4
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市县巫溪县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023841600000_20260821163442.html",
+          "issuedAt": "2026/08/21 16:34"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "陕西",
