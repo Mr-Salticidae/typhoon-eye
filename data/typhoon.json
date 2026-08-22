@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23 02:44",
+  "updatedAt": "2026-08-23 03:11",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 54 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 56 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-22 23时",
+            "time": "08-23 02时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -300,7 +300,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -319,7 +319,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-22 23时",
+            "time": "08-23 02时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -848,12 +848,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 245,
+    "total": 249,
     "counts": {
-      "暴雨": 174,
+      "暴雨": 179,
       "台风": 14,
       "山洪灾害": 12,
-      "山洪风险": 4,
+      "山洪风险": 3,
       "地质灾害": 41
     },
     "peak": {
@@ -895,9 +895,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省梅州市五华县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142441600000_20260823010117.html",
-          "issuedAt": "2026/08/23 01:01"
+          "title": "广东省汕尾市海丰县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44152141600000_20260823025425.html",
+          "issuedAt": "2026/08/23 02:54"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -937,6 +937,24 @@
         },
         "lat": 27.6,
         "lng": 111.7
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 17,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "黑龙江省气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23000041600000_20260823030022.html",
+          "issuedAt": "2026/08/23 03:00"
+        },
+        "lat": 47.4,
+        "lng": 128.1
       },
       {
         "province": "辽宁",
@@ -984,7 +1002,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 47,
+        "count": 48,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -994,24 +1012,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "黑龙江省鹤岗市绥滨县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23042241600000_20260823021618.html",
-          "issuedAt": "2026/08/23 02:16"
-        },
-        "lat": 47.4,
-        "lng": 128.1
       },
       {
         "province": "吉林",
@@ -1127,6 +1127,24 @@
         "lng": 112.3
       },
       {
+        "province": "山东",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "山东省威海市乳山市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37108341600000_20260823030056.html",
+          "issuedAt": "2026/08/23 03:00"
+        },
+        "lat": 36.4,
+        "lng": 118.2
+      },
+      {
         "province": "福建",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1181,24 +1199,6 @@
         },
         "lat": 29.2,
         "lng": 120.2
-      },
-      {
-        "province": "山东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "山东省烟台市龙口市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37068141600000_20260822172408.html",
-          "issuedAt": "2026/08/22 17:24"
-        },
-        "lat": 36.4,
-        "lng": 118.2
       },
       {
         "province": "新疆",
