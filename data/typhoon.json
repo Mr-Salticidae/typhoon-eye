@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22 12:09",
+  "updatedAt": "2026-08-22 12:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 3
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 59 公里（时次相差 3 小时）、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 59 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-22 11时",
             "windLevel": 7,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 11时",
+            "windLevel": 7,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -110,7 +117,7 @@
               "暴雨": "blue",
               "地质灾害": "yellow"
             },
-            "count": 3,
+            "count": 2,
             "top": {
               "kind": "地质灾害",
               "level": "yellow",
@@ -128,7 +135,7 @@
             "kinds": {
               "暴雨": "yellow"
             },
-            "count": 2,
+            "count": 1,
             "top": {
               "kind": "暴雨",
               "level": "yellow",
@@ -156,7 +163,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 15 公里（时次相差 1 小时）、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -164,6 +171,13 @@
             "time": "08-22 12时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 12时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -180,7 +194,7 @@
         "pressure": 992,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-22 12时",
         "position": "中心位于北纬 21.2 度、东经 108.0 度"
@@ -397,7 +411,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 25,
+            "count": 19,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -420,9 +434,9 @@
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广东省揭阳市普宁市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44528141600000_20260822103055.html",
-              "issuedAt": "2026/08/22 10:30"
+              "title": "广东省汕尾市陆丰市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44158141600000_20260822092621.html",
+              "issuedAt": "2026/08/22 09:26"
             },
             "via": "路径邻近",
             "distKm": 403
@@ -462,7 +476,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 11 公里、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -470,6 +484,13 @@
             "time": "08-22 11时",
             "windLevel": 13,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-22 11时",
+            "windLevel": 13,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -486,8 +507,8 @@
         "pressure": 960,
         "moveDir": "西北",
         "moveSpeed": 20,
-        "r7": null,
-        "r10": null,
+        "r7": 420,
+        "r10": 150,
         "time": "08-22 11时",
         "position": "中心位于北纬 18.3 度、东经 146.1 度"
       },
@@ -685,43 +706,23 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 173,
+    "total": 158,
     "counts": {
-      "暴雨": 109,
+      "暴雨": 94,
       "台风": 16,
       "山洪灾害": 3,
       "山洪风险": 7,
       "地质灾害": 38
     },
     "peak": {
-      "province": "云南",
+      "province": "广西",
       "kind": "暴雨",
       "level": "red",
-      "title": "云南省临沧市耿马傣族佤族自治县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53092641600000_20260822075142.html",
-      "issuedAt": "2026/08/22 07:51"
+      "title": "广西壮族自治区百色市田东县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/45102241600000_20260822092657.html",
+      "issuedAt": "2026/08/22 09:26"
     },
     "provinces": [
-      {
-        "province": "云南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪风险": "orange",
-          "地质灾害": "orange"
-        },
-        "count": 53,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "云南省临沧市耿马傣族佤族自治县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53092641600000_20260822075142.html",
-          "issuedAt": "2026/08/22 07:51"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
       {
         "province": "广西",
         "maxLevel": "red",
@@ -730,7 +731,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 25,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -740,6 +741,26 @@
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "orange",
+          "地质灾害": "orange"
+        },
+        "count": 45,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省玉溪市元江哈尼族彝族傣族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53042841600000_20260822102346.html",
+          "issuedAt": "2026/08/22 10:23"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "内蒙古",
@@ -752,9 +773,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "内蒙古自治区鄂尔多斯市达拉特旗气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15062141600000_20260822082403.html",
-          "issuedAt": "2026/08/22 08:24"
+          "title": "内蒙古自治区兴安盟科右中旗气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15222241600000_20260822120242.html",
+          "issuedAt": "2026/08/22 12:02"
         },
         "lat": 44,
         "lng": 113.9
@@ -766,7 +787,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -789,9 +810,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省揭阳市普宁市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44528141600000_20260822103055.html",
-          "issuedAt": "2026/08/22 10:30"
+          "title": "广东省汕尾市陆丰市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44158141600000_20260822092621.html",
+          "issuedAt": "2026/08/22 09:26"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -813,24 +834,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "山东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "山东省威海市荣成市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37108241600000_20260822051517.html",
-          "issuedAt": "2026/08/22 05:15"
-        },
-        "lat": 36.4,
-        "lng": 118.2
       },
       {
         "province": "辽宁",
@@ -887,6 +890,24 @@
         "lng": 126.2
       },
       {
+        "province": "湖北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖北省黄冈市武穴市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42118241600000_20260822121408.html",
+          "issuedAt": "2026/08/22 12:14"
+        },
+        "lat": 31,
+        "lng": 112.3
+      },
+      {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -905,23 +926,22 @@
         "lng": 112.3
       },
       {
-        "province": "浙江",
+        "province": "山东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "blue",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260821170658.html",
-          "issuedAt": "2026/08/21 17:06"
+          "title": "山东省威海市乳山市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37108341600000_20260822075600.html",
+          "issuedAt": "2026/08/22 07:56"
         },
-        "lat": 29.2,
-        "lng": 120.2
+        "lat": 36.4,
+        "lng": 118.2
       },
       {
         "province": "宁夏",
@@ -943,22 +963,23 @@
         "lng": 106.2
       },
       {
-        "province": "福建",
+        "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "blue",
+          "地质灾害": "yellow"
         },
         "count": 2,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "福建省漳州市平和县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260822115000.html",
-          "issuedAt": "2026/08/22 11:50"
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260821170658.html",
+          "issuedAt": "2026/08/21 17:06"
         },
-        "lat": 26.1,
-        "lng": 118.3
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "黑龙江",
@@ -977,6 +998,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省漳州市平和县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260822115000.html",
+          "issuedAt": "2026/08/22 11:50"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "北京",
