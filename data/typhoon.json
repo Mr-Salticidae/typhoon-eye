@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 06:15",
+  "updatedAt": "2026-08-24 06:33",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -249,19 +249,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-24 05时",
+            "time": "08-24 06时",
             "windLevel": 9,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-24 05时",
+            "time": "08-24 06时",
             "windLevel": 9,
             "role": "verify"
           },
@@ -282,7 +282,7 @@
         "moveSpeed": 0,
         "r7": 150,
         "r10": null,
-        "time": "08-24 05时",
+        "time": "08-24 06时",
         "position": "中心位于北纬 20.5 度、东经 107.7 度"
       },
       "track": [
@@ -311,9 +311,9 @@
           "phase": "past"
         },
         {
-          "t": "08-21 18时",
-          "lat": 20.6,
-          "lng": 108.3,
+          "t": "08-21 19时",
+          "lat": 20.7,
+          "lng": 108.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -343,23 +343,23 @@
           "phase": "past"
         },
         {
-          "t": "08-22 17时",
-          "lat": 21.2,
+          "t": "08-22 18时",
+          "lat": 21.1,
           "lng": 108.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-22 23时",
+          "t": "08-23 00时",
           "lat": 21.1,
-          "lng": 108.2,
+          "lng": 108.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-23 05时",
+          "t": "08-23 06时",
           "lat": 20.7,
           "lng": 107.8,
           "wind": 8,
@@ -375,15 +375,7 @@
           "phase": "past"
         },
         {
-          "t": "08-23 16时",
-          "lat": 20.7,
-          "lng": 108.3,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-23 22时",
+          "t": "08-23 17时",
           "lat": 20.6,
           "lng": 108.1,
           "wind": 9,
@@ -391,9 +383,9 @@
           "phase": "past"
         },
         {
-          "t": "08-24 04时",
-          "lat": 20.6,
-          "lng": 107.8,
+          "t": "08-23 23时",
+          "lat": 20.5,
+          "lng": 108.1,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -404,67 +396,75 @@
           "lng": 107.7,
           "wind": 9,
           "strong": "热带风暴",
-          "phase": "now"
+          "phase": "past"
         },
         {
-          "t": "08-24 11时",
-          "lat": 20.2,
+          "t": "08-24 06时",
+          "lat": 20.5,
           "lng": 107.7,
           "wind": 9,
           "strong": "热带风暴",
-          "phase": "forecast"
+          "phase": "now"
         },
         {
-          "t": "08-24 17时",
-          "lat": 19.9,
-          "lng": 107.9,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-24 23时",
-          "lat": 19.9,
-          "lng": 108.2,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-25 05时",
-          "lat": 19.9,
-          "lng": 108.5,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-25 17时",
-          "lat": 20.2,
-          "lng": 109.1,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-26 05时",
-          "lat": 21.1,
-          "lng": 109.6,
+          "t": "08-24 12时",
+          "lat": 20.15,
+          "lng": 107.7333,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-26 17时",
-          "lat": 22.1,
+          "t": "08-24 18时",
+          "lat": 19.9,
+          "lng": 107.95,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-25 00时",
+          "lat": 19.9,
+          "lng": 108.25,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-25 06时",
+          "lat": 19.925,
+          "lng": 108.55,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-25 18时",
+          "lat": 20.275,
+          "lng": 109.1417,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-26 06时",
+          "lat": 21.1833,
+          "lng": 109.6167,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-26 18时",
+          "lat": 22.175,
           "lng": 109.8,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-27 05时",
-          "lat": 23,
+          "t": "08-27 06时",
+          "lat": 23.075,
           "lng": 109.8,
           "wind": 6,
           "strong": "热带低压",
@@ -490,7 +490,7 @@
               "issuedAt": "2026/08/24 04:38"
             },
             "via": "路径邻近",
-            "distKm": 135
+            "distKm": 130
           },
           {
             "province": "广东",
@@ -499,7 +499,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 31,
+            "count": 34,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -508,7 +508,7 @@
               "issuedAt": "2026/08/24 05:43"
             },
             "via": "路径邻近",
-            "distKm": 371
+            "distKm": 370
           },
           {
             "province": "海南",
@@ -526,7 +526,7 @@
               "issuedAt": "2026/08/23 17:13"
             },
             "via": "路径邻近",
-            "distKm": 128
+            "distKm": 133
           }
         ],
         "floodLevel": "red",
@@ -794,7 +794,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 31,
+            "count": 34,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -856,13 +856,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 432,
+    "total": 438,
     "counts": {
-      "暴雨": 298,
+      "暴雨": 306,
       "台风": 19,
       "山洪灾害": 42,
       "山洪风险": 3,
-      "地质灾害": 70
+      "地质灾害": 68
     },
     "peak": {
       "province": "江西",
@@ -898,16 +898,34 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 32,
+        "count": 35,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "辽宁省葫芦岛市绥中县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21142141600000_20260824055800.html",
-          "issuedAt": "2026/08/24 05:58"
+          "title": "辽宁省沈阳市沈北新区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21011341600000_20260824061800.html",
+          "issuedAt": "2026/08/24 06:18"
         },
         "lat": 41.8,
         "lng": 122.6
+      },
+      {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 34,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省广州市增城区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44011841600000_20260824054357.html",
+          "issuedAt": "2026/08/24 05:43"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "河北",
@@ -929,22 +947,22 @@
         "lng": 115.5
       },
       {
-        "province": "广东",
+        "province": "湖南",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省广州市增城区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44011841600000_20260824054357.html",
-          "issuedAt": "2026/08/24 05:43"
+          "title": "湖南省益阳市安化县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43092341600000_20260824052632.html",
+          "issuedAt": "2026/08/24 05:26"
         },
-        "lat": 23.4,
-        "lng": 113.4
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "广西",
@@ -964,24 +982,6 @@
         },
         "lat": 23.8,
         "lng": 108.8
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 23,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省益阳市安化县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43092341600000_20260824052632.html",
-          "issuedAt": "2026/08/24 05:26"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "甘肃",
@@ -1103,13 +1103,13 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 54,
+        "count": 53,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省临沧市镇康县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53092441600000_20260824055739.html",
-          "issuedAt": "2026/08/24 05:57"
+          "title": "云南省丽江市华坪县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53072341600000_20260824062507.html",
+          "issuedAt": "2026/08/24 06:25"
         },
         "lat": 25,
         "lng": 101.5
