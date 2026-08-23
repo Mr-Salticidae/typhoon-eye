@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23 11:25",
+  "updatedAt": "2026-08-23 11:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 54 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 60 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-23 10时",
+            "time": "08-23 11时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-23 10时",
+            "time": "08-23 11时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 18,
         "pressure": 998,
         "moveDir": "西南西",
-        "moveSpeed": 9,
+        "moveSpeed": 8,
         "r7": 100,
         "r10": null,
-        "time": "08-23 10时",
-        "position": "中心位于北纬 25.8 度、东经 122.3 度"
+        "time": "08-23 11时",
+        "position": "中心位于北纬 25.8 度、东经 122.2 度"
       },
       "track": [
         {
@@ -107,9 +107,9 @@
           "phase": "past"
         },
         {
-          "t": "08-22 18时",
+          "t": "08-22 19时",
           "lat": 26.3,
-          "lng": 124.2,
+          "lng": 124.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -131,17 +131,17 @@
           "phase": "past"
         },
         {
-          "t": "08-22 23时",
-          "lat": 26.1,
-          "lng": 123.4,
+          "t": "08-23 00时",
+          "lat": 26,
+          "lng": 123.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-23 01时",
+          "t": "08-23 02时",
           "lat": 25.9,
-          "lng": 123,
+          "lng": 122.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -155,17 +155,9 @@
           "phase": "past"
         },
         {
-          "t": "08-23 04时",
-          "lat": 25.9,
-          "lng": 122.6,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-23 06时",
+          "t": "08-23 05时",
           "lat": 25.8,
-          "lng": 122.3,
+          "lng": 122.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -179,7 +171,7 @@
           "phase": "past"
         },
         {
-          "t": "08-23 09时",
+          "t": "08-23 08时",
           "lat": 25.8,
           "lng": 122.3,
           "wind": 8,
@@ -192,36 +184,44 @@
           "lng": 122.3,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-23 11时",
+          "lat": 25.8,
+          "lng": 122.2,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-23 16时",
-          "lat": 25.5667,
-          "lng": 121.7333,
+          "t": "08-23 17时",
+          "lat": 25.6,
+          "lng": 121.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-23 22时",
-          "lat": 25.4333,
-          "lng": 121.2,
+          "t": "08-23 23时",
+          "lat": 25.5,
+          "lng": 121.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-24 04时",
-          "lat": 25.2333,
-          "lng": 120.6333,
-          "wind": 6,
+          "t": "08-24 05时",
+          "lat": 25.3,
+          "lng": 120.7,
+          "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-24 10时",
-          "lat": 25.0333,
-          "lng": 120.1333,
+          "t": "08-24 11时",
+          "lat": 25.1,
+          "lng": 120.2,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -240,12 +240,12 @@
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "福建省福州市连江县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35012241600000_20260823111600.html",
-              "issuedAt": "2026/08/23 11:16"
+              "title": "福建省宁德市福安市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35098141600000_20260823112100.html",
+              "issuedAt": "2026/08/23 11:21"
             },
             "via": "路径邻近",
-            "distKm": 219
+            "distKm": 221
           },
           {
             "province": "浙江",
@@ -265,7 +265,7 @@
               "issuedAt": "2026/08/23 08:21"
             },
             "via": "路径邻近",
-            "distKm": 430
+            "distKm": 426
           }
         ],
         "floodLevel": "orange",
@@ -570,7 +570,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 91 公里（时次相差 3 小时）、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -589,7 +589,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-23 08时",
+            "time": "08-23 11时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -805,9 +805,9 @@
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "福建省福州市连江县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35012241600000_20260823111600.html",
-              "issuedAt": "2026/08/23 11:16"
+              "title": "福建省宁德市福安市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35098141600000_20260823112100.html",
+              "issuedAt": "2026/08/23 11:21"
             },
             "via": "路径邻近",
             "distKm": 221
@@ -824,13 +824,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 297,
+    "total": 306,
     "counts": {
-      "暴雨": 212,
+      "暴雨": 219,
       "台风": 14,
       "山洪灾害": 20,
       "山洪风险": 6,
-      "地质灾害": 45
+      "地质灾害": 47
     },
     "peak": {
       "province": "湖南",
@@ -848,7 +848,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 24,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -866,7 +866,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 20,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -884,7 +884,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 12,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -922,13 +922,13 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 54,
+        "count": 56,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省临沧市永德县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53092341600000_20260823111544.html",
-          "issuedAt": "2026/08/23 11:15"
+          "title": "云南省红河哈尼族彝族自治州绿春县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53253141600000_20260823114120.html",
+          "issuedAt": "2026/08/23 11:41"
         },
         "lat": 25,
         "lng": 101.5
@@ -972,6 +972,26 @@
         "lng": 126.2
       },
       {
+        "province": "宁夏",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 22,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "宁夏回族自治区吴忠市同心县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64032441600000_20260823085231.html",
+          "issuedAt": "2026/08/23 08:52"
+        },
+        "lat": 37.3,
+        "lng": 106.2
+      },
+      {
         "province": "广西",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -991,26 +1011,6 @@
         "lng": 108.8
       },
       {
-        "province": "宁夏",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 20,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "宁夏回族自治区吴忠市同心县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64032441600000_20260823085231.html",
-          "issuedAt": "2026/08/23 08:52"
-        },
-        "lat": 37.3,
-        "lng": 106.2
-      },
-      {
         "province": "福建",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1021,9 +1021,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "福建省福州市连江县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35012241600000_20260823111600.html",
-          "issuedAt": "2026/08/23 11:16"
+          "title": "福建省宁德市福安市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35098141600000_20260823112100.html",
+          "issuedAt": "2026/08/23 11:21"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -1115,9 +1115,9 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "甘肃省白银市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/62040041600000_20260823072522.html",
-          "issuedAt": "2026/08/23 07:25"
+          "title": "甘肃省白银市会宁县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/62042241600000_20260823112711.html",
+          "issuedAt": "2026/08/23 11:27"
         },
         "lat": 37.8,
         "lng": 101.1
@@ -1150,7 +1150,7 @@
           "暴雨": "yellow",
           "山洪灾害": "blue"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -1204,13 +1204,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 12,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "北京市东城区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/11010141600000_20260823111935.html",
-          "issuedAt": "2026/08/23 11:19"
+          "title": "北京市房山区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/11011141600000_20260823112642.html",
+          "issuedAt": "2026/08/23 11:26"
         },
         "lat": 40.2,
         "lng": 116.4
