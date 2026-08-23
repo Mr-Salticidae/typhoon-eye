@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 04:35",
+  "updatedAt": "2026-08-24 04:55",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 3
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 62 公里、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 62 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-24 02时",
             "windLevel": 7,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-24 02时",
+            "windLevel": 7,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -242,7 +249,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 25 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -250,6 +257,13 @@
             "time": "08-24 04时",
             "windLevel": 9,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-24 04时",
+            "windLevel": 9,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -266,7 +280,7 @@
         "pressure": 990,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-24 04时",
         "position": "中心位于北纬 20.6 度、东经 107.8 度"
@@ -471,9 +485,9 @@
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广西壮族自治区贺州市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45110041600000_20260824041251.html",
-              "issuedAt": "2026/08/24 04:12"
+              "title": "广西壮族自治区贵港市桂平市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45088141600000_20260824043833.html",
+              "issuedAt": "2026/08/24 04:38"
             },
             "via": "路径邻近",
             "distKm": 165
@@ -531,7 +545,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 23 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -539,6 +553,13 @@
             "time": "08-24 02时",
             "windLevel": 16,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-24 02时",
+            "windLevel": 16,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -555,8 +576,8 @@
         "pressure": 935,
         "moveDir": "西北西",
         "moveSpeed": 28,
-        "r7": null,
-        "r10": null,
+        "r7": 400,
+        "r10": 150,
         "time": "08-24 02时",
         "position": "中心位于北纬 23.3 度、东经 137.9 度"
       },
@@ -755,7 +776,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 34,
+            "count": 37,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -835,9 +856,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 417,
+    "total": 429,
     "counts": {
-      "暴雨": 283,
+      "暴雨": 295,
       "台风": 19,
       "山洪灾害": 42,
       "山洪风险": 3,
@@ -859,7 +880,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 34,
+        "count": 37,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -895,7 +916,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 22,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -913,13 +934,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 22,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "辽宁省丹东市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21060041600000_20260824040200.html",
-          "issuedAt": "2026/08/24 04:02"
+          "title": "辽宁省鞍山市岫岩满族自治县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21032341600000_20260824044400.html",
+          "issuedAt": "2026/08/24 04:44"
         },
         "lat": 41.8,
         "lng": 122.6
@@ -936,9 +957,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广西壮族自治区贺州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45110041600000_20260824041251.html",
-          "issuedAt": "2026/08/24 04:12"
+          "title": "广西壮族自治区贵港市桂平市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45088141600000_20260824043833.html",
+          "issuedAt": "2026/08/24 04:38"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -988,7 +1009,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -998,6 +1019,24 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "湖北",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖北省咸宁市通山县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42122441600000_20260824043605.html",
+          "issuedAt": "2026/08/24 04:36"
+        },
+        "lat": 31,
+        "lng": 112.3
       },
       {
         "province": "陕西",
@@ -1031,9 +1070,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20260824030722.html",
-          "issuedAt": "2026/08/24 03:07"
+          "title": "云南省保山市龙陵县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53052341600000_20260824044405.html",
+          "issuedAt": "2026/08/24 04:44"
         },
         "lat": 25,
         "lng": 101.5
@@ -1086,7 +1125,7 @@
           "暴雨": "orange",
           "山洪灾害": "blue"
         },
-        "count": 28,
+        "count": 29,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1138,24 +1177,6 @@
         "lng": 106.2
       },
       {
-        "province": "湖北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖北省黄石市阳新县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42022241600000_20260824042904.html",
-          "issuedAt": "2026/08/24 04:29"
-        },
-        "lat": 31,
-        "lng": 112.3
-      },
-      {
         "province": "北京",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1180,13 +1201,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "山东省菏泽市鄄城县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37172641600000_20260824040215.html",
-          "issuedAt": "2026/08/24 04:02"
+          "title": "山东省菏泽市东明县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37172841600000_20260824045029.html",
+          "issuedAt": "2026/08/24 04:50"
         },
         "lat": 36.4,
         "lng": 118.2
