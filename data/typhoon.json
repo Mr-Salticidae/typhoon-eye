@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 00:15",
+  "updatedAt": "2026-08-24 00:37",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -215,27 +215,27 @@
         "provinces": [
           {
             "province": "福建",
-            "maxLevel": "red",
-            "floodLevel": "red",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
             "kinds": {
-              "暴雨": "red",
+              "暴雨": "orange",
               "台风": "blue"
             },
             "count": 15,
             "top": {
               "kind": "暴雨",
-              "level": "red",
-              "title": "福建省漳州市平和县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260823213900.html",
-              "issuedAt": "2026/08/23 21:39"
+              "level": "orange",
+              "title": "福建省龙岩市永定区气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260823235500.html",
+              "issuedAt": "2026/08/23 23:55"
             },
             "via": "路径邻近",
             "distKm": 257
           }
         ],
-        "floodLevel": "red",
-        "maxLevel": "red",
-        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高红色。"
+        "floodLevel": "orange",
+        "maxLevel": "orange",
+        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高橙色。"
       }
     },
     {
@@ -770,25 +770,6 @@
       "rainRisk": {
         "provinces": [
           {
-            "province": "福建",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red",
-              "台风": "blue"
-            },
-            "count": 15,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "福建省漳州市平和县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260823213900.html",
-              "issuedAt": "2026/08/23 21:39"
-            },
-            "via": "路径邻近",
-            "distKm": 198
-          },
-          {
             "province": "江西",
             "maxLevel": "red",
             "floodLevel": "red",
@@ -825,6 +806,25 @@
             "distKm": 304
           },
           {
+            "province": "福建",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange",
+              "台风": "blue"
+            },
+            "count": 15,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "福建省龙岩市永定区气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260823235500.html",
+              "issuedAt": "2026/08/23 23:55"
+            },
+            "via": "路径邻近",
+            "distKm": 198
+          },
+          {
             "province": "浙江",
             "maxLevel": "orange",
             "floodLevel": "orange",
@@ -833,7 +833,7 @@
               "山洪灾害": "yellow",
               "地质灾害": "orange"
             },
-            "count": 23,
+            "count": 24,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -856,9 +856,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 384,
+    "total": 390,
     "counts": {
-      "暴雨": 247,
+      "暴雨": 253,
       "台风": 19,
       "山洪灾害": 43,
       "山洪风险": 3,
@@ -892,6 +892,24 @@
         "lng": 113.4
       },
       {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 19,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省永州市冷水滩区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43110341600000_20260823075139.html",
+          "issuedAt": "2026/08/23 07:51"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "辽宁",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -908,43 +926,6 @@
         },
         "lat": 41.8,
         "lng": 122.6
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 18,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省永州市冷水滩区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43110341600000_20260823075139.html",
-          "issuedAt": "2026/08/23 07:51"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
-        "province": "福建",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "台风": "blue"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "福建省漳州市平和县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260823213900.html",
-          "issuedAt": "2026/08/23 21:39"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "江西",
@@ -1009,7 +990,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1019,6 +1000,26 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 54,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省昭通市威信县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53062941600000_20260824001542.html",
+          "issuedAt": "2026/08/24 00:15"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "山西",
@@ -1039,26 +1040,6 @@
         },
         "lat": 37.6,
         "lng": 112.3
-      },
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪风险": "yellow",
-          "地质灾害": "orange"
-        },
-        "count": 51,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省曲靖市会泽县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53032641600000_20260823090207.html",
-          "issuedAt": "2026/08/23 09:02"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "吉林",
@@ -1089,7 +1070,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "orange"
         },
-        "count": 23,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1121,6 +1102,25 @@
         "lng": 106.2
       },
       {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "blue"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省龙岩市永定区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260823235500.html",
+          "issuedAt": "2026/08/23 23:55"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "河北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1132,9 +1132,9 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "河北省张家口市阳原县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13072741600000_20260823181752.html",
-          "issuedAt": "2026/08/23 18:17"
+          "title": "河北省承德市兴隆县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13082241600000_20260824001527.html",
+          "issuedAt": "2026/08/24 00:15"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -1264,7 +1264,7 @@
         "安徽",
         "江苏"
       ],
-      "ongoingFloodLevel": "red",
+      "ongoingFloodLevel": "orange",
       "daysSince": 1
     },
     {
