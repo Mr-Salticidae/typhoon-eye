@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 05:52",
+  "updatedAt": "2026-08-24 06:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 42 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 61 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 02时",
+            "time": "08-24 05时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -215,27 +215,27 @@
         "provinces": [
           {
             "province": "福建",
-            "maxLevel": "blue",
-            "floodLevel": "blue",
+            "maxLevel": "yellow",
+            "floodLevel": "yellow",
             "kinds": {
-              "暴雨": "blue",
+              "暴雨": "yellow",
               "台风": "blue"
             },
-            "count": 10,
+            "count": 9,
             "top": {
               "kind": "暴雨",
-              "level": "blue",
-              "title": "福建省宁德市气象台发布暴雨蓝色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35090041600000_20260824030900.html",
-              "issuedAt": "2026/08/24 03:09"
+              "level": "yellow",
+              "title": "福建省福州市连江县气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35012241600000_20260824060100.html",
+              "issuedAt": "2026/08/24 06:01"
             },
             "via": "路径邻近",
             "distKm": 247
           }
         ],
-        "floodLevel": "blue",
-        "maxLevel": "blue",
-        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高蓝色。"
+        "floodLevel": "yellow",
+        "maxLevel": "yellow",
+        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高黄色。"
       }
     },
     {
@@ -249,7 +249,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -268,7 +268,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 02时",
+            "time": "08-24 05时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -781,8 +781,8 @@
               "kind": "暴雨",
               "level": "red",
               "title": "江西省吉安市井冈山市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/36088141600000_20260824042341.html",
-              "issuedAt": "2026/08/24 04:23"
+              "url": "http://www.nmc.cn/publish/alarm/36088141600000_20260824055215.html",
+              "issuedAt": "2026/08/24 05:52"
             },
             "via": "路径邻近",
             "distKm": 301
@@ -814,7 +814,7 @@
               "山洪灾害": "yellow",
               "地质灾害": "orange"
             },
-            "count": 25,
+            "count": 24,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -827,19 +827,19 @@
           },
           {
             "province": "福建",
-            "maxLevel": "blue",
-            "floodLevel": "blue",
+            "maxLevel": "yellow",
+            "floodLevel": "yellow",
             "kinds": {
-              "暴雨": "blue",
+              "暴雨": "yellow",
               "台风": "blue"
             },
-            "count": 10,
+            "count": 9,
             "top": {
               "kind": "暴雨",
-              "level": "blue",
-              "title": "福建省宁德市气象台发布暴雨蓝色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35090041600000_20260824030900.html",
-              "issuedAt": "2026/08/24 03:09"
+              "level": "yellow",
+              "title": "福建省福州市连江县气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35012241600000_20260824060100.html",
+              "issuedAt": "2026/08/24 06:01"
             },
             "via": "路径邻近",
             "distKm": 171
@@ -856,9 +856,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 444,
+    "total": 432,
     "counts": {
-      "暴雨": 310,
+      "暴雨": 298,
       "台风": 19,
       "山洪灾害": 42,
       "山洪风险": 3,
@@ -869,8 +869,8 @@
       "kind": "暴雨",
       "level": "red",
       "title": "江西省吉安市井冈山市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/36088141600000_20260824042341.html",
-      "issuedAt": "2026/08/24 04:23"
+      "url": "http://www.nmc.cn/publish/alarm/36088141600000_20260824055215.html",
+      "issuedAt": "2026/08/24 05:52"
     },
     "provinces": [
       {
@@ -885,11 +885,29 @@
           "kind": "暴雨",
           "level": "red",
           "title": "江西省吉安市井冈山市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36088141600000_20260824042341.html",
-          "issuedAt": "2026/08/24 04:23"
+          "url": "http://www.nmc.cn/publish/alarm/36088141600000_20260824055215.html",
+          "issuedAt": "2026/08/24 05:52"
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 32,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "辽宁省葫芦岛市绥中县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21142141600000_20260824055800.html",
+          "issuedAt": "2026/08/24 05:58"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "河北",
@@ -929,42 +947,6 @@
         "lng": 113.4
       },
       {
-        "province": "辽宁",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 27,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "辽宁省丹东市凤城市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21068241600000_20260824052500.html",
-          "issuedAt": "2026/08/24 05:25"
-        },
-        "lat": 41.8,
-        "lng": 122.6
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 24,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省益阳市安化县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43092341600000_20260824052632.html",
-          "issuedAt": "2026/08/24 05:26"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "广西",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -984,6 +966,24 @@
         "lng": 108.8
       },
       {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 23,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省益阳市安化县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43092341600000_20260824052632.html",
+          "issuedAt": "2026/08/24 05:26"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "甘肃",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -992,7 +992,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 10,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1010,7 +1010,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1032,9 +1032,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "四川省阿坝藏族羌族自治州九寨沟县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51322541600000_20260824020131.html",
-          "issuedAt": "2026/08/24 02:01"
+          "title": "四川省凉山彝族自治州越西县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51343441600000_20260823202916.html",
+          "issuedAt": "2026/08/23 20:29"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -1077,6 +1077,24 @@
         "lng": 112.3
       },
       {
+        "province": "山东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "山东省菏泽市东明县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37172841600000_20260824060319.html",
+          "issuedAt": "2026/08/24 06:03"
+        },
+        "lat": 36.4,
+        "lng": 118.2
+      },
+      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1085,13 +1103,13 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 55,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省昭通市威信县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53062941600000_20260824053345.html",
-          "issuedAt": "2026/08/24 05:33"
+          "title": "云南省临沧市镇康县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53092441600000_20260824055739.html",
+          "issuedAt": "2026/08/24 05:57"
         },
         "lat": 25,
         "lng": 101.5
@@ -1105,7 +1123,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 44,
+        "count": 42,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1125,7 +1143,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 43,
+        "count": 41,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1145,7 +1163,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "orange"
         },
-        "count": 25,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1177,13 +1195,32 @@
         "lng": 106.2
       },
       {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "台风": "blue"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省福州市连江县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35012241600000_20260824060100.html",
+          "issuedAt": "2026/08/24 06:01"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "北京",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 14,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -1195,37 +1232,19 @@
         "lng": 116.4
       },
       {
-        "province": "山东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "山东省菏泽市东明县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37172841600000_20260824045029.html",
-          "issuedAt": "2026/08/24 04:50"
-        },
-        "lat": 36.4,
-        "lng": 118.2
-      },
-      {
         "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省毕节市大方县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052141600000_20260824053420.html",
-          "issuedAt": "2026/08/24 05:34"
+          "title": "贵州省遵义市赤水市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52038141600000_20260824061100.html",
+          "issuedAt": "2026/08/24 06:11"
         },
         "lat": 26.8,
         "lng": 106.9
@@ -1237,7 +1256,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -1247,25 +1266,6 @@
         },
         "lat": 39.3,
         "lng": 117.3
-      },
-      {
-        "province": "福建",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue",
-          "台风": "blue"
-        },
-        "count": 10,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "福建省宁德市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35090041600000_20260824030900.html",
-          "issuedAt": "2026/08/24 03:09"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "海南",
