@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23 21:30",
+  "updatedAt": "2026-08-23 21:40",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -872,11 +872,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 413,
+    "total": 417,
     "counts": {
-      "暴雨": 282,
+      "暴雨": 284,
       "台风": 18,
-      "山洪灾害": 40,
+      "山洪灾害": 42,
       "山洪风险": 5,
       "地质灾害": 68
     },
@@ -981,6 +981,24 @@
         "lng": 128.1
       },
       {
+        "province": "四川",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "四川省凉山彝族自治州越西县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51343441600000_20260823202916.html",
+          "issuedAt": "2026/08/23 20:29"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
+      {
         "province": "甘肃",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -997,24 +1015,6 @@
         },
         "lat": 37.8,
         "lng": 101.1
-      },
-      {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省凉山彝族自治州越西县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51343441600000_20260823202916.html",
-          "issuedAt": "2026/08/23 20:29"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "云南",
@@ -1045,7 +1045,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 50,
+        "count": 52,
         "top": {
           "kind": "暴雨",
           "level": "orange",
