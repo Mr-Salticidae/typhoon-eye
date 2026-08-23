@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 01:40",
+  "updatedAt": "2026-08-24 02:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -249,7 +249,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 11 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 24 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -261,7 +261,7 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-24 00时",
+            "time": "08-24 01时",
             "windLevel": 9,
             "role": "verify"
           },
@@ -480,7 +480,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 35,
+            "count": 36,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -776,7 +776,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 18,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -794,7 +794,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 35,
+            "count": 36,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -856,9 +856,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 400,
+    "total": 407,
     "counts": {
-      "暴雨": 264,
+      "暴雨": 271,
       "台风": 19,
       "山洪灾害": 43,
       "山洪风险": 3,
@@ -880,7 +880,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 35,
+        "count": 36,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -890,6 +890,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "江西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 21,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "江西省赣州市信丰县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36072241600000_20260823222246.html",
+          "issuedAt": "2026/08/23 22:22"
+        },
+        "lat": 27.6,
+        "lng": 115.7
       },
       {
         "province": "湖南",
@@ -910,31 +928,13 @@
         "lng": 111.7
       },
       {
-        "province": "江西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 18,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "江西省赣州市信丰县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36072241600000_20260823222246.html",
-          "issuedAt": "2026/08/23 22:22"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
-      {
         "province": "辽宁",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 18,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -972,7 +972,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -990,16 +990,55 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "四川省凉山彝族自治州越西县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51343441600000_20260823202916.html",
-          "issuedAt": "2026/08/23 20:29"
+          "title": "四川省阿坝藏族羌族自治州九寨沟县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51322541600000_20260824014103.html",
+          "issuedAt": "2026/08/24 01:41"
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪灾害": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "陕西省宝鸡市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61030041600000_20260824014924.html",
+          "issuedAt": "2026/08/24 01:49"
+        },
+        "lat": 35.2,
+        "lng": 108.9
+      },
+      {
+        "province": "山西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 54,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "山西省太原市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14010641600000_20260823230600.html",
+          "issuedAt": "2026/08/23 23:06"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       },
       {
         "province": "云南",
@@ -1022,26 +1061,6 @@
         "lng": 101.5
       },
       {
-        "province": "山西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 53,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "山西省太原市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14010641600000_20260823230600.html",
-          "issuedAt": "2026/08/23 23:06"
-        },
-        "lat": 37.6,
-        "lng": 112.3
-      },
-      {
         "province": "吉林",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1050,7 +1069,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 42,
+        "count": 43,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1156,25 +1175,6 @@
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "陕西省宝鸡市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61030041600000_20260824012820.html",
-          "issuedAt": "2026/08/24 01:28"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "广西",
