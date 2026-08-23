@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23 12:19",
+  "updatedAt": "2026-08-23 12:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -252,11 +252,11 @@
             "maxLevel": "orange",
             "floodLevel": "orange",
             "kinds": {
-              "暴雨": "blue",
+              "暴雨": "yellow",
               "山洪灾害": "yellow",
               "地质灾害": "orange"
             },
-            "count": 11,
+            "count": 13,
             "top": {
               "kind": "地质灾害",
               "level": "orange",
@@ -824,13 +824,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 292,
+    "total": 301,
     "counts": {
-      "暴雨": 205,
+      "暴雨": 213,
       "台风": 14,
       "山洪灾害": 20,
       "山洪风险": 6,
-      "地质灾害": 47
+      "地质灾害": 48
     },
     "peak": {
       "province": "湖南",
@@ -848,7 +848,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 24,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -922,7 +922,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 52,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -934,33 +934,13 @@
         "lng": 101.5
       },
       {
-        "province": "吉林",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "blue",
-          "地质灾害": "blue"
-        },
-        "count": 24,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "吉林省松原市前郭尔罗斯蒙古族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22072141600000_20260823092221.html",
-          "issuedAt": "2026/08/23 09:22"
-        },
-        "lat": 43.7,
-        "lng": 126.2
-      },
-      {
         "province": "四川",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 23,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -970,6 +950,26 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "吉林",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "blue",
+          "地质灾害": "blue"
+        },
+        "count": 23,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "吉林省松原市前郭尔罗斯蒙古族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22072141600000_20260823092221.html",
+          "issuedAt": "2026/08/23 09:22"
+        },
+        "lat": 43.7,
+        "lng": 126.2
       },
       {
         "province": "广西",
@@ -1013,11 +1013,11 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "blue",
+          "暴雨": "yellow",
           "山洪灾害": "yellow",
           "地质灾害": "orange"
         },
-        "count": 11,
+        "count": 13,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -1035,13 +1035,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省赣州市龙南市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36078341600000_20260822172241.html",
-          "issuedAt": "2026/08/22 17:22"
+          "title": "江西省萍乡市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36030041600000_20260823124121.html",
+          "issuedAt": "2026/08/23 12:41"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -1092,7 +1092,7 @@
           "暴雨": "yellow",
           "山洪灾害": "blue"
         },
-        "count": 9,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -1102,6 +1102,44 @@
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "山西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "yellow",
+          "地质灾害": "blue"
+        },
+        "count": 7,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "山西省大同市阳高县气象台发布山洪灾害气象风险黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14022141600000_20260823075315.html",
+          "issuedAt": "2026/08/23 07:53"
+        },
+        "lat": 37.6,
+        "lng": 112.3
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "黑龙江省牡丹江市海林市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23108341600000_20260823121150.html",
+          "issuedAt": "2026/08/23 12:11"
+        },
+        "lat": 47.4,
+        "lng": 128.1
       },
       {
         "province": "甘肃",
@@ -1124,25 +1162,6 @@
         "lng": 101.1
       },
       {
-        "province": "山西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪灾害": "yellow",
-          "地质灾害": "blue"
-        },
-        "count": 6,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "山西省大同市阳高县气象台发布山洪灾害气象风险黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14022141600000_20260823075315.html",
-          "issuedAt": "2026/08/23 07:53"
-        },
-        "lat": 37.6,
-        "lng": 112.3
-      },
-      {
         "province": "新疆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1159,24 +1178,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "黑龙江省哈尔滨市五常市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23018441600000_20260823083435.html",
-          "issuedAt": "2026/08/23 08:34"
-        },
-        "lat": 47.4,
-        "lng": 128.1
       },
       {
         "province": "陕西",
