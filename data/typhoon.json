@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 02:13",
+  "updatedAt": "2026-08-25 02:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -583,7 +583,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 12,
+            "count": 13,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -602,7 +602,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 50,
+            "count": 49,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -648,7 +648,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 69 公里（时次相差 3 小时）、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -660,7 +660,7 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-24 23时",
+            "time": "08-25 02时",
             "windLevel": 16,
             "role": "verify"
           },
@@ -899,7 +899,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 50,
+            "count": 49,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -960,9 +960,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 458,
+    "total": 460,
     "counts": {
-      "暴雨": 365,
+      "暴雨": 367,
       "台风": 24,
       "山洪灾害": 8,
       "山洪风险": 5,
@@ -1040,7 +1040,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 50,
+        "count": 49,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1077,7 +1077,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 12,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1111,17 +1111,17 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "yellow",
+          "暴雨": "orange",
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 47,
+        "count": 48,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "orange",
-          "title": "云南省丽江市玉龙纳西族自治县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53072141600000_20260824104230.html",
-          "issuedAt": "2026/08/24 10:42"
+          "title": "云南省大理白族自治州洱源县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53293041600000_20260825023805.html",
+          "issuedAt": "2026/08/25 02:37"
         },
         "lat": 25,
         "lng": 101.5
@@ -1163,6 +1163,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "贵州省毕节市金沙县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052341600000_20260825023336.html",
+          "issuedAt": "2026/08/25 02:33"
+        },
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "河南",
@@ -1275,24 +1293,6 @@
         },
         "lat": 37.6,
         "lng": 112.3
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省毕节市黔西市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52058141600000_20260825014151.html",
-          "issuedAt": "2026/08/25 01:41"
-        },
-        "lat": 26.8,
-        "lng": 106.9
       },
       {
         "province": "山东",
