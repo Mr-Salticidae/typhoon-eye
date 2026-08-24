@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 02:54",
+  "updatedAt": "2026-08-25 03:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 3
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 60 公里（时次相差 3 小时）、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 60 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-25 02时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-25 02时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 998,
         "moveDir": "北",
         "moveSpeed": 17,
-        "r7": null,
+        "r7": 280,
         "r10": null,
         "time": "08-25 02时",
         "position": "中心位于北纬 17.6 度、东经 138.0 度"
@@ -152,8 +159,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 212 公里（时次相差 6 小时）、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：日本气象厅定位相差 225 公里（时次相差 9 小时）、强度暂缺（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -165,8 +172,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 23时",
-            "windLevel": 8,
+            "time": "08-25 02时",
+            "windLevel": null,
             "role": "verify"
           }
         ]
@@ -332,7 +339,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 30,
+            "count": 28,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -360,7 +367,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 59 公里（时次相差 3 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -370,9 +377,16 @@
             "role": "primary"
           },
           {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-25 02时",
+            "windLevel": 9,
+            "role": "verify"
+          },
+          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 23时",
+            "time": "08-25 02时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -384,7 +398,7 @@
         "pressure": 990,
         "moveDir": "东",
         "moveSpeed": 6,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-25 02时",
         "position": "中心位于北纬 19.8 度、东经 107.8 度"
@@ -588,7 +602,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 50,
+            "count": 51,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -634,7 +648,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -642,6 +656,13 @@
             "time": "08-25 02时",
             "windLevel": 16,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-25 02时",
+            "windLevel": 16,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -658,8 +679,8 @@
         "pressure": 935,
         "moveDir": "西北西",
         "moveSpeed": 21,
-        "r7": null,
-        "r10": null,
+        "r7": 400,
+        "r10": 150,
         "time": "08-25 02时",
         "position": "中心位于北纬 25.5 度、东经 132.3 度"
       },
@@ -878,7 +899,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 50,
+            "count": 51,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -896,7 +917,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 30,
+            "count": 28,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -1019,7 +1040,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 50,
+        "count": 51,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1037,7 +1058,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 30,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1074,7 +1095,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "red",
