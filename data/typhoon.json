@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 02:45",
+  "updatedAt": "2026-08-25 02:54",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 3
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 60 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 60 公里（时次相差 3 小时）、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-25 02时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-25 02时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 998,
         "moveDir": "北",
         "moveSpeed": 17,
-        "r7": 280,
+        "r7": null,
         "r10": null,
         "time": "08-25 02时",
         "position": "中心位于北纬 17.6 度、东经 138.0 度"
@@ -339,7 +332,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 32,
+            "count": 30,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -367,7 +360,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 59 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 59 公里（时次相差 3 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -375,13 +368,6 @@
             "time": "08-25 02时",
             "windLevel": 9,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-25 02时",
-            "windLevel": 9,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -398,7 +384,7 @@
         "pressure": 990,
         "moveDir": "东",
         "moveSpeed": 6,
-        "r7": 150,
+        "r7": null,
         "r10": null,
         "time": "08-25 02时",
         "position": "中心位于北纬 19.8 度、东经 107.8 度"
@@ -602,13 +588,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 49,
+            "count": 50,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省肇庆市德庆县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44122641600000_20260825015634.html",
-              "issuedAt": "2026/08/25 01:54"
+              "title": "广东省梅州市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44140041600000_20260825024307.html",
+              "issuedAt": "2026/08/25 02:40"
             },
             "via": "路径邻近",
             "distKm": 387
@@ -648,7 +634,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -658,16 +644,9 @@
             "role": "primary"
           },
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-25 02时",
-            "windLevel": 16,
-            "role": "verify"
-          },
-          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 01时",
+            "time": "08-25 02时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -679,8 +658,8 @@
         "pressure": 935,
         "moveDir": "西北西",
         "moveSpeed": 21,
-        "r7": 400,
-        "r10": 150,
+        "r7": null,
+        "r10": null,
         "time": "08-25 02时",
         "position": "中心位于北纬 25.5 度、东经 132.3 度"
       },
@@ -899,13 +878,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 49,
+            "count": 50,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省肇庆市德庆县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44122641600000_20260825015634.html",
-              "issuedAt": "2026/08/25 01:54"
+              "title": "广东省梅州市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44140041600000_20260825024307.html",
+              "issuedAt": "2026/08/25 02:40"
             },
             "via": "路径邻近",
             "distKm": 225
@@ -917,7 +896,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 32,
+            "count": 30,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -1040,13 +1019,13 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 49,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省肇庆市德庆县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44122641600000_20260825015634.html",
-          "issuedAt": "2026/08/25 01:54"
+          "title": "广东省梅州市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44140041600000_20260825024307.html",
+          "issuedAt": "2026/08/25 02:40"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -1058,7 +1037,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 32,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1095,7 +1074,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "red",
