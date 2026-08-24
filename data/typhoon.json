@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 23:31",
+  "updatedAt": "2026-08-24 23:53",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 3
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 57 公里（时次相差 3 小时）、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-24 23时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-24 23时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 998,
         "moveDir": "北",
         "moveSpeed": 18,
-        "r7": null,
+        "r7": 280,
         "r10": null,
         "time": "08-24 23时",
         "position": "中心位于北纬 17.1 度、东经 138.0 度"
@@ -324,7 +331,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 42,
+            "count": 40,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -352,7 +359,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 24 公里（时次相差 3 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -360,6 +367,13 @@
             "time": "08-24 23时",
             "windLevel": 9,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-24 23时",
+            "windLevel": 9,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -376,7 +390,7 @@
         "pressure": 990,
         "moveDir": "东",
         "moveSpeed": 6,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-24 23时",
         "position": "中心位于北纬 19.7 度、东经 107.7 度"
@@ -580,13 +594,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 60,
+            "count": 61,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省茂名市高州市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44098141600000_20260824215350.html",
-              "issuedAt": "2026/08/24 21:50"
+              "title": "广东省清远市佛冈县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260824234025.html",
+              "issuedAt": "2026/08/24 23:39"
             },
             "via": "路径邻近",
             "distKm": 392
@@ -626,7 +640,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -636,9 +650,16 @@
             "role": "primary"
           },
           {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-24 23时",
+            "windLevel": 16,
+            "role": "verify"
+          },
+          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 22时",
+            "time": "08-24 23时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -650,8 +671,8 @@
         "pressure": 935,
         "moveDir": "西北西",
         "moveSpeed": 21,
-        "r7": null,
-        "r10": null,
+        "r7": 400,
+        "r10": 150,
         "time": "08-24 23时",
         "position": "中心位于北纬 25.2 度、东经 132.9 度"
       },
@@ -870,13 +891,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 60,
+            "count": 61,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省茂名市高州市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44098141600000_20260824215350.html",
-              "issuedAt": "2026/08/24 21:50"
+              "title": "广东省清远市佛冈县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260824234025.html",
+              "issuedAt": "2026/08/24 23:39"
             },
             "via": "路径邻近",
             "distKm": 255
@@ -888,7 +909,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 42,
+            "count": 40,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -931,9 +952,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 492,
+    "total": 494,
     "counts": {
-      "暴雨": 394,
+      "暴雨": 396,
       "台风": 27,
       "山洪灾害": 9,
       "山洪风险": 6,
@@ -974,13 +995,13 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 60,
+        "count": 61,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省茂名市高州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44098141600000_20260824215350.html",
-          "issuedAt": "2026/08/24 21:50"
+          "title": "广东省清远市佛冈县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260824234025.html",
+          "issuedAt": "2026/08/24 23:39"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -1029,7 +1050,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 42,
+        "count": 40,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1104,7 +1125,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1134,6 +1155,24 @@
         },
         "lat": 29.2,
         "lng": 120.2
+      },
+      {
+        "province": "内蒙古",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "内蒙古自治区巴彦淖尔市临河区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15080241600000_20260824233647.html",
+          "issuedAt": "2026/08/24 23:36"
+        },
+        "lat": 44,
+        "lng": 113.9
       },
       {
         "province": "河南",
@@ -1170,24 +1209,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "内蒙古",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "内蒙古自治区呼伦贝尔市莫力达瓦达斡尔族自治旗气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15072241600000_20260824200706.html",
-          "issuedAt": "2026/08/24 20:07"
-        },
-        "lat": 44,
-        "lng": 113.9
       },
       {
         "province": "河北",
