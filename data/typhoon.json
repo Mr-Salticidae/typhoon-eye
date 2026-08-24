@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 11:27",
+  "updatedAt": "2026-08-24 12:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 40 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-24 08时",
+            "time": "08-24 11时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-24 08时",
+            "time": "08-24 11时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 18,
         "pressure": 998,
         "moveDir": "北北东",
-        "moveSpeed": 19,
+        "moveSpeed": 20,
         "r7": 280,
         "r10": null,
-        "time": "08-24 08时",
-        "position": "中心位于北纬 15.2 度、东经 137.2 度"
+        "time": "08-24 11时",
+        "position": "中心位于北纬 15.4 度、东经 137.5 度"
       },
       "track": [
         {
@@ -80,28 +80,36 @@
           "lng": 137.2,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-24 11时",
+          "lat": 15.4,
+          "lng": 137.5,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-24 20时",
-          "lat": 17.1,
-          "lng": 137.9,
+          "t": "08-24 23时",
+          "lat": 17.5,
+          "lng": 138,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-25 08时",
-          "lat": 19.5,
+          "t": "08-25 11时",
+          "lat": 19.7,
           "lng": 137.9,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-25 20时",
-          "lat": 21.3,
-          "lng": 137.2,
+          "t": "08-25 23时",
+          "lat": 21.6,
+          "lng": 136.9,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -295,7 +303,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 44,
+            "count": 45,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -314,13 +322,13 @@
               "暴雨": "yellow",
               "台风": "yellow"
             },
-            "count": 20,
+            "count": 25,
             "top": {
               "kind": "暴雨",
               "level": "yellow",
-              "title": "福建省福州市闽侯县气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35012141600000_20260824111000.html",
-              "issuedAt": "2026/08/24 11:10"
+              "title": "福建省福州市气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35010041600000_20260824114900.html",
+              "issuedAt": "2026/08/24 11:49"
             },
             "via": "路径邻近",
             "distKm": 102
@@ -584,7 +592,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 35,
+            "count": 37,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -630,7 +638,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 82 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -649,7 +657,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 08时",
+            "time": "08-24 11时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -861,7 +869,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 35,
+            "count": 37,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -879,7 +887,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 44,
+            "count": 45,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -918,13 +926,13 @@
               "暴雨": "yellow",
               "台风": "yellow"
             },
-            "count": 20,
+            "count": 25,
             "top": {
               "kind": "暴雨",
               "level": "yellow",
-              "title": "福建省福州市闽侯县气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35012141600000_20260824111000.html",
-              "issuedAt": "2026/08/24 11:10"
+              "title": "福建省福州市气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35010041600000_20260824114900.html",
+              "issuedAt": "2026/08/24 11:49"
             },
             "via": "路径邻近",
             "distKm": 67
@@ -941,21 +949,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 411,
+    "total": 418,
     "counts": {
-      "暴雨": 277,
-      "台风": 24,
+      "暴雨": 285,
+      "台风": 25,
       "山洪灾害": 34,
       "山洪风险": 3,
-      "地质灾害": 73
+      "地质灾害": 71
     },
     "peak": {
       "province": "辽宁",
       "kind": "暴雨",
       "level": "red",
-      "title": "辽宁省沈阳市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/21010041600000_20260824110900.html",
-      "issuedAt": "2026/08/24 11:09"
+      "title": "辽宁省丹东市凤城市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/21068241600000_20260824114900.html",
+      "issuedAt": "2026/08/24 11:49"
     },
     "provinces": [
       {
@@ -965,13 +973,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 56,
+        "count": 55,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "辽宁省沈阳市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21010041600000_20260824110900.html",
-          "issuedAt": "2026/08/24 11:09"
+          "title": "辽宁省丹东市凤城市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21068241600000_20260824114900.html",
+          "issuedAt": "2026/08/24 11:49"
         },
         "lat": 41.8,
         "lng": 122.6
@@ -983,7 +991,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 44,
+        "count": 45,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1001,7 +1009,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 35,
+        "count": 38,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1019,7 +1027,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 35,
+        "count": 37,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1056,7 +1064,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 10,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1112,7 +1120,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 52,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1203,6 +1211,24 @@
         "lng": 106.2
       },
       {
+        "province": "山东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "山东省聊城市茌平区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37150341600000_20260824112345.html",
+          "issuedAt": "2026/08/24 11:23"
+        },
+        "lat": 36.4,
+        "lng": 118.2
+      },
+      {
         "province": "河南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1228,34 +1254,16 @@
           "暴雨": "yellow",
           "台风": "yellow"
         },
-        "count": 20,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省福州市闽侯县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35012141600000_20260824111000.html",
-          "issuedAt": "2026/08/24 11:10"
+          "title": "福建省福州市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35010041600000_20260824114900.html",
+          "issuedAt": "2026/08/24 11:49"
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "山东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "山东省聊城市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37150041600000_20260824110823.html",
-          "issuedAt": "2026/08/24 11:08"
-        },
-        "lat": 36.4,
-        "lng": 118.2
       },
       {
         "province": "贵州",
