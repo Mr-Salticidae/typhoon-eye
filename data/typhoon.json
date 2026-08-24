@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 12:45",
+  "updatedAt": "2026-08-24 13:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -128,19 +128,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 20 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 32 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-24 12时",
+            "time": "08-24 13时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-24 12时",
+            "time": "08-24 13时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -158,11 +158,11 @@
         "windSpeed": 18,
         "pressure": 998,
         "moveDir": "西北",
-        "moveSpeed": 12,
-        "r7": 100,
+        "moveSpeed": 32,
+        "r7": null,
         "r10": null,
-        "time": "08-24 12时",
-        "position": "中心位于北纬 24.8 度、东经 118.9 度"
+        "time": "08-24 13时",
+        "position": "中心位于北纬 24.9 度、东经 118.8 度"
       },
       "track": [
         {
@@ -222,7 +222,7 @@
           "phase": "past"
         },
         {
-          "t": "08-23 09时",
+          "t": "08-23 10时",
           "lat": 25.8,
           "lng": 122.3,
           "wind": 8,
@@ -230,51 +230,43 @@
           "phase": "past"
         },
         {
-          "t": "08-23 12时",
+          "t": "08-23 13时",
           "lat": 25.7,
-          "lng": 122.2,
+          "lng": 122.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-23 15时",
-          "lat": 25.7,
-          "lng": 122,
+          "t": "08-23 16时",
+          "lat": 25.6,
+          "lng": 121.9,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-23 18时",
-          "lat": 25.4,
-          "lng": 121.2,
+          "t": "08-23 19时",
+          "lat": 25.3,
+          "lng": 121,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-23 21时",
-          "lat": 24.7,
-          "lng": 120.2,
+          "t": "08-23 22时",
+          "lat": 24.5,
+          "lng": 120,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-24 02时",
+          "t": "08-24 05时",
           "lat": 24,
-          "lng": 119.3,
+          "lng": 119.1,
           "wind": 7,
           "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "08-24 11时",
-          "lat": 24.7,
-          "lng": 118.9,
-          "wind": 8,
-          "strong": "热带风暴",
           "phase": "past"
         },
         {
@@ -283,13 +275,21 @@
           "lng": 118.9,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-24 13时",
+          "lat": 24.9,
+          "lng": 118.8,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-24 18时",
-          "lat": 25.2833,
-          "lng": 118.4333,
-          "wind": 6,
+          "t": "08-24 19时",
+          "lat": 25.3667,
+          "lng": 118.3667,
+          "wind": 5,
           "strong": "热带低压",
           "phase": "forecast"
         }
@@ -312,26 +312,26 @@
               "issuedAt": "2026/08/24 07:57"
             },
             "via": "路径邻近",
-            "distKm": 375
+            "distKm": 363
           },
           {
             "province": "福建",
-            "maxLevel": "yellow",
-            "floodLevel": "yellow",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
             "kinds": {
-              "暴雨": "yellow",
+              "暴雨": "orange",
               "台风": "yellow"
             },
-            "count": 27,
+            "count": 32,
             "top": {
               "kind": "暴雨",
-              "level": "yellow",
-              "title": "福建省泉州市晋江市气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35058241600000_20260824122900.html",
-              "issuedAt": "2026/08/24 12:29"
+              "level": "orange",
+              "title": "福建省泉州市晋江市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35058241600000_20260824125600.html",
+              "issuedAt": "2026/08/24 12:56"
             },
             "via": "路径邻近",
-            "distKm": 92
+            "distKm": 82
           }
         ],
         "floodLevel": "red",
@@ -592,7 +592,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 29,
+            "count": 35,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -869,7 +869,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 29,
+            "count": 35,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -899,6 +899,25 @@
             "distKm": 334
           },
           {
+            "province": "福建",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange",
+              "台风": "yellow"
+            },
+            "count": 32,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "福建省泉州市晋江市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35058241600000_20260824125600.html",
+              "issuedAt": "2026/08/24 12:56"
+            },
+            "via": "路径邻近",
+            "distKm": 67
+          },
+          {
             "province": "浙江",
             "maxLevel": "orange",
             "floodLevel": "orange",
@@ -917,25 +936,6 @@
             },
             "via": "路径邻近",
             "distKm": 339
-          },
-          {
-            "province": "福建",
-            "maxLevel": "yellow",
-            "floodLevel": "yellow",
-            "kinds": {
-              "暴雨": "yellow",
-              "台风": "yellow"
-            },
-            "count": 27,
-            "top": {
-              "kind": "暴雨",
-              "level": "yellow",
-              "title": "福建省泉州市晋江市气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35058241600000_20260824122900.html",
-              "issuedAt": "2026/08/24 12:29"
-            },
-            "via": "路径邻近",
-            "distKm": 67
           }
         ],
         "floodLevel": "red",
@@ -949,21 +949,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 387,
+    "total": 401,
     "counts": {
-      "暴雨": 256,
+      "暴雨": 271,
       "台风": 25,
       "山洪灾害": 34,
       "山洪风险": 3,
-      "地质灾害": 69
+      "地质灾害": 68
     },
     "peak": {
       "province": "辽宁",
       "kind": "暴雨",
       "level": "red",
-      "title": "辽宁省鞍山市岫岩满族自治县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/21032341600000_20260824122500.html",
-      "issuedAt": "2026/08/24 12:25"
+      "title": "辽宁省丹东市东港市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260824124400.html",
+      "issuedAt": "2026/08/24 12:44"
     },
     "provinces": [
       {
@@ -977,12 +977,30 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "辽宁省鞍山市岫岩满族自治县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21032341600000_20260824122500.html",
-          "issuedAt": "2026/08/24 12:25"
+          "title": "辽宁省丹东市东港市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260824124400.html",
+          "issuedAt": "2026/08/24 12:44"
         },
         "lat": 41.8,
         "lng": 122.6
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 45,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省衡阳市常宁市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43048241600000_20260824120257.html",
+          "issuedAt": "2026/08/24 12:02"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "江西",
@@ -1003,31 +1021,13 @@
         "lng": 115.7
       },
       {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 41,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省衡阳市常宁市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43048241600000_20260824120257.html",
-          "issuedAt": "2026/08/24 12:02"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 29,
+        "count": 35,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1102,7 +1102,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 46,
+        "count": 47,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1122,7 +1122,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 42,
+        "count": 39,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1154,6 +1154,25 @@
         "lng": 112.3
       },
       {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "yellow"
+        },
+        "count": 32,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省泉州市晋江市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35058241600000_20260824125600.html",
+          "issuedAt": "2026/08/24 12:56"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "浙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1181,7 +1200,7 @@
           "暴雨": "orange",
           "地质灾害": "orange"
         },
-        "count": 13,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1217,7 +1236,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1227,25 +1246,6 @@
         },
         "lat": 38.5,
         "lng": 115.5
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "台风": "yellow"
-        },
-        "count": 27,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省泉州市晋江市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35058241600000_20260824122900.html",
-          "issuedAt": "2026/08/24 12:29"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "甘肃",
