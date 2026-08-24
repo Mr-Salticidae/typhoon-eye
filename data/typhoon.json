@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 00:15",
+  "updatedAt": "2026-08-25 00:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 21 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 20时",
+            "time": "08-24 23时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -594,13 +594,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 53,
+            "count": 52,
             "top": {
               "kind": "暴雨",
               "level": "red",
               "title": "广东省清远市佛冈县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260824234025.html",
-              "issuedAt": "2026/08/24 23:39"
+              "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260825001459.html",
+              "issuedAt": "2026/08/25 00:13"
             },
             "via": "路径邻近",
             "distKm": 390
@@ -640,7 +640,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -659,7 +659,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 23时",
+            "time": "08-25 00时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -891,13 +891,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 53,
+            "count": 52,
             "top": {
               "kind": "暴雨",
               "level": "red",
               "title": "广东省清远市佛冈县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260824234025.html",
-              "issuedAt": "2026/08/24 23:39"
+              "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260825001459.html",
+              "issuedAt": "2026/08/25 00:13"
             },
             "via": "路径邻近",
             "distKm": 255
@@ -1032,13 +1032,13 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 53,
+        "count": 52,
         "top": {
           "kind": "暴雨",
           "level": "red",
           "title": "广东省清远市佛冈县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260824234025.html",
-          "issuedAt": "2026/08/24 23:39"
+          "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260825001459.html",
+          "issuedAt": "2026/08/25 00:13"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -1081,6 +1081,24 @@
         "lng": 108.8
       },
       {
+        "province": "内蒙古",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "内蒙古自治区巴彦淖尔市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15080041600000_20260825003547.html",
+          "issuedAt": "2026/08/25 00:35"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1089,7 +1107,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 47,
+        "count": 48,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1111,9 +1129,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "黑龙江省绥化市北林区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23120241600000_20260824230727.html",
-          "issuedAt": "2026/08/24 23:07"
+          "title": "黑龙江省哈尔滨市宾县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23012541600000_20260825003316.html",
+          "issuedAt": "2026/08/25 00:15"
         },
         "lat": 47.4,
         "lng": 128.1
@@ -1157,24 +1175,6 @@
         "lng": 113.6
       },
       {
-        "province": "内蒙古",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "内蒙古自治区巴彦淖尔市临河区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15080241600000_20260824233647.html",
-          "issuedAt": "2026/08/24 23:36"
-        },
-        "lat": 44,
-        "lng": 113.9
-      },
-      {
         "province": "河北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1202,7 +1202,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 27,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
