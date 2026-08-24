@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24 20:45",
+  "updatedAt": "2026-08-24 21:14",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,12 +37,12 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 44 公里（时次相差 3 小时）、强度一致；日本气象厅定位相差 40 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-24 17时",
+            "time": "08-24 20时",
             "windLevel": 8,
             "role": "primary"
           },
@@ -70,8 +70,8 @@
         "moveSpeed": 18,
         "r7": 280,
         "r10": null,
-        "time": "08-24 17时",
-        "position": "中心位于北纬 16.3 度、东经 138.0 度"
+        "time": "08-24 20时",
+        "position": "中心位于北纬 16.7 度、东经 138.0 度"
       },
       "track": [
         {
@@ -104,20 +104,28 @@
           "lng": 138,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-24 20时",
+          "lat": 16.7,
+          "lng": 138,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-25 05时",
-          "lat": 18.2,
+          "t": "08-25 08时",
+          "lat": 18.6,
           "lng": 138,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-25 17时",
-          "lat": 20.2,
-          "lng": 137.5,
+          "t": "08-25 20时",
+          "lat": 20.5,
+          "lng": 137.3,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -136,7 +144,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 193 公里、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 230 公里（时次相差 3 小时）、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -148,7 +156,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 17时",
+            "time": "08-24 20时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -343,7 +351,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 59 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -362,7 +370,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 17时",
+            "time": "08-24 20时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -578,13 +586,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 50,
+            "count": 51,
             "top": {
               "kind": "暴雨",
               "level": "red",
               "title": "广东省佛山市南海区气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260824202447.html",
-              "issuedAt": "2026/08/24 20:21"
+              "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260824205423.html",
+              "issuedAt": "2026/08/24 20:51"
             },
             "via": "路径邻近",
             "distKm": 401
@@ -624,7 +632,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 78 公里（时次相差 3 小时）、强度一致；日本气象厅定位相差 83 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -636,14 +644,14 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-24 17时",
+            "time": "08-24 20时",
             "windLevel": 16,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-24 17时",
+            "time": "08-24 20时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -875,13 +883,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 50,
+            "count": 51,
             "top": {
               "kind": "暴雨",
               "level": "red",
               "title": "广东省佛山市南海区气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260824202447.html",
-              "issuedAt": "2026/08/24 20:21"
+              "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260824205423.html",
+              "issuedAt": "2026/08/24 20:51"
             },
             "via": "路径邻近",
             "distKm": 255
@@ -936,11 +944,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 487,
+    "total": 491,
     "counts": {
-      "暴雨": 382,
+      "暴雨": 387,
       "台风": 27,
-      "山洪灾害": 13,
+      "山洪灾害": 12,
       "山洪风险": 5,
       "地质灾害": 60
     },
@@ -960,7 +968,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 92,
+        "count": 93,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1016,13 +1024,13 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 50,
+        "count": 51,
         "top": {
           "kind": "暴雨",
           "level": "red",
           "title": "广东省佛山市南海区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260824202447.html",
-          "issuedAt": "2026/08/24 20:21"
+          "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260824205423.html",
+          "issuedAt": "2026/08/24 20:51"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -1141,6 +1149,42 @@
         "lng": 128.1
       },
       {
+        "province": "四川",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "四川省凉山州气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51340041600000_20260824205054.html",
+          "issuedAt": "2026/08/24 20:50"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
+      {
+        "province": "河南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "河南省新乡市延津县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41072641600000_20260824204850.html",
+          "issuedAt": "2026/08/24 20:47"
+        },
+        "lat": 33.9,
+        "lng": 113.6
+      },
+      {
         "province": "湖北",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1159,24 +1203,6 @@
         "lng": 112.3
       },
       {
-        "province": "四川",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "四川省凉山彝族自治州德昌县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51342441600000_20260824203306.html",
-          "issuedAt": "2026/08/24 20:33"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
         "province": "内蒙古",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1193,24 +1219,6 @@
         },
         "lat": 44,
         "lng": 113.9
-      },
-      {
-        "province": "河南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "河南省安阳市滑县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41052641600000_20260824195528.html",
-          "issuedAt": "2026/08/24 19:55"
-        },
-        "lat": 33.9,
-        "lng": 113.6
       },
       {
         "province": "吉林",
@@ -1260,7 +1268,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 18,
+        "count": 17,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -1270,6 +1278,24 @@
         },
         "lat": 37.6,
         "lng": 112.3
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省毕节市金沙县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052341600000_20260824205335.html",
+          "issuedAt": "2026/08/24 20:53"
+        },
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "甘肃",
@@ -1289,24 +1315,6 @@
         },
         "lat": 37.8,
         "lng": 101.1
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省铜仁市碧江区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52060241600000_20260824184817.html",
-          "issuedAt": "2026/08/24 18:48"
-        },
-        "lat": 26.8,
-        "lng": 106.9
       },
       {
         "province": "海南",
