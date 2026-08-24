@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 04:53",
+  "updatedAt": "2026-08-25 05:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 3
+      "count": 2
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 59 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 59 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-25 02时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-25 02时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 998,
         "moveDir": "北",
         "moveSpeed": 17,
-        "r7": 280,
+        "r7": null,
         "r10": null,
         "time": "08-25 02时",
         "position": "中心位于北纬 17.6 度、东经 138.0 度"
@@ -583,7 +576,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 14,
+            "count": 13,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -960,9 +953,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 446,
+    "total": 445,
     "counts": {
-      "暴雨": 353,
+      "暴雨": 352,
       "台风": 24,
       "山洪灾害": 8,
       "山洪风险": 5,
@@ -1002,7 +995,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 53,
+        "count": 52,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1077,7 +1070,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 14,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -1176,8 +1169,8 @@
           "kind": "暴雨",
           "level": "orange",
           "title": "内蒙古自治区巴彦淖尔市临河区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15080241600000_20260825043524.html",
-          "issuedAt": "2026/08/25 04:35"
+          "url": "http://www.nmc.cn/publish/alarm/15080241600000_20260825050713.html",
+          "issuedAt": "2026/08/25 05:07"
         },
         "lat": 44,
         "lng": 113.9
@@ -1207,13 +1200,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
           "title": "四川省泸州市叙永县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51052441600000_20260825014200.html",
-          "issuedAt": "2026/08/25 01:42"
+          "url": "http://www.nmc.cn/publish/alarm/51052441600000_20260825044745.html",
+          "issuedAt": "2026/08/25 04:47"
         },
         "lat": 30.6,
         "lng": 102.9
