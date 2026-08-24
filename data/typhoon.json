@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 06:30",
+  "updatedAt": "2026-08-25 06:48",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -434,7 +434,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -453,7 +453,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 05时",
+            "time": "08-25 06时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -783,9 +783,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 428,
+    "total": 429,
     "counts": {
-      "暴雨": 335,
+      "暴雨": 336,
       "台风": 24,
       "山洪灾害": 8,
       "山洪风险": 5,
@@ -819,24 +819,6 @@
         "lng": 111.7
       },
       {
-        "province": "辽宁",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 47,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "辽宁省丹东市东港市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260824124400.html",
-          "issuedAt": "2026/08/24 12:44"
-        },
-        "lat": 41.8,
-        "lng": 122.6
-      },
-      {
         "province": "福建",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -854,6 +836,24 @@
         },
         "lat": 26.1,
         "lng": 118.3
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 45,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "辽宁省丹东市东港市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260824124400.html",
+          "issuedAt": "2026/08/24 12:44"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "广东",
@@ -893,6 +893,24 @@
         "lng": 115.7
       },
       {
+        "province": "贵州",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 14,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "贵州省遵义市习水县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52033041600000_20260825061909.html",
+          "issuedAt": "2026/08/25 06:19"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
         "province": "广西",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -910,24 +928,6 @@
         },
         "lat": 23.8,
         "lng": 108.8
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "贵州省遵义市习水县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52033041600000_20260825061909.html",
-          "issuedAt": "2026/08/25 06:19"
-        },
-        "lat": 26.8,
-        "lng": 106.9
       },
       {
         "province": "云南",
@@ -1006,6 +1006,24 @@
         "lng": 128.1
       },
       {
+        "province": "新疆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "新疆维吾尔自治区克孜勒苏柯尔克孜自治州阿克陶县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65302241600000_20260825010214.html",
+          "issuedAt": "2026/08/25 01:02"
+        },
+        "lat": 41.1,
+        "lng": 85.3
+      },
+      {
         "province": "四川",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1040,24 +1058,6 @@
         },
         "lat": 33.9,
         "lng": 113.6
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区克孜勒苏柯尔克孜自治州阿克陶县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65302241600000_20260825010214.html",
-          "issuedAt": "2026/08/25 01:02"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       },
       {
         "province": "河北",
