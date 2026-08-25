@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 03:05",
+  "updatedAt": "2026-08-26 03:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 49 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-26 02时",
+            "time": "08-26 03时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-26 02时",
+            "time": "08-26 03时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 18,
         "pressure": 998,
         "moveDir": "北北东",
-        "moveSpeed": 19,
+        "moveSpeed": 18,
         "r7": null,
         "r10": null,
-        "time": "08-26 02时",
-        "position": "中心位于北纬 20.1 度、东经 109.7 度"
+        "time": "08-26 03时",
+        "position": "中心位于北纬 20.2 度、东经 109.8 度"
       },
       "track": [
         {
@@ -91,9 +91,9 @@
           "phase": "past"
         },
         {
-          "t": "08-21 19时",
-          "lat": 20.7,
-          "lng": 108.4,
+          "t": "08-21 20时",
+          "lat": 20.8,
+          "lng": 108.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -115,15 +115,15 @@
           "phase": "past"
         },
         {
-          "t": "08-22 23时",
+          "t": "08-23 00时",
           "lat": 21.1,
-          "lng": 108.2,
+          "lng": 108.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-23 08时",
+          "t": "08-23 09时",
           "lat": 20.7,
           "lng": 107.8,
           "wind": 8,
@@ -147,17 +147,17 @@
           "phase": "past"
         },
         {
-          "t": "08-24 12时",
+          "t": "08-24 13时",
           "lat": 20.2,
-          "lng": 107.6,
+          "lng": 107.5,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-24 21时",
-          "lat": 19.6,
-          "lng": 107.5,
+          "t": "08-24 22时",
+          "lat": 19.7,
+          "lng": 107.6,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -171,17 +171,9 @@
           "phase": "past"
         },
         {
-          "t": "08-25 16时",
+          "t": "08-25 17时",
           "lat": 19.4,
-          "lng": 108.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-26 01时",
-          "lat": 19.9,
-          "lng": 109.7,
+          "lng": 108.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -192,20 +184,28 @@
           "lng": 109.7,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-26 03时",
+          "lat": 20.2,
+          "lng": 109.8,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-26 08时",
-          "lat": 21,
-          "lng": 110.2,
+          "t": "08-26 09时",
+          "lat": 21.1667,
+          "lng": 110.25,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-26 14时",
-          "lat": 22,
-          "lng": 110.5,
+          "t": "08-26 15时",
+          "lat": 22.1667,
+          "lng": 110.55,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -226,11 +226,11 @@
               "kind": "暴雨",
               "level": "red",
               "title": "广东省潮州市饶平县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260826012609.html",
-              "issuedAt": "2026/08/26 01:16"
+              "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260826030710.html",
+              "issuedAt": "2026/08/26 03:01"
             },
             "via": "路径邻近",
-            "distKm": 336
+            "distKm": 323
           },
           {
             "province": "海南",
@@ -249,7 +249,7 @@
               "issuedAt": "2026/08/26 01:49"
             },
             "via": "路径邻近",
-            "distKm": 100
+            "distKm": 112
           },
           {
             "province": "广西",
@@ -268,7 +268,7 @@
               "issuedAt": "2026/08/25 23:33"
             },
             "via": "路径邻近",
-            "distKm": 265
+            "distKm": 255
           }
         ],
         "floodLevel": "red",
@@ -528,7 +528,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 19,
+            "count": 20,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -570,8 +570,8 @@
               "kind": "暴雨",
               "level": "red",
               "title": "广东省潮州市饶平县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260826012609.html",
-              "issuedAt": "2026/08/26 01:16"
+              "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260826030710.html",
+              "issuedAt": "2026/08/26 03:01"
             },
             "via": "路径邻近",
             "distKm": 307
@@ -626,21 +626,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 543,
+    "total": 549,
     "counts": {
-      "暴雨": 363,
+      "暴雨": 367,
       "台风": 25,
       "山洪灾害": 68,
-      "山洪风险": 2,
-      "地质灾害": 85
+      "山洪风险": 3,
+      "地质灾害": 86
     },
     "peak": {
       "province": "河北",
       "kind": "暴雨",
       "level": "red",
-      "title": "河北省沧州市沧县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/13092141600000_20260826005438.html",
-      "issuedAt": "2026/08/26 00:54"
+      "title": "河北省沧州市青县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/13092241600000_20260826031947.html",
+      "issuedAt": "2026/08/26 03:19"
     },
     "provinces": [
       {
@@ -656,9 +656,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "河北省沧州市沧县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13092141600000_20260826005438.html",
-          "issuedAt": "2026/08/26 00:54"
+          "title": "河北省沧州市青县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13092241600000_20260826031947.html",
+          "issuedAt": "2026/08/26 03:19"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -712,8 +712,8 @@
           "kind": "暴雨",
           "level": "red",
           "title": "广东省潮州市饶平县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260826012609.html",
-          "issuedAt": "2026/08/26 01:16"
+          "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260826030710.html",
+          "issuedAt": "2026/08/26 03:01"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -725,7 +725,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 19,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -735,6 +735,24 @@
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 17,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "辽宁省营口市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21080041600000_20260826030300.html",
+          "issuedAt": "2026/08/26 03:05"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "湖南",
@@ -753,24 +771,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "辽宁",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "辽宁省大连市普兰店区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21021441600000_20260826024300.html",
-          "issuedAt": "2026/08/26 02:43"
-        },
-        "lat": 41.8,
-        "lng": 122.6
       },
       {
         "province": "陕西",
@@ -839,13 +839,13 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 51,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省红河哈尼族彝族自治州元阳县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53252841600000_20260826024149.html",
-          "issuedAt": "2026/08/26 02:40"
+          "title": "云南省普洱市景东彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082341600000_20260826030802.html",
+          "issuedAt": "2026/08/26 03:08"
         },
         "lat": 25,
         "lng": 101.5
