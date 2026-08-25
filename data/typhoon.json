@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 12:21",
+  "updatedAt": "2026-08-25 12:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -386,9 +386,9 @@
             "floodLevel": "red",
             "kinds": {
               "暴雨": "red",
-              "台风": "blue"
+              "台风": "yellow"
             },
-            "count": 44,
+            "count": 46,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -434,7 +434,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -453,7 +453,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 11时",
+            "time": "08-25 12时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -662,9 +662,9 @@
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260825115600.html",
-              "issuedAt": "2026/08/25 11:56"
+              "title": "福建省宁德市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35090041600000_20260825122800.html",
+              "issuedAt": "2026/08/25 12:28"
             },
             "via": "路径邻近",
             "distKm": 150
@@ -675,9 +675,9 @@
             "floodLevel": "red",
             "kinds": {
               "暴雨": "red",
-              "台风": "blue"
+              "台风": "yellow"
             },
-            "count": 44,
+            "count": 46,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -695,7 +695,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 73,
+            "count": 72,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -713,7 +713,7 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 10,
+            "count": 11,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -756,13 +756,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 438,
+    "total": 447,
     "counts": {
-      "暴雨": 331,
-      "台风": 24,
-      "山洪灾害": 21,
-      "山洪风险": 3,
-      "地质灾害": 59
+      "暴雨": 338,
+      "台风": 25,
+      "山洪灾害": 22,
+      "山洪风险": 4,
+      "地质灾害": 58
     },
     "peak": {
       "province": "湖南",
@@ -780,7 +780,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 73,
+        "count": 72,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -803,9 +803,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260825115600.html",
-          "issuedAt": "2026/08/25 11:56"
+          "title": "福建省宁德市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35090041600000_20260825122800.html",
+          "issuedAt": "2026/08/25 12:28"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -816,9 +816,9 @@
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red",
-          "台风": "blue"
+          "台风": "yellow"
         },
-        "count": 44,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -849,24 +849,6 @@
         "lng": 108.8
       },
       {
-        "province": "辽宁",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "辽宁省丹东市东港市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260824124400.html",
-          "issuedAt": "2026/08/24 12:44"
-        },
-        "lat": 41.8,
-        "lng": 122.6
-      },
-      {
         "province": "四川",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -892,7 +874,7 @@
           "暴雨": "orange",
           "山洪灾害": "yellow"
         },
-        "count": 71,
+        "count": 77,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -932,13 +914,13 @@
           "山洪灾害": "orange",
           "地质灾害": "yellow"
         },
-        "count": 29,
+        "count": 30,
         "top": {
           "kind": "山洪灾害",
           "level": "orange",
-          "title": "山西省忻州市神池县气象台发布山洪灾害气象风险橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14092741600000_20260825115731.html",
-          "issuedAt": "2026/08/25 11:56"
+          "title": "山西省大同市左云县气象台发布山洪灾害气象风险橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14022641600000_20260825122358.html",
+          "issuedAt": "2026/08/25 12:22"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -968,7 +950,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1006,7 +988,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1016,6 +998,24 @@
         },
         "lat": 26.8,
         "lng": 106.9
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "辽宁省阜新市阜新蒙古族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21092141600000_20260825113500.html",
+          "issuedAt": "2026/08/25 11:37"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "新疆",
