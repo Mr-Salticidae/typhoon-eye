@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 06:30",
+  "updatedAt": "2026-08-26 06:49",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -221,7 +221,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 30,
+            "count": 32,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -287,7 +287,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -306,7 +306,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 05时",
+            "time": "08-26 06时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -510,7 +510,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 20,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -565,7 +565,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 30,
+            "count": 32,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -626,11 +626,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 533,
+    "total": 536,
     "counts": {
-      "暴雨": 351,
+      "暴雨": 353,
       "台风": 25,
-      "山洪灾害": 68,
+      "山洪灾害": 69,
       "山洪风险": 3,
       "地质灾害": 86
     },
@@ -684,6 +684,25 @@
         "lng": 101.5
       },
       {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "台风": "yellow"
+        },
+        "count": 32,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省潮州市饶平县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260826035055.html",
+          "issuedAt": "2026/08/26 03:46"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "福建",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -700,25 +719,6 @@
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "广东",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "台风": "yellow"
-        },
-        "count": 30,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广东省潮州市饶平县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260826035055.html",
-          "issuedAt": "2026/08/26 03:46"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "辽宁",
@@ -745,7 +745,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 20,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -819,7 +819,7 @@
           "山洪灾害": "orange",
           "地质灾害": "orange"
         },
-        "count": 111,
+        "count": 112,
         "top": {
           "kind": "山洪灾害",
           "level": "orange",
@@ -909,24 +909,6 @@
         "lng": 108.9
       },
       {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿勒泰地区布尔津县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65432141600000_20260825231648.html",
-          "issuedAt": "2026/08/25 23:16"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
         "province": "浙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -944,6 +926,24 @@
         },
         "lat": 29.2,
         "lng": 120.2
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "新疆维吾尔自治区阿勒泰地区布尔津县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65432141600000_20260825231648.html",
+          "issuedAt": "2026/08/25 23:16"
+        },
+        "lat": 41.1,
+        "lng": 85.3
       },
       {
         "province": "宁夏",
