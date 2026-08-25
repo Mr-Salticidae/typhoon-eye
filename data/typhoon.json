@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 10:47",
+  "updatedAt": "2026-08-25 11:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 2
     },
     {
       "id": "jma",
@@ -153,7 +153,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 57 公里（时次相差 2 小时）、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -161,6 +161,13 @@
             "time": "08-25 10时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-25 10时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -177,7 +184,7 @@
         "pressure": 995,
         "moveDir": "东北东",
         "moveSpeed": 8,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "08-25 10时",
         "position": "中心位于北纬 19.4 度、东经 108.1 度"
@@ -381,7 +388,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 47,
+            "count": 46,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -399,7 +406,7 @@
             "kinds": {
               "台风": "yellow"
             },
-            "count": 9,
+            "count": 8,
             "top": {
               "kind": "台风",
               "level": "yellow",
@@ -427,7 +434,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 46 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 46 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -435,6 +442,13 @@
             "time": "08-25 08时",
             "windLevel": 15,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-25 08时",
+            "windLevel": 15,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -451,8 +465,8 @@
         "pressure": 945,
         "moveDir": "西北西",
         "moveSpeed": 21,
-        "r7": null,
-        "r10": null,
+        "r7": 400,
+        "r10": 150,
         "time": "08-25 08时",
         "position": "中心位于北纬 26.0 度、东经 131.2 度"
       },
@@ -652,13 +666,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 47,
+            "count": 48,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省泉州市南安市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260825100400.html",
-              "issuedAt": "2026/08/25 10:04"
+              "title": "福建省泉州市石狮市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35058141600000_20260825110100.html",
+              "issuedAt": "2026/08/25 11:01"
             },
             "via": "路径邻近",
             "distKm": 201
@@ -690,7 +704,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 47,
+            "count": 46,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -708,7 +722,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 84,
+            "count": 81,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -769,13 +783,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 421,
+    "total": 425,
     "counts": {
-      "暴雨": 327,
-      "台风": 25,
-      "山洪灾害": 9,
+      "暴雨": 331,
+      "台风": 24,
+      "山洪灾害": 11,
       "山洪风险": 3,
-      "地质灾害": 57
+      "地质灾害": 56
     },
     "peak": {
       "province": "湖南",
@@ -793,7 +807,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 84,
+        "count": 81,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -812,13 +826,13 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 47,
+        "count": 48,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省泉州市南安市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260825100400.html",
-          "issuedAt": "2026/08/25 10:04"
+          "title": "福建省泉州市石狮市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35058141600000_20260825110100.html",
+          "issuedAt": "2026/08/25 11:01"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -831,7 +845,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 47,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -849,7 +863,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 25,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -886,7 +900,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 8,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -924,7 +938,7 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 48,
+        "count": 47,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -941,15 +955,15 @@
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange",
-          "山洪灾害": "blue"
+          "山洪灾害": "yellow"
         },
-        "count": 40,
+        "count": 42,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "河北省唐山市滦南县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13022441600000_20260825103518.html",
-          "issuedAt": "2026/08/25 10:35"
+          "title": "河北省唐山市乐亭县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13022541600000_20260825110249.html",
+          "issuedAt": "2026/08/25 11:02"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -961,13 +975,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 23,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "内蒙古自治区呼和浩特市赛罕区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15010541600000_20260825101032.html",
-          "issuedAt": "2026/08/25 10:10"
+          "title": "内蒙古自治区呼和浩特市和林格尔县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15012341600000_20260825105028.html",
+          "issuedAt": "2026/08/25 10:50"
         },
         "lat": 44,
         "lng": 113.9
@@ -981,13 +995,13 @@
           "山洪灾害": "orange",
           "地质灾害": "yellow"
         },
-        "count": 18,
+        "count": 22,
         "top": {
           "kind": "山洪灾害",
           "level": "orange",
-          "title": "山西省水利厅和山西省气象台发布山洪灾害气象风险橙色预警",
-          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260825100447.html",
-          "issuedAt": "2026/08/25 08:00"
+          "title": "山西省忻州市偏关县气象台发布山洪灾害气象风险橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14093241600000_20260825110216.html",
+          "issuedAt": "2026/08/25 11:04"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -1067,33 +1081,13 @@
         "lng": 112.3
       },
       {
-        "province": "吉林",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 14,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "吉林省延边朝鲜族自治州安图县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22242641600000_20260824182449.html",
-          "issuedAt": "2026/08/24 18:24"
-        },
-        "lat": 43.7,
-        "lng": 126.2
-      },
-      {
         "province": "北京",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 13,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -1105,13 +1099,50 @@
         "lng": 116.4
       },
       {
+        "province": "吉林",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "吉林省延边朝鲜族自治州安图县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22242641600000_20260824182449.html",
+          "issuedAt": "2026/08/24 18:24"
+        },
+        "lat": 43.7,
+        "lng": 126.2
+      },
+      {
+        "province": "天津",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "天津市宁河区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/12011741600000_20260825110458.html",
+          "issuedAt": "2026/08/25 11:07"
+        },
+        "lat": 39.3,
+        "lng": 117.3
+      },
+      {
         "province": "海南",
         "maxLevel": "yellow",
         "floodLevel": null,
         "kinds": {
           "台风": "yellow"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "台风",
           "level": "yellow",
