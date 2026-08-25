@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 20:30",
+  "updatedAt": "2026-08-25 20:55",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -237,7 +237,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 36,
+            "count": 34,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -256,7 +256,7 @@
               "暴雨": "orange",
               "台风": "yellow"
             },
-            "count": 23,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -302,7 +302,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 63 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 82 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -321,7 +321,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 19时",
+            "time": "08-25 20时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -525,7 +525,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 49,
+            "count": 50,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -562,7 +562,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 36,
+            "count": 34,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -600,13 +600,13 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 12,
+            "count": 13,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "江西省赣州市瑞金市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/36078141600000_20260825192634.html",
-              "issuedAt": "2026/08/25 19:23"
+              "title": "江西省气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/36000041600000_20260825205251.html",
+              "issuedAt": "2026/08/25 20:49"
             },
             "via": "路径邻近",
             "distKm": 264
@@ -623,13 +623,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 547,
+    "total": 555,
     "counts": {
-      "暴雨": 374,
-      "台风": 25,
-      "山洪灾害": 61,
+      "暴雨": 381,
+      "台风": 23,
+      "山洪灾害": 62,
       "山洪风险": 4,
-      "地质灾害": 83
+      "地质灾害": 85
     },
     "peak": {
       "province": "河北",
@@ -649,7 +649,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 130,
+        "count": 131,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -667,7 +667,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 49,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -686,7 +686,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 36,
+        "count": 34,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -740,7 +740,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -760,7 +760,7 @@
           "山洪灾害": "orange",
           "地质灾害": "orange"
         },
-        "count": 97,
+        "count": 100,
         "top": {
           "kind": "山洪灾害",
           "level": "orange",
@@ -799,7 +799,7 @@
           "暴雨": "orange",
           "台风": "yellow"
         },
-        "count": 23,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -811,19 +811,39 @@
         "lng": 108.8
       },
       {
+        "province": "天津",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "天津市津南区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/12011241600000_20260825204045.html",
+          "issuedAt": "2026/08/25 20:43"
+        },
+        "lat": 39.3,
+        "lng": 117.3
+      },
+      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省赣州市瑞金市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36078141600000_20260825192634.html",
-          "issuedAt": "2026/08/25 19:23"
+          "title": "江西省气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36000041600000_20260825205251.html",
+          "issuedAt": "2026/08/25 20:49"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -835,7 +855,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -931,7 +951,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 16,
+        "count": 19,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -941,26 +961,6 @@
         },
         "lat": 37.3,
         "lng": 106.2
-      },
-      {
-        "province": "天津",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "天津市蓟州区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/12011941600000_20260825170620.html",
-          "issuedAt": "2026/08/25 17:08"
-        },
-        "lat": 39.3,
-        "lng": 117.3
       },
       {
         "province": "海南",
