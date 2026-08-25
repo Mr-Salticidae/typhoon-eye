@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 04:50",
+  "updatedAt": "2026-08-26 05:14",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 2
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 71 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 71 公里（时次相差 2 小时）、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-26 04时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-26 04时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -221,7 +214,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 28,
+            "count": 27,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -287,7 +280,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 37 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 37 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -295,13 +288,6 @@
             "time": "08-26 02时",
             "windLevel": 14,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-26 02时",
-            "windLevel": 14,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -318,8 +304,8 @@
         "pressure": 955,
         "moveDir": "西北西",
         "moveSpeed": 18,
-        "r7": 400,
-        "r10": 150,
+        "r7": null,
+        "r10": null,
         "time": "08-26 02时",
         "position": "中心位于北纬 27.4 度、东经 128.1 度"
       },
@@ -528,7 +514,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 20,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -565,7 +551,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 28,
+            "count": 27,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -626,9 +612,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 545,
+    "total": 547,
     "counts": {
-      "暴雨": 363,
+      "暴雨": 365,
       "台风": 25,
       "山洪灾害": 68,
       "山洪风险": 3,
@@ -689,7 +675,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 28,
+        "count": 27,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -699,6 +685,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 24,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "辽宁省丹东市东港市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260826041300.html",
+          "issuedAt": "2026/08/26 04:14"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "内蒙古",
@@ -719,31 +723,13 @@
         "lng": 113.9
       },
       {
-        "province": "辽宁",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 21,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "辽宁省丹东市东港市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260826041300.html",
-          "issuedAt": "2026/08/26 04:14"
-        },
-        "lat": 41.8,
-        "lng": 122.6
-      },
-      {
         "province": "江西",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 20,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -785,9 +771,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "陕西省榆林市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61080041600000_20260826020914.html",
-          "issuedAt": "2026/08/26 02:09"
+          "title": "陕西省榆林市府谷县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61082241600000_20260826015512.html",
+          "issuedAt": "2026/08/26 01:55"
         },
         "lat": 35.2,
         "lng": 108.9
@@ -799,7 +785,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "red",
