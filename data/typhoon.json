@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 00:50",
+  "updatedAt": "2026-08-26 01:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 64 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 54 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-26 00时",
+            "time": "08-26 01时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-26 00时",
+            "time": "08-26 01时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -70,8 +70,8 @@
         "moveSpeed": 20,
         "r7": null,
         "r10": null,
-        "time": "08-26 00时",
-        "position": "中心位于北纬 19.8 度、东经 109.7 度"
+        "time": "08-26 01时",
+        "position": "中心位于北纬 19.9 度、东经 109.7 度"
       },
       "track": [
         {
@@ -107,15 +107,15 @@
           "phase": "past"
         },
         {
-          "t": "08-22 13时",
+          "t": "08-22 14时",
           "lat": 21.2,
-          "lng": 108.1,
+          "lng": 108.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-22 22时",
+          "t": "08-22 23时",
           "lat": 21.1,
           "lng": 108.2,
           "wind": 8,
@@ -123,7 +123,7 @@
           "phase": "past"
         },
         {
-          "t": "08-23 07时",
+          "t": "08-23 08时",
           "lat": 20.7,
           "lng": 107.8,
           "wind": 8,
@@ -155,15 +155,15 @@
           "phase": "past"
         },
         {
-          "t": "08-24 20时",
+          "t": "08-24 21时",
           "lat": 19.6,
-          "lng": 107.4,
+          "lng": 107.5,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-25 05时",
+          "t": "08-25 06时",
           "lat": 19.5,
           "lng": 108,
           "wind": 9,
@@ -171,17 +171,9 @@
           "phase": "past"
         },
         {
-          "t": "08-25 14时",
+          "t": "08-25 15时",
           "lat": 19.3,
           "lng": 108.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-25 23时",
-          "lat": 19.8,
-          "lng": 109.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -192,20 +184,28 @@
           "lng": 109.7,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-26 01时",
+          "lat": 19.9,
+          "lng": 109.7,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-26 06时",
-          "lat": 20.8667,
-          "lng": 110.1667,
+          "t": "08-26 07时",
+          "lat": 21.0333,
+          "lng": 110.2333,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-26 12时",
-          "lat": 21.8667,
-          "lng": 110.5667,
+          "t": "08-26 13时",
+          "lat": 22.0333,
+          "lng": 110.6333,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -230,7 +230,7 @@
               "issuedAt": "2026/08/25 15:29"
             },
             "via": "路径邻近",
-            "distKm": 337
+            "distKm": 322
           },
           {
             "province": "广西",
@@ -249,7 +249,7 @@
               "issuedAt": "2026/08/25 23:33"
             },
             "via": "路径邻近",
-            "distKm": 281
+            "distKm": 272
           },
           {
             "province": "海南",
@@ -267,7 +267,7 @@
               "issuedAt": "2026/08/25 08:06"
             },
             "via": "路径邻近",
-            "distKm": 67
+            "distKm": 78
           }
         ],
         "floodLevel": "red",
@@ -513,9 +513,9 @@
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省泉州市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35050041600000_20260825223200.html",
-              "issuedAt": "2026/08/25 22:32"
+              "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826010100.html",
+              "issuedAt": "2026/08/26 01:01"
             },
             "via": "路径邻近",
             "distKm": 132
@@ -545,7 +545,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 21,
+            "count": 20,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -606,21 +606,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 544,
+    "total": 541,
     "counts": {
-      "暴雨": 362,
+      "暴雨": 361,
       "台风": 25,
       "山洪灾害": 68,
       "山洪风险": 3,
-      "地质灾害": 86
+      "地质灾害": 84
     },
     "peak": {
       "province": "河北",
       "kind": "暴雨",
       "level": "red",
       "title": "河北省沧州市沧县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/13092141600000_20260826002702.html",
-      "issuedAt": "2026/08/26 00:27"
+      "url": "http://www.nmc.cn/publish/alarm/13092141600000_20260826005438.html",
+      "issuedAt": "2026/08/26 00:54"
     },
     "provinces": [
       {
@@ -637,8 +637,8 @@
           "kind": "暴雨",
           "level": "red",
           "title": "河北省沧州市沧县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13092141600000_20260826002702.html",
-          "issuedAt": "2026/08/26 00:27"
+          "url": "http://www.nmc.cn/publish/alarm/13092141600000_20260826005438.html",
+          "issuedAt": "2026/08/26 00:54"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -654,9 +654,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省泉州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35050041600000_20260825223200.html",
-          "issuedAt": "2026/08/25 22:32"
+          "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826010100.html",
+          "issuedAt": "2026/08/26 01:01"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -705,7 +705,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 21,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -781,7 +781,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 52,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -838,13 +838,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "辽宁省大连市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21020041600000_20260825222400.html",
-          "issuedAt": "2026/08/25 22:27"
+          "title": "辽宁省盘锦市盘山县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21112241600000_20260826010800.html",
+          "issuedAt": "2026/08/26 01:10"
         },
         "lat": 41.8,
         "lng": 122.6
@@ -862,9 +862,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "陕西省榆林市神木市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61088141600000_20260825220602.html",
-          "issuedAt": "2026/08/25 22:06"
+          "title": "陕西省榆林市榆阳区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61080241600000_20260826010609.html",
+          "issuedAt": "2026/08/26 01:06"
         },
         "lat": 35.2,
         "lng": 108.9
@@ -894,7 +894,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
