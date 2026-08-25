@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 07:12",
+  "updatedAt": "2026-08-26 07:43",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -221,7 +221,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 33,
+            "count": 34,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -287,7 +287,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 41 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -306,7 +306,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 06时",
+            "time": "08-26 07时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -510,13 +510,13 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 22,
+            "count": 23,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "江西省赣州市安远县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/36072641600000_20260825233012.html",
-              "issuedAt": "2026/08/25 23:25"
+              "title": "江西省赣州市于都县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/36073141600000_20260826073816.html",
+              "issuedAt": "2026/08/26 07:34"
             },
             "via": "路径邻近",
             "distKm": 128
@@ -540,24 +540,6 @@
             "distKm": 136
           },
           {
-            "province": "湖南",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red"
-            },
-            "count": 13,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "湖南省永州市冷水滩区气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/43110341600000_20260825072856.html",
-              "issuedAt": "2026/08/25 07:28"
-            },
-            "via": "路径邻近",
-            "distKm": 193
-          },
-          {
             "province": "广东",
             "maxLevel": "red",
             "floodLevel": "red",
@@ -565,7 +547,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 33,
+            "count": 34,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -577,14 +559,31 @@
             "distKm": 307
           },
           {
+            "province": "湖南",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 12,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "湖南省郴州市嘉禾县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/43102441600000_20260825180638.html",
+              "issuedAt": "2026/08/25 18:06"
+            },
+            "via": "路径邻近",
+            "distKm": 193
+          },
+          {
             "province": "浙江",
             "maxLevel": "orange",
             "floodLevel": "orange",
             "kinds": {
-              "山洪灾害": "blue",
               "地质灾害": "orange"
             },
-            "count": 2,
+            "count": 1,
             "top": {
               "kind": "地质灾害",
               "level": "orange",
@@ -626,21 +625,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 539,
+    "total": 542,
     "counts": {
-      "暴雨": 356,
+      "暴雨": 361,
       "台风": 25,
-      "山洪灾害": 69,
+      "山洪灾害": 68,
       "山洪风险": 3,
-      "地质灾害": 86
+      "地质灾害": 85
     },
     "peak": {
       "province": "河北",
       "kind": "暴雨",
       "level": "red",
-      "title": "河北省沧州市献县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/13092941600000_20260826070518.html",
-      "issuedAt": "2026/08/26 07:05"
+      "title": "河北省沧州市河间市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/13098441600000_20260826072539.html",
+      "issuedAt": "2026/08/26 07:25"
     },
     "provinces": [
       {
@@ -652,13 +651,13 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 131,
+        "count": 132,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "河北省沧州市献县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13092941600000_20260826070518.html",
-          "issuedAt": "2026/08/26 07:05"
+          "title": "河北省沧州市河间市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13098441600000_20260826072539.html",
+          "issuedAt": "2026/08/26 07:25"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -672,7 +671,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 53,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -691,7 +690,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 33,
+        "count": 34,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -745,13 +744,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 22,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "江西省赣州市安远县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36072641600000_20260825233012.html",
-          "issuedAt": "2026/08/25 23:25"
+          "title": "江西省赣州市于都县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36073141600000_20260826073816.html",
+          "issuedAt": "2026/08/26 07:34"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -763,7 +762,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 19,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -773,24 +772,6 @@
         },
         "lat": 44,
         "lng": 113.9
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 13,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省永州市冷水滩区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43110341600000_20260825072856.html",
-          "issuedAt": "2026/08/25 07:28"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "四川",
@@ -870,6 +851,24 @@
         "lng": 108.8
       },
       {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 12,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省郴州市嘉禾县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43102441600000_20260825180638.html",
+          "issuedAt": "2026/08/25 18:06"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "海南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -893,30 +892,47 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "yellow",
+          "暴雨": "orange",
           "山洪灾害": "orange",
           "地质灾害": "yellow"
         },
-        "count": 7,
+        "count": 8,
         "top": {
-          "kind": "山洪灾害",
+          "kind": "暴雨",
           "level": "orange",
-          "title": "陕西省气象台发布山洪灾害橙色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260825185954.html",
-          "issuedAt": "2026/08/25 18:59"
+          "title": "陕西省榆林市靖边县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61082441600000_20260826073431.html",
+          "issuedAt": "2026/08/26 07:34"
         },
         "lat": 35.2,
         "lng": 108.9
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "新疆维吾尔自治区塔城地区塔城市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65420141600000_20260826072951.html",
+          "issuedAt": "2026/08/26 07:29"
+        },
+        "lat": 41.1,
+        "lng": 85.3
       },
       {
         "province": "浙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "山洪灾害": "blue",
           "地质灾害": "orange"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -926,24 +942,6 @@
         },
         "lat": 29.2,
         "lng": 120.2
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿勒泰地区布尔津县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65432141600000_20260825231648.html",
-          "issuedAt": "2026/08/25 23:16"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       },
       {
         "province": "宁夏",
