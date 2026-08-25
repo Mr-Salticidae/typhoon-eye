@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 02:45",
+  "updatedAt": "2026-08-26 03:05",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 38 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 23时",
+            "time": "08-26 02时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -221,7 +221,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 23,
+            "count": 25,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -287,7 +287,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 20 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -306,7 +306,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 01时",
+            "time": "08-26 02时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -515,8 +515,8 @@
               "kind": "暴雨",
               "level": "red",
               "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826010100.html",
-              "issuedAt": "2026/08/26 01:01"
+              "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826024200.html",
+              "issuedAt": "2026/08/26 02:42"
             },
             "via": "路径邻近",
             "distKm": 148
@@ -565,7 +565,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 23,
+            "count": 25,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -626,13 +626,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 537,
+    "total": 543,
     "counts": {
-      "暴雨": 358,
+      "暴雨": 363,
       "台风": 25,
       "山洪灾害": 68,
       "山洪风险": 2,
-      "地质灾害": 84
+      "地质灾害": 85
     },
     "peak": {
       "province": "河北",
@@ -675,8 +675,8 @@
           "kind": "暴雨",
           "level": "red",
           "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826010100.html",
-          "issuedAt": "2026/08/26 01:01"
+          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826024200.html",
+          "issuedAt": "2026/08/26 02:42"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -707,7 +707,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 23,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -753,6 +753,24 @@
         },
         "lat": 27.6,
         "lng": 111.7
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "辽宁省大连市普兰店区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21021441600000_20260826024300.html",
+          "issuedAt": "2026/08/26 02:43"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "陕西",
@@ -821,7 +839,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 50,
+        "count": 51,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -851,24 +869,6 @@
         },
         "lat": 39.3,
         "lng": 117.3
-      },
-      {
-        "province": "辽宁",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 13,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "辽宁省大连市庄河市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21028341600000_20260826023500.html",
-          "issuedAt": "2026/08/26 02:36"
-        },
-        "lat": 41.8,
-        "lng": 122.6
       },
       {
         "province": "广西",
@@ -1046,13 +1046,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "吉林省通化市辉南县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22052341600000_20260825234937.html",
-          "issuedAt": "2026/08/25 23:48"
+          "title": "吉林省白山市抚松县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22062141600000_20260826025730.html",
+          "issuedAt": "2026/08/26 02:55"
         },
         "lat": 43.7,
         "lng": 126.2
