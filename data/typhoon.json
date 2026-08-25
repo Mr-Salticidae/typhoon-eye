@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 14:01",
+  "updatedAt": "2026-08-25 14:19",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -369,7 +369,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 14,
+            "count": 13,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -388,7 +388,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 49,
+            "count": 50,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -658,7 +658,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 49,
+            "count": 48,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -677,7 +677,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 49,
+            "count": 50,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -695,7 +695,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 56,
+            "count": 55,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -756,23 +756,43 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 457,
+    "total": 453,
     "counts": {
-      "暴雨": 340,
+      "暴雨": 334,
       "台风": 26,
-      "山洪灾害": 26,
+      "山洪灾害": 27,
       "山洪风险": 4,
-      "地质灾害": 61
+      "地质灾害": 62
     },
     "peak": {
-      "province": "湖南",
+      "province": "河北",
       "kind": "暴雨",
       "level": "red",
-      "title": "湖南省永州市冷水滩区气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/43110341600000_20260825072856.html",
-      "issuedAt": "2026/08/25 07:28"
+      "title": "河北省石家庄市辛集市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/13018141600000_20260825141014.html",
+      "issuedAt": "2026/08/25 14:10"
     },
     "provinces": [
+      {
+        "province": "河北",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 90,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "河北省石家庄市辛集市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13018141600000_20260825141014.html",
+          "issuedAt": "2026/08/25 14:10"
+        },
+        "lat": 38.5,
+        "lng": 115.5
+      },
       {
         "province": "湖南",
         "maxLevel": "red",
@@ -780,7 +800,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 56,
+        "count": 55,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -792,25 +812,6 @@
         "lng": 111.7
       },
       {
-        "province": "福建",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "台风": "blue"
-        },
-        "count": 49,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "福建省龙岩市新罗区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260825125300.html",
-          "issuedAt": "2026/08/25 12:53"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
         "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -818,7 +819,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 49,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -830,6 +831,25 @@
         "lng": 113.4
       },
       {
+        "province": "福建",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "台风": "blue"
+        },
+        "count": 48,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "福建省龙岩市新罗区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260825125300.html",
+          "issuedAt": "2026/08/25 12:53"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "广西",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -837,7 +857,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 14,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -849,44 +869,6 @@
         "lng": 108.8
       },
       {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省宜宾市长宁县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51152441600000_20260825115256.html",
-          "issuedAt": "2026/08/25 11:52"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
-        "province": "河北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 86,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "河北省石家庄市辛集市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13018141600000_20260825135822.html",
-          "issuedAt": "2026/08/25 13:58"
-        },
-        "lat": 38.5,
-        "lng": 115.5
-      },
-      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -895,7 +877,7 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 46,
+        "count": 44,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -933,7 +915,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 26,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -983,22 +965,22 @@
         "lng": 120.2
       },
       {
-        "province": "贵州",
+        "province": "四川",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "贵州省毕节市大方县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052141600000_20260825055306.html",
-          "issuedAt": "2026/08/25 05:53"
+          "title": "四川省内江市威远县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51102441600000_20260825135452.html",
+          "issuedAt": "2026/08/25 13:54"
         },
-        "lat": 26.8,
-        "lng": 106.9
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "辽宁",
@@ -1035,24 +1017,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "湖北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖北省十堰市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42030041600000_20260825091245.html",
-          "issuedAt": "2026/08/25 09:12"
-        },
-        "lat": 31,
-        "lng": 112.3
       },
       {
         "province": "北京",
@@ -1146,6 +1110,42 @@
         "lng": 128.1
       },
       {
+        "province": "重庆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "重庆市大足区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011141600000_20260825141212.html",
+          "issuedAt": "2026/08/25 14:12"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省遵义市赤水市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52038141600000_20260825122925.html",
+          "issuedAt": "2026/08/25 12:29"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
         "province": "陕西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1162,24 +1162,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市江津区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50011641600000_20260825131228.html",
-          "issuedAt": "2026/08/25 13:12"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       }
     ]
   },
