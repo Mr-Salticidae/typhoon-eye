@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 17:47",
+  "updatedAt": "2026-08-25 18:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,12 +37,12 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 33 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 10 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-25 17时",
+            "time": "08-25 18时",
             "windLevel": 8,
             "role": "primary"
           },
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 14时",
+            "time": "08-25 17时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -70,8 +70,8 @@
         "moveSpeed": 19,
         "r7": 150,
         "r10": null,
-        "time": "08-25 17时",
-        "position": "中心位于北纬 19.4 度、东经 108.5 度"
+        "time": "08-25 18时",
+        "position": "中心位于北纬 19.4 度、东经 108.6 度"
       },
       "track": [
         {
@@ -123,9 +123,9 @@
           "phase": "past"
         },
         {
-          "t": "08-23 04时",
-          "lat": 20.8,
-          "lng": 107.9,
+          "t": "08-23 05时",
+          "lat": 20.7,
+          "lng": 107.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -139,7 +139,7 @@
           "phase": "past"
         },
         {
-          "t": "08-23 21时",
+          "t": "08-23 22时",
           "lat": 20.6,
           "lng": 108.1,
           "wind": 9,
@@ -147,7 +147,7 @@
           "phase": "past"
         },
         {
-          "t": "08-24 06时",
+          "t": "08-24 07时",
           "lat": 20.5,
           "lng": 107.7,
           "wind": 9,
@@ -155,15 +155,15 @@
           "phase": "past"
         },
         {
-          "t": "08-24 14时",
-          "lat": 20,
-          "lng": 107.4,
+          "t": "08-24 15时",
+          "lat": 19.9,
+          "lng": 107.3,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-24 23时",
+          "t": "08-25 00时",
           "lat": 19.7,
           "lng": 107.7,
           "wind": 9,
@@ -171,17 +171,9 @@
           "phase": "past"
         },
         {
-          "t": "08-25 07时",
-          "lat": 19.5,
-          "lng": 108,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-25 16时",
+          "t": "08-25 08时",
           "lat": 19.4,
-          "lng": 108.4,
+          "lng": 108,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -192,36 +184,44 @@
           "lng": 108.5,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-25 18时",
+          "lat": 19.4,
+          "lng": 108.6,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-25 23时",
-          "lat": 19.9,
-          "lng": 109.2,
+          "t": "08-26 00时",
+          "lat": 20.0667,
+          "lng": 109.3167,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-26 05时",
-          "lat": 20.9,
-          "lng": 109.9,
+          "t": "08-26 06时",
+          "lat": 21.0167,
+          "lng": 109.9833,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-26 11时",
-          "lat": 21.6,
-          "lng": 110.4,
+          "t": "08-26 12时",
+          "lat": 21.7333,
+          "lng": 110.3833,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "08-26 17时",
-          "lat": 22.4,
-          "lng": 110.3,
+          "t": "08-26 18时",
+          "lat": 22.5333,
+          "lng": 110.2833,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -230,25 +230,6 @@
       "rainRisk": {
         "provinces": [
           {
-            "province": "广西",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red",
-              "台风": "yellow"
-            },
-            "count": 22,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "广西壮族自治区贺州市昭平县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45112141600000_20260824175809.html",
-              "issuedAt": "2026/08/24 17:52"
-            },
-            "via": "路径邻近",
-            "distKm": 219
-          },
-          {
             "province": "广东",
             "maxLevel": "red",
             "floodLevel": "red",
@@ -256,7 +237,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 49,
+            "count": 43,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -265,7 +246,26 @@
               "issuedAt": "2026/08/25 16:34"
             },
             "via": "路径邻近",
-            "distKm": 336
+            "distKm": 333
+          },
+          {
+            "province": "广西",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange",
+              "台风": "yellow"
+            },
+            "count": 20,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "广西壮族自治区河池市东兰县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45122441600000_20260825174142.html",
+              "issuedAt": "2026/08/25 17:32"
+            },
+            "via": "路径邻近",
+            "distKm": 207
           },
           {
             "province": "海南",
@@ -274,7 +274,7 @@
             "kinds": {
               "台风": "yellow"
             },
-            "count": 8,
+            "count": 9,
             "top": {
               "kind": "台风",
               "level": "yellow",
@@ -283,7 +283,7 @@
               "issuedAt": "2026/08/25 08:06"
             },
             "via": "路径邻近",
-            "distKm": 94
+            "distKm": 104
           }
         ],
         "floodLevel": "red",
@@ -523,16 +523,15 @@
             "maxLevel": "red",
             "floodLevel": "red",
             "kinds": {
-              "暴雨": "red",
-              "台风": "blue"
+              "暴雨": "red"
             },
-            "count": 55,
+            "count": 50,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省泉州市石狮市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35058141600000_20260825163800.html",
-              "issuedAt": "2026/08/25 16:38"
+              "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260825175800.html",
+              "issuedAt": "2026/08/25 17:58"
             },
             "via": "路径邻近",
             "distKm": 90
@@ -563,7 +562,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 49,
+            "count": 43,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -579,11 +578,11 @@
             "maxLevel": "orange",
             "floodLevel": "orange",
             "kinds": {
-              "暴雨": "yellow",
+              "暴雨": "blue",
               "山洪灾害": "blue",
               "地质灾害": "orange"
             },
-            "count": 5,
+            "count": 3,
             "top": {
               "kind": "地质灾害",
               "level": "orange",
@@ -601,13 +600,13 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 11,
+            "count": 9,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "江西省赣州市寻乌县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/36073441600000_20260825171754.html",
-              "issuedAt": "2026/08/25 17:13"
+              "title": "江西省赣州市安远县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/36072641600000_20260825181216.html",
+              "issuedAt": "2026/08/25 18:08"
             },
             "via": "路径邻近",
             "distKm": 264
@@ -626,11 +625,11 @@
     "partial": null,
     "total": 519,
     "counts": {
-      "暴雨": 374,
-      "台风": 28,
-      "山洪灾害": 45,
+      "暴雨": 369,
+      "台风": 25,
+      "山洪灾害": 52,
       "山洪风险": 5,
-      "地质灾害": 67
+      "地质灾害": 68
     },
     "peak": {
       "province": "河北",
@@ -650,7 +649,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 115,
+        "count": 124,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -666,38 +665,18 @@
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red",
-          "台风": "blue"
+          "暴雨": "red"
         },
-        "count": 55,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省泉州市石狮市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35058141600000_20260825163800.html",
-          "issuedAt": "2026/08/25 16:38"
+          "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260825175800.html",
+          "issuedAt": "2026/08/25 17:58"
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "广东",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "台风": "yellow"
-        },
-        "count": 49,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广东省河源市和平县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44162441600000_20260825163544.html",
-          "issuedAt": "2026/08/25 16:34"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "云南",
@@ -708,7 +687,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 48,
+        "count": 49,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -718,6 +697,25 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "台风": "yellow"
+        },
+        "count": 43,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省河源市和平县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44162441600000_20260825163544.html",
+          "issuedAt": "2026/08/25 16:34"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "湖南",
@@ -738,23 +736,22 @@
         "lng": 111.7
       },
       {
-        "province": "广西",
+        "province": "内蒙古",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red",
-          "台风": "yellow"
+          "暴雨": "red"
         },
-        "count": 22,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广西壮族自治区贺州市昭平县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45112141600000_20260824175809.html",
-          "issuedAt": "2026/08/24 17:52"
+          "title": "内蒙古自治区包头市土默特右旗气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15022141600000_20260825173908.html",
+          "issuedAt": "2026/08/25 17:39"
         },
-        "lat": 23.8,
-        "lng": 108.8
+        "lat": 44,
+        "lng": 113.9
       },
       {
         "province": "四川",
@@ -763,7 +760,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 10,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -783,7 +780,7 @@
           "山洪灾害": "orange",
           "地质灾害": "orange"
         },
-        "count": 75,
+        "count": 80,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -795,22 +792,41 @@
         "lng": 112.3
       },
       {
-        "province": "内蒙古",
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "yellow"
+        },
+        "count": 20,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区河池市东兰县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45122441600000_20260825174142.html",
+          "issuedAt": "2026/08/25 17:32"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
+        "province": "贵州",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 24,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "内蒙古自治区包头市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15020041600000_20260825173507.html",
-          "issuedAt": "2026/08/25 17:35"
+          "title": "贵州省遵义市赤水市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52038141600000_20260825174339.html",
+          "issuedAt": "2026/08/25 17:43"
         },
-        "lat": 44,
-        "lng": 113.9
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "江西",
@@ -819,36 +835,16 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省赣州市寻乌县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36073441600000_20260825171754.html",
-          "issuedAt": "2026/08/25 17:13"
+          "title": "江西省赣州市安远县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36072641600000_20260825181216.html",
+          "issuedAt": "2026/08/25 18:08"
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害橙色预警",
-          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260825171238.html",
-          "issuedAt": "2026/08/25 17:12"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "辽宁",
@@ -867,6 +863,26 @@
         },
         "lat": 41.8,
         "lng": 122.6
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "blue",
+          "地质灾害": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "地质灾害",
+          "level": "orange",
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害橙色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260825171238.html",
+          "issuedAt": "2026/08/25 17:12"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "新疆",
@@ -925,22 +941,24 @@
         "lng": 116.4
       },
       {
-        "province": "贵州",
+        "province": "宁夏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "blue",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
         },
-        "count": 11,
+        "count": 10,
         "top": {
-          "kind": "暴雨",
+          "kind": "山洪灾害",
           "level": "yellow",
-          "title": "贵州省贵阳市观山湖区气象服务中心发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52011541600000_20260825173134.html",
-          "issuedAt": "2026/08/25 17:31"
+          "title": "宁夏回族自治区石嘴山市平罗县气象台发布山洪灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64022141600000_20260825180158.html",
+          "issuedAt": "2026/08/25 18:00"
         },
-        "lat": 26.8,
-        "lng": 106.9
+        "lat": 37.3,
+        "lng": 106.2
       },
       {
         "province": "海南",
@@ -949,7 +967,7 @@
         "kinds": {
           "台风": "yellow"
         },
-        "count": 8,
+        "count": 9,
         "top": {
           "kind": "台风",
           "level": "yellow",
@@ -967,7 +985,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -979,41 +997,23 @@
         "lng": 107.9
       },
       {
-        "province": "吉林",
+        "province": "陕西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "吉林省延边朝鲜族自治州安图县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22242641600000_20260824182449.html",
-          "issuedAt": "2026/08/24 18:24"
-        },
-        "lat": 43.7,
-        "lng": 126.2
-      },
-      {
-        "province": "宁夏",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
+          "暴雨": "blue",
           "山洪灾害": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
-          "title": "宁夏回族自治区银川市贺兰县气象台发布山洪灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64012241600000_20260825170400.html",
-          "issuedAt": "2026/08/25 16:50"
+          "title": "陕西省气象台发布山洪灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260825114522.html",
+          "issuedAt": "2026/08/25 11:45"
         },
-        "lat": 37.3,
-        "lng": 106.2
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "黑龙江",
@@ -1052,22 +1052,40 @@
         "lng": 118.2
       },
       {
-        "province": "陕西",
+        "province": "吉林",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "山洪灾害": "yellow"
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "吉林省延边朝鲜族自治州安图县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22242641600000_20260824182449.html",
+          "issuedAt": "2026/08/24 18:24"
+        },
+        "lat": 43.7,
+        "lng": 126.2
+      },
+      {
+        "province": "甘肃",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "山洪灾害": "blue"
         },
         "count": 1,
         "top": {
           "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "陕西省气象台发布山洪灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260825114522.html",
-          "issuedAt": "2026/08/25 11:45"
+          "level": "blue",
+          "title": "甘肃省水利厅、甘肃省气象台发布山洪灾害气象风险蓝色预警",
+          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260825180125.html",
+          "issuedAt": "2026/08/25 18:00"
         },
-        "lat": 35.2,
-        "lng": 108.9
+        "lat": 37.8,
+        "lng": 101.1
       }
     ]
   },
