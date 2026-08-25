@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 01:50",
+  "updatedAt": "2026-08-26 02:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -22,7 +22,7 @@
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
       "ok": true,
-      "count": 4
+      "count": 3
     }
   ],
   "typhoons": [
@@ -221,7 +221,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 24,
+            "count": 23,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -233,6 +233,25 @@
             "distKm": 322
           },
           {
+            "province": "海南",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange",
+              "台风": "yellow"
+            },
+            "count": 11,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "海南省儋州市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46040041600000_20260826014903.html",
+              "issuedAt": "2026/08/26 01:49"
+            },
+            "via": "路径邻近",
+            "distKm": 78
+          },
+          {
             "province": "广西",
             "maxLevel": "orange",
             "floodLevel": "orange",
@@ -240,7 +259,7 @@
               "暴雨": "orange",
               "台风": "yellow"
             },
-            "count": 15,
+            "count": 13,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -250,24 +269,6 @@
             },
             "via": "路径邻近",
             "distKm": 272
-          },
-          {
-            "province": "海南",
-            "maxLevel": "yellow",
-            "floodLevel": null,
-            "kinds": {
-              "台风": "yellow"
-            },
-            "count": 9,
-            "top": {
-              "kind": "台风",
-              "level": "yellow",
-              "title": "海南省临高县气象台发布台风黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/46902441600000_20260825080641.html",
-              "issuedAt": "2026/08/25 08:06"
-            },
-            "via": "路径邻近",
-            "distKm": 78
           }
         ],
         "floodLevel": "red",
@@ -509,7 +510,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 42,
+            "count": 43,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -545,7 +546,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 19,
+            "count": 18,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -564,7 +565,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 24,
+            "count": 23,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -606,12 +607,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 543,
+    "total": 532,
     "counts": {
-      "暴雨": 363,
+      "暴雨": 353,
       "台风": 25,
       "山洪灾害": 68,
-      "山洪风险": 3,
+      "山洪风险": 2,
       "地质灾害": 84
     },
     "peak": {
@@ -650,7 +651,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 42,
+        "count": 43,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -668,7 +669,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 34,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -687,7 +688,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 24,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -705,7 +706,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 19,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -747,9 +748,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "陕西省榆林市神木市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61088141600000_20260826011410.html",
-          "issuedAt": "2026/08/26 01:14"
+          "title": "陕西省榆林市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61080041600000_20260826020914.html",
+          "issuedAt": "2026/08/26 02:09"
         },
         "lat": 35.2,
         "lng": 108.9
@@ -761,7 +762,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 5,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -781,7 +782,7 @@
           "山洪灾害": "orange",
           "地质灾害": "orange"
         },
-        "count": 108,
+        "count": 109,
         "top": {
           "kind": "山洪灾害",
           "level": "orange",
@@ -797,39 +798,20 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange",
+          "暴雨": "yellow",
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 50,
+        "count": 48,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "orange",
-          "title": "云南省玉溪市峨山彝族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53042641600000_20260825214252.html",
-          "issuedAt": "2026/08/25 21:43"
+          "title": "云南省临沧市云县气象台发布地质灾害橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53092241600000_20260825193526.html",
+          "issuedAt": "2026/08/25 19:35"
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "yellow"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区贺州市富川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45112341600000_20260825233346.html",
-          "issuedAt": "2026/08/25 23:33"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "天津",
@@ -852,40 +834,60 @@
         "lng": 117.3
       },
       {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "yellow"
+        },
+        "count": 13,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区贺州市富川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45112341600000_20260825233346.html",
+          "issuedAt": "2026/08/25 23:33"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
         "province": "辽宁",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "辽宁省盘锦市盘山县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21112241600000_20260826010800.html",
-          "issuedAt": "2026/08/26 01:10"
+          "title": "辽宁省大连市长海县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21022441600000_20260826020400.html",
+          "issuedAt": "2026/08/26 02:05"
         },
         "lat": 41.8,
         "lng": 122.6
       },
       {
-        "province": "黑龙江",
+        "province": "海南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "orange",
+          "台风": "yellow"
         },
-        "count": 5,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "黑龙江省哈尔滨市尚志市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23018341600000_20260825214704.html",
-          "issuedAt": "2026/08/25 21:45"
+          "title": "海南省儋州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46040041600000_20260826014903.html",
+          "issuedAt": "2026/08/26 01:49"
         },
-        "lat": 47.4,
-        "lng": 128.1
+        "lat": 19.2,
+        "lng": 109.7
       },
       {
         "province": "新疆",
@@ -945,42 +947,6 @@
         "lng": 106.2
       },
       {
-        "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省贵阳市花溪区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52011141600000_20260825220700.html",
-          "issuedAt": "2026/08/25 22:07"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
-      {
-        "province": "海南",
-        "maxLevel": "yellow",
-        "floodLevel": null,
-        "kinds": {
-          "台风": "yellow"
-        },
-        "count": 9,
-        "top": {
-          "kind": "台风",
-          "level": "yellow",
-          "title": "海南省临高县气象台发布台风黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46902441600000_20260825080641.html",
-          "issuedAt": "2026/08/25 08:06"
-        },
-        "lat": 19.2,
-        "lng": 109.7
-      },
-      {
         "province": "甘肃",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1001,6 +967,42 @@
         "lng": 101.1
       },
       {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省贵阳市花溪区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52011141600000_20260825220700.html",
+          "issuedAt": "2026/08/25 22:07"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "黑龙江省哈尔滨市方正县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23012441600000_20260825213656.html",
+          "issuedAt": "2026/08/25 21:21"
+        },
+        "lat": 47.4,
+        "lng": 128.1
+      },
+      {
         "province": "山东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1019,24 +1021,6 @@
         "lng": 118.2
       },
       {
-        "province": "重庆",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "重庆市綦江区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50011041600000_20260825174213.html",
-          "issuedAt": "2026/08/25 17:42"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
         "province": "吉林",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -1053,6 +1037,24 @@
         },
         "lat": 43.7,
         "lng": 126.2
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市江津区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011641600000_20260825131228.html",
+          "issuedAt": "2026/08/25 13:12"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       }
     ]
   },
