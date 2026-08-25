@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 13:40",
+  "updatedAt": "2026-08-25 14:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -434,7 +434,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 37 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -453,7 +453,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 12时",
+            "time": "08-25 13时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -658,7 +658,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 48,
+            "count": 49,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -695,7 +695,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 58,
+            "count": 56,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -756,13 +756,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 454,
+    "total": 457,
     "counts": {
-      "暴雨": 337,
+      "暴雨": 340,
       "台风": 26,
-      "山洪灾害": 25,
+      "山洪灾害": 26,
       "山洪风险": 4,
-      "地质灾害": 62
+      "地质灾害": 61
     },
     "peak": {
       "province": "湖南",
@@ -780,7 +780,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 58,
+        "count": 56,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -790,6 +790,25 @@
         },
         "lat": 27.6,
         "lng": 111.7
+      },
+      {
+        "province": "福建",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "台风": "blue"
+        },
+        "count": 49,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "福建省龙岩市新罗区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260825125300.html",
+          "issuedAt": "2026/08/25 12:53"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "广东",
@@ -809,25 +828,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "福建",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "台风": "blue"
-        },
-        "count": 48,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "福建省龙岩市新罗区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260825125300.html",
-          "issuedAt": "2026/08/25 12:53"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "广西",
@@ -855,7 +855,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -875,13 +875,13 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 85,
+        "count": 86,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "河北省唐山市丰南区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13020741600000_20260825111935.html",
-          "issuedAt": "2026/08/25 11:19"
+          "title": "河北省石家庄市辛集市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13018141600000_20260825135822.html",
+          "issuedAt": "2026/08/25 13:58"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -895,7 +895,7 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 48,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -915,7 +915,7 @@
           "山洪灾害": "orange",
           "地质灾害": "yellow"
         },
-        "count": 32,
+        "count": 37,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -983,24 +983,6 @@
         "lng": 120.2
       },
       {
-        "province": "辽宁",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "辽宁省沈阳市新民市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21018141600000_20260825131400.html",
-          "issuedAt": "2026/08/25 13:15"
-        },
-        "lat": 41.8,
-        "lng": 122.6
-      },
-      {
         "province": "贵州",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -1017,6 +999,24 @@
         },
         "lat": 26.8,
         "lng": 106.9
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "辽宁省沈阳市新民市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21018141600000_20260825131400.html",
+          "issuedAt": "2026/08/25 13:15"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "新疆",
@@ -1134,13 +1134,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "黑龙江省双鸭山市饶河县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23052441600000_20260825130415.html",
-          "issuedAt": "2026/08/25 13:05"
+          "title": "黑龙江省佳木斯市同江市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23088141600000_20260825134007.html",
+          "issuedAt": "2026/08/25 13:25"
         },
         "lat": 47.4,
         "lng": 128.1
