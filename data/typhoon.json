@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 12:00",
+  "updatedAt": "2026-08-25 12:21",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -153,7 +153,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 15 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 70 公里（时次相差 4 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 74 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -165,14 +165,14 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-25 11时",
+            "time": "08-25 12时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 08时",
+            "time": "08-25 11时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -369,7 +369,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 15,
+            "count": 12,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -388,7 +388,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 47,
+            "count": 44,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -658,13 +658,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 49,
+            "count": 47,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省泉州市石狮市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35058141600000_20260825110100.html",
-              "issuedAt": "2026/08/25 11:01"
+              "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260825115600.html",
+              "issuedAt": "2026/08/25 11:56"
             },
             "via": "路径邻近",
             "distKm": 150
@@ -677,7 +677,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 47,
+            "count": 44,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -695,7 +695,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 75,
+            "count": 73,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -756,13 +756,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 455,
+    "total": 438,
     "counts": {
-      "暴雨": 352,
-      "台风": 25,
-      "山洪灾害": 17,
+      "暴雨": 331,
+      "台风": 24,
+      "山洪灾害": 21,
       "山洪风险": 3,
-      "地质灾害": 58
+      "地质灾害": 59
     },
     "peak": {
       "province": "湖南",
@@ -780,7 +780,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 75,
+        "count": 73,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -799,13 +799,13 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 49,
+        "count": 47,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省泉州市石狮市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35058141600000_20260825110100.html",
-          "issuedAt": "2026/08/25 11:01"
+          "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260825115600.html",
+          "issuedAt": "2026/08/25 11:56"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -818,7 +818,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 47,
+        "count": 44,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -837,7 +837,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 15,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -855,7 +855,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 12,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -873,7 +873,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 10,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -885,24 +885,6 @@
         "lng": 102.9
       },
       {
-        "province": "贵州",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "贵州省毕节市金沙县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052341600000_20260825054605.html",
-          "issuedAt": "2026/08/25 05:46"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
-      {
         "province": "河北",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -910,7 +892,7 @@
           "暴雨": "orange",
           "山洪灾害": "yellow"
         },
-        "count": 68,
+        "count": 71,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -930,13 +912,13 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 47,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省德宏傣族景颇族自治州盈江县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53312341600000_20260825113827.html",
-          "issuedAt": "2026/08/25 11:39"
+          "title": "云南省德宏傣族景颇族自治州陇川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53312441600000_20260825100710.html",
+          "issuedAt": "2026/08/25 10:06"
         },
         "lat": 25,
         "lng": 101.5
@@ -968,13 +950,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 27,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "内蒙古自治区呼和浩特市和林格尔县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15012341600000_20260825105028.html",
-          "issuedAt": "2026/08/25 10:50"
+          "title": "内蒙古自治区乌兰察布市卓资县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15092141600000_20260825120001.html",
+          "issuedAt": "2026/08/25 12:00"
         },
         "lat": 44,
         "lng": 113.9
@@ -1016,6 +998,24 @@
         },
         "lat": 29.2,
         "lng": 120.2
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "贵州省毕节市大方县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052141600000_20260825055306.html",
+          "issuedAt": "2026/08/25 05:53"
+        },
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "新疆",
