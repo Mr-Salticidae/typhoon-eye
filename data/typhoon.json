@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 19:37",
+  "updatedAt": "2026-08-25 20:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -302,7 +302,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 41 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 63 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -321,7 +321,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-25 18时",
+            "time": "08-25 19时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -623,21 +623,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 556,
+    "total": 570,
     "counts": {
-      "暴雨": 392,
+      "暴雨": 402,
       "台风": 25,
-      "山洪灾害": 56,
+      "山洪灾害": 57,
       "山洪风险": 5,
-      "地质灾害": 78
+      "地质灾害": 81
     },
     "peak": {
       "province": "河北",
       "kind": "暴雨",
       "level": "red",
-      "title": "河北省承德市兴隆县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/13082241600000_20260825162219.html",
-      "issuedAt": "2026/08/25 16:22"
+      "title": "河北省保定市易县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/13063341600000_20260825194359.html",
+      "issuedAt": "2026/08/25 19:43"
     },
     "provinces": [
       {
@@ -649,13 +649,13 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 127,
+        "count": 131,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "河北省承德市兴隆县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13082241600000_20260825162219.html",
-          "issuedAt": "2026/08/25 16:22"
+          "title": "河北省保定市易县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13063341600000_20260825194359.html",
+          "issuedAt": "2026/08/25 19:43"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -669,7 +669,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 52,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -724,7 +724,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 32,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -760,7 +760,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -776,17 +776,17 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange",
+          "暴雨": "blue",
           "山洪灾害": "orange",
           "地质灾害": "orange"
         },
-        "count": 90,
+        "count": 92,
         "top": {
-          "kind": "暴雨",
+          "kind": "山洪灾害",
           "level": "orange",
-          "title": "山西省大同市天镇县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14022241600000_20260825132900.html",
-          "issuedAt": "2026/08/25 13:29"
+          "title": "山西省忻州市宁武县气象台发布山洪灾害气象风险橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14092541600000_20260825192205.html",
+          "issuedAt": "2026/08/25 19:20"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -847,33 +847,13 @@
         "lng": 106.9
       },
       {
-        "province": "陕西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "orange",
-          "title": "陕西省气象台发布山洪灾害橙色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260825185954.html",
-          "issuedAt": "2026/08/25 18:59"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      },
-      {
         "province": "辽宁",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 4,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -883,6 +863,26 @@
         },
         "lat": 41.8,
         "lng": 122.6
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 7,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "orange",
+          "title": "陕西省气象台发布山洪灾害橙色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260825185954.html",
+          "issuedAt": "2026/08/25 18:59"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "浙江",
