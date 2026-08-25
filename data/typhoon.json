@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25 16:54",
+  "updatedAt": "2026-08-25 17:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -245,7 +245,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 20,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -282,7 +282,7 @@
             "kinds": {
               "台风": "yellow"
             },
-            "count": 9,
+            "count": 7,
             "top": {
               "kind": "台风",
               "level": "yellow",
@@ -552,7 +552,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 40,
+            "count": 38,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -589,7 +589,7 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 10,
+            "count": 11,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -602,20 +602,19 @@
           },
           {
             "province": "浙江",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
+            "maxLevel": "yellow",
+            "floodLevel": "yellow",
             "kinds": {
               "暴雨": "yellow",
-              "山洪灾害": "blue",
-              "地质灾害": "orange"
+              "山洪灾害": "blue"
             },
-            "count": 5,
+            "count": 4,
             "top": {
-              "kind": "地质灾害",
-              "level": "orange",
-              "title": "浙江省自然资源厅、浙江省气象台发布地质灾害橙色预警",
-              "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260824170320.html",
-              "issuedAt": "2026/08/24 17:03"
+              "kind": "暴雨",
+              "level": "yellow",
+              "title": "浙江省丽水市景宁县气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33112741600000_20260825092255.html",
+              "issuedAt": "2026/08/25 09:21"
             },
             "via": "路径邻近",
             "distKm": 257
@@ -632,13 +631,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 484,
+    "total": 494,
     "counts": {
-      "暴雨": 347,
-      "台风": 29,
-      "山洪灾害": 41,
+      "暴雨": 355,
+      "台风": 28,
+      "山洪灾害": 43,
       "山洪风险": 5,
-      "地质灾害": 62
+      "地质灾害": 63
     },
     "peak": {
       "province": "河北",
@@ -658,7 +657,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 107,
+        "count": 108,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -689,6 +688,26 @@
         "lng": 118.3
       },
       {
+        "province": "云南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪风险": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 50,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20260825155748.html",
+          "issuedAt": "2026/08/25 15:57"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -708,33 +727,13 @@
         "lng": 113.4
       },
       {
-        "province": "云南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪风险": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 48,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20260825155748.html",
-          "issuedAt": "2026/08/25 15:57"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "湖南",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 40,
+        "count": 38,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -753,7 +752,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 20,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -789,9 +788,9 @@
         "kinds": {
           "暴雨": "orange",
           "山洪灾害": "orange",
-          "地质灾害": "yellow"
+          "地质灾害": "orange"
         },
-        "count": 56,
+        "count": 62,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -809,13 +808,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 21,
+        "count": 22,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "内蒙古自治区呼和浩特市和林格尔县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15012341600000_20260825105028.html",
-          "issuedAt": "2026/08/25 10:50"
+          "title": "内蒙古自治区巴彦淖尔市乌拉特前旗气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15082341600000_20260825170802.html",
+          "issuedAt": "2026/08/25 17:08"
         },
         "lat": 44,
         "lng": 113.9
@@ -827,7 +826,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -837,26 +836,6 @@
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害橙色预警",
-          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260824170320.html",
-          "issuedAt": "2026/08/24 17:03"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "辽宁",
@@ -925,12 +904,30 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "天津市武清区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/12011441600000_20260825130737.html",
-          "issuedAt": "2026/08/25 13:07"
+          "title": "天津市蓟州区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/12011941600000_20260825170620.html",
+          "issuedAt": "2026/08/25 17:08"
         },
         "lat": 39.3,
         "lng": 117.3
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省黔南布依族苗族自治州罗甸县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52272841600000_20260825165532.html",
+          "issuedAt": "2026/08/25 16:55"
+        },
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "海南",
@@ -939,7 +936,7 @@
         "kinds": {
           "台风": "yellow"
         },
-        "count": 9,
+        "count": 7,
         "top": {
           "kind": "台风",
           "level": "yellow",
@@ -949,24 +946,6 @@
         },
         "lat": 19.2,
         "lng": 109.7
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省遵义市红花岗区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52030241600000_20260825160834.html",
-          "issuedAt": "2026/08/25 16:08"
-        },
-        "lat": 26.8,
-        "lng": 106.9
       },
       {
         "province": "重庆",
@@ -985,6 +964,25 @@
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "山洪灾害": "blue"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "浙江省丽水市景宁县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33112741600000_20260825092255.html",
+          "issuedAt": "2026/08/25 09:21"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "吉林",
@@ -1012,16 +1010,34 @@
         "kinds": {
           "山洪灾害": "yellow"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
-          "title": "宁夏回族自治区银川市气象台发布山洪灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64010041600000_20260825164725.html",
-          "issuedAt": "2026/08/25 16:15"
+          "title": "宁夏回族自治区银川市贺兰县气象台发布山洪灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64012241600000_20260825170400.html",
+          "issuedAt": "2026/08/25 16:50"
         },
         "lat": 37.3,
         "lng": 106.2
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "黑龙江省哈尔滨市通河县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23012841600000_20260825171340.html",
+          "issuedAt": "2026/08/25 17:00"
+        },
+        "lat": 47.4,
+        "lng": 128.1
       },
       {
         "province": "山东",
@@ -1040,24 +1056,6 @@
         },
         "lat": 36.4,
         "lng": 118.2
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "黑龙江省大兴安岭地区呼玛县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23272141600000_20260825115228.html",
-          "issuedAt": "2026/08/25 11:55"
-        },
-        "lat": 47.4,
-        "lng": 128.1
       },
       {
         "province": "陕西",
