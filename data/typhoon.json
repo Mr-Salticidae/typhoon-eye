@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 23:46",
+  "updatedAt": "2026-08-26 23:57",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "zj",
@@ -26,213 +26,6 @@
     }
   ],
   "typhoons": [
-    {
-      "name": "紫檀",
-      "enName": "NARRA",
-      "code": "2619",
-      "level": "热带低压（6级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 85 公里（时次相差 3 小时）、强度暂缺（2 源交叉校验一致）",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "08-26 11时",
-            "windLevel": 6,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "08-26 14时",
-            "windLevel": null,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 6,
-        "windSpeed": 12,
-        "pressure": 1000,
-        "moveDir": "北北东",
-        "moveSpeed": 9,
-        "r7": null,
-        "r10": null,
-        "time": "08-26 11时",
-        "position": "中心位于北纬 21.4 度、东经 110.7 度"
-      },
-      "track": [
-        {
-          "t": "08-19 17时",
-          "lat": 19.6,
-          "lng": 113.4,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "08-20 23时",
-          "lat": 19.8,
-          "lng": 109,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "08-21 20时",
-          "lat": 20.8,
-          "lng": 108.6,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-22 06时",
-          "lat": 21.4,
-          "lng": 108.2,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-22 15时",
-          "lat": 21.2,
-          "lng": 108.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-23 01时",
-          "lat": 21,
-          "lng": 108,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-23 11时",
-          "lat": 20.7,
-          "lng": 108,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-23 20时",
-          "lat": 20.8,
-          "lng": 108.1,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-24 06时",
-          "lat": 20.5,
-          "lng": 107.7,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-24 16时",
-          "lat": 19.9,
-          "lng": 107.3,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-25 01时",
-          "lat": 19.8,
-          "lng": 107.7,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-25 11时",
-          "lat": 19.4,
-          "lng": 108.1,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-25 20时",
-          "lat": 19.5,
-          "lng": 109,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-26 08时",
-          "lat": 20.9,
-          "lng": 110.7,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "08-26 11时",
-          "lat": 21.4,
-          "lng": 110.7,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "now"
-        }
-      ],
-      "rainRisk": {
-        "provinces": [
-          {
-            "province": "广西",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red"
-            },
-            "count": 10,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "广西壮族自治区钦州市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45070041600000_20260826162603.html",
-              "issuedAt": "2026/08/26 16:22"
-            },
-            "via": "路径邻近",
-            "distKm": 331
-          },
-          {
-            "province": "广东",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red",
-              "台风": "blue"
-            },
-            "count": 34,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "广东省江门市恩平市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44078541600000_20260826232519.html",
-              "issuedAt": "2026/08/26 23:23"
-            },
-            "via": "路径邻近",
-            "distKm": 356
-          }
-        ],
-        "floodLevel": "red",
-        "maxLevel": "red",
-        "note": "台风影响范围内有 2 个省级行政区发布洪涝类预警，最高红色。"
-      }
-    },
     {
       "name": "沙德尔",
       "enName": "SAUDEL",
@@ -754,7 +547,7 @@
           "暴雨": "red",
           "地质灾害": "yellow"
         },
-        "count": 8,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -779,8 +572,8 @@
           "kind": "暴雨",
           "level": "orange",
           "title": "云南省文山壮族苗族自治州麻栗坡县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53262441600000_20260826224749.html",
-          "issuedAt": "2026/08/26 22:48"
+          "url": "http://www.nmc.cn/publish/alarm/53262441600000_20260826234546.html",
+          "issuedAt": "2026/08/26 23:46"
         },
         "lat": 25,
         "lng": 101.5
@@ -994,7 +787,7 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
@@ -1008,6 +801,19 @@
     ]
   },
   "recentlyEnded": [
+    {
+      "code": "2619",
+      "name": "紫檀",
+      "enName": "NARRA",
+      "lastLevel": "热带低压（6级）",
+      "endedAt": "2026-08-26 23:57",
+      "provinces": [
+        "广西",
+        "广东"
+      ],
+      "ongoingFloodLevel": "red",
+      "daysSince": 0
+    },
     {
       "code": "2621",
       "name": "艾莎尼",
