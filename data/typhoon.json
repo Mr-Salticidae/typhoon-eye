@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 09:39",
+  "updatedAt": "2026-08-26 10:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -213,7 +213,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 34,
+            "count": 35,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -279,7 +279,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 37 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -298,7 +298,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 08时",
+            "time": "08-26 09时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -532,6 +532,24 @@
             "distKm": 101
           },
           {
+            "province": "湖南",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 20,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826094020.html",
+              "issuedAt": "2026/08/26 09:40"
+            },
+            "via": "路径邻近",
+            "distKm": 240
+          },
+          {
             "province": "广东",
             "maxLevel": "red",
             "floodLevel": "red",
@@ -539,7 +557,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 34,
+            "count": 35,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -549,24 +567,6 @@
             },
             "via": "路径邻近",
             "distKm": 258
-          },
-          {
-            "province": "湖南",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange"
-            },
-            "count": 16,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "湖南省永州市新田县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826091410.html",
-              "issuedAt": "2026/08/26 09:13"
-            },
-            "via": "路径邻近",
-            "distKm": 240
           },
           {
             "province": "广西",
@@ -592,9 +592,10 @@
             "maxLevel": "yellow",
             "floodLevel": "yellow",
             "kinds": {
+              "台风": "blue",
               "地质灾害": "yellow"
             },
-            "count": 1,
+            "count": 2,
             "top": {
               "kind": "地质灾害",
               "level": "yellow",
@@ -617,11 +618,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 518,
+    "total": 527,
     "counts": {
-      "暴雨": 335,
-      "台风": 21,
-      "山洪灾害": 71,
+      "暴雨": 340,
+      "台风": 22,
+      "山洪灾害": 74,
       "山洪风险": 4,
       "地质灾害": 87
     },
@@ -663,13 +664,13 @@
           "山洪灾害": "red",
           "地质灾害": "orange"
         },
-        "count": 115,
+        "count": 117,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
-          "title": "山西省忻州市水利局和忻州市气象台发布山洪灾害气象风险红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14090041600000_20260826091657.html",
-          "issuedAt": "2026/08/26 09:15"
+          "title": "山西省忻州市神池县气象台发布山洪灾害气象风险红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14092741600000_20260826095644.html",
+          "issuedAt": "2026/08/26 09:55"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -683,7 +684,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 56,
+        "count": 58,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -702,7 +703,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 34,
+        "count": 35,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -768,6 +769,24 @@
         "lng": 115.7
       },
       {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 20,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826094020.html",
+          "issuedAt": "2026/08/26 09:40"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "内蒙古",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -792,7 +811,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -802,24 +821,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 16,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省永州市新田县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826091410.html",
-          "issuedAt": "2026/08/26 09:13"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "天津",
@@ -994,6 +995,25 @@
         "lng": 106.9
       },
       {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "台风": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260826080226.html",
+          "issuedAt": "2026/08/26 08:02"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
         "province": "黑龙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1010,24 +1030,6 @@
         },
         "lat": 47.4,
         "lng": 128.1
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260826080226.html",
-          "issuedAt": "2026/08/26 08:02"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "吉林",
