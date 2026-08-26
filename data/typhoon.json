@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 08:45",
+  "updatedAt": "2026-08-26 09:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 106 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 94 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 05时",
+            "time": "08-26 08时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -213,7 +213,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 33,
+            "count": 34,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -279,7 +279,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -298,7 +298,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 07时",
+            "time": "08-26 08时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -525,8 +525,8 @@
               "kind": "暴雨",
               "level": "red",
               "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826024200.html",
-              "issuedAt": "2026/08/26 02:42"
+              "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826090300.html",
+              "issuedAt": "2026/08/26 09:03"
             },
             "via": "路径邻近",
             "distKm": 101
@@ -539,7 +539,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 33,
+            "count": 34,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -551,31 +551,13 @@
             "distKm": 258
           },
           {
-            "province": "浙江",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "地质灾害": "orange"
-            },
-            "count": 1,
-            "top": {
-              "kind": "地质灾害",
-              "level": "orange",
-              "title": "浙江省自然资源厅、浙江省气象台发布地质灾害橙色预警",
-              "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260825171238.html",
-              "issuedAt": "2026/08/25 17:12"
-            },
-            "via": "路径邻近",
-            "distKm": 189
-          },
-          {
             "province": "湖南",
             "maxLevel": "orange",
             "floodLevel": "orange",
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 12,
+            "count": 15,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -604,6 +586,24 @@
             },
             "via": "路径邻近",
             "distKm": 433
+          },
+          {
+            "province": "浙江",
+            "maxLevel": "yellow",
+            "floodLevel": "yellow",
+            "kinds": {
+              "地质灾害": "yellow"
+            },
+            "count": 1,
+            "top": {
+              "kind": "地质灾害",
+              "level": "yellow",
+              "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+              "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260826080226.html",
+              "issuedAt": "2026/08/26 08:02"
+            },
+            "via": "路径邻近",
+            "distKm": 189
           }
         ],
         "floodLevel": "red",
@@ -617,13 +617,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 512,
+    "total": 513,
     "counts": {
-      "暴雨": 332,
+      "暴雨": 334,
       "台风": 21,
-      "山洪灾害": 69,
+      "山洪灾害": 70,
       "山洪风险": 3,
-      "地质灾害": 87
+      "地质灾害": 85
     },
     "peak": {
       "province": "河北",
@@ -643,7 +643,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 130,
+        "count": 128,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -682,7 +682,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 33,
+        "count": 34,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -723,8 +723,8 @@
           "kind": "暴雨",
           "level": "red",
           "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826024200.html",
-          "issuedAt": "2026/08/26 02:42"
+          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826090300.html",
+          "issuedAt": "2026/08/26 09:03"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -792,16 +792,34 @@
           "山洪灾害": "orange",
           "地质灾害": "orange"
         },
-        "count": 113,
+        "count": 112,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "山西省大同市灵丘县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14022441600000_20260826065300.html",
-          "issuedAt": "2026/08/26 06:53"
+          "title": "山西省吕梁市兴县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14112341600000_20260826090000.html",
+          "issuedAt": "2026/08/26 09:00"
         },
         "lat": 37.6,
         "lng": 112.3
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省郴州市嘉禾县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43102441600000_20260825180638.html",
+          "issuedAt": "2026/08/25 18:06"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "天津",
@@ -841,24 +859,6 @@
         },
         "lat": 23.8,
         "lng": 108.8
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省郴州市嘉禾县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102441600000_20260825180638.html",
-          "issuedAt": "2026/08/25 18:06"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "陕西",
@@ -916,24 +916,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "地质灾害": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害橙色预警",
-          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260825171238.html",
-          "issuedAt": "2026/08/25 17:12"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "宁夏",
@@ -1028,6 +1010,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260826080226.html",
+          "issuedAt": "2026/08/26 08:02"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "吉林",
