@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 14:45",
+  "updatedAt": "2026-08-26 15:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -36,8 +36,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 106 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：日本气象厅定位相差 85 公里（时次相差 3 小时）、强度暂缺（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,8 +49,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 11时",
-            "windLevel": 8,
+            "time": "08-26 14时",
+            "windLevel": null,
             "role": "verify"
           }
         ]
@@ -191,6 +191,25 @@
       "rainRisk": {
         "provinces": [
           {
+            "province": "广西",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red",
+              "台风": "blue"
+            },
+            "count": 12,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "广西壮族自治区防城港市东兴市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45068141600000_20260826145407.html",
+              "issuedAt": "2026/08/26 14:48"
+            },
+            "via": "路径邻近",
+            "distKm": 331
+          },
+          {
             "province": "广东",
             "maxLevel": "red",
             "floodLevel": "red",
@@ -198,7 +217,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 29,
+            "count": 33,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -208,25 +227,6 @@
             },
             "via": "路径邻近",
             "distKm": 356
-          },
-          {
-            "province": "广西",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange",
-              "台风": "blue"
-            },
-            "count": 10,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "广西壮族自治区防城港市东兴市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45068141600000_20260826142749.html",
-              "issuedAt": "2026/08/26 14:19"
-            },
-            "via": "路径邻近",
-            "distKm": 331
           }
         ],
         "floodLevel": "red",
@@ -245,19 +245,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-26 14时",
+            "time": "08-26 15时",
             "windLevel": 14,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-26 14时",
+            "time": "08-26 15时",
             "windLevel": 14,
             "role": "verify"
           },
@@ -278,8 +278,8 @@
         "moveSpeed": 11,
         "r7": 400,
         "r10": 150,
-        "time": "08-26 14时",
-        "position": "中心位于北纬 28.4 度、东经 126.6 度"
+        "time": "08-26 15时",
+        "position": "中心位于北纬 28.4 度、东经 126.5 度"
       },
       "track": [
         {
@@ -331,9 +331,9 @@
           "phase": "past"
         },
         {
-          "t": "08-22 17时",
-          "lat": 19.2,
-          "lng": 145.7,
+          "t": "08-22 20时",
+          "lat": 19.6,
+          "lng": 145.2,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -347,49 +347,41 @@
           "phase": "past"
         },
         {
-          "t": "08-23 20时",
-          "lat": 22.6,
-          "lng": 139.6,
+          "t": "08-23 23时",
+          "lat": 22.8,
+          "lng": 138.8,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-24 08时",
-          "lat": 23.9,
-          "lng": 136.5,
+          "t": "08-24 11时",
+          "lat": 24.1,
+          "lng": 135.6,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-24 23时",
-          "lat": 25.2,
-          "lng": 132.9,
+          "t": "08-25 02时",
+          "lat": 25.5,
+          "lng": 132.3,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-25 11时",
-          "lat": 26.4,
-          "lng": 130.6,
+          "t": "08-25 14时",
+          "lat": 26.7,
+          "lng": 130.1,
           "wind": 15,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "08-26 02时",
-          "lat": 27.4,
-          "lng": 128.1,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-26 13时",
-          "lat": 28.3,
-          "lng": 126.8,
+          "t": "08-26 05时",
+          "lat": 27.7,
+          "lng": 127.7,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -400,76 +392,84 @@
           "lng": 126.6,
           "wind": 14,
           "strong": "强台风",
+          "phase": "past"
+        },
+        {
+          "t": "08-26 15时",
+          "lat": 28.4,
+          "lng": 126.5,
+          "wind": 14,
+          "strong": "强台风",
           "phase": "now"
         },
         {
-          "t": "08-26 20时",
+          "t": "08-26 21时",
           "lat": 28.4,
-          "lng": 126,
+          "lng": 125.8833,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-27 02时",
+          "t": "08-27 03时",
           "lat": 28.4,
-          "lng": 125.3,
+          "lng": 125.2,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-27 08时",
+          "t": "08-27 09时",
           "lat": 28.4,
-          "lng": 124.7,
+          "lng": 124.5833,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-27 14时",
-          "lat": 28.4,
-          "lng": 124,
+          "t": "08-27 15时",
+          "lat": 28.3833,
+          "lng": 123.85,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-28 02时",
-          "lat": 28.2,
-          "lng": 122.2,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-28 14时",
-          "lat": 27.8,
-          "lng": 120.1,
-          "wind": 12,
+          "t": "08-28 03时",
+          "lat": 28.1667,
+          "lng": 122.025,
+          "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "08-29 02时",
-          "lat": 27.3,
-          "lng": 117.4,
-          "wind": 9,
-          "strong": "热带风暴",
+          "t": "08-28 15时",
+          "lat": 27.7583,
+          "lng": 119.875,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-29 14时",
-          "lat": 26.8,
-          "lng": 115.6,
+          "t": "08-29 03时",
+          "lat": 27.2583,
+          "lng": 117.25,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-30 14时",
-          "lat": 25.7,
-          "lng": 113.1,
+          "t": "08-29 15时",
+          "lat": 26.7542,
+          "lng": 115.4958,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-30 15时",
+          "lat": 25.6542,
+          "lng": 112.9958,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -484,7 +484,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 18,
+            "count": 19,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -493,25 +493,7 @@
               "issuedAt": "2026/08/25 23:25"
             },
             "via": "路径邻近",
-            "distKm": 90
-          },
-          {
-            "province": "福建",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red"
-            },
-            "count": 22,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826090300.html",
-              "issuedAt": "2026/08/26 09:03"
-            },
-            "via": "路径邻近",
-            "distKm": 161
+            "distKm": 96
           },
           {
             "province": "湖南",
@@ -520,7 +502,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 33,
+            "count": 32,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -529,7 +511,7 @@
               "issuedAt": "2026/08/26 10:09"
             },
             "via": "路径邻近",
-            "distKm": 253
+            "distKm": 252
           },
           {
             "province": "广东",
@@ -539,7 +521,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 29,
+            "count": 33,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -548,7 +530,25 @@
               "issuedAt": "2026/08/26 09:17"
             },
             "via": "路径邻近",
-            "distKm": 258
+            "distKm": 254
+          },
+          {
+            "province": "福建",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 22,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "福建省漳州市漳浦县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35062341600000_20260826123300.html",
+              "issuedAt": "2026/08/26 12:33"
+            },
+            "via": "路径邻近",
+            "distKm": 166
           },
           {
             "province": "浙江",
@@ -558,7 +558,7 @@
               "台风": "blue",
               "地质灾害": "yellow"
             },
-            "count": 20,
+            "count": 21,
             "top": {
               "kind": "地质灾害",
               "level": "yellow",
@@ -567,7 +567,7 @@
               "issuedAt": "2026/08/26 08:02"
             },
             "via": "路径邻近",
-            "distKm": 156
+            "distKm": 163
           }
         ],
         "floodLevel": "red",
@@ -581,13 +581,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 490,
+    "total": 492,
     "counts": {
-      "暴雨": 300,
-      "台风": 28,
-      "山洪灾害": 63,
+      "暴雨": 306,
+      "台风": 29,
+      "山洪灾害": 60,
       "山洪风险": 3,
-      "地质灾害": 96
+      "地质灾害": 94
     },
     "peak": {
       "province": "山西",
@@ -607,7 +607,7 @@
           "山洪灾害": "red",
           "地质灾害": "orange"
         },
-        "count": 124,
+        "count": 123,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
@@ -624,10 +624,10 @@
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red",
-          "山洪灾害": "yellow",
+          "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 100,
+        "count": 97,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -639,24 +639,6 @@
         "lng": 115.5
       },
       {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 33,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826100932.html",
-          "issuedAt": "2026/08/26 10:09"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -664,7 +646,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 29,
+        "count": 33,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -674,6 +656,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 32,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826100932.html",
+          "issuedAt": "2026/08/26 10:09"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "辽宁",
@@ -694,31 +694,13 @@
         "lng": 122.6
       },
       {
-        "province": "福建",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 22,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826090300.html",
-          "issuedAt": "2026/08/26 09:03"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
         "province": "江西",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 18,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -730,13 +712,32 @@
         "lng": 115.7
       },
       {
+        "province": "广西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "台风": "blue"
+        },
+        "count": 12,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广西壮族自治区防城港市东兴市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45068141600000_20260826145407.html",
+          "issuedAt": "2026/08/26 14:48"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
         "province": "内蒙古",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -774,7 +775,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 53,
+        "count": 54,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -784,6 +785,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 22,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省漳州市漳浦县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062341600000_20260826123300.html",
+          "issuedAt": "2026/08/26 12:33"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "宁夏",
@@ -814,7 +833,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -824,25 +843,6 @@
         },
         "lat": 39.3,
         "lng": 117.3
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 10,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区防城港市东兴市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45068141600000_20260826142749.html",
-          "issuedAt": "2026/08/26 14:19"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "黑龙江",
@@ -908,7 +908,7 @@
           "台风": "blue",
           "地质灾害": "yellow"
         },
-        "count": 20,
+        "count": 21,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -986,7 +986,7 @@
       "endedAt": "2026-08-25 15:09",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 0
+      "daysSince": 1
     },
     {
       "code": "2620",
@@ -1013,7 +1013,7 @@
         "安徽",
         "江苏"
       ],
-      "ongoingFloodLevel": "red",
+      "ongoingFloodLevel": "orange",
       "daysSince": 3
     },
     {
