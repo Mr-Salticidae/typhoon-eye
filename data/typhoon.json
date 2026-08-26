@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 11:56",
+  "updatedAt": "2026-08-26 12:19",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 115 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 106 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 08时",
+            "time": "08-26 11时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -205,7 +205,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 33,
+            "count": 28,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -224,7 +224,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 11,
+            "count": 8,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -242,13 +242,13 @@
             "kinds": {
               "台风": "blue"
             },
-            "count": 2,
+            "count": 1,
             "top": {
               "kind": "台风",
               "level": "blue",
-              "title": "海南省气象台发布台风蓝色预警",
-              "url": "http://www.nmc.cn/publish/alarm/46000041600000_20260825180002.html",
-              "issuedAt": "2026/08/25 18:00"
+              "title": "海南省澄迈县气象台发布台风蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46902341600000_20260825173501.html",
+              "issuedAt": "2026/08/25 17:35"
             },
             "via": "路径邻近",
             "distKm": 266
@@ -493,7 +493,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 22,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -511,7 +511,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 24,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -529,7 +529,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 22,
+            "count": 23,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -548,7 +548,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 33,
+            "count": 28,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -567,7 +567,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 11,
+            "count": 8,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -586,7 +586,7 @@
               "台风": "blue",
               "地质灾害": "yellow"
             },
-            "count": 9,
+            "count": 12,
             "top": {
               "kind": "地质灾害",
               "level": "yellow",
@@ -609,13 +609,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 512,
+    "total": 474,
     "counts": {
-      "暴雨": 322,
-      "台风": 22,
-      "山洪灾害": 69,
+      "暴雨": 287,
+      "台风": 21,
+      "山洪灾害": 66,
       "山洪风险": 4,
-      "地质灾害": 95
+      "地质灾害": 96
     },
     "peak": {
       "province": "山西",
@@ -635,7 +635,7 @@
           "山洪灾害": "red",
           "地质灾害": "orange"
         },
-        "count": 126,
+        "count": 125,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
@@ -655,7 +655,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 113,
+        "count": 104,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -674,7 +674,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 33,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -704,31 +704,13 @@
         "lng": 122.6
       },
       {
-        "province": "福建",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 24,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826090300.html",
-          "issuedAt": "2026/08/26 09:03"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
         "province": "湖南",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 22,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -740,13 +722,31 @@
         "lng": 111.7
       },
       {
+        "province": "福建",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 21,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826090300.html",
+          "issuedAt": "2026/08/26 09:03"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "江西",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 22,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -802,7 +802,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 60,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -822,7 +822,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 22,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -842,7 +842,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 13,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -861,7 +861,7 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 11,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -871,26 +871,6 @@
         },
         "lat": 23.8,
         "lng": 108.8
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "陕西省榆林市靖边县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61082441600000_20260826073431.html",
-          "issuedAt": "2026/08/26 07:34"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "新疆",
@@ -911,6 +891,26 @@
         "lng": 85.3
       },
       {
+        "province": "陕西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "orange",
+          "title": "陕西省气象台发布山洪灾害橙色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260825185954.html",
+          "issuedAt": "2026/08/25 18:59"
+        },
+        "lat": 35.2,
+        "lng": 108.9
+      },
+      {
         "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -918,7 +918,7 @@
           "台风": "blue",
           "地质灾害": "yellow"
         },
-        "count": 9,
+        "count": 12,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -938,7 +938,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 8,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -1010,13 +1010,13 @@
         "kinds": {
           "台风": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "台风",
           "level": "blue",
-          "title": "海南省气象台发布台风蓝色预警",
-          "url": "http://www.nmc.cn/publish/alarm/46000041600000_20260825180002.html",
-          "issuedAt": "2026/08/25 18:00"
+          "title": "海南省澄迈县气象台发布台风蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46902341600000_20260825173501.html",
+          "issuedAt": "2026/08/25 17:35"
         },
         "lat": 19.2,
         "lng": 109.7
