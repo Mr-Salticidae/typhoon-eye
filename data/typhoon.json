@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27 02:45",
+  "updatedAt": "2026-08-27 03:07",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,8 +31,8 @@
       "enName": "SAUDEL",
       "code": "2618",
       "level": "台风（13级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
@@ -193,10 +193,118 @@
           "wind": 13,
           "strong": "台风",
           "phase": "now"
+        },
+        {
+          "t": "08-27 08时",
+          "lat": 28.6,
+          "lng": 124.7,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-27 14时",
+          "lat": 28.5,
+          "lng": 124.3,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-27 20时",
+          "lat": 28.3,
+          "lng": 123.5,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-28 02时",
+          "lat": 28.2,
+          "lng": 122.7,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-28 14时",
+          "lat": 27.8,
+          "lng": 120.4,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-29 02时",
+          "lat": 27.3,
+          "lng": 117.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-29 14时",
+          "lat": 26.9,
+          "lng": 114.9,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-30 02时",
+          "lat": 26.2,
+          "lng": 112.9,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-31 02时",
+          "lat": 25.1,
+          "lng": 111,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
         "provinces": [
+          {
+            "province": "湖南",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 27,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826100932.html",
+              "issuedAt": "2026/08/26 10:09"
+            },
+            "via": "路径邻近",
+            "distKm": 196
+          },
+          {
+            "province": "广西",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 4,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "广西壮族自治区钦州市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45070041600000_20260826162603.html",
+              "issuedAt": "2026/08/26 16:22"
+            },
+            "via": "路径邻近",
+            "distKm": 265
+          },
           {
             "province": "广东",
             "maxLevel": "red",
@@ -205,7 +313,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 43,
+            "count": 44,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -213,8 +321,26 @@
               "url": "http://www.nmc.cn/publish/alarm/44190041600000_20260827022926.html",
               "issuedAt": "2026/08/27 02:25"
             },
-            "via": "台风预警",
-            "distKm": 1317
+            "via": "路径邻近",
+            "distKm": 308
+          },
+          {
+            "province": "江西",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 11,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "江西省吉安市遂川县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/36082741600000_20260826153206.html",
+              "issuedAt": "2026/08/26 15:28"
+            },
+            "via": "路径邻近",
+            "distKm": 111
           },
           {
             "province": "浙江",
@@ -232,8 +358,8 @@
               "url": "http://www.nmc.cn/publish/alarm/33108241600000_20260826221135.html",
               "issuedAt": "2026/08/26 22:10"
             },
-            "via": "台风预警",
-            "distKm": 490
+            "via": "路径邻近",
+            "distKm": 157
           },
           {
             "province": "上海",
@@ -250,13 +376,13 @@
               "url": "http://www.nmc.cn/publish/alarm/31012041600000_20260826190125.html",
               "issuedAt": "2026/08/26 19:00"
             },
-            "via": "台风预警",
-            "distKm": 452
+            "via": "路径邻近",
+            "distKm": 353
           }
         ],
         "floodLevel": "red",
         "maxLevel": "red",
-        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高红色。"
+        "note": "台风影响范围内有 6 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -330,7 +456,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 43,
+        "count": 44,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -366,7 +492,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 18,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -441,7 +567,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -451,6 +577,24 @@
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "山东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "山东省滨州市沾化区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37160341600000_20260826172314.html",
+          "issuedAt": "2026/08/26 17:25"
+        },
+        "lat": 36.4,
+        "lng": 118.2
       },
       {
         "province": "甘肃",
@@ -470,24 +614,6 @@
         },
         "lat": 37.8,
         "lng": 101.1
-      },
-      {
-        "province": "山东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "山东省滨州市沾化区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37160341600000_20260826172314.html",
-          "issuedAt": "2026/08/26 17:25"
-        },
-        "lat": 36.4,
-        "lng": 118.2
       },
       {
         "province": "陕西",
@@ -534,13 +660,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "四川省雅安市荥经县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51182241600000_20260827014716.html",
-          "issuedAt": "2026/08/27 01:47"
+          "title": "四川省泸州市合江县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51052241600000_20260827024039.html",
+          "issuedAt": "2026/08/27 02:40"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -617,24 +743,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "吉林",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "吉林省白山市抚松县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22062141600000_20260826025730.html",
-          "issuedAt": "2026/08/26 02:55"
-        },
-        "lat": 43.7,
-        "lng": 126.2
       }
     ]
   },
