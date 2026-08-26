@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 22:00",
+  "updatedAt": "2026-08-26 22:21",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -197,7 +197,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 18,
+            "count": 10,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -216,7 +216,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 36,
+            "count": 30,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -244,19 +244,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-26 21时",
+            "time": "08-26 22时",
             "windLevel": 14,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-26 21时",
+            "time": "08-26 22时",
             "windLevel": 14,
             "role": "verify"
           },
@@ -277,8 +277,8 @@
         "moveSpeed": 10,
         "r7": 400,
         "r10": 150,
-        "time": "08-26 21时",
-        "position": "中心位于北纬 28.6 度、东经 126.0 度"
+        "time": "08-26 22时",
+        "position": "中心位于北纬 28.6 度、东经 125.8 度"
       },
       "track": [
         {
@@ -338,57 +338,49 @@
           "phase": "past"
         },
         {
-          "t": "08-23 17时",
-          "lat": 22.3,
-          "lng": 140.4,
+          "t": "08-23 20时",
+          "lat": 22.6,
+          "lng": 139.6,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-24 08时",
-          "lat": 23.9,
-          "lng": 136.5,
+          "t": "08-24 11时",
+          "lat": 24.1,
+          "lng": 135.6,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-24 23时",
-          "lat": 25.2,
-          "lng": 132.9,
+          "t": "08-25 02时",
+          "lat": 25.5,
+          "lng": 132.3,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-25 14时",
-          "lat": 26.7,
-          "lng": 130.1,
-          "wind": 15,
+          "t": "08-25 17时",
+          "lat": 27,
+          "lng": 129.7,
+          "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "08-26 05时",
+          "t": "08-26 08时",
           "lat": 27.7,
-          "lng": 127.7,
+          "lng": 127.3,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "08-26 15时",
+          "t": "08-26 16时",
           "lat": 28.4,
-          "lng": 126.5,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-26 20时",
-          "lat": 28.6,
-          "lng": 126,
+          "lng": 126.4,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -399,76 +391,84 @@
           "lng": 126,
           "wind": 14,
           "strong": "强台风",
+          "phase": "past"
+        },
+        {
+          "t": "08-26 22时",
+          "lat": 28.6,
+          "lng": 125.8,
+          "wind": 14,
+          "strong": "强台风",
           "phase": "now"
         },
         {
-          "t": "08-27 03时",
-          "lat": 28.6833,
-          "lng": 125.2167,
+          "t": "08-27 04时",
+          "lat": 28.6667,
+          "lng": 125.1333,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-27 09时",
-          "lat": 28.5833,
-          "lng": 124.7,
+          "t": "08-27 10时",
+          "lat": 28.5667,
+          "lng": 124.6,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-27 15时",
-          "lat": 28.4667,
-          "lng": 124.05,
+          "t": "08-27 16时",
+          "lat": 28.4333,
+          "lng": 123.9,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-27 21时",
-          "lat": 28.2833,
-          "lng": 123.1667,
+          "t": "08-27 22时",
+          "lat": 28.2667,
+          "lng": 123.0333,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "08-28 09时",
-          "lat": 28.0583,
-          "lng": 121.4667,
+          "t": "08-28 10时",
+          "lat": 28.0167,
+          "lng": 121.2333,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "08-28 21时",
-          "lat": 27.5583,
-          "lng": 118.7,
+          "t": "08-28 22时",
+          "lat": 27.5167,
+          "lng": 118.5,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-29 09时",
-          "lat": 27.0417,
-          "lng": 116.3,
+          "t": "08-29 10时",
+          "lat": 26.9833,
+          "lng": 116.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-29 21时",
-          "lat": 26.3583,
-          "lng": 114.025,
+          "t": "08-29 22时",
+          "lat": 26.3167,
+          "lng": 113.95,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-30 21时",
-          "lat": 25.3583,
-          "lng": 112.225,
+          "t": "08-30 22时",
+          "lat": 25.3167,
+          "lng": 112.15,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -483,7 +483,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 17,
+            "count": 15,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -492,7 +492,7 @@
               "issuedAt": "2026/08/25 23:25"
             },
             "via": "路径邻近",
-            "distKm": 86
+            "distKm": 79
           },
           {
             "province": "广东",
@@ -502,7 +502,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 36,
+            "count": 30,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -529,7 +529,7 @@
               "issuedAt": "2026/08/26 10:09"
             },
             "via": "路径邻近",
-            "distKm": 255
+            "distKm": 258
           },
           {
             "province": "广西",
@@ -538,7 +538,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 18,
+            "count": 10,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -547,25 +547,25 @@
               "issuedAt": "2026/08/26 16:22"
             },
             "via": "路径邻近",
-            "distKm": 387
+            "distKm": 378
           },
           {
             "province": "福建",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
+            "maxLevel": "yellow",
+            "floodLevel": "yellow",
             "kinds": {
-              "暴雨": "orange"
+              "暴雨": "yellow"
             },
-            "count": 15,
+            "count": 5,
             "top": {
               "kind": "暴雨",
-              "level": "orange",
-              "title": "福建省宁德市古田县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35092241600000_20260826182700.html",
-              "issuedAt": "2026/08/26 18:27"
+              "level": "yellow",
+              "title": "福建省龙岩市新罗区气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260826192000.html",
+              "issuedAt": "2026/08/26 19:20"
             },
             "via": "路径邻近",
-            "distKm": 167
+            "distKm": 159
           },
           {
             "province": "浙江",
@@ -579,12 +579,12 @@
             "top": {
               "kind": "台风",
               "level": "yellow",
-              "title": "浙江省台州市椒江区气象台发布台风黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/33100241600000_20260826215058.html",
-              "issuedAt": "2026/08/26 21:50"
+              "title": "浙江省台州市临海市气象台发布台风黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33108241600000_20260826221135.html",
+              "issuedAt": "2026/08/26 22:10"
             },
             "via": "路径邻近",
-            "distKm": 177
+            "distKm": 166
           },
           {
             "province": "上海",
@@ -597,12 +597,12 @@
             "top": {
               "kind": "台风",
               "level": "blue",
-              "title": "上海市气象台发布台风蓝色预警",
-              "url": "http://www.nmc.cn/publish/alarm/31000041600000_20260826190534.html",
+              "title": "上海市闵行区气象台发布台风蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/31011241600000_20260826190126.html",
               "issuedAt": "2026/08/26 19:00"
             },
             "via": "路径邻近",
-            "distKm": 349
+            "distKm": 355
           }
         ],
         "floodLevel": "red",
@@ -616,9 +616,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 521,
+    "total": 479,
     "counts": {
-      "暴雨": 293,
+      "暴雨": 251,
       "台风": 46,
       "山洪灾害": 51,
       "山洪风险": 8,
@@ -642,7 +642,7 @@
           "山洪灾害": "red",
           "地质灾害": "orange"
         },
-        "count": 146,
+        "count": 139,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
@@ -662,13 +662,13 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 59,
+        "count": 57,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "河北省沧州市渤海新区黄骅市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13098341600000_20260826142315.html",
-          "issuedAt": "2026/08/26 14:23"
+          "title": "河北省沧州市沧县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13092141600000_20260826075214.html",
+          "issuedAt": "2026/08/26 07:52"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -681,7 +681,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 36,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -729,31 +729,13 @@
         "lng": 122.6
       },
       {
-        "province": "广西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 18,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广西壮族自治区钦州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45070041600000_20260826162603.html",
-          "issuedAt": "2026/08/26 16:22"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
         "province": "江西",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 17,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -765,6 +747,24 @@
         "lng": 115.7
       },
       {
+        "province": "广西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广西壮族自治区钦州市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45070041600000_20260826162603.html",
+          "issuedAt": "2026/08/26 16:22"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -773,7 +773,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 83,
+        "count": 81,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -792,7 +792,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 18,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -804,24 +804,6 @@
         "lng": 106.2
       },
       {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省宁德市古田县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35092241600000_20260826182700.html",
-          "issuedAt": "2026/08/26 18:27"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
         "province": "陕西",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -830,7 +812,7 @@
           "山洪灾害": "orange",
           "地质灾害": "yellow"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -840,24 +822,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "黑龙江省鹤岗市萝北县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23042141600000_20260826124828.html",
-          "issuedAt": "2026/08/26 13:01"
-        },
-        "lat": 47.4,
-        "lng": 128.1
       },
       {
         "province": "新疆",
@@ -884,7 +848,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -894,6 +858,24 @@
         },
         "lat": 36.4,
         "lng": 118.2
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "黑龙江省鹤岗市萝北县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23042141600000_20260826124828.html",
+          "issuedAt": "2026/08/26 13:01"
+        },
+        "lat": 47.4,
+        "lng": 128.1
       },
       {
         "province": "浙江",
@@ -907,9 +889,9 @@
         "top": {
           "kind": "台风",
           "level": "yellow",
-          "title": "浙江省台州市椒江区气象台发布台风黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33100241600000_20260826215058.html",
-          "issuedAt": "2026/08/26 21:50"
+          "title": "浙江省台州市临海市气象台发布台风黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33108241600000_20260826221135.html",
+          "issuedAt": "2026/08/26 22:10"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -922,16 +904,34 @@
           "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "甘肃省庆阳市环县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/62102241600000_20260826204600.html",
-          "issuedAt": "2026/08/26 20:46"
+          "title": "甘肃省庆阳市合水县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/62102441600000_20260826220103.html",
+          "issuedAt": "2026/08/26 22:01"
         },
         "lat": 37.8,
         "lng": 101.1
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省龙岩市新罗区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260826192000.html",
+          "issuedAt": "2026/08/26 19:20"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "四川",
@@ -980,8 +980,8 @@
         "top": {
           "kind": "台风",
           "level": "blue",
-          "title": "上海市气象台发布台风蓝色预警",
-          "url": "http://www.nmc.cn/publish/alarm/31000041600000_20260826190534.html",
+          "title": "上海市闵行区气象台发布台风蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/31011241600000_20260826190126.html",
           "issuedAt": "2026/08/26 19:00"
         },
         "lat": 31.2,
@@ -1061,7 +1061,7 @@
         "安徽",
         "江苏"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": "yellow",
       "daysSince": 4
     },
     {
