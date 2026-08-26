@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 10:11",
+  "updatedAt": "2026-08-26 10:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -213,7 +213,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 33,
+            "count": 31,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -278,7 +278,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 37 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 45 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -297,7 +297,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 09时",
+            "time": "08-26 10时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -519,7 +519,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 21,
+            "count": 23,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -542,8 +542,8 @@
               "kind": "暴雨",
               "level": "red",
               "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826094020.html",
-              "issuedAt": "2026/08/26 09:40"
+              "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826100932.html",
+              "issuedAt": "2026/08/26 10:09"
             },
             "via": "路径邻近",
             "distKm": 240
@@ -556,7 +556,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 33,
+            "count": 31,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -575,7 +575,7 @@
               "台风": "blue",
               "地质灾害": "yellow"
             },
-            "count": 3,
+            "count": 5,
             "top": {
               "kind": "地质灾害",
               "level": "yellow",
@@ -617,23 +617,43 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 497,
+    "total": 504,
     "counts": {
-      "暴雨": 311,
+      "暴雨": 315,
       "台风": 21,
       "山洪灾害": 74,
       "山洪风险": 4,
-      "地质灾害": 87
+      "地质灾害": 90
     },
     "peak": {
-      "province": "河北",
-      "kind": "暴雨",
+      "province": "山西",
+      "kind": "山洪灾害",
       "level": "red",
-      "title": "河北省沧州市沧县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/13092141600000_20260826075214.html",
-      "issuedAt": "2026/08/26 07:52"
+      "title": "山西省忻州市五寨县水利局 五寨县气象台发布山洪灾害气象风险红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/14092841600000_20260826103338.html",
+      "issuedAt": "2026/08/26 10:30"
     },
     "provinces": [
+      {
+        "province": "山西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "red",
+          "地质灾害": "orange"
+        },
+        "count": 119,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "red",
+          "title": "山西省忻州市五寨县水利局 五寨县气象台发布山洪灾害气象风险红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14092841600000_20260826103338.html",
+          "issuedAt": "2026/08/26 10:30"
+        },
+        "lat": 37.6,
+        "lng": 112.3
+      },
       {
         "province": "河北",
         "maxLevel": "red",
@@ -643,7 +663,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 119,
+        "count": 117,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -655,26 +675,6 @@
         "lng": 115.5
       },
       {
-        "province": "山西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "red",
-          "地质灾害": "orange"
-        },
-        "count": 116,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "red",
-          "title": "山西省忻州市神池县气象台发布山洪灾害气象风险红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14092741600000_20260826095644.html",
-          "issuedAt": "2026/08/26 09:55"
-        },
-        "lat": 37.6,
-        "lng": 112.3
-      },
-      {
         "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -682,7 +682,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 33,
+        "count": 31,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -712,6 +712,24 @@
         "lng": 122.6
       },
       {
+        "province": "福建",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 23,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826090300.html",
+          "issuedAt": "2026/08/26 09:03"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "江西",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -730,24 +748,6 @@
         "lng": 115.7
       },
       {
-        "province": "福建",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 21,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "福建省漳州市诏安县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260826090300.html",
-          "issuedAt": "2026/08/26 09:03"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
         "province": "湖南",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -759,8 +759,8 @@
           "kind": "暴雨",
           "level": "red",
           "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826094020.html",
-          "issuedAt": "2026/08/26 09:40"
+          "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826100932.html",
+          "issuedAt": "2026/08/26 10:09"
         },
         "lat": 27.6,
         "lng": 111.7
@@ -822,6 +822,26 @@
         "lng": 101.5
       },
       {
+        "province": "宁夏",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 22,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "宁夏回族自治区银川市气象台发布城市暴雨积涝橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64010041600000_20260826071248.html",
+          "issuedAt": "2026/08/26 06:40"
+        },
+        "lat": 37.3,
+        "lng": 106.2
+      },
+      {
         "province": "天津",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -830,7 +850,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 14,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -880,26 +900,6 @@
         "lng": 85.3
       },
       {
-        "province": "宁夏",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 20,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "宁夏回族自治区石嘴山市平罗县气象台发布山洪灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64022141600000_20260825180158.html",
-          "issuedAt": "2026/08/25 18:00"
-        },
-        "lat": 37.3,
-        "lng": 106.2
-      },
-      {
         "province": "甘肃",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -927,7 +927,7 @@
           "台风": "blue",
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 5,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
