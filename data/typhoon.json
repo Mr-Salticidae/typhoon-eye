@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26 17:30",
+  "updatedAt": "2026-08-26 17:52",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -245,7 +245,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -264,7 +264,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-26 14时",
+            "time": "08-26 17时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -502,7 +502,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 29,
+            "count": 28,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -539,7 +539,7 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 21,
+            "count": 20,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -558,7 +558,7 @@
               "台风": "blue",
               "地质灾害": "yellow"
             },
-            "count": 29,
+            "count": 30,
             "top": {
               "kind": "地质灾害",
               "level": "yellow",
@@ -581,13 +581,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 464,
+    "total": 460,
     "counts": {
-      "暴雨": 293,
-      "台风": 32,
+      "暴雨": 286,
+      "台风": 33,
       "山洪灾害": 48,
       "山洪风险": 3,
-      "地质灾害": 88
+      "地质灾害": 90
     },
     "peak": {
       "province": "山西",
@@ -607,7 +607,7 @@
           "山洪灾害": "red",
           "地质灾害": "orange"
         },
-        "count": 116,
+        "count": 118,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
@@ -627,7 +627,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 82,
+        "count": 74,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -664,7 +664,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 29,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -759,7 +759,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 58,
+        "count": 61,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -777,7 +777,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 21,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -808,6 +808,24 @@
         "lng": 106.2
       },
       {
+        "province": "山东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "山东省滨州市沾化区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37160341600000_20260826172314.html",
+          "issuedAt": "2026/08/26 17:25"
+        },
+        "lat": 36.4,
+        "lng": 118.2
+      },
+      {
         "province": "黑龙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -824,24 +842,6 @@
         },
         "lat": 47.4,
         "lng": 128.1
-      },
-      {
-        "province": "山东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "山东省滨州市沾化区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37160341600000_20260826172314.html",
-          "issuedAt": "2026/08/26 17:25"
-        },
-        "lat": 36.4,
-        "lng": 118.2
       },
       {
         "province": "新疆",
@@ -862,25 +862,6 @@
         "lng": 85.3
       },
       {
-        "province": "天津",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "天津市津南区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/12011241600000_20260825204045.html",
-          "issuedAt": "2026/08/25 20:43"
-        },
-        "lat": 39.3,
-        "lng": 117.3
-      },
-      {
         "province": "四川",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -897,6 +878,24 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "天津",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "天津市津南区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/12011241600000_20260825204045.html",
+          "issuedAt": "2026/08/25 20:43"
+        },
+        "lat": 39.3,
+        "lng": 117.3
       },
       {
         "province": "陕西",
@@ -926,7 +925,7 @@
           "台风": "blue",
           "地质灾害": "yellow"
         },
-        "count": 29,
+        "count": 30,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -1026,7 +1025,7 @@
         "广东"
       ],
       "ongoingFloodLevel": "red",
-      "daysSince": 4
+      "daysSince": 5
     }
   ]
 }
