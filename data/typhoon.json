@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27 09:45",
+  "updatedAt": "2026-08-27 10:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -276,7 +276,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 27,
+            "count": 23,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -288,31 +288,13 @@
             "distKm": 178
           },
           {
-            "province": "湖南",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red"
-            },
-            "count": 25,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826100932.html",
-              "issuedAt": "2026/08/26 10:09"
-            },
-            "via": "路径邻近",
-            "distKm": 191
-          },
-          {
             "province": "广东",
             "maxLevel": "red",
             "floodLevel": "red",
             "kinds": {
               "暴雨": "red"
             },
-            "count": 54,
+            "count": 45,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -343,23 +325,59 @@
           },
           {
             "province": "浙江",
-            "maxLevel": "yellow",
+            "maxLevel": "orange",
             "floodLevel": "yellow",
             "kinds": {
-              "台风": "yellow",
+              "台风": "orange",
               "山洪灾害": "yellow",
               "地质灾害": "yellow"
             },
-            "count": 42,
+            "count": 43,
             "top": {
               "kind": "台风",
-              "level": "yellow",
-              "title": "浙江省台州市临海市气象台发布台风黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/33108241600000_20260826221135.html",
-              "issuedAt": "2026/08/26 22:10"
+              "level": "orange",
+              "title": "浙江省温州市洞头区气象台发布台风橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33030541600000_20260827100133.html",
+              "issuedAt": "2026/08/27 10:00"
             },
             "via": "路径邻近",
             "distKm": 145
+          },
+          {
+            "province": "湖南",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 21,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "湖南省永州市蓝山县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/43112741600000_20260826154716.html",
+              "issuedAt": "2026/08/26 15:47"
+            },
+            "via": "路径邻近",
+            "distKm": 191
+          },
+          {
+            "province": "福建",
+            "maxLevel": "yellow",
+            "floodLevel": null,
+            "kinds": {
+              "台风": "yellow"
+            },
+            "count": 1,
+            "top": {
+              "kind": "台风",
+              "level": "yellow",
+              "title": "福建省宁德市福鼎市气象台发布台风黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35098241600000_20260827095400.html",
+              "issuedAt": "2026/08/27 09:54"
+            },
+            "via": "路径邻近",
+            "distKm": 212
           },
           {
             "province": "贵州",
@@ -400,7 +418,7 @@
         ],
         "floodLevel": "red",
         "maxLevel": "red",
-        "note": "台风影响范围内有 7 个省级行政区发布洪涝类预警，最高红色。"
+        "note": "台风影响范围内有 8 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -409,13 +427,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 469,
+    "total": 415,
     "counts": {
-      "暴雨": 236,
-      "台风": 50,
-      "山洪灾害": 48,
+      "暴雨": 179,
+      "台风": 52,
+      "山洪灾害": 47,
       "山洪风险": 10,
-      "地质灾害": 125
+      "地质灾害": 127
     },
     "peak": {
       "province": "山西",
@@ -435,7 +453,7 @@
           "山洪灾害": "red",
           "地质灾害": "orange"
         },
-        "count": 125,
+        "count": 119,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
@@ -453,7 +471,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 54,
+        "count": 45,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -471,7 +489,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 27,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -483,24 +501,6 @@
         "lng": 108.8
       },
       {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 25,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省永州市新田县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43112841600000_20260826100932.html",
-          "issuedAt": "2026/08/26 10:09"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -509,36 +509,54 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 95,
+        "count": 88,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省德宏傣族景颇族自治州陇川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53312441600000_20260827065408.html",
-          "issuedAt": "2026/08/27 06:53"
+          "title": "云南省西双版纳傣族自治州景洪市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53280141600000_20260827101105.html",
+          "issuedAt": "2026/08/27 10:10"
         },
         "lat": 25,
         "lng": 101.5
       },
       {
-        "province": "河北",
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "yellow",
+        "kinds": {
+          "台风": "orange",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 43,
+        "top": {
+          "kind": "台风",
+          "level": "orange",
+          "title": "浙江省温州市洞头区气象台发布台风橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33030541600000_20260827100133.html",
+          "issuedAt": "2026/08/27 10:00"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
+        "province": "湖南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
+          "暴雨": "orange"
         },
-        "count": 35,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "河北省石家庄市行唐县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13012541600000_20260826155421.html",
-          "issuedAt": "2026/08/26 15:54"
+          "title": "湖南省永州市蓝山县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43112741600000_20260826154716.html",
+          "issuedAt": "2026/08/26 15:47"
         },
-        "lat": 38.5,
-        "lng": 115.5
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "山东",
@@ -547,7 +565,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 17,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -581,39 +599,20 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange",
+          "暴雨": "blue",
           "山洪灾害": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "陕西省延安市志丹县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61062541600000_20260827045550.html",
-          "issuedAt": "2026/08/27 04:55"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      },
-      {
-        "province": "甘肃",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
           "地质灾害": "yellow"
         },
         "count": 4,
         "top": {
-          "kind": "暴雨",
+          "kind": "山洪灾害",
           "level": "orange",
-          "title": "甘肃省庆阳市庆城县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/62102141600000_20260827005659.html",
-          "issuedAt": "2026/08/27 00:56"
+          "title": "陕西省气象台发布山洪灾害橙色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260826181907.html",
+          "issuedAt": "2026/08/26 18:19"
         },
-        "lat": 37.8,
-        "lng": 101.1
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "黑龙江",
@@ -652,24 +651,23 @@
         "lng": 85.3
       },
       {
-        "province": "浙江",
+        "province": "河北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "台风": "yellow",
-          "山洪灾害": "yellow",
+          "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 42,
+        "count": 16,
         "top": {
-          "kind": "台风",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "浙江省台州市临海市气象台发布台风黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33108241600000_20260826221135.html",
-          "issuedAt": "2026/08/26 22:10"
+          "title": "河北省石家庄市灵寿县气象台发布地质灾害气象风险黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13012641600000_20260826135503.html",
+          "issuedAt": "2026/08/26 13:55"
         },
-        "lat": 29.2,
-        "lng": 120.2
+        "lat": 38.5,
+        "lng": 115.5
       },
       {
         "province": "宁夏",
@@ -680,7 +678,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 14,
+        "count": 15,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -710,6 +708,43 @@
         "lng": 106.9
       },
       {
+        "province": "甘肃",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "甘肃省自然资源厅、甘肃省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260826190216.html",
+          "issuedAt": "2026/08/26 19:00"
+        },
+        "lat": 37.8,
+        "lng": 101.1
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": null,
+        "kinds": {
+          "台风": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "台风",
+          "level": "yellow",
+          "title": "福建省宁德市福鼎市气象台发布台风黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35098241600000_20260827095400.html",
+          "issuedAt": "2026/08/27 09:54"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "上海",
         "maxLevel": "blue",
         "floodLevel": null,
@@ -734,7 +769,7 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
