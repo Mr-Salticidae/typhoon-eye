@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28 01:30",
+  "updatedAt": "2026-08-28 02:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -415,7 +415,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 25,
+            "count": 28,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -454,13 +454,13 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 45,
+            "count": 46,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省广州市黄埔区气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44011241600000_20260828004446.html",
-              "issuedAt": "2026/08/28 00:45"
+              "title": "广东省东莞市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44190041600000_20260828013508.html",
+              "issuedAt": "2026/08/28 01:33"
             },
             "via": "路径邻近",
             "distKm": 306
@@ -485,18 +485,18 @@
           },
           {
             "province": "湖南",
-            "maxLevel": "yellow",
-            "floodLevel": "yellow",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
             "kinds": {
-              "暴雨": "yellow"
+              "暴雨": "orange"
             },
-            "count": 14,
+            "count": 15,
             "top": {
               "kind": "暴雨",
-              "level": "yellow",
-              "title": "湖南省娄底市新化县气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/43132241600000_20260827214941.html",
-              "issuedAt": "2026/08/27 21:49"
+              "level": "orange",
+              "title": "湖南省常德市桃源县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/43072541600000_20260828015438.html",
+              "issuedAt": "2026/08/28 01:54"
             },
             "via": "路径邻近",
             "distKm": 191
@@ -513,9 +513,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 435,
+    "total": 448,
     "counts": {
-      "暴雨": 178,
+      "暴雨": 191,
       "台风": 108,
       "山洪灾害": 37,
       "山洪风险": 4,
@@ -539,7 +539,7 @@
           "山洪灾害": "red",
           "地质灾害": "orange"
         },
-        "count": 99,
+        "count": 100,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -572,22 +572,60 @@
         "lng": 120.2
       },
       {
+        "province": "云南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪风险": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 78,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "云南省迪庆藏族自治州维西县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53342341600000_20260828012821.html",
+          "issuedAt": "2026/08/28 01:28"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 45,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省广州市黄埔区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44011241600000_20260828004446.html",
-          "issuedAt": "2026/08/28 00:45"
+          "title": "广东省东莞市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44190041600000_20260828013508.html",
+          "issuedAt": "2026/08/28 01:33"
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "广西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 28,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广西壮族自治区北海市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45050041600000_20260827213308.html",
+          "issuedAt": "2026/08/27 21:30"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "陕西",
@@ -610,31 +648,13 @@
         "lng": 108.9
       },
       {
-        "province": "广西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 25,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广西壮族自治区北海市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45050041600000_20260827213308.html",
-          "issuedAt": "2026/08/27 21:30"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
         "province": "四川",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 8,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -644,26 +664,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪风险": "yellow",
-          "地质灾害": "orange"
-        },
-        "count": 77,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省西双版纳傣族自治州勐海县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53282241600000_20260828001439.html",
-          "issuedAt": "2026/08/28 00:15"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "福建",
@@ -682,6 +682,24 @@
         },
         "lat": 26.1,
         "lng": 118.3
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省常德市桃源县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43072541600000_20260828015438.html",
+          "issuedAt": "2026/08/28 01:54"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "甘肃",
@@ -721,24 +739,6 @@
         "lng": 112.3
       },
       {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 14,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省娄底市新化县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43132241600000_20260827214941.html",
-          "issuedAt": "2026/08/27 21:49"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "宁夏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -759,6 +759,26 @@
         "lng": 106.2
       },
       {
+        "province": "河北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "河北省石家庄市井陉县气象台发布地质灾害气象风险黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13012141600000_20260827223519.html",
+          "issuedAt": "2026/08/27 22:35"
+        },
+        "lat": 38.5,
+        "lng": 115.5
+      },
+      {
         "province": "山东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -777,39 +797,19 @@
         "lng": 118.2
       },
       {
-        "province": "河北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "河北省石家庄市井陉县气象台发布地质灾害气象风险黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13012141600000_20260827223519.html",
-          "issuedAt": "2026/08/27 22:35"
-        },
-        "lat": 38.5,
-        "lng": 115.5
-      },
-      {
         "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 2,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省黔西南布依族苗族自治州兴义市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52230141600000_20260828005024.html",
-          "issuedAt": "2026/08/28 00:50"
+          "title": "贵州省黔西南布依族苗族自治州兴仁市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52230241600000_20260828014609.html",
+          "issuedAt": "2026/08/28 01:46"
         },
         "lat": 26.8,
         "lng": 106.9
