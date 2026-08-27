@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27 19:15",
+  "updatedAt": "2026-08-27 19:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -401,7 +401,7 @@
               "山洪灾害": "red",
               "地质灾害": "red"
             },
-            "count": 75,
+            "count": 76,
             "top": {
               "kind": "台风",
               "level": "red",
@@ -437,7 +437,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 31,
+            "count": 32,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -515,23 +515,43 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 429,
+    "total": 434,
     "counts": {
-      "暴雨": 181,
-      "台风": 84,
-      "山洪灾害": 42,
-      "山洪风险": 11,
-      "地质灾害": 111
+      "暴雨": 193,
+      "台风": 85,
+      "山洪灾害": 38,
+      "山洪风险": 10,
+      "地质灾害": 108
     },
     "peak": {
-      "province": "云南",
-      "kind": "暴雨",
+      "province": "山西",
+      "kind": "山洪灾害",
       "level": "red",
-      "title": "云南省红河哈尼族彝族自治州蒙自市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53250341600000_20260827152038.html",
-      "issuedAt": "2026/08/27 15:19"
+      "title": "山西省临汾市大宁县应急管理局、大宁县水利局与大宁县气象台发布山洪灾害气象风险红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/14103041600000_20260827191701.html",
+      "issuedAt": "2026/08/27 19:16"
     },
     "provinces": [
+      {
+        "province": "山西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "red",
+          "地质灾害": "orange"
+        },
+        "count": 103,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "red",
+          "title": "山西省临汾市大宁县应急管理局、大宁县水利局与大宁县气象台发布山洪灾害气象风险红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14103041600000_20260827191701.html",
+          "issuedAt": "2026/08/27 19:16"
+        },
+        "lat": 37.6,
+        "lng": 112.3
+      },
       {
         "province": "云南",
         "maxLevel": "red",
@@ -541,7 +561,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 105,
+        "count": 103,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -553,26 +573,6 @@
         "lng": 101.5
       },
       {
-        "province": "山西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "red",
-          "地质灾害": "orange"
-        },
-        "count": 104,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "red",
-          "title": "山西省临汾市水利局与临汾市气象台发布山洪灾害气象风险红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14100041600000_20260827185648.html",
-          "issuedAt": "2026/08/27 18:55"
-        },
-        "lat": 37.6,
-        "lng": 112.3
-      },
-      {
         "province": "浙江",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -581,7 +581,7 @@
           "山洪灾害": "red",
           "地质灾害": "red"
         },
-        "count": 75,
+        "count": 76,
         "top": {
           "kind": "台风",
           "level": "red",
@@ -599,7 +599,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 32,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -637,7 +637,7 @@
           "山洪灾害": "red",
           "地质灾害": "yellow"
         },
-        "count": 12,
+        "count": 20,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
@@ -730,7 +730,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 12,
+        "count": 9,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -764,15 +764,16 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "yellow",
+          "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "甘肃省庆阳市正宁县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/62102541600000_20260827150044.html",
-          "issuedAt": "2026/08/27 15:00"
+          "title": "甘肃省甘南藏族自治州卓尼县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/62302241600000_20260827193741.html",
+          "issuedAt": "2026/08/27 19:37"
         },
         "lat": 37.8,
         "lng": 101.1
@@ -820,7 +821,7 @@
         "kinds": {
           "山洪灾害": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "山洪灾害",
           "level": "blue",
