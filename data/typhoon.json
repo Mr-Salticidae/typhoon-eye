@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27 11:23",
+  "updatedAt": "2026-08-27 11:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-27 08时",
+            "time": "08-27 11时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -280,9 +280,9 @@
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广西壮族自治区钦州市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45070041600000_20260826162603.html",
-              "issuedAt": "2026/08/26 16:22"
+              "title": "广西壮族自治区北海市合浦县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45052141600000_20260827113715.html",
+              "issuedAt": "2026/08/27 11:31"
             },
             "via": "路径邻近",
             "distKm": 123
@@ -336,9 +336,9 @@
             "top": {
               "kind": "台风",
               "level": "orange",
-              "title": "浙江省温州市苍南县气象台发布台风橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/33032741600000_20260827111531.html",
-              "issuedAt": "2026/08/27 11:15"
+              "title": "浙江省温州市泰顺县气象台发布台风橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33032941600000_20260827112937.html",
+              "issuedAt": "2026/08/27 11:24"
             },
             "via": "路径邻近",
             "distKm": 130
@@ -350,7 +350,7 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 21,
+            "count": 20,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -368,7 +368,7 @@
             "kinds": {
               "台风": "yellow"
             },
-            "count": 3,
+            "count": 4,
             "top": {
               "kind": "台风",
               "level": "yellow",
@@ -408,8 +408,8 @@
             "top": {
               "kind": "台风",
               "level": "blue",
-              "title": "上海市嘉定区气象台发布台风蓝色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/31011441600000_20260826190309.html",
+              "title": "上海市金山区气象台发布台风蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/31011641600000_20260826190123.html",
               "issuedAt": "2026/08/26 19:00"
             },
             "via": "路径邻近",
@@ -427,43 +427,23 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 417,
+    "total": 412,
     "counts": {
-      "暴雨": 186,
-      "台风": 56,
-      "山洪灾害": 45,
+      "暴雨": 179,
+      "台风": 57,
+      "山洪灾害": 46,
       "山洪风险": 10,
       "地质灾害": 120
     },
     "peak": {
-      "province": "山西",
-      "kind": "山洪灾害",
+      "province": "云南",
+      "kind": "暴雨",
       "level": "red",
-      "title": "山西省忻州市忻府区气象台发布山洪灾害气象风险红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/14090241600000_20260826112824.html",
-      "issuedAt": "2026/08/26 11:30"
+      "title": "云南省西双版纳傣族自治州景洪市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53280141600000_20260827102738.html",
+      "issuedAt": "2026/08/27 10:26"
     },
     "provinces": [
-      {
-        "province": "山西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "red",
-          "地质灾害": "orange"
-        },
-        "count": 110,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "red",
-          "title": "山西省忻州市忻府区气象台发布山洪灾害气象风险红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14090241600000_20260826112824.html",
-          "issuedAt": "2026/08/26 11:30"
-        },
-        "lat": 37.6,
-        "lng": 112.3
-      },
       {
         "province": "云南",
         "maxLevel": "red",
@@ -473,7 +453,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 87,
+        "count": 88,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -513,12 +493,32 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广西壮族自治区钦州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45070041600000_20260826162603.html",
-          "issuedAt": "2026/08/26 16:22"
+          "title": "广西壮族自治区北海市合浦县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45052141600000_20260827113715.html",
+          "issuedAt": "2026/08/27 11:31"
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "山西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "orange",
+          "地质灾害": "orange"
+        },
+        "count": 104,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "山西省晋中市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14070041600000_20260826201500.html",
+          "issuedAt": "2026/08/26 20:15"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       },
       {
         "province": "浙江",
@@ -533,9 +533,9 @@
         "top": {
           "kind": "台风",
           "level": "orange",
-          "title": "浙江省温州市苍南县气象台发布台风橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33032741600000_20260827111531.html",
-          "issuedAt": "2026/08/27 11:15"
+          "title": "浙江省温州市泰顺县气象台发布台风橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33032941600000_20260827112937.html",
+          "issuedAt": "2026/08/27 11:24"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -547,7 +547,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 21,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -696,7 +696,7 @@
         "kinds": {
           "台风": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "台风",
           "level": "yellow",
@@ -755,8 +755,8 @@
         "top": {
           "kind": "台风",
           "level": "blue",
-          "title": "上海市嘉定区气象台发布台风蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/31011441600000_20260826190309.html",
+          "title": "上海市金山区气象台发布台风蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/31011641600000_20260826190123.html",
           "issuedAt": "2026/08/26 19:00"
         },
         "lat": 31.2,
