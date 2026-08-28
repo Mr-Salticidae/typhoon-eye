@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29 00:15",
+  "updatedAt": "2026-08-29 00:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 86 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,8 +56,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-28 20时",
-            "windLevel": 8,
+            "time": "08-28 23时",
+            "windLevel": 9,
             "role": "verify"
           }
         ]
@@ -575,9 +575,9 @@
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省莆田市秀屿区气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35030541600000_20260828195000.html",
-              "issuedAt": "2026/08/28 19:50"
+              "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260829003600.html",
+              "issuedAt": "2026/08/29 00:36"
             },
             "via": "路径邻近",
             "distKm": 150
@@ -590,13 +590,13 @@
               "暴雨": "orange",
               "台风": "yellow"
             },
-            "count": 65,
+            "count": 68,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "江西省抚州市南城县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/36102141600000_20260828235120.html",
-              "issuedAt": "2026/08/28 23:48"
+              "title": "江西省抚州市南丰县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/36102341600000_20260829002749.html",
+              "issuedAt": "2026/08/29 00:23"
             },
             "via": "路径邻近",
             "distKm": 49
@@ -670,23 +670,41 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 499,
+    "total": 509,
     "counts": {
-      "暴雨": 256,
+      "暴雨": 266,
       "台风": 142,
       "山洪灾害": 5,
       "山洪风险": 7,
       "地质灾害": 89
     },
     "peak": {
-      "province": "福建",
+      "province": "四川",
       "kind": "暴雨",
       "level": "red",
-      "title": "福建省莆田市秀屿区气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/35030541600000_20260828195000.html",
-      "issuedAt": "2026/08/28 19:50"
+      "title": "四川省泸州市纳溪区气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/51050341600000_20260828222832.html",
+      "issuedAt": "2026/08/28 22:28"
     },
     "provinces": [
+      {
+        "province": "四川",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 85,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "四川省泸州市纳溪区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51050341600000_20260828222832.html",
+          "issuedAt": "2026/08/28 22:28"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
       {
         "province": "福建",
         "maxLevel": "red",
@@ -699,48 +717,12 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省莆田市秀屿区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35030541600000_20260828195000.html",
-          "issuedAt": "2026/08/28 19:50"
+          "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260829003600.html",
+          "issuedAt": "2026/08/29 00:36"
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 83,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省泸州市纳溪区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51050341600000_20260828222832.html",
-          "issuedAt": "2026/08/28 22:28"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
-        "province": "广东",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 16,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广东省广州市南沙区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44011541600000_20260828002931.html",
-          "issuedAt": "2026/08/28 00:27"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "广西",
@@ -753,12 +735,30 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广西壮族自治区钦州市浦北县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45072241600000_20260828224135.html",
-          "issuedAt": "2026/08/28 22:38"
+          "title": "广西壮族自治区梧州市藤县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45042241600000_20260829002157.html",
+          "issuedAt": "2026/08/29 00:18"
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 14,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省茂名市信宜市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44098341600000_20260829001324.html",
+          "issuedAt": "2026/08/29 00:11"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "云南",
@@ -769,13 +769,13 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 84,
+        "count": 86,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省楚雄彝族自治州元谋县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53232841600000_20260829000611.html",
-          "issuedAt": "2026/08/29 00:06"
+          "title": "云南省昭通市永善县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53062541600000_20260829002146.html",
+          "issuedAt": "2026/08/29 00:20"
         },
         "lat": 25,
         "lng": 101.5
@@ -788,13 +788,13 @@
           "暴雨": "orange",
           "台风": "yellow"
         },
-        "count": 65,
+        "count": 68,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省抚州市南城县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36102141600000_20260828235120.html",
-          "issuedAt": "2026/08/28 23:48"
+          "title": "江西省抚州市南丰县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36102341600000_20260829002749.html",
+          "issuedAt": "2026/08/29 00:23"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -827,16 +827,34 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 17,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "重庆市潼南区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015241600000_20260828215020.html",
-          "issuedAt": "2026/08/28 21:50"
+          "title": "重庆市永川区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011841600000_20260829003747.html",
+          "issuedAt": "2026/08/29 00:37"
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "贵州省毕节市金沙县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052341600000_20260829001436.html",
+          "issuedAt": "2026/08/29 00:14"
+        },
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "湖南",
@@ -949,24 +967,6 @@
         },
         "lat": 37.6,
         "lng": 112.3
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省毕节市七星关区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52050241600000_20260828235300.html",
-          "issuedAt": "2026/08/28 23:53"
-        },
-        "lat": 26.8,
-        "lng": 106.9
       },
       {
         "province": "河北",
