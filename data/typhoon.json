@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28 11:30",
+  "updatedAt": "2026-08-28 12:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -36,8 +36,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 134 公里、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 157 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-28 08时",
+            "time": "08-28 11时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -202,13 +202,13 @@
       "enName": "SAUDEL",
       "code": "2618",
       "level": "强热带风暴（11级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 95 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 45 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -227,7 +227,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-28 08时",
+            "time": "08-28 11时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -364,6 +364,54 @@
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "now"
+        },
+        {
+          "t": "08-28 17时",
+          "lat": 27.7,
+          "lng": 119,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-28 23时",
+          "lat": 27.6,
+          "lng": 117.7,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-29 05时",
+          "lat": 27.5,
+          "lng": 116.7,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-29 11时",
+          "lat": 27.3,
+          "lng": 115.6,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-29 23时",
+          "lat": 26.8,
+          "lng": 113.3,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-30 11时",
+          "lat": 24.9,
+          "lng": 111.1,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
@@ -378,7 +426,7 @@
               "山洪灾害": "red",
               "地质灾害": "red"
             },
-            "count": 99,
+            "count": 100,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -390,6 +438,42 @@
             "distKm": 169
           },
           {
+            "province": "广西",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 31,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "广西壮族自治区河池市巴马县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45122741600000_20260828081606.html",
+              "issuedAt": "2026/08/28 08:08"
+            },
+            "via": "路径邻近",
+            "distKm": 263
+          },
+          {
+            "province": "广东",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 32,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "广东省广州市南沙区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44011541600000_20260828002931.html",
+              "issuedAt": "2026/08/28 00:27"
+            },
+            "via": "路径邻近",
+            "distKm": 287
+          },
+          {
             "province": "福建",
             "maxLevel": "orange",
             "floodLevel": "orange",
@@ -397,16 +481,34 @@
               "暴雨": "orange",
               "台风": "orange"
             },
-            "count": 36,
+            "count": 40,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "福建省宁德市福鼎市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35098241600000_20260828110800.html",
-              "issuedAt": "2026/08/28 11:08"
+              "title": "福建省宁德市柘荣县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35092641600000_20260828112500.html",
+              "issuedAt": "2026/08/28 11:25"
             },
             "via": "路径邻近",
-            "distKm": 281
+            "distKm": 177
+          },
+          {
+            "province": "湖南",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 19,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "湖南省邵阳市城步县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/43052941600000_20260828051943.html",
+              "issuedAt": "2026/08/28 05:19"
+            },
+            "via": "路径邻近",
+            "distKm": 182
           },
           {
             "province": "安徽",
@@ -415,21 +517,21 @@
             "kinds": {
               "台风": "blue"
             },
-            "count": 3,
+            "count": 6,
             "top": {
               "kind": "台风",
               "level": "blue",
-              "title": "安徽省黄山市休宁县气象台发布台风蓝色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/34102241600000_20260828112528.html",
-              "issuedAt": "2026/08/28 11:25"
+              "title": "安徽省黄山市黟县气象台发布台风蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/34102341600000_20260828113240.html",
+              "issuedAt": "2026/08/28 11:32"
             },
             "via": "台风预警",
-            "distKm": 565
+            "distKm": 481
           }
         ],
         "floodLevel": "red",
         "maxLevel": "red",
-        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高红色。"
+        "note": "台风影响范围内有 6 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -438,11 +540,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 411,
+    "total": 420,
     "counts": {
-      "暴雨": 156,
-      "台风": 116,
-      "山洪灾害": 28,
+      "暴雨": 161,
+      "台风": 122,
+      "山洪灾害": 26,
       "山洪风险": 3,
       "地质灾害": 108
     },
@@ -465,7 +567,7 @@
           "山洪灾害": "red",
           "地质灾害": "red"
         },
-        "count": 99,
+        "count": 100,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -485,7 +587,7 @@
           "山洪灾害": "red",
           "地质灾害": "orange"
         },
-        "count": 81,
+        "count": 79,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
@@ -497,31 +599,13 @@
         "lng": 112.3
       },
       {
-        "province": "广西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 32,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广西壮族自治区河池市巴马县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45122741600000_20260828081606.html",
-          "issuedAt": "2026/08/28 08:08"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
         "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 32,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -533,15 +617,32 @@
         "lng": 113.4
       },
       {
+        "province": "广西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 31,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广西壮族自治区河池市巴马县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45122741600000_20260828081606.html",
+          "issuedAt": "2026/08/28 08:08"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
         "province": "陕西",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "orange",
-          "山洪灾害": "red",
-          "地质灾害": "yellow"
+          "山洪灾害": "red"
         },
-        "count": 8,
+        "count": 7,
         "top": {
           "kind": "山洪灾害",
           "level": "red",
@@ -561,7 +662,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 68,
+        "count": 70,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -580,13 +681,13 @@
           "暴雨": "orange",
           "台风": "orange"
         },
-        "count": 36,
+        "count": 40,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "福建省宁德市福鼎市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35098241600000_20260828110800.html",
-          "issuedAt": "2026/08/28 11:08"
+          "title": "福建省宁德市柘荣县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35092641600000_20260828112500.html",
+          "issuedAt": "2026/08/28 11:25"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -634,13 +735,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "四川省绵阳市江油市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51078141600000_20260828105930.html",
-          "issuedAt": "2026/08/28 10:59"
+          "title": "四川省绵阳市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51070041600000_20260828113535.html",
+          "issuedAt": "2026/08/28 11:35"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -691,13 +792,13 @@
         "kinds": {
           "台风": "blue"
         },
-        "count": 3,
+        "count": 6,
         "top": {
           "kind": "台风",
           "level": "blue",
-          "title": "安徽省黄山市休宁县气象台发布台风蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34102241600000_20260828112528.html",
-          "issuedAt": "2026/08/28 11:25"
+          "title": "安徽省黄山市黟县气象台发布台风蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34102341600000_20260828113240.html",
+          "issuedAt": "2026/08/28 11:32"
         },
         "lat": 31.9,
         "lng": 117.2
