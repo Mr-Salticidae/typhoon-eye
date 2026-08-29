@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29 20:45",
+  "updatedAt": "2026-08-29 21:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 97 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 60 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-29 17时",
+            "time": "08-29 20时",
             "windLevel": 12,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-29 17时",
+            "time": "08-29 20时",
             "windLevel": 12,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 33,
         "pressure": 975,
         "moveDir": "北",
-        "moveSpeed": 27,
+        "moveSpeed": 40,
         "r7": 220,
         "r10": 130,
-        "time": "08-29 17时",
-        "position": "中心位于北纬 24.5 度、东经 168.4 度"
+        "time": "08-29 20时",
+        "position": "中心位于北纬 25.1 度、东经 168.5 度"
       },
       "track": [
         {
@@ -152,52 +152,52 @@
           "lng": 168.4,
           "wind": 12,
           "strong": "台风",
+          "phase": "past"
+        },
+        {
+          "t": "08-29 20时",
+          "lat": 25.1,
+          "lng": 168.5,
+          "wind": 12,
+          "strong": "台风",
           "phase": "now"
         },
         {
-          "t": "08-30 05时",
-          "lat": 27.4,
+          "t": "08-30 08时",
+          "lat": 29.4,
           "lng": 168.4,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "08-30 17时",
-          "lat": 31.9,
-          "lng": 167.4,
+          "t": "08-30 20时",
+          "lat": 32.6,
+          "lng": 167.2,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "08-31 05时",
-          "lat": 35.1,
-          "lng": 165.7,
+          "t": "08-31 08时",
+          "lat": 35.7,
+          "lng": 166.4,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-31 17时",
-          "lat": 37.9,
-          "lng": 165.8,
+          "t": "08-31 20时",
+          "lat": 38.5,
+          "lng": 167,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-01 05时",
-          "lat": 42.7,
-          "lng": 169.1,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-01 17时",
-          "lat": 47.7,
-          "lng": 174.6,
+          "t": "09-01 08时",
+          "lat": 41.9,
+          "lng": 169.8,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
@@ -216,7 +216,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 80 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -235,7 +235,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-29 17时",
+            "time": "08-29 20时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -612,6 +612,24 @@
       "rainRisk": {
         "provinces": [
           {
+            "province": "湖南",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 34,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "湖南省衡阳市南岳区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/43041241600000_20260829205023.html",
+              "issuedAt": "2026/08/29 20:49"
+            },
+            "via": "路径邻近",
+            "distKm": 215
+          },
+          {
             "province": "广西",
             "maxLevel": "red",
             "floodLevel": "red",
@@ -638,7 +656,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 62,
+            "count": 65,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -656,7 +674,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 27,
+            "count": 28,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -666,24 +684,6 @@
             },
             "via": "路径邻近",
             "distKm": 237
-          },
-          {
-            "province": "湖南",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange"
-            },
-            "count": 31,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "湖南省郴州市永兴县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/43102341600000_20260829190703.html",
-              "issuedAt": "2026/08/29 19:06"
-            },
-            "via": "路径邻近",
-            "distKm": 215
           }
         ],
         "floodLevel": "red",
@@ -697,11 +697,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 334,
+    "total": 346,
     "counts": {
-      "暴雨": 236,
-      "台风": 9,
-      "山洪风险": 14,
+      "暴雨": 249,
+      "台风": 7,
+      "山洪风险": 15,
       "地质灾害": 75
     },
     "peak": {
@@ -721,7 +721,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 62,
+        "count": 65,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -733,13 +733,31 @@
         "lng": 115.7
       },
       {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 34,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省衡阳市南岳区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43041241600000_20260829205023.html",
+          "issuedAt": "2026/08/29 20:49"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 27,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -749,24 +767,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 18,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省宜宾市兴文县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51152841600000_20260829071734.html",
-          "issuedAt": "2026/08/29 07:17"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "重庆",
@@ -785,6 +785,24 @@
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "四川",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 17,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "四川省宜宾市兴文县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51152841600000_20260829071734.html",
+          "issuedAt": "2026/08/29 07:17"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "广西",
@@ -814,7 +832,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 118,
+        "count": 122,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -824,24 +842,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 31,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省郴州市永兴县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102341600000_20260829190703.html",
-          "issuedAt": "2026/08/29 19:06"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "福建",
@@ -868,13 +868,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "黑龙江省齐哈尔市甘南县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23022541600000_20260829192036.html",
-          "issuedAt": "2026/08/29 19:00"
+          "title": "黑龙江省哈尔滨市通河县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23012841600000_20260829211932.html",
+          "issuedAt": "2026/08/29 21:00"
         },
         "lat": 47.4,
         "lng": 128.1
@@ -978,7 +978,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -988,6 +988,24 @@
         },
         "lat": 37.6,
         "lng": 112.3
+      },
+      {
+        "province": "内蒙古",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "内蒙古自治区呼伦贝尔市阿荣旗气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15072141600000_20260829210734.html",
+          "issuedAt": "2026/08/29 21:07"
+        },
+        "lat": 44,
+        "lng": 113.9
       },
       {
         "province": "安徽",
