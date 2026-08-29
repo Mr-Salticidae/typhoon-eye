@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 07:00",
+  "updatedAt": "2026-08-30 07:25",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 3
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 59 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 59 公里、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-30 05时",
             "windLevel": 9,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-30 05时",
-            "windLevel": 9,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 990,
         "moveDir": "北北西",
         "moveSpeed": 39,
-        "r7": 180,
+        "r7": null,
         "r10": null,
         "time": "08-30 05时",
         "position": "中心位于北纬 29.2 度、东经 168.3 度"
@@ -232,7 +225,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 22 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -240,13 +233,6 @@
             "time": "08-30 05时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-30 05时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -263,7 +249,7 @@
         "pressure": 998,
         "moveDir": "南南西",
         "moveSpeed": 8,
-        "r7": 350,
+        "r7": null,
         "r10": null,
         "time": "08-30 05时",
         "position": "中心位于北纬 30.9 度、东经 164.9 度"
@@ -434,8 +420,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
+        "status": "single",
+        "detail": "目前仅中央气象台发布该系统，其余源暂未跟踪",
         "sources": [
           {
             "id": "cma",
@@ -443,13 +429,6 @@
             "time": "08-30 05时",
             "windLevel": 6,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-30 05时",
-            "windLevel": 6,
-            "role": "verify"
           }
         ]
       },
@@ -671,9 +650,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 315,
+    "total": 316,
     "counts": {
-      "暴雨": 219,
+      "暴雨": 220,
       "台风": 4,
       "山洪风险": 13,
       "地质灾害": 79
@@ -682,9 +661,9 @@
       "province": "云南",
       "kind": "暴雨",
       "level": "red",
-      "title": "云南省德宏傣族景颇族自治州盈江县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53312341600000_20260830041009.html",
-      "issuedAt": "2026/08/30 04:09"
+      "title": "云南省西双版纳傣族自治州勐腊县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53282341600000_20260830071757.html",
+      "issuedAt": "2026/08/30 07:17"
     },
     "provinces": [
       {
@@ -700,9 +679,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "云南省德宏傣族景颇族自治州盈江县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53312341600000_20260830041009.html",
-          "issuedAt": "2026/08/30 04:09"
+          "title": "云南省西双版纳傣族自治州勐腊县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53282341600000_20260830071757.html",
+          "issuedAt": "2026/08/30 07:17"
         },
         "lat": 25,
         "lng": 101.5
@@ -732,7 +711,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 49,
+        "count": 51,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -742,24 +721,6 @@
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省宜宾市兴文县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51152841600000_20260829071734.html",
-          "issuedAt": "2026/08/29 07:17"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "重庆",
@@ -908,6 +869,24 @@
         "lng": 120.2
       },
       {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省漳州市漳浦县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062341600000_20260830070000.html",
+          "issuedAt": "2026/08/30 07:00"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "山东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -924,24 +903,6 @@
         },
         "lat": 36.4,
         "lng": 118.2
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省宁德市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35090041600000_20260830061100.html",
-          "issuedAt": "2026/08/30 06:11"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "山西",
@@ -996,6 +957,24 @@
         },
         "lat": 26.8,
         "lng": 106.9
+      },
+      {
+        "province": "四川",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "四川省甘孜藏族自治州巴塘县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51333541600000_20260829164400.html",
+          "issuedAt": "2026/08/29 16:44"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "辽宁",
