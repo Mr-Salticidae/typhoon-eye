@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 03:15",
+  "updatedAt": "2026-08-30 03:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "班朗",
       "enName": "BANG-LANG",
       "code": "2623",
-      "level": "强热带风暴（11级）",
+      "level": "强热带风暴（10级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 131 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 111 公里、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-29 23时",
-            "windLevel": 11,
+            "time": "08-30 02时",
+            "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-29 23时",
-            "windLevel": 11,
+            "time": "08-30 02时",
+            "windLevel": 10,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 11,
-        "windSpeed": 30,
-        "pressure": 980,
+        "windLevel": 10,
+        "windSpeed": 28,
+        "pressure": 982,
         "moveDir": "北",
-        "moveSpeed": 51,
-        "r7": 220,
-        "r10": 130,
-        "time": "08-29 23时",
-        "position": "中心位于北纬 26.2 度、东经 168.7 度"
+        "moveSpeed": 45,
+        "r7": 180,
+        "r10": 80,
+        "time": "08-30 02时",
+        "position": "中心位于北纬 27.9 度、东经 168.6 度"
       },
       "track": [
         {
@@ -168,36 +168,44 @@
           "lng": 168.7,
           "wind": 11,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-30 02时",
+          "lat": 27.9,
+          "lng": 168.6,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-30 11时",
-          "lat": 31.6,
-          "lng": 167.9,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-30 23时",
-          "lat": 34.4,
-          "lng": 166.6,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-31 11时",
-          "lat": 36.9,
-          "lng": 166.7,
+          "t": "08-30 14时",
+          "lat": 32.6,
+          "lng": 167.7,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-31 23时",
-          "lat": 40.3,
-          "lng": 168.3,
+          "t": "08-31 02时",
+          "lat": 35.3,
+          "lng": 166,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-31 14时",
+          "lat": 36.6,
+          "lng": 166.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-01 02时",
+          "lat": 39.1,
+          "lng": 167.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
@@ -607,31 +615,13 @@
             "distKm": 230
           },
           {
-            "province": "广东",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red"
-            },
-            "count": 21,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "广东省云浮市郁南县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44532241600000_20260829033906.html",
-              "issuedAt": "2026/08/29 03:36"
-            },
-            "via": "路径邻近",
-            "distKm": 241
-          },
-          {
             "province": "江西",
             "maxLevel": "red",
             "floodLevel": "red",
             "kinds": {
               "暴雨": "red"
             },
-            "count": 56,
+            "count": 55,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -660,6 +650,24 @@
             },
             "via": "路径邻近",
             "distKm": 209
+          },
+          {
+            "province": "广东",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 20,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "广东省清远市佛冈县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260830032058.html",
+              "issuedAt": "2026/08/30 03:18"
+            },
+            "via": "路径邻近",
+            "distKm": 241
           }
         ],
         "floodLevel": "red",
@@ -673,9 +681,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 322,
+    "total": 324,
     "counts": {
-      "暴雨": 225,
+      "暴雨": 227,
       "台风": 4,
       "山洪风险": 14,
       "地质灾害": 79
@@ -696,7 +704,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 56,
+        "count": 55,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -726,49 +734,13 @@
         "lng": 111.7
       },
       {
-        "province": "广东",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 21,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广东省云浮市郁南县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44532241600000_20260829033906.html",
-          "issuedAt": "2026/08/29 03:36"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 10,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "重庆市县丰都县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023041600000_20260829095631.html",
-          "issuedAt": "2026/08/29 09:56"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
         "province": "黑龙江",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 9,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -778,6 +750,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "重庆市县丰都县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023041600000_20260829095631.html",
+          "issuedAt": "2026/08/29 09:56"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "四川",
@@ -810,12 +800,30 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市西盟佤族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082941600000_20260830013910.html",
-          "issuedAt": "2026/08/30 01:39"
+          "title": "云南省西双版纳傣族自治州勐腊县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53282341600000_20260830033829.html",
+          "issuedAt": "2026/08/30 03:37"
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 20,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省清远市佛冈县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260830032058.html",
+          "issuedAt": "2026/08/30 03:18"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "广西",
@@ -837,22 +845,22 @@
         "lng": 108.8
       },
       {
-        "province": "福建",
+        "province": "安徽",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "福建省莆田市仙游县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260830012200.html",
-          "issuedAt": "2026/08/30 01:22"
+          "title": "安徽省六安市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34150041600000_20260829223729.html",
+          "issuedAt": "2026/08/29 22:37"
         },
-        "lat": 26.1,
-        "lng": 118.3
+        "lat": 31.9,
+        "lng": 117.2
       },
       {
         "province": "吉林",
@@ -873,24 +881,6 @@
         "lng": 126.2
       },
       {
-        "province": "安徽",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "安徽省六安市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34150041600000_20260829223729.html",
-          "issuedAt": "2026/08/29 22:37"
-        },
-        "lat": 31.9,
-        "lng": 117.2
-      },
-      {
         "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -898,13 +888,13 @@
           "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 10,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省温州市平阳县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33032641600000_20260830023825.html",
-          "issuedAt": "2026/08/30 02:37"
+          "title": "浙江省温州市永嘉县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33032441600000_20260830033107.html",
+          "issuedAt": "2026/08/30 03:29"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -982,6 +972,24 @@
         "lng": 106.9
       },
       {
+        "province": "福建",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "福建省莆田市仙游县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260830032900.html",
+          "issuedAt": "2026/08/30 03:29"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "辽宁",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -1012,7 +1020,7 @@
         "广西",
         "广东"
       ],
-      "ongoingFloodLevel": "red",
+      "ongoingFloodLevel": "orange",
       "daysSince": 3
     },
     {
