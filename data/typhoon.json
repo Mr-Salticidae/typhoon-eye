@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29 12:15",
+  "updatedAt": "2026-08-29 12:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -618,7 +618,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 14,
+            "count": 20,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -648,6 +648,25 @@
             "distKm": 286
           },
           {
+            "province": "福建",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red",
+              "台风": "blue"
+            },
+            "count": 17,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "福建省福州市福清市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35018141600000_20260829123700.html",
+              "issuedAt": "2026/08/29 12:37"
+            },
+            "via": "路径邻近",
+            "distKm": 311
+          },
+          {
             "province": "江西",
             "maxLevel": "orange",
             "floodLevel": "orange",
@@ -673,7 +692,7 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 10,
+            "count": 11,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -683,25 +702,6 @@
             },
             "via": "路径邻近",
             "distKm": 214
-          },
-          {
-            "province": "福建",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange",
-              "台风": "blue"
-            },
-            "count": 17,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "福建省莆田市涵江区气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35030341600000_20260829105900.html",
-              "issuedAt": "2026/08/29 10:59"
-            },
-            "via": "路径邻近",
-            "distKm": 311
           },
           {
             "province": "安徽",
@@ -733,11 +733,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 355,
+    "total": 359,
     "counts": {
-      "暴雨": 205,
+      "暴雨": 210,
       "台风": 62,
-      "山洪灾害": 2,
+      "山洪灾害": 1,
       "山洪风险": 7,
       "地质灾害": 79
     },
@@ -777,7 +777,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 51,
+        "count": 49,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -813,7 +813,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 14,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -823,6 +823,25 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "福建",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "台风": "blue"
+        },
+        "count": 17,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "福建省福州市福清市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35018141600000_20260829123700.html",
+          "issuedAt": "2026/08/29 12:37"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "广西",
@@ -862,32 +881,13 @@
         "lng": 115.7
       },
       {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 17,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省莆田市涵江区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35030341600000_20260829105900.html",
-          "issuedAt": "2026/08/29 10:59"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
         "province": "湖南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -1010,25 +1010,6 @@
         "lng": 118.2
       },
       {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "陕西省渭南市气象台发布山洪灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61050041600000_20260828124253.html",
-          "issuedAt": "2026/08/28 12:42"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      },
-      {
         "province": "黑龙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -1063,6 +1044,24 @@
         },
         "lat": 41.8,
         "lng": 122.6
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "陕西省渭南市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61050041600000_20260828124907.html",
+          "issuedAt": "2026/08/28 12:49"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "安徽",
@@ -1118,7 +1117,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": "red",
       "daysSince": 4
     },
     {
@@ -1133,7 +1132,7 @@
         "安徽",
         "江苏"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": "red",
       "daysSince": 6
     }
   ]
