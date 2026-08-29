@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 07:25",
+  "updatedAt": "2026-08-30 07:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 3
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 59 公里、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 59 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-30 05时",
             "windLevel": 9,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-30 05时",
+            "windLevel": 9,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 990,
         "moveDir": "北北西",
         "moveSpeed": 39,
-        "r7": null,
+        "r7": 180,
         "r10": null,
         "time": "08-30 05时",
         "position": "中心位于北纬 29.2 度、东经 168.3 度"
@@ -225,7 +232,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 22 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -233,6 +240,13 @@
             "time": "08-30 05时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-30 05时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -249,7 +263,7 @@
         "pressure": 998,
         "moveDir": "南南西",
         "moveSpeed": 8,
-        "r7": null,
+        "r7": 350,
         "r10": null,
         "time": "08-30 05时",
         "position": "中心位于北纬 30.9 度、东经 164.9 度"
@@ -420,8 +434,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "single",
-        "detail": "目前仅中央气象台发布该系统，其余源暂未跟踪",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -429,6 +443,13 @@
             "time": "08-30 05时",
             "windLevel": 6,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-30 05时",
+            "windLevel": 6,
+            "role": "verify"
           }
         ]
       },
@@ -590,7 +611,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 53,
+            "count": 54,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -608,13 +629,13 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 21,
+            "count": 22,
             "top": {
               "kind": "暴雨",
               "level": "orange",
               "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44082541600000_20260830051420.html",
-              "issuedAt": "2026/08/30 05:07"
+              "url": "http://www.nmc.cn/publish/alarm/44082541600000_20260830073956.html",
+              "issuedAt": "2026/08/30 07:33"
             },
             "via": "路径邻近",
             "distKm": 179
@@ -650,9 +671,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 316,
+    "total": 319,
     "counts": {
-      "暴雨": 220,
+      "暴雨": 223,
       "台风": 4,
       "山洪风险": 13,
       "地质灾害": 79
@@ -675,7 +696,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 115,
+        "count": 116,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -693,7 +714,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 53,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -747,13 +768,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 21,
+        "count": 22,
         "top": {
           "kind": "暴雨",
           "level": "orange",
           "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44082541600000_20260830051420.html",
-          "issuedAt": "2026/08/30 05:07"
+          "url": "http://www.nmc.cn/publish/alarm/44082541600000_20260830073956.html",
+          "issuedAt": "2026/08/30 07:33"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -765,7 +786,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -806,9 +827,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "安徽省亳州市利辛县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34162341600000_20260830055104.html",
-          "issuedAt": "2026/08/30 05:51"
+          "title": "安徽省阜阳市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34120041600000_20260830073229.html",
+          "issuedAt": "2026/08/30 07:32"
         },
         "lat": 31.9,
         "lng": 117.2
@@ -893,7 +914,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
