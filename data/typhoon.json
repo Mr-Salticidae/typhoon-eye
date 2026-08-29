@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29 11:45",
+  "updatedAt": "2026-08-29 12:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -200,7 +200,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 56 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -219,7 +219,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-29 08时",
+            "time": "08-29 11时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -636,7 +636,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 16,
+            "count": 13,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -692,7 +692,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 25,
+            "count": 17,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -706,18 +706,17 @@
           {
             "province": "安徽",
             "maxLevel": "blue",
-            "floodLevel": "blue",
+            "floodLevel": null,
             "kinds": {
-              "暴雨": "blue",
               "台风": "blue"
             },
-            "count": 13,
+            "count": 10,
             "top": {
-              "kind": "暴雨",
+              "kind": "台风",
               "level": "blue",
-              "title": "安徽省六安市霍山县气象台发布暴雨蓝色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/34152541600000_20260829071150.html",
-              "issuedAt": "2026/08/29 07:11"
+              "title": "安徽省安庆市太湖县气象台发布台风蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/34082541600000_20260828191415.html",
+              "issuedAt": "2026/08/28 19:14"
             },
             "via": "台风预警",
             "distKm": 586
@@ -734,13 +733,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 405,
+    "total": 355,
     "counts": {
-      "暴雨": 241,
-      "台风": 69,
-      "山洪灾害": 3,
+      "暴雨": 205,
+      "台风": 62,
+      "山洪灾害": 2,
       "山洪风险": 7,
-      "地质灾害": 85
+      "地质灾害": 79
     },
     "peak": {
       "province": "云南",
@@ -760,7 +759,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 93,
+        "count": 87,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -778,13 +777,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 77,
+        "count": 51,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "四川省宜宾市长宁县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51152441600000_20260829090428.html",
-          "issuedAt": "2026/08/29 09:04"
+          "title": "四川省宜宾市兴文县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51152841600000_20260829071734.html",
+          "issuedAt": "2026/08/29 07:17"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -796,7 +795,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -806,24 +805,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "广西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 16,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广西壮族自治区贵港市桂平市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45088141600000_20260829031556.html",
-          "issuedAt": "2026/08/29 03:04"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "广东",
@@ -842,6 +823,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "广西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 13,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广西壮族自治区贵港市桂平市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45088141600000_20260829031556.html",
+          "issuedAt": "2026/08/29 03:04"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "江西",
@@ -870,7 +869,7 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 25,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -898,24 +897,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "贵州省毕节市纳雍县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052541600000_20260829052246.html",
-          "issuedAt": "2026/08/29 05:22"
-        },
-        "lat": 26.8,
-        "lng": 106.9
       },
       {
         "province": "湖北",
@@ -975,23 +956,22 @@
         "lng": 112.3
       },
       {
-        "province": "陕西",
+        "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 4,
+        "count": 3,
         "top": {
-          "kind": "山洪灾害",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "陕西省渭南市气象台发布山洪灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61050041600000_20260828124253.html",
-          "issuedAt": "2026/08/28 12:42"
+          "title": "贵州省毕节市七星关区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52050241600000_20260829085452.html",
+          "issuedAt": "2026/08/29 08:54"
         },
-        "lat": 35.2,
-        "lng": 108.9
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "内蒙古",
@@ -1004,9 +984,9 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "内蒙古自治区呼伦贝尔市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15070041600000_20260829113613.html",
-          "issuedAt": "2026/08/29 11:36"
+          "title": "内蒙古自治区呼伦贝尔市阿荣旗气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15072141600000_20260829115836.html",
+          "issuedAt": "2026/08/29 11:58"
         },
         "lat": 44,
         "lng": 113.9
@@ -1018,16 +998,53 @@
         "kinds": {
           "暴雨": "yellow"
         },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "山东省临沂市莒南县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37132741600000_20260829115600.html",
+          "issuedAt": "2026/08/29 11:56"
+        },
+        "lat": 36.4,
+        "lng": 118.2
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "陕西省渭南市气象台发布山洪灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61050041600000_20260828124253.html",
+          "issuedAt": "2026/08/28 12:42"
+        },
+        "lat": 35.2,
+        "lng": 108.9
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
         "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "山东省枣庄市台儿庄区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37040541600000_20260829073024.html",
-          "issuedAt": "2026/08/29 07:27"
+          "title": "黑龙江省伊春市嘉荫县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23072241600000_20260829115104.html",
+          "issuedAt": "2026/08/29 11:40"
         },
-        "lat": 36.4,
-        "lng": 118.2
+        "lat": 47.4,
+        "lng": 128.1
       },
       {
         "province": "辽宁",
@@ -1050,18 +1067,17 @@
       {
         "province": "安徽",
         "maxLevel": "blue",
-        "floodLevel": "blue",
+        "floodLevel": null,
         "kinds": {
-          "暴雨": "blue",
           "台风": "blue"
         },
-        "count": 13,
+        "count": 10,
         "top": {
-          "kind": "暴雨",
+          "kind": "台风",
           "level": "blue",
-          "title": "安徽省六安市霍山县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34152541600000_20260829071150.html",
-          "issuedAt": "2026/08/29 07:11"
+          "title": "安徽省安庆市太湖县气象台发布台风蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34082541600000_20260828191415.html",
+          "issuedAt": "2026/08/28 19:14"
         },
         "lat": 31.9,
         "lng": 117.2
