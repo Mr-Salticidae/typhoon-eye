@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29 19:15",
+  "updatedAt": "2026-08-29 19:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 3
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 20 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 20 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-29 17时",
             "windLevel": 12,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-29 17时",
-            "windLevel": 12,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,8 +61,8 @@
         "pressure": 975,
         "moveDir": "北",
         "moveSpeed": 27,
-        "r7": 220,
-        "r10": 130,
+        "r7": null,
+        "r10": null,
         "time": "08-29 17时",
         "position": "中心位于北纬 24.5 度、东经 168.4 度"
       },
@@ -216,7 +209,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 0 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -224,13 +217,6 @@
             "time": "08-29 17时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-29 17时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -247,7 +233,7 @@
         "pressure": 995,
         "moveDir": "北北西",
         "moveSpeed": 21,
-        "r7": 350,
+        "r7": null,
         "r10": null,
         "time": "08-29 17时",
         "position": "中心位于北纬 29.1 度、东经 165.7 度"
@@ -419,7 +405,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 139 公里（时次相差 15 小时）、强度暂缺（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 139 公里（时次相差 15 小时）、强度暂缺（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -427,13 +413,6 @@
             "time": "08-29 17时",
             "windLevel": 7,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-29 17时",
-            "windLevel": 7,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -619,7 +598,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 69,
+            "count": 67,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -637,13 +616,13 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 31,
+            "count": 32,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省云浮市郁南县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44532241600000_20260829033906.html",
-              "issuedAt": "2026/08/29 03:36"
+              "title": "广东省韶关市南雄市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44028241600000_20260829192644.html",
+              "issuedAt": "2026/08/29 19:23"
             },
             "via": "路径邻近",
             "distKm": 204
@@ -692,7 +671,7 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 14,
+            "count": 15,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -702,30 +681,11 @@
             },
             "via": "路径邻近",
             "distKm": 379
-          },
-          {
-            "province": "安徽",
-            "maxLevel": "yellow",
-            "floodLevel": "yellow",
-            "kinds": {
-              "暴雨": "yellow",
-              "台风": "blue"
-            },
-            "count": 3,
-            "top": {
-              "kind": "暴雨",
-              "level": "yellow",
-              "title": "安徽省六安市气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/34150041600000_20260829173205.html",
-              "issuedAt": "2026/08/29 17:32"
-            },
-            "via": "台风预警",
-            "distKm": 610
           }
         ],
         "floodLevel": "red",
         "maxLevel": "red",
-        "note": "台风影响范围内有 6 个省级行政区发布洪涝类预警，最高红色。"
+        "note": "台风影响范围内有 5 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -736,10 +696,10 @@
     "partial": null,
     "total": 355,
     "counts": {
-      "暴雨": 247,
-      "台风": 19,
-      "山洪风险": 10,
-      "地质灾害": 79
+      "暴雨": 253,
+      "台风": 15,
+      "山洪风险": 9,
+      "地质灾害": 78
     },
     "peak": {
       "province": "江西",
@@ -758,7 +718,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 69,
+        "count": 67,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -776,13 +736,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 32,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省云浮市郁南县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44532241600000_20260829033906.html",
-          "issuedAt": "2026/08/29 03:36"
+          "title": "广东省韶关市南雄市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44028241600000_20260829192644.html",
+          "issuedAt": "2026/08/29 19:23"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -851,13 +811,13 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 113,
+        "count": 115,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市思茅区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53080241600000_20260829190157.html",
-          "issuedAt": "2026/08/29 19:02"
+          "title": "云南省临沧市云县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53092241600000_20260829193633.html",
+          "issuedAt": "2026/08/29 19:35"
         },
         "lat": 25,
         "lng": 101.5
@@ -887,7 +847,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 14,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -905,13 +865,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "黑龙江省黑河市五大连池市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23118241600000_20260829170632.html",
-          "issuedAt": "2026/08/29 17:00"
+          "title": "黑龙江省齐哈尔市甘南县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23022541600000_20260829192036.html",
+          "issuedAt": "2026/08/29 19:00"
         },
         "lat": 47.4,
         "lng": 128.1
@@ -997,7 +957,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 4,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -1049,10 +1009,9 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "台风": "blue"
+          "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
