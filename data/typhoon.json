@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29 23:30",
+  "updatedAt": "2026-08-30 00:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 60 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 97 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-29 20时",
+            "time": "08-29 23时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -639,7 +639,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 20,
+            "count": 23,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -655,10 +655,9 @@
             "maxLevel": "red",
             "floodLevel": "red",
             "kinds": {
-              "暴雨": "red",
-              "台风": "blue"
+              "暴雨": "red"
             },
-            "count": 68,
+            "count": 65,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -681,12 +680,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 351,
+    "total": 349,
     "counts": {
-      "暴雨": 252,
-      "台风": 6,
+      "暴雨": 253,
+      "台风": 4,
       "山洪风险": 14,
-      "地质灾害": 79
+      "地质灾害": 78
     },
     "peak": {
       "province": "江西",
@@ -702,10 +701,9 @@
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red",
-          "台风": "blue"
+          "暴雨": "red"
         },
-        "count": 68,
+        "count": 65,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -741,7 +739,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 20,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -759,7 +757,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 17,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -795,7 +793,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 14,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -834,13 +832,13 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 126,
+        "count": 127,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20260829225305.html",
-          "issuedAt": "2026/08/29 22:53"
+          "title": "云南省楚雄彝族自治州姚安县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53232541600000_20260829233650.html",
+          "issuedAt": "2026/08/29 23:41"
         },
         "lat": 25,
         "lng": 101.5
@@ -882,6 +880,25 @@
         "lng": 117.2
       },
       {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "浙江省衢州市衢江区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33080341600000_20260829184601.html",
+          "issuedAt": "2026/08/29 18:46"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
         "province": "福建",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -900,25 +917,6 @@
         "lng": 118.3
       },
       {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省衢州市衢江区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33080341600000_20260829184601.html",
-          "issuedAt": "2026/08/29 18:46"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
         "province": "山东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -935,24 +933,6 @@
         },
         "lat": 36.4,
         "lng": 118.2
-      },
-      {
-        "province": "辽宁",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "辽宁省丹东市东港市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260828234000.html",
-          "issuedAt": "2026/08/28 23:41"
-        },
-        "lat": 41.8,
-        "lng": 122.6
       },
       {
         "province": "山西",
@@ -1025,6 +1005,24 @@
         },
         "lat": 26.8,
         "lng": 106.9
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "辽宁省沈阳市辽中区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21011541600000_20260829203300.html",
+          "issuedAt": "2026/08/29 20:34"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       }
     ]
   },
@@ -1040,7 +1038,7 @@
         "广东"
       ],
       "ongoingFloodLevel": "red",
-      "daysSince": 2
+      "daysSince": 3
     },
     {
       "code": "2621",
