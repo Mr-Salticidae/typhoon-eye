@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 02:45",
+  "updatedAt": "2026-08-30 03:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -216,26 +216,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 31 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-29 23时",
+            "time": "08-30 02时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "08-29 23时",
+            "time": "08-30 02时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-29 23时",
+            "time": "08-30 02时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -243,14 +243,14 @@
       },
       "now": {
         "windLevel": 8,
-        "windSpeed": 20,
-        "pressure": 995,
+        "windSpeed": 18,
+        "pressure": 998,
         "moveDir": "0",
         "moveSpeed": 0,
         "r7": 350,
         "r10": null,
-        "time": "08-29 23时",
-        "position": "中心位于北纬 30.5 度、东经 165.0 度"
+        "time": "08-30 02时",
+        "position": "中心位于北纬 30.6 度、东经 165.0 度"
       },
       "track": [
         {
@@ -302,9 +302,9 @@
           "phase": "past"
         },
         {
-          "t": "08-28 14时",
-          "lat": 24.6,
-          "lng": 166.8,
+          "t": "08-28 17时",
+          "lat": 24.8,
+          "lng": 166.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -312,14 +312,6 @@
         {
           "t": "08-28 20时",
           "lat": 25.1,
-          "lng": 166.5,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-28 23时",
-          "lat": 25.7,
           "lng": 166.5,
           "wind": 8,
           "strong": "热带风暴",
@@ -334,9 +326,9 @@
           "phase": "past"
         },
         {
-          "t": "08-29 08时",
-          "lat": 26.2,
-          "lng": 165.8,
+          "t": "08-29 05时",
+          "lat": 26.3,
+          "lng": 166,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -350,9 +342,9 @@
           "phase": "past"
         },
         {
-          "t": "08-29 17时",
-          "lat": 29.1,
-          "lng": 165.7,
+          "t": "08-29 14时",
+          "lat": 28,
+          "lng": 165.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -371,38 +363,46 @@
           "lng": 165,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "08-30 02时",
+          "lat": 30.6,
+          "lng": 165,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "08-30 11时",
+          "t": "08-30 14时",
+          "lat": 30.3,
+          "lng": 164.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "08-31 02时",
           "lat": 30.4,
-          "lng": 164.4,
+          "lng": 165.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-30 23时",
-          "lat": 30.1,
-          "lng": 164.8,
+          "t": "08-31 14时",
+          "lat": 31.4,
+          "lng": 167.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "08-31 11时",
-          "lat": 30.7,
-          "lng": 166.3,
+          "t": "09-01 02时",
+          "lat": 32.9,
+          "lng": 168.7,
           "wind": 8,
           "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "08-31 23时",
-          "lat": 31.3,
-          "lng": 167.3,
-          "wind": 7,
-          "strong": "热带低压",
           "phase": "forecast"
         }
       ],
@@ -589,25 +589,6 @@
       "rainRisk": {
         "provinces": [
           {
-            "province": "广西",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red",
-              "台风": "blue"
-            },
-            "count": 10,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "广西壮族自治区贵港市桂平市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/45088141600000_20260829031556.html",
-              "issuedAt": "2026/08/29 03:04"
-            },
-            "via": "路径邻近",
-            "distKm": 209
-          },
-          {
             "province": "湖南",
             "maxLevel": "red",
             "floodLevel": "red",
@@ -632,7 +613,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 20,
+            "count": 21,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -650,7 +631,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 60,
+            "count": 56,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -660,6 +641,25 @@
             },
             "via": "路径邻近",
             "distKm": 405
+          },
+          {
+            "province": "广西",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange",
+              "台风": "blue"
+            },
+            "count": 8,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "广西壮族自治区桂林市全州县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/45032441600000_20260830025702.html",
+              "issuedAt": "2026/08/30 02:55"
+            },
+            "via": "路径邻近",
+            "distKm": 209
           }
         ],
         "floodLevel": "red",
@@ -673,9 +673,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 327,
+    "total": 322,
     "counts": {
-      "暴雨": 230,
+      "暴雨": 225,
       "台风": 4,
       "山洪风险": 14,
       "地质灾害": 79
@@ -696,7 +696,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 60,
+        "count": 56,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -732,7 +732,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 20,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -750,7 +750,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -760,25 +760,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "广西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "台风": "blue"
-        },
-        "count": 10,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广西壮族自治区贵港市桂平市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45088141600000_20260829031556.html",
-          "issuedAt": "2026/08/29 03:04"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "黑龙江",
@@ -825,7 +806,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 122,
+        "count": 123,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -835,6 +816,25 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "blue"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区桂林市全州县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45032441600000_20260830025702.html",
+          "issuedAt": "2026/08/30 02:55"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "福建",
