@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 02:00",
+  "updatedAt": "2026-08-30 02:25",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -22,7 +22,7 @@
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
       "ok": true,
-      "count": 3
+      "count": 2
     }
   ],
   "typhoons": [
@@ -419,7 +419,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 324 公里（时次相差 21 小时）、强度暂缺（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -433,13 +433,6 @@
             "name": "浙江台风路径系统",
             "time": "08-29 23时",
             "windLevel": 7,
-            "role": "verify"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "08-29 02时",
-            "windLevel": null,
             "role": "verify"
           }
         ]
@@ -639,7 +632,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 24,
+            "count": 20,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -657,7 +650,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 61,
+            "count": 60,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -680,9 +673,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 346,
+    "total": 328,
     "counts": {
-      "暴雨": 249,
+      "暴雨": 231,
       "台风": 4,
       "山洪风险": 14,
       "地质灾害": 79
@@ -703,7 +696,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 61,
+        "count": 60,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -739,7 +732,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 24,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -749,42 +742,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "黑龙江省鹤岗市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23040041600000_20260829235637.html",
-          "issuedAt": "2026/08/30 00:10"
-        },
-        "lat": 47.4,
-        "lng": 128.1
-      },
-      {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省宜宾市兴文县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51152841600000_20260829071734.html",
-          "issuedAt": "2026/08/29 07:17"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "重庆",
@@ -824,6 +781,42 @@
         "lng": 108.8
       },
       {
+        "province": "四川",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "四川省宜宾市兴文县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51152841600000_20260829071734.html",
+          "issuedAt": "2026/08/29 07:17"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "黑龙江省鹤岗市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23040041600000_20260829235637.html",
+          "issuedAt": "2026/08/30 00:10"
+        },
+        "lat": 47.4,
+        "lng": 128.1
+      },
+      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -832,7 +825,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 127,
+        "count": 122,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -850,7 +843,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -905,13 +898,13 @@
           "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 10,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省丽水市松阳县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33112441600000_20260830014238.html",
-          "issuedAt": "2026/08/30 01:35"
+          "title": "浙江省温州市龙港市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33038341600000_20260830022207.html",
+          "issuedAt": "2026/08/30 02:18"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -987,24 +980,6 @@
         },
         "lat": 26.8,
         "lng": 106.9
-      },
-      {
-        "province": "内蒙古",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "内蒙古自治区呼伦贝尔市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15070041600000_20260829205337.html",
-          "issuedAt": "2026/08/29 20:53"
-        },
-        "lat": 44,
-        "lng": 113.9
       },
       {
         "province": "辽宁",
