@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31 06:41",
+  "updatedAt": "2026-08-31 07:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -399,9 +399,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 258,
+    "total": 261,
     "counts": {
-      "暴雨": 202,
+      "暴雨": 205,
       "山洪灾害": 1,
       "山洪风险": 5,
       "地质灾害": 50
@@ -440,7 +440,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 38,
+        "count": 39,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -458,7 +458,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 27,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -542,6 +542,24 @@
         },
         "lat": 31.9,
         "lng": 117.2
+      },
+      {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省儋州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46040041600000_20260831070507.html",
+          "issuedAt": "2026/08/31 07:05"
+        },
+        "lat": 19.2,
+        "lng": 109.7
       },
       {
         "province": "广西",
@@ -688,24 +706,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "海南",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "海南省气象台发布暴雨蓝色预警",
-          "url": "http://www.nmc.cn/publish/alarm/46000041600000_20260830170020.html",
-          "issuedAt": "2026/08/30 17:00"
-        },
-        "lat": 19.2,
-        "lng": 109.7
       }
     ]
   },
