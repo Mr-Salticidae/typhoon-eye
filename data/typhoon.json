@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 11:30",
+  "updatedAt": "2026-08-30 12:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 67 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 96 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-30 08时",
+            "time": "08-30 11时",
             "windLevel": 10,
             "role": "verify"
           }
@@ -619,13 +619,13 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 38,
+            "count": 43,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省中山市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44200041600000_20260830104756.html",
-              "issuedAt": "2026/08/30 10:44"
+              "title": "广东省佛山市南海区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260830114826.html",
+              "issuedAt": "2026/08/30 11:44"
             },
             "via": "路径邻近",
             "distKm": 195
@@ -697,9 +697,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 321,
+    "total": 335,
     "counts": {
-      "暴雨": 221,
+      "暴雨": 235,
       "台风": 4,
       "山洪灾害": 1,
       "山洪风险": 14,
@@ -777,13 +777,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 38,
+        "count": 43,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省中山市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44200041600000_20260830104756.html",
-          "issuedAt": "2026/08/30 10:44"
+          "title": "广东省佛山市南海区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260830114826.html",
+          "issuedAt": "2026/08/30 11:44"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -813,7 +813,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -850,7 +850,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -904,7 +904,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 14,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -914,6 +914,24 @@
         },
         "lat": 33,
         "lng": 119.5
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省漳州市龙海区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35060441600000_20260830114500.html",
+          "issuedAt": "2026/08/30 11:45"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "浙江",
@@ -934,24 +952,6 @@
         },
         "lat": 29.2,
         "lng": 120.2
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省漳州市平和县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260830103200.html",
-          "issuedAt": "2026/08/30 10:32"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "山西",
@@ -988,24 +988,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "重庆市綦江区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50011041600000_20260829114721.html",
-          "issuedAt": "2026/08/29 11:47"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       },
       {
         "province": "四川",
