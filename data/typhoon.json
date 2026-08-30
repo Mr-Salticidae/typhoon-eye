@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 21:14",
+  "updatedAt": "2026-08-30 21:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -596,7 +596,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 57,
+            "count": 59,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -614,7 +614,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 42,
+            "count": 36,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -673,12 +673,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 342,
+    "total": 340,
     "counts": {
       "暴雨": 277,
       "山洪灾害": 1,
       "山洪风险": 6,
-      "地质灾害": 58
+      "地质灾害": 56
     },
     "peak": {
       "province": "广东",
@@ -696,7 +696,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 57,
+        "count": 59,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -708,13 +708,31 @@
         "lng": 113.4
       },
       {
+        "province": "江苏",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 51,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "江苏省南通市通州区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32061241600000_20260830213957.html",
+          "issuedAt": "2026/08/30 21:39"
+        },
+        "lat": 33,
+        "lng": 119.5
+      },
+      {
         "province": "湖南",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 42,
+        "count": 36,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -732,7 +750,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 32,
+        "count": 33,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -788,7 +806,7 @@
           "山洪风险": "blue",
           "地质灾害": "orange"
         },
-        "count": 65,
+        "count": 64,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -800,40 +818,40 @@
         "lng": 101.5
       },
       {
-        "province": "江苏",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 51,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "江苏省南通市如皋市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/32068241600000_20260830210826.html",
-          "issuedAt": "2026/08/30 21:08"
-        },
-        "lat": 33,
-        "lng": 119.5
-      },
-      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 42,
+        "count": 43,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省抚州市黎川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36102241600000_20260830205809.html",
-          "issuedAt": "2026/08/30 20:54"
+          "title": "江西省气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36000041600000_20260830211102.html",
+          "issuedAt": "2026/08/30 21:09"
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省南平市武夷山市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35078241600000_20260830213800.html",
+          "issuedAt": "2026/08/30 21:38"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "广西",
@@ -854,22 +872,24 @@
         "lng": 108.8
       },
       {
-        "province": "福建",
+        "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "yellow",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省南平市武夷山市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35078241600000_20260830210200.html",
-          "issuedAt": "2026/08/30 21:02"
+          "title": "浙江省杭州市淳安县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33012741600000_20260830214151.html",
+          "issuedAt": "2026/08/30 21:39"
         },
-        "lat": 26.1,
-        "lng": 118.3
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "四川",
@@ -888,26 +908,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省杭州市临安区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33011241600000_20260830165200.html",
-          "issuedAt": "2026/08/30 16:50"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "黑龙江",
