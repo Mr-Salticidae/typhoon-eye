@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 07:45",
+  "updatedAt": "2026-08-30 08:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -611,7 +611,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 54,
+            "count": 55,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -658,11 +658,29 @@
             },
             "via": "路径邻近",
             "distKm": 274
+          },
+          {
+            "province": "海南",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 1,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "海南省儋州市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46040041600000_20260830075514.html",
+              "issuedAt": "2026/08/30 07:55"
+            },
+            "via": "路径邻近",
+            "distKm": 444
           }
         ],
         "floodLevel": "red",
         "maxLevel": "red",
-        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高红色。"
+        "note": "台风影响范围内有 4 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -671,9 +689,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 319,
+    "total": 305,
     "counts": {
-      "暴雨": 223,
+      "暴雨": 209,
       "台风": 4,
       "山洪风险": 13,
       "地质灾害": 79
@@ -696,7 +714,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 116,
+        "count": 113,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -714,7 +732,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 54,
+        "count": 55,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -732,7 +750,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 51,
+        "count": 48,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -744,13 +762,31 @@
         "lng": 115.7
       },
       {
+        "province": "河南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "河南省信阳市光山县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41152241600000_20260830075510.html",
+          "issuedAt": "2026/08/30 07:55"
+        },
+        "lat": 33.9,
+        "lng": 113.6
+      },
+      {
         "province": "重庆",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 7,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -786,7 +822,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -823,7 +859,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -833,24 +869,6 @@
         },
         "lat": 31.9,
         "lng": 117.2
-      },
-      {
-        "province": "河南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "河南省信阳市光山县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41152241600000_20260830063644.html",
-          "issuedAt": "2026/08/30 06:36"
-        },
-        "lat": 33.9,
-        "lng": 113.6
       },
       {
         "province": "吉林",
@@ -871,6 +889,24 @@
         "lng": 126.2
       },
       {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省儋州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46040041600000_20260830075514.html",
+          "issuedAt": "2026/08/30 07:55"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
+      {
         "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -878,13 +914,13 @@
           "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 12,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省丽水市云和县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33112541600000_20260830041627.html",
-          "issuedAt": "2026/08/30 04:15"
+          "title": "浙江省衢州市衢江区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33080341600000_20260830031810.html",
+          "issuedAt": "2026/08/30 03:17"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -896,7 +932,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -906,24 +942,6 @@
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "山东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "山东省枣庄市薛城区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37040341600000_20260829213846.html",
-          "issuedAt": "2026/08/29 21:28"
-        },
-        "lat": 36.4,
-        "lng": 118.2
       },
       {
         "province": "山西",
@@ -962,7 +980,7 @@
         "lng": 112.3
       },
       {
-        "province": "贵州",
+        "province": "山东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
@@ -972,12 +990,12 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省铜仁市印江县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52062541600000_20260830015419.html",
-          "issuedAt": "2026/08/30 01:54"
+          "title": "山东省枣庄市薛城区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37040341600000_20260829213846.html",
+          "issuedAt": "2026/08/29 21:28"
         },
-        "lat": 26.8,
-        "lng": 106.9
+        "lat": 36.4,
+        "lng": 118.2
       },
       {
         "province": "四川",
