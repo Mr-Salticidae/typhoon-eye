@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 15:01",
+  "updatedAt": "2026-08-30 15:22",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -232,7 +232,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 48 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 53 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -251,7 +251,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-30 11时",
+            "time": "08-30 14时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -603,13 +603,13 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 52,
+            "count": 57,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省广州市南沙区气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44011541600000_20260830143744.html",
-              "issuedAt": "2026/08/30 14:36"
+              "title": "广东省佛山市三水区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44060741600000_20260830125132.html",
+              "issuedAt": "2026/08/30 12:46"
             },
             "via": "路径邻近",
             "distKm": 205
@@ -621,7 +621,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 45,
+            "count": 46,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -658,7 +658,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 7,
+            "count": 9,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -681,9 +681,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 329,
+    "total": 336,
     "counts": {
-      "暴雨": 234,
+      "暴雨": 241,
       "台风": 4,
       "山洪灾害": 1,
       "山洪风险": 13,
@@ -725,13 +725,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 52,
+        "count": 57,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省广州市南沙区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44011541600000_20260830143744.html",
-          "issuedAt": "2026/08/30 14:36"
+          "title": "广东省佛山市三水区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44060741600000_20260830125132.html",
+          "issuedAt": "2026/08/30 12:46"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -743,7 +743,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 45,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -761,7 +761,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 37,
+        "count": 34,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -771,6 +771,44 @@
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "安徽",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 16,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "安徽省六安市霍邱县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34152241600000_20260830151346.html",
+          "issuedAt": "2026/08/30 15:13"
+        },
+        "lat": 31.9,
+        "lng": 117.2
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "浙江省杭州市临安区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33011241600000_20260830150702.html",
+          "issuedAt": "2026/08/30 15:04"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "河南",
@@ -791,42 +829,23 @@
         "lng": 113.6
       },
       {
-        "province": "安徽",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 14,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "安徽省六安市霍邱县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34152241600000_20260830145736.html",
-          "issuedAt": "2026/08/30 14:57"
-        },
-        "lat": 31.9,
-        "lng": 117.2
-      },
-      {
-        "province": "浙江",
+        "province": "广西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
+          "台风": "blue"
         },
-        "count": 11,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "浙江省杭州市建德市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33018241600000_20260830144312.html",
-          "issuedAt": "2026/08/30 14:42"
+          "title": "广西壮族自治区梧州市岑溪市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45048141600000_20260830110611.html",
+          "issuedAt": "2026/08/30 11:00"
         },
-        "lat": 29.2,
-        "lng": 120.2
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "黑龙江",
@@ -845,25 +864,6 @@
         },
         "lat": 47.4,
         "lng": 128.1
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区梧州市岑溪市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45048141600000_20260830110611.html",
-          "issuedAt": "2026/08/30 11:00"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "福建",
@@ -1033,7 +1033,7 @@
       "endedAt": "2026-08-25 15:09",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 4
+      "daysSince": 5
     },
     {
       "code": "2620",
