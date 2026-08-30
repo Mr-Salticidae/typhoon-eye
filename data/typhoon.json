@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31 03:00",
+  "updatedAt": "2026-08-31 03:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -22,7 +22,7 @@
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
       "ok": true,
-      "count": 2
+      "count": 3
     }
   ],
   "typhoons": [
@@ -224,7 +224,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 56 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里、强度暂缺（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -243,8 +243,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-30 23时",
-            "windLevel": 8,
+            "time": "08-31 02时",
+            "windLevel": null,
             "role": "verify"
           }
         ]
@@ -406,12 +406,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 271,
+    "total": 269,
     "counts": {
-      "暴雨": 214,
+      "暴雨": 213,
       "山洪灾害": 1,
       "山洪风险": 5,
-      "地质灾害": 51
+      "地质灾害": 50
     },
     "peak": {
       "province": "江西",
@@ -465,7 +465,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 29,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -521,7 +521,7 @@
           "山洪风险": "blue",
           "地质灾害": "orange"
         },
-        "count": 62,
+        "count": 61,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -635,8 +635,8 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省厦门市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35020041600000_20260831021300.html",
+          "title": "福建省厦门市翔安区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35021341600000_20260831021300.html",
           "issuedAt": "2026/08/31 02:13"
         },
         "lat": 26.1,
