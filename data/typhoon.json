@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 17:45",
+  "updatedAt": "2026-08-30 18:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -232,7 +232,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 44 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 38 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -251,7 +251,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-30 14时",
+            "time": "08-30 17时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -596,7 +596,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 66,
+            "count": 60,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -614,13 +614,13 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 47,
+            "count": 48,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "湖南省郴州市桂阳县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/43102141600000_20260830173055.html",
-              "issuedAt": "2026/08/30 17:30"
+              "title": "湖南省郴州市永兴县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/43102341600000_20260830174846.html",
+              "issuedAt": "2026/08/30 17:48"
             },
             "via": "路径邻近",
             "distKm": 446
@@ -630,10 +630,9 @@
             "maxLevel": "orange",
             "floodLevel": "orange",
             "kinds": {
-              "暴雨": "orange",
-              "台风": "blue"
+              "暴雨": "orange"
             },
-            "count": 9,
+            "count": 6,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -674,43 +673,22 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 367,
+    "total": 344,
     "counts": {
-      "暴雨": 282,
-      "台风": 4,
+      "暴雨": 266,
       "山洪灾害": 1,
       "山洪风险": 13,
-      "地质灾害": 67
+      "地质灾害": 64
     },
     "peak": {
-      "province": "云南",
+      "province": "广东",
       "kind": "暴雨",
       "level": "red",
-      "title": "云南省德宏傣族景颇族自治州瑞丽市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53310241600000_20260830132226.html",
-      "issuedAt": "2026/08/30 13:21"
+      "title": "广东省肇庆市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44120041600000_20260830153449.html",
+      "issuedAt": "2026/08/30 15:30"
     },
     "provinces": [
-      {
-        "province": "云南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪风险": "yellow",
-          "地质灾害": "orange"
-        },
-        "count": 84,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "云南省德宏傣族景颇族自治州瑞丽市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53310241600000_20260830132226.html",
-          "issuedAt": "2026/08/30 13:21"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
       {
         "province": "广东",
         "maxLevel": "red",
@@ -718,7 +696,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 66,
+        "count": 60,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -736,13 +714,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 47,
+        "count": 48,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "湖南省郴州市桂阳县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102141600000_20260830173055.html",
-          "issuedAt": "2026/08/30 17:30"
+          "title": "湖南省郴州市永兴县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43102341600000_20260830174846.html",
+          "issuedAt": "2026/08/30 17:48"
         },
         "lat": 27.6,
         "lng": 111.7
@@ -754,7 +732,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 30,
+        "count": 29,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -772,7 +750,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -784,13 +762,33 @@
         "lng": 113.6
       },
       {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 79,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省西双版纳傣族自治州景洪市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53280141600000_20260830164258.html",
+          "issuedAt": "2026/08/30 16:42"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 30,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -802,6 +800,24 @@
         "lng": 115.7
       },
       {
+        "province": "湖北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖北省咸宁市通山县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42122441600000_20260830175251.html",
+          "issuedAt": "2026/08/30 17:52"
+        },
+        "lat": 31,
+        "lng": 112.3
+      },
+      {
         "province": "浙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -810,7 +826,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 10,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -826,10 +842,9 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
+          "暴雨": "orange"
         },
-        "count": 9,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -841,31 +856,13 @@
         "lng": 108.8
       },
       {
-        "province": "湖北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖北省黄石市阳新县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42022241600000_20260830160244.html",
-          "issuedAt": "2026/08/30 16:02"
-        },
-        "lat": 31,
-        "lng": 112.3
-      },
-      {
         "province": "黑龙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -896,18 +893,18 @@
       },
       {
         "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "blue"
         },
-        "count": 10,
+        "count": 6,
         "top": {
           "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省漳州市云霄县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062241600000_20260830145500.html",
-          "issuedAt": "2026/08/30 14:55"
+          "level": "blue",
+          "title": "福建省漳州市诏安县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260830170600.html",
+          "issuedAt": "2026/08/30 17:06"
         },
         "lat": 26.1,
         "lng": 118.3
