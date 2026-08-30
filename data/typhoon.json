@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 09:36",
+  "updatedAt": "2026-08-30 10:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -621,13 +621,31 @@
       "rainRisk": {
         "provinces": [
           {
+            "province": "广东",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 33,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "广东省佛山市顺德区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44060641600000_20260830095003.html",
+              "issuedAt": "2026/08/30 09:47"
+            },
+            "via": "路径邻近",
+            "distKm": 197
+          },
+          {
             "province": "湖南",
             "maxLevel": "red",
             "floodLevel": "red",
             "kinds": {
               "暴雨": "red"
             },
-            "count": 55,
+            "count": 53,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -655,24 +673,6 @@
             },
             "via": "路径邻近",
             "distKm": 129
-          },
-          {
-            "province": "广东",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange"
-            },
-            "count": 30,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "广东省佛山市顺德区气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44060641600000_20260830083948.html",
-              "issuedAt": "2026/08/30 08:35"
-            },
-            "via": "路径邻近",
-            "distKm": 197
           },
           {
             "province": "广西",
@@ -705,13 +705,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 315,
+    "total": 318,
     "counts": {
       "暴雨": 218,
       "台风": 4,
       "山洪灾害": 1,
       "山洪风险": 14,
-      "地质灾害": 78
+      "地质灾害": 81
     },
     "peak": {
       "province": "云南",
@@ -731,7 +731,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 113,
+        "count": 116,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -749,7 +749,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 55,
+        "count": 53,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -779,6 +779,24 @@
         "lng": 115.7
       },
       {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 33,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省佛山市顺德区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44060641600000_20260830095003.html",
+          "issuedAt": "2026/08/30 09:47"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "河南",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -789,48 +807,30 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "河南省信阳市光山县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41152241600000_20260830075510.html",
-          "issuedAt": "2026/08/30 07:55"
+          "title": "河南省信阳市固始县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41152541600000_20260830093054.html",
+          "issuedAt": "2026/08/30 09:30"
         },
         "lat": 33.9,
         "lng": 113.6
       },
       {
-        "province": "重庆",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "重庆市县丰都县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023041600000_20260829095631.html",
-          "issuedAt": "2026/08/29 09:56"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "广东",
+        "province": "安徽",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 30,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省佛山市顺德区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44060641600000_20260830083948.html",
-          "issuedAt": "2026/08/30 08:35"
+          "title": "安徽省安庆市岳西县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34082841600000_20260830094620.html",
+          "issuedAt": "2026/08/30 09:46"
         },
-        "lat": 23.4,
-        "lng": 113.4
+        "lat": 31.9,
+        "lng": 117.2
       },
       {
         "province": "黑龙江",
@@ -849,24 +849,6 @@
         },
         "lat": 47.4,
         "lng": 128.1
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "安徽省阜阳市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34120041600000_20260830073229.html",
-          "issuedAt": "2026/08/30 07:32"
-        },
-        "lat": 31.9,
-        "lng": 117.2
       },
       {
         "province": "广西",
@@ -904,6 +886,24 @@
         },
         "lat": 43.7,
         "lng": 126.2
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "重庆市綦江区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011041600000_20260829133748.html",
+          "issuedAt": "2026/08/29 13:37"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "海南",
@@ -1082,7 +1082,7 @@
         "广西",
         "广东"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": "red",
       "daysSince": 3
     },
     {
