@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30 12:00",
+  "updatedAt": "2026-08-30 12:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -232,7 +232,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 19 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -251,7 +251,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-30 08时",
+            "time": "08-30 11时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -619,13 +619,13 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 43,
+            "count": 42,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "广东省佛山市南海区气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260830114826.html",
-              "issuedAt": "2026/08/30 11:44"
+              "title": "广东省广州市花都区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44011441600000_20260830120502.html",
+              "issuedAt": "2026/08/30 12:02"
             },
             "via": "路径邻近",
             "distKm": 195
@@ -674,7 +674,7 @@
               "暴雨": "orange",
               "台风": "blue"
             },
-            "count": 9,
+            "count": 7,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -697,43 +697,23 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 335,
+    "total": 321,
     "counts": {
-      "暴雨": 235,
+      "暴雨": 221,
       "台风": 4,
       "山洪灾害": 1,
       "山洪风险": 14,
       "地质灾害": 81
     },
     "peak": {
-      "province": "云南",
+      "province": "湖南",
       "kind": "暴雨",
       "level": "red",
-      "title": "云南省西双版纳傣族自治州勐腊县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53282341600000_20260830071757.html",
-      "issuedAt": "2026/08/30 07:17"
+      "title": "湖南省衡阳市南岳区气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/43041241600000_20260829205023.html",
+      "issuedAt": "2026/08/29 20:49"
     },
     "provinces": [
-      {
-        "province": "云南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪风险": "yellow",
-          "地质灾害": "orange"
-        },
-        "count": 110,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "云南省西双版纳傣族自治州勐腊县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53282341600000_20260830071757.html",
-          "issuedAt": "2026/08/30 07:17"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
       {
         "province": "湖南",
         "maxLevel": "red",
@@ -759,7 +739,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 47,
+        "count": 45,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -777,13 +757,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 43,
+        "count": 42,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省佛山市南海区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44060541600000_20260830114826.html",
-          "issuedAt": "2026/08/30 11:44"
+          "title": "广东省广州市花都区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44011441600000_20260830120502.html",
+          "issuedAt": "2026/08/30 12:02"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -795,7 +775,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 11,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -807,19 +787,39 @@
         "lng": 113.6
       },
       {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 103,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省普洱市孟连傣族拉祜族佤族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082741600000_20260830102130.html",
+          "issuedAt": "2026/08/30 10:24"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "安徽",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 14,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "安徽省安庆市岳西县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34082841600000_20260830094620.html",
-          "issuedAt": "2026/08/30 09:46"
+          "title": "安徽省六安市霍山县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34152541600000_20260830122408.html",
+          "issuedAt": "2026/08/30 12:24"
         },
         "lat": 31.9,
         "lng": 117.2
@@ -832,7 +832,7 @@
           "暴雨": "orange",
           "台风": "blue"
         },
-        "count": 9,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -850,7 +850,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 8,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -904,7 +904,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 17,
+        "count": 22,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
