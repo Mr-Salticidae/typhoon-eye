@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 02:01",
+  "updatedAt": "2026-09-01 02:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,15 +14,15 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
       "ok": true,
-      "count": 4
+      "count": 3
     }
   ],
   "typhoons": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 153 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 153 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "08-31 23时",
             "windLevel": 7,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "08-31 23时",
+            "windLevel": 7,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -264,7 +271,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 23,
+            "count": 22,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -282,13 +289,13 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 25,
+            "count": 18,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广东省汕头市潮南区气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44051441600000_20260901003726.html",
-              "issuedAt": "2026/09/01 00:35"
+              "title": "广东省揭阳市惠来县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44522441600000_20260901020822.html",
+              "issuedAt": "2026/09/01 02:03"
             },
             "via": "路径邻近",
             "distKm": 366
@@ -305,40 +312,22 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 199,
+    "total": 178,
     "counts": {
-      "暴雨": 162,
+      "暴雨": 141,
       "台风": 1,
       "山洪灾害": 2,
       "地质灾害": 34
     },
     "peak": {
-      "province": "江西",
+      "province": "湖南",
       "kind": "暴雨",
       "level": "red",
-      "title": "江西省赣州市全南县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/36072941600000_20260831201640.html",
-      "issuedAt": "2026/08/31 20:13"
+      "title": "湖南省郴州市临武县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/43102541600000_20260831131926.html",
+      "issuedAt": "2026/08/31 13:18"
     },
     "provinces": [
-      {
-        "province": "江西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 32,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "江西省赣州市全南县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36072941600000_20260831201640.html",
-          "issuedAt": "2026/08/31 20:13"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
       {
         "province": "湖南",
         "maxLevel": "red",
@@ -346,7 +335,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -358,13 +347,31 @@
         "lng": 111.7
       },
       {
+        "province": "江西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 29,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "江西省赣州市全南县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36072941600000_20260831201640.html",
+          "issuedAt": "2026/08/31 20:13"
+        },
+        "lat": 27.6,
+        "lng": 115.7
+      },
+      {
         "province": "福建",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 23,
+        "count": 22,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -393,24 +400,6 @@
         },
         "lat": 19.2,
         "lng": 109.7
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "黑龙江省气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23000041600000_20260831221521.html",
-          "issuedAt": "2026/08/31 22:10"
-        },
-        "lat": 47.4,
-        "lng": 128.1
       },
       {
         "province": "安徽",
@@ -456,54 +445,90 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 25,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省汕头市潮南区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44051441600000_20260901003726.html",
-          "issuedAt": "2026/09/01 00:35"
+          "title": "广东省揭阳市惠来县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44522441600000_20260901020822.html",
+          "issuedAt": "2026/09/01 02:03"
         },
         "lat": 23.4,
         "lng": 113.4
       },
       {
-        "province": "江苏",
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "浙江省杭州市桐庐县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33012241600000_20260901020008.html",
+          "issuedAt": "2026/09/01 01:58"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
+        "province": "黑龙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 13,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江苏省苏州市吴中区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/32050641600000_20260831182041.html",
-          "issuedAt": "2026/08/31 18:20"
+          "title": "黑龙江省佳木斯市汤原县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23082841600000_20260831202338.html",
+          "issuedAt": "2026/08/31 20:30"
+        },
+        "lat": 47.4,
+        "lng": 128.1
+      },
+      {
+        "province": "江苏",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "江苏省南通市如皋市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32068241600000_20260831204325.html",
+          "issuedAt": "2026/08/31 20:43"
         },
         "lat": 33,
         "lng": 119.5
       },
       {
-        "province": "浙江",
+        "province": "新疆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 12,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省湖州市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33050041600000_20260901015723.html",
-          "issuedAt": "2026/09/01 01:55"
+          "title": "新疆维吾尔自治区阿勒泰地区布尔津县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65432141600000_20260901021028.html",
+          "issuedAt": "2026/09/01 02:10"
         },
-        "lat": 29.2,
-        "lng": 120.2
+        "lat": 41.1,
+        "lng": 85.3
       },
       {
         "province": "吉林",
@@ -560,24 +585,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "新疆维吾尔自治区塔城地区额敏县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65422141600000_20260831190430.html",
-          "issuedAt": "2026/08/31 19:04"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       }
     ]
   },
