@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31 17:30",
+  "updatedAt": "2026-08-31 18:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "zj",
@@ -25,196 +25,16 @@
       "count": 4
     }
   ],
-  "typhoons": [
-    {
-      "name": "班朗",
-      "enName": "BANG-LANG",
-      "code": "2623",
-      "level": "热带风暴（8级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 104 公里（时次相差 3 小时）、强度暂缺（2 源交叉校验一致）",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "08-31 05时",
-            "windLevel": 8,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "08-31 08时",
-            "windLevel": null,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 8,
-        "windSpeed": 20,
-        "pressure": 995,
-        "moveDir": "北",
-        "moveSpeed": 28,
-        "r7": null,
-        "r10": null,
-        "time": "08-31 05时",
-        "position": "中心位于北纬 36.2 度、东经 165.4 度"
-      },
-      "track": [
-        {
-          "t": "08-28 14时",
-          "lat": 19.4,
-          "lng": 165.9,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-28 20时",
-          "lat": 19.8,
-          "lng": 165.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-28 23时",
-          "lat": 20,
-          "lng": 166.5,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 05时",
-          "lat": 21.3,
-          "lng": 167.3,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 08时",
-          "lat": 22.1,
-          "lng": 167.8,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 14时",
-          "lat": 23.8,
-          "lng": 168.3,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 17时",
-          "lat": 24.5,
-          "lng": 168.4,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 23时",
-          "lat": 26.2,
-          "lng": 168.7,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 02时",
-          "lat": 27.9,
-          "lng": 168.6,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 08时",
-          "lat": 30.4,
-          "lng": 168.1,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 11时",
-          "lat": 31.4,
-          "lng": 168,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 17时",
-          "lat": 33.7,
-          "lng": 167.3,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 20时",
-          "lat": 34.2,
-          "lng": 166.7,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-31 02时",
-          "lat": 35.7,
-          "lng": 165.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-31 05时",
-          "lat": 36.2,
-          "lng": 165.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "now"
-        },
-        {
-          "t": "08-31 17时",
-          "lat": 39.1,
-          "lng": 166,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-01 05时",
-          "lat": 42.5,
-          "lng": 167.6,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        }
-      ],
-      "rainRisk": null
-    }
-  ],
+  "typhoons": [],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 248,
+    "total": 252,
     "counts": {
-      "暴雨": 203,
+      "暴雨": 206,
+      "台风": 1,
       "山洪灾害": 1,
       "山洪风险": 2,
       "地质灾害": 42
@@ -235,7 +55,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 53,
+        "count": 52,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -253,7 +73,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 38,
+        "count": 36,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -287,9 +107,10 @@
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red"
+          "暴雨": "red",
+          "台风": "blue"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -299,6 +120,24 @@
         },
         "lat": 19.2,
         "lng": 109.7
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 45,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省广州市番禺区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44011341600000_20260831165734.html",
+          "issuedAt": "2026/08/31 16:55"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "云南",
@@ -321,24 +160,6 @@
         "lng": 101.5
       },
       {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 41,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省广州市番禺区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44011341600000_20260831165734.html",
-          "issuedAt": "2026/08/31 16:55"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "浙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -347,7 +168,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -365,13 +186,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省泉州市南安市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260831172422.html",
-          "issuedAt": "2026/08/31 17:24"
+          "title": "福建省三明市永安市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35048141600000_20260831173900.html",
+          "issuedAt": "2026/08/31 17:39"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -460,9 +281,9 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "新疆维吾尔自治区塔城地区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65420041600000_20260831171107.html",
-          "issuedAt": "2026/08/31 17:11"
+          "title": "新疆维吾尔自治区塔城地区裕民县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65422541600000_20260831175216.html",
+          "issuedAt": "2026/08/31 17:52"
         },
         "lat": 41.1,
         "lng": 85.3
@@ -506,6 +327,16 @@
     ]
   },
   "recentlyEnded": [
+    {
+      "code": "2623",
+      "name": "班朗",
+      "enName": "BANG-LANG",
+      "lastLevel": "热带风暴（8级）",
+      "endedAt": "2026-08-31 18:00",
+      "provinces": [],
+      "ongoingFloodLevel": null,
+      "daysSince": 0
+    },
     {
       "code": "2622",
       "name": "艾涛",
