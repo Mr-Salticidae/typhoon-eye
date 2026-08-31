@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 03:31",
+  "updatedAt": "2026-09-01 04:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -30,41 +30,48 @@
       "name": "沙德尔",
       "enName": "SAUDEL",
       "code": "2618",
-      "level": "热带低压（7级）",
+      "level": "热带风暴（8级）",
       "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
       "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 153 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 42 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "08-31 23时",
-            "windLevel": 7,
+            "time": "09-01 02时",
+            "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-01 02时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "08-31 23时",
-            "windLevel": 7,
+            "time": "09-01 02时",
+            "windLevel": 8,
             "role": "verify"
           }
         ]
       },
       "now": {
-        "windLevel": 7,
-        "windSpeed": 15,
+        "windLevel": 8,
+        "windSpeed": 18,
         "pressure": 995,
         "moveDir": "东北东",
-        "moveSpeed": 22,
-        "r7": null,
+        "moveSpeed": 26,
+        "r7": 300,
         "r10": null,
-        "time": "08-31 23时",
-        "position": "中心位于北纬 19.5 度、东经 112.3 度"
+        "time": "09-01 02时",
+        "position": "中心位于北纬 19.2 度、东经 112.4 度"
       },
       "track": [
         {
@@ -100,23 +107,23 @@
           "phase": "past"
         },
         {
-          "t": "08-24 11时",
-          "lat": 24.1,
-          "lng": 135.6,
+          "t": "08-24 14时",
+          "lat": 24.5,
+          "lng": 134.9,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "08-25 17时",
-          "lat": 27,
-          "lng": 129.7,
+          "t": "08-25 20时",
+          "lat": 27.2,
+          "lng": 129.1,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "08-26 16时",
+          "t": "08-26 17时",
           "lat": 28.4,
           "lng": 126.4,
           "wind": 14,
@@ -148,33 +155,25 @@
           "phase": "past"
         },
         {
-          "t": "08-28 09时",
-          "lat": 28,
-          "lng": 121,
-          "wind": 12,
-          "strong": "台风",
+          "t": "08-28 10时",
+          "lat": 27.8,
+          "lng": 120.7,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-28 19时",
+          "t": "08-28 20时",
           "lat": 27.3,
-          "lng": 118.7,
+          "lng": 118.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-29 14时",
-          "lat": 26.8,
-          "lng": 115.1,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "08-31 20时",
-          "lat": 19.5,
-          "lng": 111.7,
+          "t": "08-29 17时",
+          "lat": 26.9,
+          "lng": 114.6,
           "wind": 7,
           "strong": "热带低压",
           "phase": "past"
@@ -185,52 +184,60 @@
           "lng": 112.3,
           "wind": 7,
           "strong": "热带低压",
+          "phase": "past"
+        },
+        {
+          "t": "09-01 02时",
+          "lat": 19.2,
+          "lng": 112.4,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-01 11时",
-          "lat": 20.3,
-          "lng": 114.6,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-01 23时",
-          "lat": 21.3,
-          "lng": 116.3,
+          "t": "09-01 14时",
+          "lat": 20.5,
+          "lng": 115,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-02 11时",
-          "lat": 22,
-          "lng": 117.2,
+          "t": "09-02 02时",
+          "lat": 21.4,
+          "lng": 116.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-02 23时",
+          "t": "09-02 14时",
+          "lat": 22.1,
+          "lng": 117.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 02时",
           "lat": 22.6,
-          "lng": 118.1,
+          "lng": 118,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 11时",
-          "lat": 22.8,
-          "lng": 118.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-03 23时",
-          "lat": 23.3,
+          "t": "09-03 14时",
+          "lat": 22.9,
           "lng": 117.8,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 02时",
+          "lat": 23,
+          "lng": 117.4,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -255,7 +262,7 @@
               "issuedAt": "2026/08/31 23:55"
             },
             "via": "路径邻近",
-            "distKm": 275
+            "distKm": 284
           },
           {
             "province": "福建",
@@ -264,7 +271,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 25,
+            "count": 28,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -273,25 +280,25 @@
               "issuedAt": "2026/09/01 01:26"
             },
             "via": "路径邻近",
-            "distKm": 315
+            "distKm": 357
           },
           {
             "province": "广东",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
+            "maxLevel": "red",
+            "floodLevel": "red",
             "kinds": {
-              "暴雨": "orange"
+              "暴雨": "red"
             },
             "count": 19,
             "top": {
               "kind": "暴雨",
-              "level": "orange",
-              "title": "广东省揭阳市惠来县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44522441600000_20260901020822.html",
-              "issuedAt": "2026/09/01 02:03"
+              "level": "red",
+              "title": "广东省揭阳市惠来县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44522441600000_20260901035203.html",
+              "issuedAt": "2026/09/01 03:48"
             },
             "via": "路径邻近",
-            "distKm": 366
+            "distKm": 362
           }
         ],
         "floodLevel": "red",
@@ -305,9 +312,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 180,
+    "total": 183,
     "counts": {
-      "暴雨": 143,
+      "暴雨": 146,
       "台风": 1,
       "山洪灾害": 2,
       "地质灾害": 34
@@ -340,6 +347,24 @@
         "lng": 111.7
       },
       {
+        "province": "福建",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 28,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "福建省泉州市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35050041600000_20260901012600.html",
+          "issuedAt": "2026/09/01 01:26"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "江西",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -358,22 +383,22 @@
         "lng": 115.7
       },
       {
-        "province": "福建",
+        "province": "广东",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 25,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省泉州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35050041600000_20260901012600.html",
-          "issuedAt": "2026/09/01 01:26"
+          "title": "广东省揭阳市惠来县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44522441600000_20260901035203.html",
+          "issuedAt": "2026/09/01 03:48"
         },
-        "lat": 26.1,
-        "lng": 118.3
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "海南",
@@ -412,24 +437,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 19,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省揭阳市惠来县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44522441600000_20260901020822.html",
-          "issuedAt": "2026/09/01 02:03"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "黑龙江",
@@ -612,7 +619,7 @@
         "广西",
         "广东"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": "red",
       "daysSince": 5
     },
     {
