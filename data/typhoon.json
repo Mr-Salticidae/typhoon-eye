@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 00:30",
+  "updatedAt": "2026-09-01 01:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 153 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 153 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-31 23时",
             "windLevel": 7,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-31 23时",
-            "windLevel": 7,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -253,7 +246,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 8,
+            "count": 9,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -293,9 +286,9 @@
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广东省韶关市翁源县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44022941600000_20260831215347.html",
-              "issuedAt": "2026/08/31 21:52"
+              "title": "广东省汕头市潮南区气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44051441600000_20260901003726.html",
+              "issuedAt": "2026/09/01 00:35"
             },
             "via": "路径邻近",
             "distKm": 366
@@ -353,7 +346,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 33,
+        "count": 32,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -390,7 +383,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 8,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -467,9 +460,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省韶关市翁源县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44022941600000_20260831215347.html",
-          "issuedAt": "2026/08/31 21:52"
+          "title": "广东省汕头市潮南区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44051441600000_20260901003726.html",
+          "issuedAt": "2026/09/01 00:35"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -505,9 +498,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "浙江省湖州市南浔区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33050341600000_20260901001907.html",
-          "issuedAt": "2026/09/01 00:15"
+          "title": "浙江省湖州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33050041600000_20260901004208.html",
+          "issuedAt": "2026/09/01 00:38"
         },
         "lat": 29.2,
         "lng": 120.2
