@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31 14:45",
+  "updatedAt": "2026-08-31 14:57",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "zj",
@@ -205,186 +205,6 @@
         }
       ],
       "rainRisk": null
-    },
-    {
-      "name": "艾涛",
-      "enName": "ETAU",
-      "code": "2622",
-      "level": "热带风暴（8级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 35 公里、强度暂缺（2 源交叉校验一致）",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "08-31 02时",
-            "windLevel": 8,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "08-31 02时",
-            "windLevel": null,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 8,
-        "windSpeed": 18,
-        "pressure": 998,
-        "moveDir": "北北东",
-        "moveSpeed": 24,
-        "r7": null,
-        "r10": null,
-        "time": "08-31 02时",
-        "position": "中心位于北纬 31.7 度、东经 166.9 度"
-      },
-      "track": [
-        {
-          "t": "08-27 14时",
-          "lat": 21.4,
-          "lng": 168.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-27 20时",
-          "lat": 22.1,
-          "lng": 168.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-28 02时",
-          "lat": 22.7,
-          "lng": 168.2,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-28 08时",
-          "lat": 23.8,
-          "lng": 168.3,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-28 14时",
-          "lat": 24.6,
-          "lng": 166.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-28 20时",
-          "lat": 25.1,
-          "lng": 166.5,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 02时",
-          "lat": 26.3,
-          "lng": 166.5,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 11时",
-          "lat": 27,
-          "lng": 165.9,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 17时",
-          "lat": 29.1,
-          "lng": 165.7,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 23时",
-          "lat": 30.5,
-          "lng": 165,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 05时",
-          "lat": 30.9,
-          "lng": 164.9,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 11时",
-          "lat": 30.9,
-          "lng": 164.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 17时",
-          "lat": 31,
-          "lng": 165.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-30 23时",
-          "lat": 31.3,
-          "lng": 166.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-31 02时",
-          "lat": 31.7,
-          "lng": 166.9,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "now"
-        },
-        {
-          "t": "08-31 14时",
-          "lat": 34.2,
-          "lng": 167.6,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-01 02时",
-          "lat": 37.3,
-          "lng": 168.4,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "forecast"
-        }
-      ],
-      "rainRisk": null
     }
   ],
   "alerts": {
@@ -392,9 +212,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 253,
+    "total": 252,
     "counts": {
-      "暴雨": 204,
+      "暴雨": 203,
       "山洪灾害": 1,
       "山洪风险": 2,
       "地质灾害": 46
@@ -451,7 +271,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -668,6 +488,16 @@
     ]
   },
   "recentlyEnded": [
+    {
+      "code": "2622",
+      "name": "艾涛",
+      "enName": "ETAU",
+      "lastLevel": "热带风暴（8级）",
+      "endedAt": "2026-08-31 14:57",
+      "provinces": [],
+      "ongoingFloodLevel": null,
+      "daysSince": 0
+    },
     {
       "code": "2618",
       "name": "沙德尔",
