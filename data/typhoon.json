@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 03:00",
+  "updatedAt": "2026-09-01 03:31",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 153 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 153 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-31 23时",
             "windLevel": 7,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-31 23时",
-            "windLevel": 7,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -271,7 +264,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 24,
+            "count": 25,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -312,9 +305,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 179,
+    "total": 180,
     "counts": {
-      "暴雨": 142,
+      "暴雨": 143,
       "台风": 1,
       "山洪灾害": 2,
       "地质灾害": 34
@@ -371,7 +364,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 24,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -439,26 +432,6 @@
         "lng": 113.4
       },
       {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "浙江省杭州市桐庐县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33012241600000_20260901020008.html",
-          "issuedAt": "2026/09/01 01:58"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
         "province": "黑龙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -475,6 +448,26 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "浙江省杭州市桐庐县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33012241600000_20260901025957.html",
+          "issuedAt": "2026/09/01 02:58"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "江苏",
