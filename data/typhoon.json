@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31 09:15",
+  "updatedAt": "2026-08-31 09:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,14 +15,14 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "jma",
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
       "ok": true,
-      "count": 3
+      "count": 4
     }
   ],
   "typhoons": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 104 公里（时次相差 3 小时）、强度暂缺（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 104 公里（时次相差 3 小时）、强度暂缺（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "08-31 05时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "08-31 05时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 995,
         "moveDir": "北",
         "moveSpeed": 28,
-        "r7": 200,
+        "r7": null,
         "r10": null,
         "time": "08-31 05时",
         "position": "中心位于北纬 36.2 度、东经 165.4 度"
@@ -399,12 +392,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 248,
+    "total": 252,
     "counts": {
-      "暴雨": 197,
+      "暴雨": 200,
       "山洪灾害": 1,
       "山洪风险": 3,
-      "地质灾害": 47
+      "地质灾害": 48
     },
     "peak": {
       "province": "江西",
@@ -440,7 +433,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 39,
+        "count": 40,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -496,13 +489,13 @@
           "山洪风险": "blue",
           "地质灾害": "orange"
         },
-        "count": 55,
+        "count": 56,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
-          "title": "云南省怒江傈僳族自治州贡山独龙族怒族自治县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53332441600000_20260830182732.html",
-          "issuedAt": "2026/08/30 18:28"
+          "title": "云南省迪庆藏族自治州德钦县气象台发布地质灾害橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53342241600000_20260831093216.html",
+          "issuedAt": "2026/08/31 09:31"
         },
         "lat": 25,
         "lng": 101.5
@@ -696,16 +689,34 @@
         "kinds": {
           "暴雨": "blue"
         },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "内蒙古自治区呼伦贝尔市鄂伦春自治旗气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15072341600000_20260831092159.html",
+          "issuedAt": "2026/08/31 09:21"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
+        "province": "河南",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
         "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "内蒙古自治区呼伦贝尔市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15070041600000_20260831085706.html",
-          "issuedAt": "2026/08/31 08:57"
+          "title": "河南省商丘市柘城县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41142441600000_20260831093510.html",
+          "issuedAt": "2026/08/31 09:33"
         },
-        "lat": 44,
-        "lng": 113.9
+        "lat": 33.9,
+        "lng": 113.6
       }
     ]
   },
