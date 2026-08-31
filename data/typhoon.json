@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31 19:00",
+  "updatedAt": "2026-08-31 19:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -259,18 +259,18 @@
           },
           {
             "province": "福建",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
+            "maxLevel": "red",
+            "floodLevel": "red",
             "kinds": {
-              "暴雨": "orange"
+              "暴雨": "red"
             },
             "count": 8,
             "top": {
               "kind": "暴雨",
-              "level": "orange",
-              "title": "福建省泉州市南安市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260831182600.html",
-              "issuedAt": "2026/08/31 18:26"
+              "level": "red",
+              "title": "福建省泉州市南安市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260831190800.html",
+              "issuedAt": "2026/08/31 19:08"
             },
             "via": "路径邻近",
             "distKm": 331
@@ -282,13 +282,13 @@
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 41,
+            "count": 42,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "广东省肇庆市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44120041600000_20260831184643.html",
-              "issuedAt": "2026/08/31 18:44"
+              "title": "广东省江门市开平市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44078341600000_20260831191635.html",
+              "issuedAt": "2026/08/31 19:15"
             },
             "via": "路径邻近",
             "distKm": 370
@@ -305,12 +305,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 239,
+    "total": 244,
     "counts": {
-      "暴雨": 194,
+      "暴雨": 200,
       "台风": 1,
       "山洪灾害": 2,
-      "地质灾害": 42
+      "地质灾害": 41
     },
     "peak": {
       "province": "江西",
@@ -358,6 +358,44 @@
         "lng": 111.7
       },
       {
+        "province": "浙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 16,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "浙江省湖州市安吉县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33052341600000_20260831192102.html",
+          "issuedAt": "2026/08/31 19:20"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
+        "province": "福建",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "福建省泉州市南安市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260831190800.html",
+          "issuedAt": "2026/08/31 19:08"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "海南",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -383,13 +421,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 41,
+        "count": 42,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省肇庆市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44120041600000_20260831184643.html",
-          "issuedAt": "2026/08/31 18:44"
+          "title": "广东省江门市开平市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44078341600000_20260831191635.html",
+          "issuedAt": "2026/08/31 19:15"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -402,7 +440,7 @@
           "暴雨": "orange",
           "地质灾害": "orange"
         },
-        "count": 40,
+        "count": 39,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -430,44 +468,6 @@
         },
         "lat": 33,
         "lng": 119.5
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "浙江省杭州市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33010041600000_20260831183849.html",
-          "issuedAt": "2026/08/31 18:38"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省泉州市南安市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35058341600000_20260831182600.html",
-          "issuedAt": "2026/08/31 18:26"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "吉林",
@@ -550,13 +550,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 4,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "新疆维吾尔自治区塔城地区托里县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65422441600000_20260831184911.html",
-          "issuedAt": "2026/08/31 18:49"
+          "title": "新疆维吾尔自治区塔城地区额敏县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65422141600000_20260831190430.html",
+          "issuedAt": "2026/08/31 19:04"
         },
         "lat": 41.1,
         "lng": 85.3
@@ -568,13 +568,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "上海市嘉定区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/31011441600000_20260831170321.html",
-          "issuedAt": "2026/08/31 16:58"
+          "title": "上海市闵行区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/31011241600000_20260831191850.html",
+          "issuedAt": "2026/08/31 19:15"
         },
         "lat": 31.2,
         "lng": 121.5
