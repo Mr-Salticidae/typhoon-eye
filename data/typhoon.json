@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 05:46",
+  "updatedAt": "2026-09-01 06:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 74 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 74 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-01 05时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-01 05时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 995,
         "moveDir": "东北东",
         "moveSpeed": 25,
-        "r7": null,
+        "r7": 300,
         "r10": null,
         "time": "09-01 05时",
         "position": "中心位于北纬 19.2 度、东经 112.8 度"
@@ -280,7 +287,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 19,
+            "count": 18,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -298,7 +305,7 @@
             "kinds": {
               "暴雨": "red"
             },
-            "count": 28,
+            "count": 26,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -321,9 +328,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 173,
+    "total": 168,
     "counts": {
-      "暴雨": 136,
+      "暴雨": 131,
       "台风": 1,
       "山洪灾害": 2,
       "地质灾害": 34
@@ -344,7 +351,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 28,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -398,7 +405,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 19,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -465,26 +472,6 @@
         "lng": 128.1
       },
       {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省杭州市桐庐县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33012241600000_20260901025957.html",
-          "issuedAt": "2026/09/01 02:58"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
         "province": "江苏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -501,6 +488,26 @@
         },
         "lat": 33,
         "lng": 119.5
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "浙江省杭州市桐庐县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33012241600000_20260901025957.html",
+          "issuedAt": "2026/09/01 02:58"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "新疆",
@@ -620,19 +627,6 @@
       "endedAt": "2026-08-25 15:09",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 6
-    },
-    {
-      "code": "2620",
-      "name": "简拉维",
-      "enName": "GAENARI",
-      "lastLevel": "热带低压（7级）",
-      "endedAt": "2026-08-25 06:01",
-      "provinces": [
-        "福建",
-        "江西"
-      ],
-      "ongoingFloodLevel": "red",
       "daysSince": 6
     }
   ]
