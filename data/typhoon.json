@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31 09:45",
+  "updatedAt": "2026-08-31 10:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -392,12 +392,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 252,
+    "total": 240,
     "counts": {
-      "暴雨": 200,
+      "暴雨": 190,
       "山洪灾害": 1,
-      "山洪风险": 3,
-      "地质灾害": 48
+      "山洪风险": 2,
+      "地质灾害": 47
     },
     "peak": {
       "province": "江西",
@@ -451,7 +451,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 27,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -489,7 +489,7 @@
           "山洪风险": "blue",
           "地质灾害": "orange"
         },
-        "count": 56,
+        "count": 53,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -507,7 +507,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 44,
+        "count": 42,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -517,24 +517,6 @@
         },
         "lat": 33,
         "lng": 119.5
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "安徽省池州市青阳县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34172341600000_20260831041930.html",
-          "issuedAt": "2026/08/31 04:19"
-        },
-        "lat": 31.9,
-        "lng": 117.2
       },
       {
         "province": "海南",
@@ -555,60 +537,41 @@
         "lng": 109.7
       },
       {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "province": "安徽",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "yellow"
         },
-        "count": 1,
+        "count": 9,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区贺州市富川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45112341600000_20260831052752.html",
-          "issuedAt": "2026/08/31 05:26"
+          "level": "yellow",
+          "title": "安徽省气象台发布暴雨黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/34000041600000_20260831094804.html",
+          "issuedAt": "2026/08/31 09:48"
         },
-        "lat": 23.8,
-        "lng": 108.8
+        "lat": 31.9,
+        "lng": 117.2
       },
       {
         "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "浙江省湖州市南浔区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33050341600000_20260830143337.html",
-          "issuedAt": "2026/08/30 14:35"
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260830171552.html",
+          "issuedAt": "2026/08/30 17:15"
         },
         "lat": 29.2,
         "lng": 120.2
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省厦门市翔安区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35021341600000_20260831052300.html",
-          "issuedAt": "2026/08/31 05:23"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "吉林",
@@ -627,24 +590,6 @@
         },
         "lat": 43.7,
         "lng": 126.2
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "黑龙江省鹤岗市萝北县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23042141600000_20260831010222.html",
-          "issuedAt": "2026/08/31 01:15"
-        },
-        "lat": 47.4,
-        "lng": 128.1
       },
       {
         "province": "四川",
@@ -699,24 +644,6 @@
         },
         "lat": 44,
         "lng": 113.9
-      },
-      {
-        "province": "河南",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河南省商丘市柘城县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41142441600000_20260831093510.html",
-          "issuedAt": "2026/08/31 09:33"
-        },
-        "lat": 33.9,
-        "lng": 113.6
       }
     ]
   },
