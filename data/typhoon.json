@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02 07:22",
+  "updatedAt": "2026-09-02 07:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -460,24 +460,6 @@
             "distKm": 375
           },
           {
-            "province": "海南",
-            "maxLevel": "yellow",
-            "floodLevel": null,
-            "kinds": {
-              "台风": "yellow"
-            },
-            "count": 2,
-            "top": {
-              "kind": "台风",
-              "level": "yellow",
-              "title": "海南省三沙市气象台发布台风黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/46030041600000_20260901080426.html",
-              "issuedAt": "2026/09/01 07:30"
-            },
-            "via": "路径邻近",
-            "distKm": 405
-          },
-          {
             "province": "广东",
             "maxLevel": "blue",
             "floodLevel": null,
@@ -494,6 +476,24 @@
             },
             "via": "路径邻近",
             "distKm": 151
+          },
+          {
+            "province": "海南",
+            "maxLevel": "blue",
+            "floodLevel": null,
+            "kinds": {
+              "台风": "blue"
+            },
+            "count": 2,
+            "top": {
+              "kind": "台风",
+              "level": "blue",
+              "title": "海南省三沙市气象台发布台风蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46030041600000_20260902073005.html",
+              "issuedAt": "2026/09/02 07:30"
+            },
+            "via": "路径邻近",
+            "distKm": 405
           }
         ],
         "floodLevel": "red",
@@ -507,9 +507,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 94,
+    "total": 95,
     "counts": {
-      "暴雨": 70,
+      "暴雨": 71,
       "台风": 11,
       "山洪灾害": 2,
       "地质灾害": 11
@@ -563,6 +563,25 @@
         "lng": 118.3
       },
       {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "地质灾害",
+          "level": "orange",
+          "title": "云南省迪庆藏族自治州香格里拉市气象台发布地质灾害橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53340141600000_20260901171703.html",
+          "issuedAt": "2026/09/01 17:17"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "湖南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -579,24 +598,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "地质灾害": "orange"
-        },
-        "count": 10,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省迪庆藏族自治州香格里拉市气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53340141600000_20260901171703.html",
-          "issuedAt": "2026/09/01 17:17"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "江西",
@@ -654,24 +655,6 @@
         "lng": 126.2
       },
       {
-        "province": "海南",
-        "maxLevel": "yellow",
-        "floodLevel": null,
-        "kinds": {
-          "台风": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "台风",
-          "level": "yellow",
-          "title": "海南省三沙市气象台发布台风黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46030041600000_20260901080426.html",
-          "issuedAt": "2026/09/01 07:30"
-        },
-        "lat": 19.2,
-        "lng": 109.7
-      },
-      {
         "province": "广东",
         "maxLevel": "blue",
         "floodLevel": null,
@@ -688,6 +671,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "海南",
+        "maxLevel": "blue",
+        "floodLevel": null,
+        "kinds": {
+          "台风": "blue"
+        },
+        "count": 2,
+        "top": {
+          "kind": "台风",
+          "level": "blue",
+          "title": "海南省三沙市气象台发布台风蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46030041600000_20260902073005.html",
+          "issuedAt": "2026/09/02 07:30"
+        },
+        "lat": 19.2,
+        "lng": 109.7
       }
     ]
   },
