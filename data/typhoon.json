@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 17:15",
+  "updatedAt": "2026-09-01 17:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,26 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 75 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 41 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-01 14时",
+            "time": "09-01 17时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-01 14时",
+            "time": "09-01 17时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-01 14时",
+            "time": "09-01 17时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -70,8 +70,8 @@
         "moveSpeed": 0,
         "r7": 380,
         "r10": null,
-        "time": "09-01 14时",
-        "position": "中心位于北纬 22.5 度、东经 132.1 度"
+        "time": "09-01 17时",
+        "position": "中心位于北纬 22.6 度、东经 132.1 度"
       },
       "track": [
         {
@@ -96,67 +96,75 @@
           "lng": 132.1,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-01 17时",
+          "lat": 22.6,
+          "lng": 132.1,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-02 02时",
-          "lat": 22.7,
-          "lng": 132.4,
+          "t": "09-02 05时",
+          "lat": 22.9,
+          "lng": 132.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-02 14时",
-          "lat": 23.6,
-          "lng": 132.2,
+          "t": "09-02 17时",
+          "lat": 23.5,
+          "lng": 132.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 02时",
-          "lat": 24.6,
-          "lng": 131.5,
+          "t": "09-03 05时",
+          "lat": 25.1,
+          "lng": 130.9,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 14时",
-          "lat": 27,
-          "lng": 129.7,
+          "t": "09-03 17时",
+          "lat": 27.2,
+          "lng": 129.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-04 02时",
-          "lat": 28,
-          "lng": 129.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-04 14时",
-          "lat": 28.7,
+          "t": "09-04 05时",
+          "lat": 28.3,
           "lng": 129.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-05 14时",
-          "lat": 29.3,
+          "t": "09-04 17时",
+          "lat": 28.8,
           "lng": 129,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-06 14时",
-          "lat": 29.8,
+          "t": "09-05 17时",
+          "lat": 29.4,
+          "lng": 129,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-06 17时",
+          "lat": 30,
           "lng": 129,
           "wind": 8,
           "strong": "热带风暴",
@@ -176,7 +184,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 33 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 80 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 80 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -188,7 +196,7 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-01 16时",
+            "time": "09-01 17时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -408,7 +416,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 30,
+            "count": 31,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -468,12 +476,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 152,
+    "total": 151,
     "counts": {
-      "暴雨": 127,
+      "暴雨": 128,
       "台风": 4,
       "山洪灾害": 3,
-      "地质灾害": 18
+      "地质灾害": 16
     },
     "peak": {
       "province": "福建",
@@ -492,7 +500,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 30,
+        "count": 31,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -530,7 +538,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 14,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -540,24 +548,6 @@
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "地质灾害": "orange"
-        },
-        "count": 17,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省迪庆藏族自治州德钦县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53342241600000_20260901100221.html",
-          "issuedAt": "2026/09/01 10:01"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "广东",
@@ -577,6 +567,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "地质灾害": "orange"
+        },
+        "count": 15,
+        "top": {
+          "kind": "地质灾害",
+          "level": "orange",
+          "title": "云南省迪庆藏族自治州香格里拉市气象台发布地质灾害橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53340141600000_20260901171703.html",
+          "issuedAt": "2026/09/01 17:17"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "江苏",
@@ -640,7 +648,7 @@
           "暴雨": "yellow",
           "山洪灾害": "yellow"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
