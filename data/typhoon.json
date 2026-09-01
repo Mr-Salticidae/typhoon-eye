@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 11:30",
+  "updatedAt": "2026-09-01 12:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 31 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-01 08时",
+            "time": "09-01 11时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -162,8 +162,8 @@
       "enName": "SAUDEL",
       "code": "2618",
       "level": "热带风暴（8级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
@@ -324,10 +324,92 @@
           "wind": 8,
           "strong": "热带风暴",
           "phase": "now"
+        },
+        {
+          "t": "09-01 17时",
+          "lat": 20.6,
+          "lng": 115.2,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-01 23时",
+          "lat": 21.1,
+          "lng": 116.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 05时",
+          "lat": 21.4,
+          "lng": 116.9,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 11时",
+          "lat": 21.7,
+          "lng": 117.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 23时",
+          "lat": 22.1,
+          "lng": 118,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 11时",
+          "lat": 22.3,
+          "lng": 118.1,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 23时",
+          "lat": 22.5,
+          "lng": 118.1,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 11时",
+          "lat": 22.7,
+          "lng": 117.7,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
         "provinces": [
+          {
+            "province": "福建",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 25,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "福建省泉州市惠安县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35052141600000_20260901111700.html",
+              "issuedAt": "2026/09/01 11:17"
+            },
+            "via": "路径邻近",
+            "distKm": 383
+          },
           {
             "province": "广东",
             "maxLevel": "orange",
@@ -345,7 +427,7 @@
               "issuedAt": "2026/09/01 00:35"
             },
             "via": "路径邻近",
-            "distKm": 404
+            "distKm": 362
           },
           {
             "province": "海南",
@@ -366,9 +448,9 @@
             "distKm": 445
           }
         ],
-        "floodLevel": "orange",
-        "maxLevel": "orange",
-        "note": "台风影响范围内有 2 个省级行政区发布洪涝类预警，最高橙色。"
+        "floodLevel": "red",
+        "maxLevel": "red",
+        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -377,9 +459,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 135,
+    "total": 136,
     "counts": {
-      "暴雨": 106,
+      "暴雨": 107,
       "台风": 3,
       "山洪灾害": 2,
       "地质灾害": 24
@@ -389,8 +471,8 @@
       "kind": "暴雨",
       "level": "red",
       "title": "福建省泉州市惠安县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/35052141600000_20260901051500.html",
-      "issuedAt": "2026/09/01 05:15"
+      "url": "http://www.nmc.cn/publish/alarm/35052141600000_20260901111700.html",
+      "issuedAt": "2026/09/01 11:17"
     },
     "provinces": [
       {
@@ -405,8 +487,8 @@
           "kind": "暴雨",
           "level": "red",
           "title": "福建省泉州市惠安县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35052141600000_20260901051500.html",
-          "issuedAt": "2026/09/01 05:15"
+          "url": "http://www.nmc.cn/publish/alarm/35052141600000_20260901111700.html",
+          "issuedAt": "2026/09/01 11:17"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -585,13 +667,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "江苏省盐城市东台市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/32098141600000_20260901094449.html",
-          "issuedAt": "2026/09/01 09:44"
+          "title": "江苏省盐城市大丰区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32090441600000_20260901112747.html",
+          "issuedAt": "2026/09/01 11:27"
         },
         "lat": 33,
         "lng": 119.5
