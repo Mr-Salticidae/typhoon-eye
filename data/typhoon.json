@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 14:45",
+  "updatedAt": "2026-09-01 15:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 75 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 75 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-01 11时",
+            "time": "09-01 14时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-01 11时",
+            "time": "09-01 14时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -70,7 +70,7 @@
         "moveSpeed": 0,
         "r7": 380,
         "r10": null,
-        "time": "09-01 11时",
+        "time": "09-01 14时",
         "position": "中心位于北纬 22.5 度、东经 132.1 度"
       },
       "track": [
@@ -88,68 +88,76 @@
           "lng": 132.1,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-01 14时",
+          "lat": 22.5,
+          "lng": 132.1,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-01 23时",
-          "lat": 22.6,
+          "t": "09-02 02时",
+          "lat": 22.7,
           "lng": 132.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-02 11时",
-          "lat": 23.4,
-          "lng": 132.6,
+          "t": "09-02 14时",
+          "lat": 23.6,
+          "lng": 132.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-02 23时",
+          "t": "09-03 02时",
           "lat": 24.6,
-          "lng": 132.1,
+          "lng": 131.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 11时",
-          "lat": 26,
-          "lng": 131.1,
+          "t": "09-03 14时",
+          "lat": 27,
+          "lng": 129.7,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 23时",
-          "lat": 27.5,
-          "lng": 130.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-04 11时",
-          "lat": 28.5,
-          "lng": 129.6,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-05 11时",
-          "lat": 29.4,
-          "lng": 129.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-06 11时",
-          "lat": 30.4,
+          "t": "09-04 02时",
+          "lat": 28,
           "lng": 129.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 14时",
+          "lat": 28.7,
+          "lng": 129.1,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-05 14时",
+          "lat": 29.3,
+          "lng": 129,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-06 14时",
+          "lat": 29.8,
+          "lng": 129,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
@@ -162,13 +170,13 @@
       "enName": "SAUDEL",
       "code": "2618",
       "level": "热带风暴（8级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 53 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -187,7 +195,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-01 11时",
+            "time": "09-01 14时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -324,10 +332,92 @@
           "wind": 8,
           "strong": "热带风暴",
           "phase": "now"
+        },
+        {
+          "t": "09-01 20时",
+          "lat": 20.7,
+          "lng": 115.7,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 02时",
+          "lat": 21.2,
+          "lng": 116.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 08时",
+          "lat": 21.5,
+          "lng": 116.9,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 14时",
+          "lat": 21.8,
+          "lng": 117.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 02时",
+          "lat": 22.2,
+          "lng": 118,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 14时",
+          "lat": 22.5,
+          "lng": 118,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 02时",
+          "lat": 22.7,
+          "lng": 117.6,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 14时",
+          "lat": 22.6,
+          "lng": 117,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
         "provinces": [
+          {
+            "province": "福建",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 25,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "福建省莆田市秀屿区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35030541600000_20260901133100.html",
+              "issuedAt": "2026/09/01 13:31"
+            },
+            "via": "路径邻近",
+            "distKm": 385
+          },
           {
             "province": "广东",
             "maxLevel": "orange",
@@ -345,7 +435,7 @@
               "issuedAt": "2026/09/01 00:35"
             },
             "via": "路径邻近",
-            "distKm": 403
+            "distKm": 379
           },
           {
             "province": "海南",
@@ -366,9 +456,9 @@
             "distKm": 499
           }
         ],
-        "floodLevel": "orange",
-        "maxLevel": "orange",
-        "note": "台风影响范围内有 2 个省级行政区发布洪涝类预警，最高橙色。"
+        "floodLevel": "red",
+        "maxLevel": "red",
+        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -377,9 +467,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 146,
+    "total": 147,
     "counts": {
-      "暴雨": 119,
+      "暴雨": 120,
       "台风": 3,
       "山洪灾害": 2,
       "地质灾害": 22
@@ -523,6 +613,24 @@
         "lng": 128.1
       },
       {
+        "province": "江苏",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江苏省盐城市东台市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32098141600000_20260901151039.html",
+          "issuedAt": "2026/09/01 15:10"
+        },
+        "lat": 33,
+        "lng": 119.5
+      },
+      {
         "province": "新疆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -539,24 +647,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "江苏",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "江苏省南通市如皋市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/32068241600000_20260901125940.html",
-          "issuedAt": "2026/09/01 12:59"
-        },
-        "lat": 33,
-        "lng": 119.5
       },
       {
         "province": "上海",
@@ -653,7 +743,7 @@
       "endedAt": "2026-08-31 14:57",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 0
+      "daysSince": 1
     },
     {
       "code": "2619",
@@ -667,16 +757,6 @@
       ],
       "ongoingFloodLevel": "orange",
       "daysSince": 5
-    },
-    {
-      "code": "2621",
-      "name": "艾莎尼",
-      "enName": "ATSANI",
-      "lastLevel": "热带风暴（8级）",
-      "endedAt": "2026-08-25 15:09",
-      "provinces": [],
-      "ongoingFloodLevel": null,
-      "daysSince": 6
     }
   ]
 }
