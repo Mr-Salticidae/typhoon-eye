@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 16:45",
+  "updatedAt": "2026-09-01 17:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -176,12 +176,12 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 47 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 33 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 80 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-01 16时",
+            "time": "09-01 17时",
             "windLevel": 8,
             "role": "primary"
           },
@@ -206,11 +206,11 @@
         "windSpeed": 18,
         "pressure": 995,
         "moveDir": "东北",
-        "moveSpeed": 22,
+        "moveSpeed": 17,
         "r7": 300,
         "r10": null,
-        "time": "09-01 16时",
-        "position": "中心位于北纬 20.1 度、东经 114.8 度"
+        "time": "09-01 17时",
+        "position": "中心位于北纬 20.2 度、东经 115.1 度"
       },
       "track": [
         {
@@ -230,10 +230,10 @@
           "phase": "past"
         },
         {
-          "t": "08-22 05时",
-          "lat": 17.7,
-          "lng": 147.5,
-          "wind": 12,
+          "t": "08-22 08时",
+          "lat": 18,
+          "lng": 146.8,
+          "wind": 13,
           "strong": "台风",
           "phase": "past"
         },
@@ -254,17 +254,17 @@
           "phase": "past"
         },
         {
-          "t": "08-26 11时",
-          "lat": 28.1,
-          "lng": 127.1,
+          "t": "08-26 13时",
+          "lat": 28.3,
+          "lng": 126.8,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "08-26 23时",
-          "lat": 28.6,
-          "lng": 125.6,
+          "t": "08-27 00时",
+          "lat": 28.7,
+          "lng": 125.5,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -286,17 +286,17 @@
           "phase": "past"
         },
         {
-          "t": "08-28 09时",
-          "lat": 28,
-          "lng": 121,
-          "wind": 12,
-          "strong": "台风",
+          "t": "08-28 10时",
+          "lat": 27.8,
+          "lng": 120.7,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-28 20时",
+          "t": "08-28 21时",
           "lat": 27.3,
-          "lng": 118.4,
+          "lng": 118.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -310,17 +310,9 @@
           "phase": "past"
         },
         {
-          "t": "09-01 04时",
+          "t": "09-01 05时",
           "lat": 19.2,
           "lng": 112.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-01 15时",
-          "lat": 20,
-          "lng": 114.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -331,68 +323,76 @@
           "lng": 114.8,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-01 17时",
+          "lat": 20.2,
+          "lng": 115.1,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-01 22时",
-          "lat": 20.8667,
-          "lng": 115.9333,
+          "t": "09-01 23时",
+          "lat": 21,
+          "lng": 116.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-02 04时",
+          "t": "09-02 05时",
           "lat": 21.3,
-          "lng": 116.5667,
+          "lng": 116.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-02 10时",
+          "t": "09-02 11时",
           "lat": 21.6,
-          "lng": 117.0667,
+          "lng": 117.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-02 16时",
-          "lat": 21.8667,
+          "t": "09-02 17时",
+          "lat": 22,
+          "lng": 117.6,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 05时",
+          "lat": 22.3,
+          "lng": 117.9,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 17时",
+          "lat": 22.6,
+          "lng": 117.9,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 05时",
+          "lat": 22.7,
           "lng": 117.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 04时",
-          "lat": 22.25,
-          "lng": 118,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-03 16时",
-          "lat": 22.5333,
-          "lng": 117.9333,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-04 04时",
-          "lat": 22.6833,
-          "lng": 117.5,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-04 16时",
-          "lat": 22.5833,
-          "lng": 116.9,
+          "t": "09-04 17时",
+          "lat": 22.7,
+          "lng": 117,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -405,18 +405,19 @@
             "maxLevel": "red",
             "floodLevel": "red",
             "kinds": {
-              "暴雨": "red"
+              "暴雨": "red",
+              "台风": "blue"
             },
-            "count": 29,
+            "count": 30,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260901161600.html",
-              "issuedAt": "2026/09/01 16:16"
+              "title": "福建省莆田市城厢区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35030241600000_20260901165100.html",
+              "issuedAt": "2026/09/01 16:51"
             },
             "via": "路径邻近",
-            "distKm": 388
+            "distKm": 387
           },
           {
             "province": "广东",
@@ -435,7 +436,7 @@
               "issuedAt": "2026/09/01 00:35"
             },
             "via": "路径邻近",
-            "distKm": 370
+            "distKm": 376
           },
           {
             "province": "海南",
@@ -453,7 +454,7 @@
               "issuedAt": "2026/09/01 07:30"
             },
             "via": "台风预警",
-            "distKm": 543
+            "distKm": 576
           }
         ],
         "floodLevel": "red",
@@ -467,20 +468,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 156,
+    "total": 152,
     "counts": {
-      "暴雨": 130,
-      "台风": 3,
+      "暴雨": 127,
+      "台风": 4,
       "山洪灾害": 3,
-      "地质灾害": 20
+      "地质灾害": 18
     },
     "peak": {
       "province": "福建",
       "kind": "暴雨",
       "level": "red",
-      "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260901161600.html",
-      "issuedAt": "2026/09/01 16:16"
+      "title": "福建省莆田市城厢区气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/35030241600000_20260901165100.html",
+      "issuedAt": "2026/09/01 16:51"
     },
     "provinces": [
       {
@@ -488,15 +489,16 @@
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red"
+          "暴雨": "red",
+          "台风": "blue"
         },
-        "count": 29,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260901161600.html",
-          "issuedAt": "2026/09/01 16:16"
+          "title": "福建省莆田市城厢区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35030241600000_20260901165100.html",
+          "issuedAt": "2026/09/01 16:51"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -528,7 +530,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 15,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -546,7 +548,7 @@
         "kinds": {
           "地质灾害": "orange"
         },
-        "count": 19,
+        "count": 17,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -619,7 +621,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -629,24 +631,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "新疆维吾尔自治区阿勒泰地区布尔津县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65432141600000_20260901021028.html",
-          "issuedAt": "2026/09/01 02:10"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       },
       {
         "province": "吉林",
@@ -666,6 +650,24 @@
         },
         "lat": 43.7,
         "lng": 126.2
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "新疆维吾尔自治区阿勒泰地区布尔津县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65432141600000_20260901021028.html",
+          "issuedAt": "2026/09/01 02:10"
+        },
+        "lat": 41.1,
+        "lng": 85.3
       },
       {
         "province": "上海",
