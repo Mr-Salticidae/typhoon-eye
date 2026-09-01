@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 08:07",
+  "updatedAt": "2026-09-01 08:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,13 +31,13 @@
       "enName": "SAUDEL",
       "code": "2618",
       "level": "热带风暴（8级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 15 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 95 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 95 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,7 +49,7 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-01 07时",
+            "time": "09-01 08时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -193,6 +193,70 @@
           "wind": 8,
           "strong": "热带风暴",
           "phase": "now"
+        },
+        {
+          "t": "09-01 14时",
+          "lat": 20.4,
+          "lng": 114.8,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-01 20时",
+          "lat": 20.9,
+          "lng": 115.9,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 02时",
+          "lat": 21.3,
+          "lng": 116.8,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 08时",
+          "lat": 21.6,
+          "lng": 117.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-02 20时",
+          "lat": 22,
+          "lng": 118,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 08时",
+          "lat": 22.3,
+          "lng": 118.2,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 20时",
+          "lat": 22.5,
+          "lng": 118.2,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 08时",
+          "lat": 22.6,
+          "lng": 117.8,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
@@ -217,13 +281,31 @@
             "distKm": 347
           },
           {
+            "province": "福建",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red"
+            },
+            "count": 25,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "福建省泉州市惠安县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35052141600000_20260901051500.html",
+              "issuedAt": "2026/09/01 05:15"
+            },
+            "via": "路径邻近",
+            "distKm": 392
+          },
+          {
             "province": "广东",
             "maxLevel": "orange",
             "floodLevel": "orange",
             "kinds": {
               "暴雨": "orange"
             },
-            "count": 18,
+            "count": 13,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -232,12 +314,12 @@
               "issuedAt": "2026/09/01 00:35"
             },
             "via": "路径邻近",
-            "distKm": 447
+            "distKm": 364
           }
         ],
         "floodLevel": "red",
         "maxLevel": "red",
-        "note": "台风影响范围内有 2 个省级行政区发布洪涝类预警，最高红色。"
+        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -246,9 +328,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 169,
+    "total": 149,
     "counts": {
-      "暴雨": 131,
+      "暴雨": 111,
       "台风": 2,
       "山洪灾害": 2,
       "地质灾害": 34
@@ -269,7 +351,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 26,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -287,7 +369,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 24,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -305,7 +387,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 23,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -360,7 +442,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 18,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -408,44 +490,6 @@
         "lng": 128.1
       },
       {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省杭州市桐庐县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33012241600000_20260901025957.html",
-          "issuedAt": "2026/09/01 02:58"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
-        "province": "江苏",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "江苏省南通市如皋市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/32068241600000_20260831204325.html",
-          "issuedAt": "2026/08/31 20:43"
-        },
-        "lat": 33,
-        "lng": 119.5
-      },
-      {
         "province": "新疆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -462,6 +506,26 @@
         },
         "lat": 41.1,
         "lng": 85.3
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 6,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260831165744.html",
+          "issuedAt": "2026/08/31 16:57"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "吉林",
