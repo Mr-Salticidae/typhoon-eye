@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 08:30",
+  "updatedAt": "2026-09-01 09:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 95 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 33 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-01 05时",
+            "time": "09-01 08时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -303,9 +303,10 @@
             "maxLevel": "orange",
             "floodLevel": "orange",
             "kinds": {
-              "暴雨": "orange"
+              "暴雨": "orange",
+              "台风": "blue"
             },
-            "count": 13,
+            "count": 14,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -328,12 +329,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 149,
+    "total": 147,
     "counts": {
-      "暴雨": 111,
-      "台风": 2,
+      "暴雨": 114,
+      "台风": 3,
       "山洪灾害": 2,
-      "地质灾害": 34
+      "地质灾害": 28
     },
     "peak": {
       "province": "福建",
@@ -387,7 +388,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 21,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -424,7 +425,7 @@
         "kinds": {
           "地质灾害": "orange"
         },
-        "count": 30,
+        "count": 24,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -440,9 +441,10 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "orange",
+          "台风": "blue"
         },
-        "count": 13,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -452,6 +454,26 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "yellow",
+          "山洪灾害": "orange",
+          "地质灾害": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "orange",
+          "title": "浙江省水利厅、浙江省气象台发布山洪灾害橙色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033200000_20260901084216.html",
+          "issuedAt": "2026/09/01 08:38"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "安徽",
@@ -508,41 +530,21 @@
         "lng": 85.3
       },
       {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260831165744.html",
-          "issuedAt": "2026/08/31 16:57"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
         "province": "吉林",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
+          "暴雨": "blue",
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 5,
         "top": {
-          "kind": "暴雨",
+          "kind": "山洪灾害",
           "level": "yellow",
-          "title": "吉林省延边朝鲜族自治州珲春市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22240441600000_20260831083336.html",
-          "issuedAt": "2026/08/31 08:30"
+          "title": "吉林省水利厅、吉林省气象台发布山洪灾害气象风险黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/22000041600000_20260831180651.html",
+          "issuedAt": "2026/08/31 18:00"
         },
         "lat": 43.7,
         "lng": 126.2
