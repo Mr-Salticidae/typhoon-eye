@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 09:30",
+  "updatedAt": "2026-09-01 10:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 2
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 15 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-01 08时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-01 08时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 995,
         "moveDir": "0",
         "moveSpeed": 0,
-        "r7": null,
+        "r7": 380,
         "r10": null,
         "time": "09-01 08时",
         "position": "中心位于北纬 22.5 度、东经 132.0 度"
@@ -445,12 +452,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 150,
+    "total": 149,
     "counts": {
       "暴雨": 119,
       "台风": 3,
       "山洪灾害": 2,
-      "地质灾害": 26
+      "地质灾害": 25
     },
     "peak": {
       "province": "福建",
@@ -486,7 +493,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 24,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -541,7 +548,7 @@
         "kinds": {
           "地质灾害": "orange"
         },
-        "count": 22,
+        "count": 21,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -580,7 +587,7 @@
           "山洪灾害": "orange",
           "地质灾害": "orange"
         },
-        "count": 12,
+        "count": 13,
         "top": {
           "kind": "山洪灾害",
           "level": "orange",
@@ -590,24 +597,6 @@
         },
         "lat": 29.2,
         "lng": 120.2
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "安徽省宣城市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34180041600000_20260901065544.html",
-          "issuedAt": "2026/09/01 06:55"
-        },
-        "lat": 31.9,
-        "lng": 117.2
       },
       {
         "province": "黑龙江",
@@ -626,6 +615,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "安徽",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "安徽省宣城市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34180041600000_20260901065544.html",
+          "issuedAt": "2026/09/01 06:55"
+        },
+        "lat": 31.9,
+        "lng": 117.2
       },
       {
         "province": "新疆",
@@ -682,6 +689,24 @@
         },
         "lat": 31.2,
         "lng": 121.5
+      },
+      {
+        "province": "江苏",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "江苏省盐城市东台市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32098141600000_20260901094449.html",
+          "issuedAt": "2026/09/01 09:44"
+        },
+        "lat": 33,
+        "lng": 119.5
       }
     ]
   },
