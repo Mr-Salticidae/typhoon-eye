@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01 18:14",
+  "updatedAt": "2026-09-01 18:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -476,12 +476,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 143,
+    "total": 135,
     "counts": {
-      "暴雨": 117,
-      "台风": 8,
+      "暴雨": 111,
+      "台风": 10,
       "山洪灾害": 2,
-      "地质灾害": 16
+      "地质灾害": 12
     },
     "peak": {
       "province": "福建",
@@ -538,7 +538,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 13,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -569,24 +569,6 @@
         "lng": 113.4
       },
       {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "地质灾害": "orange"
-        },
-        "count": 15,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省迪庆藏族自治州香格里拉市气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53340141600000_20260901171703.html",
-          "issuedAt": "2026/09/01 17:17"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "黑龙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -603,6 +585,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "地质灾害": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "地质灾害",
+          "level": "orange",
+          "title": "云南省迪庆藏族自治州香格里拉市气象台发布地质灾害橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53340141600000_20260901171703.html",
+          "issuedAt": "2026/09/01 17:17"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "湖南",
@@ -623,6 +623,25 @@
         "lng": 111.7
       },
       {
+        "province": "吉林",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "山洪灾害": "blue"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "吉林省延边朝鲜族自治州延吉市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22240141600000_20260901153356.html",
+          "issuedAt": "2026/09/01 15:35"
+        },
+        "lat": 43.7,
+        "lng": 126.2
+      },
+      {
         "province": "江苏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -639,25 +658,6 @@
         },
         "lat": 33,
         "lng": 119.5
-      },
-      {
-        "province": "吉林",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "吉林省延边朝鲜族自治州延吉市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22240141600000_20260901153356.html",
-          "issuedAt": "2026/09/01 15:35"
-        },
-        "lat": 43.7,
-        "lng": 126.2
       },
       {
         "province": "新疆",
