@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02 23:30",
+  "updatedAt": "2026-09-03 00:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,26 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 42 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-02 20时",
+            "time": "09-02 23时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-02 20时",
+            "time": "09-02 23时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-02 20时",
+            "time": "09-02 23时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -67,11 +67,11 @@
         "windSpeed": 18,
         "pressure": 995,
         "moveDir": "北北西",
-        "moveSpeed": 26,
+        "moveSpeed": 25,
         "r7": 380,
         "r10": null,
-        "time": "09-02 20时",
-        "position": "中心位于北纬 23.7 度、东经 131.5 度"
+        "time": "09-02 23时",
+        "position": "中心位于北纬 24.0 度、东经 131.4 度"
       },
       "track": [
         {
@@ -176,44 +176,52 @@
           "lng": 131.5,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-02 23时",
+          "lat": 24,
+          "lng": 131.4,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-03 08时",
-          "lat": 26.1,
-          "lng": 130.1,
+          "t": "09-03 11时",
+          "lat": 26.2,
+          "lng": 129.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 20时",
-          "lat": 27.8,
-          "lng": 128.8,
+          "t": "09-03 23时",
+          "lat": 27.9,
+          "lng": 128.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-04 08时",
-          "lat": 28.8,
-          "lng": 127.5,
+          "t": "09-04 11时",
+          "lat": 28.7,
+          "lng": 127.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-04 20时",
-          "lat": 28.5,
-          "lng": 126.6,
+          "t": "09-04 23时",
+          "lat": 28.2,
+          "lng": 126.7,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-05 08时",
-          "lat": 27.4,
-          "lng": 126.3,
+          "t": "09-05 11时",
+          "lat": 27.3,
+          "lng": 127,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -448,13 +456,13 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 42,
+            "count": 46,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省漳州市东山县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062641600000_20260902224000.html",
-              "issuedAt": "2026/09/02 22:40"
+              "title": "福建省漳州市云霄县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35062241600000_20260902232200.html",
+              "issuedAt": "2026/09/02 23:22"
             },
             "via": "路径邻近",
             "distKm": 298
@@ -508,10 +516,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 129,
+    "total": 133,
     "counts": {
-      "暴雨": 79,
-      "台风": 38,
+      "暴雨": 81,
+      "台风": 40,
       "山洪灾害": 2,
       "地质灾害": 10
     },
@@ -519,9 +527,9 @@
       "province": "福建",
       "kind": "暴雨",
       "level": "red",
-      "title": "福建省漳州市东山县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/35062641600000_20260902224000.html",
-      "issuedAt": "2026/09/02 22:40"
+      "title": "福建省漳州市云霄县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/35062241600000_20260902232200.html",
+      "issuedAt": "2026/09/02 23:22"
     },
     "provinces": [
       {
@@ -532,13 +540,13 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 42,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省漳州市东山县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062641600000_20260902224000.html",
-          "issuedAt": "2026/09/02 22:40"
+          "title": "福建省漳州市云霄县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062241600000_20260902232200.html",
+          "issuedAt": "2026/09/02 23:22"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -731,19 +739,6 @@
       "provinces": [],
       "ongoingFloodLevel": null,
       "daysSince": 2
-    },
-    {
-      "code": "2619",
-      "name": "紫檀",
-      "enName": "NARRA",
-      "lastLevel": "热带低压（6级）",
-      "endedAt": "2026-08-26 23:57",
-      "provinces": [
-        "广西",
-        "广东"
-      ],
-      "ongoingFloodLevel": "orange",
-      "daysSince": 6
     }
   ]
 }
