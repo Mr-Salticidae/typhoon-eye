@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03 05:21",
+  "updatedAt": "2026-09-03 05:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,26 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 52 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-03 02时",
+            "time": "09-03 05时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-03 02时",
+            "time": "09-03 05时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-03 02时",
+            "time": "09-03 05时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -64,14 +64,14 @@
       },
       "now": {
         "windLevel": 8,
-        "windSpeed": 18,
+        "windSpeed": 20,
         "pressure": 995,
         "moveDir": "西北",
-        "moveSpeed": 27,
+        "moveSpeed": 26,
         "r7": 380,
         "r10": null,
-        "time": "09-03 02时",
-        "position": "中心位于北纬 24.3 度、东经 131.3 度"
+        "time": "09-03 05时",
+        "position": "中心位于北纬 25.0 度、东经 130.8 度"
       },
       "track": [
         {
@@ -124,14 +124,6 @@
         },
         {
           "t": "09-02 02时",
-          "lat": 22.9,
-          "lng": 132.2,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-02 05时",
           "lat": 22.9,
           "lng": 132.2,
           "wind": 8,
@@ -192,44 +184,52 @@
           "lng": 131.3,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-03 05时",
+          "lat": 25,
+          "lng": 130.8,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-03 14时",
-          "lat": 26.6,
-          "lng": 129.5,
+          "t": "09-03 17时",
+          "lat": 27.2,
+          "lng": 129,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-04 02时",
-          "lat": 28.1,
-          "lng": 128.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-04 14时",
-          "lat": 28.9,
+          "t": "09-04 05时",
+          "lat": 29.1,
           "lng": 127.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-05 02时",
-          "lat": 28,
-          "lng": 126.5,
+          "t": "09-04 17时",
+          "lat": 29,
+          "lng": 126.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-05 14时",
-          "lat": 27.2,
-          "lng": 126.8,
+          "t": "09-05 05时",
+          "lat": 28,
+          "lng": 126.1,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-05 17时",
+          "lat": 26.7,
+          "lng": 126.4,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -242,13 +242,13 @@
       "enName": "SAUDEL",
       "code": "2618",
       "level": "强热带风暴（10级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 30 公里（时次相差 1 小时）、强度差 1 级；日本气象厅定位相差 69 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 69 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -260,8 +260,8 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-03 04时",
-            "windLevel": 9,
+            "time": "09-03 05时",
+            "windLevel": 10,
             "role": "verify"
           },
           {
@@ -278,7 +278,7 @@
         "windSpeed": 25,
         "pressure": 985,
         "moveDir": "西",
-        "moveSpeed": 21,
+        "moveSpeed": 22,
         "r7": 300,
         "r10": null,
         "time": "09-03 05时",
@@ -404,29 +404,42 @@
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "now"
+        },
+        {
+          "t": "09-03 11时",
+          "lat": 24.1,
+          "lng": 116.4,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 17时",
+          "lat": 23.9,
+          "lng": 115.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-03 23时",
+          "lat": 23.6,
+          "lng": 114.4,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 05时",
+          "lat": 23.1,
+          "lng": 113.6,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
         "provinces": [
-          {
-            "province": "福建",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red",
-              "台风": "yellow"
-            },
-            "count": 57,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "福建省漳州市东山县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062641600000_20260903044100.html",
-              "issuedAt": "2026/09/03 04:41"
-            },
-            "via": "路径邻近",
-            "distKm": 272
-          },
           {
             "province": "广东",
             "maxLevel": "red",
@@ -444,7 +457,44 @@
               "issuedAt": "2026/09/03 04:06"
             },
             "via": "路径邻近",
-            "distKm": 450
+            "distKm": 39
+          },
+          {
+            "province": "福建",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red",
+              "台风": "yellow"
+            },
+            "count": 61,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "福建省漳州市东山县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35062641600000_20260903044100.html",
+              "issuedAt": "2026/09/03 04:41"
+            },
+            "via": "路径邻近",
+            "distKm": 272
+          },
+          {
+            "province": "江西",
+            "maxLevel": "yellow",
+            "floodLevel": "yellow",
+            "kinds": {
+              "暴雨": "yellow"
+            },
+            "count": 12,
+            "top": {
+              "kind": "暴雨",
+              "level": "yellow",
+              "title": "江西省吉安市永新县气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/36083041600000_20260902232022.html",
+              "issuedAt": "2026/09/02 23:16"
+            },
+            "via": "路径邻近",
+            "distKm": 395
           },
           {
             "province": "海南",
@@ -462,12 +512,12 @@
               "issuedAt": "2026/09/02 17:00"
             },
             "via": "台风预警",
-            "distKm": 976
+            "distKm": 593
           }
         ],
         "floodLevel": "red",
         "maxLevel": "red",
-        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高红色。"
+        "note": "台风影响范围内有 4 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -476,9 +526,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 142,
+    "total": 146,
     "counts": {
-      "暴雨": 86,
+      "暴雨": 90,
       "台风": 44,
       "山洪灾害": 2,
       "地质灾害": 10
@@ -500,7 +550,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 57,
+        "count": 61,
         "top": {
           "kind": "暴雨",
           "level": "red",
