@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02 08:45",
+  "updatedAt": "2026-09-02 09:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 52 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-02 05时",
+            "time": "09-02 08时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -224,7 +224,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 44 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -243,7 +243,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-02 05时",
+            "time": "09-02 08时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -454,9 +454,9 @@
             "floodLevel": "red",
             "kinds": {
               "暴雨": "red",
-              "台风": "blue"
+              "台风": "yellow"
             },
-            "count": 28,
+            "count": 31,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -475,13 +475,13 @@
               "暴雨": "yellow",
               "台风": "blue"
             },
-            "count": 10,
+            "count": 11,
             "top": {
               "kind": "暴雨",
               "level": "yellow",
-              "title": "广东省潮州市饶平县气象台发布暴雨黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260902083647.html",
-              "issuedAt": "2026/09/02 08:33"
+              "title": "广东省潮州市气象台发布暴雨黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44510041600000_20260902084443.html",
+              "issuedAt": "2026/09/02 08:42"
             },
             "via": "路径邻近",
             "distKm": 175
@@ -516,9 +516,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 98,
+    "total": 101,
     "counts": {
-      "暴雨": 68,
+      "暴雨": 71,
       "台风": 17,
       "山洪灾害": 2,
       "地质灾害": 11
@@ -538,9 +538,9 @@
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red",
-          "台风": "blue"
+          "台风": "yellow"
         },
-        "count": 28,
+        "count": 31,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -560,7 +560,7 @@
           "山洪灾害": "red",
           "地质灾害": "red"
         },
-        "count": 22,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -591,24 +591,6 @@
         "lng": 101.5
       },
       {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省郴州市桂东县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260901204431.html",
-          "issuedAt": "2026/09/01 20:44"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -627,6 +609,24 @@
         "lng": 115.7
       },
       {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省郴州市桂东县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260901204431.html",
+          "issuedAt": "2026/09/01 20:44"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "广东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -634,13 +634,13 @@
           "暴雨": "yellow",
           "台风": "blue"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "广东省潮州市饶平县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44512241600000_20260902083647.html",
-          "issuedAt": "2026/09/02 08:33"
+          "title": "广东省潮州市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44510041600000_20260902084443.html",
+          "issuedAt": "2026/09/02 08:42"
         },
         "lat": 23.4,
         "lng": 113.4
