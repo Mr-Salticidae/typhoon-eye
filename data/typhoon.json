@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02 20:30",
+  "updatedAt": "2026-09-02 21:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,26 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 49 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-02 17时",
+            "time": "09-02 20时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-02 17时",
+            "time": "09-02 20时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-02 17时",
+            "time": "09-02 20时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -67,11 +67,11 @@
         "windSpeed": 18,
         "pressure": 995,
         "moveDir": "北北西",
-        "moveSpeed": 21,
+        "moveSpeed": 26,
         "r7": 380,
         "r10": null,
-        "time": "09-02 17时",
-        "position": "中心位于北纬 23.7 度、东经 131.8 度"
+        "time": "09-02 20时",
+        "position": "中心位于北纬 23.7 度、东经 131.5 度"
       },
       "track": [
         {
@@ -168,44 +168,52 @@
           "lng": 131.8,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-02 20时",
+          "lat": 23.7,
+          "lng": 131.5,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-03 05时",
-          "lat": 25.6,
-          "lng": 130.5,
+          "t": "09-03 08时",
+          "lat": 26.1,
+          "lng": 130.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 17时",
-          "lat": 27.1,
-          "lng": 129.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-04 05时",
-          "lat": 28.9,
-          "lng": 127.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-04 17时",
-          "lat": 29.1,
-          "lng": 126.7,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-05 05时",
+          "t": "09-03 20时",
           "lat": 27.8,
-          "lng": 126,
+          "lng": 128.8,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 08时",
+          "lat": 28.8,
+          "lng": 127.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-04 20时",
+          "lat": 28.5,
+          "lng": 126.6,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-05 08时",
+          "lat": 27.4,
+          "lng": 126.3,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -459,13 +467,13 @@
               "暴雨": "orange",
               "台风": "yellow"
             },
-            "count": 35,
+            "count": 36,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "福建省漳州市漳浦县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35062341600000_20260902185300.html",
-              "issuedAt": "2026/09/02 18:53"
+              "title": "福建省漳州市云霄县气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35062241600000_20260902205400.html",
+              "issuedAt": "2026/09/02 20:54"
             },
             "via": "路径邻近",
             "distKm": 306
@@ -502,8 +510,8 @@
     "partial": null,
     "total": 138,
     "counts": {
-      "暴雨": 93,
-      "台风": 33,
+      "暴雨": 92,
+      "台风": 34,
       "山洪灾害": 2,
       "地质灾害": 10
     },
@@ -511,9 +519,9 @@
       "province": "浙江",
       "kind": "暴雨",
       "level": "red",
-      "title": "浙江省温州市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260902134831.html",
-      "issuedAt": "2026/09/02 13:47"
+      "title": "浙江省丽水市景宁县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/33112741600000_20260902132335.html",
+      "issuedAt": "2026/09/02 13:22"
     },
     "provinces": [
       {
@@ -529,9 +537,9 @@
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "浙江省温州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260902134831.html",
-          "issuedAt": "2026/09/02 13:47"
+          "title": "浙江省丽水市景宁县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33112741600000_20260902132335.html",
+          "issuedAt": "2026/09/02 13:22"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -563,13 +571,13 @@
           "暴雨": "orange",
           "台风": "yellow"
         },
-        "count": 35,
+        "count": 36,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "福建省漳州市漳浦县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062341600000_20260902185300.html",
-          "issuedAt": "2026/09/02 18:53"
+          "title": "福建省漳州市云霄县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062241600000_20260902205400.html",
+          "issuedAt": "2026/09/02 20:54"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -594,24 +602,6 @@
         "lng": 113.4
       },
       {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省郴州市桂东县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260902120739.html",
-          "issuedAt": "2026/09/02 12:07"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "黑龙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -628,6 +618,24 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省郴州市桂东县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260902120739.html",
+          "issuedAt": "2026/09/02 12:07"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "江西",
