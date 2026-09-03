@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04 02:46",
+  "updatedAt": "2026-09-04 03:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 2
+      "count": 1
     },
     {
       "id": "zj",
@@ -259,188 +259,27 @@
           "phase": "forecast"
         }
       ],
-      "rainRisk": null
-    },
-    {
-      "name": "沙德尔",
-      "enName": "SAUDEL",
-      "code": "2618",
-      "level": "热带低压（7级）",
-      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
-      "nearCoast": true,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 54 公里（时次相差 6 小时）、强度暂缺（2 源交叉校验一致）",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-03 14时",
-            "windLevel": 7,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "09-03 20时",
-            "windLevel": null,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 7,
-        "windSpeed": 15,
-        "pressure": 995,
-        "moveDir": "西南西",
-        "moveSpeed": 15,
-        "r7": null,
-        "r10": null,
-        "time": "09-03 14时",
-        "position": "中心位于北纬 24.4 度、东经 116.3 度"
-      },
-      "track": [
-        {
-          "t": "08-19 11时",
-          "lat": 8.2,
-          "lng": 153.9,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-21 08时",
-          "lat": 14.2,
-          "lng": 149.3,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-23 05时",
-          "lat": 20.8,
-          "lng": 143,
-          "wind": 16,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-24 23时",
-          "lat": 25.2,
-          "lng": 132.9,
-          "wind": 16,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-26 15时",
-          "lat": 28.4,
-          "lng": 126.5,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-27 06时",
-          "lat": 28.5,
-          "lng": 125,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-27 21时",
-          "lat": 28.1,
-          "lng": 123.5,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "08-28 11时",
-          "lat": 27.7,
-          "lng": 120.5,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "08-29 05时",
-          "lat": 27.1,
-          "lng": 116.3,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-01 02时",
-          "lat": 19.2,
-          "lng": 112.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-01 17时",
-          "lat": 20.2,
-          "lng": 115.1,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-02 07时",
-          "lat": 21.8,
-          "lng": 116.9,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-02 22时",
-          "lat": 22.9,
-          "lng": 118,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-03 13时",
-          "lat": 24.2,
-          "lng": 116.6,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-03 14时",
-          "lat": 24.4,
-          "lng": 116.3,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "now"
-        },
-        {
-          "t": "09-03 20时",
-          "lat": 24.4,
-          "lng": 115.4,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-04 02时",
-          "lat": 23.9,
-          "lng": 114.7,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "forecast"
-        }
-      ],
       "rainRisk": {
         "provinces": [
+          {
+            "province": "福建",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red",
+              "台风": "yellow"
+            },
+            "count": 43,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "福建省泉州市德化县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35052641600000_20260904022000.html",
+              "issuedAt": "2026/09/04 02:20"
+            },
+            "via": "台风预警",
+            "distKm": 898
+          },
           {
             "province": "广东",
             "maxLevel": "red",
@@ -457,50 +296,13 @@
               "url": "http://www.nmc.cn/publish/alarm/44142741600000_20260903174042.html",
               "issuedAt": "2026/09/03 17:38"
             },
-            "via": "路径邻近",
-            "distKm": 144
-          },
-          {
-            "province": "福建",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red",
-              "台风": "yellow"
-            },
-            "count": 42,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "福建省泉州市德化县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35052641600000_20260904022000.html",
-              "issuedAt": "2026/09/04 02:20"
-            },
-            "via": "路径邻近",
-            "distKm": 276
-          },
-          {
-            "province": "江西",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange"
-            },
-            "count": 36,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "江西省赣州市寻乌县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/36073441600000_20260903222548.html",
-              "issuedAt": "2026/09/03 22:21"
-            },
-            "via": "路径邻近",
-            "distKm": 357
+            "via": "台风预警",
+            "distKm": 1461
           }
         ],
         "floodLevel": "red",
         "maxLevel": "red",
-        "note": "台风影响范围内有 3 个省级行政区发布洪涝类预警，最高红色。"
+        "note": "台风影响范围内有 2 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -509,10 +311,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 117,
+    "total": 120,
     "counts": {
-      "暴雨": 77,
-      "台风": 28,
+      "暴雨": 79,
+      "台风": 29,
       "山洪灾害": 1,
       "地质灾害": 11
     },
@@ -533,7 +335,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 42,
+        "count": 43,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -589,7 +391,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 36,
+        "count": 38,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -658,6 +460,20 @@
     ]
   },
   "recentlyEnded": [
+    {
+      "code": "2618",
+      "name": "沙德尔",
+      "enName": "SAUDEL",
+      "lastLevel": "热带低压（7级）",
+      "endedAt": "2026-09-04 03:15",
+      "provinces": [
+        "广东",
+        "福建",
+        "江西"
+      ],
+      "ongoingFloodLevel": "red",
+      "daysSince": 0
+    },
     {
       "code": "2623",
       "name": "班朗",
