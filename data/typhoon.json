@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04 05:45",
+  "updatedAt": "2026-09-04 06:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -269,7 +269,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 43,
+            "count": 39,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -286,9 +286,9 @@
             "floodLevel": "red",
             "kinds": {
               "暴雨": "red",
-              "台风": "yellow"
+              "台风": "blue"
             },
-            "count": 18,
+            "count": 17,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -311,12 +311,13 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 126,
+    "total": 121,
     "counts": {
-      "暴雨": 85,
-      "台风": 29,
+      "暴雨": 82,
+      "台风": 25,
       "山洪灾害": 1,
-      "地质灾害": 11
+      "山洪风险": 1,
+      "地质灾害": 12
     },
     "peak": {
       "province": "福建",
@@ -335,7 +336,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 43,
+        "count": 39,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -352,9 +353,9 @@
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red",
-          "台风": "yellow"
+          "台风": "blue"
         },
-        "count": 18,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -391,13 +392,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 38,
+        "count": 39,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省赣州市寻乌县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36073441600000_20260903222548.html",
-          "issuedAt": "2026/09/03 22:21"
+          "title": "江西省吉安市遂川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36082741600000_20260904055453.html",
+          "issuedAt": "2026/09/04 05:49"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -408,6 +409,7 @@
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange",
+          "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
         "count": 19,
@@ -438,24 +440,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "四川",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "四川省甘孜藏族自治州德格县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51333041600000_20260903231520.html",
-          "issuedAt": "2026/09/03 23:15"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       }
     ]
   },
