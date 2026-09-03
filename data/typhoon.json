@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03 12:45",
+  "updatedAt": "2026-09-03 13:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -248,19 +248,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 32 公里（时次相差 2 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-03 12时",
+            "time": "09-03 13时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-03 12时",
+            "time": "09-03 13时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -278,11 +278,11 @@
         "windSpeed": 18,
         "pressure": 990,
         "moveDir": "西南西",
-        "moveSpeed": 15,
+        "moveSpeed": 16,
         "r7": null,
         "r10": null,
-        "time": "09-03 12时",
-        "position": "中心位于北纬 24.2 度、东经 116.7 度"
+        "time": "09-03 13时",
+        "position": "中心位于北纬 24.2 度、东经 116.6 度"
       },
       "track": [
         {
@@ -318,9 +318,9 @@
           "phase": "past"
         },
         {
-          "t": "08-26 14时",
+          "t": "08-26 15时",
           "lat": 28.4,
-          "lng": 126.6,
+          "lng": 126.5,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -342,17 +342,17 @@
           "phase": "past"
         },
         {
-          "t": "08-28 10时",
-          "lat": 27.8,
-          "lng": 120.7,
+          "t": "08-28 11时",
+          "lat": 27.7,
+          "lng": 120.5,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "08-29 02时",
-          "lat": 26.9,
-          "lng": 117.1,
+          "t": "08-29 05时",
+          "lat": 27.1,
+          "lng": 116.3,
           "wind": 7,
           "strong": "热带低压",
           "phase": "past"
@@ -366,15 +366,15 @@
           "phase": "past"
         },
         {
-          "t": "09-01 15时",
-          "lat": 20,
-          "lng": 114.6,
+          "t": "09-01 16时",
+          "lat": 20.1,
+          "lng": 114.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-02 06时",
+          "t": "09-02 07时",
           "lat": 21.8,
           "lng": 116.9,
           "wind": 8,
@@ -382,17 +382,9 @@
           "phase": "past"
         },
         {
-          "t": "09-02 20时",
-          "lat": 22.6,
-          "lng": 117.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-03 11时",
-          "lat": 24.2,
-          "lng": 116.9,
+          "t": "09-02 21时",
+          "lat": 22.8,
+          "lng": 117.9,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -403,28 +395,36 @@
           "lng": 116.7,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-03 13时",
+          "lat": 24.2,
+          "lng": 116.6,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-03 18时",
-          "lat": 24.1333,
-          "lng": 115.75,
+          "t": "09-03 19时",
+          "lat": 24.0667,
+          "lng": 115.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-04 00时",
-          "lat": 23.6833,
-          "lng": 114.8667,
+          "t": "09-04 01时",
+          "lat": 23.5667,
+          "lng": 114.7333,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-04 06时",
-          "lat": 22.9833,
-          "lng": 114.0667,
+          "t": "09-04 07时",
+          "lat": 22.8667,
+          "lng": 113.9333,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -449,7 +449,7 @@
               "issuedAt": "2026/09/03 11:24"
             },
             "via": "路径邻近",
-            "distKm": 82
+            "distKm": 81
           },
           {
             "province": "福建",
@@ -459,16 +459,16 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 79,
+            "count": 81,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省三明市尤溪县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35042641600000_20260903114500.html",
-              "issuedAt": "2026/09/03 11:45"
+              "title": "福建省泉州市永春县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35052541600000_20260903124700.html",
+              "issuedAt": "2026/09/03 12:47"
             },
             "via": "路径邻近",
-            "distKm": 266
+            "distKm": 272
           },
           {
             "province": "江西",
@@ -486,7 +486,7 @@
               "issuedAt": "2026/09/02 23:16"
             },
             "via": "路径邻近",
-            "distKm": 386
+            "distKm": 389
           }
         ],
         "floodLevel": "red",
@@ -500,9 +500,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 157,
+    "total": 159,
     "counts": {
-      "暴雨": 84,
+      "暴雨": 86,
       "台风": 62,
       "山洪灾害": 2,
       "地质灾害": 9
@@ -511,9 +511,9 @@
       "province": "福建",
       "kind": "暴雨",
       "level": "red",
-      "title": "福建省三明市尤溪县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/35042641600000_20260903114500.html",
-      "issuedAt": "2026/09/03 11:45"
+      "title": "福建省泉州市永春县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/35052541600000_20260903124700.html",
+      "issuedAt": "2026/09/03 12:47"
     },
     "provinces": [
       {
@@ -524,13 +524,13 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 79,
+        "count": 81,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省三明市尤溪县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35042641600000_20260903114500.html",
-          "issuedAt": "2026/09/03 11:45"
+          "title": "福建省泉州市永春县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35052541600000_20260903124700.html",
+          "issuedAt": "2026/09/03 12:47"
         },
         "lat": 26.1,
         "lng": 118.3
