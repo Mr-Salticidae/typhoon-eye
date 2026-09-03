@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03 20:30",
+  "updatedAt": "2026-09-03 21:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,26 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 20 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 56 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-03 17时",
+            "time": "09-03 20时",
             "windLevel": 9,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-03 17时",
+            "time": "09-03 20时",
             "windLevel": 9,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-03 17时",
+            "time": "09-03 20时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -66,12 +66,12 @@
         "windLevel": 9,
         "windSpeed": 23,
         "pressure": 990,
-        "moveDir": "北北西",
+        "moveDir": "西北",
         "moveSpeed": 15,
         "r7": 300,
         "r10": null,
-        "time": "09-03 17时",
-        "position": "中心位于北纬 27.3 度、东经 129.1 度"
+        "time": "09-03 20时",
+        "position": "中心位于北纬 27.6 度、东经 129.1 度"
       },
       "track": [
         {
@@ -123,9 +123,9 @@
           "phase": "past"
         },
         {
-          "t": "09-02 08时",
-          "lat": 23,
-          "lng": 132.1,
+          "t": "09-02 11时",
+          "lat": 23.2,
+          "lng": 132,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -139,14 +139,6 @@
           "phase": "past"
         },
         {
-          "t": "09-02 17时",
-          "lat": 23.7,
-          "lng": 131.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
           "t": "09-02 20时",
           "lat": 23.7,
           "lng": 131.5,
@@ -155,9 +147,9 @@
           "phase": "past"
         },
         {
-          "t": "09-03 02时",
-          "lat": 24.3,
-          "lng": 131.3,
+          "t": "09-02 23时",
+          "lat": 24,
+          "lng": 131.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -171,9 +163,9 @@
           "phase": "past"
         },
         {
-          "t": "09-03 11时",
-          "lat": 26.9,
-          "lng": 129.4,
+          "t": "09-03 08时",
+          "lat": 25.4,
+          "lng": 130.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -192,68 +184,76 @@
           "lng": 129.1,
           "wind": 9,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-03 20时",
+          "lat": 27.6,
+          "lng": 129.1,
+          "wind": 9,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-04 05时",
-          "lat": 28.7,
-          "lng": 128.2,
+          "t": "09-04 08时",
+          "lat": 28.9,
+          "lng": 128,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-04 17时",
+          "t": "09-04 20时",
           "lat": 29.5,
-          "lng": 127.2,
+          "lng": 127.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-05 05时",
-          "lat": 28.7,
-          "lng": 126.8,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-05 17时",
-          "lat": 27.6,
+          "t": "09-05 08时",
+          "lat": 28.4,
           "lng": 126.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-06 05时",
-          "lat": 26.6,
-          "lng": 127.5,
+          "t": "09-05 20时",
+          "lat": 27,
+          "lng": 126.9,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-06 17时",
-          "lat": 26.3,
-          "lng": 128.5,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-07 17时",
+          "t": "09-06 08时",
           "lat": 26.4,
-          "lng": 129.5,
+          "lng": 127.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-08 17时",
-          "lat": 27.2,
-          "lng": 130.4,
+          "t": "09-06 20时",
+          "lat": 26,
+          "lng": 128.7,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-07 20时",
+          "lat": 26.4,
+          "lng": 129.7,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-08 20时",
+          "lat": 27.4,
+          "lng": 130.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
@@ -468,13 +468,13 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 63,
+            "count": 62,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省莆田市气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35030041600000_20260903201900.html",
-              "issuedAt": "2026/09/03 20:19"
+              "title": "福建省莆田市秀屿区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35030541600000_20260903203300.html",
+              "issuedAt": "2026/09/03 20:33"
             },
             "via": "路径邻近",
             "distKm": 276
@@ -509,10 +509,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 145,
+    "total": 144,
     "counts": {
       "暴雨": 84,
-      "台风": 49,
+      "台风": 48,
       "山洪灾害": 1,
       "地质灾害": 11
     },
@@ -520,9 +520,9 @@
       "province": "福建",
       "kind": "暴雨",
       "level": "red",
-      "title": "福建省莆田市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/35030041600000_20260903201900.html",
-      "issuedAt": "2026/09/03 20:19"
+      "title": "福建省莆田市秀屿区气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/35030541600000_20260903203300.html",
+      "issuedAt": "2026/09/03 20:33"
     },
     "provinces": [
       {
@@ -533,13 +533,13 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 63,
+        "count": 62,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省莆田市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35030041600000_20260903201900.html",
-          "issuedAt": "2026/09/03 20:19"
+          "title": "福建省莆田市秀屿区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35030541600000_20260903203300.html",
+          "issuedAt": "2026/09/03 20:33"
         },
         "lat": 26.1,
         "lng": 118.3
