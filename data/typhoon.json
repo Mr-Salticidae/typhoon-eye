@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03 09:00",
+  "updatedAt": "2026-09-03 09:24",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -248,26 +248,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 53 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 39 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-03 08时",
+            "time": "09-03 09时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-03 08时",
+            "time": "09-03 09时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-03 05时",
+            "time": "09-03 08时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -275,14 +275,14 @@
       },
       "now": {
         "windLevel": 8,
-        "windSpeed": 20,
-        "pressure": 988,
+        "windSpeed": 18,
+        "pressure": 990,
         "moveDir": "西",
-        "moveSpeed": 20,
+        "moveSpeed": 18,
         "r7": null,
         "r10": null,
-        "time": "09-03 08时",
-        "position": "中心位于北纬 23.9 度、东经 117.4 度"
+        "time": "09-03 09时",
+        "position": "中心位于北纬 23.9 度、东经 117.3 度"
       },
       "track": [
         {
@@ -318,9 +318,9 @@
           "phase": "past"
         },
         {
-          "t": "08-26 13时",
-          "lat": 28.3,
-          "lng": 126.8,
+          "t": "08-26 14时",
+          "lat": 28.4,
+          "lng": 126.6,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -342,19 +342,19 @@
           "phase": "past"
         },
         {
-          "t": "08-28 08时",
-          "lat": 28.1,
-          "lng": 121.3,
+          "t": "08-28 09时",
+          "lat": 28,
+          "lng": 121,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "08-28 22时",
+          "t": "08-28 23时",
           "lat": 27.3,
-          "lng": 117.8,
-          "wind": 8,
-          "strong": "热带风暴",
+          "lng": 117.6,
+          "wind": 7,
+          "strong": "热带低压",
           "phase": "past"
         },
         {
@@ -366,33 +366,25 @@
           "phase": "past"
         },
         {
-          "t": "09-01 12时",
+          "t": "09-01 13时",
           "lat": 19.9,
-          "lng": 114,
+          "lng": 114.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-02 02时",
-          "lat": 21.3,
-          "lng": 116.5,
+          "t": "09-02 03时",
+          "lat": 21.5,
+          "lng": 116.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-02 17时",
-          "lat": 22.3,
+          "t": "09-02 18时",
+          "lat": 22.4,
           "lng": 117.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-03 07时",
-          "lat": 23.9,
-          "lng": 117.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -403,28 +395,36 @@
           "lng": 117.4,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-03 09时",
+          "lat": 23.9,
+          "lng": 117.3,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-03 14时",
-          "lat": 23.9,
-          "lng": 116.2,
+          "t": "09-03 15时",
+          "lat": 23.8667,
+          "lng": 116.0333,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-03 20时",
-          "lat": 23.7,
-          "lng": 115.2,
+          "t": "09-03 21时",
+          "lat": 23.6333,
+          "lng": 115.0667,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-04 02时",
-          "lat": 23.3,
-          "lng": 114.4,
+          "t": "09-04 03时",
+          "lat": 23.2333,
+          "lng": 114.2667,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -440,7 +440,7 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 42,
+            "count": 41,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -449,7 +449,7 @@
               "issuedAt": "2026/09/03 08:31"
             },
             "via": "路径邻近",
-            "distKm": 103
+            "distKm": 90
           },
           {
             "province": "福建",
@@ -459,16 +459,16 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 75,
+            "count": 76,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省福州市闽侯县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35012141600000_20260903084200.html",
-              "issuedAt": "2026/09/03 08:42"
+              "title": "福建省泉州市德化县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35052641600000_20260903090100.html",
+              "issuedAt": "2026/09/03 09:01"
             },
             "via": "路径邻近",
-            "distKm": 261
+            "distKm": 265
           },
           {
             "province": "江西",
@@ -477,7 +477,7 @@
             "kinds": {
               "暴雨": "yellow"
             },
-            "count": 13,
+            "count": 14,
             "top": {
               "kind": "暴雨",
               "level": "yellow",
@@ -486,7 +486,7 @@
               "issuedAt": "2026/09/02 23:16"
             },
             "via": "路径邻近",
-            "distKm": 414
+            "distKm": 416
           },
           {
             "province": "海南",
@@ -504,7 +504,7 @@
               "issuedAt": "2026/09/02 17:00"
             },
             "via": "台风预警",
-            "distKm": 667
+            "distKm": 652
           }
         ],
         "floodLevel": "red",
@@ -520,18 +520,18 @@
     "partial": null,
     "total": 164,
     "counts": {
-      "暴雨": 91,
+      "暴雨": 92,
       "台风": 60,
       "山洪灾害": 2,
-      "地质灾害": 11
+      "地质灾害": 10
     },
     "peak": {
       "province": "福建",
       "kind": "暴雨",
       "level": "red",
-      "title": "福建省福州市闽侯县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/35012141600000_20260903084200.html",
-      "issuedAt": "2026/09/03 08:42"
+      "title": "福建省泉州市德化县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/35052641600000_20260903090100.html",
+      "issuedAt": "2026/09/03 09:01"
     },
     "provinces": [
       {
@@ -542,13 +542,13 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 75,
+        "count": 76,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省福州市闽侯县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35012141600000_20260903084200.html",
-          "issuedAt": "2026/09/03 08:42"
+          "title": "福建省泉州市德化县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35052641600000_20260903090100.html",
+          "issuedAt": "2026/09/03 09:01"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -561,7 +561,7 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 42,
+        "count": 41,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -599,7 +599,7 @@
         "kinds": {
           "地质灾害": "orange"
         },
-        "count": 10,
+        "count": 9,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -635,7 +635,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 13,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
