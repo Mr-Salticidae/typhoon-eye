@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04 05:24",
+  "updatedAt": "2026-09-04 05:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 30 公里（时次相差 3 小时）、强度一致；日本气象厅定位相差 24 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,14 +49,14 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-04 02时",
+            "time": "09-04 05时",
             "windLevel": 9,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-04 02时",
+            "time": "09-04 05时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -311,9 +311,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 125,
+    "total": 126,
     "counts": {
-      "暴雨": 84,
+      "暴雨": 85,
       "台风": 29,
       "山洪灾害": 1,
       "地质灾害": 11
@@ -410,13 +410,13 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 18,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省大理白族自治州祥云县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53292341600000_20260904045702.html",
-          "issuedAt": "2026/09/04 04:57"
+          "title": "云南省大理白族自治州洱源县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53293041600000_20260904051958.html",
+          "issuedAt": "2026/09/04 05:19"
         },
         "lat": 25,
         "lng": 101.5
