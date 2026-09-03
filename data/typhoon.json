@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03 16:30",
+  "updatedAt": "2026-09-03 17:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -449,6 +449,25 @@
       "rainRisk": {
         "provinces": [
           {
+            "province": "广东",
+            "maxLevel": "red",
+            "floodLevel": "red",
+            "kinds": {
+              "暴雨": "red",
+              "台风": "yellow"
+            },
+            "count": 33,
+            "top": {
+              "kind": "暴雨",
+              "level": "red",
+              "title": "广东省梅州市蕉岭县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/44142741600000_20260903164857.html",
+              "issuedAt": "2026/09/03 16:45"
+            },
+            "via": "路径邻近",
+            "distKm": 144
+          },
+          {
             "province": "福建",
             "maxLevel": "red",
             "floodLevel": "red",
@@ -456,35 +475,16 @@
               "暴雨": "red",
               "台风": "yellow"
             },
-            "count": 78,
+            "count": 79,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "福建省福州市长乐区气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35011241600000_20260903152800.html",
-              "issuedAt": "2026/09/03 15:28"
+              "title": "福建省龙岩市永定区气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260903161400.html",
+              "issuedAt": "2026/09/03 16:14"
             },
             "via": "路径邻近",
             "distKm": 276
-          },
-          {
-            "province": "广东",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
-            "kinds": {
-              "暴雨": "orange",
-              "台风": "yellow"
-            },
-            "count": 33,
-            "top": {
-              "kind": "暴雨",
-              "level": "orange",
-              "title": "广东省梅州市大埔县气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/44142241600000_20260903142601.html",
-              "issuedAt": "2026/09/03 14:22"
-            },
-            "via": "路径邻近",
-            "distKm": 144
           },
           {
             "province": "江西",
@@ -493,7 +493,7 @@
             "kinds": {
               "暴雨": "yellow"
             },
-            "count": 29,
+            "count": 31,
             "top": {
               "kind": "暴雨",
               "level": "yellow",
@@ -516,9 +516,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 156,
+    "total": 160,
     "counts": {
-      "暴雨": 82,
+      "暴雨": 86,
       "台风": 62,
       "山洪灾害": 2,
       "地质灾害": 10
@@ -527,9 +527,9 @@
       "province": "福建",
       "kind": "暴雨",
       "level": "red",
-      "title": "福建省福州市长乐区气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/35011241600000_20260903152800.html",
-      "issuedAt": "2026/09/03 15:28"
+      "title": "福建省龙岩市永定区气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260903161400.html",
+      "issuedAt": "2026/09/03 16:14"
     },
     "provinces": [
       {
@@ -540,16 +540,35 @@
           "暴雨": "red",
           "台风": "yellow"
         },
-        "count": 78,
+        "count": 79,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "福建省福州市长乐区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35011241600000_20260903152800.html",
-          "issuedAt": "2026/09/03 15:28"
+          "title": "福建省龙岩市永定区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260903161400.html",
+          "issuedAt": "2026/09/03 16:14"
         },
         "lat": 26.1,
         "lng": 118.3
+      },
+      {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "台风": "yellow"
+        },
+        "count": 33,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省梅州市蕉岭县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44142741600000_20260903164857.html",
+          "issuedAt": "2026/09/03 16:45"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "浙江",
@@ -572,38 +591,20 @@
         "lng": 120.2
       },
       {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "yellow"
-        },
-        "count": 33,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省梅州市大埔县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142241600000_20260903142601.html",
-          "issuedAt": "2026/09/03 14:22"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
+          "暴雨": "orange",
           "地质灾害": "orange"
         },
-        "count": 9,
+        "count": 10,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082941600000_20260902193631.html",
-          "issuedAt": "2026/09/02 19:36"
+          "title": "云南省红河哈尼族彝族自治州绿春县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53253141600000_20260903162805.html",
+          "issuedAt": "2026/09/03 16:27"
         },
         "lat": 25,
         "lng": 101.5
@@ -615,7 +616,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 29,
+        "count": 31,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
