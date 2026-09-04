@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05 05:15",
+  "updatedAt": "2026-09-05 05:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,48 +30,48 @@
       "name": "科罗旺",
       "enName": "KROVANH",
       "code": "2624",
-      "level": "热带风暴（8级）",
+      "level": "热带风暴（9级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 44 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 20 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-05 02时",
-            "windLevel": 8,
+            "time": "09-05 05时",
+            "windLevel": 9,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-05 02时",
-            "windLevel": 8,
+            "time": "09-05 05时",
+            "windLevel": 9,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-05 02时",
+            "time": "09-05 05时",
             "windLevel": 8,
             "role": "verify"
           }
         ]
       },
       "now": {
-        "windLevel": 8,
-        "windSpeed": 18,
-        "pressure": 998,
-        "moveDir": "南南西",
-        "moveSpeed": 11,
-        "r7": 300,
+        "windLevel": 9,
+        "windSpeed": 23,
+        "pressure": 990,
+        "moveDir": "南",
+        "moveSpeed": 18,
+        "r7": 350,
         "r10": null,
-        "time": "09-05 02时",
-        "position": "中心位于北纬 28.4 度、东经 127.1 度"
+        "time": "09-05 05时",
+        "position": "中心位于北纬 28.1 度、东经 126.5 度"
       },
       "track": [
         {
@@ -91,8 +91,8 @@
           "phase": "past"
         },
         {
-          "t": "09-01 20时",
-          "lat": 22.7,
+          "t": "09-01 23时",
+          "lat": 22.8,
           "lng": 132.2,
           "wind": 8,
           "strong": "热带风暴",
@@ -115,17 +115,17 @@
           "phase": "past"
         },
         {
-          "t": "09-02 17时",
+          "t": "09-02 20时",
           "lat": 23.7,
-          "lng": 131.8,
+          "lng": 131.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-02 23时",
-          "lat": 24,
-          "lng": 131.4,
+          "t": "09-03 02时",
+          "lat": 24.3,
+          "lng": 131.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -147,17 +147,17 @@
           "phase": "past"
         },
         {
-          "t": "09-03 20时",
-          "lat": 27.6,
-          "lng": 129.1,
+          "t": "09-03 23时",
+          "lat": 28.5,
+          "lng": 128.9,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-04 02时",
-          "lat": 29,
-          "lng": 128.3,
+          "t": "09-04 05时",
+          "lat": 29.2,
+          "lng": 128.1,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -171,16 +171,8 @@
           "phase": "past"
         },
         {
-          "t": "09-04 17时",
-          "lat": 29.2,
-          "lng": 127.2,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-04 23时",
-          "lat": 28.6,
+          "t": "09-04 20时",
+          "lat": 28.8,
           "lng": 127.4,
           "wind": 8,
           "strong": "热带风暴",
@@ -192,44 +184,68 @@
           "lng": 127.1,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-05 05时",
+          "lat": 28.1,
+          "lng": 126.5,
+          "wind": 9,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-05 14时",
-          "lat": 27.3,
-          "lng": 126.7,
+          "t": "09-05 11时",
+          "lat": 27.1,
+          "lng": 126.4,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-05 17时",
+          "lat": 26.2,
+          "lng": 126.6,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-05 23时",
+          "lat": 25.6,
+          "lng": 127,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-06 02时",
-          "lat": 25.8,
-          "lng": 126.8,
+          "t": "09-06 05时",
+          "lat": 25,
+          "lng": 127.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-06 14时",
-          "lat": 24.9,
-          "lng": 128.4,
+          "t": "09-06 17时",
+          "lat": 24.5,
+          "lng": 129.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-07 02时",
-          "lat": 25.2,
-          "lng": 130.2,
+          "t": "09-07 05时",
+          "lat": 25.1,
+          "lng": 131.3,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-07 14时",
-          "lat": 26.5,
-          "lng": 131.8,
+          "t": "09-07 17时",
+          "lat": 26.8,
+          "lng": 132.3,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -243,9 +259,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 47,
+    "total": 46,
     "counts": {
-      "暴雨": 24,
+      "暴雨": 23,
       "山洪风险": 2,
       "地质灾害": 21
     },
@@ -253,9 +269,9 @@
       "province": "云南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "云南省普洱市江城哈尼族彝族自治县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53082641600000_20260905041410.html",
-      "issuedAt": "2026/09/05 04:13"
+      "title": "云南省临沧市临翔区气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53090241600000_20260905052523.html",
+      "issuedAt": "2026/09/05 05:24"
     },
     "provinces": [
       {
@@ -267,13 +283,13 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 24,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20260905041410.html",
-          "issuedAt": "2026/09/05 04:13"
+          "title": "云南省临沧市临翔区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53090241600000_20260905052523.html",
+          "issuedAt": "2026/09/05 05:24"
         },
         "lat": 25,
         "lng": 101.5
@@ -303,7 +319,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 14,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -313,24 +329,6 @@
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省衡阳市常宁市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43048241600000_20260904204528.html",
-          "issuedAt": "2026/09/04 20:45"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "广西",
@@ -349,6 +347,24 @@
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖南省衡阳市常宁市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43048241600000_20260904204528.html",
+          "issuedAt": "2026/09/04 20:45"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "广东",
