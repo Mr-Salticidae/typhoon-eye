@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04 14:45",
+  "updatedAt": "2026-09-04 15:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 48 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-04 11时",
+            "time": "09-04 14时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -251,11 +251,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 86,
+    "total": 83,
     "counts": {
-      "暴雨": 66,
+      "暴雨": 64,
       "山洪风险": 2,
-      "地质灾害": 18
+      "地质灾害": 17
     },
     "peak": {
       "province": "福建",
@@ -327,7 +327,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 32,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -365,7 +365,7 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 22,
+        "count": 21,
         "top": {
           "kind": "山洪风险",
           "level": "yellow",
@@ -429,7 +429,7 @@
       "endedAt": "2026-08-31 14:57",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 3
+      "daysSince": 4
     }
   ]
 }
