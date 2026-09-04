@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05 00:30",
+  "updatedAt": "2026-09-05 01:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -243,9 +243,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 55,
+    "total": 57,
     "counts": {
-      "暴雨": 32,
+      "暴雨": 34,
       "山洪风险": 2,
       "地质灾害": 21
     },
@@ -253,9 +253,9 @@
       "province": "云南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "云南省普洱市孟连傣族拉祜族佤族自治县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53082741600000_20260905000331.html",
-      "issuedAt": "2026/09/05 00:02"
+      "title": "云南省普洱市景东彝族自治县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53082341600000_20260905002813.html",
+      "issuedAt": "2026/09/05 00:28"
     },
     "provinces": [
       {
@@ -267,16 +267,34 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 28,
+        "count": 29,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市孟连傣族拉祜族佤族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082741600000_20260905000331.html",
-          "issuedAt": "2026/09/05 00:02"
+          "title": "云南省普洱市景东彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082341600000_20260905002813.html",
+          "issuedAt": "2026/09/05 00:28"
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省梅州市平远县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44142641600000_20260905005220.html",
+          "issuedAt": "2026/09/05 00:51"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "浙江",
@@ -351,24 +369,6 @@
         "lng": 108.8
       },
       {
-        "province": "广东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "广东省梅州市蕉岭县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142741600000_20260905002755.html",
-          "issuedAt": "2026/09/05 00:27"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "四川",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -418,7 +418,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "yellow",
+      "ongoingFloodLevel": "orange",
       "daysSince": 0
     },
     {
