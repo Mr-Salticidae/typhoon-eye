@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05 01:00",
+  "updatedAt": "2026-09-05 01:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -243,9 +243,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 57,
+    "total": 58,
     "counts": {
-      "暴雨": 34,
+      "暴雨": 35,
       "山洪风险": 2,
       "地质灾害": 21
     },
@@ -277,6 +277,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "四川",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "四川省凉山彝族自治州木里县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51342241600000_20260905012011.html",
+          "issuedAt": "2026/09/05 01:20"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "广东",
@@ -367,24 +385,6 @@
         },
         "lat": 23.8,
         "lng": 108.8
-      },
-      {
-        "province": "四川",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "四川省阿坝藏族羌族自治州小金县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51322741600000_20260904205003.html",
-          "issuedAt": "2026/09/04 20:50"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "福建",
