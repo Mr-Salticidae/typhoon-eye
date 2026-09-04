@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04 23:30",
+  "updatedAt": "2026-09-05 00:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-04 20时",
+            "time": "09-04 23时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -243,9 +243,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 60,
+    "total": 62,
     "counts": {
-      "暴雨": 37,
+      "暴雨": 39,
       "山洪风险": 2,
       "地质灾害": 21
     },
@@ -303,13 +303,13 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 29,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20260904222435.html",
-          "issuedAt": "2026/09/04 22:25"
+          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20260904232729.html",
+          "issuedAt": "2026/09/04 23:27"
         },
         "lat": 25,
         "lng": 101.5
@@ -370,6 +370,24 @@
         "lng": 111.7
       },
       {
+        "province": "广西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "广西壮族自治区南宁市武鸣区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45011041600000_20260904233517.html",
+          "issuedAt": "2026/09/04 23:35"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
         "province": "广东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -386,24 +404,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "广西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "广西壮族自治区柳州市融水县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45022541600000_20260904182348.html",
-          "issuedAt": "2026/09/04 18:12"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       }
     ]
   },
