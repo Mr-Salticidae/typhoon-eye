@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04 11:45",
+  "updatedAt": "2026-09-04 12:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -259,32 +259,7 @@
           "phase": "forecast"
         }
       ],
-      "rainRisk": {
-        "provinces": [
-          {
-            "province": "福建",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red",
-              "台风": "yellow"
-            },
-            "count": 27,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "福建省莆田市仙游县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35032241600000_20260904091500.html",
-              "issuedAt": "2026/09/04 09:15"
-            },
-            "via": "台风预警",
-            "distKm": 904
-          }
-        ],
-        "floodLevel": "red",
-        "maxLevel": "red",
-        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高红色。"
-      }
+      "rainRisk": null
     }
   ],
   "alerts": {
@@ -292,10 +267,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 99,
+    "total": 90,
     "counts": {
-      "暴雨": 75,
-      "台风": 4,
+      "暴雨": 70,
       "山洪风险": 2,
       "地质灾害": 18
     },
@@ -313,10 +287,9 @@
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red",
-          "台风": "yellow"
+          "暴雨": "red"
         },
-        "count": 27,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -326,26 +299,6 @@
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "云南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪风险": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 26,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "云南省临沧市凤庆县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53092141600000_20260904090313.html",
-          "issuedAt": "2026/09/04 09:02"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "广东",
@@ -390,7 +343,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 36,
+        "count": 35,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -400,6 +353,26 @@
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 25,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省保山市隆阳区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53050241600000_20260904080306.html",
+          "issuedAt": "2026/09/04 08:02"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "湖南",
