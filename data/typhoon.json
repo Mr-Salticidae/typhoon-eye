@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06 05:40",
+  "updatedAt": "2026-09-06 06:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 81 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 55 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-06 02时",
+            "time": "09-06 05时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -235,18 +235,18 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 25,
+    "total": 27,
     "counts": {
-      "暴雨": 15,
+      "暴雨": 17,
       "地质灾害": 10
     },
     "peak": {
       "province": "云南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "云南省西双版纳傣族自治州勐腊县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53282341600000_20260906031248.html",
-      "issuedAt": "2026/09/06 03:12"
+      "title": "云南省普洱市孟连傣族拉祜族佤族自治县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53082741600000_20260906055241.html",
+      "issuedAt": "2026/09/06 05:51"
     },
     "provinces": [
       {
@@ -257,13 +257,13 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 17,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省西双版纳傣族自治州勐腊县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53282341600000_20260906031248.html",
-          "issuedAt": "2026/09/06 03:12"
+          "title": "云南省普洱市孟连傣族拉祜族佤族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082741600000_20260906055241.html",
+          "issuedAt": "2026/09/06 05:51"
         },
         "lat": 25,
         "lng": 101.5
@@ -303,6 +303,24 @@
         },
         "lat": 27.6,
         "lng": 111.7
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市万州区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50010141600000_20260906053958.html",
+          "issuedAt": "2026/09/06 05:39"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "新疆",
