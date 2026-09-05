@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05 08:45",
+  "updatedAt": "2026-09-05 09:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 54 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 70 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-05 05时",
+            "time": "09-05 08时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -243,10 +243,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 30,
+    "total": 32,
     "counts": {
-      "暴雨": 16,
-      "地质灾害": 14
+      "暴雨": 17,
+      "地质灾害": 15
     },
     "peak": {
       "province": "云南",
@@ -265,7 +265,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 16,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -319,13 +319,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
           "title": "湖南省株洲市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43020341600000_20260905074747.html",
-          "issuedAt": "2026/09/05 07:47"
+          "url": "http://www.nmc.cn/publish/alarm/43021141600000_20260905080017.html",
+          "issuedAt": "2026/09/05 08:00"
         },
         "lat": 27.6,
         "lng": 111.7
