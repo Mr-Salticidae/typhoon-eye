@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05 23:37",
+  "updatedAt": "2026-09-05 23:58",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 32 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-05 20时",
+            "time": "09-05 23时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -269,6 +269,24 @@
         "lng": 101.5
       },
       {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省河源市龙川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44162241600000_20260905235005.html",
+          "issuedAt": "2026/09/05 23:49"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "湖南",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -285,24 +303,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "广东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "广东省河源市龙川县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44162241600000_20260905225003.html",
-          "issuedAt": "2026/09/05 22:47"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "新疆",
@@ -354,7 +354,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "yellow",
+      "ongoingFloodLevel": "orange",
       "daysSince": 1
     },
     {
