@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05 14:00",
+  "updatedAt": "2026-09-05 14:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "科罗旺",
       "enName": "KROVANH",
       "code": "2624",
-      "level": "热带风暴（9级）",
+      "level": "热带风暴（8级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 46 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-05 11时",
-            "windLevel": 9,
+            "time": "09-05 14时",
+            "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-05 11时",
-            "windLevel": 9,
+            "time": "09-05 14时",
+            "windLevel": 8,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 9,
-        "windSpeed": 23,
-        "pressure": 990,
-        "moveDir": "南",
-        "moveSpeed": 13,
+        "windLevel": 8,
+        "windSpeed": 20,
+        "pressure": 995,
+        "moveDir": "南南东",
+        "moveSpeed": 8,
         "r7": 350,
         "r10": null,
-        "time": "09-05 11时",
-        "position": "中心位于北纬 27.5 度、东经 127.2 度"
+        "time": "09-05 14时",
+        "position": "中心位于北纬 26.8 度、东经 127.2 度"
       },
       "track": [
         {
@@ -83,8 +83,8 @@
           "phase": "past"
         },
         {
-          "t": "09-01 14时",
-          "lat": 22.5,
+          "t": "09-01 17时",
+          "lat": 22.6,
           "lng": 132.1,
           "wind": 8,
           "strong": "热带风暴",
@@ -99,9 +99,9 @@
           "phase": "past"
         },
         {
-          "t": "09-02 05时",
-          "lat": 22.9,
-          "lng": 132.2,
+          "t": "09-02 08时",
+          "lat": 23,
+          "lng": 132.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -115,9 +115,9 @@
           "phase": "past"
         },
         {
-          "t": "09-02 20时",
-          "lat": 23.7,
-          "lng": 131.5,
+          "t": "09-02 23时",
+          "lat": 24,
+          "lng": 131.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -131,9 +131,9 @@
           "phase": "past"
         },
         {
-          "t": "09-03 11时",
-          "lat": 26.9,
-          "lng": 129.4,
+          "t": "09-03 14时",
+          "lat": 27.1,
+          "lng": 129.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -147,9 +147,9 @@
           "phase": "past"
         },
         {
-          "t": "09-04 02时",
-          "lat": 29,
-          "lng": 128.3,
+          "t": "09-04 05时",
+          "lat": 29.2,
+          "lng": 128.1,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -163,9 +163,9 @@
           "phase": "past"
         },
         {
-          "t": "09-04 17时",
-          "lat": 29.2,
-          "lng": 127.2,
+          "t": "09-04 20时",
+          "lat": 28.8,
+          "lng": 127.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -179,56 +179,56 @@
           "phase": "past"
         },
         {
-          "t": "09-05 08时",
-          "lat": 27.9,
+          "t": "09-05 11时",
+          "lat": 27.5,
           "lng": 127.2,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-05 11时",
-          "lat": 27.5,
+          "t": "09-05 14时",
+          "lat": 26.8,
           "lng": 127.2,
-          "wind": 9,
+          "wind": 8,
           "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-05 23时",
-          "lat": 26.1,
-          "lng": 127.4,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-06 11时",
-          "lat": 25.2,
-          "lng": 128.8,
+          "t": "09-06 02时",
+          "lat": 26,
+          "lng": 127.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-06 23时",
+          "t": "09-06 14时",
           "lat": 25.2,
-          "lng": 130.8,
+          "lng": 129,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-07 11时",
-          "lat": 26.1,
-          "lng": 132.3,
+          "t": "09-07 02时",
+          "lat": 25.3,
+          "lng": 131,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-07 14时",
+          "lat": 26.3,
+          "lng": 132.4,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-07 23时",
-          "lat": 27.5,
+          "t": "09-08 02时",
+          "lat": 27.8,
           "lng": 132.7,
           "wind": 7,
           "strong": "热带低压",
@@ -243,9 +243,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 25,
+    "total": 26,
     "counts": {
-      "暴雨": 11,
+      "暴雨": 12,
       "地质灾害": 14
     },
     "peak": {
@@ -311,6 +311,24 @@
         },
         "lat": 27.6,
         "lng": 111.7
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省漳州市漳浦县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062341600000_20260905140600.html",
+          "issuedAt": "2026/09/05 14:06"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "广西",
@@ -380,7 +398,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "blue",
+      "ongoingFloodLevel": "yellow",
       "daysSince": 1
     },
     {
