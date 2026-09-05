@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05 17:45",
+  "updatedAt": "2026-09-05 18:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 39 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-05 14时",
+            "time": "09-05 17时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -243,10 +243,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 26,
+    "total": 22,
     "counts": {
-      "暴雨": 14,
-      "地质灾害": 12
+      "暴雨": 11,
+      "地质灾害": 11
     },
     "peak": {
       "province": "云南",
@@ -265,7 +265,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 15,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -275,24 +275,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省梅州市丰顺县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142341600000_20260905145831.html",
-          "issuedAt": "2026/09/05 14:57"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "湖南",
@@ -398,7 +380,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": "yellow",
       "daysSince": 1
     },
     {
@@ -409,7 +391,7 @@
       "endedAt": "2026-08-31 18:00",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 4
+      "daysSince": 5
     },
     {
       "code": "2622",
