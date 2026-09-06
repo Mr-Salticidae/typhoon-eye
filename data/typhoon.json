@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06 18:30",
+  "updatedAt": "2026-09-06 18:49",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -219,11 +219,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 38,
+    "total": 41,
     "counts": {
       "暴雨": 9,
-      "山洪灾害": 9,
-      "地质灾害": 20
+      "山洪灾害": 11,
+      "地质灾害": 21
     },
     "peak": {
       "province": "云南",
@@ -296,7 +296,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 18,
+        "count": 19,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -306,6 +306,45 @@
         },
         "lat": 37.3,
         "lng": 106.2
+      },
+      {
+        "province": "甘肃",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "甘肃省自然资源厅、甘肃省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260906183248.html",
+          "issuedAt": "2026/09/06 18:30"
+        },
+        "lat": 37.8,
+        "lng": 101.1
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "陕西省气象台发布山洪灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260906183236.html",
+          "issuedAt": "2026/09/06 18:32"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "福建",
@@ -324,43 +363,6 @@
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "甘肃",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "甘肃省张掖市山丹县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/62072541600000_20260906145051.html",
-          "issuedAt": "2026/09/06 14:50"
-        },
-        "lat": 37.8,
-        "lng": 101.1
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "陕西省气象台发布暴雨蓝色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260906174703.html",
-          "issuedAt": "2026/09/06 17:46"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "山西",
