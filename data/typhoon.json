@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06 23:15",
+  "updatedAt": "2026-09-06 23:47",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
@@ -34,24 +34,17 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 42 公里（时次相差 3 小时）、强度一致（2 源交叉校验一致）",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-06 20时",
-            "windLevel": 8,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-06 20时",
+            "time": "09-06 23时",
             "windLevel": 8,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -66,12 +59,12 @@
         "windLevel": 8,
         "windSpeed": 18,
         "pressure": 995,
-        "moveDir": "东北",
+        "moveDir": "北东",
         "moveSpeed": 12,
         "r7": 350,
         "r10": null,
-        "time": "09-06 20时",
-        "position": "中心位于北纬 25.8 度、东经 130.9 度"
+        "time": "09-06 23时",
+        "position": "中心位于北纬 25.8 度、东经 131.1 度"
       },
       "track": [
         {
@@ -107,9 +100,9 @@
           "phase": "past"
         },
         {
-          "t": "09-02 23时",
-          "lat": 24,
-          "lng": 131.4,
+          "t": "09-03 02时",
+          "lat": 24.3,
+          "lng": 131.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -131,17 +124,17 @@
           "phase": "past"
         },
         {
-          "t": "09-04 05时",
-          "lat": 29.2,
-          "lng": 128.1,
-          "wind": 9,
+          "t": "09-04 08时",
+          "lat": 29.5,
+          "lng": 128,
+          "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-04 14时",
-          "lat": 29.8,
-          "lng": 127.4,
+          "t": "09-04 17时",
+          "lat": 29.2,
+          "lng": 127.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -155,33 +148,25 @@
           "phase": "past"
         },
         {
-          "t": "09-05 11时",
-          "lat": 27.5,
+          "t": "09-05 14时",
+          "lat": 26.8,
           "lng": 127.2,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-05 20时",
-          "lat": 25.8,
-          "lng": 128.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-06 08时",
-          "lat": 25.6,
-          "lng": 129.5,
+          "t": "09-05 23时",
+          "lat": 25.5,
+          "lng": 128.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-06 17时",
+          "t": "09-06 11时",
           "lat": 25.7,
-          "lng": 130.7,
+          "lng": 129.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -192,20 +177,28 @@
           "lng": 130.9,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-06 23时",
+          "lat": 25.8,
+          "lng": 131.1,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-07 08时",
-          "lat": 26.6,
-          "lng": 132,
+          "t": "09-07 11时",
+          "lat": 26.7,
+          "lng": 132.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-07 20时",
-          "lat": 27.7,
-          "lng": 132.6,
+          "t": "09-07 23时",
+          "lat": 28,
+          "lng": 132.7,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -215,212 +208,13 @@
     }
   ],
   "alerts": {
-    "ok": true,
+    "ok": false,
+    "error": "全部预警类别抓取失败",
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": null,
-    "total": 55,
-    "counts": {
-      "暴雨": 18,
-      "山洪灾害": 13,
-      "地质灾害": 24
-    },
-    "peak": {
-      "province": "云南",
-      "kind": "地质灾害",
-      "level": "orange",
-      "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53082941600000_20260906091157.html",
-      "issuedAt": "2026/09/06 09:11"
-    },
-    "provinces": [
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "blue",
-          "地质灾害": "orange"
-        },
-        "count": 9,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082941600000_20260906091157.html",
-          "issuedAt": "2026/09/06 09:11"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区巴音郭楞蒙古自治州轮台县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65282241600000_20260906192034.html",
-          "issuedAt": "2026/09/06 19:20"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
-        "province": "内蒙古",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "内蒙古自治区兴安盟科右中旗气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15222241600000_20260906193622.html",
-          "issuedAt": "2026/09/06 19:36"
-        },
-        "lat": 44,
-        "lng": 113.9
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省河源市龙川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44162241600000_20260905235005.html",
-          "issuedAt": "2026/09/05 23:49"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "宁夏",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 29,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "宁夏回族自治区吴忠市红寺堡区气象台发布山洪灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64030341600000_20260906152417.html",
-          "issuedAt": "2026/09/06 15:15"
-        },
-        "lat": 37.3,
-        "lng": 106.2
-      },
-      {
-        "province": "甘肃",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "甘肃省甘南藏族自治州夏河县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/62302741600000_20260906214110.html",
-          "issuedAt": "2026/09/06 21:41"
-        },
-        "lat": 37.8,
-        "lng": 101.1
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "陕西省气象台发布山洪灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260906183236.html",
-          "issuedAt": "2026/09/06 18:32"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      },
-      {
-        "province": "吉林",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "吉林省白城市洮南市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/22088141600000_20260906210430.html",
-          "issuedAt": "2026/09/06 21:00"
-        },
-        "lat": 43.7,
-        "lng": 126.2
-      },
-      {
-        "province": "黑龙江",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "黑龙江省黑河市五大连池市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/23118241600000_20260906221831.html",
-          "issuedAt": "2026/09/06 22:15"
-        },
-        "lat": 47.4,
-        "lng": 128.1
-      },
-      {
-        "province": "山西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "地质灾害": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "地质灾害",
-          "level": "blue",
-          "title": "山西省吕梁市气象台发布地质灾害蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14110041600000_20260906181448.html",
-          "issuedAt": "2026/09/06 18:16"
-        },
-        "lat": 37.6,
-        "lng": 112.3
-      }
-    ]
+    "provinces": [],
+    "counts": {},
+    "peak": null
   },
   "recentlyEnded": [
     {
@@ -434,7 +228,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": null,
       "daysSince": 2
     },
     {
