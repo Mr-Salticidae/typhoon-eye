@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06 20:44",
+  "updatedAt": "2026-09-06 21:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -219,11 +219,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 47,
+    "total": 53,
     "counts": {
-      "暴雨": 13,
+      "暴雨": 18,
       "山洪灾害": 13,
-      "地质灾害": 21
+      "地质灾害": 22
     },
     "peak": {
       "province": "云南",
@@ -330,10 +330,11 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
+          "暴雨": "blue",
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 22,
+        "count": 27,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -382,6 +383,24 @@
         },
         "lat": 35.2,
         "lng": 108.9
+      },
+      {
+        "province": "吉林",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "吉林省白城市洮南市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22088141600000_20260906210430.html",
+          "issuedAt": "2026/09/06 21:00"
+        },
+        "lat": 43.7,
+        "lng": 126.2
       },
       {
         "province": "福建",
