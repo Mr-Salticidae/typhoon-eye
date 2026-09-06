@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07 07:00",
+  "updatedAt": "2026-09-07 07:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -211,22 +211,40 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 80,
+    "total": 82,
     "counts": {
-      "暴雨": 38,
+      "暴雨": 40,
       "山洪灾害": 13,
       "山洪风险": 1,
       "地质灾害": 28
     },
     "peak": {
-      "province": "云南",
+      "province": "广东",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "云南省普洱市景谷傣族彝族自治县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53082441600000_20260907064225.html",
-      "issuedAt": "2026/09/07 06:41"
+      "level": "red",
+      "title": "广东省茂名市化州市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44098241600000_20260907071139.html",
+      "issuedAt": "2026/09/07 07:09"
     },
     "provinces": [
+      {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省茂名市化州市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44098241600000_20260907071139.html",
+          "issuedAt": "2026/09/07 07:09"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
       {
         "province": "云南",
         "maxLevel": "orange",
@@ -236,34 +254,16 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 22,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市景谷傣族彝族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082441600000_20260907064225.html",
-          "issuedAt": "2026/09/07 06:41"
+          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20260907070644.html",
+          "issuedAt": "2026/09/07 07:06"
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省茂名市高州市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44098141600000_20260907061933.html",
-          "issuedAt": "2026/09/07 06:14"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "新疆",
@@ -292,7 +292,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 32,
+        "count": 33,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -410,7 +410,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": "red",
       "daysSince": 3
     },
     {
