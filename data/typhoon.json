@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07 04:49",
+  "updatedAt": "2026-09-07 05:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,12 +37,12 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 30 公里（时次相差 3 小时）、强度一致；日本气象厅定位相差 45 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-07 02时",
+            "time": "09-07 05时",
             "windLevel": 8,
             "role": "primary"
           },
@@ -66,12 +66,12 @@
         "windLevel": 8,
         "windSpeed": 18,
         "pressure": 995,
-        "moveDir": "东北",
-        "moveSpeed": 12,
+        "moveDir": "北北东",
+        "moveSpeed": 13,
         "r7": 350,
         "r10": null,
-        "time": "09-07 02时",
-        "position": "中心位于北纬 26.0 度、东经 131.5 度"
+        "time": "09-07 05时",
+        "position": "中心位于北纬 26.2 度、东经 131.7 度"
       },
       "track": [
         {
@@ -83,9 +83,9 @@
           "phase": "past"
         },
         {
-          "t": "09-01 17时",
-          "lat": 22.6,
-          "lng": 132.1,
+          "t": "09-01 20时",
+          "lat": 22.7,
+          "lng": 132.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -99,9 +99,9 @@
           "phase": "past"
         },
         {
-          "t": "09-02 14时",
-          "lat": 23.5,
-          "lng": 132,
+          "t": "09-02 17时",
+          "lat": 23.7,
+          "lng": 131.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -115,9 +115,9 @@
           "phase": "past"
         },
         {
-          "t": "09-03 11时",
-          "lat": 26.9,
-          "lng": 129.4,
+          "t": "09-03 14时",
+          "lat": 27.1,
+          "lng": 129.1,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -131,8 +131,8 @@
           "phase": "past"
         },
         {
-          "t": "09-04 08时",
-          "lat": 29.5,
+          "t": "09-04 11时",
+          "lat": 29.7,
           "lng": 128,
           "wind": 8,
           "strong": "热带风暴",
@@ -147,9 +147,9 @@
           "phase": "past"
         },
         {
-          "t": "09-05 05时",
-          "lat": 28.1,
-          "lng": 126.5,
+          "t": "09-05 08时",
+          "lat": 27.9,
+          "lng": 127.2,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -163,9 +163,9 @@
           "phase": "past"
         },
         {
-          "t": "09-06 02时",
-          "lat": 25.5,
-          "lng": 128.5,
+          "t": "09-06 05时",
+          "lat": 25.4,
+          "lng": 129.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -179,33 +179,25 @@
           "phase": "past"
         },
         {
-          "t": "09-06 23时",
-          "lat": 25.8,
-          "lng": 131.1,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
           "t": "09-07 02时",
           "lat": 26,
           "lng": 131.5,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-07 05时",
+          "lat": 26.2,
+          "lng": 131.7,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-07 14时",
-          "lat": 27,
-          "lng": 132.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-08 02时",
-          "lat": 28.4,
-          "lng": 132.7,
+          "t": "09-07 17时",
+          "lat": 27.4,
+          "lng": 132.5,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -219,9 +211,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 69,
+    "total": 71,
     "counts": {
-      "暴雨": 28,
+      "暴雨": 30,
       "山洪灾害": 13,
       "山洪风险": 1,
       "地质灾害": 27
@@ -244,7 +236,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 19,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -302,7 +294,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
