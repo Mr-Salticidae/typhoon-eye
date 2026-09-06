@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06 18:00",
+  "updatedAt": "2026-09-06 18:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -219,11 +219,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 39,
+    "total": 38,
     "counts": {
-      "暴雨": 11,
+      "暴雨": 9,
       "山洪灾害": 9,
-      "地质灾害": 19
+      "地质灾害": 20
     },
     "peak": {
       "province": "云南",
@@ -239,10 +239,9 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "yellow",
           "地质灾害": "orange"
         },
-        "count": 11,
+        "count": 9,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -362,6 +361,24 @@
         },
         "lat": 35.2,
         "lng": 108.9
+      },
+      {
+        "province": "山西",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "地质灾害": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "地质灾害",
+          "level": "blue",
+          "title": "山西省吕梁市气象台发布地质灾害蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14110041600000_20260906181448.html",
+          "issuedAt": "2026/09/06 18:16"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       }
     ]
   },
