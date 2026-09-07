@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07 15:15",
+  "updatedAt": "2026-09-07 15:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -206,10 +206,10 @@
     "partial": null,
     "total": 101,
     "counts": {
-      "暴雨": 48,
-      "山洪灾害": 22,
+      "暴雨": 52,
+      "山洪灾害": 20,
       "山洪风险": 1,
-      "地质灾害": 30
+      "地质灾害": 28
     },
     "peak": {
       "province": "云南",
@@ -242,18 +242,18 @@
       },
       {
         "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "red",
+        "floodLevel": "red",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "red"
         },
         "count": 5,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿克苏地区柯坪县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65292941600000_20260907144503.html",
-          "issuedAt": "2026/09/07 14:45"
+          "level": "red",
+          "title": "新疆维吾尔自治区阿克苏地区拜城县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65292641600000_20260907152648.html",
+          "issuedAt": "2026/09/07 15:26"
         },
         "lat": 41.1,
         "lng": 85.3
@@ -282,16 +282,16 @@
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "blue",
-          "山洪灾害": "yellow",
+          "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 26,
+        "count": 22,
         "top": {
-          "kind": "山洪灾害",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "宁夏回族自治区吴忠市红寺堡区气象台发布山洪灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64030341600000_20260906152417.html",
-          "issuedAt": "2026/09/06 15:15"
+          "title": "宁夏回族自治区固原市泾源县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64042441600000_20260906164353.html",
+          "issuedAt": "2026/09/06 16:30"
         },
         "lat": 37.3,
         "lng": 106.2
@@ -301,17 +301,17 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "blue",
+          "暴雨": "yellow",
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 18,
+        "count": 21,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "河北省石家庄市灵寿县气象台发布地质灾害气象风险黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13012641600000_20260907144020.html",
-          "issuedAt": "2026/09/07 14:40"
+          "title": "河北省承德市兴隆县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13082241600000_20260907152204.html",
+          "issuedAt": "2026/09/07 15:22"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -337,6 +337,25 @@
         "lng": 112.3
       },
       {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "yellow"
+        },
+        "count": 6,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "陕西省气象台发布山洪灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260906183236.html",
+          "issuedAt": "2026/09/06 18:32"
+        },
+        "lat": 35.2,
+        "lng": 108.9
+      },
+      {
         "province": "甘肃",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -354,25 +373,6 @@
         },
         "lat": 37.8,
         "lng": 101.1
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "yellow"
-        },
-        "count": 5,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "陕西省气象台发布山洪灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260906183236.html",
-          "issuedAt": "2026/09/06 18:32"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "吉林",
