@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07 10:45",
+  "updatedAt": "2026-09-07 11:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 56 公里、强度暂缺（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 56 公里、强度暂缺（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-07 08时",
             "windLevel": 7,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-07 08时",
-            "windLevel": 7,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -211,12 +204,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 83,
+    "total": 90,
     "counts": {
-      "暴雨": 43,
+      "暴雨": 47,
       "山洪灾害": 14,
       "山洪风险": 1,
-      "地质灾害": 25
+      "地质灾害": 28
     },
     "peak": {
       "province": "云南",
@@ -236,7 +229,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 24,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -254,7 +247,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -309,7 +302,6 @@
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow",
-          "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
         "count": 8,
@@ -322,6 +314,26 @@
         },
         "lat": 37.8,
         "lng": 101.1
+      },
+      {
+        "province": "山西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "yellow",
+          "地质灾害": "blue"
+        },
+        "count": 4,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "山西省水利厅和山西省气象台发布山洪灾害气象风险黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260907101945.html",
+          "issuedAt": "2026/09/07 08:00"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       },
       {
         "province": "陕西",
@@ -341,26 +353,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "山西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "yellow",
-          "地质灾害": "blue"
-        },
-        "count": 3,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "山西省水利厅和山西省气象台发布山洪灾害气象风险黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260907101945.html",
-          "issuedAt": "2026/09/07 08:00"
-        },
-        "lat": 37.6,
-        "lng": 112.3
       },
       {
         "province": "吉林",
@@ -385,15 +377,16 @@
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
-          "暴雨": "blue"
+          "暴雨": "blue",
+          "山洪灾害": "blue"
         },
-        "count": 1,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13000041600000_20260907090608.html",
-          "issuedAt": "2026/09/07 09:06"
+          "title": "河北省保定市阜平县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13062441600000_20260907110820.html",
+          "issuedAt": "2026/09/07 11:08"
         },
         "lat": 38.5,
         "lng": 115.5
