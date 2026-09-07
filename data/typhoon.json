@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08 02:45",
+  "updatedAt": "2026-09-08 03:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 181,
+    "total": 188,
     "counts": {
-      "暴雨": 96,
+      "暴雨": 103,
       "山洪灾害": 33,
       "山洪风险": 3,
       "地质灾害": 49
@@ -56,7 +56,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 29,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -74,7 +74,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 4,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -124,6 +124,24 @@
         "lng": 102.9
       },
       {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省阳江市阳西县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44172141600000_20260907083612.html",
+          "issuedAt": "2026/09/07 08:34"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "福建",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -142,24 +160,6 @@
         "lng": 118.3
       },
       {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省阳江市阳西县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44172141600000_20260907083612.html",
-          "issuedAt": "2026/09/07 08:34"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -168,7 +168,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 66,
+        "count": 67,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -241,7 +241,7 @@
         "江西"
       ],
       "ongoingFloodLevel": "orange",
-      "daysSince": 3
+      "daysSince": 4
     }
   ]
 }
