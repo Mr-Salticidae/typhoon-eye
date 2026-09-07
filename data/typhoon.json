@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07 19:00",
+  "updatedAt": "2026-09-07 19:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -204,12 +204,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 132,
+    "total": 143,
     "counts": {
       "暴雨": 69,
-      "山洪灾害": 21,
+      "山洪灾害": 28,
       "山洪风险": 1,
-      "地质灾害": 41
+      "地质灾害": 45
     },
     "peak": {
       "province": "云南",
@@ -247,7 +247,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -257,6 +257,26 @@
         },
         "lat": 41.1,
         "lng": 85.3
+      },
+      {
+        "province": "河北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 35,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "河北省廊坊市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13100041600000_20260907191201.html",
+          "issuedAt": "2026/09/07 19:12"
+        },
+        "lat": 38.5,
+        "lng": 115.5
       },
       {
         "province": "四川",
@@ -295,26 +315,6 @@
         "lng": 113.4
       },
       {
-        "province": "河北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 35,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "河北省廊坊市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13100041600000_20260907182657.html",
-          "issuedAt": "2026/09/07 18:26"
-        },
-        "lat": 38.5,
-        "lng": 115.5
-      },
-      {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -323,13 +323,13 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 33,
+        "count": 44,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
-          "title": "山西省临汾市水利局与临汾市气象台发布山洪灾害气象风险黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14100041600000_20260907184521.html",
-          "issuedAt": "2026/09/07 18:45"
+          "title": "山西省临汾市乡宁县水利局与乡宁县气象台发布山洪灾害气象风险黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14102941600000_20260907190411.html",
+          "issuedAt": "2026/09/07 19:01"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -340,10 +340,9 @@
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "blue",
-          "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -362,13 +361,13 @@
           "暴雨": "blue",
           "山洪灾害": "yellow"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
-          "title": "陕西省气象台发布山洪灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260907182425.html",
-          "issuedAt": "2026/09/07 18:24"
+          "title": "陕西省渭南市气象台发布山洪灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61050041600000_20260907192023.html",
+          "issuedAt": "2026/09/07 19:20"
         },
         "lat": 35.2,
         "lng": 108.9
@@ -380,7 +379,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
