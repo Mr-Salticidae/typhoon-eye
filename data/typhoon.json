@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07 09:45",
+  "updatedAt": "2026-09-07 10:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -211,59 +211,59 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 83,
+    "total": 82,
     "counts": {
-      "暴雨": 42,
+      "暴雨": 41,
       "山洪灾害": 13,
       "山洪风险": 1,
       "地质灾害": 27
     },
     "peak": {
-      "province": "广东",
+      "province": "云南",
       "kind": "暴雨",
       "level": "red",
-      "title": "广东省茂名市化州市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44098241600000_20260907071139.html",
-      "issuedAt": "2026/09/07 07:09"
+      "title": "云南省普洱市景谷傣族彝族自治县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53082441600000_20260907034250.html",
+      "issuedAt": "2026/09/07 03:41"
     },
     "provinces": [
       {
-        "province": "广东",
+        "province": "云南",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广东省茂名市化州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44098241600000_20260907071139.html",
-          "issuedAt": "2026/09/07 07:09"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
+          "暴雨": "red",
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 24,
+        "count": 26,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省临沧市临翔区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53090241600000_20260907082628.html",
-          "issuedAt": "2026/09/07 08:25"
+          "level": "red",
+          "title": "云南省普洱市景谷傣族彝族自治县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082441600000_20260907034250.html",
+          "issuedAt": "2026/09/07 03:41"
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省阳江市阳西县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44172141600000_20260907083612.html",
+          "issuedAt": "2026/09/07 08:34"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "新疆",
@@ -292,7 +292,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 33,
+        "count": 30,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -361,6 +361,25 @@
         "lng": 126.2
       },
       {
+        "province": "山西",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue",
+          "地质灾害": "blue"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "山西省气象台发布暴雨蓝色预警",
+          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260907083400.html",
+          "issuedAt": "2026/09/07 08:34"
+        },
+        "lat": 37.6,
+        "lng": 112.3
+      },
+      {
         "province": "河北",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -395,24 +414,6 @@
         },
         "lat": 47.4,
         "lng": 128.1
-      },
-      {
-        "province": "山西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "地质灾害": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "地质灾害",
-          "level": "blue",
-          "title": "山西省吕梁市气象台发布地质灾害蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14110041600000_20260906181448.html",
-          "issuedAt": "2026/09/06 18:16"
-        },
-        "lat": 37.6,
-        "lng": 112.3
       }
     ]
   },
@@ -428,7 +429,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "red",
+      "ongoingFloodLevel": "orange",
       "daysSince": 3
     },
     {
