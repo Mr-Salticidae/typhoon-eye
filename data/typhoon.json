@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07 13:15",
+  "updatedAt": "2026-09-07 13:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -204,12 +204,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 98,
+    "total": 102,
     "counts": {
-      "暴雨": 45,
+      "暴雨": 47,
       "山洪灾害": 24,
       "山洪风险": 1,
-      "地质灾害": 28
+      "地质灾害": 30
     },
     "peak": {
       "province": "云南",
@@ -229,7 +229,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 20,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -305,7 +305,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "blue"
         },
-        "count": 13,
+        "count": 15,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -315,6 +315,26 @@
         },
         "lat": 37.6,
         "lng": 112.3
+      },
+      {
+        "province": "河北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 13,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "河北省石家庄市平山县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13013141600000_20260907133000.html",
+          "issuedAt": "2026/09/07 13:30"
+        },
+        "lat": 38.5,
+        "lng": 115.5
       },
       {
         "province": "甘肃",
@@ -371,25 +391,6 @@
         },
         "lat": 43.7,
         "lng": 126.2
-      },
-      {
-        "province": "河北",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "blue"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河北省保定市安新县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13063241600000_20260907115602.html",
-          "issuedAt": "2026/09/07 11:56"
-        },
-        "lat": 38.5,
-        "lng": 115.5
       },
       {
         "province": "黑龙江",
