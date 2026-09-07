@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07 20:30",
+  "updatedAt": "2026-09-07 21:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "zj",
@@ -25,191 +25,18 @@
       "count": 1
     }
   ],
-  "typhoons": [
-    {
-      "name": "科罗旺",
-      "enName": "KROVANH",
-      "code": "2624",
-      "level": "热带低压（7级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 56 公里、强度暂缺（2 源交叉校验一致）",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-07 08时",
-            "windLevel": 7,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "09-07 08时",
-            "windLevel": null,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 7,
-        "windSpeed": 15,
-        "pressure": 998,
-        "moveDir": "北北东",
-        "moveSpeed": 10,
-        "r7": null,
-        "r10": null,
-        "time": "09-07 08时",
-        "position": "中心位于北纬 26.5 度、东经 132.1 度"
-      },
-      "track": [
-        {
-          "t": "09-01 08时",
-          "lat": 22.5,
-          "lng": 132,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-01 20时",
-          "lat": 22.7,
-          "lng": 132.2,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-02 05时",
-          "lat": 22.9,
-          "lng": 132.2,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-02 17时",
-          "lat": 23.7,
-          "lng": 131.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-03 02时",
-          "lat": 24.3,
-          "lng": 131.3,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-03 14时",
-          "lat": 27.1,
-          "lng": 129.1,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-04 02时",
-          "lat": 29,
-          "lng": 128.3,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-04 11时",
-          "lat": 29.7,
-          "lng": 128,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-04 23时",
-          "lat": 28.6,
-          "lng": 127.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-05 11时",
-          "lat": 27.5,
-          "lng": 127.2,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-05 20时",
-          "lat": 25.8,
-          "lng": 128.1,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-06 08时",
-          "lat": 25.6,
-          "lng": 129.5,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-06 17时",
-          "lat": 25.7,
-          "lng": 130.7,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-07 05时",
-          "lat": 26.2,
-          "lng": 131.7,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-07 08时",
-          "lat": 26.5,
-          "lng": 132.1,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "now"
-        },
-        {
-          "t": "09-07 20时",
-          "lat": 27.5,
-          "lng": 132.3,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "forecast"
-        }
-      ],
-      "rainRisk": null
-    }
-  ],
+  "typhoons": [],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 154,
+    "total": 157,
     "counts": {
-      "暴雨": 73,
+      "暴雨": 77,
       "山洪灾害": 32,
       "山洪风险": 1,
-      "地质灾害": 48
+      "地质灾害": 47
     },
     "peak": {
       "province": "云南",
@@ -285,13 +112,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "四川省阿坝藏族羌族自治州阿坝县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51323141600000_20260907184158.html",
-          "issuedAt": "2026/09/07 18:41"
+          "title": "四川省阿坝藏族羌族自治州若尔盖县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51323241600000_20260907202350.html",
+          "issuedAt": "2026/09/07 20:23"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -323,7 +150,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 57,
+        "count": 60,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -378,7 +205,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -428,6 +255,16 @@
     ]
   },
   "recentlyEnded": [
+    {
+      "code": "2624",
+      "name": "科罗旺",
+      "enName": "KROVANH",
+      "lastLevel": "热带低压（7级）",
+      "endedAt": "2026-09-07 21:00",
+      "provinces": [],
+      "ongoingFloodLevel": null,
+      "daysSince": 0
+    },
     {
       "code": "2618",
       "name": "沙德尔",
