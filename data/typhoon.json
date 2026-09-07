@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08 04:45",
+  "updatedAt": "2026-09-08 05:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,12 +31,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 202,
+    "total": 205,
     "counts": {
-      "暴雨": 115,
+      "暴雨": 117,
       "山洪灾害": 33,
       "山洪风险": 2,
-      "地质灾害": 52
+      "地质灾害": 53
     },
     "peak": {
       "province": "云南",
@@ -68,13 +68,31 @@
         "lng": 101.5
       },
       {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省东莞市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44190041600000_20260908050103.html",
+          "issuedAt": "2026/09/08 04:55"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "新疆",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 8,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -122,24 +140,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省广州市增城区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44011841600000_20260908033149.html",
-          "issuedAt": "2026/09/08 03:26"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "福建",
@@ -240,7 +240,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": "red",
       "daysSince": 4
     }
   ]
