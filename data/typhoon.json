@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08 11:15",
+  "updatedAt": "2026-09-08 11:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -33,10 +33,10 @@
     "partial": null,
     "total": 172,
     "counts": {
-      "暴雨": 80,
+      "暴雨": 79,
       "山洪灾害": 34,
       "山洪风险": 2,
-      "地质灾害": 56
+      "地质灾害": 57
     },
     "peak": {
       "province": "新疆",
@@ -74,7 +74,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 38,
+        "count": 37,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -200,6 +200,25 @@
         "lng": 108.9
       },
       {
+        "province": "甘肃",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "甘肃省自然资源厅、甘肃省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260908112157.html",
+          "issuedAt": "2026/09/08 11:20"
+        },
+        "lat": 37.8,
+        "lng": 101.1
+      },
+      {
         "province": "宁夏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -216,24 +235,6 @@
         },
         "lat": 37.3,
         "lng": 106.2
-      },
-      {
-        "province": "甘肃",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "山洪灾害": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "blue",
-          "title": "甘肃省水利厅、甘肃省气象台发布山洪灾害气象风险蓝色预警",
-          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260908095838.html",
-          "issuedAt": "2026/09/08 09:40"
-        },
-        "lat": 37.8,
-        "lng": 101.1
       }
     ]
   },
