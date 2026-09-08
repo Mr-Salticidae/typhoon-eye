@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09 01:30",
+  "updatedAt": "2026-09-09 02:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -33,9 +33,8 @@
     "partial": null,
     "total": 118,
     "counts": {
-      "暴雨": 59,
+      "暴雨": 60,
       "山洪灾害": 19,
-      "山洪风险": 1,
       "地质灾害": 39
     },
     "peak": {
@@ -84,6 +83,25 @@
         "lng": 102.9
       },
       {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省普洱市墨江哈尼族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082241600000_20260909014918.html",
+          "issuedAt": "2026/09/09 01:49"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -120,25 +138,6 @@
         },
         "lat": 37.6,
         "lng": 112.3
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪风险": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 15,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省普洱市景谷傣族彝族自治县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082441600000_20260908212647.html",
-          "issuedAt": "2026/09/08 21:26"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "陕西",
