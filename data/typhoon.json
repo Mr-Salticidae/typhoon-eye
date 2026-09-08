@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08 17:53",
+  "updatedAt": "2026-09-08 18:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,12 +31,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 152,
+    "total": 138,
     "counts": {
-      "暴雨": 68,
-      "山洪灾害": 29,
+      "暴雨": 57,
+      "山洪灾害": 31,
       "山洪风险": 2,
-      "地质灾害": 53
+      "地质灾害": 48
     },
     "peak": {
       "province": "新疆",
@@ -54,7 +54,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 17,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -66,33 +66,13 @@
         "lng": 85.3
       },
       {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪风险": "yellow",
-          "地质灾害": "orange"
-        },
-        "count": 23,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省普洱市墨江哈尼族自治县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082241600000_20260908034254.html",
-          "issuedAt": "2026/09/08 03:42"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "四川",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 22,
+        "count": 21,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -102,6 +82,26 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪风险": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 21,
+        "top": {
+          "kind": "地质灾害",
+          "level": "orange",
+          "title": "云南省普洱市墨江哈尼族自治县气象台发布地质灾害橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082241600000_20260908034254.html",
+          "issuedAt": "2026/09/08 03:42"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "广东",
@@ -130,7 +130,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 62,
+        "count": 53,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -149,7 +149,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -161,23 +161,24 @@
         "lng": 106.2
       },
       {
-        "province": "河北",
+        "province": "甘肃",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue"
+          "暴雨": "blue",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
         },
-        "count": 7,
+        "count": 5,
         "top": {
-          "kind": "暴雨",
+          "kind": "山洪灾害",
           "level": "yellow",
-          "title": "河北省邢台市临城县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13052241600000_20260908004136.html",
-          "issuedAt": "2026/09/08 00:41"
+          "title": "甘肃省水利厅、甘肃省气象台发布山洪灾害气象风险黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260908180821.html",
+          "issuedAt": "2026/09/08 18:00"
         },
-        "lat": 38.5,
-        "lng": 115.5
+        "lat": 37.8,
+        "lng": 101.1
       },
       {
         "province": "陕西",
@@ -200,24 +201,23 @@
         "lng": 108.9
       },
       {
-        "province": "甘肃",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "province": "河北",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
         "kinds": {
           "暴雨": "blue",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
+          "山洪灾害": "blue"
         },
         "count": 3,
         "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "甘肃省自然资源厅、甘肃省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260908112157.html",
-          "issuedAt": "2026/09/08 11:20"
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "河北省邯郸市涉县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13042641600000_20260908051011.html",
+          "issuedAt": "2026/09/08 05:10"
         },
-        "lat": 37.8,
-        "lng": 101.1
+        "lat": 38.5,
+        "lng": 115.5
       }
     ]
   },
