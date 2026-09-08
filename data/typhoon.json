@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08 20:30",
+  "updatedAt": "2026-09-08 21:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 124,
+    "total": 120,
     "counts": {
-      "暴雨": 59,
+      "暴雨": 55,
       "山洪灾害": 20,
       "山洪风险": 2,
       "地质灾害": 43
@@ -84,26 +84,6 @@
         "lng": 102.9
       },
       {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪风险": "yellow",
-          "地质灾害": "orange"
-        },
-        "count": 21,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省普洱市墨江哈尼族自治县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082241600000_20260908034254.html",
-          "issuedAt": "2026/09/08 03:42"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -130,7 +110,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 36,
+        "count": 32,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -140,6 +120,26 @@
         },
         "lat": 37.6,
         "lng": 112.3
+      },
+      {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪风险": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 21,
+        "top": {
+          "kind": "山洪风险",
+          "level": "yellow",
+          "title": "云南省昭通市鲁甸县气象台发布山洪风险黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53062141600000_20260908005408.html",
+          "issuedAt": "2026/09/08 00:54"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "陕西",
@@ -229,7 +229,7 @@
       "endedAt": "2026-09-07 21:00",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 0
+      "daysSince": 1
     },
     {
       "code": "2618",
