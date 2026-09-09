@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09 07:45",
+  "updatedAt": "2026-09-09 08:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,42 +31,22 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 150,
+    "total": 145,
     "counts": {
-      "暴雨": 95,
-      "山洪灾害": 19,
+      "暴雨": 91,
+      "山洪灾害": 18,
       "山洪风险": 1,
       "地质灾害": 35
     },
     "peak": {
-      "province": "云南",
+      "province": "四川",
       "kind": "暴雨",
-      "level": "red",
-      "title": "云南省德宏傣族景颇族自治州芒市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53310341600000_20260909041004.html",
-      "issuedAt": "2026/09/09 04:08"
+      "level": "orange",
+      "title": "四川省德阳市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/51060041600000_20260909064227.html",
+      "issuedAt": "2026/09/09 06:42"
     },
     "provinces": [
-      {
-        "province": "云南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪风险": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 22,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "云南省德宏傣族景颇族自治州芒市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53310341600000_20260909041004.html",
-          "issuedAt": "2026/09/09 04:08"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
       {
         "province": "四川",
         "maxLevel": "orange",
@@ -74,7 +54,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 42,
+        "count": 43,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -86,22 +66,24 @@
         "lng": 102.9
       },
       {
-        "province": "广东",
+        "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "yellow"
         },
-        "count": 10,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省阳江市阳春市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44178141600000_20260909042821.html",
-          "issuedAt": "2026/09/09 04:27"
+          "title": "云南省丽江市华坪县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53072341600000_20260909073305.html",
+          "issuedAt": "2026/09/09 07:32"
         },
-        "lat": 23.4,
-        "lng": 113.4
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "新疆",
@@ -110,7 +92,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -122,21 +104,39 @@
         "lng": 85.3
       },
       {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省阳江市阳春市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44178141600000_20260909042821.html",
+          "issuedAt": "2026/09/09 04:27"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "blue",
-          "山洪灾害": "yellow",
+          "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 31,
+        "count": 30,
         "top": {
-          "kind": "山洪灾害",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "山西省水利厅和山西省气象台发布山洪灾害气象风险黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260908092404.html",
-          "issuedAt": "2026/09/08 08:00"
+          "title": "山西省临汾市襄汾县自然资源局和襄汾县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14102341600000_20260908175311.html",
+          "issuedAt": "2026/09/08 17:55"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -150,7 +150,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 18,
+        "count": 19,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -170,7 +170,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 9,
+        "count": 11,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
