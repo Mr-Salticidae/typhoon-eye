@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09 20:14",
+  "updatedAt": "2026-09-09 20:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,20 +31,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 92,
+    "total": 96,
     "counts": {
-      "暴雨": 58,
+      "暴雨": 63,
       "山洪灾害": 3,
       "山洪风险": 1,
-      "地质灾害": 30
+      "地质灾害": 29
     },
     "peak": {
       "province": "四川",
       "kind": "暴雨",
       "level": "orange",
-      "title": "四川省阿坝藏族羌族自治州黑水县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/51322841600000_20260909193147.html",
-      "issuedAt": "2026/09/09 19:31"
+      "title": "四川省阿坝藏族羌族自治州松潘县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/51322441600000_20260909201520.html",
+      "issuedAt": "2026/09/09 20:15"
     },
     "provinces": [
       {
@@ -54,13 +54,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 29,
+        "count": 31,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "四川省阿坝藏族羌族自治州黑水县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51322841600000_20260909193147.html",
-          "issuedAt": "2026/09/09 19:31"
+          "title": "四川省阿坝藏族羌族自治州松潘县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51322441600000_20260909201520.html",
+          "issuedAt": "2026/09/09 20:15"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -90,17 +90,17 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "blue",
+          "暴雨": "yellow",
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 15,
+        "count": 16,
         "top": {
-          "kind": "山洪风险",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "云南省昭通市绥江县气象台发布山洪风险黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53062641600000_20260909034623.html",
-          "issuedAt": "2026/09/09 03:45"
+          "title": "云南省昭通市盐津县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53062341600000_20260909203439.html",
+          "issuedAt": "2026/09/09 20:35"
         },
         "lat": 25,
         "lng": 101.5
@@ -141,6 +141,24 @@
         },
         "lat": 37.8,
         "lng": 101.1
+      },
+      {
+        "province": "广东",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "广东省河源市龙川县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44162241600000_20260909201456.html",
+          "issuedAt": "2026/09/09 20:14"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "贵州",
@@ -184,7 +202,7 @@
         "福建",
         "江西"
       ],
-      "ongoingFloodLevel": null,
+      "ongoingFloodLevel": "yellow",
       "daysSince": 5
     }
   ]
