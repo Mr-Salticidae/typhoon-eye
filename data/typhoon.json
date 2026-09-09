@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09 17:30",
+  "updatedAt": "2026-09-09 18:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,12 +31,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 109,
+    "total": 107,
     "counts": {
-      "暴雨": 73,
-      "山洪灾害": 7,
+      "暴雨": 74,
+      "山洪灾害": 6,
       "山洪风险": 1,
-      "地质灾害": 28
+      "地质灾害": 26
     },
     "peak": {
       "province": "四川",
@@ -110,7 +110,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 32,
+        "count": 33,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -130,7 +130,7 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 17,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -140,25 +140,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "山西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 15,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "山西省自然资源厅和山西省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260909165747.html",
-          "issuedAt": "2026/09/09 16:00"
-        },
-        "lat": 37.6,
-        "lng": 112.3
       },
       {
         "province": "甘肃",
@@ -181,6 +162,25 @@
         "lng": 101.1
       },
       {
+        "province": "山西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 12,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "山西省自然资源厅和山西省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260909165747.html",
+          "issuedAt": "2026/09/09 16:00"
+        },
+        "lat": 37.6,
+        "lng": 112.3
+      },
+      {
         "province": "广东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -197,24 +197,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "宁夏",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "山洪灾害": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "blue",
-          "title": "宁夏回族自治区吴忠市盐池县气象台发布山洪灾害蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64032341600000_20260908175022.html",
-          "issuedAt": "2026/09/08 17:40"
-        },
-        "lat": 37.3,
-        "lng": 106.2
       }
     ]
   },
