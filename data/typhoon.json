@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09 20:45",
+  "updatedAt": "2026-09-09 21:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,20 +31,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 96,
+    "total": 105,
     "counts": {
-      "暴雨": 63,
+      "暴雨": 70,
       "山洪灾害": 3,
       "山洪风险": 1,
-      "地质灾害": 29
+      "地质灾害": 31
     },
     "peak": {
       "province": "四川",
       "kind": "暴雨",
       "level": "orange",
-      "title": "四川省阿坝藏族羌族自治州松潘县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/51322441600000_20260909201520.html",
-      "issuedAt": "2026/09/09 20:15"
+      "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260909205838.html",
+      "issuedAt": "2026/09/09 20:58"
     },
     "provinces": [
       {
@@ -54,16 +54,36 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 31,
+        "count": 35,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "四川省阿坝藏族羌族自治州松潘县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51322441600000_20260909201520.html",
-          "issuedAt": "2026/09/09 20:15"
+          "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260909205838.html",
+          "issuedAt": "2026/09/09 20:58"
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 21,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省昭通市盐津县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53062341600000_20260909210839.html",
+          "issuedAt": "2026/09/09 21:09"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "陕西",
@@ -84,26 +104,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪风险": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 16,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "云南省昭通市盐津县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53062341600000_20260909203439.html",
-          "issuedAt": "2026/09/09 20:35"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "山西",
@@ -189,7 +189,7 @@
       "endedAt": "2026-09-07 21:00",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 1
+      "daysSince": 2
     },
     {
       "code": "2618",
