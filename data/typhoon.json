@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10 00:30",
+  "updatedAt": "2026-09-10 01:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 131,
+    "total": 136,
     "counts": {
-      "暴雨": 87,
+      "暴雨": 92,
       "山洪灾害": 3,
       "山洪风险": 7,
       "地质灾害": 34
@@ -54,7 +54,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 48,
+        "count": 49,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -92,7 +92,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -161,6 +161,24 @@
         "lng": 101.1
       },
       {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省福州市连江县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35012241600000_20260909225900.html",
+          "issuedAt": "2026/09/09 22:59"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -177,24 +195,6 @@
         },
         "lat": 26.8,
         "lng": 106.9
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省福州市连江县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35012241600000_20260909225900.html",
-          "issuedAt": "2026/09/09 22:59"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       }
     ]
   },
