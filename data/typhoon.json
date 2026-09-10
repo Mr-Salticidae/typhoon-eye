@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10 14:30",
+  "updatedAt": "2026-09-10 15:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 75,
+    "total": 78,
     "counts": {
-      "暴雨": 36,
+      "暴雨": 38,
+      "台风": 1,
       "山洪灾害": 3,
       "山洪风险": 7,
       "地质灾害": 29
@@ -74,7 +75,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 25,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -84,6 +85,25 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "台风": "blue"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区防城港市东兴市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45068141600000_20260910144135.html",
+          "issuedAt": "2026/09/10 14:37"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "广东",
@@ -102,24 +122,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区百色市田林县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45102941600000_20260910142904.html",
-          "issuedAt": "2026/09/10 14:18"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "山西",
