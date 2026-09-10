@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11 00:00",
+  "updatedAt": "2026-09-11 00:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,41 +31,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 35,
+    "total": 31,
     "counts": {
-      "暴雨": 11,
-      "山洪风险": 3,
+      "暴雨": 8,
+      "山洪风险": 2,
       "地质灾害": 21
     },
     "peak": {
-      "province": "云南",
+      "province": "广东",
       "kind": "暴雨",
       "level": "orange",
-      "title": "云南省红河哈尼族彝族自治州屏边苗族自治县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53252341600000_20260910200933.html",
-      "issuedAt": "2026/09/10 20:08"
+      "title": "广东省江门市台山市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44078141600000_20260910044116.html",
+      "issuedAt": "2026/09/10 04:40"
     },
     "provinces": [
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪风险": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 25,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省红河哈尼族彝族自治州屏边苗族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53252341600000_20260910200933.html",
-          "issuedAt": "2026/09/10 20:08"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
       {
         "province": "广东",
         "maxLevel": "orange",
@@ -73,7 +53,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -91,7 +71,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -101,6 +81,26 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪风险": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 23,
+        "top": {
+          "kind": "山洪风险",
+          "level": "yellow",
+          "title": "云南省昭通市昭阳区气象台发布山洪风险黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53060241600000_20260910060118.html",
+          "issuedAt": "2026/09/10 06:00"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "陕西",
