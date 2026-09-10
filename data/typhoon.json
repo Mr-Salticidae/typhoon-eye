@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10 18:00",
+  "updatedAt": "2026-09-10 18:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,20 +31,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 61,
+    "total": 53,
     "counts": {
-      "暴雨": 22,
-      "山洪灾害": 3,
-      "山洪风险": 7,
-      "地质灾害": 29
+      "暴雨": 18,
+      "山洪灾害": 2,
+      "山洪风险": 6,
+      "地质灾害": 27
     },
     "peak": {
       "province": "四川",
       "kind": "暴雨",
       "level": "red",
-      "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260909231612.html",
-      "issuedAt": "2026/09/09 23:16"
+      "title": "四川省凉山彝族自治州盐源县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/51342341600000_20260910180653.html",
+      "issuedAt": "2026/09/10 18:06"
     },
     "provinces": [
       {
@@ -54,13 +54,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 9,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260909231612.html",
-          "issuedAt": "2026/09/09 23:16"
+          "title": "四川省凉山彝族自治州盐源县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51342341600000_20260910180653.html",
+          "issuedAt": "2026/09/10 18:06"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -74,7 +74,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 30,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -84,24 +84,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区南宁市宾阳县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45012641600000_20260910154739.html",
-          "issuedAt": "2026/09/10 15:40"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "广东",
@@ -122,22 +104,22 @@
         "lng": 113.4
       },
       {
-        "province": "山西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
         "kinds": {
-          "地质灾害": "yellow"
+          "暴雨": "orange"
         },
-        "count": 7,
+        "count": 1,
         "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "山西省临汾市规划和自然资源局和临汾市气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14100041600000_20260909180005.html",
-          "issuedAt": "2026/09/09 18:00"
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区南宁市宾阳县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45012641600000_20260910154739.html",
+          "issuedAt": "2026/09/10 15:40"
         },
-        "lat": 37.6,
-        "lng": 112.3
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "陕西",
@@ -147,7 +129,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -175,6 +157,24 @@
         },
         "lat": 37.8,
         "lng": 101.1
+      },
+      {
+        "province": "山西",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "地质灾害": "blue"
+        },
+        "count": 5,
+        "top": {
+          "kind": "地质灾害",
+          "level": "blue",
+          "title": "山西省临汾市隰县应急管理局、隰县自然资源局与隰县气象台发布地质灾害蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14103141600000_20260909200402.html",
+          "issuedAt": "2026/09/09 20:04"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       }
     ]
   },
