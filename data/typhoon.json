@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10 08:05",
+  "updatedAt": "2026-09-10 08:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,40 +31,22 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 142,
+    "total": 115,
     "counts": {
-      "暴雨": 95,
+      "暴雨": 68,
       "山洪灾害": 3,
       "山洪风险": 8,
       "地质灾害": 36
     },
     "peak": {
-      "province": "四川",
+      "province": "云南",
       "kind": "暴雨",
       "level": "red",
-      "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260909231612.html",
-      "issuedAt": "2026/09/09 23:16"
+      "title": "云南省昭通市彝良县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53062841600000_20260910040913.html",
+      "issuedAt": "2026/09/10 04:08"
     },
     "provinces": [
-      {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 48,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260909231612.html",
-          "issuedAt": "2026/09/09 23:16"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
       {
         "province": "云南",
         "maxLevel": "red",
@@ -74,7 +56,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 37,
+        "count": 36,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -86,13 +68,31 @@
         "lng": 101.5
       },
       {
+        "province": "四川",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 35,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260909231612.html",
+          "issuedAt": "2026/09/09 23:16"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
+      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -112,7 +112,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 24,
+        "count": 17,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -148,7 +148,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -177,24 +177,6 @@
         },
         "lat": 37.8,
         "lng": 101.1
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市荣昌区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015341600000_20260910023419.html",
-          "issuedAt": "2026/09/10 02:34"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       }
     ]
   },
