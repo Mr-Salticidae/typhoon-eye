@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11 02:21",
+  "updatedAt": "2026-09-11 02:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,21 +31,41 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 30,
+    "total": 29,
     "counts": {
       "暴雨": 7,
-      "山洪风险": 2,
+      "山洪风险": 1,
       "地质灾害": 21
     },
     "peak": {
-      "province": "广东",
+      "province": "云南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "广东省江门市台山市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44078141600000_20260910044116.html",
-      "issuedAt": "2026/09/10 04:40"
+      "title": "云南省丽江市宁蒗彝族自治县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53072441600000_20260911022508.html",
+      "issuedAt": "2026/09/11 02:24"
     },
     "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 23,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省丽江市宁蒗彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53072441600000_20260911022508.html",
+          "issuedAt": "2026/09/11 02:24"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
       {
         "province": "广东",
         "maxLevel": "orange",
@@ -63,26 +83,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪风险": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 24,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "云南省丽江市宁蒗彝族自治县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53072441600000_20260911015615.html",
-          "issuedAt": "2026/09/11 01:55"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "陕西",
