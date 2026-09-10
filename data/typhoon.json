@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10 09:12",
+  "updatedAt": "2026-09-10 09:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,12 +31,12 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 110,
+    "total": 101,
     "counts": {
-      "暴雨": 68,
+      "暴雨": 60,
       "山洪灾害": 3,
       "山洪风险": 8,
-      "地质灾害": 31
+      "地质灾害": 30
     },
     "peak": {
       "province": "四川",
@@ -74,7 +74,7 @@
           "山洪风险": "orange",
           "地质灾害": "orange"
         },
-        "count": 34,
+        "count": 33,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -104,26 +104,6 @@
         "lng": 113.4
       },
       {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 16,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "陕西省西安市气象台发布山洪灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61010041600000_20260909190447.html",
-          "issuedAt": "2026/09/09 19:04"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      },
-      {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -140,6 +120,26 @@
         },
         "lat": 37.6,
         "lng": 112.3
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 8,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "陕西省西安市气象台发布山洪灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61010041600000_20260909190447.html",
+          "issuedAt": "2026/09/09 19:04"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "贵州",
