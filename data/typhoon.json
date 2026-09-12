@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12 14:15",
+  "updatedAt": "2026-09-12 14:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -42,14 +42,14 @@
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-12 11时",
+            "time": "09-12 14时",
             "windLevel": 6,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-12 11时",
+            "time": "09-12 14时",
             "windLevel": 6,
             "role": "verify"
           }
@@ -59,12 +59,12 @@
         "windLevel": 6,
         "windSpeed": 13,
         "pressure": 1005,
-        "moveDir": "北北西",
-        "moveSpeed": 6,
+        "moveDir": "西北",
+        "moveSpeed": 8,
         "r7": null,
         "r10": null,
-        "time": "09-12 11时",
-        "position": "中心位于北纬 15.4 度、东经 109.3 度"
+        "time": "09-12 14时",
+        "position": "中心位于北纬 15.5 度、东经 109.2 度"
       },
       "track": [
         {
@@ -81,36 +81,44 @@
           "lng": 109.3,
           "wind": 6,
           "strong": "热带低压",
+          "phase": "past"
+        },
+        {
+          "t": "09-12 14时",
+          "lat": 15.5,
+          "lng": 109.2,
+          "wind": 6,
+          "strong": "热带低压",
           "phase": "now"
         },
         {
-          "t": "09-12 23时",
-          "lat": 15.9,
-          "lng": 109,
+          "t": "09-13 02时",
+          "lat": 16.1,
+          "lng": 108.7,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-13 11时",
-          "lat": 16.5,
-          "lng": 108.4,
+          "t": "09-13 14时",
+          "lat": 16.8,
+          "lng": 108,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-13 23时",
-          "lat": 17.2,
-          "lng": 107.5,
+          "t": "09-14 02时",
+          "lat": 17.6,
+          "lng": 107,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-14 11时",
-          "lat": 18.2,
-          "lng": 106.1,
+          "t": "09-14 14时",
+          "lat": 18.3,
+          "lng": 105.9,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -149,9 +157,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 32,
+    "total": 33,
     "counts": {
-      "暴雨": 22,
+      "暴雨": 23,
       "台风": 2,
       "地质灾害": 8
     },
@@ -203,18 +211,19 @@
       },
       {
         "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
         "kinds": {
+          "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 8,
+        "count": 9,
         "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省丽江市宁蒗彝族自治县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53072441600000_20260912094045.html",
-          "issuedAt": "2026/09/12 09:41"
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省德宏傣族景颇族自治州盈江县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53312341600000_20260912143230.html",
+          "issuedAt": "2026/09/12 14:32"
         },
         "lat": 25,
         "lng": 101.5
