@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12 20:30",
+  "updatedAt": "2026-09-12 21:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -42,14 +42,14 @@
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-12 17时",
+            "time": "09-12 20时",
             "windLevel": 6,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-12 17时",
+            "time": "09-12 20时",
             "windLevel": 6,
             "role": "verify"
           }
@@ -60,11 +60,11 @@
         "windSpeed": 12,
         "pressure": 1006,
         "moveDir": "西北",
-        "moveSpeed": 9,
+        "moveSpeed": 10,
         "r7": null,
         "r10": null,
-        "time": "09-12 17时",
-        "position": "中心位于北纬 15.6 度、东经 109.1 度"
+        "time": "09-12 20时",
+        "position": "中心位于北纬 15.8 度、东经 109.1 度"
       },
       "track": [
         {
@@ -97,28 +97,36 @@
           "lng": 109.1,
           "wind": 6,
           "strong": "热带低压",
+          "phase": "past"
+        },
+        {
+          "t": "09-12 20时",
+          "lat": 15.8,
+          "lng": 109.1,
+          "wind": 6,
+          "strong": "热带低压",
           "phase": "now"
         },
         {
-          "t": "09-13 05时",
-          "lat": 16.3,
-          "lng": 108.4,
+          "t": "09-13 08时",
+          "lat": 16.4,
+          "lng": 108.3,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-13 17时",
-          "lat": 16.9,
-          "lng": 107.7,
+          "t": "09-13 20时",
+          "lat": 17,
+          "lng": 107.4,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-14 05时",
-          "lat": 17.7,
-          "lng": 106.3,
+          "t": "09-14 08时",
+          "lat": 17.8,
+          "lng": 106,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -143,7 +151,7 @@
               "issuedAt": "2026/09/12 12:52"
             },
             "via": "路径邻近",
-            "distKm": 332
+            "distKm": 345
           }
         ],
         "floodLevel": "red",
@@ -157,9 +165,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 33,
+    "total": 34,
     "counts": {
-      "暴雨": 26,
+      "暴雨": 27,
       "台风": 2,
       "地质灾害": 5
     },
@@ -179,7 +187,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 16,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -256,7 +264,7 @@
       "endedAt": "2026-09-07 21:00",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 4
+      "daysSince": 5
     }
   ]
 }
