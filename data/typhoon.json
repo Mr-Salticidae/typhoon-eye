@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12 16:45",
+  "updatedAt": "2026-09-12 17:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,8 +31,8 @@
       "enName": "NAMELESS",
       "code": "0027",
       "level": "热带低压（6级）",
-      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
-      "nearCoast": true,
+      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
+      "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
@@ -42,14 +42,14 @@
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-12 14时",
+            "time": "09-12 17时",
             "windLevel": 6,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-12 14时",
+            "time": "09-12 17时",
             "windLevel": 6,
             "role": "verify"
           }
@@ -57,14 +57,14 @@
       },
       "now": {
         "windLevel": 6,
-        "windSpeed": 13,
-        "pressure": 1005,
+        "windSpeed": 12,
+        "pressure": 1006,
         "moveDir": "西北",
-        "moveSpeed": 8,
+        "moveSpeed": 9,
         "r7": null,
         "r10": null,
-        "time": "09-12 14时",
-        "position": "中心位于北纬 15.5 度、东经 109.2 度"
+        "time": "09-12 17时",
+        "position": "中心位于北纬 15.6 度、东经 109.1 度"
       },
       "track": [
         {
@@ -89,36 +89,36 @@
           "lng": 109.2,
           "wind": 6,
           "strong": "热带低压",
+          "phase": "past"
+        },
+        {
+          "t": "09-12 17时",
+          "lat": 15.6,
+          "lng": 109.1,
+          "wind": 6,
+          "strong": "热带低压",
           "phase": "now"
         },
         {
-          "t": "09-13 02时",
-          "lat": 16.1,
-          "lng": 108.7,
+          "t": "09-13 05时",
+          "lat": 16.3,
+          "lng": 108.4,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-13 14时",
-          "lat": 16.8,
-          "lng": 108,
+          "t": "09-13 17时",
+          "lat": 16.9,
+          "lng": 107.7,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
         },
         {
-          "t": "09-14 02时",
-          "lat": 17.6,
-          "lng": 107,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-14 14时",
-          "lat": 18.3,
-          "lng": 105.9,
+          "t": "09-14 05时",
+          "lat": 17.7,
+          "lng": 106.3,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -143,7 +143,7 @@
               "issuedAt": "2026/09/12 12:52"
             },
             "via": "路径邻近",
-            "distKm": 322
+            "distKm": 332
           }
         ],
         "floodLevel": "red",
