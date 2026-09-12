@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12 10:45",
+  "updatedAt": "2026-09-12 11:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -112,27 +112,27 @@
         "provinces": [
           {
             "province": "海南",
-            "maxLevel": "orange",
-            "floodLevel": "orange",
+            "maxLevel": "red",
+            "floodLevel": "red",
             "kinds": {
-              "暴雨": "orange",
+              "暴雨": "red",
               "台风": "blue"
             },
-            "count": 8,
+            "count": 9,
             "top": {
               "kind": "暴雨",
-              "level": "orange",
-              "title": "海南省五指山市气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/46900141600000_20260912094731.html",
-              "issuedAt": "2026/09/12 09:47"
+              "level": "red",
+              "title": "海南省万宁市气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46900641600000_20260912110911.html",
+              "issuedAt": "2026/09/12 11:09"
             },
             "via": "路径邻近",
             "distKm": 319
           }
         ],
-        "floodLevel": "orange",
-        "maxLevel": "orange",
-        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高橙色。"
+        "floodLevel": "red",
+        "maxLevel": "red",
+        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高红色。"
       }
     }
   ],
@@ -141,21 +141,40 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 25,
+    "total": 27,
     "counts": {
-      "暴雨": 16,
+      "暴雨": 18,
       "台风": 1,
       "地质灾害": 8
     },
     "peak": {
-      "province": "新疆",
+      "province": "海南",
       "kind": "暴雨",
       "level": "red",
-      "title": "新疆维吾尔自治区克孜勒苏柯尔克孜自治州阿合奇县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/65302341600000_20260911180752.html",
-      "issuedAt": "2026/09/11 18:07"
+      "title": "海南省万宁市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/46900641600000_20260912110911.html",
+      "issuedAt": "2026/09/12 11:09"
     },
     "provinces": [
+      {
+        "province": "海南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "台风": "blue"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "海南省万宁市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46900641600000_20260912110911.html",
+          "issuedAt": "2026/09/12 11:09"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
       {
         "province": "新疆",
         "maxLevel": "red",
@@ -173,25 +192,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "海南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "台风": "blue"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "海南省五指山市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46900141600000_20260912094731.html",
-          "issuedAt": "2026/09/12 09:47"
-        },
-        "lat": 19.2,
-        "lng": 109.7
       },
       {
         "province": "云南",
@@ -218,13 +218,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "四川省阿坝藏族羌族自治州马尔康市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51320141600000_20260912082001.html",
-          "issuedAt": "2026/09/12 08:20"
+          "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260912104211.html",
+          "issuedAt": "2026/09/12 10:42"
         },
         "lat": 30.6,
         "lng": 102.9
