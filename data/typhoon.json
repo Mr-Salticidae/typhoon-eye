@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12 08:16",
+  "updatedAt": "2026-09-12 08:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,14 +8,14 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "jma",
@@ -25,15 +25,124 @@
       "count": 0
     }
   ],
-  "typhoons": [],
+  "typhoons": [
+    {
+      "name": "热带低压",
+      "enName": "NAMELESS",
+      "code": "0027",
+      "level": "热带低压（6级）",
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
+      "nameNote": null,
+      "trackSource": "中央气象台",
+      "verification": {
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
+        "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "09-12 08时",
+            "windLevel": 6,
+            "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-12 08时",
+            "windLevel": 6,
+            "role": "verify"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 6,
+        "windSpeed": 13,
+        "pressure": 1005,
+        "moveDir": "北北西",
+        "moveSpeed": 6,
+        "r7": null,
+        "r10": null,
+        "time": "09-12 08时",
+        "position": "中心位于北纬 15.3 度、东经 109.4 度"
+      },
+      "track": [
+        {
+          "t": "09-12 08时",
+          "lat": 15.3,
+          "lng": 109.4,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "now"
+        },
+        {
+          "t": "09-12 20时",
+          "lat": 15.8,
+          "lng": 109.1,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-13 08时",
+          "lat": 16.3,
+          "lng": 108.7,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-13 20时",
+          "lat": 16.9,
+          "lng": 107.9,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-14 08时",
+          "lat": 18.2,
+          "lng": 106.1,
+          "wind": 6,
+          "strong": "热带低压",
+          "phase": "forecast"
+        }
+      ],
+      "rainRisk": {
+        "provinces": [
+          {
+            "province": "海南",
+            "maxLevel": "orange",
+            "floodLevel": "orange",
+            "kinds": {
+              "暴雨": "orange"
+            },
+            "count": 1,
+            "top": {
+              "kind": "暴雨",
+              "level": "orange",
+              "title": "海南省万宁市气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46900641600000_20260912051452.html",
+              "issuedAt": "2026/09/12 05:14"
+            },
+            "via": "路径邻近",
+            "distKm": 319
+          }
+        ],
+        "floodLevel": "orange",
+        "maxLevel": "orange",
+        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高橙色。"
+      }
+    }
+  ],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 17,
+    "total": 18,
     "counts": {
-      "暴雨": 9,
+      "暴雨": 10,
       "地质灾害": 8
     },
     "peak": {
@@ -106,13 +215,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "四川省阿坝藏族羌族自治州壤塘县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51323041600000_20260912075814.html",
-          "issuedAt": "2026/09/12 07:58"
+          "title": "四川省阿坝藏族羌族自治州马尔康市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51320141600000_20260912082001.html",
+          "issuedAt": "2026/09/12 08:20"
         },
         "lat": 30.6,
         "lng": 102.9
