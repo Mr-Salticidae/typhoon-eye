@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12 20:00",
+  "updatedAt": "2026-09-12 20:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -164,14 +164,32 @@
       "地质灾害": 5
     },
     "peak": {
-      "province": "海南",
+      "province": "四川",
       "kind": "暴雨",
       "level": "red",
-      "title": "海南省陵水县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/46902841600000_20260912125209.html",
-      "issuedAt": "2026/09/12 12:52"
+      "title": "四川省甘孜藏族自治州道孚县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/51332641600000_20260912195503.html",
+      "issuedAt": "2026/09/12 19:55"
     },
     "provinces": [
+      {
+        "province": "四川",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 16,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "四川省甘孜藏族自治州道孚县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51332641600000_20260912195503.html",
+          "issuedAt": "2026/09/12 19:55"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
       {
         "province": "海南",
         "maxLevel": "red",
@@ -192,43 +210,6 @@
         "lng": 109.7
       },
       {
-        "province": "云南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "地质灾害": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "云南省德宏傣族景颇族自治州盈江县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53312341600000_20260912153838.html",
-          "issuedAt": "2026/09/12 15:37"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
-        "province": "四川",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "四川省甘孜藏族自治州道孚县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51332641600000_20260912183503.html",
-          "issuedAt": "2026/09/12 18:35"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
         "province": "新疆",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -245,6 +226,24 @@
         },
         "lat": 41.1,
         "lng": 85.3
+      },
+      {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "云南省昭通市彝良县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53062841600000_20260912195340.html",
+          "issuedAt": "2026/09/12 20:00"
+        },
+        "lat": 25,
+        "lng": 101.5
       }
     ]
   },
