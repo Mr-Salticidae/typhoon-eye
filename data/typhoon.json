@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13 10:45",
+  "updatedAt": "2026-09-13 11:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -42,14 +42,14 @@
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-13 08时",
+            "time": "09-13 11时",
             "windLevel": 6,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-13 08时",
+            "time": "09-13 11时",
             "windLevel": 6,
             "role": "verify"
           }
@@ -60,11 +60,11 @@
         "windSpeed": 12,
         "pressure": 1006,
         "moveDir": "西",
-        "moveSpeed": 12,
+        "moveSpeed": 13,
         "r7": null,
         "r10": null,
-        "time": "09-13 08时",
-        "position": "中心位于北纬 17.2 度、东经 107.7 度"
+        "time": "09-13 11时",
+        "position": "中心位于北纬 17.2 度、东经 107.5 度"
       },
       "track": [
         {
@@ -137,12 +137,20 @@
           "lng": 107.7,
           "wind": 6,
           "strong": "热带低压",
+          "phase": "past"
+        },
+        {
+          "t": "09-13 11时",
+          "lat": 17.2,
+          "lng": 107.5,
+          "wind": 6,
+          "strong": "热带低压",
           "phase": "now"
         },
         {
-          "t": "09-13 20时",
+          "t": "09-13 23时",
           "lat": 17.3,
-          "lng": 106.4,
+          "lng": 106.1,
           "wind": 6,
           "strong": "热带低压",
           "phase": "forecast"
@@ -167,7 +175,7 @@
               "issuedAt": "2026/09/13 02:39"
             },
             "via": "路径邻近",
-            "distKm": 307
+            "distKm": 322
           }
         ],
         "floodLevel": "red",
@@ -181,9 +189,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 27,
+    "total": 28,
     "counts": {
-      "暴雨": 21,
+      "暴雨": 22,
       "台风": 2,
       "地质灾害": 4
     },
@@ -222,7 +230,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 8,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
