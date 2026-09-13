@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14 05:45",
+  "updatedAt": "2026-09-14 06:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "zj",
@@ -25,174 +25,15 @@
       "count": 0
     }
   ],
-  "typhoons": [
-    {
-      "name": "热带低压",
-      "enName": "NAMELESS",
-      "code": "0027",
-      "level": "热带低压（6级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "single",
-        "detail": "目前仅中央气象台发布该系统，其余源暂未跟踪",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-13 17时",
-            "windLevel": 6,
-            "role": "primary"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 6,
-        "windSpeed": 12,
-        "pressure": 1006,
-        "moveDir": "西",
-        "moveSpeed": 12,
-        "r7": null,
-        "r10": null,
-        "time": "09-13 17时",
-        "position": "中心位于北纬 17.2 度、东经 106.9 度"
-      },
-      "track": [
-        {
-          "t": "09-12 08时",
-          "lat": 15.3,
-          "lng": 109.4,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-12 11时",
-          "lat": 15.4,
-          "lng": 109.3,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-12 14时",
-          "lat": 15.5,
-          "lng": 109.2,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-12 17时",
-          "lat": 15.6,
-          "lng": 109.1,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-12 20时",
-          "lat": 15.8,
-          "lng": 109.1,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-12 23时",
-          "lat": 15.9,
-          "lng": 109,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-13 02时",
-          "lat": 16.2,
-          "lng": 108.4,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-13 05时",
-          "lat": 17.1,
-          "lng": 108,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-13 08时",
-          "lat": 17.2,
-          "lng": 107.7,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-13 11时",
-          "lat": 17.2,
-          "lng": 107.5,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-13 14时",
-          "lat": 17.2,
-          "lng": 107.3,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "past"
-        },
-        {
-          "t": "09-13 17时",
-          "lat": 17.2,
-          "lng": 106.9,
-          "wind": 6,
-          "strong": "热带低压",
-          "phase": "now"
-        }
-      ],
-      "rainRisk": {
-        "provinces": [
-          {
-            "province": "海南",
-            "maxLevel": "red",
-            "floodLevel": "red",
-            "kinds": {
-              "暴雨": "red",
-              "台风": "blue"
-            },
-            "count": 13,
-            "top": {
-              "kind": "暴雨",
-              "level": "red",
-              "title": "海南省保亭县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/46902941600000_20260914020905.html",
-              "issuedAt": "2026/09/14 02:09"
-            },
-            "via": "路径邻近",
-            "distKm": 370
-          }
-        ],
-        "floodLevel": "red",
-        "maxLevel": "red",
-        "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高红色。"
-      }
-    }
-  ],
+  "typhoons": [],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 47,
+    "total": 46,
     "counts": {
-      "暴雨": 42,
+      "暴雨": 41,
       "台风": 2,
       "地质灾害": 3
     },
@@ -303,13 +144,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "浙江省温州市乐清市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33038241600000_20260913203853.html",
-          "issuedAt": "2026/09/13 20:37"
+          "title": "浙江省台州市路桥区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33100441600000_20260913192920.html",
+          "issuedAt": "2026/09/13 19:30"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -317,6 +158,18 @@
     ]
   },
   "recentlyEnded": [
+    {
+      "code": "0027",
+      "name": "热带低压",
+      "enName": "NAMELESS",
+      "lastLevel": "热带低压（6级）",
+      "endedAt": "2026-09-14 06:15",
+      "provinces": [
+        "海南"
+      ],
+      "ongoingFloodLevel": "red",
+      "daysSince": 0
+    },
     {
       "code": "2624",
       "name": "科罗旺",
