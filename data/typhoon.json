@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13 16:30",
+  "updatedAt": "2026-09-13 17:16",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -42,14 +42,14 @@
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-13 14时",
+            "time": "09-13 17时",
             "windLevel": 6,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-13 14时",
+            "time": "09-13 17时",
             "windLevel": 6,
             "role": "verify"
           }
@@ -60,11 +60,11 @@
         "windSpeed": 12,
         "pressure": 1006,
         "moveDir": "西",
-        "moveSpeed": 13,
+        "moveSpeed": 12,
         "r7": null,
         "r10": null,
-        "time": "09-13 14时",
-        "position": "中心位于北纬 17.2 度、东经 107.3 度"
+        "time": "09-13 17时",
+        "position": "中心位于北纬 17.2 度、东经 106.9 度"
       },
       "track": [
         {
@@ -153,15 +153,15 @@
           "lng": 107.3,
           "wind": 6,
           "strong": "热带低压",
-          "phase": "now"
+          "phase": "past"
         },
         {
-          "t": "09-14 02时",
-          "lat": 17.4,
-          "lng": 105.9,
+          "t": "09-13 17时",
+          "lat": 17.2,
+          "lng": 106.9,
           "wind": 6,
           "strong": "热带低压",
-          "phase": "forecast"
+          "phase": "now"
         }
       ],
       "rainRisk": {
@@ -174,7 +174,7 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 10,
+            "count": 9,
             "top": {
               "kind": "暴雨",
               "level": "red",
@@ -183,7 +183,7 @@
               "issuedAt": "2026/09/13 02:39"
             },
             "via": "路径邻近",
-            "distKm": 337
+            "distKm": 370
           }
         ],
         "floodLevel": "red",
@@ -197,11 +197,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 34,
+    "total": 39,
     "counts": {
-      "暴雨": 28,
+      "暴雨": 34,
       "台风": 2,
-      "地质灾害": 4
+      "地质灾害": 3
     },
     "peak": {
       "province": "海南",
@@ -220,7 +220,7 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 10,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -238,13 +238,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 15,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省湛江市吴川市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44088341600000_20260913145301.html",
-          "issuedAt": "2026/09/13 14:51"
+          "title": "广东省揭阳市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44520041600000_20260913170619.html",
+          "issuedAt": "2026/09/13 17:04"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -292,7 +292,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -320,6 +320,42 @@
         },
         "lat": 47.4,
         "lng": 128.1
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "辽宁省丹东市东港市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21068141600000_20260913164700.html",
+          "issuedAt": "2026/09/13 16:48"
+        },
+        "lat": 41.8,
+        "lng": 122.6
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "浙江省温州市洞头区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33030541600000_20260913164158.html",
+          "issuedAt": "2026/09/13 16:41"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       }
     ]
   },
