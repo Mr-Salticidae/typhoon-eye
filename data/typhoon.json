@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13 21:16",
+  "updatedAt": "2026-09-13 21:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "jma",
@@ -36,8 +36,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致（2 源交叉校验一致）",
+        "status": "single",
+        "detail": "目前仅中央气象台发布该系统，其余源暂未跟踪",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-13 17时",
             "windLevel": 6,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-13 17时",
-            "windLevel": 6,
-            "role": "verify"
           }
         ]
       },
@@ -174,13 +167,13 @@
               "暴雨": "red",
               "台风": "blue"
             },
-            "count": 9,
+            "count": 10,
             "top": {
               "kind": "暴雨",
               "level": "red",
-              "title": "海南省保亭县气象台发布暴雨红色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/46902941600000_20260913023904.html",
-              "issuedAt": "2026/09/13 02:39"
+              "title": "海南省琼中县气象台发布暴雨红色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/46903041600000_20260913211548.html",
+              "issuedAt": "2026/09/13 21:15"
             },
             "via": "路径邻近",
             "distKm": 370
@@ -197,9 +190,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 48,
+    "total": 49,
     "counts": {
-      "暴雨": 43,
+      "暴雨": 44,
       "台风": 2,
       "地质灾害": 3
     },
@@ -207,9 +200,9 @@
       "province": "海南",
       "kind": "暴雨",
       "level": "red",
-      "title": "海南省保亭县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/46902941600000_20260913023904.html",
-      "issuedAt": "2026/09/13 02:39"
+      "title": "海南省琼中县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/46903041600000_20260913211548.html",
+      "issuedAt": "2026/09/13 21:15"
     },
     "provinces": [
       {
@@ -220,13 +213,13 @@
           "暴雨": "red",
           "台风": "blue"
         },
-        "count": 9,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "海南省保亭县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46902941600000_20260913023904.html",
-          "issuedAt": "2026/09/13 02:39"
+          "title": "海南省琼中县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46903041600000_20260913211548.html",
+          "issuedAt": "2026/09/13 21:15"
         },
         "lat": 19.2,
         "lng": 109.7
