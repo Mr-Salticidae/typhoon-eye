@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14 19:45",
+  "updatedAt": "2026-09-14 20:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,10 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 72,
+    "total": 53,
     "counts": {
-      "暴雨": 68,
-      "山洪灾害": 1,
+      "暴雨": 50,
       "地质灾害": 3
     },
     "peak": {
@@ -53,7 +52,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 31,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -71,71 +70,16 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 14,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "海南省万宁市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46900641600000_20260914101737.html",
-          "issuedAt": "2026/09/14 10:17"
+          "title": "海南省陵水县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46902841600000_20260914010056.html",
+          "issuedAt": "2026/09/14 01:00"
         },
         "lat": 19.2,
         "lng": 109.7
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区南宁市宾阳县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45012641600000_20260914180954.html",
-          "issuedAt": "2026/09/14 18:05"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
-        "province": "宁夏",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "宁夏回族自治区固原市西吉县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64042241600000_20260914174741.html",
-          "issuedAt": "2026/09/14 17:30"
-        },
-        "lat": 37.3,
-        "lng": 106.2
-      },
-      {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省宁德市古田县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35092241600000_20260914183200.html",
-          "issuedAt": "2026/09/14 18:32"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "新疆",
@@ -144,7 +88,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -154,6 +98,42 @@
         },
         "lat": 41.1,
         "lng": 85.3
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区梧州市岑溪市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45048141600000_20260914195114.html",
+          "issuedAt": "2026/09/14 19:45"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
+      {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省宁德市古田县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35092241600000_20260914183200.html",
+          "issuedAt": "2026/09/14 18:32"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "云南",
@@ -172,6 +152,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "宁夏",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "宁夏回族自治区中卫市海原县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64052241600000_20260914170448.html",
+          "issuedAt": "2026/09/14 16:50"
+        },
+        "lat": 37.3,
+        "lng": 106.2
       },
       {
         "province": "甘肃",
@@ -208,24 +206,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "山西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "山西省晋城市高平市气象台发布城市暴雨积涝蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14058141600000_20260914173704.html",
-          "issuedAt": "2026/09/14 17:35"
-        },
-        "lat": 37.6,
-        "lng": 112.3
       }
     ]
   },
