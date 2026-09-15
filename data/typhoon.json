@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16 05:15",
+  "updatedAt": "2026-09-16 05:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 29,
+    "total": 32,
     "counts": {
-      "暴雨": 24,
+      "暴雨": 27,
       "山洪灾害": 2,
       "地质灾害": 3
     },
@@ -71,7 +71,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 8,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -175,6 +175,24 @@
         },
         "lat": 37.3,
         "lng": 106.2
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市县奉节县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260916054320.html",
+          "issuedAt": "2026/09/16 05:43"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       }
     ]
   },
