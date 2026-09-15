@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15 17:15",
+  "updatedAt": "2026-09-15 17:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 21,
+    "total": 26,
     "counts": {
-      "暴雨": 18,
+      "暴雨": 23,
       "地质灾害": 3
     },
     "peak": {
@@ -52,7 +52,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 4,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -70,7 +70,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -80,6 +80,25 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "甘肃",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "甘肃省兰州市皋兰县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/62012241600000_20260915171409.html",
+          "issuedAt": "2026/09/15 17:14"
+        },
+        "lat": 37.8,
+        "lng": 101.1
       },
       {
         "province": "云南",
@@ -99,25 +118,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "甘肃",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "甘肃省定西市岷县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/62112641600000_20260915163446.html",
-          "issuedAt": "2026/09/15 16:34"
-        },
-        "lat": 37.8,
-        "lng": 101.1
       },
       {
         "province": "新疆",
