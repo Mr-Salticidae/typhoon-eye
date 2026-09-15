@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15 22:00",
+  "updatedAt": "2026-09-15 22:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,10 +31,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 41,
+    "total": 27,
     "counts": {
-      "暴雨": 37,
-      "山洪灾害": 1,
+      "暴雨": 22,
+      "山洪灾害": 2,
       "地质灾害": 3
     },
     "peak": {
@@ -53,7 +53,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 8,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -71,7 +71,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 13,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -101,33 +101,15 @@
         "lng": 85.3
       },
       {
-        "province": "宁夏",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "宁夏回族自治区银川市灵武市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64018141600000_20260915204958.html",
-          "issuedAt": "2026/09/15 20:43"
-        },
-        "lat": 37.3,
-        "lng": 106.2
-      },
-      {
         "province": "甘肃",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow",
+          "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -146,7 +128,7 @@
           "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -156,6 +138,25 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "宁夏",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "山洪灾害": "blue"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "宁夏回族自治区银川市灵武市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64018141600000_20260915204958.html",
+          "issuedAt": "2026/09/15 20:43"
+        },
+        "lat": 37.3,
+        "lng": 106.2
       },
       {
         "province": "四川",
