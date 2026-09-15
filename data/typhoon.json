@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15 09:30",
+  "updatedAt": "2026-09-15 10:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,10 +31,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 34,
+    "total": 33,
     "counts": {
-      "暴雨": 31,
-      "地质灾害": 3
+      "暴雨": 32,
+      "地质灾害": 1
     },
     "peak": {
       "province": "广东",
@@ -52,7 +52,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 12,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -82,24 +82,6 @@
         "lng": 85.3
       },
       {
-        "province": "海南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "海南省气象台发布暴雨橙色预警",
-          "url": "http://www.nmc.cn/publish/alarm/46000041600000_20260914094035.html",
-          "issuedAt": "2026/09/14 09:40"
-        },
-        "lat": 19.2,
-        "lng": 109.7
-      },
-      {
         "province": "四川",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -125,7 +107,7 @@
           "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -184,7 +166,7 @@
       "provinces": [
         "海南"
       ],
-      "ongoingFloodLevel": "orange",
+      "ongoingFloodLevel": null,
       "daysSince": 1
     }
   ]
