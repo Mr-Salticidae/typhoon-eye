@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15 20:00",
+  "updatedAt": "2026-09-15 20:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 36,
+    "total": 35,
     "counts": {
-      "暴雨": 33,
+      "暴雨": 31,
+      "山洪灾害": 1,
       "地质灾害": 3
     },
     "peak": {
@@ -52,7 +53,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 10,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -70,7 +71,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -80,6 +81,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "新疆维吾尔自治区阿克苏地区柯坪县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65292941600000_20260915200713.html",
+          "issuedAt": "2026/09/15 20:07"
+        },
+        "lat": 41.1,
+        "lng": 85.3
       },
       {
         "province": "云南",
@@ -101,6 +120,25 @@
         "lng": 101.5
       },
       {
+        "province": "宁夏",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "山洪灾害": "blue"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "宁夏回族自治区中卫市沙坡头区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64050241600000_20260915195617.html",
+          "issuedAt": "2026/09/15 19:45"
+        },
+        "lat": 37.3,
+        "lng": 106.2
+      },
+      {
         "province": "甘肃",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -118,24 +156,6 @@
         },
         "lat": 37.8,
         "lng": 101.1
-      },
-      {
-        "province": "宁夏",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "宁夏回族自治区中卫市沙坡头区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64050241600000_20260915195617.html",
-          "issuedAt": "2026/09/15 19:45"
-        },
-        "lat": 37.3,
-        "lng": 106.2
       },
       {
         "province": "四川",
