@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16 16:00",
+  "updatedAt": "2026-09-16 16:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,11 +31,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 37,
+    "total": 35,
     "counts": {
-      "暴雨": 33,
-      "山洪灾害": 3,
-      "地质灾害": 1
+      "暴雨": 31,
+      "山洪灾害": 4
     },
     "peak": {
       "province": "广西",
@@ -53,7 +52,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -71,7 +70,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 16,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -89,7 +88,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -119,6 +118,24 @@
         "lng": 85.3
       },
       {
+        "province": "内蒙古",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "内蒙古自治区巴彦淖尔市临河区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15080241600000_20260916162115.html",
+          "issuedAt": "2026/09/16 16:21"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
         "province": "宁夏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -126,7 +143,7 @@
           "暴雨": "yellow",
           "山洪灾害": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -156,41 +173,40 @@
         "lng": 112.3
       },
       {
-        "province": "甘肃",
+        "province": "湖南",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 2,
+        "count": 1,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "甘肃省自然资源厅、甘肃省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260915164459.html",
-          "issuedAt": "2026/09/15 16:00"
+          "title": "湖南省永州市江华县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43112941600000_20260916160814.html",
+          "issuedAt": "2026/09/16 16:07"
         },
-        "lat": 37.8,
-        "lng": 101.1
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
-        "province": "四川",
+        "province": "甘肃",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
-          "暴雨": "blue"
+          "山洪灾害": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
-          "kind": "暴雨",
+          "kind": "山洪灾害",
           "level": "blue",
-          "title": "四川省达州市渠县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51172541600000_20260915164554.html",
-          "issuedAt": "2026/09/15 16:45"
+          "title": "甘肃省水利厅、甘肃省气象台发布山洪灾害气象风险蓝色预警",
+          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260915220219.html",
+          "issuedAt": "2026/09/15 22:00"
         },
-        "lat": 30.6,
-        "lng": 102.9
+        "lat": 37.8,
+        "lng": 101.1
       }
     ]
   },
