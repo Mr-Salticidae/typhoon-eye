@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16 21:30",
+  "updatedAt": "2026-09-16 22:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "zj",
@@ -25,15 +25,132 @@
       "count": 1
     }
   ],
-  "typhoons": [],
+  "typhoons": [
+    {
+      "name": "杜鹃",
+      "enName": "DUJUAN",
+      "code": "2625",
+      "level": "热带风暴（8级）",
+      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
+      "nearCoast": false,
+      "nameNote": null,
+      "trackSource": "中央气象台",
+      "verification": {
+        "status": "consistent",
+        "detail": "以中央气象台为准：日本气象厅定位相差 21 公里、强度一致（2 源交叉校验一致）",
+        "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "09-16 20时",
+            "windLevel": 8,
+            "role": "primary"
+          },
+          {
+            "id": "jma",
+            "name": "日本气象厅",
+            "time": "09-16 20时",
+            "windLevel": 8,
+            "role": "verify"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 8,
+        "windSpeed": 18,
+        "pressure": 998,
+        "moveDir": "北",
+        "moveSpeed": 34,
+        "r7": null,
+        "r10": null,
+        "time": "09-16 20时",
+        "position": "中心位于北纬 16.4 度、东经 149.2 度"
+      },
+      "track": [
+        {
+          "t": "09-16 20时",
+          "lat": 16.4,
+          "lng": 149.2,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "now"
+        },
+        {
+          "t": "09-17 08时",
+          "lat": 20,
+          "lng": 149.7,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-17 20时",
+          "lat": 23.5,
+          "lng": 148.2,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-18 08时",
+          "lat": 25.1,
+          "lng": 144.9,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-18 20时",
+          "lat": 25.6,
+          "lng": 142.7,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-19 08时",
+          "lat": 26.6,
+          "lng": 140.8,
+          "wind": 11,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-19 20时",
+          "lat": 27.9,
+          "lng": 139.7,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-20 20时",
+          "lat": 32,
+          "lng": 139.7,
+          "wind": 11,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-21 20时",
+          "lat": 37.5,
+          "lng": 144.9,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        }
+      ],
+      "rainRisk": null
+    }
+  ],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 34,
+    "total": 33,
     "counts": {
-      "暴雨": 30,
+      "暴雨": 29,
       "山洪灾害": 3,
       "地质灾害": 1
     },
@@ -119,24 +236,6 @@
         "lng": 113.9
       },
       {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿克苏地区阿克苏市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65290141600000_20260916172240.html",
-          "issuedAt": "2026/09/16 17:22"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
         "province": "重庆",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -171,6 +270,24 @@
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "新疆维吾尔自治区阿克苏地区阿克苏市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65290141600000_20260916172240.html",
+          "issuedAt": "2026/09/16 17:22"
+        },
+        "lat": 41.1,
+        "lng": 85.3
       },
       {
         "province": "宁夏",
