@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17 02:15",
+  "updatedAt": "2026-09-17 02:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 84 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-16 23时",
+            "time": "09-17 02时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-16 23时",
+            "time": "09-17 02时",
             "windLevel": 8,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 18,
         "pressure": 998,
         "moveDir": "北",
-        "moveSpeed": 35,
+        "moveSpeed": 37,
         "r7": 480,
         "r10": null,
-        "time": "09-16 23时",
-        "position": "中心位于北纬 16.9 度、东经 149.4 度"
+        "time": "09-17 02时",
+        "position": "中心位于北纬 17.5 度、东经 149.7 度"
       },
       "track": [
         {
@@ -88,68 +88,76 @@
           "lng": 149.4,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-17 02时",
+          "lat": 17.5,
+          "lng": 149.7,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-17 11时",
-          "lat": 20.6,
-          "lng": 149.4,
+          "t": "09-17 14时",
+          "lat": 21.4,
+          "lng": 149.3,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-17 23时",
-          "lat": 23.9,
-          "lng": 147.2,
+          "t": "09-18 02时",
+          "lat": 24.4,
+          "lng": 146.6,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-18 11时",
-          "lat": 25.1,
-          "lng": 144.5,
+          "t": "09-18 14时",
+          "lat": 25.3,
+          "lng": 143.7,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-18 23时",
-          "lat": 25.8,
-          "lng": 142.2,
+          "t": "09-19 02时",
+          "lat": 25.9,
+          "lng": 141.8,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-19 11时",
-          "lat": 26.9,
-          "lng": 140.8,
+          "t": "09-19 14时",
+          "lat": 27.2,
+          "lng": 140.2,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-19 23时",
-          "lat": 28.3,
-          "lng": 139.7,
+          "t": "09-20 02时",
+          "lat": 28.8,
+          "lng": 139.8,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-20 23时",
-          "lat": 32.9,
-          "lng": 140.7,
+          "t": "09-21 02时",
+          "lat": 33.1,
+          "lng": 141.2,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-21 23时",
-          "lat": 39.5,
-          "lng": 147.7,
+          "t": "09-22 02时",
+          "lat": 38.8,
+          "lng": 148.4,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
@@ -163,21 +171,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 36,
+    "total": 37,
     "counts": {
-      "暴雨": 34,
+      "暴雨": 35,
       "山洪灾害": 1,
       "地质灾害": 1
     },
     "peak": {
-      "province": "广东",
+      "province": "重庆",
       "kind": "暴雨",
       "level": "orange",
-      "title": "广东省清远市英德市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44188141600000_20260916184341.html",
-      "issuedAt": "2026/09/16 18:39"
+      "title": "重庆市县奉节县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260916103635.html",
+      "issuedAt": "2026/09/16 10:36"
     },
     "provinces": [
+      {
+        "province": "重庆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "重庆市县奉节县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260916103635.html",
+          "issuedAt": "2026/09/16 10:36"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
       {
         "province": "广东",
         "maxLevel": "orange",
@@ -197,22 +223,22 @@
         "lng": 113.4
       },
       {
-        "province": "重庆",
+        "province": "四川",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "重庆市县奉节县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260916103635.html",
-          "issuedAt": "2026/09/16 10:36"
+          "title": "四川省凉山彝族自治州德昌县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51342441600000_20260917021457.html",
+          "issuedAt": "2026/09/17 02:14"
         },
-        "lat": 29.8,
-        "lng": 107.9
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "广西",
@@ -286,24 +312,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "四川",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "四川省凉山彝族自治州喜德县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51343241600000_20260917000908.html",
-          "issuedAt": "2026/09/17 00:09"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "贵州",
