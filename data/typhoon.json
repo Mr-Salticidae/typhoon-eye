@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16 22:00",
+  "updatedAt": "2026-09-16 22:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 21 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 21 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-16 20时",
             "windLevel": 8,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-16 20时",
+            "windLevel": 8,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 998,
         "moveDir": "北",
         "moveSpeed": 34,
-        "r7": null,
+        "r7": 480,
         "r10": null,
         "time": "09-16 20时",
         "position": "中心位于北纬 16.4 度、东经 149.2 度"
@@ -148,10 +155,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 33,
+    "total": 25,
     "counts": {
-      "暴雨": 29,
-      "山洪灾害": 3,
+      "暴雨": 22,
+      "山洪灾害": 2,
       "地质灾害": 1
     },
     "peak": {
@@ -170,7 +177,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 13,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -180,6 +187,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "重庆市县奉节县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260916103635.html",
+          "issuedAt": "2026/09/16 10:36"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "湖南",
@@ -198,78 +223,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "四川",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260916201139.html",
-          "issuedAt": "2026/09/16 20:11"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
-        "province": "内蒙古",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "内蒙古自治区鄂尔多斯市鄂托克前旗气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15062341600000_20260916165750.html",
-          "issuedAt": "2026/09/16 16:57"
-        },
-        "lat": 44,
-        "lng": 113.9
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "重庆市县奉节县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260916103635.html",
-          "issuedAt": "2026/09/16 10:36"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区玉林市容县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45092141600000_20260916174145.html",
-          "issuedAt": "2026/09/16 17:40"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "新疆",
@@ -297,7 +250,7 @@
           "暴雨": "yellow",
           "山洪灾害": "yellow"
         },
-        "count": 5,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -309,20 +262,55 @@
         "lng": 106.2
       },
       {
+        "province": "四川",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260916221132.html",
+          "issuedAt": "2026/09/16 22:11"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
+      {
+        "province": "内蒙古",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "内蒙古自治区鄂尔多斯市东胜区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15060241600000_20260916175442.html",
+          "issuedAt": "2026/09/16 17:54"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 1,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "湖北省恩施土家族苗族自治州巴东县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42282341600000_20260916113938.html",
-          "issuedAt": "2026/09/16 11:39"
+          "title": "湖北省恩施土家族苗族自治州巴东县自然资源和规划局、巴东县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42282341600000_20260916172411.html",
+          "issuedAt": "2026/09/16 17:24"
         },
         "lat": 31,
         "lng": 112.3
@@ -344,24 +332,6 @@
         },
         "lat": 33.9,
         "lng": 113.6
-      },
-      {
-        "province": "甘肃",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "山洪灾害": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "blue",
-          "title": "甘肃省水利厅、甘肃省气象台发布山洪灾害气象风险蓝色预警",
-          "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260915220219.html",
-          "issuedAt": "2026/09/15 22:00"
-        },
-        "lat": 37.8,
-        "lng": 101.1
       }
     ]
   },
