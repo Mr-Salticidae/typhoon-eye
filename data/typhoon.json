@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16 17:00",
+  "updatedAt": "2026-09-16 17:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,10 +31,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 36,
+    "total": 39,
     "counts": {
-      "暴雨": 32,
-      "山洪灾害": 4
+      "暴雨": 34,
+      "山洪灾害": 4,
+      "地质灾害": 1
     },
     "peak": {
       "province": "广东",
@@ -82,6 +83,24 @@
         "lng": 108.8
       },
       {
+        "province": "新疆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "新疆维吾尔自治区阿克苏地区阿克苏市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65290141600000_20260916172240.html",
+          "issuedAt": "2026/09/16 17:22"
+        },
+        "lat": 41.1,
+        "lng": 85.3
+      },
+      {
         "province": "重庆",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -100,37 +119,19 @@
         "lng": 107.9
       },
       {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区喀什地区叶城县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65312641600000_20260915214236.html",
-          "issuedAt": "2026/09/15 21:42"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
         "province": "内蒙古",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "内蒙古自治区巴彦淖尔市临河区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15080241600000_20260916162115.html",
-          "issuedAt": "2026/09/16 16:21"
+          "title": "内蒙古自治区鄂尔多斯市鄂托克前旗气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15062341600000_20260916165750.html",
+          "issuedAt": "2026/09/16 16:57"
         },
         "lat": 44,
         "lng": 113.9
@@ -159,9 +160,10 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "yellow",
+          "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
