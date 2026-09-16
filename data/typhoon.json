@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17 01:45",
+  "updatedAt": "2026-09-17 02:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -163,9 +163,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 35,
+    "total": 36,
     "counts": {
-      "暴雨": 33,
+      "暴雨": 34,
       "山洪灾害": 1,
       "地质灾害": 1
     },
@@ -203,7 +203,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -225,9 +225,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区南宁市上林县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45012541600000_20260917005840.html",
-          "issuedAt": "2026/09/17 00:53"
+          "title": "广西壮族自治区来宾市兴宾区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45130241600000_20260917020714.html",
+          "issuedAt": "2026/09/17 01:54"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -269,22 +269,23 @@
         "lng": 85.3
       },
       {
-        "province": "贵州",
+        "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "yellow",
+          "地质灾害": "yellow"
         },
         "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省遵义市务川县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52032641600000_20260917003752.html",
-          "issuedAt": "2026/09/17 00:37"
+          "title": "湖北省恩施土家族苗族自治州利川市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42280241600000_20260917014942.html",
+          "issuedAt": "2026/09/17 01:49"
         },
-        "lat": 26.8,
-        "lng": 106.9
+        "lat": 31,
+        "lng": 112.3
       },
       {
         "province": "四川",
@@ -305,41 +306,22 @@
         "lng": 102.9
       },
       {
-        "province": "宁夏",
+        "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "宁夏回族自治区吴忠市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64030041600000_20260916223720.html",
-          "issuedAt": "2026/09/16 22:27"
-        },
-        "lat": 37.3,
-        "lng": 106.2
-      },
-      {
-        "province": "湖北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
         "count": 1,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "湖北省恩施土家族苗族自治州巴东县自然资源和规划局、巴东县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42282341600000_20260916172411.html",
-          "issuedAt": "2026/09/16 17:24"
+          "title": "贵州省遵义市务川县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52032641600000_20260917003752.html",
+          "issuedAt": "2026/09/17 00:37"
         },
-        "lat": 31,
-        "lng": 112.3
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "河南",
@@ -358,6 +340,24 @@
         },
         "lat": 33.9,
         "lng": 113.6
+      },
+      {
+        "province": "宁夏",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "山洪灾害": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "blue",
+          "title": "宁夏回族自治区银川市气象台发布山洪灾害蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64010041600000_20260916161400.html",
+          "issuedAt": "2026/09/16 15:55"
+        },
+        "lat": 37.3,
+        "lng": 106.2
       }
     ]
   },
