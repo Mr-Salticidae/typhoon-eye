@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16 12:00",
+  "updatedAt": "2026-09-16 12:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,112 +30,23 @@
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": null,
-    "total": 36,
+    "partial": [
+      "暴雨"
+    ],
+    "total": 3,
     "counts": {
-      "暴雨": 33,
       "山洪灾害": 2,
       "地质灾害": 1
     },
     "peak": {
-      "province": "广西",
-      "kind": "暴雨",
-      "level": "red",
-      "title": "广西壮族自治区玉林市陆川县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/45092241600000_20260915165150.html",
-      "issuedAt": "2026/09/15 16:47"
+      "province": "甘肃",
+      "kind": "地质灾害",
+      "level": "yellow",
+      "title": "甘肃省自然资源厅、甘肃省气象台发布地质灾害黄色预警",
+      "url": "http://www.nmc.cn/publish/alarm/62000041600000_20260915164459.html",
+      "issuedAt": "2026/09/15 16:00"
     },
     "provinces": [
-      {
-        "province": "广西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广西壮族自治区玉林市陆川县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45092241600000_20260915165150.html",
-          "issuedAt": "2026/09/15 16:47"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省肇庆市高要区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44120441600000_20260916080850.html",
-          "issuedAt": "2026/09/16 08:07"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "重庆市县奉节县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260916103635.html",
-          "issuedAt": "2026/09/16 10:36"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区喀什地区叶城县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65312641600000_20260915214236.html",
-          "issuedAt": "2026/09/15 21:42"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
-        "province": "湖北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖北省宜昌市兴山县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42052641600000_20260916115250.html",
-          "issuedAt": "2026/09/16 11:52"
-        },
-        "lat": 31,
-        "lng": 112.3
-      },
       {
         "province": "甘肃",
         "maxLevel": "yellow",
@@ -156,38 +67,19 @@
         "lng": 101.1
       },
       {
-        "province": "四川",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "四川省达州市渠县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51172541600000_20260915164554.html",
-          "issuedAt": "2026/09/15 16:45"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
         "province": "宁夏",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
-          "暴雨": "blue",
           "山洪灾害": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
-          "kind": "暴雨",
+          "kind": "山洪灾害",
           "level": "blue",
-          "title": "宁夏回族自治区中卫市沙坡头区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64050241600000_20260916005759.html",
-          "issuedAt": "2026/09/16 00:50"
+          "title": "宁夏回族自治区中卫市沙坡头区气象台发布山洪灾害蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64050241600000_20260915202148.html",
+          "issuedAt": "2026/09/15 20:10"
         },
         "lat": 37.3,
         "lng": 106.2
