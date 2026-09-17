@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17 17:40",
+  "updatedAt": "2026-09-17 18:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 83 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-17 14时",
+            "time": "09-17 17时",
             "windLevel": 10,
             "role": "verify"
           }
@@ -211,9 +211,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 43,
+    "total": 45,
     "counts": {
-      "暴雨": 38,
+      "暴雨": 40,
       "山洪风险": 1,
       "地质灾害": 4
     },
@@ -233,7 +233,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -251,7 +251,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -261,6 +261,26 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪风险": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省普洱市孟连傣族拉祜族佤族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082741600000_20260917173949.html",
+          "issuedAt": "2026/09/17 17:38"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "江西",
@@ -281,6 +301,24 @@
         "lng": 115.7
       },
       {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省儋州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46040041600000_20260917174724.html",
+          "issuedAt": "2026/09/17 17:47"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
+      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -297,25 +335,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪风险": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 5,
-        "top": {
-          "kind": "山洪风险",
-          "level": "yellow",
-          "title": "云南省昭通市巧家县气象台发布山洪风险黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53062241600000_20260917052952.html",
-          "issuedAt": "2026/09/17 05:28"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "贵州",
@@ -401,7 +420,7 @@
       "provinces": [
         "海南"
       ],
-      "ongoingFloodLevel": null,
+      "ongoingFloodLevel": "orange",
       "daysSince": 3
     }
   ]
