@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17 08:36",
+  "updatedAt": "2026-09-17 09:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 115 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 15 公里、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -47,17 +47,10 @@
             "role": "primary"
           },
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-17 08时",
-            "windLevel": 8,
-            "role": "verify"
-          },
-          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-17 05时",
-            "windLevel": 8,
+            "time": "09-17 08时",
+            "windLevel": 9,
             "role": "verify"
           }
         ]
@@ -68,7 +61,7 @@
         "pressure": 995,
         "moveDir": "北北西",
         "moveSpeed": 45,
-        "r7": 480,
+        "r7": null,
         "r10": null,
         "time": "09-17 08时",
         "position": "中心位于北纬 18.8 度、东经 150.5 度"
@@ -187,9 +180,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 39,
+    "total": 40,
     "counts": {
-      "暴雨": 34,
+      "暴雨": 35,
       "山洪风险": 1,
       "地质灾害": 4
     },
@@ -209,7 +202,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "red",
