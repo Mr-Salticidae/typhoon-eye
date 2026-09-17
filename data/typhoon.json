@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18 04:00",
+  "updatedAt": "2026-09-18 04:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -235,9 +235,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 57,
+    "total": 58,
     "counts": {
-      "暴雨": 50,
+      "暴雨": 51,
       "山洪风险": 1,
       "地质灾害": 6
     },
@@ -361,6 +361,24 @@
         "lng": 109.7
       },
       {
+        "province": "新疆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "新疆维吾尔自治区哈密市巴里坤哈萨克自治县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65052141600000_20260917113353.html",
+          "issuedAt": "2026/09/17 11:33"
+        },
+        "lat": 41.1,
+        "lng": 85.3
+      },
+      {
         "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -377,24 +395,6 @@
         },
         "lat": 26.8,
         "lng": 106.9
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "新疆维吾尔自治区哈密市巴里坤哈萨克自治县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65052141600000_20260917113353.html",
-          "issuedAt": "2026/09/17 11:33"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       }
     ]
   },
