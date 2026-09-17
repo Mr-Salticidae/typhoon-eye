@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18 00:30",
+  "updatedAt": "2026-09-18 01:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -335,6 +335,24 @@
         "lng": 115.7
       },
       {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省东方市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46900741600000_20260918002134.html",
+          "issuedAt": "2026/09/18 00:21"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
+      {
         "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -369,24 +387,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市县石柱土家族自治县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50024041600000_20260917003109.html",
-          "issuedAt": "2026/09/17 00:31"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       }
     ]
   },
@@ -400,7 +400,7 @@
       "provinces": [
         "海南"
       ],
-      "ongoingFloodLevel": null,
+      "ongoingFloodLevel": "orange",
       "daysSince": 3
     }
   ]
