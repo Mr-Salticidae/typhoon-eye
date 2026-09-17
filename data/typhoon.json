@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17 19:45",
+  "updatedAt": "2026-09-17 20:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 153 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-17 17时",
+            "time": "09-17 20时",
             "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-17 17时",
+            "time": "09-17 20时",
             "windLevel": 10,
             "role": "verify"
           },
@@ -66,12 +66,12 @@
         "windLevel": 10,
         "windSpeed": 25,
         "pressure": 985,
-        "moveDir": "西北",
-        "moveSpeed": 41,
+        "moveDir": "西北西",
+        "moveSpeed": 38,
         "r7": 480,
         "r10": null,
-        "time": "09-17 17时",
-        "position": "中心位于北纬 22.2 度、东经 149.4 度"
+        "time": "09-17 20时",
+        "position": "中心位于北纬 23.4 度、东经 148.4 度"
       },
       "track": [
         {
@@ -136,68 +136,76 @@
           "lng": 149.4,
           "wind": 10,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-17 20时",
+          "lat": 23.4,
+          "lng": 148.4,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-18 05时",
-          "lat": 24.9,
-          "lng": 145.6,
+          "t": "09-18 08时",
+          "lat": 25.3,
+          "lng": 144.5,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-18 17时",
-          "lat": 25.5,
-          "lng": 142.6,
+          "t": "09-18 20时",
+          "lat": 25.8,
+          "lng": 142.2,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-19 05时",
-          "lat": 26.2,
-          "lng": 140.7,
+          "t": "09-19 08时",
+          "lat": 26.7,
+          "lng": 140.6,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-19 17时",
-          "lat": 27.7,
-          "lng": 139.6,
+          "t": "09-19 20时",
+          "lat": 28,
+          "lng": 139.7,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-20 05时",
-          "lat": 29.4,
+          "t": "09-20 08时",
+          "lat": 30,
           "lng": 139.2,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-20 17时",
-          "lat": 31.5,
-          "lng": 139.8,
+          "t": "09-20 20时",
+          "lat": 32,
+          "lng": 139.9,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-21 17时",
-          "lat": 36.9,
-          "lng": 144.4,
+          "t": "09-21 20时",
+          "lat": 38.1,
+          "lng": 146.6,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 17时",
-          "lat": 43.4,
-          "lng": 156.9,
+          "t": "09-22 20时",
+          "lat": 44,
+          "lng": 158.4,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
@@ -211,9 +219,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 50,
+    "total": 48,
     "counts": {
-      "暴雨": 45,
+      "暴雨": 43,
       "山洪风险": 1,
       "地质灾害": 4
     },
@@ -221,9 +229,9 @@
       "province": "湖南",
       "kind": "暴雨",
       "level": "red",
-      "title": "湖南省株洲市炎陵县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/43022541600000_20260917172416.html",
-      "issuedAt": "2026/09/17 17:23"
+      "title": "湖南省永州市东安县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/43112241600000_20260917200510.html",
+      "issuedAt": "2026/09/17 20:04"
     },
     "provinces": [
       {
@@ -233,13 +241,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 12,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "湖南省株洲市炎陵县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43022541600000_20260917172416.html",
-          "issuedAt": "2026/09/17 17:23"
+          "title": "湖南省永州市东安县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43112241600000_20260917200510.html",
+          "issuedAt": "2026/09/17 20:04"
         },
         "lat": 27.6,
         "lng": 111.7
@@ -289,7 +297,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -343,13 +351,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 14,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "湖北省武汉市新洲区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42011741600000_20260917120333.html",
-          "issuedAt": "2026/09/17 12:03"
+          "title": "湖北省黄冈市麻城市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42118141600000_20260917103255.html",
+          "issuedAt": "2026/09/17 10:32"
         },
         "lat": 31,
         "lng": 112.3
@@ -389,24 +397,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "河南",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河南省信阳市光山县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41152241600000_20260917101901.html",
-          "issuedAt": "2026/09/17 10:19"
-        },
-        "lat": 33.9,
-        "lng": 113.6
       },
       {
         "province": "重庆",
