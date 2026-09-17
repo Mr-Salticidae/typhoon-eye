@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17 11:00",
+  "updatedAt": "2026-09-17 11:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "杜鹃",
       "enName": "DUJUAN",
       "code": "2625",
-      "level": "热带风暴（8级）",
+      "level": "热带风暴（9级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 113 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-17 08时",
-            "windLevel": 8,
+            "time": "09-17 11时",
+            "windLevel": 9,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-17 08时",
-            "windLevel": 8,
+            "time": "09-17 11时",
+            "windLevel": 9,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 8,
-        "windSpeed": 20,
-        "pressure": 995,
-        "moveDir": "北北西",
-        "moveSpeed": 45,
+        "windLevel": 9,
+        "windSpeed": 23,
+        "pressure": 990,
+        "moveDir": "西北",
+        "moveSpeed": 47,
         "r7": 480,
         "r10": null,
-        "time": "09-17 08时",
-        "position": "中心位于北纬 18.8 度、东经 150.5 度"
+        "time": "09-17 11时",
+        "position": "中心位于北纬 19.9 度、东经 150.6 度"
       },
       "track": [
         {
@@ -112,68 +112,76 @@
           "lng": 150.5,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-17 11时",
+          "lat": 19.9,
+          "lng": 150.6,
+          "wind": 9,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-17 20时",
-          "lat": 23.2,
-          "lng": 148.4,
-          "wind": 9,
-          "strong": "热带风暴",
+          "t": "09-17 23时",
+          "lat": 23.9,
+          "lng": 147.4,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-18 08时",
+          "t": "09-18 11时",
           "lat": 25,
-          "lng": 145.2,
+          "lng": 144.1,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-18 20时",
-          "lat": 25.6,
-          "lng": 142.6,
+          "t": "09-18 23时",
+          "lat": 25.5,
+          "lng": 142.3,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-19 08时",
+          "t": "09-19 11时",
           "lat": 26.3,
-          "lng": 141,
+          "lng": 140.6,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-19 20时",
-          "lat": 27.8,
-          "lng": 139.3,
+          "t": "09-19 23时",
+          "lat": 28.2,
+          "lng": 139.2,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-20 08时",
-          "lat": 29.6,
-          "lng": 138.9,
+          "t": "09-20 11时",
+          "lat": 29.9,
+          "lng": 139.1,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-21 08时",
-          "lat": 34.8,
-          "lng": 142.4,
+          "t": "09-21 11时",
+          "lat": 34.9,
+          "lng": 143,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 08时",
-          "lat": 41.8,
-          "lng": 153.1,
+          "t": "09-22 11时",
+          "lat": 41.2,
+          "lng": 153.5,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
