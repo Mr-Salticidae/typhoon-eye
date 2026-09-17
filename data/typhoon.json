@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17 11:30",
+  "updatedAt": "2026-09-17 12:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 113 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,8 +56,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-17 08时",
-            "windLevel": 9,
+            "time": "09-17 11时",
+            "windLevel": 10,
             "role": "verify"
           }
         ]
@@ -195,9 +195,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 37,
+    "total": 38,
     "counts": {
-      "暴雨": 32,
+      "暴雨": 33,
       "山洪风险": 1,
       "地质灾害": 4
     },
@@ -247,6 +247,24 @@
         "lng": 111.7
       },
       {
+        "province": "新疆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "新疆维吾尔自治区阿克苏地区阿克苏市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65290141600000_20260916172240.html",
+          "issuedAt": "2026/09/16 17:22"
+        },
+        "lat": 41.1,
+        "lng": 85.3
+      },
+      {
         "province": "广西",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -263,24 +281,6 @@
         },
         "lat": 23.8,
         "lng": 108.8
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿克苏地区阿克苏市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65290141600000_20260916172240.html",
-          "issuedAt": "2026/09/16 17:22"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       },
       {
         "province": "湖北",
