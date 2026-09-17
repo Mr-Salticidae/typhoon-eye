@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17 17:15",
+  "updatedAt": "2026-09-17 17:40",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 133 公里（时次相差 3 小时）、强度差 1 级；日本气象厅定位相差 83 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 83 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,8 +49,8 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-17 14时",
-            "windLevel": 9,
+            "time": "09-17 17时",
+            "windLevel": 10,
             "role": "verify"
           },
           {
@@ -213,19 +213,37 @@
     "partial": null,
     "total": 43,
     "counts": {
-      "暴雨": 37,
+      "暴雨": 38,
       "山洪风险": 1,
-      "地质灾害": 5
+      "地质灾害": 4
     },
     "peak": {
-      "province": "广东",
+      "province": "湖南",
       "kind": "暴雨",
       "level": "red",
-      "title": "广东省河源市龙川县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44162241600000_20260917064110.html",
-      "issuedAt": "2026/09/17 06:39"
+      "title": "湖南省株洲市炎陵县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/43022541600000_20260917172416.html",
+      "issuedAt": "2026/09/17 17:23"
     },
     "provinces": [
+      {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省株洲市炎陵县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43022541600000_20260917172416.html",
+          "issuedAt": "2026/09/17 17:23"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
       {
         "province": "广东",
         "maxLevel": "red",
@@ -243,24 +261,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省株洲市炎陵县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43022541600000_20260917163728.html",
-          "issuedAt": "2026/09/17 16:36"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "江西",
@@ -281,32 +281,13 @@
         "lng": 115.7
       },
       {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿克苏地区阿克苏市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65290141600000_20260916172240.html",
-          "issuedAt": "2026/09/16 17:22"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 17,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -343,16 +324,34 @@
         "kinds": {
           "暴雨": "yellow"
         },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省铜仁市江口县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52062141600000_20260917172858.html",
+          "issuedAt": "2026/09/17 17:28"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
         "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省六盘水市盘州市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52028141600000_20260917154210.html",
-          "issuedAt": "2026/09/17 15:42"
+          "title": "新疆维吾尔自治区哈密市巴里坤哈萨克自治县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65052141600000_20260917113353.html",
+          "issuedAt": "2026/09/17 11:33"
         },
-        "lat": 26.8,
-        "lng": 106.9
+        "lat": 41.1,
+        "lng": 85.3
       },
       {
         "province": "河南",
