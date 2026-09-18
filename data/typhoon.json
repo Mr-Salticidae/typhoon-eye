@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19 04:30",
+  "updatedAt": "2026-09-19 05:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -259,20 +259,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 29,
+    "total": 30,
     "counts": {
-      "暴雨": 21,
+      "暴雨": 22,
       "地质灾害": 8
     },
     "peak": {
-      "province": "新疆",
+      "province": "云南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "新疆维吾尔自治区阿克苏地区拜城县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/65292641600000_20260918210857.html",
-      "issuedAt": "2026/09/18 21:08"
+      "title": "云南省保山市腾冲市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53058141600000_20260919045355.html",
+      "issuedAt": "2026/09/19 04:52"
     },
     "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省保山市腾冲市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53058141600000_20260919045355.html",
+          "issuedAt": "2026/09/19 04:52"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
       {
         "province": "新疆",
         "maxLevel": "orange",
@@ -308,25 +327,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 9,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省丽江市宁蒗彝族自治县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53072441600000_20260919030245.html",
-          "issuedAt": "2026/09/19 03:01"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "上海",
