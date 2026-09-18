@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19 02:45",
+  "updatedAt": "2026-09-19 03:04",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 60 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-18 23时",
+            "time": "09-19 02时",
             "windLevel": 12,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-18 23时",
+            "time": "09-19 02时",
             "windLevel": 12,
             "role": "verify"
           },
@@ -66,12 +66,12 @@
         "windLevel": 12,
         "windSpeed": 35,
         "pressure": 970,
-        "moveDir": "西北西",
-        "moveSpeed": 18,
+        "moveDir": "西北",
+        "moveSpeed": 19,
         "r7": 500,
         "r10": 100,
-        "time": "09-18 23时",
-        "position": "中心位于北纬 25.7 度、东经 141.3 度"
+        "time": "09-19 02时",
+        "position": "中心位于北纬 26.0 度、东经 140.8 度"
       },
       "track": [
         {
@@ -91,8 +91,8 @@
           "phase": "past"
         },
         {
-          "t": "09-17 02时",
-          "lat": 17.5,
+          "t": "09-17 05时",
+          "lat": 18.1,
           "lng": 149.7,
           "wind": 8,
           "strong": "热带风暴",
@@ -115,17 +115,17 @@
           "phase": "past"
         },
         {
-          "t": "09-17 14时",
-          "lat": 21.2,
-          "lng": 150.1,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
           "t": "09-17 17时",
           "lat": 22.2,
           "lng": 149.4,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-17 20时",
+          "lat": 23.4,
+          "lng": 148.4,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
@@ -147,18 +147,18 @@
           "phase": "past"
         },
         {
-          "t": "09-18 05时",
-          "lat": 25.4,
-          "lng": 145.3,
+          "t": "09-18 08时",
+          "lat": 25.3,
+          "lng": 145,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-18 08时",
+          "t": "09-18 11时",
           "lat": 25.3,
-          "lng": 145,
-          "wind": 10,
+          "lng": 143.7,
+          "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
@@ -168,14 +168,6 @@
           "lng": 142.9,
           "wind": 11,
           "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-18 17时",
-          "lat": 25.7,
-          "lng": 142.6,
-          "wind": 12,
-          "strong": "台风",
           "phase": "past"
         },
         {
@@ -192,58 +184,66 @@
           "lng": 141.3,
           "wind": 12,
           "strong": "台风",
+          "phase": "past"
+        },
+        {
+          "t": "09-19 02时",
+          "lat": 26,
+          "lng": 140.8,
+          "wind": 12,
+          "strong": "台风",
           "phase": "now"
         },
         {
-          "t": "09-19 11时",
-          "lat": 26.6,
-          "lng": 139.5,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-19 23时",
-          "lat": 28,
-          "lng": 138.1,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-20 11时",
-          "lat": 29.5,
-          "lng": 137.6,
+          "t": "09-19 14时",
+          "lat": 27.1,
+          "lng": 139,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-20 23时",
-          "lat": 31.2,
+          "t": "09-20 02时",
+          "lat": 28.4,
           "lng": 137.9,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-21 11时",
-          "lat": 33.3,
-          "lng": 139.4,
+          "t": "09-20 14时",
+          "lat": 29.8,
+          "lng": 137.5,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-21 02时",
+          "lat": 31.6,
+          "lng": 137.9,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-21 14时",
+          "lat": 33.7,
+          "lng": 139.5,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-21 23时",
-          "lat": 36.4,
-          "lng": 143.7,
+          "t": "09-22 02时",
+          "lat": 36.5,
+          "lng": 144,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 23时",
+          "t": "09-23 02时",
           "lat": 42.1,
           "lng": 158.7,
           "wind": 9,
@@ -265,32 +265,14 @@
       "地质灾害": 8
     },
     "peak": {
-      "province": "湖南",
+      "province": "新疆",
       "kind": "暴雨",
-      "level": "red",
-      "title": "湖南省郴州市北湖区气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/43100241600000_20260918025623.html",
-      "issuedAt": "2026/09/18 02:55"
+      "level": "orange",
+      "title": "新疆维吾尔自治区阿克苏地区拜城县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/65292641600000_20260918210857.html",
+      "issuedAt": "2026/09/18 21:08"
     },
     "provinces": [
-      {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省郴州市北湖区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43100241600000_20260918025623.html",
-          "issuedAt": "2026/09/18 02:55"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
       {
         "province": "新疆",
         "maxLevel": "orange",
@@ -308,6 +290,24 @@
         },
         "lat": 41.1,
         "lng": 85.3
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省郴州市宜章县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43102241600000_20260918183911.html",
+          "issuedAt": "2026/09/18 18:38"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "云南",
@@ -353,13 +353,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "重庆市梁平区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015541600000_20260919010808.html",
-          "issuedAt": "2026/09/19 01:08"
+          "title": "重庆市万州区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50010141600000_20260919025000.html",
+          "issuedAt": "2026/09/19 02:49"
         },
         "lat": 29.8,
         "lng": 107.9
