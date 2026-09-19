@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19 12:00",
+  "updatedAt": "2026-09-19 12:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -251,9 +251,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 26,
+    "total": 24,
     "counts": {
-      "暴雨": 19,
+      "暴雨": 17,
       "地质灾害": 7
     },
     "peak": {
@@ -282,25 +282,6 @@
         },
         "lat": 19.2,
         "lng": 109.7
-      },
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省临沧市双江县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53092541600000_20260919081710.html",
-          "issuedAt": "2026/09/19 08:15"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "湖南",
@@ -339,6 +320,25 @@
         "lng": 85.3
       },
       {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 11,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "云南省保山市腾冲市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53058141600000_20260919110753.html",
+          "issuedAt": "2026/09/19 11:06"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "上海",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -355,24 +355,6 @@
         },
         "lat": 31.2,
         "lng": 121.5
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市县云阳县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023541600000_20260919032916.html",
-          "issuedAt": "2026/09/19 03:29"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       }
     ]
   },
