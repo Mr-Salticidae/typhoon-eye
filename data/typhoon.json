@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19 13:55",
+  "updatedAt": "2026-09-19 14:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -251,38 +251,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 24,
+    "total": 22,
     "counts": {
-      "暴雨": 17,
+      "暴雨": 15,
       "地质灾害": 7
     },
     "peak": {
-      "province": "海南",
+      "province": "湖南",
       "kind": "暴雨",
-      "level": "red",
-      "title": "海南省陵水县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/46902841600000_20260919075712.html",
-      "issuedAt": "2026/09/19 07:57"
+      "level": "orange",
+      "title": "湖南省郴州市宜章县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/43102241600000_20260918183911.html",
+      "issuedAt": "2026/09/18 18:38"
     },
     "provinces": [
-      {
-        "province": "海南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "海南省陵水县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46902841600000_20260919075712.html",
-          "issuedAt": "2026/09/19 07:57"
-        },
-        "lat": 19.2,
-        "lng": 109.7
-      },
       {
         "province": "湖南",
         "maxLevel": "orange",
@@ -345,7 +327,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -386,7 +368,7 @@
       "provinces": [
         "海南"
       ],
-      "ongoingFloodLevel": "red",
+      "ongoingFloodLevel": null,
       "daysSince": 5
     }
   ]
