@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19 07:34",
+  "updatedAt": "2026-09-19 08:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -259,9 +259,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 28,
+    "total": 30,
     "counts": {
-      "暴雨": 20,
+      "暴雨": 22,
       "地质灾害": 8
     },
     "peak": {
@@ -281,7 +281,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -327,6 +327,24 @@
         },
         "lat": 41.1,
         "lng": 85.3
+      },
+      {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省陵水县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46902841600000_20260919073510.html",
+          "issuedAt": "2026/09/19 07:35"
+        },
+        "lat": 19.2,
+        "lng": 109.7
       },
       {
         "province": "上海",
@@ -394,7 +412,7 @@
       "provinces": [
         "海南"
       ],
-      "ongoingFloodLevel": null,
+      "ongoingFloodLevel": "orange",
       "daysSince": 5
     }
   ]
