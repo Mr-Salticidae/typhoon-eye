@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19 15:30",
+  "updatedAt": "2026-09-19 16:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -251,20 +251,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 19,
+    "total": 26,
     "counts": {
-      "暴雨": 12,
+      "暴雨": 19,
       "地质灾害": 7
     },
     "peak": {
-      "province": "湖南",
+      "province": "云南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "湖南省郴州市宜章县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/43102241600000_20260918183911.html",
-      "issuedAt": "2026/09/18 18:38"
+      "title": "云南省临沧市镇康县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53092441600000_20260919155514.html",
+      "issuedAt": "2026/09/19 15:53"
     },
     "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 12,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省临沧市镇康县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53092441600000_20260919155514.html",
+          "issuedAt": "2026/09/19 15:53"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
       {
         "province": "湖南",
         "maxLevel": "orange",
@@ -302,25 +321,6 @@
         "lng": 85.3
       },
       {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 11,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省保山市腾冲市气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53058141600000_20260919110753.html",
-          "issuedAt": "2026/09/19 11:06"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "上海",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -337,6 +337,42 @@
         },
         "lat": 31.2,
         "lng": 121.5
+      },
+      {
+        "province": "四川",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "四川省巴中市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51190041600000_20260919155031.html",
+          "issuedAt": "2026/09/19 15:50"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
+      {
+        "province": "内蒙古",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "内蒙古自治区包头市达茂旗气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15022341600000_20260919153449.html",
+          "issuedAt": "2026/09/19 15:34"
+        },
+        "lat": 44,
+        "lng": 113.9
       },
       {
         "province": "江苏",
