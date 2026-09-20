@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20 23:45",
+  "updatedAt": "2026-09-21 00:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 59 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-20 20时",
+            "time": "09-20 23时",
             "windLevel": 12,
             "role": "verify"
           }
@@ -235,9 +235,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 27,
+    "total": 23,
     "counts": {
-      "暴雨": 22,
+      "暴雨": 18,
       "山洪灾害": 1,
       "地质灾害": 4
     },
@@ -311,13 +311,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 9,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "河北省石家庄市赞皇县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13012941600000_20260920212339.html",
-          "issuedAt": "2026/09/20 21:23"
+          "title": "河北省邢台市临城县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13052241600000_20260920212000.html",
+          "issuedAt": "2026/09/20 21:20"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -376,24 +376,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "山西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "山西省阳泉市阳泉气象站发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14031141600000_20260920175400.html",
-          "issuedAt": "2026/09/20 17:54"
-        },
-        "lat": 37.6,
-        "lng": 112.3
       }
     ]
   },
