@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 06:00",
+  "updatedAt": "2026-09-21 06:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -227,9 +227,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 34,
+    "total": 36,
     "counts": {
-      "暴雨": 29,
+      "暴雨": 31,
       "山洪灾害": 1,
       "地质灾害": 4
     },
@@ -237,9 +237,9 @@
       "province": "广东",
       "kind": "暴雨",
       "level": "orange",
-      "title": "广东省清远市佛冈县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260921023104.html",
-      "issuedAt": "2026/09/21 02:29"
+      "title": "广东省河源市紫金县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44162141600000_20260921061135.html",
+      "issuedAt": "2026/09/21 06:08"
     },
     "provinces": [
       {
@@ -253,9 +253,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省清远市佛冈县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260921023104.html",
-          "issuedAt": "2026/09/21 02:29"
+          "title": "广东省河源市紫金县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44162141600000_20260921061135.html",
+          "issuedAt": "2026/09/21 06:08"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -268,7 +268,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -316,24 +316,6 @@
         "lng": 85.3
       },
       {
-        "province": "四川",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "四川省阿坝藏族羌族自治州松潘县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51322441600000_20260920224206.html",
-          "issuedAt": "2026/09/20 22:42"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
         "province": "河北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -350,6 +332,24 @@
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "四川",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "四川省阿坝藏族羌族自治州红原县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51323341600000_20260920213200.html",
+          "issuedAt": "2026/09/20 21:32"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "陕西",
@@ -395,31 +395,18 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "重庆市长寿区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50011541600000_20260921044837.html",
-          "issuedAt": "2026/09/21 04:48"
+          "title": "重庆市县忠县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023341600000_20260921055846.html",
+          "issuedAt": "2026/09/21 05:58"
         },
         "lat": 29.8,
         "lng": 107.9
       }
     ]
   },
-  "recentlyEnded": [
-    {
-      "code": "0027",
-      "name": "热带低压",
-      "enName": "NAMELESS",
-      "lastLevel": "热带低压（6级）",
-      "endedAt": "2026-09-14 06:15",
-      "provinces": [
-        "海南"
-      ],
-      "ongoingFloodLevel": null,
-      "daysSince": 6
-    }
-  ]
+  "recentlyEnded": []
 }
