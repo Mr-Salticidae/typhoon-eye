@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20 17:30",
+  "updatedAt": "2026-09-20 18:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-20 14时",
+            "time": "09-20 17时",
             "windLevel": 12,
             "role": "verify"
           }
@@ -235,10 +235,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 23,
+    "total": 22,
     "counts": {
       "暴雨": 17,
-      "山洪灾害": 1,
       "地质灾害": 5
     },
     "peak": {
@@ -305,24 +304,22 @@
         "lng": 85.3
       },
       {
-        "province": "陕西",
+        "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
-          "kind": "山洪灾害",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "陕西省气象台发布山洪灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260919173125.html",
-          "issuedAt": "2026/09/19 17:31"
+          "title": "湖北省十堰市竹溪县自然资源和规划局、竹溪县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42032441600000_20260920172902.html",
+          "issuedAt": "2026/09/20 17:29"
         },
-        "lat": 35.2,
-        "lng": 108.9
+        "lat": 31,
+        "lng": 112.3
       },
       {
         "province": "云南",
@@ -331,7 +328,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -343,7 +340,7 @@
         "lng": 101.5
       },
       {
-        "province": "湖北",
+        "province": "陕西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
@@ -353,12 +350,12 @@
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
-          "title": "湖北省十堰市郧阳区自然资源和规划局、郧阳区气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42030441600000_20260920103815.html",
-          "issuedAt": "2026/09/20 10:38"
+          "title": "陕西省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260920175311.html",
+          "issuedAt": "2026/09/20 17:53"
         },
-        "lat": 31,
-        "lng": 112.3
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "河北",
@@ -367,13 +364,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省石家庄市灵寿县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13012641600000_20260920171011.html",
-          "issuedAt": "2026/09/20 17:10"
+          "title": "河北省保定市雄县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13063841600000_20260920174059.html",
+          "issuedAt": "2026/09/20 17:40"
         },
         "lat": 38.5,
         "lng": 115.5
