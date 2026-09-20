@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20 17:00",
+  "updatedAt": "2026-09-20 17:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-20 14时",
+            "time": "09-20 17时",
             "windLevel": 11,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-20 14时",
+            "time": "09-20 17时",
             "windLevel": 11,
             "role": "verify"
           },
@@ -66,12 +66,12 @@
         "windLevel": 11,
         "windSpeed": 30,
         "pressure": 980,
-        "moveDir": "北",
-        "moveSpeed": 17,
+        "moveDir": "北北东",
+        "moveSpeed": 22,
         "r7": 500,
         "r10": 100,
-        "time": "09-20 14时",
-        "position": "中心位于北纬 29.6 度、东经 137.5 度"
+        "time": "09-20 17时",
+        "position": "中心位于北纬 29.9 度、东经 137.4 度"
       },
       "track": [
         {
@@ -91,10 +91,10 @@
           "phase": "past"
         },
         {
-          "t": "09-17 08时",
-          "lat": 18.8,
-          "lng": 150.5,
-          "wind": 8,
+          "t": "09-17 11时",
+          "lat": 19.9,
+          "lng": 150.6,
+          "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
         },
@@ -115,17 +115,17 @@
           "phase": "past"
         },
         {
-          "t": "09-18 05时",
-          "lat": 25.4,
-          "lng": 145.3,
+          "t": "09-18 08时",
+          "lat": 25.3,
+          "lng": 145,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-18 11时",
-          "lat": 25.3,
-          "lng": 143.7,
+          "t": "09-18 14时",
+          "lat": 25.7,
+          "lng": 142.9,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
@@ -147,17 +147,17 @@
           "phase": "past"
         },
         {
-          "t": "09-19 08时",
-          "lat": 26.4,
-          "lng": 139.8,
+          "t": "09-19 11时",
+          "lat": 26.6,
+          "lng": 139.5,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "09-19 14时",
-          "lat": 26.9,
-          "lng": 139.1,
+          "t": "09-19 17时",
+          "lat": 27.4,
+          "lng": 138.8,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
@@ -171,16 +171,8 @@
           "phase": "past"
         },
         {
-          "t": "09-20 05时",
+          "t": "09-20 08时",
           "lat": 29,
-          "lng": 137.6,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "09-20 11时",
-          "lat": 29.2,
           "lng": 137.6,
           "wind": 11,
           "strong": "强热带风暴",
@@ -192,36 +184,44 @@
           "lng": 137.5,
           "wind": 11,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-20 17时",
+          "lat": 29.9,
+          "lng": 137.4,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-21 02时",
-          "lat": 31.4,
-          "lng": 137.7,
+          "t": "09-21 05时",
+          "lat": 32.2,
+          "lng": 138.2,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-21 14时",
-          "lat": 33.7,
-          "lng": 139.4,
+          "t": "09-21 17时",
+          "lat": 34.6,
+          "lng": 140.6,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 02时",
-          "lat": 36.6,
-          "lng": 143.6,
+          "t": "09-22 05时",
+          "lat": 37.4,
+          "lng": 145.5,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 14时",
+          "t": "09-22 17时",
           "lat": 39.7,
-          "lng": 151.2,
+          "lng": 151.7,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
@@ -235,9 +235,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 22,
+    "total": 23,
     "counts": {
-      "暴雨": 16,
+      "暴雨": 17,
       "山洪灾害": 1,
       "地质灾害": 5
     },
@@ -275,7 +275,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -343,24 +343,6 @@
         "lng": 101.5
       },
       {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省郴州市汝城县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102641600000_20260919171455.html",
-          "issuedAt": "2026/09/19 17:14"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -385,13 +367,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省保定市阜平县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13062441600000_20260920150414.html",
-          "issuedAt": "2026/09/20 15:04"
+          "title": "河北省石家庄市灵寿县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13012641600000_20260920171011.html",
+          "issuedAt": "2026/09/20 17:10"
         },
         "lat": 38.5,
         "lng": 115.5
