@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 07:28",
+  "updatedAt": "2026-09-21 07:59",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-21 06时",
+            "time": "09-21 07时",
             "windLevel": 12,
             "role": "verify"
           }
@@ -227,9 +227,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 40,
+    "total": 45,
     "counts": {
-      "暴雨": 35,
+      "暴雨": 40,
       "山洪灾害": 1,
       "地质灾害": 4
     },
@@ -268,7 +268,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -286,13 +286,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区梧州市藤县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45042241600000_20260921055817.html",
-          "issuedAt": "2026/09/21 05:53"
+          "title": "广西壮族自治区来宾市象州县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45132241600000_20260921073324.html",
+          "issuedAt": "2026/09/21 07:30"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -316,6 +316,24 @@
         "lng": 85.3
       },
       {
+        "province": "重庆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "重庆市黔江区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011441600000_20260921065458.html",
+          "issuedAt": "2026/09/21 06:54"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
         "province": "河北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -332,24 +350,6 @@
         },
         "lat": 38.5,
         "lng": 115.5
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "重庆市黔江区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50011441600000_20260921065458.html",
-          "issuedAt": "2026/09/21 06:54"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       },
       {
         "province": "四川",
@@ -387,6 +387,24 @@
         },
         "lat": 35.2,
         "lng": 108.9
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖南省张家界市桑植县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43082241600000_20260921075102.html",
+          "issuedAt": "2026/09/21 07:50"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "云南",
