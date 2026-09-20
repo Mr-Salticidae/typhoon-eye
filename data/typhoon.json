@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 05:28",
+  "updatedAt": "2026-09-21 06:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 29 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-21 04时",
+            "time": "09-21 05时",
             "windLevel": 12,
             "role": "verify"
           }
@@ -227,9 +227,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 32,
+    "total": 34,
     "counts": {
-      "暴雨": 27,
+      "暴雨": 29,
       "山洪灾害": 1,
       "地质灾害": 4
     },
@@ -249,7 +249,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -278,6 +278,24 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区梧州市藤县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45042241600000_20260921055817.html",
+          "issuedAt": "2026/09/21 05:53"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "新疆",
