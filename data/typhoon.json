@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20 18:00",
+  "updatedAt": "2026-09-20 18:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -235,10 +235,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 22,
+    "total": 21,
     "counts": {
-      "暴雨": 17,
-      "地质灾害": 5
+      "暴雨": 16,
+      "山洪灾害": 1,
+      "地质灾害": 4
     },
     "peak": {
       "province": "四川",
@@ -274,7 +275,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 4,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -304,6 +305,43 @@
         "lng": 85.3
       },
       {
+        "province": "河北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "河北省保定市雄县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13063841600000_20260920175955.html",
+          "issuedAt": "2026/09/20 17:59"
+        },
+        "lat": 38.5,
+        "lng": 115.5
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "陕西省气象台发布山洪灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260920181931.html",
+          "issuedAt": "2026/09/20 18:19"
+        },
+        "lat": 35.2,
+        "lng": 108.9
+      },
+      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -328,7 +366,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -340,40 +378,22 @@
         "lng": 101.5
       },
       {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "陕西省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260920175311.html",
-          "issuedAt": "2026/09/20 17:53"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      },
-      {
-        "province": "河北",
+        "province": "山西",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 5,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省保定市雄县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13063841600000_20260920174059.html",
-          "issuedAt": "2026/09/20 17:40"
+          "title": "山西省阳泉市阳泉气象站发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14031141600000_20260920175400.html",
+          "issuedAt": "2026/09/20 17:54"
         },
-        "lat": 38.5,
-        "lng": 115.5
+        "lat": 37.6,
+        "lng": 112.3
       }
     ]
   },
