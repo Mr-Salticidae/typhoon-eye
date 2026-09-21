@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 07:59",
+  "updatedAt": "2026-09-21 08:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -227,39 +227,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 45,
+    "total": 39,
     "counts": {
-      "暴雨": 40,
+      "暴雨": 34,
       "山洪灾害": 1,
       "地质灾害": 4
     },
     "peak": {
-      "province": "广东",
+      "province": "湖北",
       "kind": "暴雨",
       "level": "orange",
-      "title": "广东省河源市紫金县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44162141600000_20260921061135.html",
-      "issuedAt": "2026/09/21 06:08"
+      "title": "湖北省恩施土家族苗族自治州恩施市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/42280141600000_20260921080127.html",
+      "issuedAt": "2026/09/21 08:01"
     },
     "provinces": [
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省河源市紫金县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44162141600000_20260921061135.html",
-          "issuedAt": "2026/09/21 06:08"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
       {
         "province": "湖北",
         "maxLevel": "orange",
@@ -268,16 +250,34 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 8,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "湖北省恩施土家族苗族自治州利川市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42280241600000_20260921070012.html",
-          "issuedAt": "2026/09/21 07:00"
+          "title": "湖北省恩施土家族苗族自治州恩施市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42280141600000_20260921080127.html",
+          "issuedAt": "2026/09/21 08:01"
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省清远市佛冈县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260921023104.html",
+          "issuedAt": "2026/09/21 02:29"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "广西",
@@ -322,7 +322,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 8,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -340,7 +340,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 7,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -350,24 +350,6 @@
         },
         "lat": 38.5,
         "lng": 115.5
-      },
-      {
-        "province": "四川",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "四川省阿坝藏族羌族自治州红原县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51323341600000_20260920213200.html",
-          "issuedAt": "2026/09/20 21:32"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "陕西",
@@ -423,6 +405,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "四川",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "四川省阿坝藏族羌族自治州红原县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51323341600000_20260920162647.html",
+          "issuedAt": "2026/09/20 16:26"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       }
     ]
   },
