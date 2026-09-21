@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 19:00",
+  "updatedAt": "2026-09-21 19:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 68 公里（时次相差 1 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 68 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-21 17时",
             "windLevel": 12,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-21 17时",
+            "windLevel": 12,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,8 +68,8 @@
         "pressure": 970,
         "moveDir": "东北东",
         "moveSpeed": 57,
-        "r7": null,
-        "r10": null,
+        "r7": 500,
+        "r10": 100,
         "time": "09-21 17时",
         "position": "中心位于北纬 34.5 度、东经 140.5 度"
       },
@@ -212,9 +219,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 40,
+    "total": 43,
     "counts": {
-      "暴雨": 36,
+      "暴雨": 39,
       "地质灾害": 4
     },
     "peak": {
@@ -233,7 +240,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -300,6 +307,24 @@
         "lng": 112.3
       },
       {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省铜仁市松桃县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52062841600000_20260921191158.html",
+          "issuedAt": "2026/09/21 19:11"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
         "province": "福建",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -352,24 +377,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省毕节市威宁县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260921174157.html",
-          "issuedAt": "2026/09/21 17:41"
-        },
-        "lat": 26.8,
-        "lng": 106.9
       },
       {
         "province": "重庆",
