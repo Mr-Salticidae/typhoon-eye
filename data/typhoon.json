@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 22:01",
+  "updatedAt": "2026-09-21 22:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 29 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 29 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-21 20时",
             "windLevel": 11,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-21 20时",
-            "windLevel": 11,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,8 +61,8 @@
         "pressure": 980,
         "moveDir": "东北东",
         "moveSpeed": 45,
-        "r7": 500,
-        "r10": 100,
+        "r7": null,
+        "r10": null,
         "time": "09-21 20时",
         "position": "中心位于北纬 35.2 度、东经 141.8 度"
       },
@@ -219,20 +212,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 37,
+    "total": 28,
     "counts": {
-      "暴雨": 33,
+      "暴雨": 24,
       "地质灾害": 4
     },
     "peak": {
-      "province": "四川",
+      "province": "贵州",
       "kind": "暴雨",
       "level": "red",
-      "title": "四川省甘孜藏族自治州雅江县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/51332541600000_20260921200929.html",
-      "issuedAt": "2026/09/21 20:09"
+      "title": "贵州省毕节市威宁县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260921220907.html",
+      "issuedAt": "2026/09/21 22:09"
     },
     "provinces": [
+      {
+        "province": "贵州",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "贵州省毕节市威宁县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260921220907.html",
+          "issuedAt": "2026/09/21 22:09"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
       {
         "province": "四川",
         "maxLevel": "red",
@@ -252,31 +263,13 @@
         "lng": 102.9
       },
       {
-        "province": "贵州",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "贵州省毕节市威宁县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260921213558.html",
-          "issuedAt": "2026/09/21 21:35"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
-      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -286,43 +279,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区贵港市平南县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45082141600000_20260921181542.html",
-          "issuedAt": "2026/09/21 18:13"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
-        "province": "湖北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖北省恩施土家族苗族自治州宣恩县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42282541600000_20260921084016.html",
-          "issuedAt": "2026/09/21 08:40"
-        },
-        "lat": 31,
-        "lng": 112.3
       },
       {
         "province": "湖南",
@@ -341,6 +297,24 @@
         },
         "lat": 27.6,
         "lng": 111.7
+      },
+      {
+        "province": "湖北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "湖北省十堰市竹山县自然资源和规划局、竹山县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42032341600000_20260921174125.html",
+          "issuedAt": "2026/09/21 17:41"
+        },
+        "lat": 31,
+        "lng": 112.3
       },
       {
         "province": "云南",
@@ -367,7 +341,7 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 6,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "blue",
@@ -377,24 +351,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "福建",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "福建省漳州市华安县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062941600000_20260921171000.html",
-          "issuedAt": "2026/09/21 17:10"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       }
     ]
   },
