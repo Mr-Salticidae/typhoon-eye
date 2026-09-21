@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 08:30",
+  "updatedAt": "2026-09-21 09:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -36,28 +36,28 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-21 05时",
+            "time": "09-21 08时",
             "windLevel": 11,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-21 05时",
+            "time": "09-21 08时",
             "windLevel": 11,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-21 07时",
-            "windLevel": 12,
+            "time": "09-21 08时",
+            "windLevel": 13,
             "role": "verify"
           }
         ]
@@ -67,11 +67,11 @@
         "windSpeed": 30,
         "pressure": 980,
         "moveDir": "东北",
-        "moveSpeed": 25,
+        "moveSpeed": 30,
         "r7": 500,
         "r10": 100,
-        "time": "09-21 05时",
-        "position": "中心位于北纬 32.0 度、东经 138.2 度"
+        "time": "09-21 08时",
+        "position": "中心位于北纬 32.4 度、东经 138.5 度"
       },
       "track": [
         {
@@ -107,9 +107,9 @@
           "phase": "past"
         },
         {
-          "t": "09-18 02时",
-          "lat": 24.6,
-          "lng": 145.9,
+          "t": "09-18 05时",
+          "lat": 25.4,
+          "lng": 145.3,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
@@ -131,17 +131,17 @@
           "phase": "past"
         },
         {
-          "t": "09-19 02时",
-          "lat": 26,
-          "lng": 140.8,
+          "t": "09-19 05时",
+          "lat": 26.4,
+          "lng": 140.3,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "09-19 11时",
-          "lat": 26.6,
-          "lng": 139.5,
+          "t": "09-19 14时",
+          "lat": 26.9,
+          "lng": 139.1,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
@@ -155,33 +155,25 @@
           "phase": "past"
         },
         {
-          "t": "09-20 02时",
-          "lat": 28.6,
-          "lng": 137.7,
+          "t": "09-20 05时",
+          "lat": 29,
+          "lng": 137.6,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "09-20 11时",
-          "lat": 29.2,
-          "lng": 137.6,
+          "t": "09-20 14时",
+          "lat": 29.6,
+          "lng": 137.5,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-20 17时",
-          "lat": 29.9,
-          "lng": 137.4,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-21 02时",
-          "lat": 31.3,
-          "lng": 137.9,
+          "t": "09-20 20时",
+          "lat": 30.2,
+          "lng": 137.5,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
@@ -192,28 +184,36 @@
           "lng": 138.2,
           "wind": 11,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-21 08时",
+          "lat": 32.4,
+          "lng": 138.5,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-21 17时",
-          "lat": 34,
-          "lng": 140.3,
+          "t": "09-21 20时",
+          "lat": 34.7,
+          "lng": 141.2,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 05时",
-          "lat": 36.9,
-          "lng": 145.1,
+          "t": "09-22 08时",
+          "lat": 37.5,
+          "lng": 146.4,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 17时",
-          "lat": 39.1,
-          "lng": 151.3,
+          "t": "09-22 20时",
+          "lat": 39.5,
+          "lng": 152.7,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
@@ -227,9 +227,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 39,
+    "total": 49,
     "counts": {
-      "暴雨": 34,
+      "暴雨": 44,
       "山洪灾害": 1,
       "地质灾害": 4
     },
@@ -237,9 +237,9 @@
       "province": "湖北",
       "kind": "暴雨",
       "level": "orange",
-      "title": "湖北省恩施土家族苗族自治州恩施市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/42280141600000_20260921080127.html",
-      "issuedAt": "2026/09/21 08:01"
+      "title": "湖北省恩施土家族苗族自治州巴东县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/42282341600000_20260921084838.html",
+      "issuedAt": "2026/09/21 08:48"
     },
     "provinces": [
       {
@@ -250,13 +250,13 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 9,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "湖北省恩施土家族苗族自治州恩施市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42280141600000_20260921080127.html",
-          "issuedAt": "2026/09/21 08:01"
+          "title": "湖北省恩施土家族苗族自治州巴东县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42282341600000_20260921084838.html",
+          "issuedAt": "2026/09/21 08:48"
         },
         "lat": 31,
         "lng": 112.3
@@ -268,7 +268,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -340,16 +340,52 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "河北省邢台市临城县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13052241600000_20260920212000.html",
-          "issuedAt": "2026/09/20 21:20"
+          "title": "河北省邢台市威县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13053341600000_20260921083638.html",
+          "issuedAt": "2026/09/21 08:36"
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省漳州市长泰区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35060541600000_20260921085000.html",
+          "issuedAt": "2026/09/21 08:50"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖南省常德市石门县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43072641600000_20260921083052.html",
+          "issuedAt": "2026/09/21 08:30"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "陕西",
@@ -369,24 +405,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省张家界市桑植县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43082241600000_20260921075102.html",
-          "issuedAt": "2026/09/21 07:50"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "云南",
