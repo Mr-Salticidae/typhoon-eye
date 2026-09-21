@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 02:00",
+  "updatedAt": "2026-09-22 02:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "杜鹃",
       "enName": "DUJUAN",
       "code": "2625",
-      "level": "强热带风暴（11级）",
+      "level": "强热带风暴（10级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 106 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 42 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-21 23时",
-            "windLevel": 11,
+            "time": "09-22 02时",
+            "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-21 23时",
-            "windLevel": 11,
+            "time": "09-22 02时",
+            "windLevel": 10,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 11,
-        "windSpeed": 30,
-        "pressure": 980,
-        "moveDir": "东北",
-        "moveSpeed": 44,
+        "windLevel": 10,
+        "windSpeed": 28,
+        "pressure": 982,
+        "moveDir": "东北东",
+        "moveSpeed": 45,
         "r7": 500,
         "r10": 100,
-        "time": "09-21 23时",
-        "position": "中心位于北纬 35.7 度、东经 143.0 度"
+        "time": "09-22 02时",
+        "position": "中心位于北纬 36.6 度、东经 144.2 度"
       },
       "track": [
         {
@@ -107,25 +107,25 @@
           "phase": "past"
         },
         {
-          "t": "09-18 08时",
+          "t": "09-18 11时",
           "lat": 25.3,
-          "lng": 145,
-          "wind": 10,
+          "lng": 143.7,
+          "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-18 17时",
+          "t": "09-18 20时",
           "lat": 25.7,
-          "lng": 142.6,
+          "lng": 141.7,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "09-19 02时",
-          "lat": 26,
-          "lng": 140.8,
+          "t": "09-19 05时",
+          "lat": 26.4,
+          "lng": 140.3,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
@@ -155,33 +155,25 @@
           "phase": "past"
         },
         {
-          "t": "09-20 17时",
-          "lat": 29.9,
-          "lng": 137.4,
+          "t": "09-20 20时",
+          "lat": 30.2,
+          "lng": 137.5,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-21 02时",
-          "lat": 31.3,
-          "lng": 137.9,
+          "t": "09-21 05时",
+          "lat": 32,
+          "lng": 138.2,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-21 11时",
-          "lat": 33,
-          "lng": 138.9,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-21 20时",
-          "lat": 35.2,
-          "lng": 141.8,
+          "t": "09-21 14时",
+          "lat": 33.7,
+          "lng": 139.8,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
@@ -192,22 +184,30 @@
           "lng": 143,
           "wind": 11,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-22 02时",
+          "lat": 36.6,
+          "lng": 144.2,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-22 11时",
-          "lat": 38.2,
-          "lng": 147.9,
-          "wind": 11,
+          "t": "09-22 14时",
+          "lat": 38.7,
+          "lng": 149.6,
+          "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 23时",
-          "lat": 40,
-          "lng": 156,
-          "wind": 10,
-          "strong": "强热带风暴",
+          "t": "09-23 02时",
+          "lat": 40.3,
+          "lng": 158.1,
+          "wind": 9,
+          "strong": "热带风暴",
           "phase": "forecast"
         }
       ],
@@ -219,38 +219,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 35,
+    "total": 31,
     "counts": {
-      "暴雨": 31,
+      "暴雨": 27,
       "地质灾害": 4
     },
     "peak": {
-      "province": "贵州",
+      "province": "四川",
       "kind": "暴雨",
       "level": "red",
-      "title": "贵州省毕节市威宁县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260922004939.html",
-      "issuedAt": "2026/09/22 00:49"
+      "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260921223651.html",
+      "issuedAt": "2026/09/21 22:36"
     },
     "provinces": [
-      {
-        "province": "贵州",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "贵州省毕节市威宁县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260922004939.html",
-          "issuedAt": "2026/09/22 00:49"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
       {
         "province": "四川",
         "maxLevel": "red",
@@ -270,19 +252,37 @@
         "lng": 102.9
       },
       {
+        "province": "贵州",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "贵州省毕节市威宁县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260922004939.html",
+          "issuedAt": "2026/09/22 00:49"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省梅州市梅县区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44140341600000_20260921222908.html",
-          "issuedAt": "2026/09/21 22:26"
+          "title": "广东省佛山市三水区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44060741600000_20260921183642.html",
+          "issuedAt": "2026/09/21 18:34"
         },
         "lat": 23.4,
         "lng": 113.4
