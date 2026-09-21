@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 17:30",
+  "updatedAt": "2026-09-21 18:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 45 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 38 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-21 16时",
+            "time": "09-21 17时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -219,9 +219,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 42,
+    "total": 43,
     "counts": {
-      "暴雨": 37,
+      "暴雨": 38,
       "山洪灾害": 1,
       "地质灾害": 4
     },
@@ -344,14 +344,49 @@
         "lng": 111.7
       },
       {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "云南省德宏傣族景颇族自治州芒市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53310341600000_20260921173024.html",
+          "issuedAt": "2026/09/21 17:25"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省毕节市威宁县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260921174157.html",
+          "issuedAt": "2026/09/21 17:41"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
         "province": "陕西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
+          "山洪灾害": "yellow"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -361,24 +396,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省昭通市盐津县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53062341600000_20260921101638.html",
-          "issuedAt": "2026/09/21 10:11"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "重庆",
