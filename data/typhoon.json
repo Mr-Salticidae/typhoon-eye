@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 02:30",
+  "updatedAt": "2026-09-22 03:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 42 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 22 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -47,16 +47,9 @@
             "role": "primary"
           },
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-22 02时",
-            "windLevel": 10,
-            "role": "verify"
-          },
-          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-22 01时",
+            "time": "09-22 02时",
             "windLevel": 12,
             "role": "verify"
           }
@@ -68,8 +61,8 @@
         "pressure": 982,
         "moveDir": "东北东",
         "moveSpeed": 45,
-        "r7": 500,
-        "r10": 100,
+        "r7": null,
+        "r10": null,
         "time": "09-22 02时",
         "position": "中心位于北纬 36.6 度、东经 144.2 度"
       },
@@ -219,9 +212,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 31,
+    "total": 32,
     "counts": {
-      "暴雨": 27,
+      "暴雨": 28,
       "地质灾害": 4
     },
     "peak": {
@@ -240,7 +233,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -280,9 +273,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省佛山市三水区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44060741600000_20260921183642.html",
-          "issuedAt": "2026/09/21 18:34"
+          "title": "广东省揭阳市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44520041600000_20260922024739.html",
+          "issuedAt": "2026/09/22 02:44"
         },
         "lat": 23.4,
         "lng": 113.4
