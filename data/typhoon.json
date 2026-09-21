@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 01:00",
+  "updatedAt": "2026-09-22 01:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 38 公里（时次相差 1 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 38 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-21 23时",
             "windLevel": 11,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-21 23时",
+            "windLevel": 11,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,8 +68,8 @@
         "pressure": 980,
         "moveDir": "东北",
         "moveSpeed": 44,
-        "r7": null,
-        "r10": null,
+        "r7": 500,
+        "r10": 100,
         "time": "09-21 23时",
         "position": "中心位于北纬 35.7 度、东经 143.0 度"
       },
@@ -212,38 +219,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 32,
+    "total": 35,
     "counts": {
-      "暴雨": 28,
+      "暴雨": 31,
       "地质灾害": 4
     },
     "peak": {
-      "province": "四川",
+      "province": "贵州",
       "kind": "暴雨",
       "level": "red",
-      "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260921223651.html",
-      "issuedAt": "2026/09/21 22:36"
+      "title": "贵州省毕节市威宁县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/52052641600000_20260922004939.html",
+      "issuedAt": "2026/09/22 00:49"
     },
     "provinces": [
-      {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 10,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260921223651.html",
-          "issuedAt": "2026/09/21 22:36"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
       {
         "province": "贵州",
         "maxLevel": "red",
@@ -251,7 +240,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 9,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -261,6 +250,24 @@
         },
         "lat": 26.8,
         "lng": 106.9
+      },
+      {
+        "province": "四川",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260921223651.html",
+          "issuedAt": "2026/09/21 22:36"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "广东",
