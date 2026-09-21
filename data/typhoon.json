@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21 17:00",
+  "updatedAt": "2026-09-21 17:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "杜鹃",
       "enName": "DUJUAN",
       "code": "2625",
-      "level": "强热带风暴（11级）",
+      "level": "台风（12级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 71 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 45 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-21 14时",
-            "windLevel": 11,
+            "time": "09-21 17时",
+            "windLevel": 12,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-21 14时",
-            "windLevel": 11,
+            "time": "09-21 17时",
+            "windLevel": 12,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 11,
-        "windSpeed": 30,
-        "pressure": 980,
-        "moveDir": "东北",
-        "moveSpeed": 39,
+        "windLevel": 12,
+        "windSpeed": 33,
+        "pressure": 970,
+        "moveDir": "东北东",
+        "moveSpeed": 57,
         "r7": 500,
         "r10": 100,
-        "time": "09-21 14时",
-        "position": "中心位于北纬 33.7 度、东经 139.8 度"
+        "time": "09-21 17时",
+        "position": "中心位于北纬 34.5 度、东经 140.5 度"
       },
       "track": [
         {
@@ -107,25 +107,25 @@
           "phase": "past"
         },
         {
-          "t": "09-18 05时",
-          "lat": 25.4,
-          "lng": 145.3,
+          "t": "09-18 08时",
+          "lat": 25.3,
+          "lng": 145,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-18 14时",
+          "t": "09-18 17时",
           "lat": 25.7,
-          "lng": 142.9,
-          "wind": 11,
-          "strong": "强热带风暴",
+          "lng": 142.6,
+          "wind": 12,
+          "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "09-18 23时",
-          "lat": 25.7,
-          "lng": 141.3,
+          "t": "09-19 02时",
+          "lat": 26,
+          "lng": 140.8,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
@@ -155,33 +155,25 @@
           "phase": "past"
         },
         {
-          "t": "09-20 08时",
-          "lat": 29,
+          "t": "09-20 11时",
+          "lat": 29.2,
           "lng": 137.6,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-20 17时",
-          "lat": 29.9,
-          "lng": 137.4,
+          "t": "09-20 20时",
+          "lat": 30.2,
+          "lng": 137.5,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-21 02时",
-          "lat": 31.3,
-          "lng": 137.9,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "09-21 11时",
-          "lat": 33,
-          "lng": 138.9,
+          "t": "09-21 05时",
+          "lat": 32,
+          "lng": 138.2,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
@@ -192,20 +184,28 @@
           "lng": 139.8,
           "wind": 11,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-21 17时",
+          "lat": 34.5,
+          "lng": 140.5,
+          "wind": 12,
+          "strong": "台风",
           "phase": "now"
         },
         {
-          "t": "09-22 02时",
-          "lat": 36.4,
-          "lng": 143.7,
+          "t": "09-22 05时",
+          "lat": 37.7,
+          "lng": 146.9,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-22 14时",
-          "lat": 38.8,
-          "lng": 149.9,
+          "t": "09-22 17时",
+          "lat": 40.3,
+          "lng": 154,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
@@ -219,9 +219,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 40,
+    "total": 42,
     "counts": {
-      "暴雨": 35,
+      "暴雨": 37,
       "山洪灾害": 1,
       "地质灾害": 4
     },
@@ -278,13 +278,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区来宾市金秀县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45132441600000_20260921162513.html",
-          "issuedAt": "2026/09/21 16:22"
+          "title": "广西壮族自治区梧州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45040041600000_20260921172135.html",
+          "issuedAt": "2026/09/21 17:17"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -387,13 +387,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "重庆市县酉阳土家族苗族自治县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50024241600000_20260921153119.html",
-          "issuedAt": "2026/09/21 15:31"
+          "title": "重庆市县秀山土家族苗族自治县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50024141600000_20260921171523.html",
+          "issuedAt": "2026/09/21 17:15"
         },
         "lat": 29.8,
         "lng": 107.9
