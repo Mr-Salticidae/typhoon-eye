@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 00:00",
+  "updatedAt": "2026-09-22 00:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 21 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 21 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-21 23时",
             "windLevel": 11,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-21 23时",
-            "windLevel": 11,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,8 +61,8 @@
         "pressure": 980,
         "moveDir": "东北",
         "moveSpeed": 44,
-        "r7": 500,
-        "r10": 100,
+        "r7": null,
+        "r10": null,
         "time": "09-21 23时",
         "position": "中心位于北纬 35.7 度、东经 143.0 度"
       },
@@ -219,9 +212,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 35,
+    "total": 32,
     "counts": {
-      "暴雨": 31,
+      "暴雨": 28,
       "地质灾害": 4
     },
     "peak": {
@@ -240,7 +233,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -258,7 +251,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 10,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -348,13 +341,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "重庆市县秀山土家族苗族自治县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50024141600000_20260921171523.html",
-          "issuedAt": "2026/09/21 17:15"
+          "title": "重庆市县奉节县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023641600000_20260921142944.html",
+          "issuedAt": "2026/09/21 14:29"
         },
         "lat": 29.8,
         "lng": 107.9
