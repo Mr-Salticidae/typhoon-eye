@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 10:45",
+  "updatedAt": "2026-09-22 11:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 28 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 28 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-22 08时",
             "windLevel": 10,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-22 08时",
-            "windLevel": 10,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 985,
         "moveDir": "东北东",
         "moveSpeed": 50,
-        "r7": 400,
+        "r7": null,
         "r10": null,
         "time": "09-22 08时",
         "position": "中心位于北纬 38.2 度、东经 147.4 度"
@@ -211,9 +204,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 33,
+    "total": 34,
     "counts": {
-      "暴雨": 28,
+      "暴雨": 29,
       "地质灾害": 5
     },
     "peak": {
@@ -304,13 +297,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "湖南省怀化市沅陵县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43122241600000_20260922104215.html",
-          "issuedAt": "2026/09/22 10:41"
+          "title": "湖南省张家界市桑植县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43082241600000_20260922110817.html",
+          "issuedAt": "2026/09/22 11:07"
         },
         "lat": 27.6,
         "lng": 111.7
