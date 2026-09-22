@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 09:15",
+  "updatedAt": "2026-09-22 09:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 28 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 28 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-22 08时",
             "windLevel": 10,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-22 08时",
+            "windLevel": 10,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 985,
         "moveDir": "东北东",
         "moveSpeed": 50,
-        "r7": null,
+        "r7": 400,
         "r10": null,
         "time": "09-22 08时",
         "position": "中心位于北纬 38.2 度、东经 147.4 度"
@@ -204,9 +211,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 36,
+    "total": 37,
     "counts": {
-      "暴雨": 31,
+      "暴雨": 32,
       "地质灾害": 5
     },
     "peak": {
@@ -253,6 +260,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区来宾市兴宾区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45130241600000_20260922092143.html",
+          "issuedAt": "2026/09/22 09:10"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "贵州",
