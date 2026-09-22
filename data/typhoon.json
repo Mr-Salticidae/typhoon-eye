@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 21:45",
+  "updatedAt": "2026-09-22 22:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 0
     },
     {
       "id": "jma",
@@ -204,9 +204,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 72,
+    "total": 54,
     "counts": {
-      "暴雨": 68,
+      "暴雨": 50,
       "地质灾害": 4
     },
     "peak": {
@@ -225,7 +225,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 24,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -237,24 +237,6 @@
         "lng": 108.8
       },
       {
-        "province": "广东",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广东省梅州市大埔县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142241600000_20260922200010.html",
-          "issuedAt": "2026/09/22 19:57"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "云南",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -262,7 +244,7 @@
           "暴雨": "red",
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -280,16 +262,34 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "四川省甘孜藏族自治州雅江县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51332541600000_20260922195931.html",
-          "issuedAt": "2026/09/22 19:59"
+          "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260921223651.html",
+          "issuedAt": "2026/09/21 22:36"
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 13,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省潮州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44510041600000_20260922220220.html",
+          "issuedAt": "2026/09/22 21:59"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "福建",
@@ -298,13 +298,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 8,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
           "title": "福建省龙岩市新罗区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260922204000.html",
-          "issuedAt": "2026/09/22 20:40"
+          "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260922215200.html",
+          "issuedAt": "2026/09/22 21:52"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -316,13 +316,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省吉安市遂川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36082741600000_20260922213035.html",
-          "issuedAt": "2026/09/22 21:28"
+          "title": "江西省吉安市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36080041600000_20260922214302.html",
+          "issuedAt": "2026/09/22 21:41"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -380,24 +380,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "河北",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河北省保定市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13060041600000_20260922164949.html",
-          "issuedAt": "2026/09/22 16:49"
-        },
-        "lat": 38.5,
-        "lng": 115.5
       }
     ]
   },
