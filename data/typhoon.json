@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 14:45",
+  "updatedAt": "2026-09-22 15:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 0
     },
     {
       "id": "jma",
@@ -36,8 +36,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 70 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：日本气象厅定位相差 118 公里（时次相差 3 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,8 +49,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-22 11时",
-            "windLevel": 12,
+            "time": "09-22 14时",
+            "windLevel": 11,
             "role": "verify"
           }
         ]
@@ -204,20 +204,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 36,
+    "total": 39,
     "counts": {
-      "暴雨": 30,
+      "暴雨": 33,
       "地质灾害": 6
     },
     "peak": {
-      "province": "四川",
+      "province": "广西",
       "kind": "暴雨",
       "level": "red",
-      "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260921223651.html",
-      "issuedAt": "2026/09/21 22:36"
+      "title": "广西壮族自治区北海市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/45050041600000_20260922145216.html",
+      "issuedAt": "2026/09/22 14:47"
     },
     "provinces": [
+      {
+        "province": "广西",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广西壮族自治区北海市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45050041600000_20260922145216.html",
+          "issuedAt": "2026/09/22 14:47"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
       {
         "province": "四川",
         "maxLevel": "red",
@@ -237,31 +255,13 @@
         "lng": 102.9
       },
       {
-        "province": "广西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广西壮族自治区钦州市灵山县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45072141600000_20260922123033.html",
-          "issuedAt": "2026/09/22 12:25"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
