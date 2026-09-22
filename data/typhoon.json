@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22 17:15",
+  "updatedAt": "2026-09-22 17:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 118 公里（时次相差 3 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 239 公里（时次相差 6 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,7 +49,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-22 14时",
+            "time": "09-22 17时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -204,18 +204,18 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 50,
+    "total": 52,
     "counts": {
-      "暴雨": 44,
-      "地质灾害": 6
+      "暴雨": 48,
+      "地质灾害": 4
     },
     "peak": {
       "province": "广西",
       "kind": "暴雨",
       "level": "red",
-      "title": "广西壮族自治区贵港市平南县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/45082141600000_20260922170659.html",
-      "issuedAt": "2026/09/22 16:55"
+      "title": "广西壮族自治区玉林市博白县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/45092341600000_20260922173621.html",
+      "issuedAt": "2026/09/22 17:33"
     },
     "provinces": [
       {
@@ -225,13 +225,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 15,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广西壮族自治区贵港市平南县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45082141600000_20260922170659.html",
-          "issuedAt": "2026/09/22 16:55"
+          "title": "广西壮族自治区玉林市博白县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45092341600000_20260922173621.html",
+          "issuedAt": "2026/09/22 17:33"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -255,6 +255,25 @@
         "lng": 113.4
       },
       {
+        "province": "云南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "地质灾害": "yellow"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "云南省德宏傣族景颇族自治州陇川县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53312441600000_20260922172749.html",
+          "issuedAt": "2026/09/22 17:26"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "四川",
         "maxLevel": "red",
         "floodLevel": "red",
@@ -273,23 +292,22 @@
         "lng": 102.9
       },
       {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "orange",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 7,
+        "count": 5,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省临沧市沧源佤族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53092741600000_20260922171102.html",
-          "issuedAt": "2026/09/22 17:09"
+          "level": "yellow",
+          "title": "福建省南平市邵武市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35078141600000_20260922171800.html",
+          "issuedAt": "2026/09/22 17:18"
         },
-        "lat": 25,
-        "lng": 101.5
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "湖南",
@@ -308,24 +326,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省泉州市安溪县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35052441600000_20260922170000.html",
-          "issuedAt": "2026/09/22 17:00"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "贵州",
@@ -352,7 +352,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
