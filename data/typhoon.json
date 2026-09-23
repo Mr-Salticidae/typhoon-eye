@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23 23:45",
+  "updatedAt": "2026-09-24 00:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,15 +7,15 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -34,14 +34,14 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 40 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 40 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
-            "id": "cma",
-            "name": "中央气象台",
+            "id": "zj",
+            "name": "浙江台风路径系统",
             "time": "09-23 23时",
             "windLevel": 8,
             "role": "primary"
@@ -61,7 +61,7 @@
         "pressure": 998,
         "moveDir": "西",
         "moveSpeed": 24,
-        "r7": null,
+        "r7": 150,
         "r10": null,
         "time": "09-23 23时",
         "position": "中心位于北纬 17.6 度、东经 136.6 度"
@@ -148,9 +148,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 26,
+    "total": 24,
     "counts": {
-      "暴雨": 19,
+      "暴雨": 17,
       "地质灾害": 7
     },
     "peak": {
@@ -169,7 +169,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -206,7 +206,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -318,7 +318,7 @@
       "endedAt": "2026-09-23 00:15",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 0
+      "daysSince": 1
     }
   ]
 }
