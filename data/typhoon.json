@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23 14:00",
+  "updatedAt": "2026-09-23 14:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 0
     },
     {
       "id": "jma",
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 31,
+    "total": 28,
     "counts": {
-      "暴雨": 24,
+      "暴雨": 21,
       "地质灾害": 7
     },
     "peak": {
@@ -82,25 +82,6 @@
         "lng": 102.9
       },
       {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省大理白族自治州大理市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53290141600000_20260923050459.html",
-          "issuedAt": "2026/09/23 05:03"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -117,6 +98,25 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省大理白族自治州大理市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53290141600000_20260923050459.html",
+          "issuedAt": "2026/09/23 05:03"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "江西",
@@ -153,24 +153,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省黔南布依族苗族自治州荔波县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52272241600000_20260923082634.html",
-          "issuedAt": "2026/09/23 08:26"
-        },
-        "lat": 26.8,
-        "lng": 106.9
       },
       {
         "province": "湖南",
