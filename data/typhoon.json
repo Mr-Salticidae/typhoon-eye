@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24 05:31",
+  "updatedAt": "2026-09-24 06:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 15 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 11 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-24 02时",
+            "time": "09-24 05时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-24 02时",
+            "time": "09-24 05时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -59,12 +59,12 @@
         "windLevel": 8,
         "windSpeed": 18,
         "pressure": 998,
-        "moveDir": "西",
-        "moveSpeed": 22,
+        "moveDir": "西北西",
+        "moveSpeed": 21,
         "r7": 150,
         "r10": null,
-        "time": "09-24 02时",
-        "position": "中心位于北纬 17.7 度、东经 135.8 度"
+        "time": "09-24 05时",
+        "position": "中心位于北纬 17.9 度、东经 134.9 度"
       },
       "track": [
         {
@@ -81,60 +81,76 @@
           "lng": 135.8,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-24 05时",
+          "lat": 17.9,
+          "lng": 134.9,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-24 14时",
-          "lat": 18,
-          "lng": 133.4,
+          "t": "09-24 17时",
+          "lat": 18.5,
+          "lng": 132.7,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-25 02时",
-          "lat": 18.8,
-          "lng": 131.2,
+          "t": "09-25 05时",
+          "lat": 19.3,
+          "lng": 130.5,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-25 14时",
-          "lat": 19.8,
-          "lng": 129.3,
+          "t": "09-25 17时",
+          "lat": 20.2,
+          "lng": 128.6,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-26 02时",
-          "lat": 20.9,
-          "lng": 127.8,
-          "wind": 11,
+          "t": "09-26 05时",
+          "lat": 21.2,
+          "lng": 127.3,
+          "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-26 14时",
-          "lat": 21.9,
-          "lng": 126.9,
+          "t": "09-26 17时",
+          "lat": 22.3,
+          "lng": 126.8,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-27 02时",
-          "lat": 22.8,
-          "lng": 126.8,
+          "t": "09-27 05时",
+          "lat": 23.2,
+          "lng": 126.9,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-28 02时",
-          "lat": 24.7,
-          "lng": 127,
+          "t": "09-28 05时",
+          "lat": 24.9,
+          "lng": 128.1,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-29 05时",
+          "lat": 26.5,
+          "lng": 129.6,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
@@ -144,62 +160,13 @@
     }
   ],
   "alerts": {
-    "ok": true,
+    "ok": false,
+    "error": "全部预警类别抓取失败",
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": [
-      "暴雨"
-    ],
-    "total": 6,
-    "counts": {
-      "地质灾害": 6
-    },
-    "peak": {
-      "province": "云南",
-      "kind": "地质灾害",
-      "level": "yellow",
-      "title": "云南省保山市昌宁县气象台发布地质灾害黄色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53052441600000_20260924033615.html",
-      "issuedAt": "2026/09/24 03:34"
-    },
-    "provinces": [
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省保山市昌宁县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53052441600000_20260924033615.html",
-          "issuedAt": "2026/09/24 03:34"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
-        "province": "湖北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "湖北省恩施土家族苗族自治州鹤峰县气象台 鹤峰县自然资源和规划局发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42282841600000_20260923105621.html",
-          "issuedAt": "2026/09/23 10:56"
-        },
-        "lat": 31,
-        "lng": 112.3
-      }
-    ]
+    "provinces": [],
+    "counts": {},
+    "peak": null
   },
   "recentlyEnded": [
     {
