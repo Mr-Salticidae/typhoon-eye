@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23 09:26",
+  "updatedAt": "2026-09-23 10:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 0
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 67,
+    "total": 69,
     "counts": {
-      "暴雨": 59,
+      "暴雨": 61,
       "地质灾害": 8
     },
     "peak": {
@@ -89,7 +89,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 16,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -119,6 +119,24 @@
         "lng": 118.3
       },
       {
+        "province": "四川",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "四川省凉山彝族自治州盐源县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51342341600000_20260923074752.html",
+          "issuedAt": "2026/09/23 07:47"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
+      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -135,24 +153,6 @@
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "四川",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "四川省凉山彝族自治州盐源县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51342341600000_20260923074752.html",
-          "issuedAt": "2026/09/23 07:47"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "贵州",
