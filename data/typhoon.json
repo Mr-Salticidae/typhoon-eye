@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23 20:07",
+  "updatedAt": "2026-09-23 20:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 0
     },
     {
       "id": "jma",
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 38,
+    "total": 31,
     "counts": {
-      "暴雨": 31,
+      "暴雨": 24,
       "地质灾害": 7
     },
     "peak": {
@@ -89,7 +89,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -101,22 +101,22 @@
         "lng": 113.4
       },
       {
-        "province": "广西",
+        "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区河池市天峨县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45122241600000_20260923172417.html",
-          "issuedAt": "2026/09/23 17:18"
+          "title": "江西省吉安市遂川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36082741600000_20260923201614.html",
+          "issuedAt": "2026/09/23 20:14"
         },
-        "lat": 23.8,
-        "lng": 108.8
+        "lat": 27.6,
+        "lng": 115.7
       },
       {
         "province": "新疆",
@@ -137,24 +137,6 @@
         "lng": 85.3
       },
       {
-        "province": "江西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "江西省吉安市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36080041600000_20260922214302.html",
-          "issuedAt": "2026/09/22 21:41"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
-      {
         "province": "湖南",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -171,24 +153,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省龙岩市漳平市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35088141600000_20260923175100.html",
-          "issuedAt": "2026/09/23 17:51"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "湖北",
@@ -233,13 +197,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "陕西省安康市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61090041600000_20260923182332.html",
-          "issuedAt": "2026/09/23 18:23"
+          "title": "陕西省安康市汉滨区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61090241600000_20260923200633.html",
+          "issuedAt": "2026/09/23 20:06"
         },
         "lat": 35.2,
         "lng": 108.9
