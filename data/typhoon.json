@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24 05:00",
+  "updatedAt": "2026-09-24 05:31",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
@@ -34,24 +34,17 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 15 公里、强度一致（2 源交叉校验一致）",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-24 02时",
-            "windLevel": 8,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "09-24 02时",
             "windLevel": 8,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -154,93 +147,39 @@
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": null,
-    "total": 18,
+    "partial": [
+      "暴雨"
+    ],
+    "total": 6,
     "counts": {
-      "暴雨": 11,
-      "地质灾害": 7
+      "地质灾害": 6
     },
     "peak": {
       "province": "云南",
-      "kind": "暴雨",
-      "level": "orange",
-      "title": "云南省大理白族自治州大理市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53290141600000_20260923050459.html",
-      "issuedAt": "2026/09/23 05:03"
+      "kind": "地质灾害",
+      "level": "yellow",
+      "title": "云南省保山市昌宁县气象台发布地质灾害黄色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53052441600000_20260924033615.html",
+      "issuedAt": "2026/09/24 03:34"
     },
     "provinces": [
       {
         "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省大理白族自治州大理市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53290141600000_20260923050459.html",
-          "issuedAt": "2026/09/23 05:03"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区桂林市平乐县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45033041600000_20260924043612.html",
-          "issuedAt": "2026/09/24 04:30"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿克苏地区温宿县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65292241600000_20260923145307.html",
-          "issuedAt": "2026/09/23 14:53"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
-        "province": "湖南",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow"
+          "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "湖南省郴州市桂东县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260923195554.html",
-          "issuedAt": "2026/09/23 19:55"
+          "title": "云南省保山市昌宁县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53052441600000_20260924033615.html",
+          "issuedAt": "2026/09/24 03:34"
         },
-        "lat": 27.6,
-        "lng": 111.7
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "湖北",
@@ -259,42 +198,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "四川",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "四川省达州市宣汉县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51172241600000_20260923155823.html",
-          "issuedAt": "2026/09/23 15:58"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "陕西省安康市汉滨区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61090241600000_20260923200633.html",
-          "issuedAt": "2026/09/23 20:06"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       }
     ]
   },
