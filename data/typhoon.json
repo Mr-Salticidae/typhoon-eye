@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24 00:15",
+  "updatedAt": "2026-09-24 00:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "zj",
@@ -34,17 +34,24 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "浙江台风路径系统",
+      "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 40 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 40 公里、强度一致（3 源交叉校验一致）",
         "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "09-23 23时",
+            "windLevel": 8,
+            "role": "primary"
+          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "09-23 23时",
             "windLevel": 8,
-            "role": "primary"
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -148,9 +155,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 24,
+    "total": 23,
     "counts": {
-      "暴雨": 17,
+      "暴雨": 16,
       "地质灾害": 7
     },
     "peak": {
@@ -198,24 +205,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省河源市龙川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44162241600000_20260923004435.html",
-          "issuedAt": "2026/09/23 00:41"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "江西",
@@ -288,6 +277,24 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "广东",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "广东省广州市增城区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44011841600000_20260923231654.html",
+          "issuedAt": "2026/09/23 23:15"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "陕西",
