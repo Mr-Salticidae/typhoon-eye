@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25 02:30",
+  "updatedAt": "2026-09-25 03:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 54 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 42 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-24 23时",
+            "time": "09-25 02时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -227,9 +227,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 25,
+    "total": 27,
     "counts": {
-      "暴雨": 23,
+      "暴雨": 25,
       "地质灾害": 2
     },
     "peak": {
@@ -258,6 +258,24 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省清远市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44180041600000_20260925023933.html",
+          "issuedAt": "2026/09/25 02:38"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "湖南",
@@ -294,24 +312,6 @@
         },
         "lat": 38.5,
         "lng": 115.5
-      },
-      {
-        "province": "广东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "广东省清远市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44180041600000_20260925021541.html",
-          "issuedAt": "2026/09/25 02:14"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "湖北",
@@ -356,13 +356,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "重庆市梁平区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015541600000_20260925021832.html",
-          "issuedAt": "2026/09/25 02:18"
+          "title": "重庆市县巫溪县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023841600000_20260925023148.html",
+          "issuedAt": "2026/09/25 02:31"
         },
         "lat": 29.8,
         "lng": 107.9
