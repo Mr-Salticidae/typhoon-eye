@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24 14:41",
+  "updatedAt": "2026-09-24 15:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,19 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 44 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-24 11时",
+            "time": "09-24 14时",
             "windLevel": 8,
             "role": "primary"
           },
           {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-24 14时",
+            "windLevel": 8,
+            "role": "verify"
+          },
+          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-24 11时",
+            "time": "09-24 14时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -60,11 +67,11 @@
         "windSpeed": 18,
         "pressure": 998,
         "moveDir": "西北西",
-        "moveSpeed": 19,
-        "r7": null,
+        "moveSpeed": 20,
+        "r7": 150,
         "r10": null,
-        "time": "09-24 11时",
-        "position": "中心位于北纬 18.4 度、东经 133.9 度"
+        "time": "09-24 14时",
+        "position": "中心位于北纬 18.8 度、东经 132.9 度"
       },
       "track": [
         {
@@ -105,68 +112,76 @@
           "lng": 133.9,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-24 14时",
+          "lat": 18.8,
+          "lng": 132.9,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-24 23时",
-          "lat": 19,
-          "lng": 131.9,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-25 11时",
-          "lat": 19.8,
-          "lng": 129.7,
+          "t": "09-25 02时",
+          "lat": 19.5,
+          "lng": 130.8,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-25 23时",
-          "lat": 20.8,
-          "lng": 128.2,
+          "t": "09-25 14时",
+          "lat": 20.3,
+          "lng": 128.8,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-26 11时",
-          "lat": 21.9,
-          "lng": 126.9,
+          "t": "09-26 02时",
+          "lat": 21.3,
+          "lng": 127.4,
+          "wind": 11,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "09-26 14时",
+          "lat": 22.5,
+          "lng": 126.7,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-26 23时",
-          "lat": 23,
+          "t": "09-27 02时",
+          "lat": 23.5,
           "lng": 126.8,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-27 11时",
-          "lat": 24,
-          "lng": 127.2,
+          "t": "09-27 14时",
+          "lat": 24.5,
+          "lng": 127.3,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-28 11时",
-          "lat": 25.7,
-          "lng": 128.4,
-          "wind": 12,
+          "t": "09-28 14时",
+          "lat": 26.6,
+          "lng": 129.7,
+          "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-29 11时",
-          "lat": 27.4,
-          "lng": 130.3,
+          "t": "09-29 14时",
+          "lat": 28.4,
+          "lng": 132.3,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
@@ -180,38 +195,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 29,
+    "total": 31,
     "counts": {
-      "暴雨": 27,
+      "暴雨": 29,
       "地质灾害": 2
     },
     "peak": {
-      "province": "新疆",
+      "province": "河北",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "新疆维吾尔自治区阿克苏地区温宿县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/65292241600000_20260923145307.html",
-      "issuedAt": "2026/09/23 14:53"
+      "level": "yellow",
+      "title": "河北省保定市易县气象台发布暴雨黄色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/13063341600000_20260924103511.html",
+      "issuedAt": "2026/09/24 10:35"
     },
     "provinces": [
-      {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿克苏地区温宿县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65292241600000_20260923145307.html",
-          "issuedAt": "2026/09/23 14:53"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
       {
         "province": "河北",
         "maxLevel": "yellow",
@@ -237,13 +234,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "湖南省郴州市桂东县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260923195554.html",
-          "issuedAt": "2026/09/23 19:55"
+          "title": "湖南省郴州市资兴市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43108141600000_20260924150307.html",
+          "issuedAt": "2026/09/24 15:02"
         },
         "lat": 27.6,
         "lng": 111.7
@@ -255,13 +252,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 1,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "广东省清远市佛冈县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44182141600000_20260924140137.html",
-          "issuedAt": "2026/09/24 14:00"
+          "title": "广东省韶关市翁源县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44022941600000_20260924145038.html",
+          "issuedAt": "2026/09/24 14:49"
         },
         "lat": 23.4,
         "lng": 113.4
