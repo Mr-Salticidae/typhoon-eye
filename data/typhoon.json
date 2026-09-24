@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24 21:45",
+  "updatedAt": "2026-09-24 22:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 57 公里、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-24 20时",
             "windLevel": 9,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-24 20时",
+            "windLevel": 9,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,7 +68,7 @@
         "pressure": 990,
         "moveDir": "西北西",
         "moveSpeed": 17,
-        "r7": null,
+        "r7": 220,
         "r10": null,
         "time": "09-24 20时",
         "position": "中心位于北纬 19.7 度、东经 131.9 度"
@@ -204,9 +211,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 20,
+    "total": 17,
     "counts": {
-      "暴雨": 18,
+      "暴雨": 15,
       "地质灾害": 2
     },
     "peak": {
@@ -237,42 +244,6 @@
         "lng": 111.7
       },
       {
-        "province": "河南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "河南省安阳市林州市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41058141600000_20260924185852.html",
-          "issuedAt": "2026/09/24 18:48"
-        },
-        "lat": 33.9,
-        "lng": 113.6
-      },
-      {
-        "province": "江西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "江西省吉安市遂川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36082741600000_20260924163946.html",
-          "issuedAt": "2026/09/24 16:37"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
-      {
         "province": "河北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -289,24 +260,6 @@
         },
         "lat": 38.5,
         "lng": 115.5
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省丽水市庆元县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33112641600000_20260924173918.html",
-          "issuedAt": "2026/09/24 17:40"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "湖北",
