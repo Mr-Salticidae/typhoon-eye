@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24 23:45",
+  "updatedAt": "2026-09-25 00:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 54 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 31 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-24 20时",
+            "time": "09-24 23时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -258,7 +258,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 7,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -268,6 +268,24 @@
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "四川",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "四川省阿坝藏族羌族自治州金川县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51322641600000_20260924234016.html",
+          "issuedAt": "2026/09/24 23:40"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "湖北",
@@ -306,24 +324,6 @@
         "lng": 101.5
       },
       {
-        "province": "四川",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "四川省达州市达川区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51170341600000_20260924160013.html",
-          "issuedAt": "2026/09/24 16:00"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
         "province": "陕西",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -352,7 +352,7 @@
       "endedAt": "2026-09-23 00:15",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 1
+      "daysSince": 2
     }
   ]
 }
