@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24 08:31",
+  "updatedAt": "2026-09-24 09:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 108 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-24 05时",
+            "time": "09-24 08时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -171,10 +171,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 20,
+    "total": 21,
     "counts": {
-      "暴雨": 16,
-      "地质灾害": 4
+      "暴雨": 18,
+      "地质灾害": 3
     },
     "peak": {
       "province": "广西",
@@ -282,7 +282,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -300,16 +300,34 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省保定市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13060041600000_20260924082411.html",
-          "issuedAt": "2026/09/24 08:24"
+          "title": "河北省保定市高碑店市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13068441600000_20260924083838.html",
+          "issuedAt": "2026/09/24 08:38"
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市县城口县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260924084731.html",
+          "issuedAt": "2026/09/24 08:47"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "陕西",
@@ -328,24 +346,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市开州区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015441600000_20260924055411.html",
-          "issuedAt": "2026/09/24 05:54"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       }
     ]
   },
