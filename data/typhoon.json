@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24 16:15",
+  "updatedAt": "2026-09-24 16:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -195,20 +195,56 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 26,
+    "total": 28,
     "counts": {
-      "暴雨": 24,
+      "暴雨": 26,
       "地质灾害": 2
     },
     "peak": {
-      "province": "广西",
+      "province": "湖南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "广西壮族自治区柳州市三江县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/45022641600000_20260924152338.html",
-      "issuedAt": "2026/09/24 15:14"
+      "title": "湖南省郴州市桂东县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260924164034.html",
+      "issuedAt": "2026/09/24 16:40"
     },
     "provinces": [
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省郴州市桂东县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260924164034.html",
+          "issuedAt": "2026/09/24 16:40"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
+        "province": "江西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江西省吉安市遂川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36082741600000_20260924163946.html",
+          "issuedAt": "2026/09/24 16:37"
+        },
+        "lat": 27.6,
+        "lng": 115.7
+      },
       {
         "province": "广西",
         "maxLevel": "orange",
@@ -262,24 +298,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省郴州市资兴市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43108141600000_20260924150307.html",
-          "issuedAt": "2026/09/24 15:02"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "湖北",
