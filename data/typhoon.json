@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 03:45",
+  "updatedAt": "2026-09-26 04:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 122 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 122 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-26 02时",
             "windLevel": 10,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-26 02时",
-            "windLevel": 10,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,8 +61,8 @@
         "pressure": 982,
         "moveDir": "北北西",
         "moveSpeed": 18,
-        "r7": 250,
-        "r10": 60,
+        "r7": null,
+        "r10": null,
         "time": "09-26 02时",
         "position": "中心位于北纬 21.1 度、东经 127.6 度"
       },
@@ -267,9 +260,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 39,
+    "total": 41,
     "counts": {
-      "暴雨": 37,
+      "暴雨": 39,
       "山洪灾害": 1,
       "地质灾害": 1
     },
@@ -289,7 +282,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 13,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -325,7 +318,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -355,6 +348,24 @@
         "lng": 85.3
       },
       {
+        "province": "湖北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖北省孝感市汉川市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42098441600000_20260926040954.html",
+          "issuedAt": "2026/09/26 04:09"
+        },
+        "lat": 31,
+        "lng": 112.3
+      },
+      {
         "province": "河南",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -365,9 +376,9 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "河南省驻马店市泌阳县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41172641600000_20260926023429.html",
-          "issuedAt": "2026/09/26 02:33"
+          "title": "河南省周口市沈丘县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41162441600000_20260926034257.html",
+          "issuedAt": "2026/09/26 03:45"
         },
         "lat": 33.9,
         "lng": 113.6
@@ -377,17 +388,16 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "山西省忻州市河曲县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14093041600000_20260926014100.html",
-          "issuedAt": "2026/09/26 01:41"
+          "title": "山西省忻州市五寨县自然资源局 五寨县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14092841600000_20260925232241.html",
+          "issuedAt": "2026/09/25 23:18"
         },
         "lat": 37.6,
         "lng": 112.3
