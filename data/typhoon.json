@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 06:01",
+  "updatedAt": "2026-09-26 06:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "zj",
@@ -34,17 +34,24 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "浙江台风路径系统",
+      "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 57 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里、强度一致（3 源交叉校验一致）",
         "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "09-26 05时",
+            "windLevel": 10,
+            "role": "primary"
+          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "09-26 05时",
             "windLevel": 10,
-            "role": "primary"
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -259,32 +266,139 @@
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": [
-      "暴雨",
-      "台风",
-      "山洪灾害"
-    ],
-    "total": 1,
+    "partial": null,
+    "total": 52,
     "counts": {
+      "暴雨": 50,
+      "山洪灾害": 1,
       "地质灾害": 1
     },
     "peak": {
-      "province": "山西",
-      "kind": "地质灾害",
-      "level": "yellow",
-      "title": "山西省忻州市五寨县自然资源局 五寨县气象台发布地质灾害黄色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/14092841600000_20260925232241.html",
-      "issuedAt": "2026/09/25 23:18"
+      "province": "辽宁",
+      "kind": "暴雨",
+      "level": "red",
+      "title": "辽宁省铁岭市开原市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/21128241600000_20260926060100.html",
+      "issuedAt": "2026/09/26 06:01"
     },
     "provinces": [
+      {
+        "province": "辽宁",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 21,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "辽宁省铁岭市开原市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21128241600000_20260926060100.html",
+          "issuedAt": "2026/09/26 06:01"
+        },
+        "lat": 41.8,
+        "lng": 122.6
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "重庆市开州区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50015441600000_20260925071633.html",
+          "issuedAt": "2026/09/25 07:16"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
+        "province": "湖北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖北省孝感市汉川市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42098441600000_20260926040954.html",
+          "issuedAt": "2026/09/26 04:09"
+        },
+        "lat": 31,
+        "lng": 112.3
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "新疆维吾尔自治区阿克苏地区库车市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65290241600000_20260925142755.html",
+          "issuedAt": "2026/09/25 14:27"
+        },
+        "lat": 41.1,
+        "lng": 85.3
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省湛江市雷州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44088241600000_20260925145055.html",
+          "issuedAt": "2026/09/25 14:47"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
+        "province": "河南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "河南省驻马店市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41170041600000_20260926054727.html",
+          "issuedAt": "2026/09/26 05:47"
+        },
+        "lat": 33.9,
+        "lng": 113.6
+      },
       {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
+          "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -294,6 +408,78 @@
         },
         "lat": 37.6,
         "lng": 112.3
+      },
+      {
+        "province": "安徽",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "安徽省亳州市利辛县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34162341600000_20260926062832.html",
+          "issuedAt": "2026/09/26 06:28"
+        },
+        "lat": 31.9,
+        "lng": 117.2
+      },
+      {
+        "province": "吉林",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "吉林省通化市梅河口市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22058141600000_20260926032125.html",
+          "issuedAt": "2026/09/26 03:12"
+        },
+        "lat": 43.7,
+        "lng": 126.2
+      },
+      {
+        "province": "河北",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "河北省保定市阜平县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13062441600000_20260925224157.html",
+          "issuedAt": "2026/09/25 22:41"
+        },
+        "lat": 38.5,
+        "lng": 115.5
+      },
+      {
+        "province": "内蒙古",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "内蒙古自治区赤峰市喀喇沁旗气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15042841600000_20260925164043.html",
+          "issuedAt": "2026/09/25 16:40"
+        },
+        "lat": 44,
+        "lng": 113.9
       }
     ]
   },
