@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 00:45",
+  "updatedAt": "2026-09-26 01:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 94 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 94 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-25 23时",
             "windLevel": 10,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-25 23时",
+            "windLevel": 10,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,8 +68,8 @@
         "pressure": 982,
         "moveDir": "北北西",
         "moveSpeed": 18,
-        "r7": null,
-        "r10": null,
+        "r7": 250,
+        "r10": 60,
         "time": "09-25 23时",
         "position": "中心位于北纬 20.9 度、东经 128.0 度"
       },
@@ -260,9 +267,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 32,
+    "total": 34,
     "counts": {
-      "暴雨": 30,
+      "暴雨": 32,
       "山洪灾害": 1,
       "地质灾害": 1
     },
@@ -282,7 +289,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 8,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -438,6 +445,24 @@
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "吉林",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "吉林省辽源市东丰县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/22042141600000_20260926005653.html",
+          "issuedAt": "2026/09/26 00:05"
+        },
+        "lat": 43.7,
+        "lng": 126.2
       },
       {
         "province": "内蒙古",
