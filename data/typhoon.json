@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25 17:00",
+  "updatedAt": "2026-09-25 17:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "舒力基",
       "enName": "SURIGAE",
       "code": "2626",
-      "level": "热带风暴（9级）",
+      "level": "强热带风暴（10级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 33 公里、强度差 1 级（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 62 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-25 14时",
-            "windLevel": 9,
+            "time": "09-25 17时",
+            "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-25 14时",
-            "windLevel": 9,
+            "time": "09-25 17时",
+            "windLevel": 10,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 9,
-        "windSpeed": 23,
-        "pressure": 990,
+        "windLevel": 10,
+        "windSpeed": 25,
+        "pressure": 985,
         "moveDir": "西北",
-        "moveSpeed": 13,
+        "moveSpeed": 16,
         "r7": 220,
         "r10": null,
-        "time": "09-25 14时",
-        "position": "中心位于北纬 20.6 度、东经 128.8 度"
+        "time": "09-25 17时",
+        "position": "中心位于北纬 20.8 度、东经 128.6 度"
       },
       "track": [
         {
@@ -184,69 +184,77 @@
           "lng": 128.8,
           "wind": 9,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-25 17时",
+          "lat": 20.8,
+          "lng": 128.6,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-26 02时",
-          "lat": 21.7,
-          "lng": 127.9,
-          "wind": 10,
+          "t": "09-26 05时",
+          "lat": 22.1,
+          "lng": 127.5,
+          "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-26 14时",
-          "lat": 22.8,
+          "t": "09-26 17时",
+          "lat": 23.2,
           "lng": 127.2,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-27 02时",
-          "lat": 23.8,
-          "lng": 127.4,
+          "t": "09-27 05时",
+          "lat": 24.3,
+          "lng": 127.7,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "09-27 14时",
-          "lat": 25,
-          "lng": 128.4,
+          "t": "09-27 17时",
+          "lat": 25.4,
+          "lng": 128.8,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "09-28 02时",
-          "lat": 26,
-          "lng": 129.5,
+          "t": "09-28 05时",
+          "lat": 26.3,
+          "lng": 130,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-28 14时",
-          "lat": 27,
-          "lng": 131.2,
+          "t": "09-28 17时",
+          "lat": 27.4,
+          "lng": 131.7,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-29 14时",
-          "lat": 29.1,
-          "lng": 134.3,
+          "t": "09-29 17时",
+          "lat": 29.4,
+          "lng": 135.1,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "09-30 14时",
-          "lat": 31.4,
-          "lng": 137.8,
-          "wind": 9,
+          "t": "09-30 17时",
+          "lat": 32.2,
+          "lng": 139,
+          "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         }
@@ -338,8 +346,8 @@
           "kind": "暴雨",
           "level": "orange",
           "title": "辽宁省朝阳市建平县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21132241600000_20260925164000.html",
-          "issuedAt": "2026/09/25 16:41"
+          "url": "http://www.nmc.cn/publish/alarm/21132241600000_20260925170400.html",
+          "issuedAt": "2026/09/25 17:06"
         },
         "lat": 41.8,
         "lng": 122.6
