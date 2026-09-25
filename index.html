@@ -2,10 +2,12 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="referrer" content="no-referrer">
 <title>风眼 · Typhoon Eye — 台风实况与应急预案</title>
-<meta name="description" content="台风实况信息与分级应急预案，一页看懂、照做即可。">
+<meta name="description" content="台风实况、分级预案与全年防台准备：平时备好，临风照做，风后复原。">
+<meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1116" media="(prefers-color-scheme: dark)">
 <script>
 /* 首帧前定主题，避免闪烁 */
 (function () {
@@ -23,10 +25,15 @@
 
 <header class="site-header">
   <div class="bar">
-    <a class="brand" href="index.html">风眼<small>TYPHOON EYE</small></a>
+    <button class="brand" type="button" data-go="now">风眼<small>TYPHOON EYE</small></button>
+    <nav class="top-nav" aria-label="主导航">
+      <button type="button" data-go="now">风眼</button>
+      <button type="button" data-go="prep">准备</button>
+      <button type="button" data-go="season">台风季</button>
+      <button type="button" data-go="help">求助</button>
+    </nav>
     <div class="header-actions">
       <span class="demo-badge" id="dataBadge" title="数据来源">加载中…</span>
-      <a class="gh-link" href="https://github.com/Mr-Salticidae/typhoon-eye" target="_blank" rel="noopener noreferrer">GitHub</a>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换昼夜主题">
         <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"/></svg>
@@ -35,129 +42,239 @@
   </div>
 </header>
 
-<div class="notice-bar" role="note" id="noticeBar">
-  数据加载中……防灾决策请以<b>当地政府与气象部门</b>发布的官方预警为准。
-</div>
+<p class="notice-bar" role="note" id="noticeBar">
+  防灾决策请以<b>当地政府与气象部门</b>发布的官方预警为准
+</p>
 
 <main>
 
-  <!-- 台风一句话实况 -->
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="hero-kicker" id="tyKicker">第 <span id="tyCode">--</span> 号台风 · <span id="tyEnName">--</span></p>
-      <h1 id="tyName">--</h1>
-      <p class="hero-level"><span class="eye-dot" aria-hidden="true"></span><span id="tyLevel">--</span></p>
-      <p class="hero-sub" id="tySummary">--</p>
-      <p class="hero-verify" id="tyVerify" hidden></p>
-      <div class="ty-switch" id="tySwitch" hidden></div>
-    </div>
-  </section>
+  <!-- ============ 风眼：此刻态势 ============ -->
+  <section class="view" id="view-now" aria-label="风眼 · 此刻">
+    <div class="now-grid">
+      <div class="now-main">
 
-  <!-- 01 实况 -->
-  <section class="section" id="live">
-    <div class="sec-head">
-      <p class="sec-kicker"><i>01</i>实况</p>
-      <h2>它现在在哪里、有多强</h2>
-      <p class="sec-desc" id="tyPosition">--</p>
-    </div>
-    <div class="stats" id="statsGrid"></div>
-  </section>
+        <article class="status-card" id="statusCard" data-state="loading">
+          <p class="status-kicker" id="tyKicker">西北太平洋</p>
+          <h1 id="tyName">加载中</h1>
+          <p class="status-level"><span class="eye-dot" aria-hidden="true"></span><span id="tyLevel">正在获取最新数据…</span></p>
+          <p class="status-verdict" id="tyVerdict" hidden></p>
+          <p class="status-summary" id="tySummary" hidden></p>
+          <div class="status-chips">
+            <span class="level-chip" id="levelChip" hidden></span>
+            <span class="time-chip" id="timeChip" hidden></span>
+          </div>
+          <details class="status-verify" id="tyVerify" hidden>
+            <summary id="tyVerifyHead"></summary>
+            <p id="tyVerifyBody"></p>
+          </details>
+          <button class="share-btn" id="shareBtn" type="button" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/></svg>
+            <span>转告家人</span>
+          </button>
+        </article>
 
-  <!-- 02 雨情 —— 台风等级只反映风速，致灾的往往是水。见 README「为什么并列雨情」 -->
-  <section class="section" id="risk" hidden>
-    <div class="sec-head">
-      <p class="sec-kicker"><i>02</i>雨情</p>
-      <h2>它正在下多大的雨</h2>
-      <p class="sec-desc" id="riskDesc">台风等级只反映风速。真正造成伤亡的常常是降雨、山洪与溃坝，这里并列呈现台风影响范围内的洪涝类预警。</p>
-    </div>
-    <p class="risk-callout" id="riskCallout" hidden></p>
-    <div class="risk-provinces" id="riskProvinces"></div>
-    <p class="risk-note meta" id="riskNote"></p>
-  </section>
+        <div class="ty-switch" id="tySwitch" role="group" aria-label="切换台风" hidden></div>
 
-  <!-- 03 路径 -->
-  <section class="section" id="track">
-    <div class="sec-head">
-      <p class="sec-kicker"><i>03</i>路径</p>
-      <h2>它从哪来、往哪去</h2>
-      <p class="sec-desc">示意图仅表达空间趋势，不用于导航或撤离路线判断，也不作任何疆界表达。悬停或点按路径点可查看逐时强度。</p>
-    </div>
-    <div class="map-wrap" id="mapWrap">
-      <svg id="trackMap" viewBox="0 0 800 560" role="img" aria-label="台风路径示意图：历史路径为实线，预报路径为虚线">
-        <g id="baseLayer" aria-hidden="true"></g><!-- 简化海岸线（示意），由 app.js 按经纬度绘制 -->
-        <g class="cities" id="cityLayer" aria-hidden="true"></g>
-        <g id="trackLayer"></g>
-      </svg>
-      <div class="map-tooltip" id="mapTooltip" hidden></div>
-      <div class="map-legend" aria-hidden="true">
-        <span><i class="lg-line"></i>已过路径</span>
-        <span><i class="lg-dash"></i>预报路径</span>
-        <span><i class="lg-now"></i>当前位置</span>
-      </div>
-      <span class="map-note" aria-hidden="true">海岸线为示意</span>
-    </div>
-  </section>
+        <button class="todo-card" id="todoCard" type="button" data-go="prep" hidden>
+          <span class="ring" id="todoRing" aria-hidden="true"></span>
+          <span class="todo-text">
+            <b id="todoTitle">现在，该做什么</b>
+            <small id="todoSub"></small>
+          </span>
+          <span class="chev" aria-hidden="true">›</span>
+        </button>
 
-  <!-- 03 预案 -->
-  <section class="section" id="plan">
-    <div class="sec-head">
-      <p class="sec-kicker"><i>04</i>预案</p>
-      <h2 id="planHeadTitle">现在，该做什么</h2>
-      <p class="sec-desc">先选预警等级，再按地区特点补充行动清单。高等级自动包含更低等级事项；通用清单进度仅保存在本机。</p>
-    </div>
-
-    <p class="plan-first" id="planFirst">第一原则：<b>服从当地政府与社区的统一安排</b>，收到转移指令立即执行。</p>
-
-    <div class="region-picker" aria-labelledby="regionPickerTitle">
-      <div class="region-picker-head">
-        <div>
-          <p class="region-kicker">按地区特点补充</p>
-          <h3 id="regionPickerTitle">你想查看哪类地区的预案？</h3>
+        <div class="teasers" id="teasers" hidden>
+          <button class="teaser" type="button" data-go="season" data-sub="storms">
+            <b id="teaserSeason">本季台风</b>
+            <small id="teaserSeasonSub">路径全景与强度回顾</small>
+          </button>
+          <button class="teaser" type="button" data-go="season" data-sub="quiz">
+            <b>防台小课堂</b>
+            <small>5 道题，看看你能答对几道</small>
+          </button>
         </div>
-        <span class="privacy-mark">不定位 · 选择不上传</span>
-      </div>
-      <p class="region-help">可多选，也可替家人查看。这不是所在地问卷：页面不请求 GPS、IP 定位或精确地址，选择仅在本次打开期间生效。</p>
-      <div class="region-options" id="regionOptions" role="group" aria-label="地区特点，可多选"></div>
-      <p class="region-status" id="regionStatus" aria-live="polite">当前仅显示全国通用清单。</p>
-    </div>
 
-    <div class="level-tabs" role="tablist" aria-label="预警等级" id="levelTabs"></div>
-    <p class="level-hint meta" id="levelHint" hidden>已按台风风力与影响范围内洪涝类预警的<b>较高者</b>预选参考等级，实际预警级别请以当地气象部门发布为准。</p>
+        <!-- 实况 -->
+        <section class="block" id="live" hidden>
+          <h2 class="block-title">它现在有多强</h2>
+          <p class="block-desc" id="tyPosition"></p>
+          <div class="stats" id="statsGrid"></div>
+        </section>
 
-    <div class="plan-panel" id="planPanel">
-      <div class="plan-head">
-        <h3 id="planTitle">--</h3>
-        <p class="plan-signal" id="planSignal">--</p>
+        <!-- 雨情 —— 台风等级只反映风速，致灾的往往是水。见 README「为什么并列雨情」 -->
+        <section class="block" id="risk" hidden>
+          <h2 class="block-title">它正在下多大的雨</h2>
+          <p class="risk-callout" id="riskCallout" hidden></p>
+          <div class="risk-provinces" id="riskProvinces"></div>
+          <p class="risk-note" id="riskNote"></p>
+          <details class="why">
+            <summary>为什么要看雨情？</summary>
+            <p>台风等级只反映风速。真正造成伤亡的常常是降雨、山洪与溃坝：2026 年美莎克全程未升格为台风级，却因内陆滞留与极端降雨酿成重大伤亡。因此参考等级取「风力档」与「洪涝预警档」的较高者。</p>
+          </details>
+        </section>
       </div>
-      <div class="plan-progress">
-        <div class="bar"><i id="progressBar"></i></div>
-        <span id="progressText">0 / 0</span>
+
+      <div class="now-side">
+        <!-- 路径 -->
+        <section class="block" id="track" hidden>
+          <h2 class="block-title">它从哪来、往哪去</h2>
+          <div class="map-wrap" id="mapWrap">
+            <svg id="trackMap" viewBox="0 0 800 560" role="img" aria-label="台风路径示意图：历史路径为实线，预报路径为虚线">
+              <g id="baseLayer" aria-hidden="true"></g><!-- 简化海岸线（示意），由 app.js 按经纬度绘制 -->
+              <g class="cities" id="cityLayer" aria-hidden="true"></g>
+              <g id="trackLayer"></g>
+            </svg>
+            <div class="map-legend" aria-hidden="true">
+              <span><i class="lg-line"></i>已过</span>
+              <span><i class="lg-dash"></i>预报</span>
+              <span><i class="lg-now"></i>当前</span>
+            </div>
+          </div>
+          <div class="scrub" id="scrub">
+            <button class="scrub-play" id="scrubPlay" type="button" aria-label="播放路径">
+              <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+              <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+            </button>
+            <input class="scrub-range" id="scrubRange" type="range" min="0" max="0" step="1" value="0" aria-label="路径时间轴，拖动查看各时次">
+          </div>
+          <p class="scrub-read" id="scrubRead" aria-live="polite"></p>
+          <p class="map-note" id="mapNote">示意图仅表达空间趋势，不用于导航或撤离路线判断，也不作任何疆界表达。</p>
+        </section>
       </div>
-      <ul class="checklist" id="checklist"></ul>
-      <p class="plan-tone" id="planTone"></p>
     </div>
   </section>
 
-  <!-- 04 应急 -->
-  <section class="section" id="help">
-    <div class="sec-head">
-      <p class="sec-kicker"><i>05</i>应急</p>
-      <h2>需要帮助时，找谁</h2>
-      <p class="sec-desc">电话可直接点按拨出；权威信息源建议提前收藏。</p>
+  <!-- ============ 准备：平时 · 预警 · 风后 ============ -->
+  <section class="view" id="view-prep" aria-labelledby="prepTitle" hidden>
+    <header class="view-head">
+      <h2 id="prepTitle">准备</h2>
+      <p>防台是一年四季的事：平时备好，临风照做，风后复原。</p>
+    </header>
+
+    <div class="seg phase-tabs" id="phaseTabs" role="group" aria-label="阶段">
+      <button type="button" data-phase="calm">平时常备</button>
+      <button type="button" data-phase="warn">预警应对</button>
+      <button type="button" data-phase="after">风后恢复</button>
     </div>
+
+    <div class="phase-panel" id="phasePanel">
+      <div class="phase-summary">
+        <span class="ring ring-lg" id="phaseRing" aria-hidden="true"></span>
+        <div class="phase-summary-text">
+          <h3 id="phaseTitle">--</h3>
+          <p id="phaseSub">--</p>
+        </div>
+      </div>
+
+      <p class="plan-first" id="planFirst" hidden></p>
+
+      <div id="warnControls" hidden>
+        <div class="seg level-tabs" id="levelTabs" role="group" aria-label="预警等级"></div>
+        <p class="level-hint" id="levelHint" hidden></p>
+
+        <details class="region-picker" id="regionPicker">
+          <summary>
+            <span class="region-sum-title">按地区特点补充</span>
+            <span class="region-sum-state" id="regionSumState">未选择</span>
+          </summary>
+          <p class="region-help">可多选，也可替家人查看。页面不请求 GPS、IP 定位或精确地址，选择只在本次打开期间有效，刷新即清空。</p>
+          <div class="region-options" id="regionOptions" role="group" aria-label="地区特点，可多选"></div>
+        </details>
+      </div>
+
+      <div class="kit-meta" id="kitMeta" hidden>
+        <p id="kitWhen"></p>
+        <button type="button" class="ghost-btn" id="kitStamp">我刚盘点过</button>
+      </div>
+
+      <div id="checkGroups"></div>
+
+      <div class="phase-foot">
+        <p class="plan-tone" id="planTone"></p>
+        <button type="button" class="ghost-btn subtle" id="resetBtn">清空本页勾选</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 台风季：存档 + 小课堂 ============ -->
+  <section class="view" id="view-season" aria-labelledby="seasonTitle" hidden>
+    <header class="view-head">
+      <h2 id="seasonTitle">台风季</h2>
+      <p>每一场风都值得记住。回看今年的台风，也顺手补一课。</p>
+    </header>
+
+    <div class="seg sub-tabs" id="seasonTabs" role="group" aria-label="台风季内容">
+      <button type="button" data-sub="storms">本季台风</button>
+      <button type="button" data-sub="quiz">防台小课堂</button>
+    </div>
+
+    <div id="seasonStorms">
+      <div class="season-tiles" id="seasonTiles"></div>
+      <p class="season-note" id="seasonNote" hidden></p>
+      <div class="season-layout">
+        <div class="season-map-col">
+          <div class="season-map-wrap">
+            <svg id="seasonMap" viewBox="0 0 800 500" role="img" aria-label="本季台风路径全景（示意）"></svg>
+          </div>
+          <p class="season-read" id="seasonRead" aria-live="polite"></p>
+        </div>
+        <ol class="storm-list" id="stormList"></ol>
+      </div>
+    </div>
+
+    <div id="seasonQuiz" hidden>
+      <div class="quiz" id="quiz"></div>
+    </div>
+  </section>
+
+  <!-- ============ 求助 ============ -->
+  <section class="view" id="view-help" aria-labelledby="helpTitle" hidden>
+    <header class="view-head">
+      <h2 id="helpTitle">需要帮助时，找谁</h2>
+      <p>号码可直接点按拨出；权威信息源建议提前收藏。</p>
+    </header>
     <div class="contacts" id="contactGrid"></div>
+
+    <h3 class="sub-title">权威信息源</h3>
     <div class="sources" id="sourceList"></div>
+
+    <h3 class="sub-title">隐私边界</h3>
+    <ul class="privacy-list">
+      <li>不请求定位权限，不读取 GPS，不通过 IP 推断位置，也不要求填写住址。</li>
+      <li>地区场景选择只存在当前页面内存中，刷新即清空。</li>
+      <li>主题、清单勾选与应急包盘点日期只保存在本机浏览器，不会上传；项目没有账号系统与分析埋点。</li>
+    </ul>
+
+    <footer class="site-footer">
+      <p class="footer-brand">风眼<span>TYPHOON EYE</span></p>
+      <p class="footer-line">信息看得懂，准备做得到。愿每一场风，都只是路过。</p>
+      <p class="footer-meta" id="footerMeta">
+        v1.0 · 中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）三源交叉校验，叠加中央气象台预警发布平台的暴雨 / 山洪 / 地质灾害预警，每 15 分钟自动更新，异常时保留缓存或演示数据 · 小地图底图为 Natural Earth（public domain） · <a href="https://github.com/Mr-Salticidae/typhoon-eye" target="_blank" rel="noopener noreferrer">开源于 GitHub</a> · MIT License
+      </p>
+    </footer>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <p class="footer-brand">风眼<span>TYPHOON EYE</span></p>
-  <p class="footer-line">信息看得懂，准备做得到。愿每一场风，都只是路过。</p>
-  <p class="footer-meta" id="footerMeta">
-    v0.8 · 中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）三源交叉校验，叠加中央气象台预警发布平台的暴雨 / 山洪 / 地质灾害预警，每 15 分钟自动更新，异常时保留缓存或演示数据 · 小地图底图为 Natural Earth（public domain） · <a href="https://github.com/Mr-Salticidae/typhoon-eye" target="_blank" rel="noopener noreferrer">开源于 GitHub</a> · MIT License
-  </p>
-</footer>
+<nav class="tabbar" aria-label="主导航">
+  <button type="button" data-go="now">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M20.5 7.5C18 4 13.5 3 10 4.8S4.8 10.6 7 14.2"/><path d="M3.5 16.5C6 20 10.5 21 14 19.2s5.2-5.8 3-9.4"/><circle cx="12" cy="12" r="2.6"/></svg>
+    <span>风眼</span>
+  </button>
+  <button type="button" data-go="prep">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="3.5" width="15" height="17" rx="2.5"/><path d="m8.5 9.5 2 2 4-4M8.5 15.5h7"/></svg>
+    <span>准备</span>
+  </button>
+  <button type="button" data-go="season">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4.5 3.5 6.5v13l5.5-2 6 2 5.5-2v-13l-5.5 2z"/><path d="M9 4.5v13M15 6.5v13"/></svg>
+    <span>台风季</span>
+  </button>
+  <button type="button" data-go="help">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 4h3.2l1.8 4.6-2.3 1.4a11 11 0 0 0 5.8 5.8l1.4-2.3 4.6 1.8v3.2a2 2 0 0 1-2.1 2A16 16 0 0 1 3.5 6.1 2 2 0 0 1 5.5 4z"/></svg>
+    <span>求助</span>
+  </button>
+</nav>
 
 <script src="assets/data.js"></script>
 <script src="assets/basemap.js"></script>
