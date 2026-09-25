@@ -1,6 +1,7 @@
-/* 风眼 · Typhoon Eye —— 页面交互
-   零依赖。优先加载 data/typhoon.json（Actions 定时生成的实时数据），
-   失败时降级为 assets/data.js 内置演示数据。 */
+/* 风眼 · Typhoon Eye —— 页面交互（v1.0）
+   零依赖。四个视图：风眼（此刻态势）/ 准备（平时 · 预警 · 风后）/ 台风季（存档与小课堂）/ 求助。
+   优先加载 data/typhoon.json（Actions 定时生成的实时数据），
+   失败时依次降级为包内缓存与 assets/data.js 内置演示数据。 */
 (function () {
   "use strict";
 
@@ -27,6 +28,32 @@
     for (var k in attrs) n.setAttribute(k, attrs[k]);
     return n;
   }
+  function each(list, fn) { Array.prototype.forEach.call(list, fn); }
+  function pad2(n) { return (n < 10 ? "0" : "") + n; }
+  function todayStr() {
+    var d = new Date();
+    return d.getFullYear() + "-" + pad2(d.getMonth() + 1) + "-" + pad2(d.getDate());
+  }
+  /* 本地日期 "YYYY-MM-DD" 距今天数 */
+  function daysSince(ymd) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(ymd || "");
+    if (!m) return null;
+    var then = new Date(+m[1], +m[2] - 1, +m[3]);
+    var now = new Date(); now.setHours(0, 0, 0, 0);
+    return Math.max(0, Math.round((now - then) / 864e5));
+  }
+  /* "YYYY-MM-DD HH:mm"（北京时间）→ 毫秒 */
+  function bjMs(s) {
+    var m = /^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})$/.exec(s || "");
+    return m ? Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4] - 8, +m[5]) : null;
+  }
+
+  /* B 站 Toy 环境中页面运行在沙箱 iframe 内，部分能力（tel:、分享、弹窗）受限 */
+  var IN_FRAME = (function () {
+    try { return window.self !== window.top; } catch (e) { return true; }
+  })();
+  var PAGES_URL = "https://mr-salticidae.github.io/typhoon-eye/";
+  var TOY_URL = "https://www.bilibili.com/toy/YliUzbE5TOqySu4G/index.html";
 
   /* ---------- 主题 ---------- */
   var THEME_KEY = "typhoon-eye:theme";
@@ -390,14 +417,59 @@
     fitText(sub, headMax);
   }
 
+  /* 距我国大陆海岸线（示意折线）的最近距离，按线段计算（公里） */
+  function coastKm(lat, lng) {
+    var min = Infinity, rad = Math.PI / 180, kx = Math.cos(lat * rad) * 111.32, ky = 110.57;
+    for (var i = 1; i < COAST.length; i++) {
+      var ax = (COAST[i - 1][1] - lng) * kx, ay = (COAST[i - 1][0] - lat) * ky;
+      var bx = (COAST[i][1] - lng) * kx, by = (COAST[i][0] - lat) * ky;
+      var dx = bx - ax, dy = by - ay, len = dx * dx + dy * dy;
+      var t = len ? Math.max(0, Math.min(1, -(ax * dx + ay * dy) / len)) : 0;
+      var px = ax + t * dx, py = ay + t * dy;
+      min = Math.min(min, Math.sqrt(px * px + py * py));
+    }
+    return min;
+  }
+  /* 中心是否在陆地上空（Natural Earth 1:110m，示意精度）。
+     台风登陆后在内陆滞留时，"距海岸 200 公里"会被读成还在海上——必须先判陆地 */
+  function onLand(lat, lng) {
+    if (typeof WORLD_LAND === "undefined") return false;
+    var boxes = landBoxes(), x = lng < MINI_CUT ? lng + 360 : lng, y = lat;
+    for (var r = 0; r < WORLD_LAND.length; r++) {
+      var b = boxes[r];
+      if (x < b[0] || x > b[2] || y < b[1] || y > b[3]) continue;
+      var f = WORLD_LAND[r], inside = false;
+      for (var i = 0, j = f.length - 2; i < f.length; j = i, i += 2) {
+        if ((f[i + 1] > y) !== (f[j + 1] > y) &&
+            x < (f[j] - f[i]) * (y - f[i + 1]) / (f[j + 1] - f[i + 1]) + f[i]) inside = !inside;
+      }
+      if (inside) return true;
+    }
+    return false;
+  }
+  function round100(km) { return Math.max(100, Math.round(km / 100) * 100); }
+  function whereText(lat, lng) {
+    var km = coastKm(lat, lng);
+    if (km < 120) return "中心紧邻我国大陆沿海";
+    if (onLand(lat, lng)) return "中心位于陆地上空" + (km <= 800 ? "，距我国大陆海岸线约 " + round100(km) + " 公里" : "");
+    return "距我国大陆约 " + round100(km) + " 公里";
+  }
+
+  /* ---------- 路径图 + 时间轴 ---------- */
+  var scrub = { pts: [], els: [], idx: 0, ring: null, timer: null };
+  var mapStale = false;
+  var PHASE_TEXT = { past: "已过", now: "当前位置", forecast: "预报" };
+
   function renderMap(track) {
     var svg = $("trackMap");
     var baseLayer = $("baseLayer");
     var cityLayer = $("cityLayer");
     var trackLayer = $("trackLayer");
     baseLayer.innerHTML = ""; cityLayer.innerHTML = ""; trackLayer.innerHTML = "";
-    hideTip();
+    stopPlay();
     lastTrack = track; /* 小地图缩放要按同一条路径重画 */
+    /* 视图隐藏时量不到文字宽度，切回"风眼"时再画一次 */
+    mapStale = $("view-now").hidden;
 
     /* 截断远海段是为了不把底图缩得太小，代价是当前位置也可能被截掉：整条路径都在
        西北太平洋远洋时图上会空无一物。因此以"当前位置在不在近海窗口内"决定视图——
@@ -477,68 +549,74 @@
     trackLayer.appendChild(svgEl("polyline", { points: lineOf(pts.slice(0, nowIdx + 1)), class: "track-line" }));
     trackLayer.appendChild(svgEl("polyline", { points: lineOf(pts.slice(nowIdx)), class: "track-line forecast" }));
 
+    /* 点太小手指点不准：逐点可点，但主交互交给下方时间轴 */
+    scrub.pts = pts; scrub.els = [];
     pts.forEach(function (p, i) {
-      var g = svgEl("g", { class: "tp " + p.data.phase, tabindex: "0" });
-      g.setAttribute("aria-label", p.data.t + "，" + (p.data.strong || "") + "，风力" + p.data.wind + "级，" + (PHASE_TEXT[p.data.phase] || ""));
+      var g = svgEl("g", { class: "tp " + p.data.phase });
       var r = Math.max(4, Math.min(9, 4 + (p.data.wind - 8) * 0.6)) * f;
+      g.appendChild(svgEl("circle", { cx: p.x, cy: p.y, r: Math.max(r, 12 * f), class: "tp-hit" }));
       if (i === nowIdx) {
         g.appendChild(svgEl("circle", { cx: p.x, cy: p.y, r: 10 * f, class: "tp-now-halo" }));
         g.appendChild(svgEl("circle", { cx: p.x, cy: p.y, r: r, class: "dot tp-now-core" }));
       } else {
         g.appendChild(svgEl("circle", { cx: p.x, cy: p.y, r: r, class: "dot" }));
       }
-      g.addEventListener("pointerenter", function () { showTip(g, p); });
-      g.addEventListener("pointerleave", hideTip);
-      g.addEventListener("focus", function () { showTip(g, p); });
-      g.addEventListener("blur", hideTip);
-      g.addEventListener("click", function (e) { e.stopPropagation(); showTip(g, p); });
+      g.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") selectPoint(i); });
+      g.addEventListener("click", function (e) { e.stopPropagation(); stopPlay(); selectPoint(i); });
       trackLayer.appendChild(g);
+      scrub.els.push(g);
     });
+    scrub.ring = svgEl("circle", { class: "scrub-ring", r: 13 * f, cx: -999, cy: -999 });
+    trackLayer.appendChild(scrub.ring);
 
-    $("mapWrap").querySelector(".map-note").textContent = farOcean
-      ? "远洋视图 · 小地图框出当前图幅 · 经纬网为示意"
-      : (omitted > 0 ? "海岸线为示意 · 部分远海路径未显示" : "海岸线为示意");
+    var range = $("scrubRange");
+    range.max = Math.max(0, pts.length - 1);
+    $("scrub").hidden = pts.length < 2;
+    selectPoint(nowIdx);
+
+    $("mapNote").textContent = "示意图仅表达空间趋势，不用于导航或撤离路线判断，也不作任何疆界表达。" +
+      (farOcean ? "当前为远洋视图：经纬网为示意，小地图框出本图在地球上的位置。"
+        : (omitted > 0 ? "海岸线为示意，部分远海路径未显示。" : "海岸线为示意。"));
   }
 
-  /* ---------- 路径点提示 ---------- */
-  var tooltip = $("mapTooltip");
-  var mapWrap = $("mapWrap");
-  var activeTp = null;
-  var PHASE_TEXT = { past: "已过", now: "当前位置", forecast: "预报" };
+  function selectPoint(i) {
+    if (!scrub.pts.length) return;
+    i = Math.max(0, Math.min(scrub.pts.length - 1, i));
+    scrub.idx = i;
+    scrub.els.forEach(function (g, j) {
+      g.classList.toggle("is-active", j === i);
+      g.classList.toggle("is-ahead", j > i);
+    });
+    var p = scrub.pts[i], d = p.data;
+    scrub.ring.setAttribute("cx", p.x);
+    scrub.ring.setAttribute("cy", p.y);
+    $("scrubRange").value = i;
+    var read = $("scrubRead");
+    read.innerHTML = "";
+    read.appendChild(el("b", null, d.t));
+    read.appendChild(document.createTextNode(" · " + (d.strong ? d.strong + " · " : "") + "风力 " + d.wind + " 级 · "));
+    read.appendChild(el("span", "ph ph-" + d.phase, PHASE_TEXT[d.phase] || ""));
+  }
 
-  function showTip(g, p) {
-    if (activeTp) activeTp.classList.remove("is-active");
-    activeTp = g;
-    g.classList.add("is-active");
-    tooltip.innerHTML = "";
-    tooltip.appendChild(el("b", null, p.data.t));
-    tooltip.appendChild(document.createElement("br"));
-    var strong = p.data.strong ? p.data.strong + " · " : "";
-    tooltip.appendChild(document.createTextNode(strong + "风力 " + p.data.wind + " 级 · "));
-    tooltip.appendChild(el("span", "ph", PHASE_TEXT[p.data.phase] || ""));
-    tooltip.hidden = false;
-    /* 锚定实心点而非动画光晕，光晕在缩放中会导致定位漂移 */
-    var dot = g.querySelector("circle.dot") || g.querySelector("circle");
-    var r = dot.getBoundingClientRect();
-    var wr = mapWrap.getBoundingClientRect();
-    var cx = r.left - wr.left + r.width / 2;
-    var cy = r.top - wr.top;
-    /* map-wrap 为 overflow:hidden，需水平钳位、上缘翻转，避免边缘点的提示被裁切 */
-    var half = tooltip.offsetWidth / 2;
-    cx = Math.max(half + 6, Math.min(cx, wr.width - half - 6));
-    var flipBelow = cy < tooltip.offsetHeight + 18;
-    tooltip.classList.toggle("below", flipBelow);
-    if (flipBelow) cy = r.top - wr.top + r.height;
-    tooltip.style.left = cx + "px";
-    tooltip.style.top = cy + "px";
+  function stopPlay() {
+    if (scrub.timer) { clearInterval(scrub.timer); scrub.timer = null; }
+    $("mapWrap").classList.remove("is-playing");
+    $("scrub").classList.remove("is-playing");
+    $("scrubPlay").setAttribute("aria-label", "播放路径");
   }
-  function hideTip() {
-    tooltip.hidden = true;
-    if (activeTp) { activeTp.classList.remove("is-active"); activeTp = null; }
+  function startPlay() {
+    if (scrub.pts.length < 2) return;
+    if (scrub.idx >= scrub.pts.length - 1) selectPoint(0);
+    $("mapWrap").classList.add("is-playing");
+    $("scrub").classList.add("is-playing");
+    $("scrubPlay").setAttribute("aria-label", "暂停");
+    scrub.timer = setInterval(function () {
+      if (scrub.idx >= scrub.pts.length - 1) { stopPlay(); return; }
+      selectPoint(scrub.idx + 1);
+    }, 340);
   }
-  document.addEventListener("click", function (e) {
-    if (!tooltip.hidden && !e.target.closest(".tp")) hideTip();
-  });
+  $("scrubPlay").addEventListener("click", function () { if (scrub.timer) stopPlay(); else startPlay(); });
+  $("scrubRange").addEventListener("input", function () { stopPlay(); selectPoint(+this.value); });
 
   /* ---------- 实况面板 ---------- */
   function fmt(v, dash) { return (v === null || v === undefined || v === "") ? (dash || "—") : v; }
@@ -561,6 +639,18 @@
     if (d.length === 2) return "朝" + d + "方向移动";
     return "接近正" + d[0] + "、略偏" + (d[0] === d[1] ? d[2] : d[1]);
   }
+  /* 气象播报口径："北北西" → "北偏西"，"西北西" → "西偏北" */
+  function dirSpoken(d) {
+    if (typeof d !== "string" || DIR_DEG[d] === undefined) return null;
+    d = DIR_CANON[d] || d;
+    if (d.length < 3) return d;
+    return d[0] + "偏" + (d[0] === d[1] ? d[2] : d[1]);
+  }
+  function moveText(now) {
+    var dir = dirSpoken(now.moveDir);
+    if (!dir) return "";
+    return (now.moveSpeed ? "以每小时约 " + now.moveSpeed + " 公里的速度" : "") + "向" + dir + "方向移动";
+  }
   /* 小罗盘：外圈 + 指北刻度 + 按方位角旋转的指针 */
   function compassEl(deg) {
     var svg = svgEl("svg", { class: "compass", viewBox: "0 0 24 24", "aria-label": "方位角约 " + deg + " 度" });
@@ -575,49 +665,60 @@
     return svg;
   }
 
-  /* 多源交叉校验说明行：一致/分歧/单源 三态；命名依据另起一行 */
+  /* 多源交叉校验：一致/分歧/单源 三态，收进可展开的一行；分歧时默认展开 */
   var VERIFY_LABEL = { consistent: "多源校验一致", divergent: "多源存在分歧", single: "单源跟踪" };
   function renderVerify(t) {
     var box = $("tyVerify");
-    if (!box) return;
     var v = t && t.verification;
     if (!v && !(t && t.nameNote)) { box.hidden = true; return; }
-    box.innerHTML = "";
-    box.className = "hero-verify" + (v && v.status ? " " + v.status : "");
-    if (v) {
-      box.appendChild(el("i", "vf-dot"));
-      box.appendChild(el("b", null, VERIFY_LABEL[v.status] || "多源校验"));
-      if (v.detail) box.appendChild(document.createTextNode(" · " + v.detail));
-    }
+    box.className = "status-verify" + (v && v.status ? " " + v.status : "");
+    var head = $("tyVerifyHead"), body = $("tyVerifyBody");
+    head.innerHTML = ""; body.innerHTML = "";
+    head.appendChild(el("i", "vf-dot"));
+    head.appendChild(document.createTextNode(v ? (VERIFY_LABEL[v.status] || "多源校验") : "命名说明"));
+    if (v && v.detail) body.appendChild(document.createTextNode(v.detail));
     if (t.nameNote) {
-      if (v) box.appendChild(document.createElement("br"));
-      box.appendChild(el("span", "vf-note", t.nameNote));
+      if (v && v.detail) body.appendChild(document.createElement("br"));
+      body.appendChild(el("span", "vf-note", t.nameNote));
     }
+    box.open = !!(v && v.status === "divergent");
     box.hidden = false;
   }
 
-  /* #tyKicker 内含 #tyCode / #tyEnName 两个 span。设置 kicker 的 textContent 会连带
-     移除这两个子节点，因此凡是改写过 kicker 的状态（风平浪静 / 影响持续期），
-     再切回台风态时必须重建结构，否则 $("tyCode") 为 null 直接抛错。 */
-  function setKickerStorm(code, enName) {
-    var k = $("tyKicker");
-    k.textContent = "";
-    k.appendChild(document.createTextNode("第 "));
-    var c = el("span", null, String(code));
-    c.id = "tyCode";
-    k.appendChild(c);
-    k.appendChild(document.createTextNode(" 号台风 · "));
-    var e = el("span", null, String(enName));
-    e.id = "tyEnName";
-    k.appendChild(e);
+  function nowPoint(t) {
+    var a = null;
+    (t.track || []).forEach(function (p) { if (p.phase === "now") a = p; });
+    return a || (t.track || [])[t.track.length - 1] || null;
+  }
+
+  function setChip(node, text, lv) {
+    node.textContent = text;
+    node.hidden = !text;
+    if (lv) {
+      node.style.setProperty("--lv", "var(--w-" + lv + ")");
+      node.style.setProperty("--on-lv", "var(--on-" + lv + ")");
+    } else {
+      node.style.removeProperty("--lv");
+      node.style.removeProperty("--on-lv");
+    }
   }
 
   function renderTyphoon(t) {
-    setKickerStorm(t.code, t.enName);
+    var card = $("statusCard");
+    var lv = suggestLevel(t), mis = riskMismatch(t);
+    card.style.setProperty("--lv", "var(--w-" + lv + ")");
+    $("tyKicker").textContent = "第 " + t.code + " 号台风 · " + t.enName;
     $("tyName").textContent = t.name;
     $("tyLevel").textContent = t.level;
+    var np = nowPoint(t);
+    var verdict = [np ? whereText(np.lat, np.lng) : "", moveText(t.now)].filter(Boolean).join("，");
+    $("tyVerdict").textContent = verdict ? verdict + "。" : "";
+    $("tyVerdict").hidden = !verdict;
     $("tySummary").textContent = t.summary;
+    $("tySummary").hidden = !t.summary;
+    setChip($("levelChip"), "参考" + LEVEL_ZH[lv] + "色" + (mis ? " · 按洪涝预警" : ""), lv);
     renderVerify(t);
+    $("shareBtn").hidden = false;
     $("tyPosition").textContent = t.now.position + "（" + t.now.time + "）。";
 
     var statDefs = [
@@ -627,20 +728,20 @@
       { k: "移动速度", v: fmt(t.now.moveSpeed), unit: "km/h", sub: "约为骑行速度" },
       /* 风圈半径并非每个时次都有:台风登陆减弱后官方停发,新生/远海台风也可能暂缺。
          空值时说明缘由,避免被误读为数据故障 */
-      { k: "七级风圈", v: fmt(t.now.r7), unit: "km", sub: t.now.r7 === null ? "官方本时次未发布，登陆减弱后常见" : "圈内阵风明显" },
-      { k: "十级风圈", v: fmt(t.now.r10), unit: "km", sub: t.now.r10 === null ? "官方本时次未发布，登陆减弱后常见" : "圈内破坏力强" },
+      { k: "七级风圈", v: fmt(t.now.r7), unit: "km", sub: t.now.r7 === null ? "官方本时次未发布" : "圈内阵风明显" },
+      { k: "十级风圈", v: fmt(t.now.r10), unit: "km", sub: t.now.r10 === null ? "官方本时次未发布" : "圈内破坏力强" },
     ];
     var statsGrid = $("statsGrid");
     statsGrid.innerHTML = "";
     statDefs.forEach(function (d) {
-      var card = el("div", "stat");
-      card.appendChild(el("p", "k", d.k));
+      var c = el("div", "stat");
+      c.appendChild(el("p", "k", d.k));
       var v = el("p", "v", String(d.v));
       if (d.unit && d.v !== "—") v.appendChild(el("small", null, d.unit));
       if (d.compass !== undefined) v.appendChild(compassEl(d.compass));
-      card.appendChild(v);
-      card.appendChild(el("p", "sub", d.sub));
-      statsGrid.appendChild(card);
+      c.appendChild(v);
+      c.appendChild(el("p", "sub", d.sub));
+      statsGrid.appendChild(c);
     });
 
     renderMap(t.track);
@@ -648,7 +749,7 @@
   }
 
   /* ---------- 数据装载 ---------- */
-  var DATA = null, IS_LIVE = false, current = 0;
+  var DATA = null, MODE = "demo", STATE = null, current = 0;
 
   /* ---------- 预案档位建议 ---------- */
   /* 历史教训（2026 年第 10 号台风美莎克）：
@@ -683,6 +784,13 @@
     return tierRank(r) > tierRank(w) ? r : w;
   }
 
+  /* 当前数据下的参考等级：台风在编看风雨较高者，影响持续期看在效洪涝预警 */
+  function suggested() {
+    if (STATE === "storm") return suggestLevel(DATA.typhoons[current]);
+    if (STATE === "aftermath") return aftermath().ongoingFloodLevel;
+    return "blue";
+  }
+
   /* ---------- 雨情：洪涝类预警 ---------- */
 
   function renderRisk(t) {
@@ -691,6 +799,7 @@
     var alerts = DATA && DATA.alerts;
     box.innerHTML = "";
     sec.hidden = false;
+    sec.classList.remove("is-quiet");
     callout.hidden = true;
 
     if (!alerts) {
@@ -705,7 +814,8 @@
     }
     var risk = t && t.rainRisk;
     if (!risk || !risk.provinces.length) {
-      note.textContent = "台风影响范围内暂无洪涝类预警在效（数据更新于 " + DATA.updatedAt + "）。";
+      sec.classList.add("is-quiet");
+      note.textContent = "台风影响范围内暂无洪涝类预警在效。";
       return;
     }
 
@@ -715,7 +825,7 @@
       callout.className = "risk-callout lv-" + mis.rain;
       callout.textContent = "注意：本台风按风力只对应" + LEVEL_ZH[mis.wind] + "色档位，" +
         "但其影响范围内已有" + LEVEL_ZH[mis.rain] + "色洪涝类预警在效。" +
-        "台风等级只反映风速，不代表致灾程度——下方预案已按较高者预选。";
+        "台风等级只反映风速，不代表致灾程度——预案已按较高者预选。";
     }
 
     risk.provinces.forEach(function (p) {
@@ -735,7 +845,8 @@
       box.appendChild(card);
     });
 
-    note.textContent = "预警来自" + alerts.source + "，取台风影响范围内各省级行政区的最高档位" +
+    /* 抓取脚本写的是 label；早先读 source 会显示成"预警来自undefined" */
+    note.textContent = "预警来自" + (alerts.label || alerts.source || "中央气象台预警发布平台") + "，取台风影响范围内各省级行政区的最高档位" +
       "（省内可能仅部分区县发布）。这是台风与省份的关联，页面不判断你所在位置。";
   }
 
@@ -753,27 +864,95 @@
   }
 
   function renderAftermath(e) {
+    var lv = e.ongoingFloodLevel;
+    $("statusCard").style.setProperty("--lv", "var(--w-" + lv + ")");
     $("tyKicker").textContent = "第 " + e.code + " 号台风 · " + (e.enName || "—") + " · 影响持续期";
     $("tyName").textContent = e.name;
     $("tyLevel").textContent = (e.lastLevel || "已停编") + " · 停编" +
       (e.daysSince != null ? " " + e.daysSince + " 天" : "");
-    $("tySummary").textContent = e.name + "已停止编号，但其影响省份（" +
-      (e.provinces || []).join("、") + "）仍有" + LEVEL_ZH[e.ongoingFloodLevel] +
-      "色洪涝类预警在效。台风停编不等于风险结束，降雨、山洪与水库险情可能持续更久。";
-    $("tySummary").classList.remove("is-calm");
-    var v = $("tyVerify");
-    if (v) v.hidden = true;
-    $("live").hidden = true;
-    $("track").hidden = true;
+    $("tyVerdict").textContent = "台风已停止编号，但影响省份（" + (e.provinces || []).join("、") +
+      "）仍有" + LEVEL_ZH[lv] + "色洪涝类预警在效。";
+    $("tyVerdict").hidden = false;
+    $("tySummary").textContent = "停编不等于风险结束，降雨、山洪与水库险情可能持续更久。";
+    $("tySummary").hidden = false;
+    setChip($("levelChip"), "参考" + LEVEL_ZH[lv] + "色 · 按洪涝预警", lv);
+    $("tyVerify").hidden = true;
+    $("shareBtn").hidden = false;
   }
 
-  function init(data, mode) {
-    var isLive = mode === "live";
-    var isSnapshot = mode === "snapshot";
-    DATA = data; IS_LIVE = isLive;
-    var badge = $("dataBadge");
-    var notice = $("noticeBar");
-    if (isLive) {
+  function renderCalm() {
+    $("statusCard").style.removeProperty("--lv");
+    $("tyKicker").textContent = "西北太平洋";
+    $("tyName").textContent = "风平浪静";
+    $("tyLevel").textContent = "暂无编号台风";
+    var ended = ((DATA && DATA.recentlyEnded) || [])[0];
+    var verdict = ended
+      ? "最近停编：" + ended.name + (ended.daysSince != null ? "（" + (ended.daysSince ? ended.daysSince + " 天前" : "今天") + "）" : "") + "。"
+      : "";
+    $("tyVerdict").textContent = verdict;
+    $("tyVerdict").hidden = !verdict;
+    $("tySummary").textContent = "风来之前，都是准备的好时候。";
+    $("tySummary").hidden = false;
+    setChip($("levelChip"), "", null);
+    $("tyVerify").hidden = true;
+    $("shareBtn").hidden = false;
+  }
+
+  /* 数据时效：页面必须让人一眼看出数据是不是新的 */
+  function updateTimeChip() {
+    var chip = $("timeChip");
+    if (!DATA) { chip.hidden = true; return; }
+    if (MODE === "demo") { setChip(chip, "演示数据，非实况", null); chip.classList.add("is-stale"); return; }
+    var ms = bjMs(DATA.updatedAt), text = "更新于 " + DATA.updatedAt.slice(5);
+    var mins = ms == null ? null : Math.max(0, Math.round((Date.now() - ms) / 60000));
+    if (mins != null) {
+      text += " · " + (mins < 1 ? "刚刚" : mins < 60 ? mins + " 分钟前"
+        : mins < 48 * 60 ? Math.round(mins / 60) + " 小时前" : Math.round(mins / 1440) + " 天前");
+    }
+    if (MODE === "snapshot") text = "缓存 · " + text;
+    setChip(chip, text, null);
+    chip.classList.toggle("is-stale", MODE === "snapshot" || (mins != null && mins > 90));
+  }
+  setInterval(updateTimeChip, 60000);
+
+  /* ---------- 转告家人 ---------- */
+  /* 在外子女替老家父母查看并转述，是风眼最早设想的场景之一：给一段能直接粘贴的话 */
+  function shareText() {
+    var url = IN_FRAME ? TOY_URL : PAGES_URL, lines = [];
+    if (STATE === "storm") {
+      var t = DATA.typhoons[current], np = nowPoint(t), lv = suggestLevel(t);
+      lines.push("【风眼 · 台风速报】第 " + t.code + " 号台风“" + t.name + "”，" + t.level + "。" +
+        [np ? whereText(np.lat, np.lng) : "", moveText(t.now)].filter(Boolean).join("，") + "。" +
+        (t.nearCoast ? "预报路径趋向我国沿海，请留意当地预警。" : "预报路径暂未逼近我国沿海。") +
+        (riskMismatch(t) ? "其影响范围内已有" + LEVEL_ZH[rainTier(t)] + "色洪涝类预警在效，要特别小心降雨和山洪。" : "") +
+        "参考防御等级：" + LEVEL_ZH[lv] + "色。");
+    } else if (STATE === "aftermath") {
+      var e = aftermath();
+      lines.push("【风眼】台风“" + e.name + "”已停编，但影响省份（" + (e.provinces || []).join("、") + "）仍有" +
+        LEVEL_ZH[e.ongoingFloodLevel] + "色洪涝类预警在效，降雨、山洪与水库险情可能持续，请继续留意当地预警。");
+    } else {
+      lines.push("【风眼】目前西北太平洋暂无编号台风。趁风平浪静，检查一下家里的应急包：饮用水、手电、充电宝、常用药都备齐了吗？");
+    }
+    if (MODE !== "demo" && DATA) lines.push("数据更新于 " + DATA.updatedAt + "（北京时间），防灾请以当地政府与气象部门发布为准。");
+    lines.push(url);
+    return lines.join("\n");
+  }
+  $("shareBtn").addEventListener("click", function () {
+    var text = shareText();
+    if (navigator.share && !IN_FRAME) {
+      navigator.share({ title: "风眼 · 台风速报", text: text }).catch(function () { /* 用户取消 */ });
+      return;
+    }
+    copyText(text).then(function (ok) {
+      showToast(ok ? "已复制，可以粘贴到微信发给家人" : "复制失败，请截图转告家人");
+    });
+  });
+
+  /* ---------- 初始化 ---------- */
+  function renderBadge(data, mode) {
+    var badge = $("dataBadge"), notice = $("noticeBar");
+    notice.innerHTML = "";
+    if (mode === "live") {
       badge.textContent = data.sources ? "实时 · 多源校验" : "实时数据";
       badge.classList.add("live");
       badge.title = "来源：" + data.source + "，更新于 " + data.updatedAt;
@@ -782,87 +961,64 @@
           return s.name + (s.ok ? " ✓" : " ×");
         }).join(" · ");
       }
-      notice.innerHTML = "";
-      notice.appendChild(document.createTextNode("数据来自" + data.source + "，更新于 " + data.updatedAt + "；防灾决策请以"));
-      notice.appendChild(el("b", null, "当地政府与气象部门"));
-      notice.appendChild(document.createTextNode("发布的官方预警为准。"));
-    } else if (isSnapshot) {
-      badge.textContent = "缓存数据";
-      badge.classList.remove("live");
-      badge.title = "在线数据暂不可用，当前为包内缓存数据";
-      notice.innerHTML = "";
-      notice.appendChild(document.createTextNode("在线数据暂不可用，当前展示"));
-      notice.appendChild(el("b", null, "包内缓存数据"));
-      notice.appendChild(document.createTextNode("；防灾决策请以"));
-      notice.appendChild(el("b", null, "当地政府与气象部门"));
-      notice.appendChild(document.createTextNode("发布的官方预警为准。"));
     } else {
-      badge.textContent = "演示数据";
+      badge.textContent = mode === "snapshot" ? "缓存数据" : "演示数据";
       badge.classList.remove("live");
-      badge.title = "实时数据加载失败，当前为内置演示数据";
-      notice.innerHTML = "";
-      notice.appendChild(document.createTextNode("实时数据加载失败，当前展示"));
-      notice.appendChild(el("b", null, "演示数据"));
-      notice.appendChild(document.createTextNode("；防灾决策请以"));
-      notice.appendChild(el("b", null, "当地政府与气象部门"));
-      notice.appendChild(document.createTextNode("发布的官方预警为准。"));
+      badge.title = mode === "snapshot" ? "在线数据暂不可用，当前为包内缓存数据" : "实时数据加载失败，当前为内置演示数据";
+      notice.appendChild(document.createTextNode(mode === "snapshot" ? "在线数据暂不可用，当前为" : "实时数据加载失败，当前为"));
+      notice.appendChild(el("b", null, mode === "snapshot" ? "包内缓存" : "演示数据"));
+      notice.appendChild(document.createTextNode("；"));
     }
-    var list = data.typhoons || [];
+    notice.appendChild(document.createTextNode("防灾决策请以"));
+    notice.appendChild(el("b", null, "当地政府与气象部门"));
+    notice.appendChild(document.createTextNode("发布的官方预警为准"));
+  }
+
+  function renderSwitcher(list) {
     var switcher = $("tySwitch");
     switcher.hidden = list.length < 2;
     switcher.innerHTML = "";
     list.forEach(function (t, i) {
       var b = el("button", "ty-chip", t.name + " " + t.enName);
       b.type = "button";
+      b.setAttribute("aria-pressed", i === current ? "true" : "false");
       b.addEventListener("click", function () {
         current = i;
-        Array.prototype.forEach.call(switcher.children, function (c, j) { c.classList.toggle("is-active", j === i); });
+        each(switcher.children, function (c, j) { c.setAttribute("aria-pressed", j === i ? "true" : "false"); });
         renderTyphoon(list[i]);
+        if (!levelPinned) currentLevel = suggested();
+        renderPrep();
       });
-      if (i === 0) b.classList.add("is-active");
       switcher.appendChild(b);
     });
+  }
 
-    var planHeadTitle = $("planHeadTitle");
-    var planFirst = $("planFirst");
-    if (list.length) {
-      $("tySummary").classList.remove("is-calm");
-      $("live").hidden = false;
-      $("track").hidden = false;
-      renderTyphoon(list[0]);
-      currentLevel = suggestLevel(list[0]);
-      $("levelHint").hidden = false;
-      planHeadTitle.textContent = "现在，该做什么";
-      planFirst.innerHTML = "第一原则：<b>服从当地政府与社区的统一安排</b>，收到转移指令立即执行。";
-      planFirst.classList.remove("is-calm");
-    } else if (aftermath()) {
-      /* 停编但影响未结束：保留风险姿态，档位跟随在效洪涝预警 */
-      var af = aftermath();
-      renderAftermath(af);
+  function init(data, mode, isRefresh) {
+    var prev = isRefresh && STATE === "storm" && DATA.typhoons[current] ? DATA.typhoons[current].code : null;
+    DATA = data; MODE = mode;
+    renderBadge(data, mode);
+    var list = data.typhoons || [];
+    current = 0;
+    list.forEach(function (t, i) { if (t.code === prev) current = i; });
+    var af = aftermath();
+    STATE = list.length ? "storm" : (af ? "aftermath" : "calm");
+
+    $("statusCard").dataset.state = STATE;
+    renderSwitcher(list);
+    $("live").hidden = $("track").hidden = STATE !== "storm";
+    $("teasers").hidden = STATE !== "calm";
+    if (STATE === "storm") renderTyphoon(list[current]);
+    else {
       $("risk").hidden = true;
-      currentLevel = af.ongoingFloodLevel;
-      $("levelHint").hidden = false;
-      planHeadTitle.textContent = "风还没走完";
-      planFirst.innerHTML = "第一原则：<b>服从当地政府与社区的统一安排</b>；台风虽已停编，洪水与山洪风险仍在。";
-      planFirst.classList.remove("is-calm");
-    } else {
-      /* 无活跃台风：收起实况与路径板块，预案常备 */
-      $("risk").hidden = true;
-      $("tyKicker").textContent = "西北太平洋";
-      $("tyName").textContent = "风平浪静";
-      $("tyLevel").textContent = "西北太平洋暂无编号台风";
-      $("tySummary").textContent = "风来之前，都是准备的好时候。";
-      $("tySummary").classList.add("is-calm");
-      var calmVerify = $("tyVerify");
-      if (calmVerify) calmVerify.hidden = true;
-      $("live").hidden = true;
-      $("track").hidden = true;
-      currentLevel = "blue";
-      planHeadTitle.textContent = "风来之前，备好清单";
-      planFirst.textContent = "清单供平时备查，收到官方预警时启用。";
-      planFirst.classList.add("is-calm");
+      if (STATE === "aftermath") renderAftermath(af); else renderCalm();
     }
-    renderPlan();
+    updateTimeChip();
+
+    /* 用户手动选过的阶段与档位不被数据刷新覆盖 */
+    if (!levelPinned) currentLevel = suggested();
+    if (!phasePinned) phase = STATE === "calm" ? "calm" : "warn";
+    renderPrep();
+    updateTeasers();
   }
 
   /* 在线数据源：多镜像并行请求，取 updatedAt 最新者。
@@ -874,13 +1030,18 @@
     "https://fastly.jsdelivr.net/gh/Mr-Salticidae/typhoon-eye@main/data/typhoon.json",
     "https://raw.githubusercontent.com/Mr-Salticidae/typhoon-eye/main/data/typhoon.json"
   ];
+  var SEASON_SOURCES = DATA_SOURCES.map(function (u) { return u.replace(/typhoon\.json$/, "season.json"); });
 
   function validData(d) {
     return !!d && typeof d.updatedAt === "string" && Array.isArray(d.typhoons) &&
       d.typhoons.every(function (t) { return !!t && !!t.now && Array.isArray(t.track); });
   }
+  function validSeason(d) {
+    return !!d && typeof d.year === "number" && Array.isArray(d.storms) &&
+      d.storms.every(function (s) { return !!s && typeof s.code === "string" && Array.isArray(s.track); });
+  }
 
-  function fetchJSON(url, bustCache) {
+  function fetchJSON(url, bustCache, valid) {
     var controller = new AbortController();
     var timer = setTimeout(function () { controller.abort(); }, 8000);
     var finalUrl = bustCache
@@ -889,7 +1050,7 @@
     return fetch(finalUrl, { cache: "no-store", referrerPolicy: "no-referrer", signal: controller.signal })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) {
-        if (!validData(d)) throw new Error("invalid data");
+        if (!valid(d)) throw new Error("invalid data");
         return d;
       })
       .finally(function () { clearTimeout(timer); });
@@ -897,21 +1058,21 @@
 
   /* 并行请求全部镜像；首个成功后再留 800ms 收集更快镜像里可能更新的数据，
      然后取 updatedAt 最新者返回。updatedAt 为"YYYY-MM-DD HH:mm"，字典序即时序。 */
-  function fetchLatestOnline() {
+  function fetchLatestFrom(urls, valid) {
     return new Promise(function (resolve, reject) {
       var results = [];
-      var pending = DATA_SOURCES.length;
+      var pending = urls.length;
       var graceTimer = null;
       var done = false;
       function settle() {
         if (done) return;
         var best = null;
-        results.forEach(function (d) { if (!best || d.updatedAt > best.updatedAt) best = d; });
+        results.forEach(function (d) { if (!best || (d.updatedAt || "") > (best.updatedAt || "")) best = d; });
         if (best) { done = true; resolve(best); }
         else if (pending === 0) { done = true; reject(new Error("all data sources failed")); }
       }
-      DATA_SOURCES.forEach(function (url) {
-        fetchJSON(url, true)
+      urls.forEach(function (url) {
+        fetchJSON(url, true, valid)
           .then(function (d) { results.push(d); }, function () { /* 单源失败忽略 */ })
           .then(function () {
             pending--;
@@ -922,26 +1083,148 @@
     });
   }
 
-  /* 供 toy-runtime.js 的定时刷新复用同一套多镜像逻辑 */
-  window.__typhoonEyeFetchLatest = fetchLatestOnline;
+  /* 供 toy-runtime.js 的定时刷新复用：取数、比对、原地重绘（不再整页刷新丢掉所在页与勾选焦点） */
+  window.__typhoonEyeFetchLatest = function () { return fetchLatestFrom(DATA_SOURCES, validData); };
+  window.__typhoonEyeShownAt = function () { return DATA && MODE !== "demo" ? DATA.updatedAt : ""; };
+  window.__typhoonEyeApply = function (d) {
+    if (!validData(d)) return;
+    init(d, "live", true);
+    if (seasonState !== "loading") { seasonState = "idle"; if (currentView === "season") ensureSeason(); }
+  };
 
-  function boot() {
-    fetchLatestOnline()
-      .then(function (d) { init(d, "live"); })
-      .catch(function () {
-        return fetchJSON("data/typhoon.json", false)
-          .then(function (d) { init(d, "snapshot"); })
-          .catch(function () { init(DEMO_DATA, "demo"); });
-      });
+  /* ---------- 视图 ---------- */
+  /* 不用 href="#..."：Toy 沙箱内原生锚点导航不可靠，一律按钮 + JS 切换 */
+  var VIEWS = ["now", "prep", "season", "help"];
+  var VIEW_KEY = "typhoon-eye:view";
+  var currentView = null;
+
+  function showView(name) {
+    if (VIEWS.indexOf(name) < 0) name = "now";
+    var changed = name !== currentView;
+    currentView = name;
+    VIEWS.forEach(function (v) { $("view-" + v).hidden = v !== name; });
+    each(document.querySelectorAll(".tabbar [data-go], .top-nav [data-go]"), function (b) {
+      var on = b.dataset.go === name;
+      b.classList.toggle("is-active", on);
+      if (on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current");
+    });
+    try { sessionStorage.setItem(VIEW_KEY, name); } catch (e) { /* 忽略 */ }
+    if (changed) window.scrollTo(0, 0);
+    if (name === "now" && mapStale && lastTrack) renderMap(lastTrack);
+    if (name !== "now") stopPlay();
+    if (name === "season") { ensureSeason(); if (seasonStale) renderSeason(); }
   }
 
-  /* ---------- 分级预案 ---------- */
+  document.addEventListener("click", function (e) {
+    var go = e.target.closest("[data-go]");
+    if (!go) return;
+    if (go.dataset.phase) {
+      phase = go.dataset.phase;
+      if (go.dataset.level) { currentLevel = go.dataset.level; levelPinned = false; }
+      renderPrep();
+    }
+    if (go.dataset.sub) setSeasonSub(go.dataset.sub);
+    showView(go.dataset.go);
+  });
+
+  /* ---------- 准备：平时 · 预警 · 风后 ---------- */
   var CHECK_KEY = "typhoon-eye:checks";
+  var KIT_KEY = "typhoon-eye:kit-checked";
   var checks = store.get(CHECK_KEY, {});
   /* 地区选择和地区清单进度只存在内存中，刷新即清空，不构成位置档案。 */
   var selectedRegions = {};
   var regionChecks = {};
-  var currentLevel = "blue";
+  var currentLevel = "blue", levelPinned = false;
+  var phase = "calm", phasePinned = false;
+  var KIT_DUE_DAYS = 180;
+
+  var PHASE_META = {
+    calm: {
+      title: "平时常备",
+      sub: "建议每年入汛前（4–5 月）和台风季中各盘点一次。勾选只保存在本机。",
+      tone: "平时多一分准备，风来少一分慌乱。",
+      done: "准备度 100%——风来之前，功课已经做足。记得定期盘点。",
+    },
+    after: {
+      title: "风后恢复",
+      sub: "警报解除不等于安全：次生灾害与卫生风险常在雨停之后。",
+      tone: "风停了，但安全还没有完全回来。",
+      done: "一步步恢复，也照顾好自己。有困难就向社区求助。",
+    },
+  };
+
+  /* 当前阶段（与预警档位）下的全部事项；事项身份跨版本稳定，勾选才能跨次保留 */
+  function groupsFor(ph, level) {
+    if (ph === "calm") {
+      return PREP_GROUPS.map(function (g) {
+        return {
+          title: g.title, desc: g.desc,
+          items: g.items.map(function (text, j) { return { id: g.id + ":" + j, text: text, kind: "keep" }; }),
+        };
+      });
+    }
+    if (ph === "after") {
+      return [{ items: RECOVERY_ITEMS.map(function (text, j) { return { id: "after:" + j, text: text, kind: "keep" }; }) }];
+    }
+    /* 递进清单：包含当前级及以下所有通用事项；事项身份 = 来源级:序号，勾选跨级共享 */
+    var idx = WARNING_LEVELS.indexOf(level);
+    var common = [];
+    for (var i = 0; i <= idx; i++) {
+      var lv = WARNING_LEVELS[i];
+      PLANS[lv].items.forEach(function (text, j) {
+        common.push({ id: lv + ":" + j, text: text, from: lv, kind: "common" });
+      });
+    }
+    var groups = [{ title: null, items: common }];
+    /* 地区事项同样随等级递进，但选择和勾选均不落盘。 */
+    REGION_PROFILES.forEach(function (profile) {
+      if (!selectedRegions[profile.id]) return;
+      var items = [];
+      for (var n = 0; n <= idx; n++) {
+        var regionLevel = WARNING_LEVELS[n];
+        (profile.items[regionLevel] || []).forEach(function (text, j) {
+          items.push({ id: profile.id + ":" + regionLevel + ":" + j, text: text, from: regionLevel, kind: "region" });
+        });
+      }
+      groups.push({ title: profile.name, desc: profile.risk, items: items, region: true });
+    });
+    if (groups.length > 1) groups[0].title = "通用清单";
+    return groups;
+  }
+  function flatItems(ph, level) {
+    var out = [];
+    groupsFor(ph, level).forEach(function (g) { out = out.concat(g.items); });
+    return out;
+  }
+  function isDone(it) { return it.kind === "region" ? !!regionChecks[it.id] : !!checks[it.id]; }
+  function countDone(items) { return items.filter(isDone).length; }
+
+  function kitWhen() {
+    var d = daysSince(store.get(KIT_KEY, null));
+    if (d === null) return { text: "应急包还没有盘点过。", short: "应急包未盘点", due: true };
+    if (d === 0) return { text: "今天刚盘点过应急包。", short: "应急包今天已盘点", due: false };
+    if (d > KIT_DUE_DAYS) return { text: "应急包已 " + d + " 天没盘点，该检查保质期和电量了。", short: "应急包 " + d + " 天未盘点", due: true };
+    return { text: "上次盘点应急包：" + d + " 天前。", short: "应急包 " + d + " 天前盘点", due: false };
+  }
+
+  /* 进度环：done / total，数字写在环心 */
+  function setRing(host, done, total) {
+    var pct = total ? Math.round(done / total * 100) : 0;
+    if (!host.firstChild) {
+      var svg = svgEl("svg", { class: "ring-svg", viewBox: "0 0 36 36" });
+      svg.appendChild(svgEl("circle", { class: "ring-bg", cx: 18, cy: 18, r: 15.5 }));
+      svg.appendChild(svgEl("circle", {
+        class: "ring-fg", cx: 18, cy: 18, r: 15.5, pathLength: 100,
+        "stroke-dasharray": "0 100", transform: "rotate(-90 18 18)",
+      }));
+      host.appendChild(svg);
+      host.appendChild(el("span", "ring-num"));
+    }
+    host.querySelector(".ring-fg").setAttribute("stroke-dasharray", pct + " 100");
+    host.querySelector(".ring-num").textContent = pct + "%";
+    host.classList.toggle("is-full", total > 0 && done === total);
+    host.classList.toggle("is-empty", done === 0);
+  }
 
   var regionBox = $("regionOptions");
   REGION_PROFILES.forEach(function (profile) {
@@ -949,143 +1232,524 @@
     b.type = "button";
     b.dataset.region = profile.id;
     b.setAttribute("aria-pressed", "false");
-    b.setAttribute("aria-label", profile.name + "：" + profile.risk);
     b.appendChild(el("span", "region-option-name", profile.name));
     b.appendChild(el("small", "region-option-risk", profile.risk));
     b.addEventListener("click", function () {
       selectedRegions[profile.id] = !selectedRegions[profile.id];
-      b.classList.toggle("is-active", selectedRegions[profile.id]);
       b.setAttribute("aria-pressed", selectedRegions[profile.id] ? "true" : "false");
-      renderPlan();
+      renderPrep();
     });
     regionBox.appendChild(b);
   });
 
   var tabsBox = $("levelTabs");
   WARNING_LEVELS.forEach(function (key) {
-    var plan = PLANS[key];
-    var b = el("button", "level-tab", plan.name);
+    var b = el("button", "level-tab", PLANS[key].short + "色");
     b.type = "button";
-    b.setAttribute("role", "tab");
     b.style.setProperty("--lv", "var(--w-" + key + ")");
+    b.style.setProperty("--on-lv", "var(--on-" + key + ")");
     b.dataset.level = key;
+    b.setAttribute("aria-label", PLANS[key].name);
     b.addEventListener("click", function () {
       currentLevel = key;
-      renderPlan();
+      levelPinned = true;
+      renderPrep();
     });
     tabsBox.appendChild(b);
   });
 
-  function renderPlan() {
-    var idx = WARNING_LEVELS.indexOf(currentLevel);
-    var plan = PLANS[currentLevel];
-    $("planPanel").style.setProperty("--lv", "var(--w-" + currentLevel + ")");
+  each($("phaseTabs").children, function (b) {
+    b.addEventListener("click", function () {
+      phase = b.dataset.phase;
+      phasePinned = true;
+      renderPrep();
+    });
+  });
 
-    Array.prototype.forEach.call(tabsBox.children, function (tab) {
-      var on = tab.dataset.level === currentLevel;
-      tab.classList.toggle("is-active", on);
-      tab.setAttribute("aria-selected", on ? "true" : "false");
+  function renderPrep() {
+    var isWarn = phase === "warn";
+    var lvVar = isWarn ? "var(--w-" + currentLevel + ")" : "var(--accent)";
+    $("phasePanel").style.setProperty("--lv", lvVar);
+    each($("phaseTabs").children, function (b) {
+      b.setAttribute("aria-pressed", b.dataset.phase === phase ? "true" : "false");
+    });
+    each(tabsBox.children, function (b) {
+      b.setAttribute("aria-pressed", b.dataset.level === currentLevel ? "true" : "false");
     });
 
-    $("planTitle").textContent = "台风" + plan.name;
-    $("planSignal").textContent = plan.signal;
-
-    /* 递进清单：包含当前级及以下所有通用事项；事项身份 = 来源级:序号，勾选跨级共享 */
-    var items = [];
-    for (var i = 0; i <= idx; i++) {
-      var lv = WARNING_LEVELS[i];
-      PLANS[lv].items.forEach(function (text, j) {
-        items.push({ id: lv + ":" + j, text: text, from: lv, kind: "common" });
-      });
-    }
-
-    /* 地区事项同样随等级递进，但选择和勾选均不落盘。 */
-    var activeProfiles = REGION_PROFILES.filter(function (profile) { return !!selectedRegions[profile.id]; });
-    activeProfiles.forEach(function (profile) {
-      for (var n = 0; n <= idx; n++) {
-        var regionLevel = WARNING_LEVELS[n];
-        (profile.items[regionLevel] || []).forEach(function (text, j) {
-          items.push({
-            id: profile.id + ":" + regionLevel + ":" + j,
-            text: text,
-            from: regionLevel,
-            kind: "region",
-            region: profile,
-          });
-        });
-      }
-    });
-
-    var regionStatus = $("regionStatus");
-    if (activeProfiles.length) {
-      regionStatus.textContent = "已补充：" + activeProfiles.map(function (profile) { return profile.short; }).join("、") + "。地区选择与对应勾选不会保存，刷新后自动清空。";
-      regionStatus.classList.add("has-selection");
+    if (isWarn) {
+      $("phaseTitle").textContent = "台风" + PLANS[currentLevel].name;
+      $("phaseSub").textContent = PLANS[currentLevel].signal;
     } else {
-      regionStatus.textContent = "当前仅显示全国通用清单。";
-      regionStatus.classList.remove("has-selection");
+      $("phaseTitle").textContent = PHASE_META[phase].title;
+      $("phaseSub").textContent = PHASE_META[phase].sub;
     }
 
-    var list = $("checklist");
-    list.innerHTML = "";
-    items.forEach(function (it) {
-      var li = el("li", it.kind === "region" ? "is-region-item" : "");
-      var label = el("label");
-      var input = document.createElement("input");
-      input.type = "checkbox";
-      input.checked = it.kind === "region" ? !!regionChecks[it.id] : !!checks[it.id];
-      input.addEventListener("change", function () {
-        if (it.kind === "region") {
-          regionChecks[it.id] = input.checked;
-        } else {
-          checks[it.id] = input.checked;
-          store.set(CHECK_KEY, checks);
-        }
-        updateProgress(items);
-      });
-      var span = el("span", null, it.text);
-      if (it.kind === "region") {
-        var regionBadge = el("i", "region-item-badge", it.region.short);
-        regionBadge.title = "适用于" + it.region.name + "：" + it.region.risk;
-        span.appendChild(regionBadge);
-      } else if (it.from !== currentLevel) {
-        var badge = el("i", "from-lower", PLANS[it.from].short + "级");
-        badge.title = "来自" + PLANS[it.from].name + "的事项";
-        badge.style.setProperty("--flv", "var(--w-" + it.from + ")");
-        span.appendChild(badge);
+    var first = $("planFirst");
+    first.hidden = phase === "calm";
+    first.innerHTML = "";
+    first.appendChild(document.createTextNode("第一原则："));
+    if (phase === "after") {
+      first.appendChild(el("b", null, "以官方解除警报为准"));
+      first.appendChild(document.createTextNode("，不提前返回危险区域。"));
+    } else {
+      first.appendChild(el("b", null, "服从当地政府与社区的统一安排"));
+      first.appendChild(document.createTextNode(STATE === "aftermath"
+        ? "；台风虽已停编，洪水与山洪风险仍在。" : "，收到转移指令立即执行。"));
+    }
+
+    $("warnControls").hidden = !isWarn;
+    var hint = $("levelHint"), sug = suggested();
+    hint.hidden = !(isWarn && (STATE === "storm" || STATE === "aftermath"));
+    if (!hint.hidden) {
+      hint.textContent = currentLevel === sug
+        ? "已按台风风力与影响范围内洪涝类预警的较高者，预选参考等级「" + LEVEL_ZH[sug] + "色」。实际预警级别以当地气象部门发布为准。"
+        : "你正在查看" + LEVEL_ZH[currentLevel] + "色清单；按当前数据，参考等级为" + LEVEL_ZH[sug] + "色。实际预警级别以当地气象部门发布为准。";
+    }
+    var picked = REGION_PROFILES.filter(function (p) { return selectedRegions[p.id]; });
+    $("regionSumState").textContent = picked.length
+      ? "已选 " + picked.map(function (p) { return p.short; }).join("、") : "未选择";
+    $("regionPicker").classList.toggle("has-selection", picked.length > 0);
+
+    $("kitMeta").hidden = phase !== "calm";
+
+    var box = $("checkGroups");
+    box.innerHTML = "";
+    groupsFor(phase, currentLevel).forEach(function (g) {
+      var sec = el("div", "check-group" + (g.region ? " is-region" : ""));
+      if (g.title) {
+        var h = el("h4", "group-title", g.title);
+        if (g.desc) h.appendChild(el("small", null, g.desc));
+        sec.appendChild(h);
       }
-      label.appendChild(input);
-      label.appendChild(span);
-      li.appendChild(label);
-      list.appendChild(li);
+      var list = el("ul", "checklist");
+      g.items.forEach(function (it) {
+        var li = el("li");
+        var label = el("label");
+        var input = document.createElement("input");
+        input.type = "checkbox";
+        input.checked = isDone(it);
+        input.addEventListener("change", function () {
+          if (it.kind === "region") regionChecks[it.id] = input.checked;
+          else { checks[it.id] = input.checked; store.set(CHECK_KEY, checks); }
+          /* 应急包全部备齐，视为完成一次盘点 */
+          if (input.checked && it.id.indexOf("kit:") === 0 &&
+              PREP_GROUPS[0].items.every(function (x, j) { return checks["kit:" + j]; })) {
+            store.set(KIT_KEY, todayStr());
+          }
+          refreshProgress();
+        });
+        var span = el("span", "check-text", it.text);
+        if (it.kind === "common" && it.from !== currentLevel) {
+          var badge = el("i", "from-lower", PLANS[it.from].short + "级");
+          badge.title = "来自" + PLANS[it.from].name + "的事项";
+          badge.style.setProperty("--flv", "var(--w-" + it.from + ")");
+          span.appendChild(badge);
+        }
+        label.appendChild(input);
+        label.appendChild(span);
+        li.appendChild(label);
+        list.appendChild(li);
+      });
+      sec.appendChild(list);
+      box.appendChild(sec);
     });
-    updateProgress(items);
+    refreshProgress();
   }
 
-  function updateProgress(items) {
-    var done = items.filter(function (it) {
-      return it.kind === "region" ? regionChecks[it.id] : checks[it.id];
-    }).length;
-    var total = items.length;
-    $("progressBar").style.width = total ? (done / total * 100) + "%" : "0";
-    $("progressText").textContent = done + " / " + total;
+  function refreshProgress() {
+    var items = flatItems(phase, currentLevel);
+    var done = countDone(items), total = items.length;
+    setRing($("phaseRing"), done, total);
     var tone = $("planTone");
-    if (total && done === total) {
-      tone.textContent = "全部完成——你已经为这场风做好了准备。照顾好自己，也看看邻居是否需要帮忙。";
-      tone.classList.add("done");
+    var meta = phase === "warn" ? { tone: PLANS[currentLevel].tone,
+      done: "全部完成——你已经为这场风做好了准备。照顾好自己，也看看邻居是否需要帮忙。" } : PHASE_META[phase];
+    if (total && done === total) { tone.textContent = meta.done; tone.classList.add("done"); }
+    else { tone.textContent = "已完成 " + done + " / " + total + " 项 —— " + meta.tone; tone.classList.remove("done"); }
+    var kw = kitWhen();
+    $("kitWhen").textContent = kw.text;
+    $("kitMeta").classList.toggle("is-due", kw.due);
+    updateTodo();
+  }
+
+  /* 首页的"该做什么"入口：始终指向当前数据下最该看的那一份清单 */
+  function updateTodo() {
+    var card = $("todoCard");
+    if (!STATE) return;
+    card.hidden = false;
+    var ph = STATE === "calm" ? "calm" : "warn";
+    var lv = suggested();
+    var items = flatItems(ph, lv), done = countDone(items);
+    card.dataset.phase = ph;
+    if (ph === "warn") card.dataset.level = lv; else delete card.dataset.level;
+    card.style.setProperty("--lv", ph === "warn" ? "var(--w-" + lv + ")" : "var(--accent)");
+    setRing($("todoRing"), done, items.length);
+    if (ph === "calm") {
+      $("todoTitle").textContent = "风来之前，备好家里";
+      $("todoSub").textContent = "防台准备度 · " + kitWhen().short;
     } else {
-      tone.textContent = "—— " + PLANS[currentLevel].tone;
-      tone.classList.remove("done");
+      $("todoTitle").textContent = STATE === "aftermath" ? "风还没走完，该做什么" : "现在，该做什么";
+      $("todoSub").textContent = "参考" + LEVEL_ZH[lv] + "色清单 · 已完成 " + done + " / " + items.length + " 项";
     }
+  }
+
+  $("kitStamp").addEventListener("click", function () {
+    store.set(KIT_KEY, todayStr());
+    refreshProgress();
+    showToast("已记下今天的盘点，半年后记得再查一次");
+  });
+
+  /* 清空需要连点两次：Toy 沙箱会静默吞掉 confirm() 弹窗 */
+  var resetArm = null;
+  function disarmReset() {
+    clearTimeout(resetArm); resetArm = null;
+    var b = $("resetBtn");
+    b.textContent = "清空本页勾选";
+    b.classList.remove("is-armed");
+  }
+  $("resetBtn").addEventListener("click", function () {
+    var b = this;
+    if (!resetArm) {
+      b.textContent = "再点一次确认清空";
+      b.classList.add("is-armed");
+      resetArm = setTimeout(disarmReset, 3000);
+      return;
+    }
+    disarmReset();
+    if (phase === "warn") {
+      WARNING_LEVELS.forEach(function (lv) {
+        PLANS[lv].items.forEach(function (x, j) { delete checks[lv + ":" + j]; });
+      });
+      regionChecks = {};
+    } else {
+      flatItems(phase, currentLevel).forEach(function (it) { delete checks[it.id]; });
+    }
+    store.set(CHECK_KEY, checks);
+    renderPrep();
+    showToast("已清空，下一场风来时可以重新开始");
+  });
+
+  /* ---------- 台风季：存档 ---------- */
+  var SEASON = null, seasonState = "idle", seasonStale = false, seasonSel = null, seasonSub = "storms";
+  var TIERS = [
+    { min: 0, name: "热带低压" }, { min: 8, name: "热带风暴" }, { min: 10, name: "强热带风暴" },
+    { min: 12, name: "台风" }, { min: 14, name: "强台风" }, { min: 16, name: "超强台风" },
+  ];
+  function tierIdx(wind) {
+    var k = 0;
+    TIERS.forEach(function (t, i) { if ((wind || 0) >= t.min) k = i; });
+    return k;
+  }
+  var NEAR_KM = 300;
+
+  function normalizeSeason(d) {
+    var storms = d.storms.map(function (s) {
+      var track = s.track.map(function (p) { return { t: p[0], lat: p[1], lng: p[2], wind: p[3] }; })
+        .filter(function (p) { return isFinite(p.lat) && isFinite(p.lng); });
+      var minKm = Infinity;
+      track.forEach(function (p) { minKm = Math.min(minKm, coastKm(p.lat, p.lng)); });
+      return {
+        code: s.code, name: s.name || s.enName || s.code, enName: s.enName || "",
+        active: !!s.active, start: s.start, end: s.end,
+        peakWind: s.peakWind, peakStrong: s.peakStrong || TIERS[tierIdx(s.peakWind)].name,
+        minPressure: s.minPressure, provinces: s.provinces || [], track: track, minKm: minKm,
+      };
+    }).filter(function (s) { return s.track.length; });
+    return { year: d.year, updatedAt: d.updatedAt, storms: storms };
+  }
+
+  function ensureSeason() {
+    if (seasonState !== "idle") return;
+    seasonState = "loading";
+    if (!SEASON) renderSeason();
+    fetchLatestFrom(SEASON_SOURCES, validSeason)
+      .catch(function () { return fetchJSON("data/season.json", false, validSeason); })
+      .then(function (d) { SEASON = normalizeSeason(d); seasonState = "ok"; },
+        function () { seasonState = SEASON ? "ok" : "fail"; })
+      .then(function () { renderSeason(); updateTeasers(); });
+  }
+
+  function setSeasonSub(sub) {
+    seasonSub = sub === "quiz" ? "quiz" : "storms";
+    each($("seasonTabs").children, function (b) {
+      b.setAttribute("aria-pressed", b.dataset.sub === seasonSub ? "true" : "false");
+    });
+    $("seasonStorms").hidden = seasonSub !== "storms";
+    $("seasonQuiz").hidden = seasonSub !== "quiz";
+    if (seasonSub === "quiz" && !quiz) startQuiz();
+    if (seasonSub === "storms" && seasonStale) renderSeason();
+  }
+  each($("seasonTabs").children, function (b) {
+    b.addEventListener("click", function () { setSeasonSub(b.dataset.sub); });
+  });
+
+  function serial(code) { return parseInt(String(code).slice(2), 10) || 0; }
+
+  function renderSeason() {
+    var tiles = $("seasonTiles"), list = $("stormList"), note = $("seasonNote");
+    /* 地图字号要按实际显示宽度换算，视图隐藏时量不到，切回时再画 */
+    seasonStale = $("view-season").hidden || $("seasonStorms").hidden;
+    if (seasonStale) return;
+    tiles.innerHTML = ""; list.innerHTML = ""; note.hidden = true;
+
+    if (!SEASON) {
+      $("seasonTitle").textContent = "台风季";
+      note.hidden = false;
+      note.textContent = seasonState === "loading" ? "正在读取本季存档…" : "本季存档暂时读取不到（离线或网络受限），可以先去做做防台小课堂。";
+      $("seasonMap").innerHTML = "";
+      $("seasonRead").textContent = "";
+      return;
+    }
+
+    var storms = SEASON.storms.slice().sort(function (a, b) {
+      return (b.active - a.active) || b.code.localeCompare(a.code);
+    });
+    $("seasonTitle").textContent = SEASON.year + " 台风季";
+    var numbered = SEASON.storms.reduce(function (m, s) { return Math.max(m, serial(s.code)); }, 0);
+    var active = storms.filter(function (s) { return s.active; });
+    var strongest = SEASON.storms.reduce(function (m, s) {
+      return !m || (s.peakWind || 0) > (m.peakWind || 0) ? s : m;
+    }, null);
+    var near = SEASON.storms.filter(function (s) { return s.minKm <= NEAR_KM; });
+
+    function tile(v, unit, k, sub) {
+      var t = el("div", "s-tile");
+      var p = el("p", "v", String(v));
+      if (unit) p.appendChild(el("small", null, unit));
+      t.appendChild(p);
+      t.appendChild(el("p", "k", k));
+      if (sub) t.appendChild(el("p", "sub", sub));
+      tiles.appendChild(t);
+    }
+    tile(numbered, "个", "已编号台风");
+    tile(active.length, "个", "正在活跃", active.map(function (s) { return s.name; }).join("、") || "暂无");
+    tile(strongest ? strongest.peakWind : "—", strongest ? "级" : "", "季内最强", strongest ? strongest.name + " · " + strongest.peakStrong : "");
+    tile(near.length, "个", "逼近我国大陆", NEAR_KM + " 公里以内（示意）");
+
+    if (SEASON.storms.length < numbered) {
+      note.hidden = false;
+      note.textContent = "存档建立于本季中途，目前收录 " + SEASON.storms.length + " / " + numbered +
+        " 个，其余由数据任务逐步补齐。";
+    }
+
+    if (!seasonSel || !storms.some(function (s) { return s.code === seasonSel; })) {
+      seasonSel = storms.length ? storms[0].code : null;
+    }
+
+    storms.forEach(function (s) {
+      var li = el("li");
+      var b = el("button", "storm");
+      b.type = "button";
+      b.dataset.code = s.code;
+      b.setAttribute("aria-pressed", s.code === seasonSel ? "true" : "false");
+      b.appendChild(el("span", "storm-code", s.code));
+      var main = el("span", "storm-main");
+      var nm = el("span", "storm-name");
+      nm.appendChild(el("b", null, s.name));
+      if (s.enName && s.enName !== s.name) nm.appendChild(el("small", null, s.enName));
+      if (s.active) nm.appendChild(el("i", "storm-live", "活跃中"));
+      main.appendChild(nm);
+      main.appendChild(el("span", "storm-meta", (s.start || "?") + " → " + (s.active ? "至今" : (s.end || "?")) +
+        " · " + (s.minKm < 120 ? "曾抵近我国大陆沿海" : "最近距我国大陆约 " + round100(s.minKm) + " 公里")));
+      if (s.provinces.length) main.appendChild(el("span", "storm-prov", "关联洪涝预警：" + s.provinces.join("、")));
+      b.appendChild(main);
+      var peak = el("span", "storm-peak");
+      var meter = el("span", "tier-meter");
+      meter.setAttribute("aria-hidden", "true");
+      var ti = tierIdx(s.peakWind);
+      TIERS.forEach(function (x, i) { meter.appendChild(el("i", i <= ti ? "on" : "")); });
+      peak.appendChild(meter);
+      peak.appendChild(el("small", null, s.peakStrong + (s.peakWind ? " · " + s.peakWind + " 级" : "")));
+      b.appendChild(peak);
+      b.addEventListener("click", function () { selectStorm(s.code); });
+      li.appendChild(b);
+      list.appendChild(li);
+    });
+
+    drawSeasonMap();
+  }
+
+  function selectStorm(code) {
+    seasonSel = code;
+    each($("stormList").querySelectorAll(".storm"), function (b) {
+      b.setAttribute("aria-pressed", b.dataset.code === code ? "true" : "false");
+    });
+    drawSeasonMap();
+  }
+
+  /* 本季路径全景：西北太平洋等距投影。形式上只有一个系列（台风路径），
+     所以全部路径同一低饱和色，选中者着强调色并直接标名，不另设图例 */
+  var SM = { lng0: 98, lng1: 182, lat0: 0, lat1: 50, k: 800 / 84 };
+  function smp(lat, lng) { return [(lng - SM.lng0) * SM.k, (SM.lat1 - lat) * SM.k]; }
+
+  function drawSeasonMap() {
+    var svg = $("seasonMap");
+    svg.innerHTML = "";
+    if (!SEASON) return;
+    var W = 800, H = (SM.lat1 - SM.lat0) * SM.k;
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H.toFixed(1));
+    /* 标注字号按实际显示宽度换算成 11px 左右 */
+    var s = W / Math.max(260, svg.getBoundingClientRect().width || 360);
+    var fs = 11 * s;
+
+    svg.appendChild(svgEl("rect", { class: "sm-sea", x: 0, y: 0, width: W, height: H }));
+    /* 网格线压在陆地下、度数标在陆地上，避免被中南半岛之类的陆块盖住 */
+    var grat = svgEl("g", { class: "graticule", "aria-hidden": "true" });
+    var labels = svgEl("g", { class: "sm-labels", "aria-hidden": "true" });
+    function label(text, x, y, anchor) {
+      var t = svgEl("text", { class: "grat-label", x: x, y: y, "font-size": fs, "text-anchor": anchor || "start" });
+      t.textContent = text;
+      labels.appendChild(t);
+    }
+    for (var lng = 100; lng <= 180; lng += 20) {
+      var x = smp(0, lng)[0];
+      grat.appendChild(svgEl("line", { class: "grat-line", x1: x, y1: 0, x2: x, y2: H }));
+      if (lng > 100 && lng < 180) label(lngLabel(lng), x + 4 * s, H - 6 * s);
+    }
+    for (var lat = 10; lat < SM.lat1; lat += 10) {
+      var y = smp(lat, 100)[1];
+      grat.appendChild(svgEl("line", { class: "grat-line", x1: 0, y1: y, x2: W, y2: y }));
+      label(latLabel(lat), W - 4 * s, y - 4 * s, "end");
+    }
+    svg.appendChild(grat);
+
+    if (typeof WORLD_LAND !== "undefined") {
+      var land = svgEl("g", { "aria-hidden": "true" });
+      landBoxes().forEach(function (b, i) {
+        if (b[2] < SM.lng0 - 5 || b[0] > SM.lng1 + 5 || b[3] < SM.lat0 - 5 || b[1] > SM.lat1 + 5) return;
+        var flat = WORLD_LAND[i], out = [];
+        for (var j = 0; j < flat.length; j += 2) {
+          var p = smp(flat[j + 1], flat[j]);
+          out.push(p[0].toFixed(1) + "," + p[1].toFixed(1));
+        }
+        land.appendChild(svgEl("polygon", { class: "sm-land", points: out.join(" ") }));
+      });
+      svg.appendChild(land);
+    }
+    svg.appendChild(labels);
+
+    var tracks = svgEl("g", {});
+    var sel = null;
+    SEASON.storms.forEach(function (st) {
+      var pts = st.track.map(function (p) { return smp(p.lat, p.lng).join(","); }).join(" ");
+      if (st.code === seasonSel) { sel = { st: st, pts: pts }; return; }
+      var g = svgEl("g", { class: "sm-storm" + (st.active ? " is-active" : "") });
+      g.appendChild(svgEl("polyline", { class: "sm-track", points: pts }));
+      g.appendChild(svgEl("polyline", { class: "sm-hit", points: pts }));
+      g.addEventListener("click", function () { selectStorm(st.code); });
+      tracks.appendChild(g);
+    });
+    svg.appendChild(tracks);
+
+    var read = $("seasonRead");
+    read.innerHTML = "";
+    if (!sel) { read.textContent = "点选路径或下方列表，查看单个台风。"; return; }
+    var st = sel.st, g2 = svgEl("g", { class: "sm-storm is-sel" });
+    g2.appendChild(svgEl("polyline", { class: "sm-track", points: sel.pts }));
+    var a = smp(st.track[0].lat, st.track[0].lng), z = smp(st.track[st.track.length - 1].lat, st.track[st.track.length - 1].lng);
+    g2.appendChild(svgEl("circle", { class: "sm-start", cx: a[0], cy: a[1], r: 3.2 * s }));
+    g2.appendChild(svgEl("circle", { class: "sm-end", cx: z[0], cy: z[1], r: 4.6 * s }));
+    var right = z[0] > W * 0.72;
+    var lb = svgEl("text", {
+      class: "sm-label", x: z[0] + (right ? -8 : 8) * s, y: z[1] - 7 * s,
+      "font-size": fs * 1.15, "text-anchor": right ? "end" : "start",
+    });
+    lb.textContent = st.name;
+    g2.appendChild(lb);
+    svg.appendChild(g2);
+
+    read.appendChild(el("b", null, st.name + (st.enName && st.enName !== st.name ? " " + st.enName : "")));
+    read.appendChild(document.createTextNode(" · 第 " + st.code + " 号 · " + (st.start || "?") + " → " +
+      (st.active ? "至今" : (st.end || "?")) + " · 峰值" + st.peakStrong + (st.peakWind ? "（" + st.peakWind + " 级）" : "") +
+      (st.minPressure ? " · 最低气压 " + st.minPressure + " hPa" : "")));
+  }
+
+  var resizeTimer = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () { if (currentView === "season" && SEASON) drawSeasonMap(); }, 200);
+  });
+
+  function updateTeasers() {
+    if (!SEASON) return;
+    var numbered = SEASON.storms.reduce(function (m, s) { return Math.max(m, serial(s.code)); }, 0);
+    $("teaserSeason").textContent = SEASON.year + " 年已编号 " + numbered + " 个台风";
+    $("teaserSeasonSub").textContent = "本季路径全景与强度回顾";
+  }
+
+  /* ---------- 防台小课堂 ---------- */
+  var QUIZ_ROUND = 5, quiz = null;
+  function startQuiz() {
+    var pool = QUIZ.map(function (q, i) { return i; });
+    for (var i = pool.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1)), t = pool[i]; pool[i] = pool[j]; pool[j] = t;
+    }
+    quiz = { order: pool.slice(0, Math.min(QUIZ_ROUND, pool.length)), i: 0, score: 0, answered: false };
+    renderQuiz();
+  }
+  function renderQuiz() {
+    var box = $("quiz");
+    box.innerHTML = "";
+    var n = quiz.order.length;
+    if (quiz.i >= n) {
+      var end = el("div", "quiz-end");
+      end.appendChild(el("p", "quiz-score", "答对 " + quiz.score + " / " + n));
+      end.appendChild(el("p", "quiz-msg", quiz.score === n ? "满分！把这页转给家里人也试试。"
+        : quiz.score >= n - 1 ? "很不错，差一点点就满分。" : "没关系，防台知识就是一遍遍记住的。"));
+      var again = el("button", "primary-btn", "再来一轮");
+      again.type = "button";
+      again.addEventListener("click", startQuiz);
+      var go = el("button", "ghost-btn", "去准备清单");
+      go.type = "button";
+      go.dataset.go = "prep";
+      var row = el("div", "quiz-actions");
+      row.appendChild(again); row.appendChild(go);
+      end.appendChild(row);
+      box.appendChild(end);
+      return;
+    }
+    var q = QUIZ[quiz.order[quiz.i]];
+    var head = el("div", "quiz-head");
+    head.appendChild(el("span", null, "第 " + (quiz.i + 1) + " / " + n + " 题"));
+    var dots = el("span", "quiz-dots");
+    for (var k = 0; k < n; k++) dots.appendChild(el("i", k < quiz.i ? "done" : k === quiz.i ? "cur" : ""));
+    head.appendChild(dots);
+    box.appendChild(head);
+    box.appendChild(el("h3", "quiz-q", q.q));
+    var opts = el("div", "quiz-opts");
+    var why = el("div", "quiz-why");
+    why.hidden = true;
+    q.options.forEach(function (text, oi) {
+      var b = el("button", "quiz-opt", text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        if (quiz.answered) return;
+        quiz.answered = true;
+        var right = oi === q.answer;
+        if (right) quiz.score++;
+        each(opts.children, function (c, ci) {
+          c.disabled = true;
+          if (ci === q.answer) c.classList.add("is-right");
+          else if (ci === oi) c.classList.add("is-wrong");
+        });
+        why.hidden = false;
+        why.appendChild(el("p", "quiz-verdict " + (right ? "right" : "wrong"), right ? "答对了" : "再想想"));
+        why.appendChild(el("p", null, q.why));
+        var next = el("button", "primary-btn", quiz.i + 1 < n ? "下一题" : "看成绩");
+        next.type = "button";
+        next.addEventListener("click", function () { quiz.i++; quiz.answered = false; renderQuiz(); });
+        why.appendChild(next);
+        next.focus();
+      });
+      opts.appendChild(b);
+    });
+    box.appendChild(opts);
+    box.appendChild(why);
   }
 
   /* ---------- 应急信息 ---------- */
   /* B 站 Toy 环境中页面运行在沙箱 iframe 内，tel: 的本框架导航会被静默拦截。
-     检测到 iframe 时依次尝试：顶层导航（沙箱授予用户手势顶层导航权）→
-     弹窗唤起 → 本框架导航；同时始终复制号码并提示，保证拨号可达。 */
-  var IN_FRAME = (function () {
-    try { return window.self !== window.top; } catch (e) { return true; }
-  })();
-
+     检测到 iframe 时用隐藏 iframe 唤起拨号，同时始终复制号码并提示，保证拨号可达。 */
   function legacyCopy(text) {
     var ta = document.createElement("textarea");
     ta.value = text;
@@ -1165,6 +1829,23 @@
     a.rel = "noopener noreferrer";
     sourceList.appendChild(a);
   });
+
+  /* ---------- 启动 ---------- */
+  function boot() {
+    var saved = null;
+    try { saved = sessionStorage.getItem(VIEW_KEY); } catch (e) { /* 忽略 */ }
+    setSeasonSub("storms");
+    showView(saved || "now");
+    fetchLatestFrom(DATA_SOURCES, validData)
+      .then(function (d) { init(d, "live"); })
+      .catch(function () {
+        return fetchJSON("data/typhoon.json", false, validData)
+          .then(function (d) { init(d, "snapshot"); })
+          .catch(function () { init(DEMO_DATA, "demo"); });
+      });
+    /* 预取本季存档，首页"本季台风"入口可以显示数字 */
+    setTimeout(ensureSeason, 2500);
+  }
 
   boot();
 })();

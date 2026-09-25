@@ -1,5 +1,6 @@
 /* 风眼 · Toy 运行时增强
-   长时间停留时每 15 分钟检查一次在线数据，有新数据则刷新页面并恢复滚动位置。
+   长时间停留时每 15 分钟检查一次在线数据，有新数据则原地重绘（保留所在页与勾选）；
+   app.js 未提供原地重绘接口时退回整页刷新并恢复滚动位置。
 
    注意：这里曾经有一段「南海诸岛九段线示意插图」，用手写经纬度在路径图角上画断续线。
    已于 2026-07-30 整体移除，请不要再加回来。原因：
@@ -35,9 +36,10 @@
     try { storage.setItem(key, String(value)); } catch (e) { /* Toy 无痕环境静默降级 */ }
   }
 
+  /* 页面当前展示的数据时次。早期版本从 #tyUpdated 读，但页面上从未有这个节点，
+     比对恒为空、定时刷新从不生效；现改由 app.js 直接给出。 */
   function displayedUpdatedAt() {
-    var node = document.getElementById("tyUpdated");
-    return node ? node.textContent.replace(/（(?:缓存|演示)）/g, "").trim() : "";
+    return typeof window.__typhoonEyeShownAt === "function" ? window.__typhoonEyeShownAt() || "" : "";
   }
 
   function validData(data) {
@@ -92,11 +94,14 @@
       .then(function (data) {
         writeStorage(sessionStorage, LAST_CHECK_KEY, now());
         var shown = displayedUpdatedAt();
-        if (shown && data.updatedAt !== shown) {
-          writeStorage(sessionStorage, SCROLL_KEY, window.pageYOffset || document.documentElement.scrollTop || 0);
-          window.location.reload();
+        /* updatedAt 为"YYYY-MM-DD HH:mm"，字典序即时序；演示/空态下 shown 为空，任何在线数据都更新 */
+        if (!data.updatedAt || (shown && data.updatedAt <= shown)) return;
+        if (typeof window.__typhoonEyeApply === "function") {
+          window.__typhoonEyeApply(data);
           return;
         }
+        writeStorage(sessionStorage, SCROLL_KEY, window.pageYOffset || document.documentElement.scrollTop || 0);
+        window.location.reload();
       })
       .catch(function () {
         /* 网络失败保留当前可靠快照；online/visibilitychange 会补查 */
