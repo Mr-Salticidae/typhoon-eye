@@ -8,10 +8,14 @@
    故并列输出洪涝类预警，并保留停编台风的影响持续期。详见 README。
    命名择优：任一源先给出正式命名即采用（JMA 英文名经命名表对照中文名），
    避免单一源命名滞后导致页面迟迟显示 NAMELESS。
+   另维护 data/season.json 台风季存档（见 scripts/season.mjs），存档失败不影响实况。
    用法：node scripts/fetch-typhoon.mjs
    全部源失败、或两个轨迹源均失败时以非零码退出，工作流保留上一版数据。 */
 
 import { writeFile, mkdir, readFile } from "node:fs/promises";
+import {
+  emptySeason, upsertActive, pendingBackfill, addBackfilled, sortSeason, serializeSeason,
+} from "./season.mjs";
 
 const UA = "typhoon-eye/0.5 (+https://github.com/Mr-Salticidae/typhoon-eye)";
 
@@ -26,17 +30,17 @@ function bjNow() {
   return `${p.year}-${p.month}-${p.day} ${p.hour}:${p.minute}`;
 }
 
-async function getText(url, headers) {
+async function getText(url, headers, timeoutMs = 30000) {
   const res = await fetch(url, {
     headers: { "User-Agent": UA, ...headers },
-    signal: AbortSignal.timeout(30000),
+    signal: AbortSignal.timeout(timeoutMs),
   });
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.text();
 }
 
-async function getJSON(url, headers) {
-  return JSON.parse(await getText(url, headers));
+async function getJSON(url, headers, timeoutMs) {
+  return JSON.parse(await getText(url, headers, timeoutMs));
 }
 
 /* JSONP "cb((…))" → 对象 */
@@ -221,9 +225,13 @@ function maxRadius(s) {
   return v.length ? Math.max(...v) : null;
 }
 
+/* 年度列表顺手留给台风季存档补齐已停编台风，省一次请求 */
+let zjYearList = null;
+
 async function fetchZJ() {
   const year = bjNow().slice(0, 4);
   const list = await getJSON(`${ZJ_API}/TyphoonList/${year}`, ZJ_HEADERS);
+  zjYearList = Array.isArray(list) ? list : null;
   const active = list.filter((t) => String(t.isactive) === "1");
   const storms = [];
   for (const t of active) {
@@ -719,3 +727,48 @@ await mkdir("data", { recursive: true });
 await writeFile("data/typhoon.json", JSON.stringify(out, null, 2) + "\n");
 console.log(`ok: ${typhoons.length} active typhoon(s) — ${typhoons.map((t) => `${t.name}[${t.verification.status}]`).join("、") || "无"} @ ${out.updatedAt}`);
 console.log(`sources: ${sourceStatus.map((s) => `${s.id}=${s.ok ? "ok" : "FAIL"}`).join(" ")}`);
+
+/* ---------- 台风季存档 ---------- */
+/* 主产物已落盘，存档任何异常都只告警：宁可存档慢一轮，也不拖垮实况。
+   补齐有条数与时间预算，存档建立后的首轮之外，平时零额外请求。 */
+const SEASON_PATH = "data/season.json";
+const BACKFILL_MAX = 8, BACKFILL_BUDGET_MS = 30000, BACKFILL_TIMEOUT_MS = 12000;
+
+try {
+  const year = Number(updatedAt.slice(0, 4));
+  let season = null;
+  try { season = JSON.parse(await readFile(SEASON_PATH, "utf8")); } catch { /* 首次运行 */ }
+  const before = season ? JSON.stringify({ ...season, updatedAt: null }) : null;
+
+  /* 跨年：旧存档另存为 data/season-YYYY.json，新年度从零开始 */
+  if (season && season.year !== year && Array.isArray(season.storms)) {
+    await writeFile(`data/season-${season.year}.json`, serializeSeason(season));
+    console.log(`season: archived ${season.year} (${season.storms.length} storms)`);
+    season = null;
+  }
+  if (!season || !Array.isArray(season.storms)) season = emptySeason(year);
+
+  upsertActive(season, typhoons);
+
+  const deadline = Date.now() + BACKFILL_BUDGET_MS;
+  let added = 0;
+  for (const id of pendingBackfill(season, zjYearList).slice(0, BACKFILL_MAX)) {
+    if (Date.now() > deadline) break;
+    try {
+      const info = await getJSON(`${ZJ_API}/TyphoonInfo/${id}`, ZJ_HEADERS, BACKFILL_TIMEOUT_MS);
+      if (addBackfilled(season, info, shortTime)) added++;
+    } catch (e) {
+      console.warn(`season backfill ${id} failed: ${e.message || e}`);
+    }
+  }
+  sortSeason(season);
+
+  if (JSON.stringify({ ...season, updatedAt: null }) !== before) {
+    season.updatedAt = updatedAt;
+    await writeFile(SEASON_PATH, serializeSeason(season));
+  }
+  console.log(`season: ${season.storms.length} storm(s) archived for ${season.year}` +
+    (added ? `, backfilled ${added}` : ""));
+} catch (e) {
+  console.warn("season archive failed: " + (e.message || e));
+}

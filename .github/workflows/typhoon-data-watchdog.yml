@@ -80,6 +80,18 @@ jobs:
           // 预警字段可降级（ok:false）但不可缺失：缺失说明脚本回退到了改版前的 schema
           if (!data.alerts || typeof data.alerts.ok !== 'boolean') throw new Error('Missing alerts block');
           if (!Array.isArray(data.recentlyEnded)) throw new Error('Missing recentlyEnded block');
+          // 台风季存档是附属产物：结构异常时回退到仓库里的上一版，不拖累实况提交
+          try {
+            const season = JSON.parse(fs.readFileSync('data/season.json', 'utf8'));
+            if (!Number.isInteger(season.year) || !Array.isArray(season.storms)) throw new Error('bad structure');
+            for (const e of season.storms) {
+              if (!e || typeof e.code !== 'string' || !Array.isArray(e.track)) throw new Error('bad storm entry');
+            }
+            console.log(`season ${season.year}: ${season.storms.length} storm(s) archived`);
+          } catch (error) {
+            console.warn(`season.json invalid, reverting: ${error.message}`);
+            require('node:child_process').execSync('git checkout -- data/season.json', { stdio: 'inherit' });
+          }
           NODE
 
       - name: Commit recovered data
@@ -89,7 +101,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/typhoon.json
+          git add data/  # typhoon.json + 台风季存档（跨年时另有 season-YYYY.json）
           if git diff --cached --quiet; then
             echo "no change"
             exit 0
@@ -102,5 +114,7 @@ jobs:
         if: steps.freshness.outputs.stale == 'true'
         shell: bash
         run: |
-          curl -fsS --max-time 20 "https://purge.jsdelivr.net/gh/Mr-Salticidae/typhoon-eye@main/data/typhoon.json" \
-            || echo "jsDelivr purge failed (non-fatal)"
+          for f in typhoon.json season.json; do
+            curl -fsS --max-time 20 "https://purge.jsdelivr.net/gh/Mr-Salticidae/typhoon-eye@main/data/$f" \
+              || echo "jsDelivr purge of $f failed (non-fatal)"
+          done
