@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25 14:47",
+  "updatedAt": "2026-09-25 15:16",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
@@ -34,24 +34,17 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 33 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 33 公里、强度差 1 级（2 源交叉校验一致）",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-25 14时",
-            "windLevel": 9,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "09-25 14时",
             "windLevel": 9,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -66,7 +59,7 @@
         "windLevel": 9,
         "windSpeed": 23,
         "pressure": 990,
-        "moveDir": "西北",
+        "moveDir": "北西",
         "moveSpeed": 13,
         "r7": 220,
         "r10": null,
@@ -255,204 +248,13 @@
     }
   ],
   "alerts": {
-    "ok": true,
+    "ok": false,
+    "error": "全部预警类别抓取失败",
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": null,
-    "total": 37,
-    "counts": {
-      "暴雨": 37
-    },
-    "peak": {
-      "province": "重庆",
-      "kind": "暴雨",
-      "level": "red",
-      "title": "重庆市开州区气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/50015441600000_20260925085055.html",
-      "issuedAt": "2026/09/25 08:50"
-    },
-    "provinces": [
-      {
-        "province": "重庆",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "重庆市开州区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015441600000_20260925085055.html",
-          "issuedAt": "2026/09/25 08:50"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省清远市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44180041600000_20260925054930.html",
-          "issuedAt": "2026/09/25 05:48"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省郴州市桂东县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43102741600000_20260924164034.html",
-          "issuedAt": "2026/09/24 16:40"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "新疆维吾尔自治区阿克苏地区库车市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65290241600000_20260925142755.html",
-          "issuedAt": "2026/09/25 14:27"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
-        "province": "河北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "河北省沧州市渤海新区黄骅市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13098341600000_20260925125920.html",
-          "issuedAt": "2026/09/25 12:59"
-        },
-        "lat": 38.5,
-        "lng": 115.5
-      },
-      {
-        "province": "四川",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "四川省达州市宣汉县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51172241600000_20260925021630.html",
-          "issuedAt": "2026/09/25 02:16"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
-        "province": "山东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "山东省临沂市郯城县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37132241600000_20260925081840.html",
-          "issuedAt": "2026/09/25 08:16"
-        },
-        "lat": 36.4,
-        "lng": 118.2
-      },
-      {
-        "province": "河南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "河南省驻马店市汝南县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41172741600000_20260925144303.html",
-          "issuedAt": "2026/09/25 14:41"
-        },
-        "lat": 33.9,
-        "lng": 113.6
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省丽水市遂昌县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33112341600000_20260925143805.html",
-          "issuedAt": "2026/09/25 14:36"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "陕西省安康市紫阳县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61092441600000_20260925091803.html",
-          "issuedAt": "2026/09/25 09:18"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      }
-    ]
+    "provinces": [],
+    "counts": {},
+    "peak": null
   },
   "recentlyEnded": [
     {
