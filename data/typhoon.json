@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 08:00",
+  "updatedAt": "2026-09-26 08:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "舒力基",
       "enName": "SURIGAE",
       "code": "2626",
-      "level": "强热带风暴（10级）",
+      "level": "强热带风暴（11级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "09-26 05时",
-            "windLevel": 10,
+            "time": "09-26 08时",
+            "windLevel": 11,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-26 05时",
-            "windLevel": 10,
+            "time": "09-26 08时",
+            "windLevel": 11,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 10,
-        "windSpeed": 28,
-        "pressure": 982,
-        "moveDir": "北北西",
-        "moveSpeed": 14,
+        "windLevel": 11,
+        "windSpeed": 30,
+        "pressure": 980,
+        "moveDir": "北",
+        "moveSpeed": 16,
         "r7": 250,
         "r10": 60,
-        "time": "09-26 05时",
-        "position": "中心位于北纬 21.8 度、东经 127.6 度"
+        "time": "09-26 08时",
+        "position": "中心位于北纬 22.1 度、东经 127.4 度"
       },
       "track": [
         {
@@ -107,9 +107,9 @@
           "phase": "past"
         },
         {
-          "t": "09-24 14时",
-          "lat": 18.8,
-          "lng": 132.9,
+          "t": "09-24 17时",
+          "lat": 19.1,
+          "lng": 132.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -131,17 +131,17 @@
           "phase": "past"
         },
         {
-          "t": "09-25 02时",
+          "t": "09-25 05时",
           "lat": 19.2,
-          "lng": 131.3,
+          "lng": 130.9,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "09-25 05时",
-          "lat": 19.2,
-          "lng": 130.9,
+          "t": "09-25 08时",
+          "lat": 19.7,
+          "lng": 130,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -155,14 +155,6 @@
           "phase": "past"
         },
         {
-          "t": "09-25 14时",
-          "lat": 20.6,
-          "lng": 128.8,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
           "t": "09-25 17时",
           "lat": 20.8,
           "lng": 128.6,
@@ -171,9 +163,9 @@
           "phase": "past"
         },
         {
-          "t": "09-25 23时",
-          "lat": 20.9,
-          "lng": 128,
+          "t": "09-25 20时",
+          "lat": 20.8,
+          "lng": 128.1,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
@@ -192,69 +184,77 @@
           "lng": 127.6,
           "wind": 10,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "09-26 08时",
+          "lat": 22.1,
+          "lng": 127.4,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "09-26 17时",
-          "lat": 23.2,
-          "lng": 127.2,
+          "t": "09-26 20时",
+          "lat": 23.7,
+          "lng": 127.1,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-27 05时",
-          "lat": 24.4,
-          "lng": 127.6,
+          "t": "09-27 08时",
+          "lat": 24.8,
+          "lng": 127.9,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-27 17时",
-          "lat": 25.5,
-          "lng": 128.8,
+          "t": "09-27 20时",
+          "lat": 26,
+          "lng": 129.4,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "09-28 05时",
-          "lat": 26.5,
-          "lng": 130.3,
+          "t": "09-28 08时",
+          "lat": 27,
+          "lng": 130.9,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-28 17时",
-          "lat": 27.7,
-          "lng": 132,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "09-29 05时",
-          "lat": 28.7,
-          "lng": 133.8,
+          "t": "09-28 20时",
+          "lat": 28,
+          "lng": 132.7,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "09-30 05时",
-          "lat": 31.1,
-          "lng": 138.3,
+          "t": "09-29 08时",
+          "lat": 28.9,
+          "lng": 134.3,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-01 05时",
-          "lat": 33.5,
-          "lng": 141.9,
-          "wind": 8,
+          "t": "09-30 08时",
+          "lat": 31.6,
+          "lng": 139.3,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-01 08时",
+          "lat": 35,
+          "lng": 143.8,
+          "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         }
@@ -267,11 +267,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 58,
+    "total": 53,
     "counts": {
-      "暴雨": 56,
+      "暴雨": 50,
       "山洪灾害": 1,
-      "地质灾害": 1
+      "地质灾害": 2
     },
     "peak": {
       "province": "辽宁",
@@ -299,24 +299,6 @@
         },
         "lat": 41.8,
         "lng": 122.6
-      },
-      {
-        "province": "湖北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖北省孝感市汉川市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42098441600000_20260926040954.html",
-          "issuedAt": "2026/09/26 04:09"
-        },
-        "lat": 31,
-        "lng": 112.3
       },
       {
         "province": "新疆",
@@ -361,34 +343,16 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "河南省驻马店市汝南县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41172741600000_20260926065759.html",
-          "issuedAt": "2026/09/26 06:55"
+          "title": "河南省信阳市固始县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41152541600000_20260926082040.html",
+          "issuedAt": "2026/09/26 08:20"
         },
         "lat": 33.9,
         "lng": 113.6
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "重庆市县城口县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260925092242.html",
-          "issuedAt": "2026/09/25 09:22"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       },
       {
         "province": "山西",
@@ -398,15 +362,33 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
-          "title": "山西省忻州市五寨县自然资源局 五寨县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14092841600000_20260925232241.html",
-          "issuedAt": "2026/09/25 23:18"
+          "title": "山西省忻州市规划和自然资源局和忻州市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14090041600000_20260926081004.html",
+          "issuedAt": "2026/09/26 08:10"
         },
         "lat": 37.6,
+        "lng": 112.3
+      },
+      {
+        "province": "湖北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖北省武汉市黄陂区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42011641600000_20260926061740.html",
+          "issuedAt": "2026/09/26 06:17"
+        },
+        "lat": 31,
         "lng": 112.3
       },
       {
@@ -446,25 +428,7 @@
         "lng": 126.2
       },
       {
-        "province": "河北",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河北省保定市阜平县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13062441600000_20260925224157.html",
-          "issuedAt": "2026/09/25 22:41"
-        },
-        "lat": 38.5,
-        "lng": 115.5
-      },
-      {
-        "province": "内蒙古",
+        "province": "重庆",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
@@ -474,12 +438,12 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "内蒙古自治区赤峰市喀喇沁旗气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15042841600000_20260925164043.html",
-          "issuedAt": "2026/09/25 16:40"
+          "title": "重庆市县巫溪县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023841600000_20260926045406.html",
+          "issuedAt": "2026/09/26 04:53"
         },
-        "lat": 44,
-        "lng": 113.9
+        "lat": 29.8,
+        "lng": 107.9
       }
     ]
   },
