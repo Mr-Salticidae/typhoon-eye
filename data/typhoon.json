@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 17:00",
+  "updatedAt": "2026-09-26 17:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -259,11 +259,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 97,
+    "total": 101,
     "counts": {
-      "暴雨": 91,
+      "暴雨": 94,
       "山洪灾害": 2,
-      "地质灾害": 4
+      "地质灾害": 5
     },
     "peak": {
       "province": "辽宁",
@@ -317,7 +317,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -347,6 +347,24 @@
         "lng": 115.7
       },
       {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省海口市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46010041600000_20260926170628.html",
+          "issuedAt": "2026/09/26 17:06"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
+      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -363,24 +381,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "海南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "海南省昌江县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46902641600000_20260926160518.html",
-          "issuedAt": "2026/09/26 16:05"
-        },
-        "lat": 19.2,
-        "lng": 109.7
       },
       {
         "province": "云南",
@@ -445,13 +445,13 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
-          "title": "山西省忻州市河曲县规划和自然资源局与河曲县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14093041600000_20260926091133.html",
-          "issuedAt": "2026/09/26 09:10"
+          "title": "山西省自然资源厅和山西省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260926165835.html",
+          "issuedAt": "2026/09/26 16:00"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -491,6 +491,24 @@
         },
         "lat": 33.9,
         "lng": 113.6
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省漳州市平和县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062841600000_20260926165300.html",
+          "issuedAt": "2026/09/26 16:53"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "河北",
