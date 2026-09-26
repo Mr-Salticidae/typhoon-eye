@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 23:15",
+  "updatedAt": "2026-09-26 23:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 35 公里（时次相差 3 小时）、强度一致；日本气象厅定位相差 24 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,14 +49,14 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "09-26 20时",
+            "time": "09-26 23时",
             "windLevel": 11,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-26 20时",
+            "time": "09-26 23时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -261,9 +261,9 @@
     "partial": null,
     "total": 107,
     "counts": {
-      "暴雨": 97,
+      "暴雨": 98,
       "山洪灾害": 3,
-      "地质灾害": 7
+      "地质灾害": 6
     },
     "peak": {
       "province": "辽宁",
@@ -299,7 +299,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 37,
+        "count": 38,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -391,7 +391,7 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 14,
+        "count": 13,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
