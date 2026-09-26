@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 08:30",
+  "updatedAt": "2026-09-26 09:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 25 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 23 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-26 05时",
+            "time": "09-26 08时",
             "windLevel": 10,
             "role": "verify"
           }
@@ -267,9 +267,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 53,
+    "total": 56,
     "counts": {
-      "暴雨": 50,
+      "暴雨": 53,
       "山洪灾害": 1,
       "地质灾害": 2
     },
@@ -398,13 +398,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省阜阳市临泉县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34122141600000_20260926074857.html",
-          "issuedAt": "2026/09/26 07:48"
+          "title": "安徽省淮南市凤台县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34042141600000_20260926084316.html",
+          "issuedAt": "2026/09/26 08:43"
         },
         "lat": 31.9,
         "lng": 117.2
@@ -434,16 +434,34 @@
         "kinds": {
           "暴雨": "blue"
         },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市县城口县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260926084649.html",
+          "issuedAt": "2026/09/26 08:46"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
+        "province": "河北",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
         "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "重庆市县巫溪县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023841600000_20260926045406.html",
-          "issuedAt": "2026/09/26 04:53"
+          "title": "河北省秦皇岛市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13030041600000_20260926083843.html",
+          "issuedAt": "2026/09/26 08:38"
         },
-        "lat": 29.8,
-        "lng": 107.9
+        "lat": 38.5,
+        "lng": 115.5
       }
     ]
   },
