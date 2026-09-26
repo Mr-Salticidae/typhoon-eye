@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 16:30",
+  "updatedAt": "2026-09-26 17:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -259,9 +259,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 94,
+    "total": 97,
     "counts": {
-      "暴雨": 88,
+      "暴雨": 91,
       "山洪灾害": 2,
       "地质灾害": 4
     },
@@ -294,18 +294,18 @@
       },
       {
         "province": "安徽",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "red",
+        "floodLevel": "red",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "red"
         },
         "count": 13,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "安徽省安庆市宿松县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34082641600000_20260926160505.html",
-          "issuedAt": "2026/09/26 16:05"
+          "level": "red",
+          "title": "安徽省安庆市宿松县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34082641600000_20260926163526.html",
+          "issuedAt": "2026/09/26 16:35"
         },
         "lat": 31.9,
         "lng": 117.2
@@ -317,13 +317,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 4,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "浙江省湖州市安吉县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33052341600000_20260926161014.html",
-          "issuedAt": "2026/09/26 16:07"
+          "title": "浙江省湖州市德清县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33052141600000_20260926165708.html",
+          "issuedAt": "2026/09/26 16:54"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -335,16 +335,34 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省九江市柴桑区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36040441600000_20260926162146.html",
-          "issuedAt": "2026/09/26 16:20"
+          "title": "江西省九江市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36040041600000_20260926163854.html",
+          "issuedAt": "2026/09/26 16:37"
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省梅州市丰顺县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44142341600000_20260926164310.html",
+          "issuedAt": "2026/09/26 16:41"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "海南",
@@ -475,24 +493,6 @@
         "lng": 113.6
       },
       {
-        "province": "新疆",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "新疆维吾尔自治区阿克苏地区温宿县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65292241600000_20260925163225.html",
-          "issuedAt": "2026/09/25 16:32"
-        },
-        "lat": 41.1,
-        "lng": 85.3
-      },
-      {
         "province": "河北",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -563,6 +563,24 @@
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "新疆维吾尔自治区喀什地区塔什库尔干县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65313141600000_20260926095231.html",
+          "issuedAt": "2026/09/26 09:52"
+        },
+        "lat": 41.1,
+        "lng": 85.3
       }
     ]
   },
