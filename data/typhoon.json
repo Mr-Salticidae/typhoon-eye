@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26 09:00",
+  "updatedAt": "2026-09-26 09:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -267,11 +267,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 56,
+    "total": 63,
     "counts": {
-      "暴雨": 53,
+      "暴雨": 59,
       "山洪灾害": 1,
-      "地质灾害": 2
+      "地质灾害": 3
     },
     "peak": {
       "province": "辽宁",
@@ -289,7 +289,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 23,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -299,6 +299,24 @@
         },
         "lat": 41.8,
         "lng": 122.6
+      },
+      {
+        "province": "河南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 12,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "河南省信阳市商城县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41152441600000_20260926091018.html",
+          "issuedAt": "2026/09/26 09:10"
+        },
+        "lat": 33.9,
+        "lng": 113.6
       },
       {
         "province": "新疆",
@@ -337,24 +355,6 @@
         "lng": 113.4
       },
       {
-        "province": "河南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "河南省信阳市固始县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41152541600000_20260926082040.html",
-          "issuedAt": "2026/09/26 08:20"
-        },
-        "lat": 33.9,
-        "lng": 113.6
-      },
-      {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -362,13 +362,13 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
-          "title": "山西省忻州市规划和自然资源局和忻州市气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14090041600000_20260926081004.html",
-          "issuedAt": "2026/09/26 08:10"
+          "title": "山西省忻州市河曲县规划和自然资源局与河曲县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14093041600000_20260926091133.html",
+          "issuedAt": "2026/09/26 09:10"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -398,16 +398,34 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 8,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省淮南市凤台县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34042141600000_20260926084316.html",
-          "issuedAt": "2026/09/26 08:43"
+          "title": "安徽省滁州市天长市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34118141600000_20260926091844.html",
+          "issuedAt": "2026/09/26 09:18"
         },
         "lat": 31.9,
         "lng": 117.2
+      },
+      {
+        "province": "河北",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "河北省秦皇岛市青龙满族自治县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13032141600000_20260926092224.html",
+          "issuedAt": "2026/09/26 09:22"
+        },
+        "lat": 38.5,
+        "lng": 115.5
       },
       {
         "province": "吉林",
@@ -444,24 +462,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "河北",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河北省秦皇岛市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13030041600000_20260926083843.html",
-          "issuedAt": "2026/09/26 08:38"
-        },
-        "lat": 38.5,
-        "lng": 115.5
       }
     ]
   },
