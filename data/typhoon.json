@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 13:15",
+  "updatedAt": "2026-09-27 13:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-27 12时",
+            "time": "09-27 13时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -251,9 +251,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 40,
+    "total": 42,
     "counts": {
-      "暴雨": 32,
+      "暴雨": 34,
       "山洪灾害": 2,
       "地质灾害": 6
     },
@@ -327,7 +327,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -345,7 +345,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -382,13 +382,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 2,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省绍兴市嵊州市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33068341600000_20260927130834.html",
-          "issuedAt": "2026/09/27 13:08"
+          "title": "浙江省绍兴市上虞区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33060441600000_20260927133916.html",
+          "issuedAt": "2026/09/27 13:40"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -454,13 +454,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省六安市金寨县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34152441600000_20260927123008.html",
-          "issuedAt": "2026/09/27 12:30"
+          "title": "安徽省安庆市桐城市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34088141600000_20260927133336.html",
+          "issuedAt": "2026/09/27 13:33"
         },
         "lat": 31.9,
         "lng": 117.2
