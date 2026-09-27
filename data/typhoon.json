@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 13:52",
+  "updatedAt": "2026-09-27 14:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 30 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "09-27 11时",
             "windLevel": 15,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-27 11时",
+            "windLevel": 15,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,8 +68,8 @@
         "pressure": 945,
         "moveDir": "东北",
         "moveSpeed": 16,
-        "r7": null,
-        "r10": null,
+        "r7": 250,
+        "r10": 90,
         "time": "09-27 11时",
         "position": "中心位于北纬 25.0 度、东经 127.8 度"
       },
@@ -244,21 +251,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 42,
+    "total": 38,
     "counts": {
-      "暴雨": 34,
+      "暴雨": 30,
       "山洪灾害": 2,
       "地质灾害": 6
     },
     "peak": {
-      "province": "辽宁",
+      "province": "浙江",
       "kind": "暴雨",
       "level": "orange",
-      "title": "辽宁省大连市瓦房店市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/21028141600000_20260927125500.html",
-      "issuedAt": "2026/09/27 12:56"
+      "title": "浙江省宁波市镇海区气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/33021141600000_20260927140610.html",
+      "issuedAt": "2026/09/27 14:04"
     },
     "provinces": [
+      {
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "浙江省宁波市镇海区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33021141600000_20260927140610.html",
+          "issuedAt": "2026/09/27 14:04"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
       {
         "province": "辽宁",
         "maxLevel": "orange",
@@ -278,24 +303,6 @@
         "lng": 122.6
       },
       {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区北海市合浦县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45052141600000_20260927104036.html",
-          "issuedAt": "2026/09/27 10:37"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -312,6 +319,24 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区防城港市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45060041600000_20260927082926.html",
+          "issuedAt": "2026/09/27 08:25"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "江西",
@@ -369,24 +394,6 @@
         "lng": 112.3
       },
       {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省绍兴市上虞区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33060441600000_20260927133916.html",
-          "issuedAt": "2026/09/27 13:40"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
         "province": "重庆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -405,24 +412,6 @@
         "lng": 107.9
       },
       {
-        "province": "河南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "河南省信阳市商城县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41152441600000_20260927073438.html",
-          "issuedAt": "2026/09/27 07:34"
-        },
-        "lat": 33.9,
-        "lng": 113.6
-      },
-      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -439,6 +428,24 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "河南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "河南省信阳市商城县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41152441600000_20260927073438.html",
+          "issuedAt": "2026/09/27 07:34"
+        },
+        "lat": 33.9,
+        "lng": 113.6
       },
       {
         "province": "安徽",
@@ -493,24 +500,6 @@
         },
         "lat": 38.5,
         "lng": 115.5
-      },
-      {
-        "province": "上海",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "上海市崇明区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/31015141600000_20260926152902.html",
-          "issuedAt": "2026/09/26 15:25"
-        },
-        "lat": 31.2,
-        "lng": 121.5
       }
     ]
   },
