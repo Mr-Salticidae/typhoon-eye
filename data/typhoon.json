@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 16:15",
+  "updatedAt": "2026-09-27 16:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 45 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-27 15时",
+            "time": "09-27 16时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -251,11 +251,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 42,
+    "total": 41,
     "counts": {
-      "暴雨": 35,
-      "山洪灾害": 2,
-      "地质灾害": 5
+      "暴雨": 36,
+      "山洪灾害": 1,
+      "地质灾害": 4
     },
     "peak": {
       "province": "浙江",
@@ -273,7 +273,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 8,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -321,43 +321,6 @@
         "lng": 113.4
       },
       {
-        "province": "江西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "江西省九江市柴桑区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36040441600000_20260926162146.html",
-          "issuedAt": "2026/09/26 16:20"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
-      {
-        "province": "山西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 7,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "山西省忻州市河曲县规划和自然资源局与河曲县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14093041600000_20260927085606.html",
-          "issuedAt": "2026/09/27 08:55"
-        },
-        "lat": 37.6,
-        "lng": 112.3
-      },
-      {
         "province": "江苏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -374,6 +337,25 @@
         },
         "lat": 33,
         "lng": 119.5
+      },
+      {
+        "province": "山西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "山西省忻州市河曲县规划和自然资源局与河曲县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14093041600000_20260927085606.html",
+          "issuedAt": "2026/09/27 08:55"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       },
       {
         "province": "重庆",
@@ -464,6 +446,24 @@
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "陕西省安康市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61090041600000_20260927161539.html",
+          "issuedAt": "2026/09/27 16:15"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "新疆",
