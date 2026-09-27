@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 19:02",
+  "updatedAt": "2026-09-27 19:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -251,11 +251,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 34,
+    "total": 35,
     "counts": {
-      "暴雨": 29,
-      "山洪灾害": 1,
-      "地质灾害": 4
+      "暴雨": 32,
+      "地质灾害": 3
     },
     "peak": {
       "province": "辽宁",
@@ -291,35 +290,16 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 8,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省杭州市余杭区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33011041600000_20260927183034.html",
-          "issuedAt": "2026/09/27 18:27"
+          "title": "浙江省绍兴市柯桥区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33060341600000_20260927192536.html",
+          "issuedAt": "2026/09/27 19:27"
         },
         "lat": 29.2,
         "lng": 120.2
-      },
-      {
-        "province": "山西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 5,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "山西省自然资源厅和山西省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260927172252.html",
-          "issuedAt": "2026/09/27 17:00"
-        },
-        "lat": 37.6,
-        "lng": 112.3
       },
       {
         "province": "广东",
@@ -356,6 +336,24 @@
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "山西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "山西省自然资源厅和山西省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260927172252.html",
+          "issuedAt": "2026/09/27 17:00"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       },
       {
         "province": "福建",
