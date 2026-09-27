@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 17:45",
+  "updatedAt": "2026-09-27 18:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-27 16时",
+            "time": "09-27 17时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -251,56 +251,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 46,
+    "total": 34,
     "counts": {
-      "暴雨": 40,
+      "暴雨": 28,
       "山洪灾害": 1,
       "地质灾害": 5
     },
     "peak": {
       "province": "浙江",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "浙江省杭州市建德市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/33018241600000_20260927154529.html",
-      "issuedAt": "2026/09/27 15:43"
+      "level": "red",
+      "title": "浙江省杭州市余杭区气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/33011041600000_20260927180506.html",
+      "issuedAt": "2026/09/27 18:04"
     },
     "provinces": [
       {
         "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "red",
+        "floodLevel": "red",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "red"
         },
-        "count": 10,
+        "count": 8,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "浙江省杭州市建德市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33018241600000_20260927154529.html",
-          "issuedAt": "2026/09/27 15:43"
+          "level": "red",
+          "title": "浙江省杭州市余杭区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33011041600000_20260927180506.html",
+          "issuedAt": "2026/09/27 18:04"
         },
         "lat": 29.2,
         "lng": 120.2
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44082541600000_20260926180235.html",
-          "issuedAt": "2026/09/26 18:00"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "辽宁",
@@ -340,22 +322,22 @@
         "lng": 112.3
       },
       {
-        "province": "江苏",
+        "province": "广东",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "江苏省南通市启东市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/32068141600000_20260927071617.html",
-          "issuedAt": "2026/09/27 07:16"
+          "title": "广东省江门市鹤山市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44078441600000_20260927175625.html",
+          "issuedAt": "2026/09/27 17:55"
         },
-        "lat": 33,
-        "lng": 119.5
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "重庆",
@@ -364,7 +346,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -394,24 +376,6 @@
         "lng": 112.3
       },
       {
-        "province": "安徽",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "安徽省宣城市绩溪县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34182441600000_20260927152932.html",
-          "issuedAt": "2026/09/27 15:29"
-        },
-        "lat": 31.9,
-        "lng": 117.2
-      },
-      {
         "province": "四川",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -430,7 +394,7 @@
         "lng": 102.9
       },
       {
-        "province": "河北",
+        "province": "安徽",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
@@ -440,12 +404,12 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省唐山市迁安市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13028341600000_20260927153833.html",
-          "issuedAt": "2026/09/27 15:38"
+          "title": "安徽省宣城市绩溪县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34182441600000_20260927152932.html",
+          "issuedAt": "2026/09/27 15:29"
         },
-        "lat": 38.5,
-        "lng": 115.5
+        "lat": 31.9,
+        "lng": 117.2
       },
       {
         "province": "陕西",
@@ -482,6 +446,24 @@
         },
         "lat": 41.1,
         "lng": 85.3
+      },
+      {
+        "province": "河北",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "河北省唐山市滦州市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13028441600000_20260927000226.html",
+          "issuedAt": "2026/09/27 00:02"
+        },
+        "lat": 38.5,
+        "lng": 115.5
       }
     ]
   },
