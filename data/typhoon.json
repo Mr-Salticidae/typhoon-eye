@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 07:15",
+  "updatedAt": "2026-09-28 07:46",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "zj",
@@ -34,22 +34,29 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "浙江台风路径系统",
+      "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 11 公里（时次相差 1 小时）、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
+            "id": "cma",
+            "name": "中央气象台",
             "time": "09-28 05时",
             "windLevel": 16,
             "role": "primary"
           },
           {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-28 05时",
+            "windLevel": 16,
+            "role": "verify"
+          },
+          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-28 06时",
+            "time": "09-28 07时",
             "windLevel": 15,
             "role": "verify"
           }
@@ -59,7 +66,7 @@
         "windLevel": 16,
         "windSpeed": 52,
         "pressure": 935,
-        "moveDir": "北东",
+        "moveDir": "东北",
         "moveSpeed": 15,
         "r7": 250,
         "r10": 90,
@@ -244,76 +251,22 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": [
-      "台风"
+      "暴雨",
+      "山洪灾害"
     ],
-    "total": 34,
+    "total": 3,
     "counts": {
-      "暴雨": 31,
       "地质灾害": 3
     },
     "peak": {
-      "province": "重庆",
-      "kind": "暴雨",
-      "level": "orange",
-      "title": "重庆市县城口县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260928070156.html",
-      "issuedAt": "2026/09/28 07:01"
+      "province": "山西",
+      "kind": "地质灾害",
+      "level": "yellow",
+      "title": "山西省自然资源厅和山西省气象台发布地质灾害黄色预警",
+      "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260927172252.html",
+      "issuedAt": "2026/09/27 17:00"
     },
     "provinces": [
-      {
-        "province": "重庆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "重庆市县城口县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260928070156.html",
-          "issuedAt": "2026/09/28 07:01"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "辽宁",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "辽宁省大连市瓦房店市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21028141600000_20260927125500.html",
-          "issuedAt": "2026/09/27 12:56"
-        },
-        "lat": 41.8,
-        "lng": 122.6
-      },
-      {
-        "province": "江西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "江西省九江市彭泽县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36043041600000_20260928002706.html",
-          "issuedAt": "2026/09/28 00:25"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
       {
         "province": "山西",
         "maxLevel": "yellow",
@@ -333,42 +286,6 @@
         "lng": 112.3
       },
       {
-        "province": "广东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "广东省江门市台山市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44078141600000_20260928054154.html",
-          "issuedAt": "2026/09/28 05:40"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "湖北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖北省直辖县级行政区划神农架林区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42902141600000_20260927194613.html",
-          "issuedAt": "2026/09/27 19:46"
-        },
-        "lat": 31,
-        "lng": 112.3
-      },
-      {
         "province": "云南",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -385,96 +302,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "陕西省西安市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61010041600000_20260928065045.html",
-          "issuedAt": "2026/09/28 06:50"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      },
-      {
-        "province": "河南",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河南省驻马店市正阳县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41172441600000_20260928063246.html",
-          "issuedAt": "2026/09/28 06:32"
-        },
-        "lat": 33.9,
-        "lng": 113.6
-      },
-      {
-        "province": "四川",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "四川省达州市达川区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51170341600000_20260927162500.html",
-          "issuedAt": "2026/09/27 16:25"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "安徽省合肥市长丰县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34012141600000_20260928042302.html",
-          "issuedAt": "2026/09/28 04:23"
-        },
-        "lat": 31.9,
-        "lng": 117.2
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "新疆维吾尔自治区巴音郭楞蒙古自治州和静县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65282741600000_20260927105607.html",
-          "issuedAt": "2026/09/27 10:56"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       }
     ]
   },
