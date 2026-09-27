@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 05:15",
+  "updatedAt": "2026-09-28 05:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 46 公里（时次相差 2 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 64 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-28 04时",
+            "time": "09-28 05时",
             "windLevel": 15,
             "role": "verify"
           }
@@ -303,6 +303,24 @@
         "lng": 101.5
       },
       {
+        "province": "重庆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "重庆市县城口县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260928051958.html",
+          "issuedAt": "2026/09/28 05:19"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
         "province": "江西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -355,24 +373,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市开州区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015441600000_20260928042301.html",
-          "issuedAt": "2026/09/28 04:22"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       },
       {
         "province": "陕西",
