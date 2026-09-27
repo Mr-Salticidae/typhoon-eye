@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 06:45",
+  "updatedAt": "2026-09-28 07:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
@@ -34,24 +34,17 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 11 公里（时次相差 1 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-28 05时",
-            "windLevel": 16,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "09-28 05时",
             "windLevel": 16,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -66,7 +59,7 @@
         "windLevel": 16,
         "windSpeed": 52,
         "pressure": 935,
-        "moveDir": "东北",
+        "moveDir": "北东",
         "moveSpeed": 15,
         "r7": 250,
         "r10": 90,
@@ -250,21 +243,41 @@
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": null,
-    "total": 31,
+    "partial": [
+      "台风"
+    ],
+    "total": 34,
     "counts": {
-      "暴雨": 28,
+      "暴雨": 31,
       "地质灾害": 3
     },
     "peak": {
-      "province": "辽宁",
+      "province": "重庆",
       "kind": "暴雨",
       "level": "orange",
-      "title": "辽宁省大连市瓦房店市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/21028141600000_20260927125500.html",
-      "issuedAt": "2026/09/27 12:56"
+      "title": "重庆市县城口县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260928070156.html",
+      "issuedAt": "2026/09/28 07:01"
     },
     "provinces": [
+      {
+        "province": "重庆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "重庆市县城口县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260928070156.html",
+          "issuedAt": "2026/09/28 07:01"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
       {
         "province": "辽宁",
         "maxLevel": "orange",
@@ -282,24 +295,6 @@
         },
         "lat": 41.8,
         "lng": 122.6
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "重庆市县城口县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50022941600000_20260928051958.html",
-          "issuedAt": "2026/09/28 05:19"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       },
       {
         "province": "江西",
@@ -392,6 +387,24 @@
         "lng": 101.5
       },
       {
+        "province": "陕西",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "陕西省西安市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61010041600000_20260928065045.html",
+          "issuedAt": "2026/09/28 06:50"
+        },
+        "lat": 35.2,
+        "lng": 108.9
+      },
+      {
         "province": "河南",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -408,24 +421,6 @@
         },
         "lat": 33.9,
         "lng": 113.6
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "陕西省西安市长安区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61011641600000_20260928061743.html",
-          "issuedAt": "2026/09/28 06:17"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "四川",
