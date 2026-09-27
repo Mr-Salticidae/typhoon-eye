@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 11:45",
+  "updatedAt": "2026-09-27 12:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-27 10时",
+            "time": "09-27 11时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -251,9 +251,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 41,
+    "total": 35,
     "counts": {
-      "暴雨": 33,
+      "暴雨": 27,
       "山洪灾害": 2,
       "地质灾害": 6
     },
@@ -285,7 +285,7 @@
         "lng": 108.8
       },
       {
-        "province": "河北",
+        "province": "辽宁",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
@@ -295,12 +295,12 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "河北省保定市易县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13063341600000_20260926202626.html",
-          "issuedAt": "2026/09/26 20:26"
+          "title": "辽宁省大连市瓦房店市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21028141600000_20260927115100.html",
+          "issuedAt": "2026/09/27 11:56"
         },
-        "lat": 38.5,
-        "lng": 115.5
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "江西",
@@ -345,13 +345,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 17,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "江苏省苏州市常熟市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/32058141600000_20260927083258.html",
-          "issuedAt": "2026/09/27 08:32"
+          "title": "江苏省南通市启东市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32068141600000_20260927071617.html",
+          "issuedAt": "2026/09/27 07:16"
         },
         "lat": 33,
         "lng": 119.5
@@ -430,22 +430,22 @@
         "lng": 112.3
       },
       {
-        "province": "辽宁",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "province": "安徽",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "blue"
         },
         "count": 1,
         "top": {
           "kind": "暴雨",
-          "level": "yellow",
-          "title": "辽宁省朝阳市朝阳县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21132141600000_20260927061300.html",
-          "issuedAt": "2026/09/27 06:15"
+          "level": "blue",
+          "title": "安徽省六安市舒城县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34152341600000_20260927120830.html",
+          "issuedAt": "2026/09/27 12:08"
         },
-        "lat": 41.8,
-        "lng": 122.6
+        "lat": 31.9,
+        "lng": 117.2
       },
       {
         "province": "新疆",
@@ -464,6 +464,24 @@
         },
         "lat": 41.1,
         "lng": 85.3
+      },
+      {
+        "province": "河北",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "河北省唐山市滦州市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13028441600000_20260927000226.html",
+          "issuedAt": "2026/09/27 00:02"
+        },
+        "lat": 38.5,
+        "lng": 115.5
       },
       {
         "province": "上海",
