@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 08:00",
+  "updatedAt": "2026-09-27 08:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -251,9 +251,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 82,
+    "total": 51,
     "counts": {
-      "暴雨": 74,
+      "暴雨": 43,
       "山洪灾害": 2,
       "地质灾害": 6
     },
@@ -261,9 +261,9 @@
       "province": "河北",
       "kind": "暴雨",
       "level": "orange",
-      "title": "河北省保定市徐水区气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/13060941600000_20260926211446.html",
-      "issuedAt": "2026/09/26 21:14"
+      "title": "河北省保定市易县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/13063341600000_20260926202626.html",
+      "issuedAt": "2026/09/26 20:26"
     },
     "provinces": [
       {
@@ -273,16 +273,34 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 36,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "河北省保定市徐水区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13060941600000_20260926211446.html",
-          "issuedAt": "2026/09/26 21:14"
+          "title": "河北省保定市易县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13063341600000_20260926202626.html",
+          "issuedAt": "2026/09/26 20:26"
         },
         "lat": 38.5,
         "lng": 115.5
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区防城港市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45060041600000_20260927082926.html",
+          "issuedAt": "2026/09/27 08:25"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "辽宁",
@@ -291,7 +309,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -319,24 +337,6 @@
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区防城港市东兴市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45068141600000_20260927063453.html",
-          "issuedAt": "2026/09/27 06:30"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "广东",
@@ -379,17 +379,17 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
+          "暴雨": "blue",
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 11,
+        "count": 9,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "山西省大同市灵丘县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14022441600000_20260926234200.html",
-          "issuedAt": "2026/09/26 23:42"
+          "title": "山西省忻州市规划和自然资源局和忻州市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14090041600000_20260926195934.html",
+          "issuedAt": "2026/09/26 20:00"
         },
         "lat": 37.6,
         "lng": 112.3
@@ -411,24 +411,6 @@
         },
         "lat": 33.9,
         "lng": 113.6
-      },
-      {
-        "province": "四川",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "四川省阿坝藏族羌族自治州松潘县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51322441600000_20260927011255.html",
-          "issuedAt": "2026/09/27 01:12"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "湖北",
@@ -467,24 +449,6 @@
         "lng": 117.2
       },
       {
-        "province": "上海",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "上海市闵行区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/31011241600000_20260926220056.html",
-          "issuedAt": "2026/09/26 22:00"
-        },
-        "lat": 31.2,
-        "lng": 121.5
-      },
-      {
         "province": "重庆",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -501,6 +465,24 @@
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "上海",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "上海市崇明区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/31015141600000_20260926152902.html",
+          "issuedAt": "2026/09/26 15:25"
+        },
+        "lat": 31.2,
+        "lng": 121.5
       },
       {
         "province": "新疆",
