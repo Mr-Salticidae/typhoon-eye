@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 09:45",
+  "updatedAt": "2026-09-27 10:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "zj",
@@ -34,22 +34,29 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "浙江台风路径系统",
+      "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 11 公里、强度差 1 级（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
+            "id": "cma",
+            "name": "中央气象台",
             "time": "09-27 08时",
             "windLevel": 14,
             "role": "primary"
           },
           {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "09-27 08时",
+            "windLevel": 14,
+            "role": "verify"
+          },
+          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-27 08时",
+            "time": "09-27 09时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -59,7 +66,7 @@
         "windLevel": 14,
         "windSpeed": 42,
         "pressure": 955,
-        "moveDir": "北东",
+        "moveDir": "东北",
         "moveSpeed": 17,
         "r7": 250,
         "r10": 90,
@@ -244,9 +251,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 51,
+    "total": 38,
     "counts": {
-      "暴雨": 43,
+      "暴雨": 30,
       "山洪灾害": 2,
       "地质灾害": 6
     },
@@ -266,7 +273,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 8,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -276,24 +283,6 @@
         },
         "lat": 38.5,
         "lng": 115.5
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区防城港市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45060041600000_20260927082926.html",
-          "issuedAt": "2026/09/27 08:25"
-        },
-        "lat": 23.8,
-        "lng": 108.8
       },
       {
         "province": "江西",
@@ -312,6 +301,24 @@
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区防城港市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45060041600000_20260927082926.html",
+          "issuedAt": "2026/09/27 08:25"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "广东",
@@ -338,7 +345,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 18,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -354,11 +361,10 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "blue",
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -368,6 +374,24 @@
         },
         "lat": 37.6,
         "lng": 112.3
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "重庆市县巫溪县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023841600000_20260927101146.html",
+          "issuedAt": "2026/09/27 10:11"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "河南",
@@ -388,6 +412,24 @@
         "lng": 113.6
       },
       {
+        "province": "湖北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖北省十堰市竹溪县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42032441600000_20260927094801.html",
+          "issuedAt": "2026/09/27 09:48"
+        },
+        "lat": 31,
+        "lng": 112.3
+      },
+      {
         "province": "辽宁",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -406,60 +448,6 @@
         "lng": 122.6
       },
       {
-        "province": "湖北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖北省黄冈市罗田县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42112341600000_20260926095151.html",
-          "issuedAt": "2026/09/26 09:51"
-        },
-        "lat": 31,
-        "lng": 112.3
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市县巫溪县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023841600000_20260927085817.html",
-          "issuedAt": "2026/09/27 08:58"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "安徽省滁州市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34110041600000_20260927044123.html",
-          "issuedAt": "2026/09/27 04:41"
-        },
-        "lat": 31.9,
-        "lng": 117.2
-      },
-      {
         "province": "上海",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -476,24 +464,6 @@
         },
         "lat": 31.2,
         "lng": 121.5
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "新疆维吾尔自治区喀什地区塔什库尔干县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65313141600000_20260926095231.html",
-          "issuedAt": "2026/09/26 09:52"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       }
     ]
   },
