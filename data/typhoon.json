@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 15:15",
+  "updatedAt": "2026-09-27 15:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
@@ -34,29 +34,22 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 24 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-27 14时",
-            "windLevel": 16,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "09-27 14时",
             "windLevel": 16,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-27 14时",
+            "time": "09-27 15时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -66,7 +59,7 @@
         "windLevel": 16,
         "windSpeed": 55,
         "pressure": 930,
-        "moveDir": "东北",
+        "moveDir": "北东",
         "moveSpeed": 15,
         "r7": 250,
         "r10": 90,
@@ -251,9 +244,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 44,
+    "total": 48,
     "counts": {
-      "暴雨": 36,
+      "暴雨": 40,
       "山洪灾害": 2,
       "地质灾害": 6
     },
@@ -273,7 +266,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -454,16 +447,34 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 4,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省安庆市桐城市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34088141600000_20260927133336.html",
-          "issuedAt": "2026/09/27 13:33"
+          "title": "安徽省宣城市绩溪县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34182441600000_20260927152932.html",
+          "issuedAt": "2026/09/27 15:29"
         },
         "lat": 31.9,
         "lng": 117.2
+      },
+      {
+        "province": "河北",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "河北省唐山市迁安市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13028341600000_20260927153833.html",
+          "issuedAt": "2026/09/27 15:38"
+        },
+        "lat": 38.5,
+        "lng": 115.5
       },
       {
         "province": "新疆",
@@ -482,24 +493,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "河北",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河北省唐山市滦州市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13028441600000_20260927000226.html",
-          "issuedAt": "2026/09/27 00:02"
-        },
-        "lat": 38.5,
-        "lng": 115.5
       }
     ]
   },
