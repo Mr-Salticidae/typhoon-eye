@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27 20:30",
+  "updatedAt": "2026-09-27 21:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -36,8 +36,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里（时次相差 1 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 20 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,8 +56,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-27 19时",
-            "windLevel": 14,
+            "time": "09-27 20时",
+            "windLevel": 15,
             "role": "verify"
           }
         ]
@@ -251,9 +251,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 26,
+    "total": 27,
     "counts": {
-      "暴雨": 24,
+      "暴雨": 25,
       "地质灾害": 2
     },
     "peak": {
@@ -290,13 +290,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 8,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省绍兴市诸暨市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33068141600000_20260927202032.html",
-          "issuedAt": "2026/09/27 20:20"
+          "title": "浙江省温州市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260927205400.html",
+          "issuedAt": "2026/09/27 20:52"
         },
         "lat": 29.2,
         "lng": 120.2
