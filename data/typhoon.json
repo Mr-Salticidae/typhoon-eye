@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 13:15",
+  "updatedAt": "2026-09-28 13:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 40 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 61 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-28 12时",
+            "time": "09-28 13时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -243,9 +243,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 46,
+    "total": 47,
     "counts": {
-      "暴雨": 41,
+      "暴雨": 42,
       "山洪灾害": 2,
       "地质灾害": 3
     },
@@ -326,9 +326,9 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "四川省达州市宣汉县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51172241600000_20260928101856.html",
-          "issuedAt": "2026/09/28 10:18"
+          "title": "四川省达州市万源市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51178141600000_20260928131747.html",
+          "issuedAt": "2026/09/28 13:17"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -405,6 +405,24 @@
           "issuedAt": "2026/09/28 12:31"
         },
         "lat": 37.6,
+        "lng": 112.3
+      },
+      {
+        "province": "湖北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖北省直辖县级行政区划神农架林区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42902141600000_20260928133953.html",
+          "issuedAt": "2026/09/28 13:39"
+        },
+        "lat": 31,
         "lng": 112.3
       },
       {
