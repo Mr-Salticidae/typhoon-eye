@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 12:42",
+  "updatedAt": "2026-09-28 13:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 40 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-28 11时",
+            "time": "09-28 12时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -265,7 +265,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -314,24 +314,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "辽宁",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "辽宁省大连市瓦房店市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21028141600000_20260927125500.html",
-          "issuedAt": "2026/09/27 12:56"
-        },
-        "lat": 41.8,
-        "lng": 122.6
       },
       {
         "province": "四川",
@@ -389,6 +371,24 @@
         "lng": 115.7
       },
       {
+        "province": "广东",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "广东省江门市恩平市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44078541600000_20260928131134.html",
+          "issuedAt": "2026/09/28 13:10"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "山西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -406,24 +406,6 @@
         },
         "lat": 37.6,
         "lng": 112.3
-      },
-      {
-        "province": "广东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "广东省江门市台山市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44078141600000_20260928054154.html",
-          "issuedAt": "2026/09/28 05:40"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "河南",
