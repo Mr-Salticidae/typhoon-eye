@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29 00:00",
+  "updatedAt": "2026-09-29 00:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -235,9 +235,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 38,
+    "total": 39,
     "counts": {
-      "暴雨": 32,
+      "暴雨": 33,
       "山洪灾害": 2,
       "地质灾害": 4
     },
@@ -257,7 +257,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -275,7 +275,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -316,9 +316,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省德宏傣族景颇族自治州芒市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53310341600000_20260928232934.html",
-          "issuedAt": "2026/09/28 23:26"
+          "title": "云南省临沧市镇康县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53092441600000_20260929002318.html",
+          "issuedAt": "2026/09/29 00:21"
         },
         "lat": 25,
         "lng": 101.5
@@ -330,7 +330,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -361,26 +361,6 @@
         "lng": 108.9
       },
       {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "浙江省湖州市长兴县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33052241600000_20260928211605.html",
-          "issuedAt": "2026/09/28 21:13"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -398,6 +378,25 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "山洪灾害": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260928171553.html",
+          "issuedAt": "2026/09/28 17:15"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "安徽",
@@ -428,7 +427,7 @@
       "endedAt": "2026-09-23 00:15",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 5
+      "daysSince": 6
     }
   ]
 }
