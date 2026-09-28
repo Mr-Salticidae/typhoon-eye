@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 13:45",
+  "updatedAt": "2026-09-28 14:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 61 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 61 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-28 11时",
             "windLevel": 15,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-28 11时",
-            "windLevel": 15,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,8 +61,8 @@
         "pressure": 945,
         "moveDir": "东北东",
         "moveSpeed": 16,
-        "r7": 250,
-        "r10": 90,
+        "r7": null,
+        "r10": null,
         "time": "09-28 11时",
         "position": "中心位于北纬 26.9 度、东经 131.2 度"
       },
@@ -265,7 +258,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -297,32 +290,13 @@
         "lng": 108.9
       },
       {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省临沧市沧源佤族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53092741600000_20260928081512.html",
-          "issuedAt": "2026/09/28 08:13"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "四川",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -332,6 +306,24 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "广东",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "广东省阳江市阳春市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44178141600000_20260928135509.html",
+          "issuedAt": "2026/09/28 13:54"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "浙江",
@@ -345,9 +337,9 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省宁波市奉化区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33021341600000_20260928123152.html",
-          "issuedAt": "2026/09/28 12:29"
+          "title": "浙江省衢州市常山县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33082241600000_20260928134650.html",
+          "issuedAt": "2026/09/28 13:45"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -369,24 +361,6 @@
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "广东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "广东省江门市恩平市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44078541600000_20260928131134.html",
-          "issuedAt": "2026/09/28 13:10"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "山西",
@@ -424,6 +398,24 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "云南省普洱市澜沧拉祜族自治县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20260928034147.html",
+          "issuedAt": "2026/09/28 03:40"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "河南",
