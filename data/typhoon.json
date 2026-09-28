@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 21:45",
+  "updatedAt": "2026-09-28 22:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 80 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 80 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-28 20时",
             "windLevel": 13,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-28 20时",
-            "windLevel": 13,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,8 +61,8 @@
         "pressure": 965,
         "moveDir": "东北东",
         "moveSpeed": 12,
-        "r7": 250,
-        "r10": 90,
+        "r7": null,
+        "r10": null,
         "time": "09-28 20时",
         "position": "中心位于北纬 28.1 度、东经 132.5 度"
       },
@@ -235,9 +228,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 46,
+    "total": 33,
     "counts": {
-      "暴雨": 40,
+      "暴雨": 27,
       "山洪灾害": 2,
       "地质灾害": 4
     },
@@ -257,7 +250,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 14,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -267,44 +260,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省东莞市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44190041600000_20260928180841.html",
-          "issuedAt": "2026/09/28 18:03"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "blue",
-          "山洪灾害": "yellow",
-          "地质灾害": "orange"
-        },
-        "count": 7,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "陕西省气象台发布地质灾害橙色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260928114200.html",
-          "issuedAt": "2026/09/28 11:41"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "江西",
@@ -342,6 +297,43 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省东莞市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44190041600000_20260928180841.html",
+          "issuedAt": "2026/09/28 18:03"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "山洪灾害": "yellow",
+          "地质灾害": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "orange",
+          "title": "陕西省气象台发布地质灾害橙色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260928114200.html",
+          "issuedAt": "2026/09/28 11:41"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "浙江",
@@ -407,13 +399,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省宣城市宁国市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34188141600000_20260928184032.html",
-          "issuedAt": "2026/09/28 18:40"
+          "title": "安徽省合肥市长丰县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34012141600000_20260928042302.html",
+          "issuedAt": "2026/09/28 04:23"
         },
         "lat": 31.9,
         "lng": 117.2
