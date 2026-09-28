@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 23:30",
+  "updatedAt": "2026-09-29 00:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 94 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 83 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-28 20时",
+            "time": "09-28 23时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -235,9 +235,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 35,
+    "total": 38,
     "counts": {
-      "暴雨": 29,
+      "暴雨": 32,
       "山洪灾害": 2,
       "地质灾害": 4
     },
@@ -269,13 +269,31 @@
         "lng": 107.9
       },
       {
+        "province": "贵州",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "贵州省毕节市纳雍县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052541600000_20260928234824.html",
+          "issuedAt": "2026/09/28 23:48"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -287,24 +305,6 @@
         "lng": 115.7
       },
       {
-        "province": "贵州",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "贵州省毕节市纳雍县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052541600000_20260928230955.html",
-          "issuedAt": "2026/09/28 23:09"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
-      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -312,13 +312,13 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省普洱市镇沅彝族哈尼族拉祜族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082541600000_20260928213204.html",
-          "issuedAt": "2026/09/28 21:28"
+          "title": "云南省德宏傣族景颇族自治州芒市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53310341600000_20260928232934.html",
+          "issuedAt": "2026/09/28 23:26"
         },
         "lat": 25,
         "lng": 101.5
