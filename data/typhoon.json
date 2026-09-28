@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 12:15",
+  "updatedAt": "2026-09-28 12:42",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -243,9 +243,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 45,
+    "total": 46,
     "counts": {
-      "暴雨": 40,
+      "暴雨": 41,
       "山洪灾害": 2,
       "地质灾害": 3
     },
@@ -352,6 +352,25 @@
         "lng": 102.9
       },
       {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow",
+          "山洪灾害": "blue"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "浙江省宁波市奉化区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33021341600000_20260928123152.html",
+          "issuedAt": "2026/09/28 12:29"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
         "province": "江西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -374,38 +393,19 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "山西省自然资源厅和山西省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/14000041600000_20260927172252.html",
-          "issuedAt": "2026/09/27 17:00"
-        },
-        "lat": 37.6,
-        "lng": 112.3
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
           "暴雨": "yellow",
-          "山洪灾害": "blue"
+          "地质灾害": "yellow"
         },
         "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省杭州市桐庐县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33012241600000_20260928105604.html",
-          "issuedAt": "2026/09/28 10:54"
+          "title": "山西省运城市绛县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14082641600000_20260928123100.html",
+          "issuedAt": "2026/09/28 12:31"
         },
-        "lat": 29.2,
-        "lng": 120.2
+        "lat": 37.6,
+        "lng": 112.3
       },
       {
         "province": "广东",
