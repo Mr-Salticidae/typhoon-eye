@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28 07:46",
+  "updatedAt": "2026-09-28 08:16",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
@@ -34,24 +34,17 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 30 公里（时次相差 2 小时）、强度差 1 级（2 源交叉校验一致）",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "09-28 05时",
-            "windLevel": 16,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "09-28 05时",
             "windLevel": 16,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -66,7 +59,7 @@
         "windLevel": 16,
         "windSpeed": 52,
         "pressure": 935,
-        "moveDir": "东北",
+        "moveDir": "北东",
         "moveSpeed": 15,
         "r7": 250,
         "r10": 90,
