@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29 22:01",
+  "updatedAt": "2026-09-29 22:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -211,21 +211,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 34,
+    "total": 33,
     "counts": {
-      "暴雨": 30,
+      "暴雨": 29,
       "山洪灾害": 1,
       "地质灾害": 3
     },
     "peak": {
-      "province": "辽宁",
+      "province": "浙江",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "辽宁省营口市盖州市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/21088141600000_20260929203300.html",
-      "issuedAt": "2026/09/29 20:34"
+      "level": "red",
+      "title": "浙江省温州市瑞安市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/33038141600000_20260929215455.html",
+      "issuedAt": "2026/09/29 21:55"
     },
     "provinces": [
+      {
+        "province": "浙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "浙江省温州市瑞安市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33038141600000_20260929215455.html",
+          "issuedAt": "2026/09/29 21:55"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
       {
         "province": "辽宁",
         "maxLevel": "orange",
@@ -233,34 +251,16 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 18,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "辽宁省营口市盖州市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21088141600000_20260929203300.html",
-          "issuedAt": "2026/09/29 20:34"
+          "title": "辽宁省大连市庄河市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21028341600000_20260929221400.html",
+          "issuedAt": "2026/09/29 22:14"
         },
         "lat": 41.8,
         "lng": 122.6
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "浙江省温州市瑞安市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33038141600000_20260929213700.html",
-          "issuedAt": "2026/09/29 21:35"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "江西",
@@ -299,25 +299,6 @@
         "lng": 113.4
       },
       {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "云南省保山市龙陵县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53052341600000_20260929143642.html",
-          "issuedAt": "2026/09/29 14:34"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "重庆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -353,6 +334,24 @@
         },
         "lat": 35.2,
         "lng": 108.9
+      },
+      {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "云南省德宏傣族景颇族自治州芒市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53310341600000_20260929170119.html",
+          "issuedAt": "2026/09/29 16:59"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "河北",
