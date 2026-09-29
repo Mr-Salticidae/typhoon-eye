@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29 07:45",
+  "updatedAt": "2026-09-29 08:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -235,9 +235,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 39,
+    "total": 28,
     "counts": {
-      "暴雨": 35,
+      "暴雨": 24,
       "山洪灾害": 1,
       "地质灾害": 3
     },
@@ -257,7 +257,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 13,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -267,42 +267,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "贵州省遵义市绥阳县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52032341600000_20260929051405.html",
-          "issuedAt": "2026/09/29 05:14"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省东莞市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44190041600000_20260928180841.html",
-          "issuedAt": "2026/09/28 18:03"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "江西",
@@ -323,23 +287,22 @@
         "lng": 115.7
       },
       {
-        "province": "浙江",
+        "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange",
-          "地质灾害": "yellow"
+          "暴雨": "orange"
         },
         "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "浙江省宁波市宁海县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33022641600000_20260929053646.html",
-          "issuedAt": "2026/09/29 05:35"
+          "title": "广东省东莞市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44190041600000_20260928180841.html",
+          "issuedAt": "2026/09/28 18:03"
         },
-        "lat": 29.2,
-        "lng": 120.2
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "陕西",
@@ -361,6 +324,24 @@
         "lng": 108.9
       },
       {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 7,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省遵义市道真自治县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52032541600000_20260929053317.html",
+          "issuedAt": "2026/09/29 05:33"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -377,6 +358,24 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "浙江省自然资源厅、浙江省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/33000033400000_20260928171553.html",
+          "issuedAt": "2026/09/28 17:15"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       }
     ]
   },
