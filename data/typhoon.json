@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29 13:30",
+  "updatedAt": "2026-09-29 14:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 11 公里、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-29 11时",
             "windLevel": 10,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-29 11时",
-            "windLevel": 10,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,8 +61,8 @@
         "pressure": 982,
         "moveDir": "东北东",
         "moveSpeed": 20,
-        "r7": 250,
-        "r10": 50,
+        "r7": null,
+        "r10": null,
         "time": "09-29 11时",
         "position": "中心位于北纬 28.6 度、东经 134.3 度"
       },
@@ -219,9 +212,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 22,
+    "total": 26,
     "counts": {
-      "暴雨": 18,
+      "暴雨": 22,
       "山洪灾害": 1,
       "地质灾害": 3
     },
@@ -251,6 +244,24 @@
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "辽宁省锦州市北镇市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21078241600000_20260929135700.html",
+          "issuedAt": "2026/09/29 13:58"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "广东",
