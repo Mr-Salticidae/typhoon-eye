@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29 23:00",
+  "updatedAt": "2026-09-29 23:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 45 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 45 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "09-29 20时",
             "windLevel": 9,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-29 20时",
-            "windLevel": 9,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 990,
         "moveDir": "东北",
         "moveSpeed": 28,
-        "r7": 250,
+        "r7": null,
         "r10": null,
         "time": "09-29 20时",
         "position": "中心位于北纬 29.3 度、东经 135.7 度"
@@ -211,9 +204,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 33,
+    "total": 35,
     "counts": {
-      "暴雨": 29,
+      "暴雨": 31,
       "山洪灾害": 1,
       "地质灾害": 3
     },
@@ -291,12 +284,30 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省温州市文成县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33032841600000_20260929223811.html",
+          "title": "浙江省温州市瑞安市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33038141600000_20260929223736.html",
           "issuedAt": "2026/09/29 22:37"
         },
         "lat": 29.2,
         "lng": 120.2
+      },
+      {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省宁德市柘荣县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35092641600000_20260929231432.html",
+          "issuedAt": "2026/09/29 23:14"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "重庆",
