@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29 20:30",
+  "updatedAt": "2026-09-29 21:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 30 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 45 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -47,17 +47,10 @@
             "role": "primary"
           },
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "09-29 20时",
-            "windLevel": 9,
-            "role": "verify"
-          },
-          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "09-29 17时",
-            "windLevel": 10,
+            "time": "09-29 20时",
+            "windLevel": 9,
             "role": "verify"
           }
         ]
@@ -68,7 +61,7 @@
         "pressure": 990,
         "moveDir": "东北",
         "moveSpeed": 28,
-        "r7": 250,
+        "r7": null,
         "r10": null,
         "time": "09-29 20时",
         "position": "中心位于北纬 29.3 度、东经 135.7 度"
@@ -221,9 +214,9 @@
       "province": "辽宁",
       "kind": "暴雨",
       "level": "orange",
-      "title": "辽宁省锦州市北镇市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/21078241600000_20260929162700.html",
-      "issuedAt": "2026/09/29 16:27"
+      "title": "辽宁省营口市盖州市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/21088141600000_20260929203300.html",
+      "issuedAt": "2026/09/29 20:34"
     },
     "provinces": [
       {
@@ -233,34 +226,16 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 17,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "辽宁省锦州市北镇市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21078241600000_20260929162700.html",
-          "issuedAt": "2026/09/29 16:27"
+          "title": "辽宁省营口市盖州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21088141600000_20260929203300.html",
+          "issuedAt": "2026/09/29 20:34"
         },
         "lat": 41.8,
         "lng": 122.6
-      },
-      {
-        "province": "江西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "江西省吉安市吉安县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36082141600000_20260929195550.html",
-          "issuedAt": "2026/09/29 19:53"
-        },
-        "lat": 27.6,
-        "lng": 115.7
       },
       {
         "province": "浙江",
@@ -269,7 +244,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -279,6 +254,24 @@
         },
         "lat": 29.2,
         "lng": 120.2
+      },
+      {
+        "province": "江西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江西省吉安市吉安县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36082141600000_20260929195550.html",
+          "issuedAt": "2026/09/29 19:53"
+        },
+        "lat": 27.6,
+        "lng": 115.7
       },
       {
         "province": "广东",
@@ -324,7 +317,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
