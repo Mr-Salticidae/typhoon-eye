@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01 00:00",
+  "updatedAt": "2026-10-01 00:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 0
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -31,39 +31,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 108,
+    "total": 107,
     "counts": {
-      "暴雨": 103,
+      "暴雨": 102,
       "山洪灾害": 3,
       "地质灾害": 2
     },
     "peak": {
-      "province": "贵州",
+      "province": "浙江",
       "kind": "暴雨",
       "level": "red",
-      "title": "贵州省黔东南苗族侗族自治州天柱县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/52262741600000_20260930192637.html",
-      "issuedAt": "2026/09/30 19:26"
+      "title": "浙江省温州市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260930230010.html",
+      "issuedAt": "2026/09/30 22:58"
     },
     "provinces": [
-      {
-        "province": "贵州",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 24,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "贵州省黔东南苗族侗族自治州天柱县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52262741600000_20260930192637.html",
-          "issuedAt": "2026/09/30 19:26"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
       {
         "province": "浙江",
         "maxLevel": "red",
@@ -72,7 +54,7 @@
           "暴雨": "red",
           "山洪灾害": "blue"
         },
-        "count": 14,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -84,22 +66,22 @@
         "lng": 120.2
       },
       {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
+        "province": "贵州",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
         "kinds": {
-          "暴雨": "red"
+          "暴雨": "orange"
         },
-        "count": 3,
+        "count": 22,
         "top": {
           "kind": "暴雨",
-          "level": "red",
-          "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260930210135.html",
-          "issuedAt": "2026/09/30 21:01"
+          "level": "orange",
+          "title": "贵州省遵义市红花岗区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52030241600000_20261001000044.html",
+          "issuedAt": "2026/10/01 00:00"
         },
-        "lat": 30.6,
-        "lng": 102.9
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "湖南",
@@ -108,7 +90,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 17,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -156,6 +138,24 @@
         "lng": 115.7
       },
       {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省梅州市平远县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44142641600000_20261001002426.html",
+          "issuedAt": "2026/10/01 00:22"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
         "province": "福建",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -174,24 +174,6 @@
         "lng": 118.3
       },
       {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省梅州市蕉岭县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142741600000_20260930234831.html",
-          "issuedAt": "2026/09/30 23:46"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "湖北",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -208,6 +190,24 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "四川",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260930233204.html",
+          "issuedAt": "2026/09/30 23:32"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "辽宁",
