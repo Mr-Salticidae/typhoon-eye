@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30 13:30",
+  "updatedAt": "2026-09-30 14:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 0
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 51,
+    "total": 57,
     "counts": {
-      "暴雨": 46,
+      "暴雨": 52,
       "山洪灾害": 2,
       "地质灾害": 3
     },
@@ -53,7 +53,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 21,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -71,7 +71,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 15,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -81,6 +81,24 @@
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省珠海市斗门区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44040341600000_20260929140558.html",
+          "issuedAt": "2026/09/29 14:05"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "江西",
@@ -101,22 +119,22 @@
         "lng": 115.7
       },
       {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "yellow"
         },
-        "count": 2,
+        "count": 4,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省珠海市斗门区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44040341600000_20260929140558.html",
-          "issuedAt": "2026/09/29 14:05"
+          "level": "yellow",
+          "title": "贵州省黔南布依族苗族自治州瓮安县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52272541600000_20260930133622.html",
+          "issuedAt": "2026/09/30 13:36"
         },
-        "lat": 23.4,
-        "lng": 113.4
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "陕西",
@@ -157,7 +175,7 @@
         "lng": 120.2
       },
       {
-        "province": "贵州",
+        "province": "福建",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
@@ -167,12 +185,12 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省遵义市湄潭县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52032841600000_20260930132647.html",
-          "issuedAt": "2026/09/30 13:26"
+          "title": "福建省厦门市同安区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35021241600000_20260930133300.html",
+          "issuedAt": "2026/09/30 13:33"
         },
-        "lat": 26.8,
-        "lng": 106.9
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "云南",
@@ -199,13 +217,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省芜湖市南陵县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34022341600000_20260930125033.html",
-          "issuedAt": "2026/09/30 12:50"
+          "title": "安徽省宣城市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34180041600000_20260930133701.html",
+          "issuedAt": "2026/09/30 13:37"
         },
         "lat": 31.9,
         "lng": 117.2
