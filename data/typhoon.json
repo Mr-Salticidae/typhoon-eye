@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30 09:00",
+  "updatedAt": "2026-09-30 09:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,11 +31,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 47,
+    "total": 50,
     "counts": {
-      "暴雨": 42,
-      "山洪灾害": 1,
-      "地质灾害": 4
+      "暴雨": 47,
+      "地质灾害": 3
     },
     "peak": {
       "province": "辽宁",
@@ -71,7 +70,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 15,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -81,6 +80,24 @@
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "江西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江西省抚州市南城县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36102141600000_20260929173317.html",
+          "issuedAt": "2026/09/29 17:31"
+        },
+        "lat": 27.6,
+        "lng": 115.7
       },
       {
         "province": "四川",
@@ -101,24 +118,6 @@
         "lng": 102.9
       },
       {
-        "province": "江西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "江西省抚州市南城县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36102141600000_20260929173317.html",
-          "issuedAt": "2026/09/29 17:31"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
-      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -135,43 +134,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "陕西省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260929171757.html",
-          "issuedAt": "2026/09/29 17:17"
-        },
-        "lat": 35.2,
-        "lng": 108.9
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省德宏傣族景颇族自治州芒市气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53310341600000_20260929170119.html",
-          "issuedAt": "2026/09/29 16:59"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "贵州",
@@ -192,6 +154,24 @@
         "lng": 106.9
       },
       {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "陕西省气象台发布地质灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260929171757.html",
+          "issuedAt": "2026/09/29 17:17"
+        },
+        "lat": 35.2,
+        "lng": 108.9
+      },
+      {
         "province": "浙江",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -208,6 +188,42 @@
         },
         "lat": 29.2,
         "lng": 120.2
+      },
+      {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "云南省德宏傣族景颇族自治州芒市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53310341600000_20260929170119.html",
+          "issuedAt": "2026/09/29 16:59"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
+        "province": "河南",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "河南省信阳市潢川县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41152641600000_20260930092355.html",
+          "issuedAt": "2026/09/30 09:23"
+        },
+        "lat": 33.9,
+        "lng": 113.6
       }
     ]
   },
