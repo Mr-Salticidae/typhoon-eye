@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30 15:45",
+  "updatedAt": "2026-09-30 16:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 0
     },
     {
       "id": "jma",
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 62,
+    "total": 65,
     "counts": {
-      "暴雨": 57,
+      "暴雨": 60,
       "山洪灾害": 2,
       "地质灾害": 3
     },
@@ -53,7 +53,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 15,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -71,7 +71,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -81,6 +81,24 @@
         },
         "lat": 41.8,
         "lng": 122.6
+      },
+      {
+        "province": "江西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江西省吉安市安福县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36082941600000_20260930150212.html",
+          "issuedAt": "2026/09/30 15:00"
+        },
+        "lat": 27.6,
+        "lng": 115.7
       },
       {
         "province": "广东",
@@ -101,37 +119,19 @@
         "lng": 113.4
       },
       {
-        "province": "江西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "江西省吉安市安福县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36082941600000_20260930150212.html",
-          "issuedAt": "2026/09/30 15:00"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
-      {
         "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 6,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省遵义市播州区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52030441600000_20260930152659.html",
-          "issuedAt": "2026/09/30 15:26"
+          "title": "贵州省遵义市务川县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52032641600000_20260930161052.html",
+          "issuedAt": "2026/09/30 16:10"
         },
         "lat": 26.8,
         "lng": 106.9
@@ -144,13 +144,13 @@
           "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省杭州市临安区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33011241600000_20260930152623.html",
-          "issuedAt": "2026/09/30 15:23"
+          "title": "浙江省宁波市象山县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33022541600000_20260930154404.html",
+          "issuedAt": "2026/09/30 15:42"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -162,13 +162,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 4,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省漳州市诏安县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062441600000_20260930151100.html",
-          "issuedAt": "2026/09/30 15:11"
+          "title": "福建省漳州市长泰区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35060541600000_20260930160700.html",
+          "issuedAt": "2026/09/30 16:07"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -205,7 +205,7 @@
           "kind": "暴雨",
           "level": "yellow",
           "title": "云南省曲靖市会泽县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53032641600000_20260930154233.html",
+          "url": "http://www.nmc.cn/publish/alarm/53032641600000_20260930154227.html",
           "issuedAt": "2026/09/30 15:40"
         },
         "lat": 25,
@@ -218,19 +218,19 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省宣城市绩溪县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34182441600000_20260930150058.html",
-          "issuedAt": "2026/09/30 15:00"
+          "title": "安徽省黄山市歙县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34102141600000_20260930155536.html",
+          "issuedAt": "2026/09/30 15:55"
         },
         "lat": 31.9,
         "lng": 117.2
       },
       {
-        "province": "河南",
+        "province": "四川",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
@@ -240,12 +240,12 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河南省信阳市潢川县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41152641600000_20260930092355.html",
-          "issuedAt": "2026/09/30 09:23"
+          "title": "四川省凉山州气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51340041600000_20260930155600.html",
+          "issuedAt": "2026/09/30 15:56"
         },
-        "lat": 33.9,
-        "lng": 113.6
+        "lat": 30.6,
+        "lng": 102.9
       }
     ]
   },
