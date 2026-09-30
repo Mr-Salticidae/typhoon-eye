@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01 04:00",
+  "updatedAt": "2026-10-01 04:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,14 +8,14 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "jma",
@@ -25,45 +25,151 @@
       "count": 2
     }
   ],
-  "typhoons": [],
+  "typhoons": [
+    {
+      "name": "彩云",
+      "enName": "CHOI-WAN",
+      "code": "2627",
+      "level": "热带风暴（8级）",
+      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
+      "nearCoast": false,
+      "nameNote": null,
+      "trackSource": "中央气象台",
+      "verification": {
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
+        "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "10-01 02时",
+            "windLevel": 8,
+            "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "10-01 02时",
+            "windLevel": 8,
+            "role": "verify"
+          },
+          {
+            "id": "jma",
+            "name": "日本气象厅",
+            "time": "10-01 02时",
+            "windLevel": 8,
+            "role": "verify"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 8,
+        "windSpeed": 18,
+        "pressure": 998,
+        "moveDir": "西",
+        "moveSpeed": 22,
+        "r7": 250,
+        "r10": null,
+        "time": "10-01 02时",
+        "position": "中心位于北纬 16.4 度、东经 149.5 度"
+      },
+      "track": [
+        {
+          "t": "10-01 02时",
+          "lat": 16.4,
+          "lng": 149.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "now"
+        },
+        {
+          "t": "10-01 14时",
+          "lat": 16.7,
+          "lng": 147.1,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-02 02时",
+          "lat": 16.9,
+          "lng": 146.1,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-02 14时",
+          "lat": 17.5,
+          "lng": 145.5,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-03 02时",
+          "lat": 18.2,
+          "lng": 145.6,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-03 14时",
+          "lat": 19.5,
+          "lng": 146.1,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-04 02时",
+          "lat": 20.9,
+          "lng": 146.5,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-05 02时",
+          "lat": 23.6,
+          "lng": 146.5,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-06 02时",
+          "lat": 27.3,
+          "lng": 145.2,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        }
+      ],
+      "rainRisk": null
+    }
+  ],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 139,
+    "total": 137,
     "counts": {
-      "暴雨": 134,
+      "暴雨": 132,
       "山洪灾害": 3,
       "地质灾害": 2
     },
     "peak": {
-      "province": "湖南",
+      "province": "贵州",
       "kind": "暴雨",
       "level": "red",
-      "title": "湖南省衡阳市祁东县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/43042641600000_20261001021928.html",
-      "issuedAt": "2026/10/01 02:18"
+      "title": "贵州省遵义市播州区气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/52030441600000_20261001015154.html",
+      "issuedAt": "2026/10/01 01:51"
     },
     "provinces": [
-      {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 30,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省衡阳市祁东县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43042641600000_20261001021928.html",
-          "issuedAt": "2026/10/01 02:18"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
       {
         "province": "贵州",
         "maxLevel": "red",
@@ -71,7 +177,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 29,
+        "count": 33,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -81,6 +187,24 @@
         },
         "lat": 26.8,
         "lng": 106.9
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 33,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省衡阳市祁东县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43042641600000_20261001021928.html",
+          "issuedAt": "2026/10/01 02:18"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "广西",
@@ -111,9 +235,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "重庆市綦江区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50011041600000_20261001005202.html",
-          "issuedAt": "2026/10/01 00:51"
+          "title": "重庆市武隆区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50015641600000_20261001042002.html",
+          "issuedAt": "2026/10/01 04:19"
         },
         "lat": 29.8,
         "lng": 107.9
@@ -126,7 +250,7 @@
           "暴雨": "orange",
           "山洪灾害": "blue"
         },
-        "count": 16,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -144,7 +268,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -162,7 +286,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 8,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -172,24 +296,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省龙岩市武平县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35082441600000_20261001011400.html",
-          "issuedAt": "2026/10/01 01:14"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "湖北",
@@ -228,22 +334,22 @@
         "lng": 102.9
       },
       {
-        "province": "辽宁",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "yellow"
         },
-        "count": 1,
+        "count": 5,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "辽宁省大连市长海县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21022441600000_20260930041800.html",
-          "issuedAt": "2026/09/30 04:18"
+          "level": "yellow",
+          "title": "福建省宁德市周宁县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35092541600000_20261001040200.html",
+          "issuedAt": "2026/10/01 04:02"
         },
-        "lat": 41.8,
-        "lng": 122.6
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "云南",
@@ -282,6 +388,24 @@
         },
         "lat": 35.2,
         "lng": 108.9
+      },
+      {
+        "province": "安徽",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "安徽省黄山市黄山区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34100341600000_20261001042013.html",
+          "issuedAt": "2026/10/01 04:20"
+        },
+        "lat": 31.9,
+        "lng": 117.2
       }
     ]
   },
