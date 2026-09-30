@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30 19:46",
+  "updatedAt": "2026-09-30 20:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 80,
+    "total": 72,
     "counts": {
-      "暴雨": 75,
+      "暴雨": 67,
       "山洪灾害": 3,
       "地质灾害": 2
     },
@@ -53,7 +53,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 18,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -66,39 +66,58 @@
       },
       {
         "province": "江西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "red",
+        "floodLevel": "red",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "red"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "江西省上饶市广丰区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36110341600000_20260930190349.html",
-          "issuedAt": "2026/09/30 19:01"
+          "level": "red",
+          "title": "江西省上饶市广丰区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36110341600000_20260930195009.html",
+          "issuedAt": "2026/09/30 19:48"
         },
         "lat": 27.6,
         "lng": 115.7
       },
       {
-        "province": "福建",
+        "province": "四川",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "四川省甘孜藏族自治州丹巴县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51332341600000_20260930200323.html",
+          "issuedAt": "2026/09/30 20:03"
+        },
+        "lat": 30.6,
+        "lng": 102.9
+      },
+      {
+        "province": "浙江",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "orange",
+          "山洪灾害": "blue"
         },
-        "count": 10,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "福建省龙岩市漳平市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35088141600000_20260930184000.html",
-          "issuedAt": "2026/09/30 18:40"
+          "title": "浙江省丽水市青田县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33112141600000_20260930200543.html",
+          "issuedAt": "2026/09/30 20:05"
         },
-        "lat": 26.1,
-        "lng": 118.3
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "重庆",
@@ -126,7 +145,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -162,7 +181,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -192,23 +211,22 @@
         "lng": 113.4
       },
       {
-        "province": "浙江",
+        "province": "福建",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "blue"
+          "暴雨": "yellow"
         },
-        "count": 14,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "浙江省丽水市青田县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33112141600000_20260930192526.html",
-          "issuedAt": "2026/09/30 19:25"
+          "title": "福建省漳州市南靖县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062741600000_20260930195000.html",
+          "issuedAt": "2026/09/30 19:50"
         },
-        "lat": 29.2,
-        "lng": 120.2
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "陕西",
@@ -228,42 +246,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "四川",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "四川省凉山州气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51340041600000_20260930155600.html",
-          "issuedAt": "2026/09/30 15:56"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "安徽省黄山市歙县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34102141600000_20260930155536.html",
-          "issuedAt": "2026/09/30 15:55"
-        },
-        "lat": 31.9,
-        "lng": 117.2
       }
     ]
   },
