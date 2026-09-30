@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01 00:30",
+  "updatedAt": "2026-10-01 00:56",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 0
     },
     {
       "id": "jma",
@@ -31,40 +31,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 107,
+    "total": 113,
     "counts": {
-      "暴雨": 102,
+      "暴雨": 108,
       "山洪灾害": 3,
       "地质灾害": 2
     },
     "peak": {
-      "province": "浙江",
+      "province": "贵州",
       "kind": "暴雨",
-      "level": "red",
-      "title": "浙江省温州市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260930230010.html",
-      "issuedAt": "2026/09/30 22:58"
+      "level": "orange",
+      "title": "贵州省毕节市纳雍县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/52052541600000_20261001002818.html",
+      "issuedAt": "2026/10/01 00:28"
     },
     "provinces": [
-      {
-        "province": "浙江",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪灾害": "blue"
-        },
-        "count": 13,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "浙江省温州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260930230010.html",
-          "issuedAt": "2026/09/30 22:58"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
       {
         "province": "贵州",
         "maxLevel": "orange",
@@ -72,13 +53,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 22,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "贵州省遵义市红花岗区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52030241600000_20261001000044.html",
-          "issuedAt": "2026/10/01 00:00"
+          "title": "贵州省毕节市纳雍县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052541600000_20261001002818.html",
+          "issuedAt": "2026/10/01 00:28"
         },
         "lat": 26.8,
         "lng": 106.9
@@ -112,12 +93,31 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "重庆市梁平区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015541600000_20260930064629.html",
-          "issuedAt": "2026/09/30 06:45"
+          "title": "重庆市綦江区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011041600000_20261001005202.html",
+          "issuedAt": "2026/10/01 00:51"
         },
         "lat": 29.8,
         "lng": 107.9
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "blue"
+        },
+        "count": 14,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "浙江省温州市泰顺县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33032941600000_20261001004458.html",
+          "issuedAt": "2026/10/01 00:40"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "江西",
@@ -138,6 +138,24 @@
         "lng": 115.7
       },
       {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省龙岩市永定区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260930233000.html",
+          "issuedAt": "2026/09/30 23:30"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -156,37 +174,19 @@
         "lng": 113.4
       },
       {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省龙岩市永定区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260930233000.html",
-          "issuedAt": "2026/09/30 23:30"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
         "province": "湖北",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "湖北省恩施土家族苗族自治州恩施市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42280141600000_20260930225507.html",
-          "issuedAt": "2026/09/30 22:55"
+          "title": "湖北省恩施土家族苗族自治州咸丰县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42282641600000_20261001004858.html",
+          "issuedAt": "2026/10/01 00:48"
         },
         "lat": 31,
         "lng": 112.3
@@ -198,13 +198,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "四川省凉山彝族自治州冕宁县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51343341600000_20260930233204.html",
-          "issuedAt": "2026/09/30 23:32"
+          "title": "四川省阿坝藏族羌族自治州若尔盖县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51323241600000_20261001003844.html",
+          "issuedAt": "2026/10/01 00:38"
         },
         "lat": 30.6,
         "lng": 102.9
