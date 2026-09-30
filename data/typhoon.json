@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30 17:15",
+  "updatedAt": "2026-09-30 17:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,11 +31,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 75,
+    "total": 77,
     "counts": {
-      "暴雨": 71,
+      "暴雨": 74,
       "山洪灾害": 2,
-      "地质灾害": 2
+      "地质灾害": 1
     },
     "peak": {
       "province": "浙江",
@@ -53,7 +53,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -101,24 +101,6 @@
         "lng": 115.7
       },
       {
-        "province": "辽宁",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "辽宁省大连市长海县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21022441600000_20260930041800.html",
-          "issuedAt": "2026/09/30 04:18"
-        },
-        "lat": 41.8,
-        "lng": 122.6
-      },
-      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -137,19 +119,37 @@
         "lng": 113.4
       },
       {
+        "province": "辽宁",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "辽宁省大连市长海县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21022441600000_20260930041800.html",
+          "issuedAt": "2026/09/30 04:18"
+        },
+        "lat": 41.8,
+        "lng": 122.6
+      },
+      {
         "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 12,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省黔东南苗族侗族自治州岑巩县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52262641600000_20260930170816.html",
-          "issuedAt": "2026/09/30 17:08"
+          "title": "贵州省铜仁市德江县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52062641600000_20260930173019.html",
+          "issuedAt": "2026/09/30 17:30"
         },
         "lat": 26.8,
         "lng": 106.9
@@ -161,35 +161,16 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省漳州市芗城区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35060241600000_20260930170500.html",
-          "issuedAt": "2026/09/30 17:05"
+          "title": "福建省龙岩市新罗区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35080241600000_20260930171400.html",
+          "issuedAt": "2026/09/30 17:14"
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "山洪灾害",
-          "level": "yellow",
-          "title": "陕西省气象台发布山洪灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260930093056.html",
-          "issuedAt": "2026/09/30 09:30"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "云南",
@@ -209,6 +190,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "山洪灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "陕西省气象台发布山洪灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260930093056.html",
+          "issuedAt": "2026/09/30 09:30"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "安徽",
