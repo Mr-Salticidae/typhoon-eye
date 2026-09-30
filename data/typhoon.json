@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30 23:30",
+  "updatedAt": "2026-10-01 00:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 0
     },
     {
       "id": "jma",
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 96,
+    "total": 108,
     "counts": {
-      "暴雨": 91,
+      "暴雨": 103,
       "山洪灾害": 3,
       "地质灾害": 2
     },
@@ -53,7 +53,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 22,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -72,7 +72,7 @@
           "暴雨": "red",
           "山洪灾害": "blue"
         },
-        "count": 13,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -90,7 +90,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -102,13 +102,31 @@
         "lng": 102.9
       },
       {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 17,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省邵阳市隆回县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43052441600000_20260930235326.html",
+          "issuedAt": "2026/09/30 23:53"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "重庆",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 15,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -120,37 +138,19 @@
         "lng": 107.9
       },
       {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 13,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省邵阳市绥宁县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43052741600000_20260930224840.html",
-          "issuedAt": "2026/09/30 22:47"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省吉安市遂川县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36082741600000_20260930210846.html",
-          "issuedAt": "2026/09/30 21:07"
+          "title": "江西省赣州市信丰县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36072241600000_20260930235204.html",
+          "issuedAt": "2026/09/30 23:50"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -167,11 +167,29 @@
           "kind": "暴雨",
           "level": "orange",
           "title": "福建省龙岩市永定区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260930213000.html",
-          "issuedAt": "2026/09/30 21:30"
+          "url": "http://www.nmc.cn/publish/alarm/35080341600000_20260930233000.html",
+          "issuedAt": "2026/09/30 23:30"
         },
         "lat": 26.1,
         "lng": 118.3
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省梅州市蕉岭县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44142741600000_20260930234831.html",
+          "issuedAt": "2026/09/30 23:46"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "湖北",
@@ -190,24 +208,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省梅州市梅县区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44140341600000_20260930222142.html",
-          "issuedAt": "2026/09/30 22:19"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "辽宁",
