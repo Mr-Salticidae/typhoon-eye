@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30 23:00",
+  "updatedAt": "2026-09-30 23:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 0
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 88,
+    "total": 96,
     "counts": {
-      "暴雨": 83,
+      "暴雨": 91,
       "山洪灾害": 3,
       "地质灾害": 2
     },
@@ -53,7 +53,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 19,
+        "count": 22,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -63,6 +63,25 @@
         },
         "lat": 26.8,
         "lng": 106.9
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪灾害": "blue"
+        },
+        "count": 13,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "浙江省温州市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260930230010.html",
+          "issuedAt": "2026/09/30 22:58"
+        },
+        "lat": 29.2,
+        "lng": 120.2
       },
       {
         "province": "四川",
@@ -83,6 +102,24 @@
         "lng": 102.9
       },
       {
+        "province": "重庆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 15,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "重庆市梁平区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50015541600000_20260930064629.html",
+          "issuedAt": "2026/09/30 06:45"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
         "province": "湖南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -99,43 +136,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "重庆市梁平区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015541600000_20260930064629.html",
-          "issuedAt": "2026/09/30 06:45"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "blue"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "浙江省温州市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33030041600000_20260930210923.html",
-          "issuedAt": "2026/09/30 21:08"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "江西",
