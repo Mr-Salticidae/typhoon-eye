@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01 00:56",
+  "updatedAt": "2026-10-01 01:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,21 +31,40 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 113,
+    "total": 121,
     "counts": {
-      "暴雨": 108,
+      "暴雨": 116,
       "山洪灾害": 3,
       "地质灾害": 2
     },
     "peak": {
-      "province": "贵州",
+      "province": "浙江",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "贵州省毕节市纳雍县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/52052541600000_20261001002818.html",
-      "issuedAt": "2026/10/01 00:28"
+      "level": "red",
+      "title": "浙江省温州市乐清市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/33038241600000_20261001011328.html",
+      "issuedAt": "2026/10/01 01:12"
     },
     "provinces": [
+      {
+        "province": "浙江",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "山洪灾害": "blue"
+        },
+        "count": 14,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "浙江省温州市乐清市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33038241600000_20261001011328.html",
+          "issuedAt": "2026/10/01 01:12"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
       {
         "province": "贵州",
         "maxLevel": "orange",
@@ -53,7 +72,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 24,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -71,7 +90,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 19,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -89,7 +108,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 17,
+        "count": 18,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -99,25 +118,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "blue"
-        },
-        "count": 14,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "浙江省温州市泰顺县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33032941600000_20261001004458.html",
-          "issuedAt": "2026/10/01 00:40"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       },
       {
         "province": "江西",
@@ -144,7 +144,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -167,8 +167,8 @@
           "kind": "暴雨",
           "level": "orange",
           "title": "广东省梅州市平远县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44142641600000_20261001002426.html",
-          "issuedAt": "2026/10/01 00:22"
+          "url": "http://www.nmc.cn/publish/alarm/44142641600000_20261001011407.html",
+          "issuedAt": "2026/10/01 01:12"
         },
         "lat": 23.4,
         "lng": 113.4
