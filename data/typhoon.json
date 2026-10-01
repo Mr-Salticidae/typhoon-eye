@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01 13:00",
+  "updatedAt": "2026-10-01 13:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -179,9 +179,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 156,
+    "total": 162,
     "counts": {
-      "暴雨": 150,
+      "暴雨": 156,
       "山洪灾害": 2,
       "地质灾害": 4
     },
@@ -231,6 +231,25 @@
         "lng": 106.9
       },
       {
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "blue"
+        },
+        "count": 20,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "浙江省温州市瑞安市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33038141600000_20261001124444.html",
+          "issuedAt": "2026/10/01 12:44"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
         "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -249,38 +268,19 @@
         "lng": 115.7
       },
       {
-        "province": "浙江",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "blue"
-        },
-        "count": 17,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "浙江省温州市瑞安市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33038141600000_20261001124444.html",
-          "issuedAt": "2026/10/01 12:44"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
         "province": "福建",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "福建省漳州市平和县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062841600000_20261001124000.html",
-          "issuedAt": "2026/10/01 12:40"
+          "title": "福建省漳州市漳浦县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062341600000_20261001131300.html",
+          "issuedAt": "2026/10/01 13:13"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -292,7 +292,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
