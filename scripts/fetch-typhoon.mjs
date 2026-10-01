@@ -16,6 +16,9 @@ import { writeFile, mkdir, readFile } from "node:fs/promises";
 import {
   emptySeason, upsertActive, pendingBackfill, addBackfilled, sortSeason, serializeSeason,
 } from "./season.mjs";
+import {
+  LEVEL_RANK, RANK_LEVEL, maxLevel, distKm, linkRainRisk, carryAffected, buildAftermath,
+} from "./risk.mjs";
 
 const UA = "typhoon-eye/0.5 (+https://github.com/Mr-Salticidae/typhoon-eye)";
 
@@ -70,13 +73,6 @@ function utcCompactToMs(s) {
 }
 
 /* 两点大圆距离 km */
-function distKm(lat1, lng1, lat2, lng2) {
-  const r = Math.PI / 180, R = 6371;
-  const a = Math.sin((lat2 - lat1) * r / 2) ** 2 +
-    Math.cos(lat1 * r) * Math.cos(lat2 * r) * Math.sin((lng2 - lng1) * r / 2) ** 2;
-  return 2 * R * Math.asin(Math.sqrt(a));
-}
-
 /* 过去路径下采样：保 ≤maxN 个点且必含首尾 */
 function thin(list, maxN) {
   if (list.length <= maxN) return list;
@@ -450,8 +446,6 @@ function buildTyphoon(members) {
 
 const ALERT_KINDS = ["暴雨", "台风", "山洪灾害", "山洪风险", "地质灾害"];
 const LEVEL_ZH2EN = { 蓝: "blue", 黄: "yellow", 橙: "orange", 红: "red" };
-const LEVEL_RANK = { blue: 1, yellow: 2, orange: 3, red: 4 };
-const RANK_LEVEL = ["", "blue", "yellow", "orange", "red"];
 const NMC_ALARM = { label: "中央气象台预警发布平台", url: "http://www.nmc.cn/publish/alarm.html" };
 
 /* 洪涝致灾类：这几类直接反映"水"的威胁，用于抬升预案档位 */
@@ -474,8 +468,6 @@ const PROVINCE = {
   "65": ["新疆", 41.1, 85.3], "71": ["台湾", 23.7, 121.0], "81": ["香港", 22.3, 114.2],
   "82": ["澳门", 22.2, 113.5],
 };
-
-const maxLevel = (a, b) => RANK_LEVEL[Math.max(LEVEL_RANK[a] || 0, LEVEL_RANK[b] || 0)] || null;
 
 /* 抓取某一类在效预警（分页取全量，单类上限 1200 条） */
 async function fetchAlarmKind(kind, deadline) {
@@ -563,116 +555,6 @@ async function fetchAlerts() {
   };
 }
 
-/* 把预警关联到台风。两条规则，都不涉及用户位置：
-   (a) 该省气象台已发布台风预警 —— 官方口径，但预警本身不写明针对哪个台风，
-       多台风并存时按"最近的那个"归属，且距离须 ≤1500km，
-       否则远洋台风会误吞沿海省份的台风预警；
-   (b) 省中心距该台风实况点或预报路径 ≤450km —— 几何估算，可多台风共享。 */
-const LINK_RADIUS_KM = 450;
-const TYPHOON_ALERT_RADIUS_KM = 1500;
-const LEVEL_ZH = { blue: "蓝", yellow: "黄", orange: "橙", red: "红" };
-
-/* 台风到某点的最小距离（实况点 + 预报路径） */
-function stormDistKm(t, lat, lng) {
-  const pts = (t.track || []).filter((p) => p.phase === "now" || p.phase === "forecast");
-  let min = Infinity;
-  for (const q of pts) min = Math.min(min, distKm(lat, lng, q.lat, q.lng));
-  return min;
-}
-
-/* 一次性为所有台风计算 rainRisk（需要横向比较，故不能逐个算） */
-function linkRainRisk(typhoons, alerts) {
-  if (!alerts?.ok || !alerts.provinces.length || !typhoons.length) {
-    for (const t of typhoons) t.rainRisk = null;
-    return;
-  }
-  const buckets = new Map(typhoons.map((t) => [t.code, []]));
-
-  for (const p of alerts.provinces) {
-    const dists = typhoons.map((t) => ({ t, d: stormDistKm(t, p.lat, p.lng) }));
-    const near = dists.filter((x) => x.d <= LINK_RADIUS_KM);
-    if (near.length) {
-      for (const x of near) buckets.get(x.t.code).push({ p, via: "路径邻近", d: x.d });
-      continue;
-    }
-    /* 有台风预警但不在任何台风的邻近半径内 → 归给最近的那个 */
-    if (p.kinds["台风"] != null) {
-      const best = dists.reduce((a, b) => (b.d < a.d ? b : a));
-      if (best.d <= TYPHOON_ALERT_RADIUS_KM) {
-        buckets.get(best.t.code).push({ p, via: "台风预警", d: best.d });
-      }
-    }
-  }
-
-  for (const t of typhoons) {
-    const hit = buckets.get(t.code);
-    if (!hit.length) { t.rainRisk = null; continue; }
-    hit.sort((x, y) => (LEVEL_RANK[y.p.maxLevel] - LEVEL_RANK[x.p.maxLevel]) || (x.d - y.d));
-    const provinces = hit.map(({ p, via, d }) => ({
-      province: p.province, maxLevel: p.maxLevel, floodLevel: p.floodLevel,
-      kinds: p.kinds, count: p.count, top: p.top, via, distKm: Math.round(d),
-    }));
-    const floodLevel = provinces.reduce((m, p) => maxLevel(m, p.floodLevel), null);
-    t.rainRisk = {
-      provinces, floodLevel,
-      maxLevel: provinces.reduce((m, p) => maxLevel(m, p.maxLevel), null),
-      note: floodLevel
-        ? `台风影响范围内有 ${provinces.length} 个省级行政区发布洪涝类预警，最高${LEVEL_ZH[floodLevel]}色。`
-        : null,
-    };
-  }
-}
-
-/* ---------- 影响持续期（aftermath） ---------- */
-/* 台风停编 ≠ 风险结束。美莎克 2026-07-07 停编，而官方遇难数字在此后六周内
-   从 39 升至 159，水库溃坝洪灾的伤亡是停编 45 天后才核定的。
-   停编后保留一段"影响持续期"：只要其影响省份仍有洪涝类预警在效，
-   页面就不回落到"风平浪静"。 */
-const AFTERMATH_DAYS = 7;
-
-/* "YYYY-MM-DD HH:mm"（北京时间）→ UTC 毫秒 */
-function bjParse(s) {
-  const m = /^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})$/.exec(s || "");
-  return m ? Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4] - 8, +m[5]) : null;
-}
-
-/* 源短暂抖动导致台风瞬时消失时，它会在下一轮重新出现并被移出本列表，
-   因此这里不做额外去抖——误报可自愈，漏报才是真风险。 */
-function buildAftermath(prev, typhoons, now, alerts) {
-  const nowMs = bjParse(now);
-  const live = new Set(typhoons.map((t) => t.code));
-  const kept = [];
-
-  /* 1) 沿用上一版仍在窗口内、且未重新编号的条目 */
-  for (const e of (prev?.recentlyEnded || [])) {
-    if (live.has(e.code)) continue;
-    const ms = bjParse(e.endedAt);
-    if (ms == null || nowMs == null || nowMs - ms > AFTERMATH_DAYS * 864e5) continue;
-    kept.push({ ...e });
-  }
-
-  /* 2) 上一版在编、这一版消失 → 新停编 */
-  for (const t of (prev?.typhoons || [])) {
-    if (live.has(t.code) || kept.some((e) => e.code === t.code)) continue;
-    kept.push({
-      code: t.code, name: t.name, enName: t.enName,
-      lastLevel: t.level, endedAt: now,
-      provinces: (t.rainRisk?.provinces || []).map((p) => p.province),
-    });
-  }
-
-  /* 3) 刷新持续风险：影响省份此刻是否仍有洪涝类预警在效 */
-  const floodByProv = new Map((alerts?.provinces || []).map((p) => [p.province, p.floodLevel]));
-  for (const e of kept) {
-    let lvl = null;
-    for (const p of (e.provinces || [])) lvl = maxLevel(lvl, floodByProv.get(p));
-    e.ongoingFloodLevel = lvl;
-    const ms = bjParse(e.endedAt);
-    e.daysSince = (nowMs != null && ms != null) ? Math.floor((nowMs - ms) / 864e5) : null;
-  }
-  return kept.sort((a, b) => (b.endedAt || "").localeCompare(a.endedAt || ""));
-}
-
 /* ---------- 主流程 ---------- */
 
 /* 上一版数据：用于识别"本轮消失"的台风，构建影响持续期 */
@@ -708,9 +590,10 @@ try {
   console.warn("alerts failed: " + (e.message || e));
   alerts = { ok: false, error: String(e.message || e), ...NMC_ALARM, provinces: [], counts: {}, peak: null };
 }
-linkRainRisk(typhoons, alerts);
-
 const updatedAt = bjNow();
+/* 预警抓取失败时沿用上一班结果（见 risk.mjs 头注释：回放发现的漏报） */
+linkRainRisk(typhoons, alerts, updatedAt, prev);
+carryAffected(typhoons, prev);
 const recentlyEnded = buildAftermath(prev, typhoons, updatedAt, alerts);
 
 const out = {

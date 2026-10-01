@@ -1,0 +1,36 @@
+name: test
+
+# 风险逻辑把关：单元测试 + 用全部历史快照回放（见 scripts/replay-history.mjs）。
+# 数据机器人的提交不触发（GITHUB_TOKEN 推送本就不触发工作流），只看人改的代码。
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/**"
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/test.yml"
+  pull_request:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # 回放要读 data/typhoon.json 的全部历史
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Unit tests
+        run: node --test tests/*.test.mjs
+
+      - name: Replay git history (no misses allowed)
+        run: node scripts/replay-history.mjs

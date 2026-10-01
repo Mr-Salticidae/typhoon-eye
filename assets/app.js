@@ -752,37 +752,9 @@
   var DATA = null, MODE = "demo", STATE = null, current = 0;
 
   /* ---------- 预案档位建议 ---------- */
-  /* 历史教训（2026 年第 10 号台风美莎克）：
-     它以强热带风暴级（10 级）登陆，按风力推档只到黄色；但登陆后在陆上重建眼区、
-     于广西内陆滞留 26 小时，极端降雨引发六蓝、云表等水库溃坝，最终致 159 人遇难。
-     减弱为热带低压后风力档位甚至回落到蓝色——恰恰是伤亡最集中的时段。
-     因此档位取「风力档」与「洪涝预警档」的较高者，绝不由风力单独决定。 */
-  var LEVEL_ZH = { blue: "蓝", yellow: "黄", orange: "橙", red: "红" };
-
-  function tierRank(l) { return WARNING_LEVELS.indexOf(l) + 1; }
-
-  function windTier(t) {
-    if (!t || !t.nearCoast) return "blue";
-    var w = (t.now && t.now.windLevel) || 0;
-    if (w >= 14) return "orange";
-    if (w >= 10) return "yellow";
-    return "blue";
-  }
-
-  function rainTier(t) {
-    return (t && t.rainRisk && t.rainRisk.floodLevel) || null;
-  }
-
-  /* 洪涝档高于风力档 = 典型"弱级强灾"，需要显式点破 */
-  function riskMismatch(t) {
-    var w = windTier(t), r = rainTier(t);
-    return tierRank(r) > tierRank(w) ? { wind: w, rain: r } : null;
-  }
-
-  function suggestLevel(t) {
-    var w = windTier(t), r = rainTier(t);
-    return tierRank(r) > tierRank(w) ? r : w;
-  }
+  /* 档位规则（风力档与洪涝档取高、美莎克教训）在 assets/risk.js，tests/ 用历史快照回放测试 */
+  var LEVEL_ZH = TyRisk.LEVEL_ZH, windTier = TyRisk.windTier, rainTier = TyRisk.rainTier,
+      riskMismatch = TyRisk.riskMismatch, suggestLevel = TyRisk.suggestLevel;
 
   /* 当前数据下的参考等级：台风在编看风雨较高者，影响持续期看在效洪涝预警 */
   function suggested() {
@@ -807,12 +779,14 @@
       sec.hidden = true;
       return;
     }
-    if (!alerts.ok) {
+    var risk = t && t.rainRisk;
+    /* 抓取失败时服务端沿用上一班结果（最多 6 小时，标 stale），省份照常列出、档位不掉；没得沿用才只给一句失败提示 */
+    var carried = !alerts.ok && risk && risk.stale && risk.provinces && risk.provinces.length;
+    if (!alerts.ok && !carried) {
       note.textContent = "洪涝类预警本次抓取失败（" + (alerts.error || "原因未知") +
         "），请直接查看中央气象台预警发布平台。";
       return;
     }
-    var risk = t && t.rainRisk;
     if (!risk || !risk.provinces.length) {
       sec.classList.add("is-quiet");
       note.textContent = "台风影响范围内暂无洪涝类预警在效。";
@@ -848,6 +822,10 @@
     /* 抓取脚本写的是 label；早先读 source 会显示成"预警来自undefined" */
     note.textContent = "预警来自" + (alerts.label || alerts.source || "中央气象台预警发布平台") + "，取台风影响范围内各省级行政区的最高档位" +
       "（省内可能仅部分区县发布）。这是台风与省份的关联，页面不判断你所在位置。";
+    if (carried) {
+      note.textContent = "洪涝类预警本次抓取失败（" + (alerts.error || "原因未知") + "），上面沿用 " +
+        (risk.asOf || "上一班") + " 的结果，参考等级不因抓取失败而降低。最新情况请直接查看中央气象台预警发布平台。";
+    }
   }
 
   /* ---------- 影响持续期 ---------- */
@@ -855,13 +833,7 @@
      只要停编台风的影响省份仍有洪涝类预警在效，页面就不回落到"风平浪静"。 */
 
   /* 取最近一条"已停编但影响省份仍有洪涝预警在效"的台风；没有则返回 null */
-  function aftermath() {
-    var list = (DATA && DATA.recentlyEnded) || [];
-    for (var i = 0; i < list.length; i++) {
-      if (list[i].ongoingFloodLevel) return list[i];
-    }
-    return null;
-  }
+  function aftermath() { return TyRisk.aftermathOf(DATA); }
 
   function renderAftermath(e) {
     var lv = e.ongoingFloodLevel;
@@ -1001,7 +973,7 @@
     current = 0;
     list.forEach(function (t, i) { if (t.code === prev) current = i; });
     var af = aftermath();
-    STATE = list.length ? "storm" : (af ? "aftermath" : "calm");
+    STATE = TyRisk.pageState(data);
 
     $("statusCard").dataset.state = STATE;
     renderSwitcher(list);
