@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01 16:00",
+  "updatedAt": "2026-10-01 16:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -188,9 +188,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 178,
+    "total": 150,
     "counts": {
-      "暴雨": 172,
+      "暴雨": 144,
       "山洪灾害": 2,
       "地质灾害": 4
     },
@@ -222,32 +222,13 @@
         "lng": 111.7
       },
       {
-        "province": "浙江",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red",
-          "山洪灾害": "blue"
-        },
-        "count": 23,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "浙江省温州市泰顺县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33032941600000_20261001153108.html",
-          "issuedAt": "2026/10/01 15:28"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      },
-      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 26,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -259,43 +240,26 @@
         "lng": 113.4
       },
       {
+        "province": "浙江",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "blue"
+        },
+        "count": 20,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "浙江省丽水市青田县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33112141600000_20261001161739.html",
+          "issuedAt": "2026/10/01 16:20"
+        },
+        "lat": 29.2,
+        "lng": 120.2
+      },
+      {
         "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 23,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省漳州市漳浦县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062341600000_20261001131300.html",
-          "issuedAt": "2026/10/01 13:13"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 22,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "贵州省黔东南苗族侗族自治州榕江县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52263241600000_20261001101749.html",
-          "issuedAt": "2026/10/01 10:17"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
-      {
-        "province": "江西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
@@ -305,9 +269,27 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省赣州市瑞金市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36078141600000_20261001093556.html",
-          "issuedAt": "2026/10/01 09:35"
+          "title": "福建省龙岩市上杭县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35082341600000_20261001160400.html",
+          "issuedAt": "2026/10/01 16:04"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
+        "province": "江西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 18,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江西省吉安市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36080041600000_20261001070040.html",
+          "issuedAt": "2026/10/01 06:59"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -331,13 +313,31 @@
         "lng": 108.8
       },
       {
-        "province": "重庆",
+        "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
         "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省六盘水市盘州市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52028141600000_20261001151040.html",
+          "issuedAt": "2026/10/01 15:10"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -385,24 +385,6 @@
         },
         "lat": 35.2,
         "lng": 108.9
-      },
-      {
-        "province": "安徽",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "安徽省黄山市休宁县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34102241600000_20261001095230.html",
-          "issuedAt": "2026/10/01 09:52"
-        },
-        "lat": 31.9,
-        "lng": 117.2
       }
     ]
   },
