@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01 17:45",
+  "updatedAt": "2026-10-01 18:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 34 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 21 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-01 14时",
+            "time": "10-01 17时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -196,11 +196,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 171,
+    "total": 139,
     "counts": {
-      "暴雨": 164,
-      "山洪灾害": 2,
-      "地质灾害": 5
+      "暴雨": 134,
+      "山洪灾害": 1,
+      "地质灾害": 4
     },
     "peak": {
       "province": "湖南",
@@ -236,7 +236,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 25,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -252,10 +252,9 @@
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
-          "暴雨": "red",
-          "山洪灾害": "blue"
+          "暴雨": "red"
         },
-        "count": 20,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -273,13 +272,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 36,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省惠州市龙门县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44132441600000_20261001173312.html",
-          "issuedAt": "2026/10/01 17:32"
+          "title": "广东省潮州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44510041600000_20261001174650.html",
+          "issuedAt": "2026/10/01 17:43"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -303,43 +302,7 @@
         "lng": 115.7
       },
       {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区河池市凤山县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45122341600000_20261001152625.html",
-          "issuedAt": "2026/10/01 15:19"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
         "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省黔西南布依族苗族自治州兴仁市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52230241600000_20261001171026.html",
-          "issuedAt": "2026/10/01 17:10"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
-      {
-        "province": "重庆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
@@ -349,12 +312,12 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "重庆市黔江区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50011441600000_20261001050205.html",
-          "issuedAt": "2026/10/01 05:01"
+          "title": "贵州省黔西南布依族苗族自治州兴仁市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52230241600000_20261001171026.html",
+          "issuedAt": "2026/10/01 17:10"
         },
-        "lat": 29.8,
-        "lng": 107.9
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "云南",
@@ -376,20 +339,37 @@
         "lng": 101.5
       },
       {
-        "province": "陕西",
+        "province": "重庆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "山洪灾害": "blue",
-          "地质灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 2,
+        "count": 4,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "陕西省气象台发布地质灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20260930175351.html",
-          "issuedAt": "2026/09/30 17:53"
+          "title": "重庆市黔江区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011441600000_20261001050205.html",
+          "issuedAt": "2026/10/01 05:01"
+        },
+        "lat": 29.8,
+        "lng": 107.9
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "山洪灾害": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "blue",
+          "title": "陕西省气象台发布山洪灾害蓝色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20261001094111.html",
+          "issuedAt": "2026/10/01 09:41"
         },
         "lat": 35.2,
         "lng": 108.9
