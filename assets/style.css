@@ -196,6 +196,43 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem 1.5rem; }
 .share-btn svg { width: 1.05rem; height: 1.05rem; }
 .share-btn:hover { border-color: var(--accent); }
 
+/* 我关心的城市：态势卡里一城一句；选择面板从底部弹出（宽屏居中） */
+.my-cities { margin-top: .85rem; padding-top: .7rem; border-top: 1px dashed var(--line); }
+.mc-list { list-style: none; margin: 0; padding: 0; }
+.mc-list:empty { display: none; }
+.mc-list li { position: relative; margin: .25rem 0; padding-left: 1rem; font-size: .9375rem; line-height: 1.65; }
+.mc-list li::before { content: ""; position: absolute; left: .1rem; top: .62em; width: .45rem; height: .45rem; border-radius: 50%; background: var(--accent); }
+.mc-btn { min-height: 2.75rem; padding: .3rem 0; border: 0; background: none; color: var(--accent); font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer; }
+.cities circle.mine { fill: var(--accent); opacity: 1; }
+.cities text.mine { fill: var(--accent); font-weight: 600; }
+
+.city-sheet { position: fixed; inset: 0; z-index: 60; display: flex; align-items: flex-end; justify-content: center; background: rgba(var(--shadow), .38); }
+.cs-panel {
+  width: min(100%, 560px); max-height: 82vh; overflow-y: auto; overscroll-behavior: contain;
+  padding: 1rem 1rem calc(1rem + env(safe-area-inset-bottom, 0px));
+  border-radius: var(--radius) var(--radius) 0 0; background: var(--paper-2); box-shadow: 0 -8px 30px rgba(var(--shadow), .18);
+}
+.cs-head { display: flex; align-items: center; justify-content: space-between; }
+.cs-head h2 { margin: 0; font-family: var(--serif); font-size: 1.25rem; letter-spacing: .06em; }
+.cs-close { width: 2.75rem; height: 2.75rem; border: 0; background: none; color: var(--ink-soft); font-size: 1.6rem; line-height: 1; cursor: pointer; }
+.cs-help { margin: .2rem 0 .8rem; color: var(--ink-soft); font-size: .8125rem; line-height: 1.6; }
+.cs-picked { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .75rem; }
+.cs-chip { min-height: 2.75rem; padding: .3rem .9rem; border: 1px solid var(--accent); border-radius: 999px; background: var(--accent-soft); color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; }
+.cs-search {
+  width: 100%; min-height: 2.75rem; padding: .5rem .9rem; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--paper); color: var(--ink); font: inherit; font-size: 16px; /* 16px：iOS 聚焦输入框时不自动放大页面 */
+}
+.cs-search:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.cs-results { margin-top: .8rem; }
+.cs-group { margin-bottom: .7rem; }
+.cs-prov { margin: 0 0 .3rem; color: var(--ink-soft); font-size: .8125rem; }
+.cs-row { display: flex; flex-wrap: wrap; gap: .4rem; }
+.cs-city { min-width: 3.5rem; min-height: 2.75rem; padding: .3rem .85rem; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--ink); font: inherit; cursor: pointer; }
+.cs-city.is-on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.cs-empty { margin: 0; color: var(--ink-soft); font-size: .875rem; line-height: 1.6; }
+body.sheet-open { overflow: hidden; }
+@media (min-width: 720px) { .city-sheet { align-items: center; } .cs-panel { border-radius: var(--radius); } }
+
 .ty-switch { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .8rem; }
 .ty-chip {
   min-height: 2.5rem; padding: .3rem 1rem; border-radius: 999px; cursor: pointer;

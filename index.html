@@ -59,6 +59,10 @@
           <p class="status-level"><span class="eye-dot" aria-hidden="true"></span><span id="tyLevel">正在获取最新数据…</span></p>
           <p class="status-verdict" id="tyVerdict" hidden></p>
           <p class="status-summary" id="tySummary" hidden></p>
+          <div class="my-cities" id="myCities" hidden>
+            <ul class="mc-list" id="myCitiesList"></ul>
+            <button class="mc-btn" id="myCitiesBtn" type="button">＋ 离我关心的城市有多远</button>
+          </div>
           <div class="status-chips">
             <span class="level-chip" id="levelChip" hidden></span>
             <span class="time-chip" id="timeChip" hidden></span>
@@ -242,7 +246,7 @@
     <h3 class="sub-title">隐私边界</h3>
     <ul class="privacy-list">
       <li>不请求定位权限，不读取 GPS，不通过 IP 推断位置，也不要求填写住址。</li>
-      <li>地区场景选择只存在当前页面内存中，刷新即清空。</li>
+      <li>地区场景与「我关心的城市」的选择只存在当前页面内存中，刷新即清空，不写入本机存储。</li>
       <li>主题、清单勾选与应急包盘点日期只保存在本机浏览器，不会上传；项目没有账号系统与分析埋点。</li>
     </ul>
 
@@ -256,6 +260,19 @@
   </section>
 
 </main>
+
+<div class="city-sheet" id="citySheet" hidden>
+  <div class="cs-panel" role="dialog" aria-modal="true" aria-labelledby="citySheetTitle">
+    <div class="cs-head">
+      <h2 id="citySheetTitle">我关心的城市</h2>
+      <button class="cs-close" id="citySheetClose" type="button" aria-label="关闭">×</button>
+    </div>
+    <p class="cs-help">最多选 3 个，可以替家人选。页面不定位、不上传；选择只在这次打开期间有效，刷新就清空。</p>
+    <div class="cs-picked" id="cityPicked"></div>
+    <input class="cs-search" id="citySearch" type="search" placeholder="输入城市名，比如 台州、湛江" autocomplete="off" enterkeyhint="search" aria-label="搜索城市">
+    <div class="cs-results" id="cityResults"></div>
+  </div>
+</div>
 
 <nav class="tabbar" aria-label="主导航">
   <button type="button" data-go="now">
@@ -278,6 +295,9 @@
 
 <script src="assets/data.js"></script>
 <script src="assets/basemap.js"></script>
+<script src="assets/risk.js"></script>
+<script src="assets/cities.js"></script>
+<script src="assets/nearby.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/toy-runtime.js"></script>
 </body>
