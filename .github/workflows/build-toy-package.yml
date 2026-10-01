@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  issues: write   # 代码变了就开「Toy 待提交审核」Issue：CI 只打包，提交审核要作者手动（2026-09 的 v1.0 就这样漏了一个月）
 
 concurrency:
   group: build-toy-package
@@ -28,14 +29,25 @@ jobs:
           fetch-depth: 1
 
       - name: Build standard Toy ZIP
+        id: build
         shell: bash
         run: |
           set -euo pipefail
+          # 代码签名 = 包里非 data/ 文件的 CRC 列表。只有数据快照变了不算（页面运行时会自己拉最新数据）
+          code_sig() { unzip -v "$1" | awk 'NF==8 && $7 ~ /^[0-9a-f]{8}$/ && $8 !~ /^data\// && $8 !~ /\/$/ {print $7, $8}' | sort -k2; }
+          old_sig=""
+          [ -f typhoon-eye-bilibili-toy.zip ] && old_sig=$(code_sig typhoon-eye-bilibili-toy.zip)
           rm -f typhoon-eye-bilibili-toy.zip
           zip -r -9 typhoon-eye-bilibili-toy.zip index.html assets data \
             -x "*.DS_Store" "*/Thumbs.db"
           unzip -t typhoon-eye-bilibili-toy.zip
           unzip -l typhoon-eye-bilibili-toy.zip | grep -F "assets/toy-runtime.js"
+          if [ "$(code_sig typhoon-eye-bilibili-toy.zip)" != "$old_sig" ]; then
+            echo "code_changed=true" >> "$GITHUB_OUTPUT"
+            echo "包里的代码变了"
+          else
+            echo "code_changed=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit refreshed package
         shell: bash
@@ -52,3 +64,38 @@ jobs:
           git commit -m "toy: rebuild package from ${GITHUB_SHA:0:7} [skip ci]"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Remind to submit Toy review
+        if: steps.build.outputs.code_changed == 'true'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh label create toy-pending --color 5319E7 --description "Toy 包里的代码更新了，待作者提交审核" 2>/dev/null || true
+          src="${GITHUB_SHA:0:7}"
+          subject=$(git log -1 --format=%s "$GITHUB_SHA" 2>/dev/null || echo "")
+          open=$(gh issue list --label toy-pending --state open --json number -q '.[0].number')
+          if [ -n "$open" ]; then
+            gh issue comment "$open" --body "又有新代码进了 Toy 包：\`${src}\` ${subject}。提交审核时用仓库里最新的 \`typhoon-eye-bilibili-toy.zip\` 即可，一次带上。"
+            exit 0
+          fi
+          gh issue create --label toy-pending --title "Toy 包已更新（${src}），待提交审核" --body "$(cat <<EOF
+          GitHub Pages 已经是新代码（push 即生效），但 **B站 Toy 不会自动更新**：CI 只把代码打成了 \`typhoon-eye-bilibili-toy.zip\`，提交审核要作者手动做。
+
+          来源提交：\`${src}\` ${subject}
+
+          在本机：
+          \`\`\`
+          cd D:\AIGC工作站\typhoon-eye
+          git pull --ff-only
+          toy update 8980525008896 typhoon-eye-bilibili-toy.zip --json
+          \`\`\`
+          拿到 preview_url 在手机上看一遍（四个视图、转告家人、清单勾选），确认后同一条命令加 \`--yes\` 提交审核。
+
+          过审核对：外层页 https://www.bilibili.com/toy/YliUzbE5TOqySu4G/index.html 的内层是 \`https://www.bilibilitoy.com/toy/YliUzbE5TOqySu4G/index.html\`（2026-10 起不再带 \`-vNNNN\` 版本号），比对内层 \`assets/app.js\` 和包里的是否一致。
+
+          上线后关闭这个 Issue。期间再有代码进包，会追加在下面的评论里。
+          EOF
+          )"

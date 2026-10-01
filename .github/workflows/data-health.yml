@@ -1,0 +1,133 @@
+name: data-health-alert
+
+# 数据断更告警：出问题时开 Issue（GitHub 会发邮件），恢复后自动关闭。
+# 只用 GitHub 自己的定时触发，不依赖 cron-job.org 和 PAT——PAT 过期时它照样能跑，正好能报出来。
+# GitHub 定时会丢班（主任务实测约 94%），所以一小时排两班；告警晚一两个小时到可以接受。
+on:
+  schedule:
+    - cron: "11,41 * * * *"
+  workflow_dispatch:
+    inputs:
+      drill:
+        description: "演练：假装出了某种问题，验证开 / 关 Issue 的链路"
+        type: choice
+        options: [none, stale, stopped]
+        default: none
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+
+concurrency:
+  group: data-health-alert
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      DRILL: ${{ inputs.drill || 'none' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Assess data freshness
+        id: data
+        run: node scripts/data-health.mjs | tee -a "$GITHUB_OUTPUT"
+
+      - name: Check external trigger and sync alert issues
+        shell: bash
+        env:
+          STALE: ${{ steps.data.outputs.stale }}
+          ACTIVE: ${{ steps.data.outputs.active }}
+          AGE_MIN: ${{ steps.data.outputs.age_min }}
+          LIMIT_MIN: ${{ steps.data.outputs.limit_min }}
+          UPDATED_AT: ${{ steps.data.outputs.updated_at }}
+          NAMES: ${{ steps.data.outputs.names }}
+          FAILED_SOURCES: ${{ steps.data.outputs.failed_sources }}
+        run: |
+          set -euo pipefail
+          RUN_URL="${GITHUB_SERVER_URL}/${GH_REPO}/actions/runs/${GITHUB_RUN_ID}"
+          DRILL_TAG=""
+          [ "$DRILL" != "none" ] && DRILL_TAG="（演练）"
+
+          gh label create data-stale --color B60205 --description "风眼数据断更（自动告警）" 2>/dev/null || true
+          gh label create trigger-stopped --color D93F0B --description "外部定时触发停了，多半是 PAT 过期（自动告警）" 2>/dev/null || true
+
+          # 有未关闭的同类 Issue 就不重复开；问题消失后自动关闭
+          sync_issue() {
+            local label="$1" bad="$2" title="$3" body="$4" ok_msg="$5" open
+            open=$(gh issue list --label "$label" --state open --json number -q '.[0].number')
+            if [ "$bad" = "true" ]; then
+              if [ -z "$open" ]; then
+                gh issue create --title "$title" --label "$label" --body "$body"
+              else
+                echo "已有未关闭的告警 #$open，不重复开"
+              fi
+            elif [ -n "$open" ]; then
+              gh issue close "$open" --comment "$ok_msg"
+            fi
+          }
+
+          # ① 外部定时：cron-job.org 每 15 分钟用 PAT 触发一次 watchdog（workflow_dispatch）
+          last=$(gh api "repos/$GH_REPO/actions/workflows/typhoon-data-watchdog.yml/runs?event=workflow_dispatch&per_page=1" \
+            -q '.workflow_runs[0].created_at // ""')
+          if [ -n "$last" ]; then
+            gap=$(( ( $(date +%s) - $(date -d "$last" +%s) ) / 60 ))
+          else
+            gap=99999
+          fi
+          stopped=false
+          [ "$gap" -gt 90 ] && stopped=true
+          [ "$DRILL" = "stopped" ] && stopped=true
+          echo "最近一次外部触发：${last:-无}（${gap} 分钟前），判定停了：$stopped"
+
+          sync_issue trigger-stopped "$stopped" \
+            "外部定时触发已停 ${gap} 分钟：多半是 cron-job.org 用的 PAT 过期了${DRILL_TAG}" \
+            "$(cat <<EOF
+          风眼的数据刷新主要靠 cron-job.org 每 15 分钟用 PAT 触发 \`typhoon-data-watchdog.yml\`（最近 100 次补偿里 95 次是它触发的）；GitHub 自己的定时会丢掉大部分班次。现在已经 **${gap} 分钟** 没有新的外部触发（上一次：${last:-无记录}）。
+
+          **最可能的原因：PAT 过期**（建于 2026-07-11 前后，有效期 90 天）。
+
+          处理步骤：
+          1. GitHub → Settings → Developer settings → Fine-grained tokens → Generate new token：只选 \`Mr-Salticidae/typhoon-eye\` 一个仓库，权限只给 **Actions: Read and write**，有效期选最长。
+          2. cron-job.org 里打开触发风眼的那个任务，把请求头 \`Authorization: Bearer …\` 换成新 token，保存后点一次 Test run。
+          3. 回到本仓库 Actions，看 \`update-typhoon-data-watchdog\` 是否出现新的 \`workflow_dispatch\` 运行。恢复后这个 Issue 会在下一次检查时自动关闭。
+
+          也可能是 cron-job.org 的任务被停用、或它那边故障，去它的执行记录里看返回码（401/403 = token 问题）。
+
+          检查记录：${RUN_URL}
+          EOF
+          )" \
+            "外部触发已恢复：最近一次 ${last}（${gap} 分钟前）。自动关闭。"
+
+          # ② 数据本身多久没更新
+          stale="$STALE"
+          [ "$DRILL" = "stale" ] && stale=true
+          if [ "$ACTIVE" = "true" ]; then scene="有活跃台风（${NAMES}）或停编台风仍在影响期"; else scene="当前没有活跃台风"; fi
+          sync_issue data-stale "$stale" \
+            "风眼数据已 ${AGE_MIN} 分钟没更新${DRILL_TAG}" \
+            "$(cat <<EOF
+          \`data/typhoon.json\` 最后更新于 **${UPDATED_AT}**（北京时间），已经 **${AGE_MIN} 分钟**；${scene}，超过 ${LIMIT_MIN} 分钟即告警。页面上数据时效色块会变黄，但用户未必注意到。
+
+          - 抓取失败的数据源：${FAILED_SOURCES}
+          - 外部定时触发：最近一次 ${last:-无记录}（${gap} 分钟前）
+
+          排查顺序：
+          1. 外部触发停了 → 看同时开出的「外部定时触发已停」Issue（多半是 PAT 过期）。
+          2. 触发正常但数据没变 → 看 Actions 里 \`update-typhoon-data-watchdog\` 最近几次的日志，是不是三个源都抓失败了。
+          3. 手动补一班：Actions → \`update-typhoon-data-watchdog\` → Run workflow。
+
+          恢复后这个 Issue 会在下一次检查时自动关闭。检查记录：${RUN_URL}
+          EOF
+          )" \
+            "数据已恢复：最后更新于 ${UPDATED_AT}（${AGE_MIN} 分钟前）。自动关闭。"
