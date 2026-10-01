@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01 12:00",
+  "updatedAt": "2026-10-01 12:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 34 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-01 08时",
+            "time": "10-01 11时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -179,39 +179,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 186,
+    "total": 152,
     "counts": {
-      "暴雨": 181,
+      "暴雨": 146,
       "山洪灾害": 2,
-      "地质灾害": 3
+      "地质灾害": 4
     },
     "peak": {
-      "province": "贵州",
+      "province": "湖南",
       "kind": "暴雨",
       "level": "red",
-      "title": "贵州省毕节市织金县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/52052441600000_20261001090656.html",
-      "issuedAt": "2026/10/01 09:06"
+      "title": "湖南省衡阳市祁东县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/43042641600000_20261001021928.html",
+      "issuedAt": "2026/10/01 02:18"
     },
     "provinces": [
-      {
-        "province": "贵州",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 56,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "贵州省毕节市织金县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52052441600000_20261001090656.html",
-          "issuedAt": "2026/10/01 09:06"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
       {
         "province": "湖南",
         "maxLevel": "red",
@@ -231,19 +213,37 @@
         "lng": 111.7
       },
       {
-        "province": "江西",
+        "province": "贵州",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 20,
+        "count": 33,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "江西省赣州市赣县区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36070441600000_20261001073003.html",
-          "issuedAt": "2026/10/01 07:27"
+          "title": "贵州省毕节市织金县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52052441600000_20261001090656.html",
+          "issuedAt": "2026/10/01 09:06"
+        },
+        "lat": 26.8,
+        "lng": 106.9
+      },
+      {
+        "province": "江西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 18,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "江西省赣州市瑞金市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36078141600000_20261001093556.html",
+          "issuedAt": "2026/10/01 09:35"
         },
         "lat": 27.6,
         "lng": 115.7
@@ -268,42 +268,6 @@
         "lng": 120.2
       },
       {
-        "province": "重庆",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 15,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "重庆市黔江区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50011441600000_20261001062154.html",
-          "issuedAt": "2026/10/01 06:21"
-        },
-        "lat": 29.8,
-        "lng": 107.9
-      },
-      {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省韶关市仁化县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44022441600000_20261001093320.html",
-          "issuedAt": "2026/10/01 09:32"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "福建",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -320,6 +284,42 @@
         },
         "lat": 26.1,
         "lng": 118.3
+      },
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省韶关市仁化县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44022441600000_20261001093320.html",
+          "issuedAt": "2026/10/01 09:32"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "重庆市黔江区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50011441600000_20261001062154.html",
+          "issuedAt": "2026/10/01 06:21"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "湖北",
@@ -347,7 +347,7 @@
           "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -394,24 +394,6 @@
         },
         "lat": 31.9,
         "lng": 117.2
-      },
-      {
-        "province": "四川",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "四川省凉山州气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51340041600000_20260930155600.html",
-          "issuedAt": "2026/09/30 15:56"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       }
     ]
   },
