@@ -1,7 +1,7 @@
 /* 历史回放：用当前 scripts/risk.mjs 把 git 历史里每一班 data/typhoon.json 重算一遍。
  *
  * 用法（需要完整历史，CI 里 checkout 要 fetch-depth: 0）：
- *   node scripts/replay-history.mjs [起始日期，默认 2026-08-21 洪涝维度上线]
+ *   node scripts/replay-history.mjs ["YYYY-MM-DD HH:MM" 起始时刻，默认 2026-08-21 00:00 洪涝维度上线]
  *
  * 检查两件事：
  *  1. 一致性：预警抓取正常的班次，重算出的各台风洪涝档必须与当时生产输出一致——改风险逻辑时，
@@ -13,7 +13,8 @@
 import { execFileSync } from "node:child_process";
 import { linkRainRisk, carryAffected, buildAftermath, LEVEL_RANK, CARRY_MAX_HOURS, bjParse } from "./risk.mjs";
 
-const since = process.argv[2] || "2026-08-21";
+/* 不带时刻的日期 git 会补上“当前钟点”，窗口随运行时刻漂移——写死零点，结果可复现 */
+const since = process.argv[2] || "2026-08-21 00:00";
 const shas = execFileSync("git", ["log", "--reverse", `--since=${since}`, "--format=%H", "--", "data/typhoon.json"], { encoding: "utf8" })
   .split("\n").filter(Boolean);
 

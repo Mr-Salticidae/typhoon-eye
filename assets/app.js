@@ -534,6 +534,17 @@
         t.textContent = c.name;
         cityLayer.appendChild(t);
       });
+      MY_CITIES.forEach(function (n) {
+        var c = CITY_BY_NAME[n];
+        if (!c) return;
+        var p = proj(c.lat, c.lng);
+        if (p[0] < minX || p[0] > maxX || p[1] < minY || p[1] > maxY) return;
+        cityLayer.appendChild(svgEl("circle", { class: "mine", cx: p[0], cy: p[1], r: 4.5 * f }));
+        if (CITIES.some(function (x) { return x.name === n; })) return;
+        var t = svgEl("text", { class: "mine", x: p[0] - 8 * f, y: p[1] - 8 * f, "text-anchor": "end", "font-size": Math.round(13 * f) });
+        t.textContent = n;
+        cityLayer.appendChild(t);
+      });
     }
 
     var nowIdx = -1;
@@ -746,6 +757,7 @@
 
     renderMap(t.track);
     renderRisk(t);
+    renderMyCities();
   }
 
   /* ---------- 数据装载 ---------- */
@@ -828,6 +840,110 @@
     }
   }
 
+  /* ---------- 我关心的城市 ---------- */
+  /* 用户手选城市（可替家人选），算台风离它多远、预报何时最近（assets/nearby.js）。
+     只放内存、刷新即清空：B站 Toy 的作品同在 www.bilibilitoy.com 一个源下，本机存储别的 Toy 也读得到，
+     城市名属于位置信息，不往里写——与地区特点预案（v0.7）同一条隐私边界。 */
+  var MY_CITIES = [], MAX_CITIES = 3, CITY_BY_NAME = {};
+  var CITY_LIST = typeof TY_CITIES !== "undefined" ? TY_CITIES : [];
+  CITY_LIST.forEach(function (c) { CITY_BY_NAME[c[0]] = { name: c[0], province: c[1], lat: c[2], lng: c[3] }; });
+  /* 没输入时的快捷列表：沿海各省的省会与沿海城市，按台风来时常查的程度手排（数据集的人口数不可靠，河池会排在南宁前面） */
+  var QUICK = [
+    ["海南", "海口 三亚 儋州 琼海 文昌 万宁"], ["广东", "广州 深圳 珠海 汕头 湛江 茂名 阳江 江门 汕尾 惠州 中山 东莞"],
+    ["香港", "香港"], ["澳门", "澳门"], ["广西", "南宁 北海 钦州 防城港 玉林 梧州"], ["福建", "福州 厦门 泉州 漳州 莆田 宁德"],
+    ["台湾", "台北 新北 基隆 宜兰 花莲 台中 台南 高雄"], ["浙江", "杭州 宁波 温州 台州 舟山 绍兴 嘉兴"], ["上海", "上海"],
+    ["江苏", "南京 苏州 南通 盐城 连云港 无锡"], ["山东", "青岛 烟台 威海 日照 济南 潍坊"], ["天津", "天津"],
+    ["河北", "秦皇岛 唐山 沧州 石家庄"], ["辽宁", "大连 丹东 营口 葫芦岛 锦州 沈阳"],
+  ];
+
+  function cityLines(t) {
+    return MY_CITIES.map(function (n) {
+      var c = CITY_BY_NAME[n];
+      var res = c ? TyNearby.closestApproach(t.track, c.lat, c.lng, DATA.updatedAt) : null;
+      return TyNearby.cityLine(n, res, t.now && t.now.r7, t.now && t.now.r10);
+    });
+  }
+
+  function renderMyCities() {
+    var t = STATE === "storm" && DATA && DATA.typhoons[current];
+    $("myCities").hidden = !t || !CITY_LIST.length;
+    if (!t) return;
+    var list = $("myCitiesList");
+    list.innerHTML = "";
+    cityLines(t).forEach(function (s) { list.appendChild(el("li", null, s)); });
+    $("myCitiesBtn").textContent = MY_CITIES.length ? "改选城市" : "＋ 离我关心的城市有多远";
+  }
+
+  function cityButton(c) {
+    var on = MY_CITIES.indexOf(c[0]) >= 0;
+    var b = el("button", "cs-city" + (on ? " is-on" : ""), c[0]);
+    b.type = "button";
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+    b.addEventListener("click", function () { toggleCity(c[0]); });
+    return b;
+  }
+
+  function renderCitySheet() {
+    var picked = $("cityPicked"), box = $("cityResults");
+    picked.innerHTML = ""; box.innerHTML = "";
+    picked.hidden = !MY_CITIES.length;
+    MY_CITIES.forEach(function (n) {
+      var b = el("button", "cs-chip", n + " ×");
+      b.type = "button";
+      b.setAttribute("aria-label", "去掉" + n);
+      b.addEventListener("click", function () { toggleCity(n); });
+      picked.appendChild(b);
+    });
+    var q = $("citySearch").value.trim();
+    if (q) {
+      var hits = CITY_LIST.filter(function (c) { return c[0].indexOf(q) >= 0 || c[1].indexOf(q) >= 0; }).slice(0, 40);
+      if (!hits.length) { box.appendChild(el("p", "cs-empty", "没找到“" + q + "”。列表收的是地级以上城市和台湾、港澳主要城市，试试所在的地级市名。")); return; }
+      var row = el("div", "cs-row");
+      hits.forEach(function (c) { row.appendChild(cityButton(c)); });
+      box.appendChild(row);
+      return;
+    }
+    QUICK.forEach(function (q) {
+      var prov = q[0];
+      var cs = q[1].split(" ").map(function (n) { var c = CITY_BY_NAME[n]; return c && [c.name, c.province, c.lat, c.lng]; }).filter(Boolean);
+      if (!cs.length) return;
+      var group = el("div", "cs-group");
+      group.appendChild(el("p", "cs-prov", prov));
+      var row = el("div", "cs-row");
+      cs.forEach(function (c) { row.appendChild(cityButton(c)); });
+      group.appendChild(row);
+      box.appendChild(group);
+    });
+  }
+
+  function toggleCity(n) {
+    var i = MY_CITIES.indexOf(n);
+    if (i >= 0) MY_CITIES.splice(i, 1);
+    else if (MY_CITIES.length >= MAX_CITIES) { showToast("最多选 " + MAX_CITIES + " 个，先去掉一个"); return; }
+    else MY_CITIES.push(n);
+    renderCitySheet();
+    renderMyCities();
+    if (STATE === "storm" && lastTrack) renderMap(lastTrack);
+  }
+
+  function openCitySheet() {
+    $("citySearch").value = "";
+    renderCitySheet();
+    $("citySheet").hidden = false;
+    document.body.classList.add("sheet-open");
+    $("citySheetClose").focus();
+  }
+  function closeCitySheet() {
+    $("citySheet").hidden = true;
+    document.body.classList.remove("sheet-open");
+    $("myCitiesBtn").focus();
+  }
+  $("myCitiesBtn").addEventListener("click", openCitySheet);
+  $("citySheetClose").addEventListener("click", closeCitySheet);
+  $("citySheet").addEventListener("click", function (e) { if (e.target === this) closeCitySheet(); });
+  $("citySearch").addEventListener("input", renderCitySheet);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("citySheet").hidden) closeCitySheet(); });
+
   /* ---------- 影响持续期 ---------- */
   /* 停编 ≠ 风险结束：美莎克 2026-07-07 停编，遇难数字此后六周从 39 升至 159。
      只要停编台风的影响省份仍有洪涝类预警在效，页面就不回落到"风平浪静"。 */
@@ -898,6 +1014,7 @@
         (t.nearCoast ? "预报路径趋向我国沿海，请留意当地预警。" : "预报路径暂未逼近我国沿海。") +
         (riskMismatch(t) ? "其影响范围内已有" + LEVEL_ZH[rainTier(t)] + "色洪涝类预警在效，要特别小心降雨和山洪。" : "") +
         "参考防御等级：" + LEVEL_ZH[lv] + "色。");
+      cityLines(t).forEach(function (s) { lines.push(s + "。"); });
     } else if (STATE === "aftermath") {
       var e = aftermath();
       lines.push("【风眼】台风“" + e.name + "”已停编，但影响省份（" + (e.provinces || []).join("、") + "）仍有" +
@@ -985,6 +1102,7 @@
       if (STATE === "aftermath") renderAftermath(af); else renderCalm();
     }
     updateTimeChip();
+    renderMyCities();
 
     /* 用户手动选过的阶段与档位不被数据刷新覆盖 */
     if (!levelPinned) currentLevel = suggested();
