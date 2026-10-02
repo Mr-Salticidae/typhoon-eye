@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02 20:00",
+  "updatedAt": "2026-10-02 20:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "彩云",
       "enName": "CHOI-WAN",
       "code": "2627",
-      "level": "强热带风暴（11级）",
+      "level": "台风（12级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 67 公里、强度差 1 级（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 79 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-02 17时",
-            "windLevel": 11,
+            "time": "10-02 20时",
+            "windLevel": 12,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-02 17时",
-            "windLevel": 11,
+            "time": "10-02 20时",
+            "windLevel": 12,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 11,
-        "windSpeed": 30,
-        "pressure": 980,
+        "windLevel": 12,
+        "windSpeed": 33,
+        "pressure": 975,
         "moveDir": "北北东",
-        "moveSpeed": 7,
-        "r7": 300,
+        "moveSpeed": 8,
+        "r7": 400,
         "r10": 120,
-        "time": "10-02 17时",
-        "position": "中心位于北纬 17.5 度、东经 144.5 度"
+        "time": "10-02 20时",
+        "position": "中心位于北纬 17.6 度、东经 144.6 度"
       },
       "track": [
         {
@@ -184,60 +184,68 @@
           "lng": 144.5,
           "wind": 11,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-02 20时",
+          "lat": 17.6,
+          "lng": 144.6,
+          "wind": 12,
+          "strong": "台风",
           "phase": "now"
         },
         {
-          "t": "10-03 05时",
-          "lat": 18.2,
-          "lng": 144.7,
+          "t": "10-03 08时",
+          "lat": 18.3,
+          "lng": 144.9,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-03 17时",
-          "lat": 19.6,
+          "t": "10-03 20时",
+          "lat": 20,
           "lng": 145.8,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-04 05时",
-          "lat": 21.1,
-          "lng": 146.5,
+          "t": "10-04 08时",
+          "lat": 21.4,
+          "lng": 146.4,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-04 17时",
-          "lat": 22.6,
-          "lng": 146.9,
+          "t": "10-04 20时",
+          "lat": 22.9,
+          "lng": 146.5,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-05 05时",
-          "lat": 24.4,
-          "lng": 146.5,
+          "t": "10-05 08时",
+          "lat": 24.6,
+          "lng": 146.1,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-05 17时",
-          "lat": 26.5,
-          "lng": 145.9,
+          "t": "10-05 20时",
+          "lat": 26.6,
+          "lng": 145.5,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-06 17时",
-          "lat": 33,
-          "lng": 147.4,
+          "t": "10-06 20时",
+          "lat": 33.4,
+          "lng": 147.5,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
@@ -252,18 +260,18 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 93,
+    "total": 78,
     "counts": {
-      "暴雨": 86,
-      "地质灾害": 7
+      "暴雨": 72,
+      "地质灾害": 6
     },
     "peak": {
       "province": "广东",
       "kind": "暴雨",
       "level": "red",
-      "title": "广东省惠州市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44130041600000_20261002194140.html",
-      "issuedAt": "2026/10/02 19:40"
+      "title": "广东省广州市从化区气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44011741600000_20261002164243.html",
+      "issuedAt": "2026/10/02 16:40"
     },
     "provinces": [
       {
@@ -273,13 +281,13 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 54,
+        "count": 46,
         "top": {
           "kind": "暴雨",
           "level": "red",
-          "title": "广东省惠州市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44130041600000_20261002194140.html",
-          "issuedAt": "2026/10/02 19:40"
+          "title": "广东省广州市从化区气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44011741600000_20261002164243.html",
+          "issuedAt": "2026/10/02 16:40"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -291,7 +299,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 4,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -309,13 +317,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 16,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "福建省泉州市永春县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35052541600000_20261002191500.html",
-          "issuedAt": "2026/10/02 19:15"
+          "title": "福建省三明市沙县区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35040541600000_20261002202000.html",
+          "issuedAt": "2026/10/02 20:20"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -364,7 +372,7 @@
           "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 8,
+        "count": 7,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -382,7 +390,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -392,24 +400,6 @@
         },
         "lat": 26.8,
         "lng": 106.9
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "浙江省衢州市衢江区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33080341600000_20261002070934.html",
-          "issuedAt": "2026/10/02 07:13"
-        },
-        "lat": 29.2,
-        "lng": 120.2
       }
     ]
   },
