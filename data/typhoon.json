@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02 10:00",
+  "updatedAt": "2026-10-02 10:31",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "zj",
@@ -34,24 +34,17 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 111 公里、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 111 公里、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "10-02 08时",
-            "windLevel": 10,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "10-02 08时",
             "windLevel": 10,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -232,169 +225,13 @@
     }
   ],
   "alerts": {
-    "ok": true,
+    "ok": false,
+    "error": "全部预警类别抓取失败",
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": null,
-    "total": 92,
-    "counts": {
-      "暴雨": 82,
-      "地质灾害": 10
-    },
-    "peak": {
-      "province": "广东",
-      "kind": "暴雨",
-      "level": "red",
-      "title": "广东省江门市开平市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44078341600000_20261002094629.html",
-      "issuedAt": "2026/10/02 09:44"
-    },
-    "provinces": [
-      {
-        "province": "广东",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 47,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广东省江门市开平市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44078341600000_20261002094629.html",
-          "issuedAt": "2026/10/02 09:44"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 4,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区河池市东兰县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45122441600000_20261002053604.html",
-          "issuedAt": "2026/10/02 05:27"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
-      {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省漳州市东山县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062641600000_20261002085200.html",
-          "issuedAt": "2026/10/02 08:52"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
-        "province": "贵州",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 17,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "贵州省遵义市余庆县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52032941600000_20261002094305.html",
-          "issuedAt": "2026/10/02 09:43"
-        },
-        "lat": 26.8,
-        "lng": 106.9
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 10,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省昭通市大关县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53062441600000_20261002094917.html",
-          "issuedAt": "2026/10/02 09:46"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省怀化市会同县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43122541600000_20261002082418.html",
-          "issuedAt": "2026/10/02 08:24"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
-        "province": "江西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "江西省萍乡市湘东区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36031341600000_20261001141446.html",
-          "issuedAt": "2026/10/01 14:12"
-        },
-        "lat": 27.6,
-        "lng": 115.7
-      },
-      {
-        "province": "浙江",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "浙江省衢州市衢江区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33080341600000_20261002070934.html",
-          "issuedAt": "2026/10/02 07:13"
-        },
-        "lat": 29.2,
-        "lng": 120.2
-      }
-    ]
+    "provinces": [],
+    "counts": {},
+    "peak": null
   },
   "recentlyEnded": [
     {
