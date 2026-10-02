@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02 17:15",
+  "updatedAt": "2026-10-02 17:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,48 +30,48 @@
       "name": "彩云",
       "enName": "CHOI-WAN",
       "code": "2627",
-      "level": "强热带风暴（10级）",
+      "level": "强热带风暴（11级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 78 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 67 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-02 14时",
-            "windLevel": 10,
+            "time": "10-02 17时",
+            "windLevel": 11,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-02 14时",
-            "windLevel": 10,
+            "time": "10-02 17时",
+            "windLevel": 11,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-02 14时",
+            "time": "10-02 17时",
             "windLevel": 10,
             "role": "verify"
           }
         ]
       },
       "now": {
-        "windLevel": 10,
-        "windSpeed": 28,
-        "pressure": 982,
-        "moveDir": "北",
-        "moveSpeed": 8,
-        "r7": 250,
-        "r10": 100,
-        "time": "10-02 14时",
-        "position": "中心位于北纬 17.2 度、东经 144.5 度"
+        "windLevel": 11,
+        "windSpeed": 30,
+        "pressure": 980,
+        "moveDir": "北北东",
+        "moveSpeed": 7,
+        "r7": 300,
+        "r10": 120,
+        "time": "10-02 17时",
+        "position": "中心位于北纬 17.5 度、东经 144.5 度"
       },
       "track": [
         {
@@ -176,69 +176,69 @@
           "lng": 144.5,
           "wind": 10,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-02 17时",
+          "lat": 17.5,
+          "lng": 144.5,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "10-03 02时",
-          "lat": 18,
-          "lng": 144.6,
+          "t": "10-03 05时",
+          "lat": 18.2,
+          "lng": 144.7,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-03 14时",
-          "lat": 19.3,
-          "lng": 145.6,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-04 02时",
-          "lat": 20.6,
-          "lng": 146.2,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-04 14时",
-          "lat": 21.8,
-          "lng": 146.7,
-          "wind": 15,
-          "strong": "强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-05 02时",
-          "lat": 23.4,
-          "lng": 146.7,
-          "wind": 16,
-          "strong": "超强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-05 14时",
-          "lat": 25,
-          "lng": 146.2,
-          "wind": 15,
-          "strong": "强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-06 14时",
-          "lat": 29.9,
+          "t": "10-03 17时",
+          "lat": 19.6,
           "lng": 145.8,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-07 14时",
-          "lat": 38.9,
-          "lng": 152.2,
-          "wind": 12,
+          "t": "10-04 05时",
+          "lat": 21.1,
+          "lng": 146.5,
+          "wind": 15,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-04 17时",
+          "lat": 22.6,
+          "lng": 146.9,
+          "wind": 16,
+          "strong": "超强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-05 05时",
+          "lat": 24.4,
+          "lng": 146.5,
+          "wind": 15,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-05 17时",
+          "lat": 26.5,
+          "lng": 145.9,
+          "wind": 15,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-06 17时",
+          "lat": 33,
+          "lng": 147.4,
+          "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         }
@@ -254,8 +254,8 @@
     "partial": null,
     "total": 105,
     "counts": {
-      "暴雨": 97,
-      "地质灾害": 8
+      "暴雨": 98,
+      "地质灾害": 7
     },
     "peak": {
       "province": "广东",
@@ -303,13 +303,31 @@
         "lng": 108.8
       },
       {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 18,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省三明市沙县区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35040541600000_20261002173500.html",
+          "issuedAt": "2026/10/02 17:35"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "湖南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -339,24 +357,6 @@
         "lng": 115.7
       },
       {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 17,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省三明市沙县区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35040541600000_20261002170800.html",
-          "issuedAt": "2026/10/02 17:08"
-        },
-        "lat": 26.1,
-        "lng": 118.3
-      },
-      {
         "province": "云南",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -364,7 +364,7 @@
           "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -382,13 +382,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "贵州省铜仁市玉屏侗族自治县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/52062241600000_20261002123027.html",
-          "issuedAt": "2026/10/02 12:30"
+          "title": "贵州省铜仁市万山区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52060341600000_20261002173917.html",
+          "issuedAt": "2026/10/02 17:39"
         },
         "lat": 26.8,
         "lng": 106.9
