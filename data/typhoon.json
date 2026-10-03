@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04 05:30",
+  "updatedAt": "2026-10-04 05:58",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,26 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-04 02时",
+            "time": "10-04 05时",
             "windLevel": 16,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-04 02时",
+            "time": "10-04 05时",
             "windLevel": 16,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-04 02时",
+            "time": "10-04 05时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -66,12 +66,12 @@
         "windLevel": 16,
         "windSpeed": 52,
         "pressure": 935,
-        "moveDir": "北北东",
-        "moveSpeed": 16,
+        "moveDir": "北",
+        "moveSpeed": 17,
         "r7": 550,
         "r10": 180,
-        "time": "10-04 02时",
-        "position": "中心位于北纬 20.9 度、东经 146.6 度"
+        "time": "10-04 05时",
+        "position": "中心位于北纬 21.3 度、东经 147.2 度"
       },
       "track": [
         {
@@ -99,9 +99,9 @@
           "phase": "past"
         },
         {
-          "t": "10-01 17时",
-          "lat": 16.6,
-          "lng": 146.4,
+          "t": "10-01 20时",
+          "lat": 16.8,
+          "lng": 146.2,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -131,25 +131,25 @@
           "phase": "past"
         },
         {
-          "t": "10-02 14时",
-          "lat": 17.2,
+          "t": "10-02 17时",
+          "lat": 17.5,
           "lng": 144.5,
-          "wind": 10,
+          "wind": 11,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "10-02 20时",
-          "lat": 17.6,
-          "lng": 144.6,
+          "t": "10-02 23时",
+          "lat": 17.9,
+          "lng": 144.8,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "10-03 02时",
-          "lat": 18.1,
-          "lng": 144.7,
+          "t": "10-03 05时",
+          "lat": 18.3,
+          "lng": 144.8,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
@@ -163,26 +163,18 @@
           "phase": "past"
         },
         {
-          "t": "10-03 11时",
-          "lat": 19,
-          "lng": 145.5,
+          "t": "10-03 14时",
+          "lat": 19.5,
+          "lng": 145.9,
           "wind": 13,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "10-03 17时",
-          "lat": 20,
-          "lng": 146.1,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-03 23时",
-          "lat": 20.5,
-          "lng": 146.3,
-          "wind": 15,
+          "t": "10-03 20时",
+          "lat": 20.1,
+          "lng": 146.2,
+          "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
@@ -192,52 +184,60 @@
           "lng": 146.6,
           "wind": 16,
           "strong": "超强台风",
+          "phase": "past"
+        },
+        {
+          "t": "10-04 05时",
+          "lat": 21.3,
+          "lng": 147.2,
+          "wind": 16,
+          "strong": "超强台风",
           "phase": "now"
         },
         {
-          "t": "10-04 14时",
-          "lat": 22.4,
-          "lng": 147.3,
+          "t": "10-04 17时",
+          "lat": 23.1,
+          "lng": 147.1,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-05 02时",
-          "lat": 24.2,
-          "lng": 147.3,
+          "t": "10-05 05时",
+          "lat": 24.7,
+          "lng": 146.9,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-05 14时",
-          "lat": 26.3,
-          "lng": 146.7,
+          "t": "10-05 17时",
+          "lat": 26.8,
+          "lng": 146.2,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-06 02时",
-          "lat": 28.7,
-          "lng": 146.2,
+          "t": "10-06 05时",
+          "lat": 29.1,
+          "lng": 145.8,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-06 14时",
-          "lat": 32.2,
-          "lng": 147.3,
+          "t": "10-06 17时",
+          "lat": 32.7,
+          "lng": 147.1,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-07 02时",
-          "lat": 37.4,
-          "lng": 151.4,
+          "t": "10-07 05时",
+          "lat": 37.9,
+          "lng": 151.6,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
@@ -252,9 +252,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 149,
+    "total": 152,
     "counts": {
-      "暴雨": 141,
+      "暴雨": 144,
       "山洪风险": 1,
       "地质灾害": 7
     },
@@ -348,13 +348,13 @@
           "山洪风险": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 23,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "云南省文山壮族苗族自治州广南县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53262741600000_20261004033338.html",
-          "issuedAt": "2026/10/04 03:32"
+          "title": "云南省文山壮族苗族自治州富宁县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53262841600000_20261004054451.html",
+          "issuedAt": "2026/10/04 05:43"
         },
         "lat": 25,
         "lng": 101.5
@@ -366,13 +366,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 12,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省清远市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44180041600000_20261004042104.html",
-          "issuedAt": "2026/10/04 04:20"
+          "title": "广东省韶关市仁化县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44022441600000_20261004053841.html",
+          "issuedAt": "2026/10/04 05:36"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -420,7 +420,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
