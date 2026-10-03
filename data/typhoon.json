@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03 20:15",
+  "updatedAt": "2026-10-03 20:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-03 17时",
+            "time": "10-03 20时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -260,9 +260,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 109,
+    "total": 111,
     "counts": {
-      "暴雨": 106,
+      "暴雨": 108,
       "地质灾害": 3
     },
     "peak": {
@@ -299,7 +299,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 16,
+        "count": 17,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -317,7 +317,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 15,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -329,19 +329,38 @@
         "lng": 113.4
       },
       {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 8,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省丽江市华坪县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53072341600000_20261003203755.html",
+          "issuedAt": "2026/10/03 20:36"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "广西",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区百色市乐业县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45102841600000_20261003193437.html",
-          "issuedAt": "2026/10/03 19:34"
+          "title": "广西壮族自治区河池市金城江区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45120241600000_20261003204225.html",
+          "issuedAt": "2026/10/03 20:33"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -381,25 +400,6 @@
         },
         "lat": 26.8,
         "lng": 106.9
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 8,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "云南省曲靖市宣威市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53038141600000_20261003161714.html",
-          "issuedAt": "2026/10/03 16:15"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "江西",
