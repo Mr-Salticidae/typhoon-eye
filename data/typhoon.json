@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03 18:15",
+  "updatedAt": "2026-10-03 18:40",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -260,9 +260,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 97,
+    "total": 102,
     "counts": {
-      "暴雨": 94,
+      "暴雨": 99,
       "地质灾害": 3
     },
     "peak": {
@@ -299,7 +299,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 20,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -312,18 +312,18 @@
       },
       {
         "province": "四川",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "red",
+        "floodLevel": "red",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "red"
         },
-        "count": 15,
+        "count": 16,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "四川省甘孜藏族自治州稻城县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51333741600000_20261003174411.html",
-          "issuedAt": "2026/10/03 17:44"
+          "level": "red",
+          "title": "四川省甘孜藏族自治州稻城县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51333741600000_20261003181506.html",
+          "issuedAt": "2026/10/03 18:15"
         },
         "lat": 30.6,
         "lng": 102.9
@@ -335,16 +335,34 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区河池市环江县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45122641600000_20261003175938.html",
-          "issuedAt": "2026/10/03 17:57"
+          "title": "广西壮族自治区河池市天峨县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45122241600000_20261003183453.html",
+          "issuedAt": "2026/10/03 18:31"
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省琼中县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46903041600000_20261003181621.html",
+          "issuedAt": "2026/10/03 18:16"
+        },
+        "lat": 19.2,
+        "lng": 109.7
       },
       {
         "province": "贵州",
@@ -402,6 +420,24 @@
         "lng": 101.5
       },
       {
+        "province": "辽宁",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "辽宁省锦州市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21070041600000_20261003155900.html",
+          "issuedAt": "2026/10/03 16:01"
+        },
+        "lat": 41.8,
+        "lng": 122.6
+      },
+      {
         "province": "重庆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -436,24 +472,6 @@
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "辽宁",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "辽宁省锦州市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21070041600000_20261003155900.html",
-          "issuedAt": "2026/10/03 16:01"
-        },
-        "lat": 41.8,
-        "lng": 122.6
       }
     ]
   },
