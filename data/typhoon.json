@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03 14:15",
+  "updatedAt": "2026-10-03 14:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,27 +37,27 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-03 11时",
+            "time": "10-03 14时",
             "windLevel": 13,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-03 11时",
+            "time": "10-03 14时",
             "windLevel": 13,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-03 11时",
-            "windLevel": 12,
+            "time": "10-03 14时",
+            "windLevel": 13,
             "role": "verify"
           }
         ]
@@ -67,11 +67,11 @@
         "windSpeed": 40,
         "pressure": 960,
         "moveDir": "北北东",
-        "moveSpeed": 17,
+        "moveSpeed": 11,
         "r7": 550,
         "r10": 120,
-        "time": "10-03 11时",
-        "position": "中心位于北纬 19.0 度、东经 145.5 度"
+        "time": "10-03 14时",
+        "position": "中心位于北纬 19.5 度、东经 145.9 度"
       },
       "track": [
         {
@@ -123,9 +123,9 @@
           "phase": "past"
         },
         {
-          "t": "10-02 02时",
+          "t": "10-02 05时",
           "lat": 16.8,
-          "lng": 145.2,
+          "lng": 144.9,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
@@ -139,14 +139,6 @@
           "phase": "past"
         },
         {
-          "t": "10-02 11时",
-          "lat": 17.1,
-          "lng": 144.6,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
           "t": "10-02 14时",
           "lat": 17.2,
           "lng": 144.5,
@@ -155,11 +147,11 @@
           "phase": "past"
         },
         {
-          "t": "10-02 20时",
-          "lat": 17.6,
-          "lng": 144.6,
-          "wind": 12,
-          "strong": "台风",
+          "t": "10-02 17时",
+          "lat": 17.5,
+          "lng": 144.5,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "past"
         },
         {
@@ -171,9 +163,9 @@
           "phase": "past"
         },
         {
-          "t": "10-03 05时",
-          "lat": 18.3,
-          "lng": 144.8,
+          "t": "10-03 02时",
+          "lat": 18.1,
+          "lng": 144.7,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
@@ -192,10 +184,18 @@
           "lng": 145.5,
           "wind": 13,
           "strong": "台风",
+          "phase": "past"
+        },
+        {
+          "t": "10-03 14时",
+          "lat": 19.5,
+          "lng": 145.9,
+          "wind": 13,
+          "strong": "台风",
           "phase": "now"
         },
         {
-          "t": "10-03 23时",
+          "t": "10-04 02时",
           "lat": 20.6,
           "lng": 146.4,
           "wind": 14,
@@ -203,49 +203,49 @@
           "phase": "forecast"
         },
         {
-          "t": "10-04 11时",
-          "lat": 22.2,
+          "t": "10-04 14时",
+          "lat": 22.7,
           "lng": 146.9,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-04 23时",
-          "lat": 23.7,
-          "lng": 146.8,
+          "t": "10-05 02时",
+          "lat": 24.2,
+          "lng": 146.6,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-05 11时",
-          "lat": 25.4,
-          "lng": 146.1,
+          "t": "10-05 14时",
+          "lat": 26.1,
+          "lng": 145.9,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-05 23时",
-          "lat": 27.6,
-          "lng": 145.4,
+          "t": "10-06 02时",
+          "lat": 28.5,
+          "lng": 145.3,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-06 11时",
-          "lat": 30.6,
-          "lng": 145.7,
+          "t": "10-06 14时",
+          "lat": 32,
+          "lng": 146.2,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-07 11时",
-          "lat": 41,
-          "lng": 154.6,
+          "t": "10-07 14时",
+          "lat": 43.4,
+          "lng": 157.2,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
@@ -260,9 +260,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 77,
+    "total": 79,
     "counts": {
-      "暴雨": 75,
+      "暴雨": 77,
       "地质灾害": 2
     },
     "peak": {
@@ -317,7 +317,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -327,6 +327,25 @@
         },
         "lat": 23.8,
         "lng": 108.8
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省曲靖市罗平县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53032441600000_20261003141841.html",
+          "issuedAt": "2026/10/03 14:17"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "贵州",
@@ -345,25 +364,6 @@
         },
         "lat": 26.8,
         "lng": 106.9
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "blue",
-          "地质灾害": "yellow"
-        },
-        "count": 4,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省曲靖市罗平县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53032441600000_20261003084010.html",
-          "issuedAt": "2026/10/03 08:38"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "重庆",
