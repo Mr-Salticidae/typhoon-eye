@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04 17:30",
+  "updatedAt": "2026-10-04 18:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 11 公里、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 39 公里（时次相差 3 小时）、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-04 14时",
+            "time": "10-04 17时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -252,9 +252,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 145,
+    "total": 158,
     "counts": {
-      "暴雨": 126,
+      "暴雨": 139,
       "地质灾害": 19
     },
     "peak": {
@@ -327,13 +327,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 34,
+        "count": 42,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广东省云浮市罗定市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44538141600000_20261004172427.html",
-          "issuedAt": "2026/10/04 17:22"
+          "title": "广东省云浮市新兴县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44532141600000_20261004174948.html",
+          "issuedAt": "2026/10/04 17:48"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -358,6 +358,24 @@
         "lng": 101.5
       },
       {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 17,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省福州市罗源县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35012341600000_20261004172500.html",
+          "issuedAt": "2026/10/04 17:25"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "辽宁",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -374,24 +392,6 @@
         },
         "lat": 41.8,
         "lng": 122.6
-      },
-      {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省宁德市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35090041600000_20261004160900.html",
-          "issuedAt": "2026/10/04 16:09"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "湖南",
