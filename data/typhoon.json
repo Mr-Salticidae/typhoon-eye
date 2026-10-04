@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04 13:00",
+  "updatedAt": "2026-10-04 13:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -260,9 +260,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 114,
+    "total": 116,
     "counts": {
-      "暴雨": 96,
+      "暴雨": 98,
       "地质灾害": 18
     },
     "peak": {
@@ -299,7 +299,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -329,13 +329,32 @@
         "lng": 102.9
       },
       {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 23,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省红河哈尼族彝族自治州屏边苗族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53252341600000_20261004130206.html",
+          "issuedAt": "2026/10/04 13:00"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "广东",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 16,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -371,7 +390,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 11,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -381,25 +400,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 22,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "云南省丽江市华坪县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53072341600000_20261004085449.html",
-          "issuedAt": "2026/10/04 08:53"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "贵州",
