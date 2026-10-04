@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04 21:15",
+  "updatedAt": "2026-10-04 21:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -22,7 +22,7 @@
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
       "ok": true,
-      "count": 1
+      "count": 2
     }
   ],
   "typhoons": [
@@ -310,7 +310,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 7,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -338,6 +338,25 @@
         },
         "lat": 23.4,
         "lng": 113.4
+      },
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 25,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省玉溪市新平彝族傣族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53042741600000_20261004213523.html",
+          "issuedAt": "2026/10/04 21:33"
+        },
+        "lat": 25,
+        "lng": 101.5
       },
       {
         "province": "福建",
@@ -392,25 +411,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 24,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "云南省红河哈尼族彝族自治州个旧市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53250141600000_20261004152658.html",
-          "issuedAt": "2026/10/04 15:25"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "吉林",
