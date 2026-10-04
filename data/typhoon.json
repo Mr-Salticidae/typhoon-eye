@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04 23:45",
+  "updatedAt": "2026-10-05 00:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 10 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "10-04 23时",
             "windLevel": 17,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "10-04 23时",
+            "windLevel": 17,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,8 +68,8 @@
         "pressure": 920,
         "moveDir": "北北西",
         "moveSpeed": 20,
-        "r7": null,
-        "r10": null,
+        "r7": 550,
+        "r10": 180,
         "time": "10-04 23时",
         "position": "中心位于北纬 23.6 度、东经 146.9 度"
       },
@@ -245,9 +252,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 118,
+    "total": 108,
     "counts": {
-      "暴雨": 100,
+      "暴雨": 90,
       "山洪灾害": 1,
       "地质灾害": 17
     },
@@ -279,31 +286,13 @@
         "lng": 115.7
       },
       {
-        "province": "四川",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "四川省攀枝花市仁和区气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51041141600000_20261004000722.html",
-          "issuedAt": "2026/10/04 00:07"
-        },
-        "lat": 30.6,
-        "lng": 102.9
-      },
-      {
         "province": "广西",
         "maxLevel": "red",
         "floodLevel": "red",
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -321,7 +310,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 34,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -394,13 +383,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 12,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省福州市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35010041600000_20261004221000.html",
-          "issuedAt": "2026/10/04 22:10"
+          "title": "福建省漳州市东山县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062641600000_20261005000800.html",
+          "issuedAt": "2026/10/05 00:08"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -441,6 +430,24 @@
         },
         "lat": 26.8,
         "lng": 106.9
+      },
+      {
+        "province": "四川",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "四川省甘孜藏族自治州雅江县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51332541600000_20261004164235.html",
+          "issuedAt": "2026/10/04 16:42"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       }
     ]
   },
