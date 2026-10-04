@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04 08:30",
+  "updatedAt": "2026-10-04 09:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 78 公里（时次相差 3 小时）、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-04 05时",
+            "time": "10-04 08时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -67,7 +67,7 @@
         "windSpeed": 58,
         "pressure": 925,
         "moveDir": "北",
-        "moveSpeed": 13,
+        "moveSpeed": 14,
         "r7": 550,
         "r10": 180,
         "time": "10-04 08时",
@@ -260,38 +260,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 132,
+    "total": 137,
     "counts": {
-      "暴雨": 122,
-      "地质灾害": 10
+      "暴雨": 124,
+      "地质灾害": 13
     },
     "peak": {
-      "province": "湖南",
+      "province": "广西",
       "kind": "暴雨",
       "level": "red",
-      "title": "湖南省怀化市沅陵县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/43122241600000_20261003090655.html",
-      "issuedAt": "2026/10/03 09:06"
+      "title": "广西壮族自治区贺州市昭平县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/45112141600000_20261004060517.html",
+      "issuedAt": "2026/10/04 06:01"
     },
     "provinces": [
-      {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 21,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省怀化市沅陵县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43122241600000_20261003090655.html",
-          "issuedAt": "2026/10/03 09:06"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
       {
         "province": "广西",
         "maxLevel": "red",
@@ -317,7 +299,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 17,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -327,6 +309,42 @@
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 18,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省怀化市沅陵县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43122241600000_20261003090655.html",
+          "issuedAt": "2026/10/03 09:06"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 12,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省韶关市仁化县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44022441600000_20261004074717.html",
+          "issuedAt": "2026/10/04 07:45"
+        },
+        "lat": 23.4,
+        "lng": 113.4
       },
       {
         "province": "四川",
@@ -347,24 +365,6 @@
         "lng": 102.9
       },
       {
-        "province": "广东",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 11,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广东省韶关市仁化县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44022441600000_20261004074717.html",
-          "issuedAt": "2026/10/04 07:45"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -372,7 +372,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 22,
+        "count": 25,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -426,13 +426,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "浙江省宁波市镇海区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33021141600000_20261004062434.html",
-          "issuedAt": "2026/10/04 06:22"
+          "title": "浙江省丽水市龙泉市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33118141600000_20261004082913.html",
+          "issuedAt": "2026/10/04 08:30"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -448,7 +448,7 @@
       "endedAt": "2026-09-30 09:00",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 3
+      "daysSince": 4
     }
   ]
 }
