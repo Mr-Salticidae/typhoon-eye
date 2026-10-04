@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 00:15",
+  "updatedAt": "2026-10-05 00:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -252,21 +252,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 108,
+    "total": 109,
     "counts": {
-      "暴雨": 90,
+      "暴雨": 91,
       "山洪灾害": 1,
       "地质灾害": 17
     },
     "peak": {
-      "province": "江西",
+      "province": "广东",
       "kind": "暴雨",
       "level": "red",
-      "title": "江西省赣州市瑞金市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/36078141600000_20261004075933.html",
-      "issuedAt": "2026/10/04 07:58"
+      "title": "广东省揭阳市惠来县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44522441600000_20261005001236.html",
+      "issuedAt": "2026/10/05 00:11"
     },
     "provinces": [
+      {
+        "province": "广东",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 28,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "广东省揭阳市惠来县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44522441600000_20261005001236.html",
+          "issuedAt": "2026/10/05 00:11"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
       {
         "province": "江西",
         "maxLevel": "red",
@@ -304,24 +322,6 @@
         "lng": 108.8
       },
       {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 28,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省汕头市潮南区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44051441600000_20261004231759.html",
-          "issuedAt": "2026/10/04 23:16"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -339,6 +339,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "福建省漳州市东山县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062641600000_20261005003300.html",
+          "issuedAt": "2026/10/05 00:33"
+        },
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "辽宁",
@@ -375,24 +393,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 10,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "福建省漳州市东山县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062641600000_20261005000800.html",
-          "issuedAt": "2026/10/05 00:08"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "吉林",
