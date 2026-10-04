@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 05:00",
+  "updatedAt": "2026-10-05 05:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 54 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-05 02时",
+            "time": "10-05 05时",
             "windLevel": 17,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-05 02时",
+            "time": "10-05 05时",
             "windLevel": 17,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 58,
         "pressure": 925,
         "moveDir": "北北西",
-        "moveSpeed": 18,
+        "moveSpeed": 20,
         "r7": 550,
         "r10": 180,
-        "time": "10-05 02时",
-        "position": "中心位于北纬 24.3 度、东经 147.1 度"
+        "time": "10-05 05时",
+        "position": "中心位于北纬 24.7 度、东经 146.8 度"
       },
       "track": [
         {
@@ -123,9 +123,9 @@
           "phase": "past"
         },
         {
-          "t": "10-02 20时",
-          "lat": 17.6,
-          "lng": 144.6,
+          "t": "10-02 23时",
+          "lat": 17.9,
+          "lng": 144.8,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
@@ -139,48 +139,40 @@
           "phase": "past"
         },
         {
-          "t": "10-03 11时",
-          "lat": 19,
-          "lng": 145.5,
+          "t": "10-03 14时",
+          "lat": 19.5,
+          "lng": 145.9,
           "wind": 13,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "10-03 17时",
-          "lat": 20,
-          "lng": 146.1,
-          "wind": 13,
-          "strong": "台风",
+          "t": "10-03 20时",
+          "lat": 20.1,
+          "lng": 146.2,
+          "wind": 14,
+          "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "10-04 02时",
-          "lat": 20.9,
-          "lng": 146.6,
+          "t": "10-04 05时",
+          "lat": 21.3,
+          "lng": 147.2,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-04 08时",
-          "lat": 22,
-          "lng": 147.2,
+          "t": "10-04 11时",
+          "lat": 22.4,
+          "lng": 147,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-04 17时",
-          "lat": 23.1,
-          "lng": 146.9,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-04 23时",
-          "lat": 23.6,
+          "t": "10-04 20时",
+          "lat": 23.3,
           "lng": 146.9,
           "wind": 17,
           "strong": "超强台风",
@@ -192,53 +184,53 @@
           "lng": 147.1,
           "wind": 17,
           "strong": "超强台风",
+          "phase": "past"
+        },
+        {
+          "t": "10-05 05时",
+          "lat": 24.7,
+          "lng": 146.8,
+          "wind": 17,
+          "strong": "超强台风",
           "phase": "now"
         },
         {
-          "t": "10-05 14时",
-          "lat": 26.1,
-          "lng": 146.3,
+          "t": "10-05 17时",
+          "lat": 26.7,
+          "lng": 146.1,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-06 02时",
-          "lat": 28.3,
-          "lng": 145.8,
+          "t": "10-06 05时",
+          "lat": 28.9,
+          "lng": 145.7,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-06 14时",
-          "lat": 31.5,
-          "lng": 146.5,
+          "t": "10-06 17时",
+          "lat": 32.5,
+          "lng": 147.1,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-07 02时",
-          "lat": 36.2,
-          "lng": 149.8,
+          "t": "10-07 05时",
+          "lat": 37.7,
+          "lng": 151.3,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-07 14时",
-          "lat": 42.5,
-          "lng": 156.7,
+          "t": "10-07 17时",
+          "lat": 44.4,
+          "lng": 159.2,
           "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-08 02时",
-          "lat": 50.3,
-          "lng": 165.7,
-          "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         }
@@ -252,9 +244,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 96,
+    "total": 98,
     "counts": {
-      "暴雨": 78,
+      "暴雨": 80,
       "山洪灾害": 1,
       "地质灾害": 17
     },
@@ -274,7 +266,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 26,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -292,7 +284,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 17,
+        "count": 16,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -401,13 +393,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "福建省漳州市漳浦县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35062341600000_20261005043300.html",
-          "issuedAt": "2026/10/05 04:33"
+          "title": "福建省福州市永泰县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35012541600000_20261005050600.html",
+          "issuedAt": "2026/10/05 05:06"
         },
         "lat": 26.1,
         "lng": 118.3
