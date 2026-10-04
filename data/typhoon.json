@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04 11:31",
+  "updatedAt": "2026-10-04 12:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 39 公里（时次相差 3 小时）、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-04 08时",
+            "time": "10-04 11时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -281,7 +281,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 23,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -347,24 +347,6 @@
         "lng": 113.4
       },
       {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省株洲市茶陵县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43022441600000_20261004072313.html",
-          "issuedAt": "2026/10/04 07:22"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "辽宁",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -381,6 +363,24 @@
         },
         "lat": 41.8,
         "lng": 122.6
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 11,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省株洲市茶陵县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43022441600000_20261004072313.html",
+          "issuedAt": "2026/10/04 07:22"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "云南",
