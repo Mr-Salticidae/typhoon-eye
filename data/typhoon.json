@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 02:15",
+  "updatedAt": "2026-10-05 02:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 80 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-04 23时",
+            "time": "10-05 02时",
             "windLevel": 15,
             "role": "verify"
           }
@@ -254,9 +254,9 @@
     "partial": null,
     "total": 103,
     "counts": {
-      "暴雨": 85,
+      "暴雨": 86,
       "山洪灾害": 1,
-      "地质灾害": 17
+      "地质灾害": 16
     },
     "peak": {
       "province": "广东",
@@ -274,7 +274,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 29,
+        "count": 27,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -365,7 +365,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 5,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
