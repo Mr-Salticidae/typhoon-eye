@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 11:45",
+  "updatedAt": "2026-10-05 12:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-05 08时",
+            "time": "10-05 11时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -168,8 +168,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 78 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -188,8 +188,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-05 08时",
-            "windLevel": 14,
+            "time": "10-05 11时",
+            "windLevel": 15,
             "role": "verify"
           }
         ]
@@ -508,11 +508,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 75,
+    "total": 67,
     "counts": {
-      "暴雨": 58,
+      "暴雨": 52,
       "山洪灾害": 1,
-      "地质灾害": 16
+      "地质灾害": 14
     },
     "peak": {
       "province": "广东",
@@ -530,7 +530,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 22,
+        "count": 20,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -585,7 +585,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 28,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -613,24 +613,6 @@
         },
         "lat": 26.1,
         "lng": 118.3
-      },
-      {
-        "province": "辽宁",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "辽宁省营口市盖州市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21088141600000_20261004115500.html",
-          "issuedAt": "2026/10/04 11:58"
-        },
-        "lat": 41.8,
-        "lng": 122.6
       },
       {
         "province": "吉林",
@@ -668,6 +650,24 @@
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "辽宁",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "辽宁省辽阳市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21100041600000_20261004163800.html",
+          "issuedAt": "2026/10/04 16:45"
+        },
+        "lat": 41.8,
+        "lng": 122.6
       },
       {
         "province": "四川",
