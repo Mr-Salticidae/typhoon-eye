@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 08:30",
+  "updatedAt": "2026-10-05 09:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 57 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-05 05时",
+            "time": "10-05 08时",
             "windLevel": 15,
             "role": "verify"
           }
@@ -244,11 +244,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 92,
+    "total": 90,
     "counts": {
-      "暴雨": 76,
+      "暴雨": 73,
       "山洪灾害": 1,
-      "地质灾害": 15
+      "地质灾害": 16
     },
     "peak": {
       "province": "广东",
@@ -266,7 +266,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 29,
+        "count": 27,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -303,7 +303,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 28,
+        "count": 29,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -339,13 +339,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "海南省昌江县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46902641600000_20261005082646.html",
-          "issuedAt": "2026/10/05 08:26"
+          "title": "海南省东方市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46900741600000_20261005085608.html",
+          "issuedAt": "2026/10/05 08:56"
         },
         "lat": 19.2,
         "lng": 109.7
@@ -375,7 +375,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 10,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -470,7 +470,7 @@
       "endedAt": "2026-09-30 09:00",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 4
+      "daysSince": 5
     }
   ]
 }
