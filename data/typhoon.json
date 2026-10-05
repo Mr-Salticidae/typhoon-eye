@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 09:00",
+  "updatedAt": "2026-10-05 09:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,14 +15,14 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 3
     },
     {
       "id": "jma",
       "name": "日本气象厅",
       "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon",
       "ok": true,
-      "count": 2
+      "count": 3
     }
   ],
   "typhoons": [
@@ -237,6 +237,200 @@
       ],
       "rainRisk": null,
       "affected": []
+    },
+    {
+      "name": "诺洛",
+      "enName": "NOLO",
+      "code": "2628",
+      "level": "超强台风（16级）",
+      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
+      "nearCoast": false,
+      "nameNote": null,
+      "trackSource": "浙江台风路径系统",
+      "verification": {
+        "status": "divergent",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "sources": [
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "10-05 08时",
+            "windLevel": 16,
+            "role": "primary"
+          },
+          {
+            "id": "jma",
+            "name": "日本气象厅",
+            "time": "10-05 08时",
+            "windLevel": 14,
+            "role": "verify"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 16,
+        "windSpeed": 52,
+        "pressure": 935,
+        "moveDir": "—",
+        "moveSpeed": 0,
+        "r7": null,
+        "r10": null,
+        "time": "10-05 08时",
+        "position": "中心位于北纬 24.8 度、东经 179.4 度"
+      },
+      "track": [
+        {
+          "t": "10-05 08时",
+          "lat": 24.8,
+          "lng": 179.4,
+          "wind": 16,
+          "strong": "超强台风",
+          "phase": "now"
+        },
+        {
+          "t": "10-05 20时",
+          "lat": 25.4,
+          "lng": 176.2,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-06 08时",
+          "lat": 25.5,
+          "lng": 173.1,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-07 08时",
+          "lat": 25.6,
+          "lng": 164.5,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-08 08时",
+          "lat": 26.9,
+          "lng": 156.3,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-09 08时",
+          "lat": 29.1,
+          "lng": 150.9,
+          "wind": 11,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-10 08时",
+          "lat": 31.4,
+          "lng": 148.7,
+          "wind": 11,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        }
+      ],
+      "rainRisk": null,
+      "affected": []
+    },
+    {
+      "name": "小熊",
+      "enName": "KOGUMA",
+      "code": "2629",
+      "level": "热带风暴（8级）",
+      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
+      "nearCoast": false,
+      "nameNote": null,
+      "trackSource": "浙江台风路径系统",
+      "verification": {
+        "status": "consistent",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 0 公里、强度一致（2 源交叉校验一致）",
+        "sources": [
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "10-05 08时",
+            "windLevel": 8,
+            "role": "primary"
+          },
+          {
+            "id": "jma",
+            "name": "日本气象厅",
+            "time": "10-05 08时",
+            "windLevel": 8,
+            "role": "verify"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 8,
+        "windSpeed": 18,
+        "pressure": 998,
+        "moveDir": "—",
+        "moveSpeed": 0,
+        "r7": null,
+        "r10": null,
+        "time": "10-05 08时",
+        "position": "中心位于北纬 10.4 度、东经 168.1 度"
+      },
+      "track": [
+        {
+          "t": "10-05 08时",
+          "lat": 10.4,
+          "lng": 168.1,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "now"
+        },
+        {
+          "t": "10-06 08时",
+          "lat": 13,
+          "lng": 167.5,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-07 08时",
+          "lat": 15.7,
+          "lng": 165.6,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-08 08时",
+          "lat": 17.4,
+          "lng": 161.9,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-09 08时",
+          "lat": 18.8,
+          "lng": 156.5,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-10 08时",
+          "lat": 20.5,
+          "lng": 151.1,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        }
+      ],
+      "rainRisk": null,
+      "affected": []
     }
   ],
   "alerts": {
@@ -266,7 +460,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 27,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -303,7 +497,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 29,
+        "count": 30,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -321,7 +515,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 7,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -422,24 +616,6 @@
         },
         "lat": 26.8,
         "lng": 106.9
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省永州市蓝山县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43112741600000_20261004092157.html",
-          "issuedAt": "2026/10/04 09:21"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "四川",
