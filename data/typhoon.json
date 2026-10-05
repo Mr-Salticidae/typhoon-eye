@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 23:45",
+  "updatedAt": "2026-10-06 00:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -36,27 +36,27 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 101 公里、强度一致。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 78 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-05 20时",
+            "time": "10-05 23时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-05 20时",
+            "time": "10-05 23时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-05 20时",
+            "time": "10-05 23时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -67,11 +67,11 @@
         "windSpeed": 20,
         "pressure": 995,
         "moveDir": "北北西",
-        "moveSpeed": 20,
+        "moveSpeed": 21,
         "r7": 200,
         "r10": null,
-        "time": "10-05 20时",
-        "position": "中心位于北纬 11.2 度、东经 167.8 度"
+        "time": "10-05 23时",
+        "position": "中心位于北纬 11.6 度、东经 167.6 度"
       },
       "track": [
         {
@@ -112,68 +112,76 @@
           "lng": 167.8,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-05 23时",
+          "lat": 11.6,
+          "lng": 167.6,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "10-06 08时",
-          "lat": 13.1,
-          "lng": 166.8,
+          "t": "10-06 11时",
+          "lat": 13.5,
+          "lng": 166.4,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-06 20时",
-          "lat": 14.3,
-          "lng": 165.6,
+          "t": "10-06 23时",
+          "lat": 14.6,
+          "lng": 165.1,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-07 08时",
-          "lat": 15.4,
-          "lng": 164.2,
+          "t": "10-07 11时",
+          "lat": 15.7,
+          "lng": 163.7,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-07 20时",
-          "lat": 16.5,
-          "lng": 162.5,
+          "t": "10-07 23时",
+          "lat": 16.7,
+          "lng": 161.9,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-08 08时",
+          "t": "10-08 11时",
           "lat": 17.4,
           "lng": 160.3,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-08 20时",
-          "lat": 18.4,
-          "lng": 157.8,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-09 20时",
-          "lat": 20.4,
-          "lng": 152.4,
+          "t": "10-08 23时",
+          "lat": 18.8,
+          "lng": 156.8,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-09 23时",
+          "lat": 21.1,
+          "lng": 151.2,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-10 20时",
-          "lat": 22.7,
-          "lng": 148.1,
+          "t": "10-10 23时",
+          "lat": 23.1,
+          "lng": 147.6,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
@@ -193,7 +201,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 60 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -212,8 +220,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-05 20时",
-            "windLevel": 15,
+            "time": "10-05 23时",
+            "windLevel": 14,
             "role": "verify"
           }
         ]
@@ -556,9 +564,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 26,
+    "total": 25,
     "counts": {
-      "暴雨": 13,
+      "暴雨": 12,
       "地质灾害": 13
     },
     "peak": {
@@ -577,7 +585,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -614,34 +622,16 @@
           "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 18,
+        "count": 19,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "云南省普洱市景谷傣族彝族自治县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082441600000_20261005233645.html",
-          "issuedAt": "2026/10/05 23:35"
+          "title": "云南省临沧市临翔区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53090241600000_20261005235336.html",
+          "issuedAt": "2026/10/05 23:51"
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "四川",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "四川省甘孜藏族自治州雅江县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51332541600000_20261005191133.html",
-          "issuedAt": "2026/10/05 19:11"
-        },
-        "lat": 30.6,
-        "lng": 102.9
       },
       {
         "province": "福建",
