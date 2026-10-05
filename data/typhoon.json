@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 20:15",
+  "updatedAt": "2026-10-05 20:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 3
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 74 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 74 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,13 +45,6 @@
             "time": "10-05 17时",
             "windLevel": 8,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "10-05 17时",
-            "windLevel": 8,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -68,7 +61,7 @@
         "pressure": 995,
         "moveDir": "北北西",
         "moveSpeed": 15,
-        "r7": 200,
+        "r7": null,
         "r10": null,
         "time": "10-05 17时",
         "position": "中心位于北纬 11.0 度、东经 168.0 度"
@@ -185,7 +178,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 10 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -193,13 +186,6 @@
             "time": "10-05 17时",
             "windLevel": 15,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "10-05 17时",
-            "windLevel": 15,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -216,8 +202,8 @@
         "pressure": 940,
         "moveDir": "西",
         "moveSpeed": 26,
-        "r7": 500,
-        "r10": 200,
+        "r7": null,
+        "r10": null,
         "time": "10-05 17时",
         "position": "中心位于北纬 25.5 度、东经 177.1 度"
       },
@@ -333,7 +319,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 15 公里、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -341,13 +327,6 @@
             "time": "10-05 17时",
             "windLevel": 15,
             "role": "primary"
-          },
-          {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "10-05 17时",
-            "windLevel": 15,
-            "role": "verify"
           },
           {
             "id": "jma",
@@ -364,8 +343,8 @@
         "pressure": 940,
         "moveDir": "北北西",
         "moveSpeed": 18,
-        "r7": 500,
-        "r10": 160,
+        "r7": null,
+        "r10": null,
         "time": "10-05 17时",
         "position": "中心位于北纬 26.9 度、东经 146.2 度"
       },
@@ -532,10 +511,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 30,
+    "total": 29,
     "counts": {
       "暴雨": 16,
-      "山洪灾害": 1,
       "地质灾害": 13
     },
     "peak": {
@@ -554,7 +532,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -567,19 +545,19 @@
       },
       {
         "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
         "kinds": {
-          "暴雨": "blue",
+          "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 19,
+        "count": 20,
         "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省昭通市镇雄县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53062741600000_20261005123538.html",
-          "issuedAt": "2026/10/05 12:33"
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省普洱市景谷傣族彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082441600000_20261005203955.html",
+          "issuedAt": "2026/10/05 20:38"
         },
         "lat": 25,
         "lng": 101.5
@@ -589,10 +567,9 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "yellow"
+          "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
