@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05 10:15",
+  "updatedAt": "2026-10-05 10:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -151,7 +151,7 @@
       "affected": []
     },
     {
-      "name": null,
+      "name": "诺洛",
       "enName": "NOLO",
       "code": "2628",
       "level": "超强台风（16级）",
@@ -494,9 +494,9 @@
     "partial": null,
     "total": 76,
     "counts": {
-      "暴雨": 60,
+      "暴雨": 59,
       "山洪灾害": 1,
-      "地质灾害": 15
+      "地质灾害": 16
     },
     "peak": {
       "province": "广东",
@@ -569,7 +569,7 @@
           "暴雨": "orange",
           "地质灾害": "yellow"
         },
-        "count": 27,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -579,24 +579,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "福建",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 5,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "福建省泉州市永春县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35052541600000_20261005063100.html",
-          "issuedAt": "2026/10/05 06:31"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       },
       {
         "province": "辽宁",
@@ -617,13 +599,31 @@
         "lng": 122.6
       },
       {
+        "province": "福建",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "福建省漳州市平和县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35062841600000_20261005100700.html",
+          "issuedAt": "2026/10/05 10:07"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
+      {
         "province": "江西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 7,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -670,6 +670,24 @@
         },
         "lat": 30.6,
         "lng": 102.9
+      },
+      {
+        "province": "黑龙江",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "黑龙江省牡丹江市东宁市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/23108641600000_20261005102523.html",
+          "issuedAt": "2026/10/05 10:25"
+        },
+        "lat": 47.4,
+        "lng": 128.1
       }
     ]
   },
