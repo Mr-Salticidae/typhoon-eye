@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07 20:45",
+  "updatedAt": "2026-10-07 21:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 3
+      "count": 2
     },
     {
       "id": "zj",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 74 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 63 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-07 17时",
+            "time": "10-07 20时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -273,7 +273,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 98 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 52 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -292,7 +292,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-07 17时",
+            "time": "10-07 20时",
             "windLevel": 12,
             "role": "verify"
           }
@@ -489,179 +489,6 @@
       ],
       "rainRisk": null,
       "affected": []
-    },
-    {
-      "name": "彩云",
-      "enName": "CHOI-WAN",
-      "code": "2627",
-      "level": "强热带风暴（11级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 1043 公里（时次相差 12 小时）、强度暂缺（2 源交叉校验一致）",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "10-07 08时",
-            "windLevel": 11,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "10-07 20时",
-            "windLevel": null,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 11,
-        "windSpeed": 30,
-        "pressure": 975,
-        "moveDir": "东北",
-        "moveSpeed": 87,
-        "r7": null,
-        "r10": null,
-        "time": "10-07 08时",
-        "position": "中心位于北纬 39.2 度、东经 153.2 度"
-      },
-      "track": [
-        {
-          "t": "10-01 02时",
-          "lat": 16.4,
-          "lng": 149.5,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-01 14时",
-          "lat": 16.6,
-          "lng": 147,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-02 02时",
-          "lat": 16.8,
-          "lng": 145.2,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-02 11时",
-          "lat": 17.1,
-          "lng": 144.6,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-02 23时",
-          "lat": 17.9,
-          "lng": 144.8,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-03 11时",
-          "lat": 19,
-          "lng": 145.5,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-03 23时",
-          "lat": 20.5,
-          "lng": 146.3,
-          "wind": 15,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-04 08时",
-          "lat": 22,
-          "lng": 147.2,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-04 20时",
-          "lat": 23.3,
-          "lng": 146.9,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-05 08时",
-          "lat": 25.2,
-          "lng": 146.6,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-05 20时",
-          "lat": 27.2,
-          "lng": 145.9,
-          "wind": 15,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-06 05时",
-          "lat": 28.9,
-          "lng": 145.7,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-06 17时",
-          "lat": 32.5,
-          "lng": 146.7,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-07 05时",
-          "lat": 37.7,
-          "lng": 151.3,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-07 08时",
-          "lat": 39.2,
-          "lng": 153.2,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "now"
-        },
-        {
-          "t": "10-07 20时",
-          "lat": 46,
-          "lng": 162,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        }
-      ],
-      "rainRisk": null,
-      "affected": []
     }
   ],
   "alerts": {
@@ -702,5 +529,16 @@
       }
     ]
   },
-  "recentlyEnded": []
+  "recentlyEnded": [
+    {
+      "code": "2627",
+      "name": "彩云",
+      "enName": "CHOI-WAN",
+      "lastLevel": "强热带风暴（11级）",
+      "endedAt": "2026-10-07 21:15",
+      "provinces": [],
+      "ongoingFloodLevel": null,
+      "daysSince": 0
+    }
+  ]
 }
