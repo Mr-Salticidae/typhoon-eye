@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07 12:01",
+  "updatedAt": "2026-10-07 12:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 44 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-07 08时",
+            "time": "10-07 11时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -273,7 +273,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 111 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -292,7 +292,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-07 08时",
+            "time": "10-07 11时",
             "windLevel": 12,
             "role": "verify"
           }
@@ -685,26 +685,26 @@
     "peak": {
       "province": "海南",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "海南省三沙市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/46030041600000_20261007111000.html",
-      "issuedAt": "2026/10/07 11:10"
+      "level": "red",
+      "title": "海南省三沙市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/46030041600000_20261007120002.html",
+      "issuedAt": "2026/10/07 12:00"
     },
     "provinces": [
       {
         "province": "海南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "red",
+        "floodLevel": "red",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "red"
         },
         "count": 1,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "海南省三沙市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46030041600000_20261007111000.html",
-          "issuedAt": "2026/10/07 11:10"
+          "level": "red",
+          "title": "海南省三沙市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46030041600000_20261007120002.html",
+          "issuedAt": "2026/10/07 12:00"
         },
         "lat": 19.2,
         "lng": 109.7
