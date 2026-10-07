@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07 11:30",
+  "updatedAt": "2026-10-07 12:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 3
+      "count": 2
     },
     {
       "id": "jma",
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-07 08时",
+            "time": "10-07 11时",
             "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-07 08时",
+            "time": "10-07 11时",
             "windLevel": 10,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 25,
         "pressure": 985,
         "moveDir": "西北",
-        "moveSpeed": 11,
+        "moveSpeed": 13,
         "r7": 200,
         "r10": null,
-        "time": "10-07 08时",
-        "position": "中心位于北纬 15.0 度、东经 163.4 度"
+        "time": "10-07 11时",
+        "position": "中心位于北纬 15.0 度、东经 163.2 度"
       },
       "track": [
         {
@@ -99,9 +99,9 @@
           "phase": "past"
         },
         {
-          "t": "10-05 17时",
-          "lat": 11,
-          "lng": 168,
+          "t": "10-05 20时",
+          "lat": 11.2,
+          "lng": 167.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "past"
@@ -131,14 +131,6 @@
           "phase": "past"
         },
         {
-          "t": "10-06 08时",
-          "lat": 12.9,
-          "lng": 166.6,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
           "t": "10-06 11时",
           "lat": 13.6,
           "lng": 166.1,
@@ -155,17 +147,17 @@
           "phase": "past"
         },
         {
-          "t": "10-06 20时",
-          "lat": 14.3,
-          "lng": 165.5,
+          "t": "10-06 17时",
+          "lat": 14.1,
+          "lng": 165.6,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
         },
         {
-          "t": "10-06 23时",
-          "lat": 14.6,
-          "lng": 165,
+          "t": "10-06 20时",
+          "lat": 14.3,
+          "lng": 165.5,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -192,70 +184,78 @@
           "lng": 163.4,
           "wind": 10,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-07 11时",
+          "lat": 15,
+          "lng": 163.2,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "10-07 20时",
-          "lat": 15.7,
-          "lng": 162.5,
+          "t": "10-07 23时",
+          "lat": 16,
+          "lng": 162.2,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-08 08时",
-          "lat": 16.4,
-          "lng": 161,
+          "t": "10-08 11时",
+          "lat": 16.7,
+          "lng": 160.7,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-08 20时",
-          "lat": 17.2,
-          "lng": 159.3,
+          "t": "10-08 23时",
+          "lat": 17.5,
+          "lng": 158.6,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-09 08时",
+          "t": "10-09 11时",
           "lat": 18.5,
-          "lng": 156.6,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-09 20时",
-          "lat": 19.7,
-          "lng": 153.9,
+          "lng": 156.2,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-10 08时",
-          "lat": 21.2,
-          "lng": 151.6,
+          "t": "10-09 23时",
+          "lat": 19.7,
+          "lng": 153.7,
+          "wind": 15,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-10 11时",
+          "lat": 21,
+          "lng": 151.5,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-11 08时",
+          "t": "10-11 11时",
           "lat": 23.8,
-          "lng": 148.4,
+          "lng": 147.8,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-12 08时",
-          "lat": 26.7,
-          "lng": 146.1,
-          "wind": 16,
-          "strong": "超强台风",
+          "t": "10-12 11时",
+          "lat": 26.8,
+          "lng": 145.8,
+          "wind": 15,
+          "strong": "强台风",
           "phase": "forecast"
         }
       ],
@@ -509,7 +509,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 78 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 185 公里（时次相差 3 小时）、强度一致（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -519,16 +519,9 @@
             "role": "primary"
           },
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "10-07 08时",
-            "windLevel": 11,
-            "role": "verify"
-          },
-          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-07 08时",
+            "time": "10-07 11时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -540,8 +533,8 @@
         "pressure": 975,
         "moveDir": "东北",
         "moveSpeed": 87,
-        "r7": 500,
-        "r10": 160,
+        "r7": null,
+        "r10": null,
         "time": "10-07 08时",
         "position": "中心位于北纬 39.2 度、东经 153.2 度"
       },
@@ -686,17 +679,36 @@
     "partial": null,
     "total": 6,
     "counts": {
-      "地质灾害": 6
+      "暴雨": 1,
+      "地质灾害": 5
     },
     "peak": {
-      "province": "云南",
-      "kind": "地质灾害",
-      "level": "yellow",
-      "title": "云南省保山市昌宁县气象台发布地质灾害黄色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53052441600000_20261007090202.html",
-      "issuedAt": "2026/10/07 09:00"
+      "province": "海南",
+      "kind": "暴雨",
+      "level": "orange",
+      "title": "海南省三沙市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/46030041600000_20261007111000.html",
+      "issuedAt": "2026/10/07 11:10"
     },
     "provinces": [
+      {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省三沙市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46030041600000_20261007111000.html",
+          "issuedAt": "2026/10/07 11:10"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
       {
         "province": "云南",
         "maxLevel": "yellow",
@@ -704,7 +716,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 6,
+        "count": 5,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
