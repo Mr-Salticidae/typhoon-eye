@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09 16:15",
+  "updatedAt": "2026-10-09 16:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -480,9 +480,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 9,
+    "total": 10,
     "counts": {
       "暴雨": 8,
+      "山洪风险": 1,
       "地质灾害": 1
     },
     "peak": {
@@ -517,9 +518,10 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
+          "山洪风险": "blue",
           "地质灾害": "yellow"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
