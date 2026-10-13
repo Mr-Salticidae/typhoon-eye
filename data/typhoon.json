@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13 20:30",
+  "updatedAt": "2026-10-13 21:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 29 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：日本气象厅定位相差 123 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -47,16 +47,9 @@
             "role": "primary"
           },
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "10-13 17时",
-            "windLevel": 9,
-            "role": "verify"
-          },
-          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-13 17时",
+            "time": "10-13 20时",
             "windLevel": 11,
             "role": "verify"
           }
@@ -68,7 +61,7 @@
         "pressure": 990,
         "moveDir": "东北",
         "moveSpeed": 37,
-        "r7": 200,
+        "r7": null,
         "r10": null,
         "time": "10-13 17时",
         "position": "中心位于北纬 36.0 度、东经 154.5 度"
@@ -220,10 +213,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 35,
+    "total": 40,
     "counts": {
-      "暴雨": 21,
-      "地质灾害": 14
+      "暴雨": 23,
+      "地质灾害": 17
     },
     "peak": {
       "province": "云南",
@@ -242,7 +235,7 @@
           "暴雨": "red",
           "地质灾害": "yellow"
         },
-        "count": 33,
+        "count": 37,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -252,6 +245,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省六盘水市盘州市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52028141600000_20261013204225.html",
+          "issuedAt": "2026/10/13 20:42"
+        },
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "广西",
