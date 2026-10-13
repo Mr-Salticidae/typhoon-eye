@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13 15:03",
+  "updatedAt": "2026-10-13 15:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -228,9 +228,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 5,
+    "total": 6,
     "counts": {
-      "暴雨": 4,
+      "暴雨": 5,
       "地质灾害": 1
     },
     "peak": {
@@ -261,6 +261,25 @@
         "lng": 122.6
       },
       {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082941600000_20261012215819.html",
+          "issuedAt": "2026/10/12 21:56"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "新疆",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -277,24 +296,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082941600000_20261012215819.html",
-          "issuedAt": "2026/10/12 21:56"
-        },
-        "lat": 25,
-        "lng": 101.5
       }
     ]
   },
@@ -307,7 +308,7 @@
       "endedAt": "2026-10-11 15:15",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 1
+      "daysSince": 2
     },
     {
       "code": "2627",
