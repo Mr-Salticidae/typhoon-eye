@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14 06:00",
+  "updatedAt": "2026-10-14 06:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,18 +31,18 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 28,
+    "total": 25,
     "counts": {
-      "暴雨": 10,
+      "暴雨": 7,
       "地质灾害": 18
     },
     "peak": {
       "province": "云南",
-      "kind": "暴雨",
+      "kind": "地质灾害",
       "level": "yellow",
-      "title": "云南省玉溪市红塔区气象台发布暴雨黄色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53040241600000_20261013230256.html",
-      "issuedAt": "2026/10/13 23:01"
+      "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害黄色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53082941600000_20261013215439.html",
+      "issuedAt": "2026/10/13 21:51"
     },
     "provinces": [
       {
@@ -50,19 +50,37 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
+          "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 25,
+        "count": 22,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "云南省玉溪市红塔区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53040241600000_20261013230256.html",
-          "issuedAt": "2026/10/13 23:01"
+          "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082941600000_20261013215439.html",
+          "issuedAt": "2026/10/13 21:51"
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "重庆市开州区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50015441600000_20261014061358.html",
+          "issuedAt": "2026/10/14 06:13"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "新疆",
@@ -81,24 +99,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市开州区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50015441600000_20261014033040.html",
-          "issuedAt": "2026/10/14 03:30"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       }
     ]
   },
