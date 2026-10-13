@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14 05:30",
+  "updatedAt": "2026-10-14 06:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "zj",
@@ -25,189 +25,7 @@
       "count": 1
     }
   ],
-  "typhoons": [
-    {
-      "name": "小熊\n",
-      "enName": "KOGUMA",
-      "code": "2629",
-      "level": "热带风暴（9级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 327 公里（时次相差 9 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "10-13 17时",
-            "windLevel": 9,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "10-14 02时",
-            "windLevel": 11,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 9,
-        "windSpeed": 23,
-        "pressure": 990,
-        "moveDir": "东北",
-        "moveSpeed": 37,
-        "r7": null,
-        "r10": null,
-        "time": "10-13 17时",
-        "position": "中心位于北纬 36.0 度、东经 154.5 度"
-      },
-      "track": [
-        {
-          "t": "10-05 08时",
-          "lat": 10.4,
-          "lng": 168.1,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-05 23时",
-          "lat": 11.6,
-          "lng": 167.6,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-06 14时",
-          "lat": 14,
-          "lng": 165.8,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-07 05时",
-          "lat": 14.9,
-          "lng": 164.2,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-07 20时",
-          "lat": 15.6,
-          "lng": 162.7,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-08 11时",
-          "lat": 17.1,
-          "lng": 160.8,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-09 02时",
-          "lat": 18.1,
-          "lng": 157.8,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-09 20时",
-          "lat": 20.1,
-          "lng": 154.2,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-10 11时",
-          "lat": 21.7,
-          "lng": 151,
-          "wind": 15,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-11 02时",
-          "lat": 23.8,
-          "lng": 148.9,
-          "wind": 16,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-11 17时",
-          "lat": 25.7,
-          "lng": 147.6,
-          "wind": 16,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-12 08时",
-          "lat": 28.3,
-          "lng": 147.4,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-12 23时",
-          "lat": 31.9,
-          "lng": 148.8,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-13 14时",
-          "lat": 35.4,
-          "lng": 153.7,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-13 17时",
-          "lat": 36,
-          "lng": 154.5,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "now"
-        },
-        {
-          "t": "10-14 05时",
-          "lat": 38.9,
-          "lng": 157.9,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-14 17时",
-          "lat": 40.9,
-          "lng": 161.4,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        }
-      ],
-      "rainRisk": null,
-      "affected": []
-    }
-  ],
+  "typhoons": [],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
@@ -285,6 +103,16 @@
     ]
   },
   "recentlyEnded": [
+    {
+      "code": "2629",
+      "name": "小熊\n",
+      "enName": "KOGUMA",
+      "lastLevel": "热带风暴（9级）",
+      "endedAt": "2026-10-14 06:00",
+      "provinces": [],
+      "ongoingFloodLevel": null,
+      "daysSince": 0
+    },
     {
       "code": "2628",
       "name": "诺洛",
