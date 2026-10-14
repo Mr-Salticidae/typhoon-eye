@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14 22:01",
+  "updatedAt": "2026-10-14 22:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 12,
+    "total": 13,
     "counts": {
-      "暴雨": 6,
+      "暴雨": 7,
       "地质灾害": 6
     },
     "peak": {
@@ -71,7 +71,7 @@
           "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 8,
+        "count": 7,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -81,6 +81,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖南省湘西土家族苗族自治州泸溪县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43312241600000_20261014222743.html",
+          "issuedAt": "2026/10/14 22:27"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "甘肃",
@@ -101,37 +119,19 @@
         "lng": 101.1
       },
       {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省气象台发布暴雨黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/43000041600000_20261014154030.html",
-          "issuedAt": "2026/10/14 15:37"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "重庆",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "重庆市县忠县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023341600000_20261014212736.html",
-          "issuedAt": "2026/10/14 21:27"
+          "title": "重庆市县巫山县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023741600000_20261014220332.html",
+          "issuedAt": "2026/10/14 22:03"
         },
         "lat": 29.8,
         "lng": 107.9
