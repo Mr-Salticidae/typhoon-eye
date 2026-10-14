@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14 21:00",
+  "updatedAt": "2026-10-14 21:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -33,8 +33,8 @@
     "partial": null,
     "total": 12,
     "counts": {
-      "暴雨": 5,
-      "地质灾害": 7
+      "暴雨": 6,
+      "地质灾害": 6
     },
     "peak": {
       "province": "新疆",
@@ -71,7 +71,7 @@
           "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 9,
+        "count": 8,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
@@ -117,6 +117,24 @@
         },
         "lat": 27.6,
         "lng": 111.7
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市县忠县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023341600000_20261014212736.html",
+          "issuedAt": "2026/10/14 21:27"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       }
     ]
   },
@@ -140,16 +158,6 @@
       "provinces": [],
       "ongoingFloodLevel": null,
       "daysSince": 3
-    },
-    {
-      "code": "2627",
-      "name": "彩云",
-      "enName": "CHOI-WAN",
-      "lastLevel": "强热带风暴（11级）",
-      "endedAt": "2026-10-07 21:15",
-      "provinces": [],
-      "ongoingFloodLevel": null,
-      "daysSince": 6
     }
   ]
 }
