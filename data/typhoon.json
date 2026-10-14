@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14 22:30",
+  "updatedAt": "2026-10-14 23:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,20 +31,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 13,
+    "total": 14,
     "counts": {
-      "暴雨": 7,
+      "暴雨": 8,
       "地质灾害": 6
     },
     "peak": {
-      "province": "新疆",
+      "province": "湖南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "新疆维吾尔自治区阿克苏地区拜城县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/65292641600000_20261014145122.html",
-      "issuedAt": "2026/10/14 14:51"
+      "title": "湖南省湘西土家族苗族自治州泸溪县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/43312241600000_20261014225117.html",
+      "issuedAt": "2026/10/14 22:50"
     },
     "provinces": [
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省湘西土家族苗族自治州泸溪县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43312241600000_20261014225117.html",
+          "issuedAt": "2026/10/14 22:50"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
       {
         "province": "新疆",
         "maxLevel": "orange",
@@ -81,24 +99,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省湘西土家族苗族自治州泸溪县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43312241600000_20261014222743.html",
-          "issuedAt": "2026/10/14 22:27"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "甘肃",
