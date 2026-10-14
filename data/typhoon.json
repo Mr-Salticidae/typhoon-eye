@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14 15:59",
+  "updatedAt": "2026-10-14 16:31",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 25,
+    "total": 24,
     "counts": {
-      "暴雨": 6,
+      "暴雨": 5,
       "地质灾害": 19
     },
     "peak": {
@@ -68,19 +68,37 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "yellow",
+          "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 22,
+        "count": 21,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "yellow",
-          "title": "云南省临沧市永德县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53092341600000_20261014083737.html",
-          "issuedAt": "2026/10/14 08:35"
+          "title": "云南省临沧市镇康县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53092441600000_20261014070050.html",
+          "issuedAt": "2026/10/14 06:59"
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "甘肃",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "甘肃省甘南藏族自治州舟曲县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/62302341600000_20261014155319.html",
+          "issuedAt": "2026/10/14 15:53"
+        },
+        "lat": 37.8,
+        "lng": 101.1
       },
       {
         "province": "湖南",
@@ -99,24 +117,6 @@
         },
         "lat": 27.6,
         "lng": 111.7
-      },
-      {
-        "province": "重庆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "重庆市县云阳县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/50023541600000_20261014024002.html",
-          "issuedAt": "2026/10/14 02:39"
-        },
-        "lat": 29.8,
-        "lng": 107.9
       }
     ]
   },
