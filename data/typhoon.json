@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15 15:15",
+  "updatedAt": "2026-10-15 15:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,14 +8,14 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 0
+      "count": 1
     },
     {
       "id": "jma",
@@ -25,15 +25,140 @@
       "count": 1
     }
   ],
-  "typhoons": [],
+  "typhoons": [
+    {
+      "name": "蔷琵",
+      "enName": "CHAMPI",
+      "code": "2630",
+      "level": "热带风暴（8级）",
+      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
+      "nearCoast": false,
+      "nameNote": null,
+      "trackSource": "中央气象台",
+      "verification": {
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 80 公里、强度一致（3 源交叉校验一致）",
+        "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "10-15 14时",
+            "windLevel": 8,
+            "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "10-15 14时",
+            "windLevel": 8,
+            "role": "verify"
+          },
+          {
+            "id": "jma",
+            "name": "日本气象厅",
+            "time": "10-15 14时",
+            "windLevel": 8,
+            "role": "verify"
+          }
+        ]
+      },
+      "now": {
+        "windLevel": 8,
+        "windSpeed": 18,
+        "pressure": 998,
+        "moveDir": "西北西",
+        "moveSpeed": 24,
+        "r7": 280,
+        "r10": null,
+        "time": "10-15 14时",
+        "position": "中心位于北纬 10.5 度、东经 158.8 度"
+      },
+      "track": [
+        {
+          "t": "10-15 14时",
+          "lat": 10.5,
+          "lng": 158.8,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "now"
+        },
+        {
+          "t": "10-16 02时",
+          "lat": 11.2,
+          "lng": 156.3,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-16 14时",
+          "lat": 11.6,
+          "lng": 153.7,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-17 02时",
+          "lat": 12.1,
+          "lng": 151.1,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-17 14时",
+          "lat": 12.7,
+          "lng": 148.8,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-18 02时",
+          "lat": 13.3,
+          "lng": 146.6,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-18 14时",
+          "lat": 13.9,
+          "lng": 143.8,
+          "wind": 16,
+          "strong": "超强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-19 14时",
+          "lat": 15.4,
+          "lng": 138.9,
+          "wind": 16,
+          "strong": "超强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-20 14时",
+          "lat": 17.2,
+          "lng": 134.8,
+          "wind": 17,
+          "strong": "超强台风",
+          "phase": "forecast"
+        }
+      ],
+      "rainRisk": null,
+      "affected": []
+    }
+  ],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 34,
+    "total": 36,
     "counts": {
-      "暴雨": 30,
+      "暴雨": 32,
       "地质灾害": 4
     },
     "peak": {
@@ -52,7 +177,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 23,
+        "count": 24,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -70,7 +195,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
