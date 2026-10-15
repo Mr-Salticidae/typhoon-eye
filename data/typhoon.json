@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15 14:15",
+  "updatedAt": "2026-10-15 14:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 31,
+    "total": 34,
     "counts": {
-      "暴雨": 27,
+      "暴雨": 30,
       "地质灾害": 4
     },
     "peak": {
@@ -52,7 +52,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 22,
+        "count": 23,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -82,6 +82,24 @@
         "lng": 85.3
       },
       {
+        "province": "江西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "江西省宜春市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36090041600000_20261015102716.html",
+          "issuedAt": "2026/10/15 10:25"
+        },
+        "lat": 27.6,
+        "lng": 115.7
+      },
+      {
         "province": "云南",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -99,24 +117,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "江西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "江西省宜春市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36090041600000_20261015102716.html",
-          "issuedAt": "2026/10/15 10:25"
-        },
-        "lat": 27.6,
-        "lng": 115.7
       }
     ]
   },
