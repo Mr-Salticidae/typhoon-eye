@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15 20:30",
+  "updatedAt": "2026-10-15 21:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,26 +37,26 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 79 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 46 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-15 17时",
+            "time": "10-15 20时",
             "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-15 17时",
+            "time": "10-15 20时",
             "windLevel": 8,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-15 17时",
+            "time": "10-15 20时",
             "windLevel": 8,
             "role": "verify"
           }
@@ -67,11 +67,11 @@
         "windSpeed": 18,
         "pressure": 998,
         "moveDir": "西北西",
-        "moveSpeed": 22,
+        "moveSpeed": 25,
         "r7": 280,
         "r10": null,
-        "time": "10-15 17时",
-        "position": "中心位于北纬 10.6 度、东经 157.8 度"
+        "time": "10-15 20时",
+        "position": "中心位于北纬 10.9 度、东经 157.0 度"
       },
       "track": [
         {
@@ -88,68 +88,76 @@
           "lng": 157.8,
           "wind": 8,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-15 20时",
+          "lat": 10.9,
+          "lng": 157,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "10-16 05时",
-          "lat": 11.3,
-          "lng": 155.5,
+          "t": "10-16 08时",
+          "lat": 11.5,
+          "lng": 154.4,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-16 17时",
-          "lat": 11.7,
-          "lng": 152.8,
+          "t": "10-16 20时",
+          "lat": 11.9,
+          "lng": 151.3,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-17 05时",
+          "t": "10-17 08时",
           "lat": 12.2,
-          "lng": 150.1,
+          "lng": 148.6,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-17 17时",
-          "lat": 12.7,
-          "lng": 147.8,
+          "t": "10-17 20时",
+          "lat": 12.6,
+          "lng": 146.3,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 05时",
-          "lat": 13.2,
-          "lng": 145.4,
-          "wind": 14,
+          "t": "10-18 08时",
+          "lat": 13.1,
+          "lng": 144.1,
+          "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 17时",
+          "t": "10-18 20时",
           "lat": 13.7,
-          "lng": 143.1,
+          "lng": 141.5,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 17时",
+          "t": "10-19 20时",
           "lat": 15.2,
-          "lng": 138.8,
-          "wind": 16,
+          "lng": 137.1,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-20 17时",
-          "lat": 17.3,
-          "lng": 134,
+          "t": "10-20 20时",
+          "lat": 16.9,
+          "lng": 132.7,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
@@ -164,9 +172,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 36,
+    "total": 37,
     "counts": {
-      "暴雨": 35,
+      "暴雨": 36,
       "地质灾害": 1
     },
     "peak": {
@@ -197,6 +205,25 @@
         "lng": 111.7
       },
       {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省普洱市宁洱哈尼族彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082141600000_20261015203245.html",
+          "issuedAt": "2026/10/15 20:29"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
+      {
         "province": "江西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -213,24 +240,6 @@
         },
         "lat": 27.6,
         "lng": 115.7
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "地质灾害": "yellow"
-        },
-        "count": 1,
-        "top": {
-          "kind": "地质灾害",
-          "level": "yellow",
-          "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082941600000_20261014215516.html",
-          "issuedAt": "2026/10/14 21:53"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "陕西",
