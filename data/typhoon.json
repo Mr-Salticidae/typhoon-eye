@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17 02:30",
+  "updatedAt": "2026-10-17 03:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,48 +30,48 @@
       "name": "蔷琵",
       "enName": "CHAMPI",
       "code": "2630",
-      "level": "强热带风暴（11级）",
+      "level": "台风（12级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 31 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-16 23时",
-            "windLevel": 11,
+            "time": "10-17 02时",
+            "windLevel": 12,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-16 23时",
-            "windLevel": 11,
+            "time": "10-17 02时",
+            "windLevel": 12,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-16 23时",
-            "windLevel": 11,
+            "time": "10-17 02时",
+            "windLevel": 12,
             "role": "verify"
           }
         ]
       },
       "now": {
-        "windLevel": 11,
-        "windSpeed": 30,
-        "pressure": 980,
+        "windLevel": 12,
+        "windSpeed": 33,
+        "pressure": 975,
         "moveDir": "西北西",
-        "moveSpeed": 26,
+        "moveSpeed": 25,
         "r7": 300,
         "r10": 100,
-        "time": "10-16 23时",
-        "position": "中心位于北纬 11.6 度、东经 150.8 度"
+        "time": "10-17 02时",
+        "position": "中心位于北纬 11.9 度、东经 150.2 度"
       },
       "track": [
         {
@@ -168,68 +168,76 @@
           "lng": 150.8,
           "wind": 11,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-17 02时",
+          "lat": 11.9,
+          "lng": 150.2,
+          "wind": 12,
+          "strong": "台风",
           "phase": "now"
         },
         {
-          "t": "10-17 11时",
-          "lat": 12.3,
-          "lng": 148.1,
+          "t": "10-17 14时",
+          "lat": 12.5,
+          "lng": 147.6,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-17 23时",
-          "lat": 12.8,
-          "lng": 145.8,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-18 11时",
-          "lat": 13.3,
-          "lng": 143.6,
+          "t": "10-18 02时",
+          "lat": 12.9,
+          "lng": 145.3,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 23时",
-          "lat": 13.9,
-          "lng": 141.5,
+          "t": "10-18 14时",
+          "lat": 13.4,
+          "lng": 143.2,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 11时",
-          "lat": 14.8,
-          "lng": 139.4,
+          "t": "10-19 02时",
+          "lat": 14.1,
+          "lng": 141.1,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 23时",
-          "lat": 15.8,
-          "lng": 137.2,
+          "t": "10-19 14时",
+          "lat": 15,
+          "lng": 138.9,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-20 23时",
-          "lat": 17.8,
-          "lng": 132.5,
+          "t": "10-20 02时",
+          "lat": 16,
+          "lng": 136.9,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-21 23时",
-          "lat": 19.9,
-          "lng": 128.1,
+          "t": "10-21 02时",
+          "lat": 18,
+          "lng": 132,
+          "wind": 17,
+          "strong": "超强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-22 02时",
+          "lat": 20,
+          "lng": 127.5,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
@@ -244,11 +252,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 77,
+    "total": 85,
     "counts": {
-      "暴雨": 41,
+      "暴雨": 48,
       "山洪灾害": 13,
-      "地质灾害": 23
+      "地质灾害": 24
     },
     "peak": {
       "province": "湖南",
@@ -282,9 +290,10 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange"
+          "暴雨": "orange",
+          "地质灾害": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -371,6 +380,24 @@
         "lng": 115.7
       },
       {
+        "province": "宁夏",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "宁夏回族自治区石嘴山市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/64020041600000_20261017025521.html",
+          "issuedAt": "2026/10/17 02:40"
+        },
+        "lat": 37.3,
+        "lng": 106.2
+      },
+      {
         "province": "湖北",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -414,34 +441,34 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 3,
+        "count": 8,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河南省周口市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41160041600000_20261017021508.html",
-          "issuedAt": "2026/10/17 02:15"
+          "title": "河南省周口市太康县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41162741600000_20261017025123.html",
+          "issuedAt": "2026/10/17 02:47"
         },
         "lat": 33.9,
         "lng": 113.6
       },
       {
-        "province": "宁夏",
+        "province": "重庆",
         "maxLevel": "blue",
         "floodLevel": "blue",
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 2,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "宁夏回族自治区固原市彭阳县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/64042541600000_20261017012405.html",
-          "issuedAt": "2026/10/17 01:18"
+          "title": "重庆市开州区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50015441600000_20261017023947.html",
+          "issuedAt": "2026/10/17 02:39"
         },
-        "lat": 37.3,
-        "lng": 106.2
+        "lat": 29.8,
+        "lng": 107.9
       },
       {
         "province": "四川",
