@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16 10:15",
+  "updatedAt": "2026-10-16 10:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -204,9 +204,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 89,
+    "total": 90,
     "counts": {
       "暴雨": 86,
+      "山洪灾害": 1,
       "地质灾害": 3
     },
     "peak": {
@@ -247,8 +248,8 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省九江市修水县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36042441600000_20261016002840.html",
+          "title": "江西省九江市武宁县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36042341600000_20261016002710.html",
           "issuedAt": "2026/10/16 00:25"
         },
         "lat": 27.6,
@@ -271,6 +272,25 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "blue",
+          "山洪灾害": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "山洪灾害",
+          "level": "yellow",
+          "title": "陕西省气象台发布山洪灾害黄色预警",
+          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20261016102121.html",
+          "issuedAt": "2026/10/16 10:21"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "广西",
@@ -361,24 +381,6 @@
         },
         "lat": 37.6,
         "lng": 112.3
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "陕西省气象台发布暴雨蓝色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20261016093844.html",
-          "issuedAt": "2026/10/16 09:38"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       }
     ]
   },
