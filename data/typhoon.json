@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16 23:30",
+  "updatedAt": "2026-10-17 00:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,48 +30,48 @@
       "name": "蔷琵",
       "enName": "CHAMPI",
       "code": "2630",
-      "level": "强热带风暴（10级）",
+      "level": "强热带风暴（11级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 31 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-16 20时",
-            "windLevel": 10,
+            "time": "10-16 23时",
+            "windLevel": 11,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-16 20时",
-            "windLevel": 10,
+            "time": "10-16 23时",
+            "windLevel": 11,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-16 20时",
+            "time": "10-16 23时",
             "windLevel": 11,
             "role": "verify"
           }
         ]
       },
       "now": {
-        "windLevel": 10,
-        "windSpeed": 25,
-        "pressure": 985,
+        "windLevel": 11,
+        "windSpeed": 30,
+        "pressure": 980,
         "moveDir": "西北西",
-        "moveSpeed": 24,
+        "moveSpeed": 26,
         "r7": 300,
-        "r10": null,
-        "time": "10-16 20时",
-        "position": "中心位于北纬 11.5 度、东经 151.5 度"
+        "r10": 100,
+        "time": "10-16 23时",
+        "position": "中心位于北纬 11.6 度、东经 150.8 度"
       },
       "track": [
         {
@@ -160,68 +160,76 @@
           "lng": 151.5,
           "wind": 10,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-16 23时",
+          "lat": 11.6,
+          "lng": 150.8,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "10-17 08时",
-          "lat": 12.2,
-          "lng": 148.9,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-17 20时",
-          "lat": 12.7,
-          "lng": 146.5,
-          "wind": 12,
+          "t": "10-17 11时",
+          "lat": 12.3,
+          "lng": 148.1,
+          "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 08时",
-          "lat": 13.2,
-          "lng": 144.2,
+          "t": "10-17 23时",
+          "lat": 12.8,
+          "lng": 145.8,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 20时",
-          "lat": 13.8,
-          "lng": 142,
+          "t": "10-18 11时",
+          "lat": 13.3,
+          "lng": 143.6,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 08时",
-          "lat": 14.6,
-          "lng": 140,
+          "t": "10-18 23时",
+          "lat": 13.9,
+          "lng": 141.5,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 20时",
-          "lat": 15.4,
-          "lng": 137.8,
+          "t": "10-19 11时",
+          "lat": 14.8,
+          "lng": 139.4,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-20 20时",
-          "lat": 17.5,
-          "lng": 133.2,
+          "t": "10-19 23时",
+          "lat": 15.8,
+          "lng": 137.2,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-21 20时",
-          "lat": 19.8,
-          "lng": 128.8,
+          "t": "10-20 23时",
+          "lat": 17.8,
+          "lng": 132.5,
+          "wind": 17,
+          "strong": "超强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-21 23时",
+          "lat": 19.9,
+          "lng": 128.1,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
@@ -236,9 +244,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 95,
+    "total": 92,
     "counts": {
-      "暴雨": 59,
+      "暴雨": 56,
       "山洪灾害": 13,
       "地质灾害": 23
     },
@@ -246,8 +254,8 @@
       "province": "江西",
       "kind": "暴雨",
       "level": "orange",
-      "title": "江西省九江市武宁县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/36042341600000_20261016002710.html",
+      "title": "江西省九江市修水县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/36042441600000_20261016002840.html",
       "issuedAt": "2026/10/16 00:25"
     },
     "provinces": [
@@ -258,12 +266,12 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 24,
+        "count": 22,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省九江市武宁县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36042341600000_20261016002710.html",
+          "title": "江西省九江市修水县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36042441600000_20261016002840.html",
           "issuedAt": "2026/10/16 00:25"
         },
         "lat": 27.6,
@@ -276,7 +284,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 13,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "orange",
