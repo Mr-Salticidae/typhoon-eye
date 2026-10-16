@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16 11:45",
+  "updatedAt": "2026-10-16 12:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -36,8 +36,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 70 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 105 公里、强度差 1 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,8 +56,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-16 08时",
-            "windLevel": 9,
+            "time": "10-16 11时",
+            "windLevel": 10,
             "role": "verify"
           }
         ]
@@ -212,10 +212,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 91,
+    "total": 89,
     "counts": {
-      "暴雨": 85,
-      "山洪灾害": 1,
+      "暴雨": 82,
+      "山洪灾害": 2,
       "地质灾害": 5
     },
     "peak": {
@@ -234,7 +234,7 @@
         "kinds": {
           "暴雨": "red"
         },
-        "count": 32,
+        "count": 31,
         "top": {
           "kind": "暴雨",
           "level": "red",
@@ -272,13 +272,13 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
-          "title": "陕西省气象台发布山洪灾害黄色预警",
-          "url": "http://www.nmc.cn/publish/alarm/61000041600000_20261016102121.html",
-          "issuedAt": "2026/10/16 10:21"
+          "title": "陕西省渭南市气象台发布山洪灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61050041600000_20261016114127.html",
+          "issuedAt": "2026/10/16 11:41"
         },
         "lat": 35.2,
         "lng": 108.9
@@ -344,7 +344,7 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 8,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "blue",
