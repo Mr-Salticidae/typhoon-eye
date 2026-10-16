@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16 23:00",
+  "updatedAt": "2026-10-16 23:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -236,39 +236,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 96,
+    "total": 95,
     "counts": {
-      "暴雨": 60,
+      "暴雨": 59,
       "山洪灾害": 13,
       "地质灾害": 23
     },
     "peak": {
-      "province": "湖南",
+      "province": "江西",
       "kind": "暴雨",
-      "level": "red",
-      "title": "湖南省长沙市长沙县气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/43012141600000_20261015230808.html",
-      "issuedAt": "2026/10/15 23:07"
+      "level": "orange",
+      "title": "江西省九江市武宁县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/36042341600000_20261016002710.html",
+      "issuedAt": "2026/10/16 00:25"
     },
     "provinces": [
-      {
-        "province": "湖南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 14,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "湖南省长沙市长沙县气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43012141600000_20261015230808.html",
-          "issuedAt": "2026/10/15 23:07"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
       {
         "province": "江西",
         "maxLevel": "orange",
@@ -286,6 +268,24 @@
         },
         "lat": 27.6,
         "lng": 115.7
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 13,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省湘西土家族苗族自治州保靖县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43312541600000_20261016050322.html",
+          "issuedAt": "2026/10/16 05:03"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "云南",
