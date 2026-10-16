@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16 17:08",
+  "updatedAt": "2026-10-16 17:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 49 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 40 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-16 14时",
+            "time": "10-16 17时",
             "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-16 14时",
+            "time": "10-16 17时",
             "windLevel": 10,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 25,
         "pressure": 985,
         "moveDir": "西北西",
-        "moveSpeed": 22,
+        "moveSpeed": 23,
         "r7": 300,
         "r10": null,
-        "time": "10-16 14时",
-        "position": "中心位于北纬 11.4 度、东经 152.9 度"
+        "time": "10-16 17时",
+        "position": "中心位于北纬 11.4 度、东经 152.2 度"
       },
       "track": [
         {
@@ -144,68 +144,76 @@
           "lng": 152.9,
           "wind": 10,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-16 17时",
+          "lat": 11.4,
+          "lng": 152.2,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "10-17 02时",
-          "lat": 12.1,
-          "lng": 150.6,
+          "t": "10-17 05时",
+          "lat": 12.2,
+          "lng": 149.9,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-17 14时",
+          "t": "10-17 17时",
           "lat": 12.7,
-          "lng": 148,
+          "lng": 147.4,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 02时",
-          "lat": 13.2,
-          "lng": 145.6,
+          "t": "10-18 05时",
+          "lat": 13.1,
+          "lng": 145,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 14时",
-          "lat": 13.7,
-          "lng": 143.5,
+          "t": "10-18 17时",
+          "lat": 13.6,
+          "lng": 142.9,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 02时",
-          "lat": 14.4,
-          "lng": 141.4,
+          "t": "10-19 05时",
+          "lat": 14.3,
+          "lng": 140.7,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 14时",
-          "lat": 15.3,
-          "lng": 139.4,
+          "t": "10-19 17时",
+          "lat": 15.4,
+          "lng": 138.7,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-20 14时",
-          "lat": 17.6,
-          "lng": 134.7,
+          "t": "10-20 17时",
+          "lat": 17.4,
+          "lng": 134.4,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-21 14时",
-          "lat": 20,
-          "lng": 130.1,
+          "t": "10-21 17时",
+          "lat": 19.7,
+          "lng": 129.8,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
@@ -220,11 +228,11 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 83,
+    "total": 87,
     "counts": {
-      "暴雨": 76,
+      "暴雨": 78,
       "山洪灾害": 2,
-      "地质灾害": 5
+      "地质灾害": 7
     },
     "peak": {
       "province": "湖南",
@@ -264,8 +272,8 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "江西省九江市武宁县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/36042341600000_20261016002710.html",
+          "title": "江西省九江市修水县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/36042441600000_20261016002840.html",
           "issuedAt": "2026/10/16 00:25"
         },
         "lat": 27.6,
@@ -298,7 +306,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -308,6 +316,24 @@
         },
         "lat": 35.2,
         "lng": 108.9
+      },
+      {
+        "province": "山西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 4,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "山西省忻州市原平市气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/14098141600000_20261016171018.html",
+          "issuedAt": "2026/10/16 17:10"
+        },
+        "lat": 37.6,
+        "lng": 112.3
       },
       {
         "province": "湖北",
@@ -352,13 +378,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 11,
+        "count": 12,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省唐山市滦南县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13022441600000_20261016164547.html",
-          "issuedAt": "2026/10/16 16:45"
+          "title": "河北省唐山市迁西县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13022741600000_20261016172043.html",
+          "issuedAt": "2026/10/16 17:20"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -380,24 +406,6 @@
         },
         "lat": 29.8,
         "lng": 107.9
-      },
-      {
-        "province": "山西",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "地质灾害": "blue"
-        },
-        "count": 2,
-        "top": {
-          "kind": "地质灾害",
-          "level": "blue",
-          "title": "山西省晋城市气象台发布地质灾害蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/14050041600000_20261016165839.html",
-          "issuedAt": "2026/10/16 17:00"
-        },
-        "lat": 37.6,
-        "lng": 112.3
       },
       {
         "province": "四川",
