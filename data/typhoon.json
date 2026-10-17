@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17 20:30",
+  "updatedAt": "2026-10-17 21:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -36,8 +36,8 @@
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 77 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,8 +56,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-17 17时",
-            "windLevel": 14,
+            "time": "10-17 20时",
+            "windLevel": 15,
             "role": "verify"
           }
         ]
@@ -268,19 +268,19 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 134,
+    "total": 140,
     "counts": {
-      "暴雨": 99,
-      "山洪灾害": 16,
-      "地质灾害": 19
+      "暴雨": 105,
+      "山洪灾害": 15,
+      "地质灾害": 20
     },
     "peak": {
       "province": "山东",
       "kind": "暴雨",
       "level": "orange",
-      "title": "山东省临沂市沂南县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/37132141600000_20261017193318.html",
-      "issuedAt": "2026/10/17 19:30"
+      "title": "山东省日照市莒县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/37112241600000_20261017203037.html",
+      "issuedAt": "2026/10/17 20:29"
     },
     "provinces": [
       {
@@ -290,13 +290,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 26,
+        "count": 29,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "山东省临沂市沂南县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37132141600000_20261017193318.html",
-          "issuedAt": "2026/10/17 19:30"
+          "title": "山东省日照市莒县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37112241600000_20261017203037.html",
+          "issuedAt": "2026/10/17 20:29"
         },
         "lat": 36.4,
         "lng": 118.2
@@ -362,7 +362,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -372,6 +372,24 @@
         },
         "lat": 31.9,
         "lng": 117.2
+      },
+      {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省张家界市桑植县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43082241600000_20261017204553.html",
+          "issuedAt": "2026/10/17 20:45"
+        },
+        "lat": 27.6,
+        "lng": 111.7
       },
       {
         "province": "湖北",
@@ -431,24 +449,6 @@
         "lng": 101.5
       },
       {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省常德市石门县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43072641600000_20261017195746.html",
-          "issuedAt": "2026/10/17 19:57"
-        },
-        "lat": 27.6,
-        "lng": 111.7
-      },
-      {
         "province": "江苏",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -465,6 +465,24 @@
         },
         "lat": 33,
         "lng": 119.5
+      },
+      {
+        "province": "四川",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "四川省阿坝藏族羌族自治州汶川县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/51322141600000_20261017205134.html",
+          "issuedAt": "2026/10/17 20:51"
+        },
+        "lat": 30.6,
+        "lng": 102.9
       },
       {
         "province": "天津",
