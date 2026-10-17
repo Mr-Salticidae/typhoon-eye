@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18 05:31",
+  "updatedAt": "2026-10-18 06:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 87 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 0 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-18 02时",
+            "time": "10-18 05时",
             "windLevel": 15,
             "role": "verify"
           }
@@ -302,6 +302,24 @@
         "lng": 122.6
       },
       {
+        "province": "湖南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 14,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖南省张家界市桑植县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43082241600000_20261018052849.html",
+          "issuedAt": "2026/10/18 05:28"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "山东",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -318,24 +336,6 @@
         },
         "lat": 36.4,
         "lng": 118.2
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 12,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省张家界市慈利县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43082141600000_20261018051831.html",
-          "issuedAt": "2026/10/18 05:18"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "河南",
@@ -508,7 +508,7 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 4,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "blue",
@@ -536,24 +536,6 @@
         },
         "lat": 44,
         "lng": 113.9
-      },
-      {
-        "province": "新疆",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "新疆维吾尔自治区阿克苏地区温宿县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/65292241600000_20261017052934.html",
-          "issuedAt": "2026/10/17 05:29"
-        },
-        "lat": 41.1,
-        "lng": 85.3
       }
     ]
   },
@@ -566,7 +548,7 @@
       "endedAt": "2026-10-14 06:00",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 3
+      "daysSince": 4
     },
     {
       "code": "2628",
