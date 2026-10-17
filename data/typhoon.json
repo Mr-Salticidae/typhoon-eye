@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17 23:15",
+  "updatedAt": "2026-10-17 23:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 59 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-17 20时",
+            "time": "10-17 23时",
             "windLevel": 15,
             "role": "verify"
           }
@@ -268,9 +268,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 155,
+    "total": 166,
     "counts": {
-      "暴雨": 128,
+      "暴雨": 139,
       "山洪灾害": 7,
       "地质灾害": 20
     },
@@ -278,9 +278,9 @@
       "province": "辽宁",
       "kind": "暴雨",
       "level": "orange",
-      "title": "辽宁省葫芦岛市建昌县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/21142241600000_20261017224100.html",
-      "issuedAt": "2026/10/17 22:42"
+      "title": "辽宁省葫芦岛市绥中县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/21142141600000_20261017233900.html",
+      "issuedAt": "2026/10/17 23:39"
     },
     "provinces": [
       {
@@ -290,13 +290,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 33,
+        "count": 38,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "辽宁省葫芦岛市建昌县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21142241600000_20261017224100.html",
-          "issuedAt": "2026/10/17 22:42"
+          "title": "辽宁省葫芦岛市绥中县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21142141600000_20261017233900.html",
+          "issuedAt": "2026/10/17 23:39"
         },
         "lat": 41.8,
         "lng": 122.6
@@ -308,7 +308,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 25,
+        "count": 26,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -338,31 +338,13 @@
         "lng": 115.5
       },
       {
-        "province": "湖北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖北省荆州市松滋市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42108741600000_20261017230234.html",
-          "issuedAt": "2026/10/17 23:02"
-        },
-        "lat": 31,
-        "lng": 112.3
-      },
-      {
         "province": "河南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -372,6 +354,24 @@
         },
         "lat": 33.9,
         "lng": 113.6
+      },
+      {
+        "province": "湖北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 10,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖北省荆州市松滋市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42108741600000_20261017230234.html",
+          "issuedAt": "2026/10/17 23:02"
+        },
+        "lat": 31,
+        "lng": 112.3
       },
       {
         "province": "安徽",
@@ -392,6 +392,24 @@
         "lng": 117.2
       },
       {
+        "province": "湖南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 4,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖南省常德市澧县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43072341600000_20261017233030.html",
+          "issuedAt": "2026/10/17 23:30"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "四川",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -408,24 +426,6 @@
         },
         "lat": 30.6,
         "lng": 102.9
-      },
-      {
-        "province": "湖南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖南省张家界市桑植县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43082241600000_20261017204553.html",
-          "issuedAt": "2026/10/17 20:45"
-        },
-        "lat": 27.6,
-        "lng": 111.7
       },
       {
         "province": "山西",
@@ -491,13 +491,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 6,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "江苏省连云港市东海县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/32072241600000_20261017231035.html",
-          "issuedAt": "2026/10/17 23:10"
+          "title": "江苏省连云港市灌南县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/32072441600000_20261017232345.html",
+          "issuedAt": "2026/10/17 23:23"
         },
         "lat": 33,
         "lng": 119.5
