@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17 11:00",
+  "updatedAt": "2026-10-17 11:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "蔷琵",
       "enName": "CHAMPI",
       "code": "2630",
-      "level": "台风（13级）",
+      "level": "强台风（14级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 16 公里、强度差 1 级（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 66 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-17 08时",
-            "windLevel": 13,
+            "time": "10-17 11时",
+            "windLevel": 14,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-17 08时",
-            "windLevel": 13,
+            "time": "10-17 11时",
+            "windLevel": 14,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 13,
-        "windSpeed": 40,
-        "pressure": 960,
+        "windLevel": 14,
+        "windSpeed": 42,
+        "pressure": 955,
         "moveDir": "西北西",
-        "moveSpeed": 23,
+        "moveSpeed": 22,
         "r7": 350,
         "r10": 120,
-        "time": "10-17 08时",
-        "position": "中心位于北纬 12.3 度、东经 148.7 度"
+        "time": "10-17 11时",
+        "position": "中心位于北纬 12.5 度、东经 148.0 度"
       },
       "track": [
         {
@@ -131,14 +131,6 @@
           "phase": "past"
         },
         {
-          "t": "10-16 11时",
-          "lat": 11.5,
-          "lng": 153.6,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
           "t": "10-16 14时",
           "lat": 11.4,
           "lng": 152.9,
@@ -192,68 +184,76 @@
           "lng": 148.7,
           "wind": 13,
           "strong": "台风",
+          "phase": "past"
+        },
+        {
+          "t": "10-17 11时",
+          "lat": 12.5,
+          "lng": 148,
+          "wind": 14,
+          "strong": "强台风",
           "phase": "now"
         },
         {
-          "t": "10-17 20时",
+          "t": "10-17 23时",
           "lat": 13,
-          "lng": 146.4,
+          "lng": 145.7,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 08时",
+          "t": "10-18 11时",
           "lat": 13.4,
-          "lng": 144,
+          "lng": 143.5,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-18 20时",
-          "lat": 13.9,
-          "lng": 141.9,
+          "t": "10-18 23时",
+          "lat": 14.1,
+          "lng": 141.2,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 08时",
-          "lat": 14.7,
-          "lng": 139.9,
+          "t": "10-19 11时",
+          "lat": 14.9,
+          "lng": 139.4,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-19 20时",
-          "lat": 15.8,
-          "lng": 137.6,
+          "t": "10-19 23时",
+          "lat": 16,
+          "lng": 137.3,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-20 08时",
-          "lat": 16.8,
-          "lng": 135.4,
+          "t": "10-20 11时",
+          "lat": 17.1,
+          "lng": 135,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-21 08时",
-          "lat": 18.9,
-          "lng": 130.7,
+          "t": "10-21 11时",
+          "lat": 19.5,
+          "lng": 130,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-22 08时",
-          "lat": 20.8,
-          "lng": 127.3,
+          "t": "10-22 11时",
+          "lat": 21,
+          "lng": 127,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
@@ -268,19 +268,19 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 158,
+    "total": 164,
     "counts": {
-      "暴雨": 112,
+      "暴雨": 120,
       "山洪灾害": 19,
-      "地质灾害": 27
+      "地质灾害": 25
     },
     "peak": {
       "province": "河南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "河南省商丘市永城市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/41148141600000_20261017102741.html",
-      "issuedAt": "2026/10/17 10:25"
+      "title": "河南省南阳市社旗县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/41132741600000_20261017111506.html",
+      "issuedAt": "2026/10/17 11:15"
     },
     "provinces": [
       {
@@ -290,36 +290,16 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 38,
+        "count": 43,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "河南省商丘市永城市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41148141600000_20261017102741.html",
-          "issuedAt": "2026/10/17 10:25"
+          "title": "河南省南阳市社旗县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41132741600000_20261017111506.html",
+          "issuedAt": "2026/10/17 11:15"
         },
         "lat": 33.9,
         "lng": 113.6
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 7,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "陕西省安康市镇坪县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61092741600000_20261017084014.html",
-          "issuedAt": "2026/10/17 08:40"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "湖北",
@@ -338,6 +318,25 @@
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "yellow"
+        },
+        "count": 5,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "陕西省安康市镇坪县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61092741600000_20261017084014.html",
+          "issuedAt": "2026/10/17 08:40"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "四川",
@@ -421,7 +420,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 10,
+        "count": 11,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -457,7 +456,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 4,
+        "count": 5,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -476,7 +475,7 @@
           "暴雨": "blue",
           "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
