@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18 00:15",
+  "updatedAt": "2026-10-18 00:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -268,21 +268,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 148,
+    "total": 154,
     "counts": {
-      "暴雨": 121,
+      "暴雨": 127,
       "山洪灾害": 7,
       "地质灾害": 20
     },
     "peak": {
-      "province": "辽宁",
+      "province": "湖北",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "辽宁省朝阳市朝阳县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/21132141600000_20261017235000.html",
-      "issuedAt": "2026/10/17 23:51"
+      "level": "red",
+      "title": "湖北省孝感市大悟县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/42092241600000_20261018003725.html",
+      "issuedAt": "2026/10/18 00:37"
     },
     "provinces": [
+      {
+        "province": "湖北",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 13,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "湖北省孝感市大悟县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42092241600000_20261018003725.html",
+          "issuedAt": "2026/10/18 00:37"
+        },
+        "lat": 31,
+        "lng": 112.3
+      },
       {
         "province": "辽宁",
         "maxLevel": "orange",
@@ -290,13 +308,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 39,
+        "count": 42,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "辽宁省朝阳市朝阳县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/21132141600000_20261017235000.html",
-          "issuedAt": "2026/10/17 23:51"
+          "title": "辽宁省葫芦岛市南票区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/21140441600000_20261018003600.html",
+          "issuedAt": "2026/10/18 00:37"
         },
         "lat": 41.8,
         "lng": 122.6
@@ -338,24 +356,6 @@
         "lng": 115.5
       },
       {
-        "province": "湖北",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 10,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "湖北省荆州市松滋市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42108741600000_20261017230234.html",
-          "issuedAt": "2026/10/17 23:02"
-        },
-        "lat": 31,
-        "lng": 112.3
-      },
-      {
         "province": "河南",
         "maxLevel": "orange",
         "floodLevel": "orange",
@@ -366,9 +366,9 @@
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "河南省信阳市新县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41152341600000_20261017225000.html",
-          "issuedAt": "2026/10/17 22:50"
+          "title": "河南省信阳市光山县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41152241600000_20261018003001.html",
+          "issuedAt": "2026/10/18 00:30"
         },
         "lat": 33.9,
         "lng": 113.6
