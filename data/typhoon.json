@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17 14:30",
+  "updatedAt": "2026-10-17 15:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 43 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 22 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-17 11时",
+            "time": "10-17 14时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -268,9 +268,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 161,
+    "total": 174,
     "counts": {
-      "暴雨": 117,
+      "暴雨": 130,
       "山洪灾害": 18,
       "地质灾害": 26
     },
@@ -290,7 +290,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 45,
+        "count": 47,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -329,7 +329,7 @@
           "暴雨": "yellow",
           "山洪灾害": "blue"
         },
-        "count": 23,
+        "count": 28,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -347,13 +347,13 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 9,
+        "count": 13,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "山东省菏泽市成武县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/37172341600000_20261017135224.html",
-          "issuedAt": "2026/10/17 13:49"
+          "title": "山东省菏泽市单县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/37172241600000_20261017145341.html",
+          "issuedAt": "2026/10/17 14:53"
         },
         "lat": 36.4,
         "lng": 118.2
@@ -469,6 +469,24 @@
         "lng": 112.3
       },
       {
+        "province": "内蒙古",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "内蒙古自治区锡林郭勒盟正蓝旗气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/15253041600000_20261017144713.html",
+          "issuedAt": "2026/10/17 14:47"
+        },
+        "lat": 44,
+        "lng": 113.9
+      },
+      {
         "province": "安徽",
         "maxLevel": "blue",
         "floodLevel": "blue",
@@ -539,24 +557,6 @@
         },
         "lat": 41.1,
         "lng": 85.3
-      },
-      {
-        "province": "内蒙古",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "内蒙古自治区包头市气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/15020041600000_20261017045034.html",
-          "issuedAt": "2026/10/17 04:50"
-        },
-        "lat": 44,
-        "lng": 113.9
       }
     ]
   },
