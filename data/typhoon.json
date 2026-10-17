@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17 08:30",
+  "updatedAt": "2026-10-17 09:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 100 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-17 05时",
+            "time": "10-17 08时",
             "windLevel": 12,
             "role": "verify"
           }
@@ -260,19 +260,19 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 116,
+    "total": 128,
     "counts": {
-      "暴雨": 79,
-      "山洪灾害": 13,
-      "地质灾害": 24
+      "暴雨": 89,
+      "山洪灾害": 14,
+      "地质灾害": 25
     },
     "peak": {
       "province": "河南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "河南省驻马店市平舆县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/41172341600000_20261017082238.html",
-      "issuedAt": "2026/10/17 08:21"
+      "title": "河南省周口市鹿邑县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/41162841600000_20261017084600.html",
+      "issuedAt": "2026/10/17 08:45"
     },
     "provinces": [
       {
@@ -282,16 +282,36 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 27,
+        "count": 32,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "河南省驻马店市平舆县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41172341600000_20261017082238.html",
-          "issuedAt": "2026/10/17 08:21"
+          "title": "河南省周口市鹿邑县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41162841600000_20261017084600.html",
+          "issuedAt": "2026/10/17 08:45"
         },
         "lat": 33.9,
         "lng": 113.6
+      },
+      {
+        "province": "陕西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "山洪灾害": "yellow",
+          "地质灾害": "yellow"
+        },
+        "count": 9,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "陕西省安康市镇坪县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/61092741600000_20261017084014.html",
+          "issuedAt": "2026/10/17 08:40"
+        },
+        "lat": 35.2,
+        "lng": 108.9
       },
       {
         "province": "湖北",
@@ -356,7 +376,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 40,
+        "count": 44,
         "top": {
           "kind": "山洪灾害",
           "level": "yellow",
@@ -366,26 +386,6 @@
         },
         "lat": 37.6,
         "lng": 112.3
-      },
-      {
-        "province": "陕西",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "山洪灾害": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 9,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "陕西省安康市镇坪县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/61092741600000_20261017074041.html",
-          "issuedAt": "2026/10/17 07:40"
-        },
-        "lat": 35.2,
-        "lng": 108.9
       },
       {
         "province": "宁夏",
@@ -432,13 +432,13 @@
           "暴雨": "blue",
           "山洪灾害": "blue"
         },
-        "count": 13,
+        "count": 14,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "河北省唐山市迁西县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/13022741600000_20261016172043.html",
-          "issuedAt": "2026/10/16 17:20"
+          "title": "河北省承德市兴隆县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/13082241600000_20261017084601.html",
+          "issuedAt": "2026/10/17 08:46"
         },
         "lat": 38.5,
         "lng": 115.5
@@ -450,13 +450,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 7,
+        "count": 9,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省亳州市利辛县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34162341600000_20261017080844.html",
-          "issuedAt": "2026/10/17 08:08"
+          "title": "安徽省淮北市濉溪县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34062141600000_20261017084218.html",
+          "issuedAt": "2026/10/17 08:42"
         },
         "lat": 31.9,
         "lng": 117.2
