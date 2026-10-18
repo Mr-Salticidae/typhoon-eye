@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19 07:15",
+  "updatedAt": "2026-10-19 07:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -268,20 +268,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 36,
+    "total": 37,
     "counts": {
-      "暴雨": 34,
+      "暴雨": 35,
       "地质灾害": 2
     },
     "peak": {
-      "province": "湖北",
+      "province": "云南",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "湖北省直辖县级行政区划神农架林区气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/42902141600000_20261019055937.html",
-      "issuedAt": "2026/10/19 05:59"
+      "level": "red",
+      "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53082841600000_20261019073557.html",
+      "issuedAt": "2026/10/19 07:34"
     },
     "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red",
+          "地质灾害": "yellow"
+        },
+        "count": 6,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20261019073557.html",
+          "issuedAt": "2026/10/19 07:34"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
       {
         "province": "湖北",
         "maxLevel": "orange",
@@ -301,32 +320,13 @@
         "lng": 112.3
       },
       {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange",
-          "地质灾害": "yellow"
-        },
-        "count": 6,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20261019064606.html",
-          "issuedAt": "2026/10/19 06:44"
-        },
-        "lat": 25,
-        "lng": 101.5
-      },
-      {
         "province": "安徽",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 14,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
