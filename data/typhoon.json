@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20 02:30",
+  "updatedAt": "2026-10-20 03:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 63 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-19 23时",
+            "time": "10-20 02时",
             "windLevel": 16,
             "role": "verify"
           }
@@ -268,9 +268,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 12,
+    "total": 13,
     "counts": {
-      "暴雨": 7,
+      "暴雨": 8,
       "地质灾害": 5
     },
     "peak": {
@@ -307,16 +307,34 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "湖北省黄冈市红安县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42112241600000_20261020012519.html",
-          "issuedAt": "2026/10/20 01:25"
+          "title": "湖北省武汉市黄陂区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42011641600000_20261020023244.html",
+          "issuedAt": "2026/10/20 02:32"
         },
         "lat": 31,
         "lng": 112.3
+      },
+      {
+        "province": "河南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "河南省信阳市商城县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/41152441600000_20261020025230.html",
+          "issuedAt": "2026/10/20 02:52"
+        },
+        "lat": 33.9,
+        "lng": 113.6
       },
       {
         "province": "安徽",
@@ -335,24 +353,6 @@
         },
         "lat": 31.9,
         "lng": 117.2
-      },
-      {
-        "province": "河南",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "河南省信阳市商城县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/41152441600000_20261019232056.html",
-          "issuedAt": "2026/10/19 23:20"
-        },
-        "lat": 33.9,
-        "lng": 113.6
       }
     ]
   },
