@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20 06:30",
+  "updatedAt": "2026-10-20 07:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -268,20 +268,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 27,
+    "total": 30,
     "counts": {
-      "暴雨": 22,
+      "暴雨": 25,
       "地质灾害": 5
     },
     "peak": {
-      "province": "云南",
-      "kind": "地质灾害",
+      "province": "湖北",
+      "kind": "暴雨",
       "level": "orange",
-      "title": "云南省普洱市澜沧拉祜族自治县气象台发布地质灾害橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53082841600000_20261019082224.html",
-      "issuedAt": "2026/10/19 08:20"
+      "title": "湖北省荆门市钟祥市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/42088141600000_20261020062951.html",
+      "issuedAt": "2026/10/20 06:29"
     },
     "provinces": [
+      {
+        "province": "湖北",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 19,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "湖北省荆门市钟祥市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42088141600000_20261020062951.html",
+          "issuedAt": "2026/10/20 06:29"
+        },
+        "lat": 31,
+        "lng": 112.3
+      },
       {
         "province": "云南",
         "maxLevel": "orange",
@@ -300,24 +318,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "湖北",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 17,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖北省荆门市京山市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/42088241600000_20261020055954.html",
-          "issuedAt": "2026/10/20 05:59"
-        },
-        "lat": 31,
-        "lng": 112.3
       },
       {
         "province": "河南",
@@ -354,6 +354,24 @@
         },
         "lat": 31.9,
         "lng": 117.2
+      },
+      {
+        "province": "重庆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "重庆市县巫山县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/50023741600000_20261020063806.html",
+          "issuedAt": "2026/10/20 06:38"
+        },
+        "lat": 29.8,
+        "lng": 107.9
       }
     ]
   },
