@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21 01:00",
+  "updatedAt": "2026-10-21 01:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -268,9 +268,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 3,
+    "total": 6,
     "counts": {
-      "暴雨": 1,
+      "暴雨": 4,
       "地质灾害": 2
     },
     "peak": {
@@ -305,18 +305,37 @@
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
+          "暴雨": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 2,
+        "count": 3,
         "top": {
-          "kind": "地质灾害",
+          "kind": "暴雨",
           "level": "yellow",
-          "title": "云南省普洱市西盟佤族自治县气象台发布地质灾害黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082941600000_20261020094051.html",
-          "issuedAt": "2026/10/20 09:37"
+          "title": "云南省曲靖市富源县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53032541600000_20261021011524.html",
+          "issuedAt": "2026/10/21 01:11"
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "贵州",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "贵州省黔西南布依族苗族自治州兴义市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52230141600000_20261021012612.html",
+          "issuedAt": "2026/10/21 01:26"
+        },
+        "lat": 26.8,
+        "lng": 106.9
       }
     ]
   },
