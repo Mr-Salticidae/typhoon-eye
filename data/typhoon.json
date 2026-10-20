@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20 21:31",
+  "updatedAt": "2026-10-20 22:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": false,
-      "error": "The operation was aborted due to timeout"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "zj",
@@ -30,21 +30,28 @@
       "name": "蔷琵",
       "enName": "CHAMPI",
       "code": "2630",
-      "level": "超强台风（18级）",
+      "level": "超强台风（17级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "浙江台风路径系统",
+      "trackSource": "中央气象台",
       "verification": {
-        "status": "divergent",
-        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 11 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "status": "consistent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "10-20 20时",
+            "windLevel": 17,
+            "role": "primary"
+          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "10-20 20时",
             "windLevel": 18,
-            "role": "primary"
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -56,7 +63,7 @@
         ]
       },
       "now": {
-        "windLevel": 18,
+        "windLevel": 17,
         "windSpeed": 65,
         "pressure": 910,
         "moveDir": "西北西",
@@ -127,7 +134,7 @@
           "t": "10-18 08时",
           "lat": 13.1,
           "lng": 143.6,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -151,7 +158,7 @@
           "t": "10-19 14时",
           "lat": 14.3,
           "lng": 138.5,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -159,7 +166,7 @@
           "t": "10-19 23时",
           "lat": 15.1,
           "lng": 137.2,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -167,7 +174,7 @@
           "t": "10-20 08时",
           "lat": 15.9,
           "lng": 135.6,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -175,7 +182,7 @@
           "t": "10-20 17时",
           "lat": 16.7,
           "lng": 133.8,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -183,7 +190,7 @@
           "t": "10-20 20时",
           "lat": 17,
           "lng": 133.1,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "now"
         },
@@ -191,7 +198,7 @@
           "t": "10-21 08时",
           "lat": 18.1,
           "lng": 130.6,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
@@ -199,7 +206,7 @@
           "t": "10-21 20时",
           "lat": 19.4,
           "lng": 128.6,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
@@ -207,7 +214,7 @@
           "t": "10-22 08时",
           "lat": 20.5,
           "lng": 126.8,
-          "wind": 18,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
