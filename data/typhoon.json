@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21 02:30",
+  "updatedAt": "2026-10-21 03:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 67 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 21 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-20 23时",
+            "time": "10-21 02时",
             "windLevel": 17,
             "role": "verify"
           }
@@ -274,14 +274,33 @@
       "地质灾害": 2
     },
     "peak": {
-      "province": "贵州",
+      "province": "云南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "贵州省黔西南布依族苗族自治州兴仁市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/52230241600000_20261021021717.html",
-      "issuedAt": "2026/10/21 02:17"
+      "title": "云南省曲靖市富源县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53032541600000_20261021024811.html",
+      "issuedAt": "2026/10/21 02:46"
     },
     "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "yellow"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省曲靖市富源县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53032541600000_20261021024811.html",
+          "issuedAt": "2026/10/21 02:46"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
       {
         "province": "贵州",
         "maxLevel": "orange",
@@ -317,25 +336,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "云南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow",
-          "地质灾害": "yellow"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "云南省曲靖市富源县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53032541600000_20261021011524.html",
-          "issuedAt": "2026/10/21 01:11"
-        },
-        "lat": 25,
-        "lng": 101.5
       }
     ]
   },
