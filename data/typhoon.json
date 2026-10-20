@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20 16:15",
+  "updatedAt": "2026-10-20 16:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -268,20 +268,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 5,
+    "total": 6,
     "counts": {
-      "暴雨": 3,
+      "暴雨": 4,
       "地质灾害": 2
     },
     "peak": {
-      "province": "广东",
+      "province": "海南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/44082541600000_20261020153617.html",
-      "issuedAt": "2026/10/20 15:33"
+      "title": "海南省文昌市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/46900541600000_20261020163017.html",
+      "issuedAt": "2026/10/20 16:30"
     },
     "provinces": [
+      {
+        "province": "海南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "海南省文昌市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46900541600000_20261020163017.html",
+          "issuedAt": "2026/10/20 16:30"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
       {
         "province": "广东",
         "maxLevel": "orange",
@@ -299,24 +317,6 @@
         },
         "lat": 23.4,
         "lng": 113.4
-      },
-      {
-        "province": "海南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "海南省海口市气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46010041600000_20261020144115.html",
-          "issuedAt": "2026/10/20 14:41"
-        },
-        "lat": 19.2,
-        "lng": 109.7
       },
       {
         "province": "云南",
