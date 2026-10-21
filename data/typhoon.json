@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21 23:45",
+  "updatedAt": "2026-10-22 00:17",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": true,
-      "count": 1
+      "ok": false,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "zj",
@@ -30,28 +30,21 @@
       "name": "蔷琵",
       "enName": "CHAMPI",
       "code": "2630",
-      "level": "超强台风（17级）",
+      "level": "超强台风（18级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "中央气象台",
+      "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度差 1 级；日本气象厅定位相差 0 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 0 公里、强度差 1 级（2 源交叉校验一致）",
         "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "10-21 23时",
-            "windLevel": 17,
-            "role": "primary"
-          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "10-21 23时",
             "windLevel": 18,
-            "role": "verify"
+            "role": "primary"
           },
           {
             "id": "jma",
@@ -63,10 +56,10 @@
         ]
       },
       "now": {
-        "windLevel": 17,
+        "windLevel": 18,
         "windSpeed": 65,
         "pressure": 910,
-        "moveDir": "西北",
+        "moveDir": "北西",
         "moveSpeed": 17,
         "r7": 480,
         "r10": 180,
@@ -126,7 +119,7 @@
           "t": "10-18 11时",
           "lat": 13.1,
           "lng": 142.9,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -142,7 +135,7 @@
           "t": "10-19 11时",
           "lat": 14.3,
           "lng": 139,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -150,7 +143,7 @@
           "t": "10-19 23时",
           "lat": 15.1,
           "lng": 137.2,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -158,7 +151,7 @@
           "t": "10-20 08时",
           "lat": 15.9,
           "lng": 135.6,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -166,7 +159,7 @@
           "t": "10-20 20时",
           "lat": 17,
           "lng": 133.1,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -174,7 +167,7 @@
           "t": "10-21 08时",
           "lat": 18,
           "lng": 130.3,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -182,7 +175,7 @@
           "t": "10-21 20时",
           "lat": 19.3,
           "lng": 128,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -190,7 +183,7 @@
           "t": "10-21 23时",
           "lat": 19.5,
           "lng": 127.4,
-          "wind": 17,
+          "wind": 18,
           "strong": "超强台风",
           "phase": "now"
         },
@@ -267,38 +260,37 @@
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
-    "partial": null,
-    "total": 13,
+    "partial": [
+      "暴雨",
+      "地质灾害"
+    ],
+    "total": 1,
     "counts": {
-      "暴雨": 6,
-      "山洪风险": 1,
-      "地质灾害": 6
+      "山洪风险": 1
     },
     "peak": {
       "province": "云南",
-      "kind": "暴雨",
-      "level": "orange",
-      "title": "云南省红河哈尼族彝族自治州元阳县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53252841600000_20261021231126.html",
-      "issuedAt": "2026/10/21 23:09"
+      "kind": "山洪风险",
+      "level": "yellow",
+      "title": "云南省红河哈尼族彝族自治州元阳县气象台发布山洪风险黄色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53252841600000_20261021233203.html",
+      "issuedAt": "2026/10/21 23:30"
     },
     "provinces": [
       {
         "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
         "kinds": {
-          "暴雨": "orange",
-          "山洪风险": "yellow",
-          "地质灾害": "yellow"
+          "山洪风险": "yellow"
         },
-        "count": 13,
+        "count": 1,
         "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省红河哈尼族彝族自治州元阳县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53252841600000_20261021231126.html",
-          "issuedAt": "2026/10/21 23:09"
+          "kind": "山洪风险",
+          "level": "yellow",
+          "title": "云南省红河哈尼族彝族自治州元阳县气象台发布山洪风险黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53252841600000_20261021233203.html",
+          "issuedAt": "2026/10/21 23:30"
         },
         "lat": 25,
         "lng": 101.5
