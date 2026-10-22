@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23 07:15",
+  "updatedAt": "2026-10-23 07:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-23 06时",
+            "time": "10-23 07时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -289,7 +289,7 @@
           }
         ],
         "floodLevel": null,
-        "asOf": "2026-10-23 07:15",
+        "asOf": "2026-10-23 07:45",
         "maxLevel": "orange",
         "note": null
       },
@@ -337,18 +337,18 @@
       },
       {
         "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
         "kinds": {
-          "地质灾害": "orange"
+          "地质灾害": "yellow"
         },
         "count": 2,
         "top": {
           "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261022074340.html",
-          "issuedAt": "2026/10/22 07:41"
+          "level": "yellow",
+          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261023074113.html",
+          "issuedAt": "2026/10/23 07:39"
         },
         "lat": 25,
         "lng": 101.5
