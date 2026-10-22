@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22 18:00",
+  "updatedAt": "2026-10-22 18:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-22 17时",
+            "time": "10-22 18时",
             "windLevel": 15,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-22 17时",
+            "time": "10-22 18时",
             "windLevel": 15,
             "role": "verify"
           },
@@ -66,12 +66,12 @@
         "windLevel": 15,
         "windSpeed": 50,
         "pressure": 940,
-        "moveDir": "西北",
+        "moveDir": "北北西",
         "moveSpeed": 17,
         "r7": 500,
         "r10": 210,
-        "time": "10-22 17时",
-        "position": "中心位于北纬 21.0 度、东经 125.2 度"
+        "time": "10-22 18时",
+        "position": "中心位于北纬 21.1 度、东经 125.1 度"
       },
       "track": [
         {
@@ -107,11 +107,11 @@
           "phase": "past"
         },
         {
-          "t": "10-17 17时",
-          "lat": 12.6,
-          "lng": 146.9,
-          "wind": 15,
-          "strong": "强台风",
+          "t": "10-17 20时",
+          "lat": 12.7,
+          "lng": 146.2,
+          "wind": 16,
+          "strong": "超强台风",
           "phase": "past"
         },
         {
@@ -131,17 +131,17 @@
           "phase": "past"
         },
         {
-          "t": "10-19 08时",
-          "lat": 14,
-          "lng": 139.4,
+          "t": "10-19 11时",
+          "lat": 14.3,
+          "lng": 139,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-19 20时",
-          "lat": 14.8,
-          "lng": 137.7,
+          "t": "10-19 23时",
+          "lat": 15.1,
+          "lng": 137.2,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
@@ -155,33 +155,25 @@
           "phase": "past"
         },
         {
-          "t": "10-20 23时",
-          "lat": 17.2,
-          "lng": 132.3,
+          "t": "10-21 02时",
+          "lat": 17.4,
+          "lng": 131.6,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-21 11时",
-          "lat": 18.3,
-          "lng": 129.6,
+          "t": "10-21 14时",
+          "lat": 18.6,
+          "lng": 129,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-22 02时",
-          "lat": 19.8,
-          "lng": 127,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-22 14时",
-          "lat": 20.8,
-          "lng": 125.4,
+          "t": "10-22 05时",
+          "lat": 20.1,
+          "lng": 126.5,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
@@ -192,60 +184,68 @@
           "lng": 125.2,
           "wind": 15,
           "strong": "强台风",
+          "phase": "past"
+        },
+        {
+          "t": "10-22 18时",
+          "lat": 21.1,
+          "lng": 125.1,
+          "wind": 15,
+          "strong": "强台风",
           "phase": "now"
         },
         {
-          "t": "10-23 05时",
-          "lat": 22.5,
-          "lng": 124.1,
+          "t": "10-23 06时",
+          "lat": 22.6333,
+          "lng": 123.9917,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-23 17时",
-          "lat": 24.1,
-          "lng": 122.8,
+          "t": "10-23 18时",
+          "lat": 24.2,
+          "lng": 122.7833,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-24 05时",
-          "lat": 25.3,
-          "lng": 122.6,
+          "t": "10-24 06时",
+          "lat": 25.4667,
+          "lng": 122.6167,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-24 17时",
-          "lat": 27.3,
-          "lng": 122.8,
+          "t": "10-24 18时",
+          "lat": 27.475,
+          "lng": 122.8917,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 05时",
-          "lat": 29.4,
-          "lng": 123.9,
+          "t": "10-25 06时",
+          "lat": 29.55,
+          "lng": 124.0917,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 17时",
-          "lat": 31.2,
-          "lng": 126.2,
+          "t": "10-25 18时",
+          "lat": 31.2958,
+          "lng": 126.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-26 17时",
-          "lat": 33.5,
-          "lng": 133.4,
+          "t": "10-26 18时",
+          "lat": 33.5958,
+          "lng": 133.7,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -255,26 +255,26 @@
         "provinces": [
           {
             "province": "福建",
-            "maxLevel": "yellow",
+            "maxLevel": "orange",
             "floodLevel": null,
             "kinds": {
-              "台风": "yellow"
+              "台风": "orange"
             },
             "count": 13,
             "top": {
               "kind": "台风",
-              "level": "yellow",
-              "title": "福建省宁德市福鼎市气象台发布台风黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35098241600000_20261022162900.html",
-              "issuedAt": "2026/10/22 16:29"
+              "level": "orange",
+              "title": "福建省莆田市秀屿区气象台发布台风橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35030541600000_20261022180200.html",
+              "issuedAt": "2026/10/22 18:02"
             },
             "via": "路径邻近",
-            "distKm": 440
+            "distKm": 438
           }
         ],
         "floodLevel": null,
-        "asOf": "2026-10-22 18:00",
-        "maxLevel": "yellow",
+        "asOf": "2026-10-22 18:30",
+        "maxLevel": "orange",
         "note": null
       },
       "affected": [
@@ -294,14 +294,32 @@
       "地质灾害": 5
     },
     "peak": {
-      "province": "云南",
-      "kind": "地质灾害",
+      "province": "福建",
+      "kind": "台风",
       "level": "orange",
-      "title": "云南省普洱市江城哈尼族彝族自治县气象台发布地质灾害橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261022074340.html",
-      "issuedAt": "2026/10/22 07:41"
+      "title": "福建省莆田市秀屿区气象台发布台风橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/35030541600000_20261022180200.html",
+      "issuedAt": "2026/10/22 18:02"
     },
     "provinces": [
+      {
+        "province": "福建",
+        "maxLevel": "orange",
+        "floodLevel": null,
+        "kinds": {
+          "台风": "orange"
+        },
+        "count": 13,
+        "top": {
+          "kind": "台风",
+          "level": "orange",
+          "title": "福建省莆田市秀屿区气象台发布台风橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35030541600000_20261022180200.html",
+          "issuedAt": "2026/10/22 18:02"
+        },
+        "lat": 26.1,
+        "lng": 118.3
+      },
       {
         "province": "云南",
         "maxLevel": "orange",
@@ -320,24 +338,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "福建",
-        "maxLevel": "yellow",
-        "floodLevel": null,
-        "kinds": {
-          "台风": "yellow"
-        },
-        "count": 13,
-        "top": {
-          "kind": "台风",
-          "level": "yellow",
-          "title": "福建省宁德市福鼎市气象台发布台风黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35098241600000_20261022162900.html",
-          "issuedAt": "2026/10/22 16:29"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       }
     ]
   },
