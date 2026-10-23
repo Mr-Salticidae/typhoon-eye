@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23 11:30",
+  "updatedAt": "2026-10-23 12:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 24 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 15 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,14 +49,14 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-23 10时",
+            "time": "10-23 11时",
             "windLevel": 14,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-23 10时",
+            "time": "10-23 11时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -204,7 +204,7 @@
             "kinds": {
               "台风": "orange"
             },
-            "count": 21,
+            "count": 22,
             "top": {
               "kind": "台风",
               "level": "orange",
@@ -222,13 +222,13 @@
             "kinds": {
               "台风": "yellow"
             },
-            "count": 15,
+            "count": 17,
             "top": {
               "kind": "台风",
               "level": "yellow",
-              "title": "浙江省温州市气象台发布台风黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/33030041600000_20261023111427.html",
-              "issuedAt": "2026/10/23 11:11"
+              "title": "浙江省台州市玉环市气象台发布台风黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33108341600000_20261023115558.html",
+              "issuedAt": "2026/10/23 11:55"
             },
             "via": "台风预警",
             "distKm": 758
@@ -253,7 +253,7 @@
           }
         ],
         "floodLevel": null,
-        "asOf": "2026-10-23 11:30",
+        "asOf": "2026-10-23 12:00",
         "maxLevel": "orange",
         "note": null
       },
@@ -269,9 +269,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 44,
+    "total": 47,
     "counts": {
-      "台风": 42,
+      "台风": 45,
       "地质灾害": 2
     },
     "peak": {
@@ -290,7 +290,7 @@
         "kinds": {
           "台风": "orange"
         },
-        "count": 21,
+        "count": 22,
         "top": {
           "kind": "台风",
           "level": "orange",
@@ -308,13 +308,13 @@
         "kinds": {
           "台风": "yellow"
         },
-        "count": 15,
+        "count": 17,
         "top": {
           "kind": "台风",
           "level": "yellow",
-          "title": "浙江省温州市气象台发布台风黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33030041600000_20261023111427.html",
-          "issuedAt": "2026/10/23 11:11"
+          "title": "浙江省台州市玉环市气象台发布台风黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33108341600000_20261023115558.html",
+          "issuedAt": "2026/10/23 11:55"
         },
         "lat": 29.2,
         "lng": 120.2
