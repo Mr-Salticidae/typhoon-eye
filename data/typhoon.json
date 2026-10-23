@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24 02:15",
+  "updatedAt": "2026-10-24 02:40",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 45 公里、强度一致（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 54 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-24 01时",
+            "time": "10-24 02时",
             "windLevel": 13,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-24 01时",
+            "time": "10-24 02时",
             "windLevel": 13,
             "role": "verify"
           },
@@ -66,12 +66,12 @@
         "windLevel": 13,
         "windSpeed": 40,
         "pressure": 960,
-        "moveDir": "0",
-        "moveSpeed": 0,
+        "moveDir": "北",
+        "moveSpeed": 14,
         "r7": 500,
         "r10": 210,
-        "time": "10-24 01时",
-        "position": "中心位于北纬 24.7 度、东经 122.0 度"
+        "time": "10-24 02时",
+        "position": "中心位于北纬 24.6 度、东经 122.0 度"
       },
       "track": [
         {
@@ -99,10 +99,10 @@
           "phase": "past"
         },
         {
-          "t": "10-18 02时",
-          "lat": 13.1,
-          "lng": 144.9,
-          "wind": 16,
+          "t": "10-18 05时",
+          "lat": 13,
+          "lng": 144.1,
+          "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -131,25 +131,25 @@
           "phase": "past"
         },
         {
-          "t": "10-21 11时",
-          "lat": 18.3,
-          "lng": 129.6,
+          "t": "10-21 14时",
+          "lat": 18.6,
+          "lng": 129,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-22 08时",
-          "lat": 20.3,
-          "lng": 126.1,
+          "t": "10-22 11时",
+          "lat": 20.6,
+          "lng": 125.8,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-22 21时",
-          "lat": 21.2,
-          "lng": 124.9,
+          "t": "10-22 22时",
+          "lat": 21.3,
+          "lng": 124.8,
           "wind": 15,
           "strong": "强台风",
           "phase": "past"
@@ -163,27 +163,19 @@
           "phase": "past"
         },
         {
-          "t": "10-23 10时",
-          "lat": 22.9,
-          "lng": 123.7,
+          "t": "10-23 11时",
+          "lat": 23.1,
+          "lng": 123.6,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "10-23 17时",
-          "lat": 24.2,
+          "t": "10-23 18时",
+          "lat": 24.3,
           "lng": 123.1,
           "wind": 14,
           "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-24 00时",
-          "lat": 24.8,
-          "lng": 122.1,
-          "wind": 13,
-          "strong": "台风",
           "phase": "past"
         },
         {
@@ -192,68 +184,68 @@
           "lng": 122,
           "wind": 13,
           "strong": "台风",
+          "phase": "past"
+        },
+        {
+          "t": "10-24 02时",
+          "lat": 24.6,
+          "lng": 122,
+          "wind": 13,
+          "strong": "台风",
           "phase": "now"
         },
         {
-          "t": "10-24 07时",
-          "lat": 24.9333,
-          "lng": 121.9333,
+          "t": "10-24 08时",
+          "lat": 24.2,
+          "lng": 122.2,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-24 13时",
-          "lat": 25.7333,
-          "lng": 122.0333,
+          "t": "10-24 14时",
+          "lat": 26,
+          "lng": 122.2,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "10-24 19时",
-          "lat": 26.7333,
-          "lng": 122.2333,
-          "wind": 12,
-          "strong": "台风",
+          "t": "10-24 20时",
+          "lat": 27.2,
+          "lng": 122.4,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 01时",
-          "lat": 27.6,
-          "lng": 122.6333,
+          "t": "10-25 02时",
+          "lat": 28.2,
+          "lng": 122.9,
+          "wind": 11,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-25 14时",
+          "lat": 30.1,
+          "lng": 124.4,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 13时",
-          "lat": 28.9,
-          "lng": 123.6167,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-26 01时",
-          "lat": 30.6333,
-          "lng": 125.6833,
+          "t": "10-26 02时",
+          "lat": 31.8,
+          "lng": 126.4,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-26 13时",
-          "lat": 31.9,
-          "lng": 128.6667,
-          "wind": 7,
-          "strong": "热带低压",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-27 01时",
-          "lat": 32.5,
-          "lng": 132.0667,
+          "t": "10-26 14时",
+          "lat": 33.1,
+          "lng": 130.3,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -271,7 +263,7 @@
               "山洪灾害": "yellow",
               "地质灾害": "yellow"
             },
-            "count": 43,
+            "count": 44,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -280,7 +272,7 @@
               "issuedAt": "2026/10/24 00:40"
             },
             "via": "路径邻近",
-            "distKm": 297
+            "distKm": 286
           },
           {
             "province": "福建",
@@ -298,7 +290,7 @@
               "issuedAt": "2026/10/23 18:07"
             },
             "via": "路径邻近",
-            "distKm": 376
+            "distKm": 390
           },
           {
             "province": "上海",
@@ -312,12 +304,12 @@
             "top": {
               "kind": "暴雨",
               "level": "blue",
-              "title": "上海市奉贤区气象台发布暴雨蓝色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/31012041600000_20261023220106.html",
+              "title": "上海市嘉定区气象台发布暴雨蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/31011441600000_20261023220150.html",
               "issuedAt": "2026/10/23 22:00"
             },
             "via": "路径邻近",
-            "distKm": 327
+            "distKm": 303
           },
           {
             "province": "江苏",
@@ -335,11 +327,11 @@
               "issuedAt": "2026/10/23 16:56"
             },
             "via": "台风预警",
-            "distKm": 602
+            "distKm": 565
           }
         ],
         "floodLevel": "orange",
-        "asOf": "2026-10-24 02:15",
+        "asOf": "2026-10-24 02:40",
         "maxLevel": "orange",
         "note": "台风影响范围内有 4 个省级行政区发布洪涝类预警，最高橙色。"
       },
@@ -356,10 +348,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 91,
+    "total": 92,
     "counts": {
       "暴雨": 12,
-      "台风": 76,
+      "台风": 77,
       "山洪灾害": 1,
       "地质灾害": 2
     },
@@ -382,7 +374,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 43,
+        "count": 44,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -441,8 +433,8 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "上海市奉贤区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/31012041600000_20261023220106.html",
+          "title": "上海市嘉定区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/31011441600000_20261023220150.html",
           "issuedAt": "2026/10/23 22:00"
         },
         "lat": 31.2,
