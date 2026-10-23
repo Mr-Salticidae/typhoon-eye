@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24 06:15",
+  "updatedAt": "2026-10-24 06:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "浙江台风路径系统",
       "verification": {
         "status": "consistent",
-        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 32 公里（时次相差 1 小时）、强度一致（2 源交叉校验一致）",
+        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 32 公里、强度差 1 级（2 源交叉校验一致）",
         "sources": [
           {
             "id": "zj",
@@ -49,8 +49,8 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-24 05时",
-            "windLevel": 13,
+            "time": "10-24 06时",
+            "windLevel": 12,
             "role": "verify"
           }
         ]
@@ -256,7 +256,7 @@
               "山洪灾害": "yellow",
               "地质灾害": "yellow"
             },
-            "count": 47,
+            "count": 50,
             "top": {
               "kind": "暴雨",
               "level": "orange",
@@ -269,18 +269,18 @@
           },
           {
             "province": "福建",
-            "maxLevel": "orange",
+            "maxLevel": "yellow",
             "floodLevel": null,
             "kinds": {
-              "台风": "orange"
+              "台风": "yellow"
             },
             "count": 28,
             "top": {
               "kind": "台风",
-              "level": "orange",
-              "title": "福建省莆田市秀屿区气象台发布台风橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/35030541600000_20261023180700.html",
-              "issuedAt": "2026/10/23 18:07"
+              "level": "yellow",
+              "title": "福建省福州市连江县气象台发布台风黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/35012241600000_20261023225000.html",
+              "issuedAt": "2026/10/23 22:50"
             },
             "via": "路径邻近",
             "distKm": 436
@@ -297,8 +297,8 @@
             "top": {
               "kind": "暴雨",
               "level": "blue",
-              "title": "上海市浦东新区气象台发布暴雨蓝色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/31011541600000_20261023220152.html",
+              "title": "上海市闵行区气象台发布暴雨蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/31011241600000_20261023220107.html",
               "issuedAt": "2026/10/23 22:00"
             },
             "via": "路径邻近",
@@ -325,7 +325,7 @@
           }
         ],
         "floodLevel": "orange",
-        "asOf": "2026-10-24 06:15",
+        "asOf": "2026-10-24 06:45",
         "maxLevel": "orange",
         "note": "台风影响范围内有 4 个省级行政区发布洪涝类预警，最高橙色。"
       },
@@ -467,10 +467,10 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 96,
+    "total": 99,
     "counts": {
       "暴雨": 14,
-      "台风": 79,
+      "台风": 82,
       "山洪灾害": 1,
       "地质灾害": 2
     },
@@ -493,7 +493,7 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 47,
+        "count": 50,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -506,18 +506,18 @@
       },
       {
         "province": "福建",
-        "maxLevel": "orange",
+        "maxLevel": "yellow",
         "floodLevel": null,
         "kinds": {
-          "台风": "orange"
+          "台风": "yellow"
         },
         "count": 28,
         "top": {
           "kind": "台风",
-          "level": "orange",
-          "title": "福建省莆田市秀屿区气象台发布台风橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35030541600000_20261023180700.html",
-          "issuedAt": "2026/10/23 18:07"
+          "level": "yellow",
+          "title": "福建省福州市连江县气象台发布台风黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35012241600000_20261023225000.html",
+          "issuedAt": "2026/10/23 22:50"
         },
         "lat": 26.1,
         "lng": 118.3
@@ -552,8 +552,8 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "上海市浦东新区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/31011541600000_20261023220152.html",
+          "title": "上海市闵行区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/31011241600000_20261023220107.html",
           "issuedAt": "2026/10/23 22:00"
         },
         "lat": 31.2,
