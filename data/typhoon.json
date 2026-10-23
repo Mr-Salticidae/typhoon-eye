@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23 12:30",
+  "updatedAt": "2026-10-23 13:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,13 +31,13 @@
       "enName": "CHAMPI",
       "code": "2630",
       "level": "强台风（14级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 24 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 0 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-23 11时",
+            "time": "10-23 12时",
             "windLevel": 13,
             "role": "verify"
           }
@@ -193,6 +193,78 @@
           "wind": 14,
           "strong": "强台风",
           "phase": "now"
+        },
+        {
+          "t": "10-23 18时",
+          "lat": 23.8167,
+          "lng": 122.8833,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-24 00时",
+          "lat": 24.4833,
+          "lng": 122.3167,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-24 06时",
+          "lat": 24.9833,
+          "lng": 122.4,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-24 12时",
+          "lat": 25.4917,
+          "lng": 122.3833,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-25 00时",
+          "lat": 26.6083,
+          "lng": 122.2,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-25 12时",
+          "lat": 27.9583,
+          "lng": 122.3333,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-26 00时",
+          "lat": 29.8167,
+          "lng": 124.025,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-26 12时",
+          "lat": 31.175,
+          "lng": 126.8083,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-27 12时",
+          "lat": 32.975,
+          "lng": 134.2083,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
@@ -204,7 +276,7 @@
             "kinds": {
               "台风": "orange"
             },
-            "count": 23,
+            "count": 25,
             "top": {
               "kind": "台风",
               "level": "orange",
@@ -212,8 +284,8 @@
               "url": "http://www.nmc.cn/publish/alarm/35030541600000_20261023061000.html",
               "issuedAt": "2026/10/23 06:10"
             },
-            "via": "台风预警",
-            "distKm": 605
+            "via": "路径邻近",
+            "distKm": 393
           },
           {
             "province": "浙江",
@@ -222,16 +294,16 @@
             "kinds": {
               "台风": "yellow"
             },
-            "count": 22,
+            "count": 26,
             "top": {
               "kind": "台风",
               "level": "yellow",
-              "title": "浙江省台州市椒江区气象台发布台风黄色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/33100241600000_20261023122728.html",
-              "issuedAt": "2026/10/23 12:26"
+              "title": "浙江省台州市三门县气象台发布台风黄色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33102241600000_20261023124820.html",
+              "issuedAt": "2026/10/23 12:45"
             },
-            "via": "台风预警",
-            "distKm": 724
+            "via": "路径邻近",
+            "distKm": 250
           },
           {
             "province": "上海",
@@ -248,12 +320,12 @@
               "url": "http://www.nmc.cn/publish/alarm/31012041600000_20261023090116.html",
               "issuedAt": "2026/10/23 09:00"
             },
-            "via": "台风预警",
-            "distKm": 889
+            "via": "路径邻近",
+            "distKm": 287
           }
         ],
         "floodLevel": null,
-        "asOf": "2026-10-23 12:30",
+        "asOf": "2026-10-23 13:00",
         "maxLevel": "orange",
         "note": null
       },
@@ -269,9 +341,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 53,
+    "total": 59,
     "counts": {
-      "台风": 51,
+      "台风": 57,
       "地质灾害": 2
     },
     "peak": {
@@ -290,7 +362,7 @@
         "kinds": {
           "台风": "orange"
         },
-        "count": 23,
+        "count": 25,
         "top": {
           "kind": "台风",
           "level": "orange",
@@ -308,13 +380,13 @@
         "kinds": {
           "台风": "yellow"
         },
-        "count": 22,
+        "count": 26,
         "top": {
           "kind": "台风",
           "level": "yellow",
-          "title": "浙江省台州市椒江区气象台发布台风黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33100241600000_20261023122728.html",
-          "issuedAt": "2026/10/23 12:26"
+          "title": "浙江省台州市三门县气象台发布台风黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33102241600000_20261023124820.html",
+          "issuedAt": "2026/10/23 12:45"
         },
         "lat": 29.2,
         "lng": 120.2
