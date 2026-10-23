@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23 08:45",
+  "updatedAt": "2026-10-23 09:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,8 +31,8 @@
       "enName": "CHAMPI",
       "code": "2630",
       "level": "强台风（14级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
+      "summary": "预报路径趋向我国沿海，沿海地区请密切关注当地气象部门发布的最新预警。",
+      "nearCoast": true,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
@@ -193,6 +193,78 @@
           "wind": 14,
           "strong": "强台风",
           "phase": "now"
+        },
+        {
+          "t": "10-23 14时",
+          "lat": 23.5,
+          "lng": 123,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-23 20时",
+          "lat": 24.3,
+          "lng": 122.5,
+          "wind": 14,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-24 02时",
+          "lat": 24.8,
+          "lng": 122.2,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-24 08时",
+          "lat": 25.3,
+          "lng": 122.3,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-24 20时",
+          "lat": 26.5,
+          "lng": 122.2,
+          "wind": 12,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-25 08时",
+          "lat": 27.7,
+          "lng": 122.1,
+          "wind": 10,
+          "strong": "强热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-25 20时",
+          "lat": 29.6,
+          "lng": 123.7,
+          "wind": 9,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-26 08时",
+          "lat": 30.8,
+          "lng": 125.9,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-27 08时",
+          "lat": 32.5,
+          "lng": 134,
+          "wind": 7,
+          "strong": "热带低压",
+          "phase": "forecast"
         }
       ],
       "rainRisk": {
@@ -212,12 +284,12 @@
               "url": "http://www.nmc.cn/publish/alarm/35030541600000_20261023061000.html",
               "issuedAt": "2026/10/23 06:10"
             },
-            "via": "台风预警",
-            "distKm": 679
+            "via": "路径邻近",
+            "distKm": 391
           }
         ],
         "floodLevel": null,
-        "asOf": "2026-10-23 08:45",
+        "asOf": "2026-10-23 09:01",
         "maxLevel": "orange",
         "note": null
       },
