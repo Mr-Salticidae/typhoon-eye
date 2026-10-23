@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24 00:15",
+  "updatedAt": "2026-10-24 00:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 23 公里（时次相差 1 小时）、强度一致；日本气象厅定位相差 38 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 38 公里、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -49,14 +49,14 @@
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-23 23时",
+            "time": "10-24 00时",
             "windLevel": 13,
             "role": "verify"
           },
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-23 23时",
+            "time": "10-24 00时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -271,13 +271,13 @@
               "山洪灾害": "yellow",
               "地质灾害": "yellow"
             },
-            "count": 41,
+            "count": 42,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "浙江省舟山市普陀区气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/33090341600000_20261023231048.html",
-              "issuedAt": "2026/10/23 23:15"
+              "title": "浙江省舟山市定海区气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33090241600000_20261024004126.html",
+              "issuedAt": "2026/10/24 00:40"
             },
             "via": "路径邻近",
             "distKm": 299
@@ -339,7 +339,7 @@
           }
         ],
         "floodLevel": "orange",
-        "asOf": "2026-10-24 00:15",
+        "asOf": "2026-10-24 00:45",
         "maxLevel": "orange",
         "note": "台风影响范围内有 4 个省级行政区发布洪涝类预警，最高橙色。"
       },
@@ -356,9 +356,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 89,
+    "total": 90,
     "counts": {
-      "暴雨": 10,
+      "暴雨": 11,
       "台风": 76,
       "山洪灾害": 1,
       "地质灾害": 2
@@ -367,9 +367,9 @@
       "province": "浙江",
       "kind": "暴雨",
       "level": "orange",
-      "title": "浙江省舟山市普陀区气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/33090341600000_20261023231048.html",
-      "issuedAt": "2026/10/23 23:15"
+      "title": "浙江省舟山市定海区气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/33090241600000_20261024004126.html",
+      "issuedAt": "2026/10/24 00:40"
     },
     "provinces": [
       {
@@ -382,13 +382,13 @@
           "山洪灾害": "yellow",
           "地质灾害": "yellow"
         },
-        "count": 41,
+        "count": 42,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "浙江省舟山市普陀区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33090341600000_20261023231048.html",
-          "issuedAt": "2026/10/23 23:15"
+          "title": "浙江省舟山市定海区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33090241600000_20261024004126.html",
+          "issuedAt": "2026/10/24 00:40"
         },
         "lat": 29.2,
         "lng": 120.2
