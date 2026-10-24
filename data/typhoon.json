@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24 14:24",
+  "updatedAt": "2026-10-24 14:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -178,27 +178,27 @@
       "name": "蔷琵",
       "enName": "CHAMPI",
       "code": "2630",
-      "level": "台风（12级）",
+      "level": "强热带风暴（11级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 15 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 46 公里（时次相差 1 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-24 13时",
-            "windLevel": 12,
+            "time": "10-24 14时",
+            "windLevel": 11,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-24 13时",
-            "windLevel": 12,
+            "time": "10-24 14时",
+            "windLevel": 11,
             "role": "verify"
           },
           {
@@ -211,15 +211,15 @@
         ]
       },
       "now": {
-        "windLevel": 12,
-        "windSpeed": 33,
-        "pressure": 975,
-        "moveDir": "北",
-        "moveSpeed": 18,
+        "windLevel": 11,
+        "windSpeed": 30,
+        "pressure": 980,
+        "moveDir": "北北东",
+        "moveSpeed": 12,
         "r7": 500,
         "r10": 210,
-        "time": "10-24 13时",
-        "position": "中心位于北纬 26.5 度、东经 123.4 度"
+        "time": "10-24 14时",
+        "position": "中心位于北纬 26.8 度、东经 123.2 度"
       },
       "track": [
         {
@@ -239,9 +239,9 @@
           "phase": "past"
         },
         {
-          "t": "10-17 11时",
+          "t": "10-17 14时",
           "lat": 12.5,
-          "lng": 148,
+          "lng": 147.5,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -263,17 +263,17 @@
           "phase": "past"
         },
         {
-          "t": "10-20 08时",
-          "lat": 15.9,
-          "lng": 135.6,
+          "t": "10-20 11时",
+          "lat": 16.2,
+          "lng": 135,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-21 08时",
-          "lat": 18,
-          "lng": 130.3,
+          "t": "10-21 11时",
+          "lat": 18.3,
+          "lng": 129.6,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
@@ -295,16 +295,16 @@
           "phase": "past"
         },
         {
-          "t": "10-23 05时",
-          "lat": 22.2,
-          "lng": 124,
+          "t": "10-23 06时",
+          "lat": 22.3,
+          "lng": 123.9,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "10-23 13时",
-          "lat": 23.5,
+          "t": "10-23 14时",
+          "lat": 23.7,
           "lng": 123.3,
           "wind": 14,
           "strong": "强台风",
@@ -319,18 +319,10 @@
           "phase": "past"
         },
         {
-          "t": "10-24 04时",
-          "lat": 24.5,
-          "lng": 122.1,
+          "t": "10-24 05时",
+          "lat": 24.7,
+          "lng": 122.4,
           "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-24 12时",
-          "lat": 25.9,
-          "lng": 123.5,
-          "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
@@ -340,60 +332,60 @@
           "lng": 123.4,
           "wind": 12,
           "strong": "台风",
+          "phase": "past"
+        },
+        {
+          "t": "10-24 14时",
+          "lat": 26.8,
+          "lng": 123.2,
+          "wind": 11,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "10-24 19时",
-          "lat": 26.9333,
+          "t": "10-24 20时",
+          "lat": 27.4,
           "lng": 123.3,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-25 01时",
-          "lat": 27.9,
-          "lng": 123.4667,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 07时",
-          "lat": 28.7,
-          "lng": 123.9333,
+          "t": "10-25 02时",
+          "lat": 28,
+          "lng": 123.5,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 13时",
-          "lat": 29.3667,
-          "lng": 124.4667,
+          "t": "10-25 08时",
+          "lat": 28.8,
+          "lng": 124,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-26 01时",
-          "lat": 30.8667,
-          "lng": 126.2167,
+          "t": "10-25 14时",
+          "lat": 29.5,
+          "lng": 124.5,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-26 13时",
-          "lat": 31.8333,
-          "lng": 129.0167,
-          "wind": 7,
-          "strong": "热带低压",
+          "t": "10-26 02时",
+          "lat": 30.9,
+          "lng": 126,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-27 01时",
-          "lat": 32.6333,
-          "lng": 133.3167,
+          "t": "10-26 14时",
+          "lat": 32,
+          "lng": 129,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -420,7 +412,7 @@
               "issuedAt": "2026/10/24 11:50"
             },
             "via": "路径邻近",
-            "distKm": 350
+            "distKm": 349
           },
           {
             "province": "福建",
@@ -438,7 +430,7 @@
               "issuedAt": "2026/10/24 10:50"
             },
             "via": "台风预警",
-            "distKm": 506
+            "distKm": 494
           },
           {
             "province": "上海",
@@ -451,12 +443,12 @@
             "top": {
               "kind": "暴雨",
               "level": "blue",
-              "title": "上海市松江区气象台发布暴雨蓝色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/31011741600000_20261023220153.html",
+              "title": "上海市崇明区气象台发布暴雨蓝色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/31015141600000_20261023220258.html",
               "issuedAt": "2026/10/23 22:00"
             },
             "via": "路径邻近",
-            "distKm": 350
+            "distKm": 344
           },
           {
             "province": "江苏",
@@ -475,11 +467,11 @@
               "issuedAt": "2026/10/24 05:15"
             },
             "via": "台风预警",
-            "distKm": 621
+            "distKm": 614
           }
         ],
         "floodLevel": "orange",
-        "asOf": "2026-10-24 14:24",
+        "asOf": "2026-10-24 14:45",
         "maxLevel": "orange",
         "note": "台风影响范围内有 4 个省级行政区发布洪涝类预警，最高橙色。"
       },
@@ -562,8 +554,8 @@
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "上海市松江区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/31011741600000_20261023220153.html",
+          "title": "上海市崇明区气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/31015141600000_20261023220258.html",
           "issuedAt": "2026/10/23 22:00"
         },
         "lat": 31.2,
