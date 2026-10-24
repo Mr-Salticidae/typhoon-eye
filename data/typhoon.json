@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24 11:00",
+  "updatedAt": "2026-10-24 11:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -177,19 +177,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 20 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 35 公里（时次相差 1 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-24 10时",
+            "time": "10-24 11时",
             "windLevel": 12,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-24 10时",
+            "time": "10-24 11时",
             "windLevel": 12,
             "role": "verify"
           },
@@ -204,14 +204,14 @@
       },
       "now": {
         "windLevel": 12,
-        "windSpeed": 35,
-        "pressure": 970,
+        "windSpeed": 33,
+        "pressure": 975,
         "moveDir": "北",
-        "moveSpeed": 20,
+        "moveSpeed": 18,
         "r7": 500,
         "r10": 210,
-        "time": "10-24 10时",
-        "position": "中心位于北纬 25.4 度、东经 123.6 度"
+        "time": "10-24 11时",
+        "position": "中心位于北纬 25.7 度、东经 123.5 度"
       },
       "track": [
         {
@@ -223,11 +223,11 @@
           "phase": "past"
         },
         {
-          "t": "10-16 11时",
-          "lat": 11.5,
-          "lng": 153.6,
-          "wind": 9,
-          "strong": "热带风暴",
+          "t": "10-16 14时",
+          "lat": 11.4,
+          "lng": 152.9,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "past"
         },
         {
@@ -239,9 +239,9 @@
           "phase": "past"
         },
         {
-          "t": "10-18 08时",
+          "t": "10-18 11时",
           "lat": 13.1,
-          "lng": 143.6,
+          "lng": 142.9,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
@@ -255,9 +255,9 @@
           "phase": "past"
         },
         {
-          "t": "10-20 05时",
-          "lat": 15.6,
-          "lng": 136.3,
+          "t": "10-20 08时",
+          "lat": 15.9,
+          "lng": 135.6,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
@@ -271,10 +271,10 @@
           "phase": "past"
         },
         {
-          "t": "10-22 02时",
-          "lat": 19.8,
-          "lng": 127,
-          "wind": 17,
+          "t": "10-22 05时",
+          "lat": 20.1,
+          "lng": 126.5,
+          "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
@@ -287,9 +287,9 @@
           "phase": "past"
         },
         {
-          "t": "10-23 03时",
-          "lat": 22,
-          "lng": 124.2,
+          "t": "10-23 04时",
+          "lat": 22.1,
+          "lng": 124.1,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -303,9 +303,9 @@
           "phase": "past"
         },
         {
-          "t": "10-23 18时",
-          "lat": 24.3,
-          "lng": 123.1,
+          "t": "10-23 19时",
+          "lat": 24.6,
+          "lng": 123.2,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
@@ -319,73 +319,73 @@
           "phase": "past"
         },
         {
-          "t": "10-24 09时",
-          "lat": 25.3,
+          "t": "10-24 10时",
+          "lat": 25.4,
           "lng": 123.6,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "10-24 10时",
-          "lat": 25.4,
-          "lng": 123.6,
+          "t": "10-24 11时",
+          "lat": 25.7,
+          "lng": 123.5,
           "wind": 12,
           "strong": "台风",
           "phase": "now"
         },
         {
-          "t": "10-24 16时",
-          "lat": 26.7,
-          "lng": 123.1667,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "10-24 22时",
-          "lat": 27.8333,
-          "lng": 123.5,
+          "t": "10-24 17时",
+          "lat": 26.6,
+          "lng": 123.3,
           "wind": 11,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 04时",
-          "lat": 28.7333,
-          "lng": 124.0667,
+          "t": "10-24 23时",
+          "lat": 27.6,
+          "lng": 123.3,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 10时",
-          "lat": 29.4667,
-          "lng": 124.6667,
+          "t": "10-25 05时",
+          "lat": 28.5,
+          "lng": 123.8,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-25 22时",
-          "lat": 30.95,
-          "lng": 126.3833,
+          "t": "10-25 11时",
+          "lat": 29.1,
+          "lng": 124.2,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-26 10时",
-          "lat": 31.7667,
-          "lng": 128.9333,
+          "t": "10-25 23时",
+          "lat": 30.7,
+          "lng": 125.8,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-26 22时",
-          "lat": 32.1667,
-          "lng": 132.7333,
+          "t": "10-26 11时",
+          "lat": 31.7,
+          "lng": 128.3,
+          "wind": 8,
+          "strong": "热带风暴",
+          "phase": "forecast"
+        },
+        {
+          "t": "10-26 23时",
+          "lat": 32.5,
+          "lng": 132.6,
           "wind": 7,
           "strong": "热带低压",
           "phase": "forecast"
@@ -403,16 +403,16 @@
               "山洪灾害": "blue",
               "地质灾害": "yellow"
             },
-            "count": 59,
+            "count": 57,
             "top": {
               "kind": "暴雨",
               "level": "orange",
-              "title": "浙江省台州市路桥区气象台发布暴雨橙色预警信号",
-              "url": "http://www.nmc.cn/publish/alarm/33100441600000_20261024104035.html",
-              "issuedAt": "2026/10/24 10:40"
+              "title": "浙江省台州市黄岩区气象台发布暴雨橙色预警信号",
+              "url": "http://www.nmc.cn/publish/alarm/33100341600000_20261024110620.html",
+              "issuedAt": "2026/10/24 11:05"
             },
             "via": "路径邻近",
-            "distKm": 356
+            "distKm": 352
           },
           {
             "province": "福建",
@@ -421,7 +421,7 @@
             "kinds": {
               "台风": "yellow"
             },
-            "count": 28,
+            "count": 26,
             "top": {
               "kind": "台风",
               "level": "yellow",
@@ -430,7 +430,7 @@
               "issuedAt": "2026/10/24 10:50"
             },
             "via": "台风预警",
-            "distKm": 489
+            "distKm": 501
           },
           {
             "province": "上海",
@@ -448,7 +448,7 @@
               "issuedAt": "2026/10/23 22:00"
             },
             "via": "路径邻近",
-            "distKm": 360
+            "distKm": 349
           },
           {
             "province": "江苏",
@@ -467,11 +467,11 @@
               "issuedAt": "2026/10/24 05:15"
             },
             "via": "台风预警",
-            "distKm": 629
+            "distKm": 623
           }
         ],
         "floodLevel": "orange",
-        "asOf": "2026-10-24 11:00",
+        "asOf": "2026-10-24 11:30",
         "maxLevel": "orange",
         "note": "台风影响范围内有 4 个省级行政区发布洪涝类预警，最高橙色。"
       },
@@ -488,20 +488,20 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 101,
+    "total": 97,
     "counts": {
-      "暴雨": 19,
-      "台风": 80,
+      "暴雨": 20,
+      "台风": 74,
       "山洪灾害": 1,
-      "地质灾害": 1
+      "地质灾害": 2
     },
     "peak": {
       "province": "浙江",
       "kind": "暴雨",
       "level": "orange",
-      "title": "浙江省台州市路桥区气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/33100441600000_20261024104035.html",
-      "issuedAt": "2026/10/24 10:40"
+      "title": "浙江省台州市黄岩区气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/33100341600000_20261024110620.html",
+      "issuedAt": "2026/10/24 11:05"
     },
     "provinces": [
       {
@@ -514,13 +514,13 @@
           "山洪灾害": "blue",
           "地质灾害": "yellow"
         },
-        "count": 59,
+        "count": 57,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "浙江省台州市路桥区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33100441600000_20261024104035.html",
-          "issuedAt": "2026/10/24 10:40"
+          "title": "浙江省台州市黄岩区气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33100341600000_20261024110620.html",
+          "issuedAt": "2026/10/24 11:05"
         },
         "lat": 29.2,
         "lng": 120.2
@@ -532,7 +532,7 @@
         "kinds": {
           "台风": "yellow"
         },
-        "count": 28,
+        "count": 26,
         "top": {
           "kind": "台风",
           "level": "yellow",
