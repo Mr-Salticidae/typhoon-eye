@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25 19:45",
+  "updatedAt": "2026-10-25 20:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -258,27 +258,27 @@
       "name": "蔷琵",
       "enName": "CHAMPI",
       "code": "2630",
-      "level": "热带风暴（9级）",
+      "level": "热带风暴（8级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 53 公里（时次相差 2 小时）、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 83 公里（时次相差 3 小时）、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-25 19时",
-            "windLevel": 9,
+            "time": "10-25 20时",
+            "windLevel": 8,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-25 19时",
-            "windLevel": 9,
+            "time": "10-25 20时",
+            "windLevel": 8,
             "role": "verify"
           },
           {
@@ -291,15 +291,15 @@
         ]
       },
       "now": {
-        "windLevel": 9,
-        "windSpeed": 23,
-        "pressure": 990,
+        "windLevel": 8,
+        "windSpeed": 20,
+        "pressure": 995,
         "moveDir": "东北东",
-        "moveSpeed": 22,
+        "moveSpeed": 21,
         "r7": 400,
         "r10": null,
-        "time": "10-25 19时",
-        "position": "中心位于北纬 30.7 度、东经 126.2 度"
+        "time": "10-25 20时",
+        "position": "中心位于北纬 30.8 度、东经 126.5 度"
       },
       "track": [
         {
@@ -359,57 +359,49 @@
           "phase": "past"
         },
         {
-          "t": "10-23 06时",
-          "lat": 22.3,
+          "t": "10-23 07时",
+          "lat": 22.4,
           "lng": 123.9,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "10-23 16时",
-          "lat": 24,
-          "lng": 123.2,
+          "t": "10-23 17时",
+          "lat": 24.2,
+          "lng": 123.1,
           "wind": 14,
           "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "10-24 02时",
-          "lat": 24.6,
+          "t": "10-24 03时",
+          "lat": 24.5,
           "lng": 122,
           "wind": 13,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "10-24 12时",
-          "lat": 25.9,
-          "lng": 123.5,
+          "t": "10-24 13时",
+          "lat": 26.5,
+          "lng": 123.4,
           "wind": 12,
           "strong": "台风",
           "phase": "past"
         },
         {
-          "t": "10-24 22时",
-          "lat": 28,
-          "lng": 123.4,
+          "t": "10-24 23时",
+          "lat": 28.1,
+          "lng": 123.5,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
         },
         {
-          "t": "10-25 08时",
-          "lat": 29,
-          "lng": 124.6,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-25 18时",
-          "lat": 30.6,
-          "lng": 126,
+          "t": "10-25 09时",
+          "lat": 29.2,
+          "lng": 124.8,
           "wind": 9,
           "strong": "热带风暴",
           "phase": "past"
@@ -420,20 +412,28 @@
           "lng": 126.2,
           "wind": 9,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "10-25 20时",
+          "lat": 30.8,
+          "lng": 126.5,
+          "wind": 8,
+          "strong": "热带风暴",
           "phase": "now"
         },
         {
-          "t": "10-26 01时",
-          "lat": 31.0667,
-          "lng": 127.3667,
+          "t": "10-26 02时",
+          "lat": 31.1,
+          "lng": 127.6,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
         },
         {
-          "t": "10-26 07时",
-          "lat": 31.5667,
-          "lng": 128.7667,
+          "t": "10-26 08时",
+          "lat": 31.5,
+          "lng": 128.9,
           "wind": 8,
           "strong": "热带风暴",
           "phase": "forecast"
@@ -458,11 +458,11 @@
               "issuedAt": "2026/10/25 17:24"
             },
             "via": "台风预警",
-            "distKm": 602
+            "distKm": 632
           }
         ],
         "floodLevel": "yellow",
-        "asOf": "2026-10-25 19:45",
+        "asOf": "2026-10-25 20:15",
         "maxLevel": "yellow",
         "note": "台风影响范围内有 1 个省级行政区发布洪涝类预警，最高黄色。"
       },
