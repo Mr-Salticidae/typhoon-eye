@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27 19:45",
+  "updatedAt": "2026-10-27 20:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -268,20 +268,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 2,
+    "total": 3,
     "counts": {
-      "暴雨": 1,
+      "暴雨": 2,
       "地质灾害": 1
     },
     "peak": {
-      "province": "湖北",
-      "kind": "地质灾害",
+      "province": "云南",
+      "kind": "暴雨",
       "level": "yellow",
-      "title": "湖北省恩施土家族苗族自治州利川市气象台、利川市自然资源和规划局发布地质灾害黄色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/42280241600000_20261027084304.html",
-      "issuedAt": "2026/10/27 08:43"
+      "title": "云南省临沧市沧源佤族自治县气象台发布暴雨黄色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53092741600000_20261027200410.html",
+      "issuedAt": "2026/10/27 20:02"
     },
     "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "云南省临沧市沧源佤族自治县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53092741600000_20261027200410.html",
+          "issuedAt": "2026/10/27 20:02"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
       {
         "province": "湖北",
         "maxLevel": "yellow",
@@ -299,24 +317,6 @@
         },
         "lat": 31,
         "lng": 112.3
-      },
-      {
-        "province": "云南",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261027115543.html",
-          "issuedAt": "2026/10/27 11:53"
-        },
-        "lat": 25,
-        "lng": 101.5
       }
     ]
   },
