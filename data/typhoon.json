@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29 10:56",
+  "updatedAt": "2026-10-29 11:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 78 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "10-29 08时",
+            "time": "10-29 11时",
             "windLevel": 16,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "10-29 08时",
+            "time": "10-29 11时",
             "windLevel": 16,
             "role": "verify"
           },
@@ -67,11 +67,11 @@
         "windSpeed": 52,
         "pressure": 935,
         "moveDir": "西",
-        "moveSpeed": 30,
+        "moveSpeed": 28,
         "r7": 320,
         "r10": 120,
-        "time": "10-29 08时",
-        "position": "中心位于北纬 16.0 度、东经 154.7 度"
+        "time": "10-29 11时",
+        "position": "中心位于北纬 16.1 度、东经 154.0 度"
       },
       "track": [
         {
@@ -99,9 +99,9 @@
           "phase": "past"
         },
         {
-          "t": "10-25 05时",
-          "lat": 11.2,
-          "lng": 165.4,
+          "t": "10-25 08时",
+          "lat": 11.8,
+          "lng": 165.3,
           "wind": 10,
           "strong": "强热带风暴",
           "phase": "past"
@@ -131,25 +131,25 @@
           "phase": "past"
         },
         {
-          "t": "10-26 20时",
+          "t": "10-26 23时",
           "lat": 14.1,
-          "lng": 162.8,
-          "wind": 16,
-          "strong": "超强台风",
+          "lng": 162.6,
+          "wind": 15,
+          "strong": "强台风",
           "phase": "past"
         },
         {
-          "t": "10-27 05时",
+          "t": "10-27 08时",
           "lat": 14.3,
-          "lng": 162.5,
+          "lng": 162.4,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-27 14时",
+          "t": "10-27 17时",
           "lat": 14.5,
-          "lng": 162.2,
+          "lng": 161.8,
           "wind": 15,
           "strong": "强台风",
           "phase": "past"
@@ -163,25 +163,17 @@
           "phase": "past"
         },
         {
-          "t": "10-28 11时",
-          "lat": 15,
-          "lng": 159.5,
+          "t": "10-28 14时",
+          "lat": 15.1,
+          "lng": 159,
           "wind": 17,
           "strong": "超强台风",
           "phase": "past"
         },
         {
-          "t": "10-28 20时",
-          "lat": 15.3,
-          "lng": 157.6,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-29 05时",
-          "lat": 15.7,
-          "lng": 155.7,
+          "t": "10-28 23时",
+          "lat": 15.4,
+          "lng": 157,
           "wind": 16,
           "strong": "超强台风",
           "phase": "past"
@@ -192,68 +184,76 @@
           "lng": 154.7,
           "wind": 16,
           "strong": "超强台风",
+          "phase": "past"
+        },
+        {
+          "t": "10-29 11时",
+          "lat": 16.1,
+          "lng": 154,
+          "wind": 16,
+          "strong": "超强台风",
           "phase": "now"
         },
         {
-          "t": "10-29 20时",
-          "lat": 16.5,
-          "lng": 151.4,
+          "t": "10-29 23时",
+          "lat": 16.6,
+          "lng": 150.9,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-30 08时",
-          "lat": 17.3,
-          "lng": 147.9,
+          "t": "10-30 11时",
+          "lat": 17.8,
+          "lng": 147.3,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-30 20时",
-          "lat": 19,
-          "lng": 144.8,
+          "t": "10-30 23时",
+          "lat": 19.4,
+          "lng": 144.4,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-31 08时",
-          "lat": 20.8,
-          "lng": 142.9,
+          "t": "10-31 11时",
+          "lat": 21,
+          "lng": 142.7,
           "wind": 17,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "10-31 20时",
-          "lat": 22.4,
-          "lng": 142.9,
+          "t": "10-31 23时",
+          "lat": 22.6,
+          "lng": 143,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "11-01 08时",
-          "lat": 22.3,
-          "lng": 143.4,
+          "t": "11-01 11时",
+          "lat": 22.5,
+          "lng": 143.7,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "11-02 08时",
-          "lat": 21.8,
-          "lng": 140.2,
+          "t": "11-02 11时",
+          "lat": 22.2,
+          "lng": 139.8,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "11-03 08时",
-          "lat": 22.2,
-          "lng": 137.5,
+          "t": "11-03 11时",
+          "lat": 22.7,
+          "lng": 137.2,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
@@ -273,14 +273,32 @@
       "暴雨": 5
     },
     "peak": {
-      "province": "海南",
+      "province": "广东",
       "kind": "暴雨",
       "level": "orange",
-      "title": "海南省海口市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/46010041600000_20261029093222.html",
-      "issuedAt": "2026/10/29 09:32"
+      "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44082541600000_20261029110304.html",
+      "issuedAt": "2026/10/29 10:57"
     },
     "provinces": [
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44082541600000_20261029110304.html",
+          "issuedAt": "2026/10/29 10:57"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
       {
         "province": "海南",
         "maxLevel": "orange",
@@ -298,24 +316,6 @@
         },
         "lat": 19.2,
         "lng": 109.7
-      },
-      {
-        "province": "广东",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
-        "kinds": {
-          "暴雨": "yellow"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "yellow",
-          "title": "广东省湛江市雷州市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44088241600000_20261029101436.html",
-          "issuedAt": "2026/10/29 10:12"
-        },
-        "lat": 23.4,
-        "lng": 113.4
       },
       {
         "province": "云南",
@@ -351,7 +351,7 @@
         "浙江"
       ],
       "ongoingFloodLevel": null,
-      "daysSince": 2
+      "daysSince": 3
     }
   ]
 }
