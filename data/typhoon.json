@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31 02:30",
+  "updatedAt": "2026-10-31 03:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "divergent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 69 公里（时次相差 3 小时）、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 21 公里、强度差 3 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
@@ -56,7 +56,7 @@
           {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "10-30 23时",
+            "time": "10-31 02时",
             "windLevel": 14,
             "role": "verify"
           }
@@ -268,19 +268,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 1,
+    "total": 2,
     "counts": {
+      "暴雨": 1,
       "地质灾害": 1
     },
     "peak": {
-      "province": "云南",
-      "kind": "地质灾害",
-      "level": "yellow",
-      "title": "云南省临沧市临翔区气象台发布地质灾害黄色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53090241600000_20261030042646.html",
-      "issuedAt": "2026/10/30 04:24"
+      "province": "广西",
+      "kind": "暴雨",
+      "level": "orange",
+      "title": "广西壮族自治区钦州市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/45070041600000_20261031024138.html",
+      "issuedAt": "2026/10/31 02:40"
     },
     "provinces": [
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区钦州市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45070041600000_20261031024138.html",
+          "issuedAt": "2026/10/31 02:40"
+        },
+        "lat": 23.8,
+        "lng": 108.8
+      },
       {
         "province": "云南",
         "maxLevel": "yellow",
