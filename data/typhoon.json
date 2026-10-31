@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31 18:45",
+  "updatedAt": "2026-10-31 19:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -268,10 +268,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 0,
-    "counts": {},
-    "peak": null,
-    "provinces": []
+    "total": 1,
+    "counts": {
+      "地质灾害": 1
+    },
+    "peak": {
+      "province": "湖北",
+      "kind": "地质灾害",
+      "level": "yellow",
+      "title": "湖北省恩施土家族苗族自治州鹤峰县气象台 鹤峰县自然资源和规划局 鹤峰县应急管理局发布地质灾害黄色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/42282841600000_20261031185640.html",
+      "issuedAt": "2026/10/31 18:56"
+    },
+    "provinces": [
+      {
+        "province": "湖北",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "地质灾害": "yellow"
+        },
+        "count": 1,
+        "top": {
+          "kind": "地质灾害",
+          "level": "yellow",
+          "title": "湖北省恩施土家族苗族自治州鹤峰县气象台 鹤峰县自然资源和规划局 鹤峰县应急管理局发布地质灾害黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/42282841600000_20261031185640.html",
+          "issuedAt": "2026/10/31 18:56"
+        },
+        "lat": 31,
+        "lng": 112.3
+      }
+    ]
   },
   "recentlyEnded": [
     {
