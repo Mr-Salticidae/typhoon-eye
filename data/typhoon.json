@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03 03:45",
+  "updatedAt": "2026-11-03 04:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -266,14 +266,32 @@
       "地质灾害": 2
     },
     "peak": {
-      "province": "广西",
+      "province": "海南",
       "kind": "暴雨",
       "level": "red",
-      "title": "广西壮族自治区防城港市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/45060041600000_20261102095448.html",
-      "issuedAt": "2026/11/02 09:48"
+      "title": "海南省三亚市气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/46020041600000_20261103022720.html",
+      "issuedAt": "2026/11/03 02:27"
     },
     "provinces": [
+      {
+        "province": "海南",
+        "maxLevel": "red",
+        "floodLevel": "red",
+        "kinds": {
+          "暴雨": "red"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "red",
+          "title": "海南省三亚市气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46020041600000_20261103022720.html",
+          "issuedAt": "2026/11/03 02:27"
+        },
+        "lat": 19.2,
+        "lng": 109.7
+      },
       {
         "province": "广西",
         "maxLevel": "red",
@@ -293,38 +311,19 @@
         "lng": 108.8
       },
       {
-        "province": "海南",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "海南省三亚市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46020041600000_20261103022720.html",
-          "issuedAt": "2026/11/03 02:27"
-        },
-        "lat": 19.2,
-        "lng": 109.7
-      },
-      {
         "province": "云南",
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "orange",
           "地质灾害": "orange"
         },
-        "count": 3,
+        "count": 2,
         "top": {
-          "kind": "暴雨",
+          "kind": "地质灾害",
           "level": "orange",
-          "title": "云南省红河哈尼族彝族自治州绿春县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53253141600000_20261103005301.html",
-          "issuedAt": "2026/11/03 00:51"
+          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布地质灾害橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261102224622.html",
+          "issuedAt": "2026/11/02 22:44"
         },
         "lat": 25,
         "lng": 101.5
