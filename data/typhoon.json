@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03 18:30",
+  "updatedAt": "2026-11-03 19:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -252,20 +252,39 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 6,
+    "total": 7,
     "counts": {
-      "暴雨": 4,
+      "暴雨": 5,
       "地质灾害": 2
     },
     "peak": {
-      "province": "海南",
+      "province": "云南",
       "kind": "暴雨",
       "level": "orange",
-      "title": "海南省琼海市气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/46900241600000_20261103164503.html",
-      "issuedAt": "2026/11/03 16:45"
+      "title": "云南省普洱市江城哈尼族彝族自治县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261103183023.html",
+      "issuedAt": "2026/11/03 18:28"
     },
     "provinces": [
+      {
+        "province": "云南",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange",
+          "地质灾害": "orange"
+        },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261103183023.html",
+          "issuedAt": "2026/11/03 18:28"
+        },
+        "lat": 25,
+        "lng": 101.5
+      },
       {
         "province": "海南",
         "maxLevel": "orange",
@@ -283,24 +302,6 @@
         },
         "lat": 19.2,
         "lng": 109.7
-      },
-      {
-        "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "地质灾害": "orange"
-        },
-        "count": 2,
-        "top": {
-          "kind": "地质灾害",
-          "level": "orange",
-          "title": "云南省普洱市江城哈尼族彝族自治县气象台发布地质灾害橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261102224622.html",
-          "issuedAt": "2026/11/02 22:44"
-        },
-        "lat": 25,
-        "lng": 101.5
       },
       {
         "province": "广东",
