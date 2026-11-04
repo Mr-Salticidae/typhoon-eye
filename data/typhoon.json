@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04 07:30",
+  "updatedAt": "2026-11-04 08:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -244,20 +244,38 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 10,
+    "total": 15,
     "counts": {
-      "暴雨": 8,
+      "暴雨": 13,
       "地质灾害": 2
     },
     "peak": {
-      "province": "云南",
-      "kind": "地质灾害",
+      "province": "广东",
+      "kind": "暴雨",
       "level": "orange",
-      "title": "云南省普洱市江城哈尼族彝族自治县气象台发布地质灾害橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53082641600000_20261103224403.html",
-      "issuedAt": "2026/11/03 22:42"
+      "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44082541600000_20261103180237.html",
+      "issuedAt": "2026/11/03 17:59"
     },
     "provinces": [
+      {
+        "province": "广东",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44082541600000_20261103180237.html",
+          "issuedAt": "2026/11/03 17:59"
+        },
+        "lat": 23.4,
+        "lng": 113.4
+      },
       {
         "province": "云南",
         "maxLevel": "orange",
@@ -277,31 +295,13 @@
         "lng": 101.5
       },
       {
-        "province": "广东",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广东省湛江市徐闻县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44082541600000_20261103180237.html",
-          "issuedAt": "2026/11/03 17:59"
-        },
-        "lat": 23.4,
-        "lng": 113.4
-      },
-      {
         "province": "江西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 5,
+        "count": 6,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -319,16 +319,34 @@
         "kinds": {
           "暴雨": "blue"
         },
+        "count": 3,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "安徽省黄山市气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/34100041600000_20261104073649.html",
+          "issuedAt": "2026/11/04 07:36"
+        },
+        "lat": 31.9,
+        "lng": 117.2
+      },
+      {
+        "province": "浙江",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
         "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "安徽省黄山市歙县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/34102141600000_20261104070902.html",
-          "issuedAt": "2026/11/04 07:09"
+          "title": "浙江省衢州市开化县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33082441600000_20261104074728.html",
+          "issuedAt": "2026/11/04 07:50"
         },
-        "lat": 31.9,
-        "lng": 117.2
+        "lat": 29.2,
+        "lng": 120.2
       }
     ]
   },
