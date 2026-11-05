@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05 23:30",
+  "updatedAt": "2026-11-06 00:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "zj",
@@ -25,217 +25,25 @@
       "count": 1
     }
   ],
-  "typhoons": [
-    {
-      "name": "烟花",
-      "enName": "IN-FA",
-      "code": "2631",
-      "level": "强热带风暴（10级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 459 公里（时次相差 9 小时）、强度一致（2 源交叉校验一致）",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "11-05 11时",
-            "windLevel": 10,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "11-05 20时",
-            "windLevel": 10,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 10,
-        "windSpeed": 28,
-        "pressure": 982,
-        "moveDir": "东北",
-        "moveSpeed": 63,
-        "r7": null,
-        "r10": null,
-        "time": "11-05 11时",
-        "position": "中心位于北纬 28.8 度、东经 140.4 度"
-      },
-      "track": [
-        {
-          "t": "10-24 02时",
-          "lat": 10.4,
-          "lng": 166.7,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-25 02时",
-          "lat": 10.8,
-          "lng": 165.5,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-25 23时",
-          "lat": 13.1,
-          "lng": 164.4,
-          "wind": 11,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "10-26 23时",
-          "lat": 14.1,
-          "lng": 162.6,
-          "wind": 15,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-27 20时",
-          "lat": 14.5,
-          "lng": 161.6,
-          "wind": 15,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-28 20时",
-          "lat": 15.3,
-          "lng": 157.6,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-29 17时",
-          "lat": 16.4,
-          "lng": 152.2,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-30 17时",
-          "lat": 19.1,
-          "lng": 145.5,
-          "wind": 17,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "10-31 14时",
-          "lat": 22.1,
-          "lng": 142.9,
-          "wind": 16,
-          "strong": "超强台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-01 14时",
-          "lat": 22.4,
-          "lng": 144.1,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-02 11时",
-          "lat": 22.4,
-          "lng": 141.5,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-03 11时",
-          "lat": 23.1,
-          "lng": 139.2,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "11-04 08时",
-          "lat": 24.3,
-          "lng": 138.5,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-05 08时",
-          "lat": 28,
-          "lng": 139.6,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "11-05 11时",
-          "lat": 28.8,
-          "lng": 140.4,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "now"
-        },
-        {
-          "t": "11-05 23时",
-          "lat": 33.7,
-          "lng": 145.9,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        }
-      ],
-      "rainRisk": null,
-      "affected": []
-    }
-  ],
+  "typhoons": [],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 10,
+    "total": 9,
     "counts": {
-      "暴雨": 10
+      "暴雨": 9
     },
     "peak": {
-      "province": "广西",
+      "province": "广东",
       "kind": "暴雨",
       "level": "orange",
-      "title": "广西壮族自治区钦州市浦北县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/45072241600000_20261105191247.html",
-      "issuedAt": "2026/11/05 19:09"
+      "title": "广东省湛江市雷州市气象台发布暴雨橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/44088241600000_20261105152041.html",
+      "issuedAt": "2026/11/05 15:18"
     },
     "provinces": [
-      {
-        "province": "广西",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
-        "kinds": {
-          "暴雨": "orange"
-        },
-        "count": 3,
-        "top": {
-          "kind": "暴雨",
-          "level": "orange",
-          "title": "广西壮族自治区钦州市浦北县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45072241600000_20261105191247.html",
-          "issuedAt": "2026/11/05 19:09"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
       {
         "province": "广东",
         "maxLevel": "orange",
@@ -271,6 +79,24 @@
         },
         "lat": 26.1,
         "lng": 118.3
+      },
+      {
+        "province": "广西",
+        "maxLevel": "orange",
+        "floodLevel": "orange",
+        "kinds": {
+          "暴雨": "orange"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "orange",
+          "title": "广西壮族自治区玉林市陆川县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45092241600000_20261105174114.html",
+          "issuedAt": "2026/11/05 17:36"
+        },
+        "lat": 23.8,
+        "lng": 108.8
       },
       {
         "province": "湖南",
@@ -310,5 +136,16 @@
       }
     ]
   },
-  "recentlyEnded": []
+  "recentlyEnded": [
+    {
+      "code": "2631",
+      "name": "烟花",
+      "enName": "IN-FA",
+      "lastLevel": "强热带风暴（10级）",
+      "endedAt": "2026-11-06 00:15",
+      "provinces": [],
+      "ongoingFloodLevel": null,
+      "daysSince": 0
+    }
+  ]
 }
