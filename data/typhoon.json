@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06 13:30",
+  "updatedAt": "2026-11-06 14:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,9 +31,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 9,
+    "total": 11,
     "counts": {
-      "暴雨": 9
+      "暴雨": 11
     },
     "peak": {
       "province": "广西",
@@ -81,6 +81,24 @@
         "lng": 113.4
       },
       {
+        "province": "湖南",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖南省衡阳市南岳区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43041241600000_20261106135041.html",
+          "issuedAt": "2026/11/06 13:50"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
         "province": "江西",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
@@ -99,22 +117,22 @@
         "lng": 115.7
       },
       {
-        "province": "湖南",
-        "maxLevel": "yellow",
-        "floodLevel": "yellow",
+        "province": "福建",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
         "kinds": {
-          "暴雨": "yellow"
+          "暴雨": "blue"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
-          "level": "yellow",
-          "title": "湖南省怀化市沅陵县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43122241600000_20261105150500.html",
-          "issuedAt": "2026/11/05 15:03"
+          "level": "blue",
+          "title": "福建省南平市光泽县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/35072341600000_20261106134500.html",
+          "issuedAt": "2026/11/06 13:45"
         },
-        "lat": 27.6,
-        "lng": 111.7
+        "lat": 26.1,
+        "lng": 118.3
       },
       {
         "province": "云南",
@@ -133,24 +151,6 @@
         },
         "lat": 25,
         "lng": 101.5
-      },
-      {
-        "province": "福建",
-        "maxLevel": "blue",
-        "floodLevel": "blue",
-        "kinds": {
-          "暴雨": "blue"
-        },
-        "count": 1,
-        "top": {
-          "kind": "暴雨",
-          "level": "blue",
-          "title": "福建省莆田市仙游县气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/35032241600000_20261105222200.html",
-          "issuedAt": "2026/11/05 22:22"
-        },
-        "lat": 26.1,
-        "lng": 118.3
       }
     ]
   },
