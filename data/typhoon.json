@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07 22:45",
+  "updatedAt": "2026-11-07 23:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -30,27 +30,27 @@
       "name": "查帕卡",
       "enName": "CEMPAKA",
       "code": "2632",
-      "level": "热带风暴（9级）",
+      "level": "强热带风暴（10级）",
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
       "trackSource": "中央气象台",
       "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 53 公里、强度差 1 级（3 源交叉校验一致）",
+        "status": "divergent",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 38 公里（时次相差 3 小时）、强度差 2 级。各机构分析存在分歧，请以官方逐时发布为准",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "11-07 20时",
-            "windLevel": 9,
+            "time": "11-07 23时",
+            "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "11-07 20时",
-            "windLevel": 9,
+            "time": "11-07 23时",
+            "windLevel": 10,
             "role": "verify"
           },
           {
@@ -63,15 +63,15 @@
         ]
       },
       "now": {
-        "windLevel": 9,
-        "windSpeed": 23,
-        "pressure": 990,
+        "windLevel": 10,
+        "windSpeed": 25,
+        "pressure": 985,
         "moveDir": "西北西",
-        "moveSpeed": 24,
+        "moveSpeed": 25,
         "r7": 250,
         "r10": null,
-        "time": "11-07 20时",
-        "position": "中心位于北纬 20.4 度、东经 142.1 度"
+        "time": "11-07 23时",
+        "position": "中心位于北纬 20.7 度、东经 141.3 度"
       },
       "track": [
         {
@@ -96,70 +96,70 @@
           "lng": 142.1,
           "wind": 9,
           "strong": "热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "11-07 23时",
+          "lat": 20.7,
+          "lng": 141.3,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "11-08 08时",
-          "lat": 21.5,
-          "lng": 139.7,
+          "t": "11-08 11时",
+          "lat": 21.8,
+          "lng": 138.7,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "11-08 20时",
-          "lat": 22.5,
-          "lng": 137.2,
+          "t": "11-08 23时",
+          "lat": 22.7,
+          "lng": 136.1,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "11-09 08时",
-          "lat": 23,
-          "lng": 134.9,
+          "t": "11-09 11时",
+          "lat": 23.5,
+          "lng": 134.8,
           "wind": 14,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "11-09 20时",
-          "lat": 23.9,
-          "lng": 135.1,
+          "t": "11-09 23时",
+          "lat": 24.2,
+          "lng": 135.6,
           "wind": 16,
           "strong": "超强台风",
           "phase": "forecast"
         },
         {
-          "t": "11-10 08时",
-          "lat": 24.3,
-          "lng": 136.6,
+          "t": "11-10 11时",
+          "lat": 24.7,
+          "lng": 137.9,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "11-10 20时",
-          "lat": 24.9,
-          "lng": 139.5,
-          "wind": 13,
+          "t": "11-10 23时",
+          "lat": 25.6,
+          "lng": 141.3,
+          "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "11-11 20时",
-          "lat": 26.3,
-          "lng": 146.4,
+          "t": "11-11 23时",
+          "lat": 28,
+          "lng": 149.6,
           "wind": 10,
           "strong": "强热带风暴",
-          "phase": "forecast"
-        },
-        {
-          "t": "11-12 20时",
-          "lat": 26.6,
-          "lng": 150.7,
-          "wind": 8,
-          "strong": "热带风暴",
           "phase": "forecast"
         }
       ],
@@ -172,37 +172,37 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 94,
+    "total": 96,
     "counts": {
-      "暴雨": 78,
+      "暴雨": 80,
       "山洪风险": 2,
       "地质灾害": 14
     },
     "peak": {
       "province": "云南",
       "kind": "暴雨",
-      "level": "orange",
-      "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨橙色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/53082841600000_20261107223457.html",
-      "issuedAt": "2026/11/07 22:33"
+      "level": "red",
+      "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨红色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53082841600000_20261107225922.html",
+      "issuedAt": "2026/11/07 22:57"
     },
     "provinces": [
       {
         "province": "云南",
-        "maxLevel": "orange",
-        "floodLevel": "orange",
+        "maxLevel": "red",
+        "floodLevel": "red",
         "kinds": {
-          "暴雨": "orange",
+          "暴雨": "red",
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
         "count": 23,
         "top": {
           "kind": "暴雨",
-          "level": "orange",
-          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20261107223457.html",
-          "issuedAt": "2026/11/07 22:33"
+          "level": "red",
+          "title": "云南省普洱市澜沧拉祜族自治县气象台发布暴雨红色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/53082841600000_20261107225922.html",
+          "issuedAt": "2026/11/07 22:57"
         },
         "lat": 25,
         "lng": 101.5
@@ -214,7 +214,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 53,
+        "count": 54,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -250,13 +250,13 @@
         "kinds": {
           "暴雨": "blue"
         },
-        "count": 1,
+        "count": 2,
         "top": {
           "kind": "暴雨",
           "level": "blue",
-          "title": "浙江省杭州市临安区气象台发布暴雨蓝色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/33011241600000_20261107221010.html",
-          "issuedAt": "2026/11/07 22:08"
+          "title": "浙江省杭州市淳安县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/33012741600000_20261107225033.html",
+          "issuedAt": "2026/11/07 22:45"
         },
         "lat": 29.2,
         "lng": 120.2
