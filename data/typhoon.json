@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07 12:15",
+  "updatedAt": "2026-11-07 12:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -31,39 +31,21 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 21,
+    "total": 22,
     "counts": {
-      "暴雨": 13,
+      "暴雨": 14,
       "山洪风险": 2,
       "地质灾害": 6
     },
     "peak": {
-      "province": "广西",
-      "kind": "暴雨",
-      "level": "red",
-      "title": "广西壮族自治区防城港市东兴市气象台发布暴雨红色预警信号",
-      "url": "http://www.nmc.cn/publish/alarm/45068141600000_20261106124157.html",
-      "issuedAt": "2026/11/06 12:37"
+      "province": "云南",
+      "kind": "地质灾害",
+      "level": "orange",
+      "title": "云南省红河哈尼族彝族自治州河口瑶族自治县气象台发布地质灾害橙色预警信号",
+      "url": "http://www.nmc.cn/publish/alarm/53253241600000_20261107053842.html",
+      "issuedAt": "2026/11/07 05:36"
     },
     "provinces": [
-      {
-        "province": "广西",
-        "maxLevel": "red",
-        "floodLevel": "red",
-        "kinds": {
-          "暴雨": "red"
-        },
-        "count": 2,
-        "top": {
-          "kind": "暴雨",
-          "level": "red",
-          "title": "广西壮族自治区防城港市东兴市气象台发布暴雨红色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45068141600000_20261106124157.html",
-          "issuedAt": "2026/11/06 12:37"
-        },
-        "lat": 23.8,
-        "lng": 108.8
-      },
       {
         "province": "云南",
         "maxLevel": "orange",
@@ -109,7 +91,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -127,16 +109,34 @@
         "kinds": {
           "暴雨": "yellow"
         },
+        "count": 2,
+        "top": {
+          "kind": "暴雨",
+          "level": "yellow",
+          "title": "湖南省娄底市新化县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43132241600000_20261107122247.html",
+          "issuedAt": "2026/11/07 12:22"
+        },
+        "lat": 27.6,
+        "lng": 111.7
+      },
+      {
+        "province": "广西",
+        "maxLevel": "yellow",
+        "floodLevel": "yellow",
+        "kinds": {
+          "暴雨": "yellow"
+        },
         "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "湖南省衡阳市南岳区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43041241600000_20261106135041.html",
-          "issuedAt": "2026/11/06 13:50"
+          "title": "广西壮族自治区防城港市防城区气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45060341600000_20261106133703.html",
+          "issuedAt": "2026/11/06 13:28"
         },
-        "lat": 27.6,
-        "lng": 111.7
+        "lat": 23.8,
+        "lng": 108.8
       }
     ]
   },
