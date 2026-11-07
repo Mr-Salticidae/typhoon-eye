@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07 15:45",
+  "updatedAt": "2026-11-07 16:15",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -7,8 +7,8 @@
       "id": "cma",
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
-      "ok": false,
-      "error": "403 http://typhoon.nmc.cn/weatherservice/typhoon/jsons/view_3382203"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "zj",
@@ -34,17 +34,24 @@
       "summary": "预报路径详见路径图，请以官方逐时发布为准。",
       "nearCoast": false,
       "nameNote": null,
-      "trackSource": "浙江台风路径系统",
+      "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以浙江台风路径系统为准：日本气象厅定位相差 21 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 21 公里、强度一致（3 源交叉校验一致）",
         "sources": [
+          {
+            "id": "cma",
+            "name": "中央气象台",
+            "time": "11-07 14时",
+            "windLevel": 8,
+            "role": "primary"
+          },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
             "time": "11-07 14时",
             "windLevel": 8,
-            "role": "primary"
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -173,7 +180,7 @@
           "山洪风险": "yellow",
           "地质灾害": "orange"
         },
-        "count": 16,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -209,7 +216,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 14,
+        "count": 15,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -231,8 +238,8 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "湖南省娄底市涟源市气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/43138241600000_20261107152737.html",
+          "title": "湖南省娄底市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/43130241600000_20261107152731.html",
           "issuedAt": "2026/11/07 15:27"
         },
         "lat": 27.6,
