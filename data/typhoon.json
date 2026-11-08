@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08 08:00",
+  "updatedAt": "2026-11-08 08:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -37,19 +37,19 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 11 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 76 公里（时次相差 3 小时）、强度差 1 级（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
             "name": "中央气象台",
-            "time": "11-08 05时",
+            "time": "11-08 08时",
             "windLevel": 10,
             "role": "primary"
           },
           {
             "id": "zj",
             "name": "浙江台风路径系统",
-            "time": "11-08 05时",
+            "time": "11-08 08时",
             "windLevel": 10,
             "role": "verify"
           },
@@ -64,14 +64,14 @@
       },
       "now": {
         "windLevel": 10,
-        "windSpeed": 25,
-        "pressure": 985,
+        "windSpeed": 28,
+        "pressure": 982,
         "moveDir": "西北西",
-        "moveSpeed": 22,
+        "moveSpeed": 24,
         "r7": 250,
-        "r10": null,
-        "time": "11-08 05时",
-        "position": "中心位于北纬 21.4 度、东经 139.3 度"
+        "r10": 60,
+        "time": "11-08 08时",
+        "position": "中心位于北纬 21.5 度、东经 138.6 度"
       },
       "track": [
         {
@@ -120,62 +120,70 @@
           "lng": 139.3,
           "wind": 10,
           "strong": "强热带风暴",
+          "phase": "past"
+        },
+        {
+          "t": "11-08 08时",
+          "lat": 21.5,
+          "lng": 138.6,
+          "wind": 10,
+          "strong": "强热带风暴",
           "phase": "now"
         },
         {
-          "t": "11-08 17时",
-          "lat": 22.2,
-          "lng": 137,
+          "t": "11-08 20时",
+          "lat": 22.4,
+          "lng": 136.1,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "11-09 05时",
-          "lat": 23,
-          "lng": 134.9,
+          "t": "11-09 08时",
+          "lat": 23.2,
+          "lng": 134.5,
           "wind": 13,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "11-09 17时",
+          "t": "11-09 20时",
           "lat": 23.6,
-          "lng": 134.6,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "11-10 05时",
-          "lat": 24.1,
-          "lng": 136.4,
-          "wind": 16,
-          "strong": "超强台风",
-          "phase": "forecast"
-        },
-        {
-          "t": "11-10 17时",
-          "lat": 24.9,
-          "lng": 139.4,
+          "lng": 135.1,
           "wind": 15,
           "strong": "强台风",
           "phase": "forecast"
         },
         {
-          "t": "11-11 05时",
-          "lat": 26,
-          "lng": 143.1,
+          "t": "11-10 08时",
+          "lat": 24,
+          "lng": 137.3,
+          "wind": 15,
+          "strong": "强台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "11-10 20时",
+          "lat": 24.8,
+          "lng": 140.8,
+          "wind": 13,
+          "strong": "台风",
+          "phase": "forecast"
+        },
+        {
+          "t": "11-11 08时",
+          "lat": 25.7,
+          "lng": 144.9,
           "wind": 12,
           "strong": "台风",
           "phase": "forecast"
         },
         {
-          "t": "11-12 05时",
-          "lat": 27.2,
-          "lng": 150.4,
-          "wind": 10,
-          "strong": "强热带风暴",
+          "t": "11-12 08时",
+          "lat": 26.5,
+          "lng": 149.3,
+          "wind": 9,
+          "strong": "热带风暴",
           "phase": "forecast"
         }
       ],
@@ -188,9 +196,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 102,
+    "total": 98,
     "counts": {
-      "暴雨": 88,
+      "暴雨": 84,
       "地质灾害": 14
     },
     "peak": {
@@ -207,10 +215,10 @@
         "maxLevel": "orange",
         "floodLevel": "orange",
         "kinds": {
-          "暴雨": "yellow",
+          "暴雨": "blue",
           "地质灾害": "orange"
         },
-        "count": 17,
+        "count": 15,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -228,13 +236,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 3,
+        "count": 4,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "广西壮族自治区防城港市防城区气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/45060341600000_20261108052255.html",
-          "issuedAt": "2026/11/08 05:15"
+          "title": "广西壮族自治区防城港市上思县气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/45062141600000_20261108080744.html",
+          "issuedAt": "2026/11/08 07:55"
         },
         "lat": 23.8,
         "lng": 108.8
@@ -246,7 +254,7 @@
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 53,
+        "count": 52,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
@@ -276,22 +284,22 @@
         "lng": 111.7
       },
       {
-        "province": "四川",
+        "province": "贵州",
         "maxLevel": "yellow",
         "floodLevel": "yellow",
         "kinds": {
           "暴雨": "yellow"
         },
-        "count": 3,
+        "count": 1,
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "四川省雅安市雨城区气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/51180241600000_20261108014011.html",
-          "issuedAt": "2026/11/08 01:40"
+          "title": "贵州省铜仁市印江县气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/52062541600000_20261108080402.html",
+          "issuedAt": "2026/11/08 08:04"
         },
-        "lat": 30.6,
-        "lng": 102.9
+        "lat": 26.8,
+        "lng": 106.9
       },
       {
         "province": "浙江",
