@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09 00:01",
+  "updatedAt": "2026-11-09 00:30",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": false,
-      "error": "fetch failed"
+      "ok": true,
+      "count": 1
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 10 公里、强度一致（2 源交叉校验一致）",
+        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 10 公里、强度一致（3 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -45,6 +45,13 @@
             "time": "11-08 23时",
             "windLevel": 12,
             "role": "primary"
+          },
+          {
+            "id": "zj",
+            "name": "浙江台风路径系统",
+            "time": "11-08 23时",
+            "windLevel": 12,
+            "role": "verify"
           },
           {
             "id": "jma",
@@ -61,8 +68,8 @@
         "pressure": 975,
         "moveDir": "西北",
         "moveSpeed": 14,
-        "r7": null,
-        "r10": null,
+        "r7": 250,
+        "r10": 60,
         "time": "11-08 23时",
         "position": "中心位于北纬 22.7 度、东经 136.1 度"
       },
@@ -221,9 +228,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 60,
+    "total": 57,
     "counts": {
-      "暴雨": 36,
+      "暴雨": 33,
       "地质灾害": 24
     },
     "peak": {
@@ -243,7 +250,7 @@
           "暴雨": "blue",
           "地质灾害": "orange"
         },
-        "count": 49,
+        "count": 48,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -261,7 +268,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 7,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -283,9 +290,9 @@
         "top": {
           "kind": "暴雨",
           "level": "yellow",
-          "title": "广东省韶关市新丰县气象台发布暴雨黄色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/44023341600000_20261108210900.html",
-          "issuedAt": "2026/11/08 21:09"
+          "title": "广东省东莞市气象台发布暴雨黄色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/44190041600000_20261109002329.html",
+          "issuedAt": "2026/11/09 00:20"
         },
         "lat": 23.4,
         "lng": 113.4
@@ -319,7 +326,7 @@
       "endedAt": "2026-11-06 00:15",
       "provinces": [],
       "ongoingFloodLevel": null,
-      "daysSince": 2
+      "daysSince": 3
     }
   ]
 }
