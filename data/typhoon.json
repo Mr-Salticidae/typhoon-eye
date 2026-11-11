@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12 05:30",
+  "updatedAt": "2026-11-12 06:00",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -8,7 +8,7 @@
       "name": "中央气象台",
       "url": "http://typhoon.nmc.cn/web.html",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "zj",
@@ -25,181 +25,7 @@
       "count": 1
     }
   ],
-  "typhoons": [
-    {
-      "name": "查帕卡",
-      "enName": "CEMPAKA",
-      "code": "2632",
-      "level": "台风（12级）",
-      "summary": "预报路径详见路径图，请以官方逐时发布为准。",
-      "nearCoast": false,
-      "nameNote": null,
-      "trackSource": "中央气象台",
-      "verification": {
-        "status": "consistent",
-        "detail": "以中央气象台为准：日本气象厅定位相差 178 公里（时次相差 3 小时）、强度暂缺（2 源交叉校验一致）",
-        "sources": [
-          {
-            "id": "cma",
-            "name": "中央气象台",
-            "time": "11-11 17时",
-            "windLevel": 12,
-            "role": "primary"
-          },
-          {
-            "id": "jma",
-            "name": "日本气象厅",
-            "time": "11-11 20时",
-            "windLevel": null,
-            "role": "verify"
-          }
-        ]
-      },
-      "now": {
-        "windLevel": 12,
-        "windSpeed": 33,
-        "pressure": 975,
-        "moveDir": "东北东",
-        "moveSpeed": 66,
-        "r7": null,
-        "r10": null,
-        "time": "11-11 17时",
-        "position": "中心位于北纬 29.2 度、东经 151.4 度"
-      },
-      "track": [
-        {
-          "t": "11-07 14时",
-          "lat": 19.7,
-          "lng": 143.2,
-          "wind": 8,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "11-07 20时",
-          "lat": 20.4,
-          "lng": 142.1,
-          "wind": 9,
-          "strong": "热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "11-08 05时",
-          "lat": 21.4,
-          "lng": 139.3,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "11-08 11时",
-          "lat": 21.7,
-          "lng": 138.1,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "past"
-        },
-        {
-          "t": "11-08 20时",
-          "lat": 22.4,
-          "lng": 136.4,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-09 02时",
-          "lat": 22.8,
-          "lng": 135.7,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-09 08时",
-          "lat": 23.7,
-          "lng": 135.2,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-09 17时",
-          "lat": 24.1,
-          "lng": 135.1,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-09 23时",
-          "lat": 24.5,
-          "lng": 135.8,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-10 05时",
-          "lat": 24.8,
-          "lng": 137.1,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-10 14时",
-          "lat": 25.4,
-          "lng": 139.7,
-          "wind": 14,
-          "strong": "强台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-10 20时",
-          "lat": 26,
-          "lng": 141.8,
-          "wind": 13,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-11 08时",
-          "lat": 28,
-          "lng": 147.5,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-11 14时",
-          "lat": 28.7,
-          "lng": 149.9,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "past"
-        },
-        {
-          "t": "11-11 17时",
-          "lat": 29.2,
-          "lng": 151.4,
-          "wind": 12,
-          "strong": "台风",
-          "phase": "now"
-        },
-        {
-          "t": "11-12 05时",
-          "lat": 32,
-          "lng": 158.9,
-          "wind": 10,
-          "strong": "强热带风暴",
-          "phase": "forecast"
-        }
-      ],
-      "rainRisk": null,
-      "affected": []
-    }
-  ],
+  "typhoons": [],
   "alerts": {
     "ok": true,
     "label": "中央气象台预警发布平台",
@@ -258,6 +84,16 @@
     ]
   },
   "recentlyEnded": [
+    {
+      "code": "2632",
+      "name": "查帕卡",
+      "enName": "CEMPAKA",
+      "lastLevel": "台风（12级）",
+      "endedAt": "2026-11-12 06:00",
+      "provinces": [],
+      "ongoingFloodLevel": null,
+      "daysSince": 0
+    },
     {
       "code": "2631",
       "name": "烟花",
