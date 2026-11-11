@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11 20:15",
+  "updatedAt": "2026-11-11 20:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -15,7 +15,7 @@
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
       "ok": true,
-      "count": 1
+      "count": 0
     },
     {
       "id": "jma",
@@ -37,7 +37,7 @@
       "trackSource": "中央气象台",
       "verification": {
         "status": "consistent",
-        "detail": "以中央气象台为准：浙江台风路径系统定位相差 0 公里、强度一致；日本气象厅定位相差 39 公里、强度差 1 级（3 源交叉校验一致）",
+        "detail": "以中央气象台为准：日本气象厅定位相差 178 公里（时次相差 3 小时）、强度暂缺（2 源交叉校验一致）",
         "sources": [
           {
             "id": "cma",
@@ -47,17 +47,10 @@
             "role": "primary"
           },
           {
-            "id": "zj",
-            "name": "浙江台风路径系统",
-            "time": "11-11 17时",
-            "windLevel": 12,
-            "role": "verify"
-          },
-          {
             "id": "jma",
             "name": "日本气象厅",
-            "time": "11-11 17时",
-            "windLevel": 11,
+            "time": "11-11 20时",
+            "windLevel": null,
             "role": "verify"
           }
         ]
@@ -68,8 +61,8 @@
         "pressure": 975,
         "moveDir": "东北东",
         "moveSpeed": 66,
-        "r7": 300,
-        "r10": 120,
+        "r7": null,
+        "r10": null,
         "time": "11-11 17时",
         "position": "中心位于北纬 29.2 度、东经 151.4 度"
       },
@@ -212,9 +205,9 @@
     "label": "中央气象台预警发布平台",
     "url": "http://www.nmc.cn/publish/alarm.html",
     "partial": null,
-    "total": 21,
+    "total": 22,
     "counts": {
-      "地质灾害": 21
+      "地质灾害": 22
     },
     "peak": {
       "province": "云南",
@@ -232,7 +225,7 @@
         "kinds": {
           "地质灾害": "orange"
         },
-        "count": 21,
+        "count": 22,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
