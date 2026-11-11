@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11 22:15",
+  "updatedAt": "2026-11-11 22:45",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -207,7 +207,8 @@
     "partial": null,
     "total": 21,
     "counts": {
-      "地质灾害": 21
+      "暴雨": 1,
+      "地质灾害": 20
     },
     "peak": {
       "province": "云南",
@@ -225,7 +226,7 @@
         "kinds": {
           "地质灾害": "orange"
         },
-        "count": 21,
+        "count": 20,
         "top": {
           "kind": "地质灾害",
           "level": "orange",
@@ -235,6 +236,24 @@
         },
         "lat": 25,
         "lng": 101.5
+      },
+      {
+        "province": "新疆",
+        "maxLevel": "blue",
+        "floodLevel": "blue",
+        "kinds": {
+          "暴雨": "blue"
+        },
+        "count": 1,
+        "top": {
+          "kind": "暴雨",
+          "level": "blue",
+          "title": "新疆维吾尔自治区塔城地区裕民县气象台发布暴雨蓝色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/65422541600000_20261111220805.html",
+          "issuedAt": "2026/11/11 22:08"
+        },
+        "lat": 41.1,
+        "lng": 85.3
       }
     ]
   },
