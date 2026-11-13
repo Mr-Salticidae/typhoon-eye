@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13 17:30",
+  "updatedAt": "2026-11-13 18:01",
   "source": "中央气象台 / 浙江台风路径系统 / 日本气象厅（JMA）多源交叉校验",
   "sourceUrl": "http://typhoon.nmc.cn/web.html",
   "sources": [
@@ -14,8 +14,8 @@
       "id": "zj",
       "name": "浙江台风路径系统",
       "url": "https://typhoon.slt.zj.gov.cn/",
-      "ok": true,
-      "count": 0
+      "ok": false,
+      "error": "fetch failed"
     },
     {
       "id": "jma",
@@ -33,8 +33,8 @@
     "partial": null,
     "total": 24,
     "counts": {
-      "暴雨": 16,
-      "地质灾害": 8
+      "暴雨": 18,
+      "地质灾害": 6
     },
     "peak": {
       "province": "广东",
@@ -52,7 +52,7 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 9,
+        "count": 10,
         "top": {
           "kind": "暴雨",
           "level": "orange",
@@ -70,13 +70,13 @@
         "kinds": {
           "暴雨": "orange"
         },
-        "count": 2,
+        "count": 3,
         "top": {
           "kind": "暴雨",
           "level": "orange",
-          "title": "海南省保亭县气象台发布暴雨橙色预警信号",
-          "url": "http://www.nmc.cn/publish/alarm/46902941600000_20261113152654.html",
-          "issuedAt": "2026/11/13 15:26"
+          "title": "海南省万宁市气象台发布暴雨橙色预警信号",
+          "url": "http://www.nmc.cn/publish/alarm/46900641600000_20261113173203.html",
+          "issuedAt": "2026/11/13 17:32"
         },
         "lat": 19.2,
         "lng": 109.7
@@ -88,7 +88,7 @@
         "kinds": {
           "地质灾害": "yellow"
         },
-        "count": 8,
+        "count": 6,
         "top": {
           "kind": "地质灾害",
           "level": "yellow",
